@@ -1,0 +1,11 @@
+SolarSystem Info
+by Pankaj Nathani
+Mercury==Mercury is the closest planet to the Sun and the eighth largest. Mercury is slightly smaller in diameter than the moons Ganymede and Titan but more than twice as massive. Read more about Mercury  l  Mercury facts, pictures and information. by nineplanets.org
+Venus==Venus is the second planet from the Sun and the sixth largest. Venus' orbit is the most nearly circular of that of any planet, with an eccentricity of less than 1%. Read more about Venus  l  Venus facts, pictures and information. by nineplanets.org
+Earth==Earth is the only planet whose English name does not derive from Greek/Roman mythology. The name derives from Old English and Germanic. There are, of course, hundreds of other names for the planet in other languages. In Roman Mythology, the goddess of the Earth was Tellus - the fertile soil (Greek: Gaia, terra mater - Mother Earth).Read more about Earth  l  Earth facts, pictures and information. by nineplanets.org
+Mars==Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury.
+Jupiter==Jupiter is the fifth planet from the Sun and the largest planet in the Solar System. It is a gas giant with mass one-thousandth of that of the Sun but is two and a half times the mass of all the other planets in the Solar System combined.
+Saturn==Saturn is the sixth planet from the Sun and the second largest planet in the Solar System, after Jupiter. Named after the Roman god of agriculture, its astronomical symbol represents the god's sickle.
+Uranus==Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.
+Neptune==Neptune is the eighth and farthest planet from the Sun in the Solar System. It is the fourth-largest planet by diameter and the third-largest by mass. Among the gaseous planets in the solar system, Neptune is the most dense.
+Pluto==Pluto is the largest object in the Kuiper belt, and the tenth-most-massive body observed directly orbiting the Sun. It is the second-most-massive known dwarf planet, after Eris.
