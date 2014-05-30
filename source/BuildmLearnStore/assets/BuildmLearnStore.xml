@@ -1,0 +1,119 @@
+<applications>
+<app>
+	<title>Biological Spelling puzzle</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://buildmlearn.files.wordpress.com/2013/05/screen-shot-2014-02-11-at-1-03-44-pm.png</appIcon>
+	<screenshots>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+	</screenshots>
+	<type>Learn Spellings</type>
+	<author_name>Author</author_name>
+	<author_email>Author@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Physical Education</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://buildmlearn.files.wordpress.com/2013/05/screen-shot-2014-02-11-at-1-03-44-pm.png</appIcon>
+	<screenshots>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+	</screenshots>
+	<type>Learn Spellings</type>
+	<author_name>Author1</author_name>
+	<author_email>Author1@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Science Spellings</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://buildmlearn.files.wordpress.com/2013/05/screen-shot-2014-02-11-at-1-03-44-pm.png</appIcon>
+	<screenshots>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+	</screenshots>
+	<type>Learn Spellings</type>
+	<author_name>Author2</author_name>
+	<author_email>Author2@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Solar System</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://buildmlearn.files.wordpress.com/2013/05/screen-shot-2014-02-11-at-1-03-44-pm.png</appIcon>
+	<screenshots>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+	</screenshots>
+	<type>Flashcards</type>
+	<author_name>Author3</author_name>
+	<author_email>Author3@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Festivals</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://buildmlearn.files.wordpress.com/2013/05/screen-shot-2014-02-11-at-1-03-44-pm.png</appIcon>
+	<screenshots>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+	</screenshots>
+	<type>Info</type>
+	<author_name>Author4</author_name>
+	<author_email>Author4@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Movies</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://buildmlearn.files.wordpress.com/2013/05/screen-shot-2014-02-11-at-1-03-44-pm.png</appIcon>
+	<screenshots>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+	</screenshots>
+	<type>Info</type>
+	<author_name>Author5</author_name>
+	<author_email>Author5@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Solar System</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://buildmlearn.files.wordpress.com/2013/05/screen-shot-2014-02-11-at-1-03-44-pm.png</appIcon>
+	<screenshots>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+	</screenshots>
+	<type>Info</type>
+	<author_name>Author5</author_name>
+	<author_email>Author5@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Prepositions Quiz</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://buildmlearn.files.wordpress.com/2013/05/screen-shot-2014-02-11-at-1-03-44-pm.png</appIcon>
+	<screenshots>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+	</screenshots>
+	<type>Quix</type>
+	<author_name>Author6</author_name>
+	<author_email>Author6@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Science Quiz</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://buildmlearn.files.wordpress.com/2013/05/screen-shot-2014-02-11-at-1-03-44-pm.png</appIcon>
+	<screenshots>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+		<url>http://p.d.ovi.com/p/g/store/5593686/256x256_gs-192x192.png</url>
+	</screenshots>
+	<type>Info</type>
+	<author_name>Author7</author_name>
+	<author_email>Author7@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<applications>
