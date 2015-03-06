@@ -146,7 +146,6 @@ public class QuestionActivity extends SherlockActivity {
 					reInitialize();
 					Intent myIntent = new Intent(arg0.getContext(),
 							ScoreActivity.class);
-                    myIntent.putExtra("Activity",0);// 0: Quiz Template and 1: Spellings Template
 					startActivity(myIntent);
 					finish();
 				}
