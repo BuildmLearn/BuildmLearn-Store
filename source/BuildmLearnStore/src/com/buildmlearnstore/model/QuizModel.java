@@ -12,6 +12,11 @@ public class QuizModel {
 
 	public static QuizModel mQuizModel;
 	
+	public static void clearInstance()
+	{
+		mQuizModel.totalCorrect=0;
+		mQuizModel.totalWrong=0;
+	}
 	public static QuizModel getInstance()
 	{
 		if(mQuizModel==null)
