@@ -66,6 +66,7 @@ public class ScoreActivity extends SherlockActivity {
 				Intent myIntent = new Intent(arg0.getContext(),
 						QuestionActivity.class);
 				startActivityForResult(myIntent, 0);
+				mQuizModel.clearInstance();
 				finish();
 			}
 		});
@@ -75,6 +76,7 @@ public class ScoreActivity extends SherlockActivity {
 
 			@Override
 			public void onClick(View arg0) {
+				mQuizModel.clearInstance();
 				// android.os.Process.killProcess(android.os.Process.myPid());
 				finish();
 			}
