@@ -64,7 +64,7 @@ public class ContentListActivity extends SherlockActivity implements
 
 		switch (option) {
 		case 0:
-			fileName = "info/" + mFileNameList.get(position);
+			fileName = "info/" + mFileNameList.get(position)+".txt";
 
 			break;
 		case 1:
@@ -73,11 +73,11 @@ public class ContentListActivity extends SherlockActivity implements
 			break;
 		case 2:
 
-			fileName = "quiz/" + mFileNameList.get(position);
+			fileName = "quiz/" + mFileNameList.get(position)+".txt";
 			break;
 		case 3:
 
-			fileName = "spellings/" + mFileNameList.get(position);
+			fileName = "spellings/" + mFileNameList.get(position)+".txt";
 			break;
 
 		}

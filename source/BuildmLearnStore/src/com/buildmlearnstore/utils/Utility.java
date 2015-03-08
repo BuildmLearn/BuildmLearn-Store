@@ -36,7 +36,9 @@ public class Utility {
 			if (fileList != null) {
 				for (int i = 0; i < fileList.length; i++) {
 					Log.d("", fileList[i]);
-					mFileList.add(fileList[i]);
+					if(fileList[i].endsWith(".txt"))mFileList.add(fileList[i].substring(0,fileList[i].length()-4));
+                    else
+                    mFileList.add(fileList[i]);
 				}
 			}
 		} catch (IOException e) {
