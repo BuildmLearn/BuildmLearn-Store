@@ -138,7 +138,7 @@ public class QuestionActivity extends SherlockActivity {
 
 				if (iQuestionIndex <mQuestionAnsList.size()) {
 					populateQuestion(iQuestionIndex);
-
+					iRadioGroup.clearCheck();
 					iSubmitButton.setEnabled(true);
 					// iNextButton.setVisibility(View.GONE);
 				} else {
