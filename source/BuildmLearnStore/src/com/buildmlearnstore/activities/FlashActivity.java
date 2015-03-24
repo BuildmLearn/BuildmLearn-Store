@@ -106,7 +106,7 @@ public class FlashActivity extends SherlockActivity implements
 			@Override
 			public void onClick(View v) {
 
-				if (iQuestionIndex < mCardList.size()) {
+				if (iQuestionIndex < mCardList.size()-1) {
 					isFlipped = false;
 					iQuestionIndex++;
 					questionView.setVisibility(View.VISIBLE);
@@ -115,6 +115,9 @@ public class FlashActivity extends SherlockActivity implements
 					populateQuestion(iQuestionIndex);
 
 				} else {
+					answerView.setVisibility(View.VISIBLE);
+					TextView answerText = (TextView) findViewById(R.id.answerText);
+					answerText.setText("This was the last card");
 					/*Intent myIntent = new Intent(FlashActivity.this,
 							ScoreActivity.class);
 					startActivity(myIntent);
