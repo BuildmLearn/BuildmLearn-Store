@@ -48,15 +48,19 @@ public class ScoreActivity extends SherlockActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.score_view);
 		mQuizModel = QuizModel.getInstance();
-
+		
 		mTv_correct = (TextView) findViewById(R.id.tv_correct);
 		mTv_wrong = (TextView) findViewById(R.id.tv_wrong);
 		mTv_unanswered = (TextView) findViewById(R.id.tv_unanswered);
 		mTv_correct.setText("Total Correct: " + mQuizModel.getTotalCorrect());
 		mTv_wrong.setText("Total Wrong: " + mQuizModel.getTotalWrong());
-		int unanswered = mQuizModel.getQueAnsList().size()
-				- mQuizModel.getTotalCorrect() - mQuizModel.getTotalWrong();
-		mTv_unanswered.setText("Unanswered: " + unanswered);
+		if(mQuizModel!=null)
+		{
+			int unanswered = mQuizModel.getQueAnsList().size()
+					- mQuizModel.getTotalCorrect() - mQuizModel.getTotalWrong();
+			mTv_unanswered.setText("Unanswered: " + unanswered);
+		}
+		
 
 		Button startAgainButton = (Button) findViewById(R.id.start_again_button);
 		startAgainButton.setOnClickListener(new OnClickListener() {

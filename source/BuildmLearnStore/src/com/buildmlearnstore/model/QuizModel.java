@@ -6,7 +6,7 @@ public class QuizModel {
 
 	private String mQuizName;
 	private String mQuizAuthor;
-	private ArrayList<Question> mQueAnsList;
+	private ArrayList<Question> mQueAnsList=new ArrayList<Question>();
 	private int totalCorrect=0,totalWrong=0;
 	
 
