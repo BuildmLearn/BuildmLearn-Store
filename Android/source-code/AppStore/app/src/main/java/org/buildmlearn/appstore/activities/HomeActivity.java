@@ -6,21 +6,10 @@ package org.buildmlearn.appstore.activities;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Toast;
 
 import org.buildmlearn.appstore.R;
-import org.buildmlearn.appstore.adapters.NavigationAdapter;
 import org.buildmlearn.appstore.adapters.ViewPagerAdapter;
 import org.buildmlearn.appstore.utils.SlidingTabLayout;
 
