@@ -29,7 +29,7 @@ public class CategoriesActivity extends NavigationActivity {
         categoriesView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         categoriesView.setLayoutManager(llm);
-        CategoriesAdapter adapter = new CategoriesAdapter(mCategories);
+        CategoriesAdapter adapter = new CategoriesAdapter(mCategories,this);
         categoriesView.setAdapter(adapter);
     }
     private List<CategoriesCard> mCategories;

@@ -9,7 +9,12 @@
     tools:context="org.buildmlearn.appstore.fragments.TabMyApps">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="You have no downloaded apps." />
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/txtMyApps"
+        android:text="There are no downloaded apps.\nSwipe Right to navigate to the Store and download interesting apps!"
+        android:visibility="visible"/>
 </FrameLayout>

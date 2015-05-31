@@ -5,11 +5,14 @@ package org.buildmlearn.appstore.activities;
  */
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.View;
 
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.XMLParser;
@@ -19,18 +22,16 @@ import org.w3c.dom.NodeList;
 
 import org.buildmlearn.appstore.R;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import me.drakeet.materialdialog.MaterialDialog;
 
 public class SplashActivity extends Activity {
     private String XML="<applications>\n" +
             "<app>\n" +
             "\t<title>Biology Quiz</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/9i6mf03zr/logo_b.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -44,7 +45,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>Chemistry Spellings</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/63ofyv8l3/logo_c.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -58,7 +59,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>History Info</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/r34jqda9j/logo_h.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -72,7 +73,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>Vocabulary</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/lu9ishruf/logo_l.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -86,7 +87,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>Maths Puzzle</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/qhfku9f7b/logo_m.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -100,7 +101,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>Physics Info</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/n815nsr3r/logo_p.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -114,7 +115,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>Biology Info</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/9i6mf03zr/logo_b.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -128,7 +129,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>Chemistry Quiz</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/63ofyv8l3/logo_c.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -142,7 +143,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>History Spellings</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/r34jqda9j/logo_h.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -156,7 +157,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>English Words</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/lu9ishruf/logo_l.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -170,7 +171,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>Maths Info</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/qhfku9f7b/logo_m.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -184,7 +185,7 @@ public class SplashActivity extends Activity {
             "</app>\n" +
             "<app>\n" +
             "\t<title>Physics Flashcards</title>\n" +
-            "\t<description>This is an application with a good description</description>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
             "\t<appIcon>http://s13.postimg.org/n815nsr3r/logo_p.png</appIcon>\n" +
             "\t<screenshots>\n" +
             "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
@@ -209,64 +210,82 @@ public class SplashActivity extends Activity {
     private static final String TYPE = "type";
     private static final String AUTHOR_NAME = "author_name";
     private static final String AUTHOR_EMAIL = "author_email";
+    private static boolean mInternet=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        Thread background = new Thread() {
-            public void run() {
-                try {
-                    XMLParser parser = new XMLParser();
-                    //TODO
-                    // String xml = parser.getXmlFromUrl(URL); // getting XML
-                    Document doc = parser.getDomElement(XML); // getting DOM element
-                    NodeList nodeList = doc.getElementsByTagName(KEY_ITEM);
-                    // looping through all item nodes <app>
-                    for (int i = 0; i < nodeList.getLength(); i++) {
-                        Element elementApp = (Element) nodeList.item(i);
-                        Apps ob=new Apps();
-                        ob.Name = parser.getValue(elementApp, TITLE);
-                        ob.Description = parser.getValue(elementApp, DESCRIPTION);
-                        ob.AppIcon = parser.getValue(elementApp, APP_ICON);
-                        //ob.BAppIcon=getBitmapFromURL(ob.AppIcon);
-                        NodeList nodeScreenshots = doc.getElementsByTagName(SCREENSHOTS);
-                        ob.Screenshots=new String[nodeScreenshots.getLength()];
-                        for (int j = 0; j < nodeScreenshots.getLength(); j++)
-                            ob.Screenshots[j]=parser.getValue((Element)nodeScreenshots.item(j), URL1);
-                        ob.Category = parser.getValue(elementApp, CATEGORY);
-                        ob.Type = parser.getValue(elementApp, TYPE);
-                        ob.Author = parser.getValue(elementApp, AUTHOR_NAME);
-                        ob.AuthorEmail = parser.getValue(elementApp, AUTHOR_EMAIL);
-                        System.out.println(ob.Name+ob.AppIcon);
-                        appList.add(ob);
-                    }
-
-                    Intent i=new Intent(getBaseContext(),HomeActivity.class);
-                    startActivity(i);
-                    //Remove activity
-                    finish();
-                } catch (Exception e) {
-                    System.out.println("Error "+e.getMessage());
-                }
-            }
-        };
-        // start thread
-        background.start();
+        checkInternet();
     }
-    public static Bitmap getBitmapFromURL(String src) {
-        try {
-            URL url = new URL(src);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            Bitmap myBitmap = BitmapFactory.decodeStream(input);
-            return myBitmap;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return BitmapFactory.decodeResource(Resources.getSystem(), R.drawable.logo_c);
-            //TODO
-            //return null;
+    private void checkInternet()
+    {
+        try{
+        if(!isNetworkAvailable())
+        {System.out.println("Not Available");
+            mInternet=false;
+            MaterialDialog mAlertDialog=new MaterialDialog(this)
+                    .setTitle("Network Connectivity")
+                    .setMessage("No internet connection available!")
+                    .setPositiveButton("RETRY", new View.OnClickListener() {
+                         @Override
+                         public void onClick(View v) {checkInternet();}
+                    })
+                    .setNegativeButton("OK", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {finish();}
+                    });
+            mAlertDialog.show();
         }
+        else {
+            Thread background = new Thread() {
+                public void run() {
+                    try {
+                        XMLParser parser = new XMLParser();
+                        //TODO
+                        // String xml = parser.getXmlFromUrl(URL); // getting XML
+                        Document doc = parser.getDomElement(XML); // getting DOM element
+                        NodeList nodeList = doc.getElementsByTagName(KEY_ITEM);
+                        // looping through all item nodes <app>
+                        for (int i = 0; i < nodeList.getLength(); i++) {
+                            Element elementApp = (Element) nodeList.item(i);
+                            Apps ob = new Apps();
+                            ob.Name = parser.getValue(elementApp, TITLE);
+                            ob.Description = parser.getValue(elementApp, DESCRIPTION);
+                            ob.AppIcon = parser.getValue(elementApp, APP_ICON);
+                            //ob.BAppIcon=getBitmapFromURL(ob.AppIcon);
+                            NodeList nodeScreenshots = doc.getElementsByTagName(SCREENSHOTS);
+                            ob.Screenshots = new String[nodeScreenshots.getLength()];
+                            for (int j = 0; j < nodeScreenshots.getLength(); j++)
+                                ob.Screenshots[j] = parser.getValue((Element) nodeScreenshots.item(j), URL1);
+                            ob.Category = parser.getValue(elementApp, CATEGORY);
+                            ob.Type = parser.getValue(elementApp, TYPE);
+                            ob.Author = parser.getValue(elementApp, AUTHOR_NAME);
+                            ob.AuthorEmail = parser.getValue(elementApp, AUTHOR_EMAIL);
+                            System.out.println(ob.Name + ob.AppIcon);
+                            appList.add(ob);
+                        }
+                        Thread.sleep(1000);
+                        Intent i = new Intent(getBaseContext(), HomeActivity.class);
+                        startActivity(i);
+                        //Remove activity
+                        finish();
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
+            };
+            // start thread
+            background.start();
+        }
+        }
+        catch(Exception e){System.out.println(e.getMessage());
+        }
+    }
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        System.out.println(activeNetworkInfo != null && activeNetworkInfo.isConnected());
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

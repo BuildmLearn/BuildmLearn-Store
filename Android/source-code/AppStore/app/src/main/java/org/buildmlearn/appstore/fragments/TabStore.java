@@ -24,7 +24,7 @@ public class TabStore extends Fragment {
         rv.setHasFixedSize(true);
         GridLayoutManager llm = new GridLayoutManager(v.getContext(),3);
         rv.setLayoutManager(llm);
-        CardViewAdapter adapter = new CardViewAdapter(SplashActivity.appList);
+        CardViewAdapter adapter = new CardViewAdapter(SplashActivity.appList,v.getContext());
         rv.setAdapter(adapter);
         return v;
     }
