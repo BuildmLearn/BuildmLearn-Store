@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         android:background="@color/primary"
-        android:elevation="4dp"
+        android:elevation="7dp"
         android:paddingTop="@dimen/tool_bar_top_padding" />
     <FrameLayout
         android:id="@+id/content_frame"

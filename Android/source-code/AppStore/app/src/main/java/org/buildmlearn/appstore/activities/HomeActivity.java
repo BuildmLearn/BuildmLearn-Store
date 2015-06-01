@@ -4,13 +4,17 @@ package org.buildmlearn.appstore.activities;
  * Created by Srujan Jha on 25-05-2015.
  */
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.ViewPagerAdapter;
+import org.buildmlearn.appstore.models.CategoriesCard;
 import org.buildmlearn.appstore.utils.SlidingTabLayout;
 
 public class HomeActivity extends NavigationActivity {
@@ -60,4 +64,13 @@ public class HomeActivity extends NavigationActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    public void CategoryCardPressed(View v)
+    {
+        String tag=v.getTag().toString();
+        Intent i = new Intent(this, CategoriesView.class);
+        i.putExtra("Category", CategoriesCard.CategoryName[Integer.parseInt(tag)]);
+        startActivity(i);
+
+    }
+
 }

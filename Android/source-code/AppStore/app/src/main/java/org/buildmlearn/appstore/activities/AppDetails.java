@@ -6,9 +6,11 @@ package org.buildmlearn.appstore.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.PopupMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
@@ -30,6 +32,7 @@ public class AppDetails extends NavigationActivity {
     private static NetworkImageView mAppScreenshot1;
     private static NetworkImageView mAppScreenshot2;
     private static boolean TxtShowMore=false;
+    private static ImageButton btnShowMore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,25 @@ public class AppDetails extends NavigationActivity {
         else mAppTxtMore.setVisibility(View.INVISIBLE);
         mAppAdditionalInfo.setText("Author: \nAuthor Email: \n Category: \nType: ");
         mAppAdditionalDetails.setText(mApp.Author+"\n"+mApp.AuthorEmail+"\n"+mApp.Category+"\n"+mApp.Type);
+        btnShowMore = (ImageButton) findViewById(R.id.btn_More_Details);
+        btnShowMore.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                //Creating the instance of PopupMenu
+                PopupMenu popup = new PopupMenu(AppDetails.this, btnShowMore);
+                //Inflating the Popup using xml file
+                popup.getMenuInflater().inflate(R.menu.menu_popup_details, popup.getMenu());
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+
+                        return true;
+                    }
+                });
+                popup.show();//showing popup menu
+            }
+        });//closing the setOnClickListener method
     }
     public void showMore(View v)
     {

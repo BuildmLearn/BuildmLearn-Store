@@ -16,5 +16,6 @@
 
     <string name="search_hint">Science</string>
     <string name="title_activity_categories_view">CategoriesView</string>
+    <string name="title_activity_apps">AppsActivity</string>
 
 </resources>

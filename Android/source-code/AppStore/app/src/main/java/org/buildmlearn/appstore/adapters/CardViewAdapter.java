@@ -4,10 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Parcelable;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -35,6 +38,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         TextView appSubTitle;
         NetworkImageView appLogo;
         ImageLoader imageLoader;
+        ImageButton btnShowMore;
 
         CardViewHolder(View itemView) {
             super(itemView);
@@ -43,6 +47,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
             appTitle = (TextView) itemView.findViewById(R.id.sCardTitle);
             appSubTitle = (TextView) itemView.findViewById(R.id.sCardSubTitle);
             appLogo = (NetworkImageView) itemView.findViewById(R.id.sCardLogo);
+            btnShowMore = (ImageButton) itemView.findViewById(R.id.btn_More_Cards);
             itemView.setOnClickListener(this);
             itemView.setOnLongClickListener(this);
         }
@@ -102,8 +107,12 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
     }
 
     @Override
-    public void onBindViewHolder(CardViewHolder cardViewHolder, int i) {
-        cardViewHolder.appTitle.setText(apps.get(i).Name);
+    public void onBindViewHolder(final CardViewHolder cardViewHolder, int i) {
+        if(apps.get(i).Name.length()<12)
+            cardViewHolder.appTitle.setText(apps.get(i).Name);
+        else
+            cardViewHolder.appTitle.setText(apps.get(i).Name.substring(0,9)+"...");
+
         cardViewHolder.appSubTitle.setText(apps.get(i).Author);
         cardViewHolder.appLogo.setImageUrl(apps.get(i).AppIcon, cardViewHolder.imageLoader);
         //cardViewHolder.appLogo.setImageBitmap(apps.get(i).BAppIcon);
@@ -113,12 +122,30 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                 if (isLongClick) {
                     // View v at position pos is long-clicked.
                 } else {
-                    Intent i=new Intent(mContext, AppDetails.class);
-                    i.putExtra("App",(Parcelable)apps.get(pos));
+                    Intent i = new Intent(mContext, AppDetails.class);
+                    i.putExtra("App", (Parcelable) apps.get(pos));
                     mContext.startActivity(i);
                 }
             }
         });
+        cardViewHolder.btnShowMore.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                //Creating the instance of PopupMenu
+                PopupMenu popup = new PopupMenu(mContext, cardViewHolder.btnShowMore);
+                //Inflating the Popup using xml file
+                popup.getMenuInflater().inflate(R.menu.menu_popup_apps, popup.getMenu());
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+
+                        return true;
+                    }
+                });
+                popup.show();//showing popup menu
+            }
+        });//closing the setOnClickListener method
     }
 
     @Override

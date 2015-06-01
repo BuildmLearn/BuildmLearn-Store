@@ -12,7 +12,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".activities.HomeActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".activities.SplashActivity"
@@ -27,12 +28,14 @@
         </activity>
         <activity
             android:name=".activities.AppDetails"
-            android:label="@string/title_activity_app_details" >
+            android:label="@string/title_activity_app_details"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".activities.CategoriesActivity"
             android:label="@string/title_activity_categories"
-            android:parentActivityName=".activities.HomeActivity" >
+            android:parentActivityName=".activities.HomeActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.buildmlearn.appstore.activities.HomeActivity" />
@@ -40,7 +43,8 @@
         <activity
             android:name=".activities.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".activities.HomeActivity" >
+            android:parentActivityName=".activities.HomeActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.buildmlearn.appstore.activities.HomeActivity" />
@@ -48,7 +52,8 @@
         <activity
             android:name=".activities.SearchResultsActivity"
             android:label="@string/title_activity_search_results"
-            android:parentActivityName=".activities.HomeActivity" >
+            android:parentActivityName=".activities.HomeActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.buildmlearn.appstore.activities.HomeActivity" />
@@ -59,10 +64,19 @@
         <activity
             android:name=".activities.CategoriesView"
             android:label="@string/title_activity_categories_view"
-            android:parentActivityName=".activities.CategoriesActivity" >
+            android:parentActivityName=".activities.CategoriesActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.buildmlearn.appstore.activities.CategoriesActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AppsActivity"
+            android:label="@string/title_activity_apps"
+            android:parentActivityName=".activities.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.buildmlearn.appstore.activities.HomeActivity" />
         </activity>
     </application>
 
