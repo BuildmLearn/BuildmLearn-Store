@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
  */
 public class AppInfo {
     public String Name,Description,Category,Author,AuthorEmail;
+    public int Type;
     public Bitmap AppIcon;
     public Bitmap[] Screenshots;
 }

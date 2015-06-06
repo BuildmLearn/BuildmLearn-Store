@@ -59,12 +59,6 @@ public class TabStore extends Fragment {
         imgCard4.setImageResource(CategoriesCard.CategoryImage[rndList.get(3)]);
         imgCard4.setTag(rndList.get(3));
         txtCard4.setText(CategoriesCard.CategoryName[rndList.get(3)]);
-        RecyclerView rv = (RecyclerView) v.findViewById(R.id.rvAppCard);
-        //rv.setHasFixedSize(true);
-        GridLayoutManager llm = new GridLayoutManager(v.getContext(), 3);
-        rv.setLayoutManager(llm);
-        CardViewAdapter adapter = new CardViewAdapter(SplashActivity.appList, v.getContext());
-        rv.setAdapter(adapter);
 
         TextView txtMoreApps = (TextView) v.findViewById(R.id.txtMoreApps);
         TextView txtMoreCategories = (TextView) v.findViewById(R.id.txtMoreCategories);
@@ -82,6 +76,15 @@ public class TabStore extends Fragment {
                 startActivity(i);
             }
         });
+
+        RecyclerView rv = (RecyclerView) v.findViewById(R.id.rvAppCard);
+        //rv.setHasFixedSize(true);
+        GridLayoutManager llm = new GridLayoutManager(v.getContext(), 3);
+        rv.setLayoutManager(llm);
+        CardViewAdapter adapter = new CardViewAdapter(SplashActivity.appList, v.getContext());
+        rv.setAdapter(adapter);
+
+
         return v;
     }
 }

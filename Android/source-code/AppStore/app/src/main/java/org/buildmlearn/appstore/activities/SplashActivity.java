@@ -221,7 +221,7 @@ public class SplashActivity extends Activity {
     {
         try{
         if(!isNetworkAvailable())
-        {System.out.println("Not Available");
+        {//System.out.println("Not Available");
             mInternet=false;
             MaterialDialog mAlertDialog=new MaterialDialog(this)
                     .setTitle("Network Connectivity")
@@ -261,7 +261,7 @@ public class SplashActivity extends Activity {
                             ob.Type = parser.getValue(elementApp, TYPE);
                             ob.Author = parser.getValue(elementApp, AUTHOR_NAME);
                             ob.AuthorEmail = parser.getValue(elementApp, AUTHOR_EMAIL);
-                            System.out.println(ob.Name + ob.AppIcon);
+                            //System.out.println(ob.Name + ob.AppIcon);
                             appList.add(ob);
                         }
                         Thread.sleep(1000);
@@ -270,7 +270,7 @@ public class SplashActivity extends Activity {
                         //Remove activity
                         finish();
                     } catch (Exception e) {
-                        System.out.println(e.getMessage());
+                        e.printStackTrace();
                     }
                 }
             };
@@ -278,14 +278,14 @@ public class SplashActivity extends Activity {
             background.start();
         }
         }
-        catch(Exception e){System.out.println(e.getMessage());
+        catch(Exception e){e.printStackTrace();
         }
     }
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        System.out.println(activeNetworkInfo != null && activeNetworkInfo.isConnected());
+        //System.out.println(activeNetworkInfo != null && activeNetworkInfo.isConnected());
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

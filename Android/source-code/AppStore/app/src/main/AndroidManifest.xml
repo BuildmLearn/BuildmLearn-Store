@@ -78,6 +78,48 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.buildmlearn.appstore.activities.HomeActivity" />
         </activity>
+
+        <activity
+            android:name=".activities.StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+        android:name=".activities.InfoActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait" >
+    </activity>
+        <activity
+            android:name=".activities.InfoDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.QuestionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.ScoreActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SpellingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.WordInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.FlashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
     </application>
 
 </manifest>

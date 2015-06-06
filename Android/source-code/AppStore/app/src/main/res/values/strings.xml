@@ -17,5 +17,33 @@
     <string name="search_hint">Science</string>
     <string name="title_activity_categories_view">CategoriesView</string>
     <string name="title_activity_apps">AppsActivity</string>
+	
+	<string name="app_quiz">Quiz Time</string>
+    <string name="app_info">Basic mLearning</string>
+    <string name="app_flashcards">Learn with FlashCards</string>
+    <string name="app_spelling">Learn Spellings</string>
+    <string name="msg_txt">Press SPEAK when you are ready. You may adjust the speech rate using the slider. Listen to the word as many times before answering. If you are not sure, you can skip the word.</string>
+    <string name="speak">Listen</string>
+    <string name="ready">Spell it!</string>
+    <string name="submit">SUBMIT</string>
+    <string name="enter_spelling">Enter Spelling</string>
+    <string name="msg_successful">Great! You got it right</string>
+    <string name="msg_failure">This is not the correct spelling</string>
+    <string name="nxt_word">Next Word</string>
+    <string name="restart">Restart</string>
+    <string name="exit">Exit</string>
+    <string name="correct">Correct Spelled:</string>
+    <string name="wrong_spelled">Wrong Spelled:</string>
+    <string name="last_word">That was the last word</string>
+    <string name="skip">Skip</string>
+    <string name="unanswered">Unanswered:</string>
+    <string name="you_entered">You Entered</string>
+    <string name="normal">Normal</string>
+    <string name="low">Low</string>
+    <string name="high">High</string>
+    <string name="speech_rate">Speech Rate:</string>
+    <string name="about_us">This application has been developed using the BuildmLearn Toolkit.\n\nTo know more about BuildmLearn Toolkit visit http://buildmlearn.org/</string>
+    <string name="action_info">Info</string>
+
 
 </resources>

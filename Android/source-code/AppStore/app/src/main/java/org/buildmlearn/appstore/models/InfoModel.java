@@ -12,7 +12,6 @@ public class InfoModel {
 	private String mInfoName;
 	private String mInfoAuthor;
 	private ArrayList<String> mListTitleList;
-	
 	private HashMap<String, String> mInfoMap;
 
 	public static InfoModel mModel;
