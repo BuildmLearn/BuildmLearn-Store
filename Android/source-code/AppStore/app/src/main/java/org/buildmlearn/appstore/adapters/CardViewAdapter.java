@@ -112,7 +112,6 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
             cardViewHolder.appTitle.setText(apps.get(i).Name);
         else
             cardViewHolder.appTitle.setText(apps.get(i).Name.substring(0,9)+"...");
-
         cardViewHolder.appSubTitle.setText(apps.get(i).Author);
         cardViewHolder.appLogo.setImageUrl(apps.get(i).AppIcon, cardViewHolder.imageLoader);
         //cardViewHolder.appLogo.setImageBitmap(apps.get(i).BAppIcon);
