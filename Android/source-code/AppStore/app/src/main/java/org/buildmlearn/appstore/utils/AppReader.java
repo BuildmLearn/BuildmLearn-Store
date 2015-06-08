@@ -37,7 +37,6 @@ import java.util.HashMap;
 
 public class AppReader {
     private static BufferedReader br;
-    private static HashMap<String, String> mInfoMap = new HashMap<String, String>();
 
     public static ArrayList<AppInfo> listApps(Context context) {
 
@@ -99,6 +98,7 @@ public class AppReader {
         InfoModel model = InfoModel.getInstance();
         ArrayList<String> stringList = new ArrayList<String>();
         try {
+            HashMap<String, String> mInfoMap = new HashMap<String, String>();
             XMLParser parser = new XMLParser();
             br = new BufferedReader(new InputStreamReader(myContext.getAssets().open(fileName))); // throwing a FileNotFoundException
             String xml = "", temp = "";
@@ -136,27 +136,35 @@ public class AppReader {
         ArrayList<Question> mQuestionList = new ArrayList<Question>();
 
         try {
-            br = new BufferedReader(new InputStreamReader(myContext.getAssets()
-                    .open(fileName))); // throwing a
-            // FileNotFoundException?
+            XMLParser parser = new XMLParser();
 
-            model.setQuizName(br.readLine());
-            model.setQuizAuthor(br.readLine());
-            String text;
-            while ((text = br.readLine()) != null) {
+            br = new BufferedReader(new InputStreamReader(myContext.getAssets().open(fileName))); // throwing a FileNotFoundException
+            String xml = "", temp = "";
+            while ((temp = br.readLine()) != null) {
+                xml += temp;
+            } //getting xml
+            Document doc = parser.getDomElement(xml); // getting DOM element
+            Element elementAuthor = (Element) doc.getElementsByTagName("author").item(0);
+            model.setQuizAuthor(parser.getValue(elementAuthor, "name"));
+            model.setQuizName(fileName.substring(5, fileName.length() - 12));
+            NodeList nodeList = doc.getElementsByTagName("item");
+            NodeList optionList=doc.getElementsByTagName("option");
+            int index=0;
+            // looping through all item nodes <app>
+            for (int i = 0; i < nodeList.getLength(); i++) {
+
+                Element elementInfo = (Element) nodeList.item(i);
                 ArrayList<String> mOptionList = new ArrayList<String>();
                 Question ques = new Question();
-                String[] temp = text.split("==");
-                ques.setQuestion(temp[0]);
-                for (int i = 1; i < temp.length - 1; i++) {
-                    mOptionList.add(temp[i]);
+                ques.setQuestion(parser.getValue(elementInfo, "question"));
+
+                for (int j = 0; j < 4; j++) {
+                    mOptionList.add(parser.getElementValue(optionList.item(index++)));
                 }
                 ques.setAnswerOption(mOptionList);
-                ques.setOptionNumber(Integer.parseInt(temp[temp.length - 1]));
-
+                ques.setOptionNumber(Integer.parseInt(parser.getValue(elementInfo, "answer")));
                 mQuestionList.add(ques);
             }
-
             model.setQueAnsList(mQuestionList);
         } catch (IOException e) {
             e.printStackTrace();
@@ -171,26 +179,31 @@ public class AppReader {
 
     public static void readSpellingsContent(Context myContext, String fileName) {
 
-        SpellingsModel mSpellingModel = SpellingsModel.getInstance();
-        ArrayList<WordModel> mWordList = new ArrayList<WordModel>();
+        SpellingsModel model = SpellingsModel.getInstance();
+        ArrayList<WordModel> wordList = new ArrayList<WordModel>();
         try {
-            br = new BufferedReader(new InputStreamReader(myContext.getAssets()
-                    .open(fileName))); // throwing a
+            XMLParser parser = new XMLParser();
+            br = new BufferedReader(new InputStreamReader(myContext.getAssets().open(fileName))); // throwing a FileNotFoundException
+            String xml = "", temp = "";
+            while ((temp = br.readLine()) != null) {
+                xml += temp;
+            } //getting xml
+            Document doc = parser.getDomElement(xml); // getting DOM element
+            Element elementAuthor = (Element) doc.getElementsByTagName("author").item(0);
+            model.setPuzzleAuthor(parser.getValue(elementAuthor, "name"));
+            model.setPuzzleName(fileName.substring(5, fileName.length() - 12));
+            NodeList nodeList = doc.getElementsByTagName("item");
+            // looping through all item nodes <app>
+            for (int i = 0; i < nodeList.getLength(); i++) {
 
-            mSpellingModel.setPuzzleName(br.readLine());
-            mSpellingModel.setPuzzleAuthor(br.readLine());
-            String text;
-            while ((text = br.readLine()) != null) {
-                if (text.contains("==")) {
-                    String[] spelling = text.split("==");
-                    int startIndex = spelling[0].length() + 2;
-                    String des = text.substring(startIndex);
-                    mWordList.add(new WordModel(spelling[0], des));
-                }
+                Element elementInfo = (Element) nodeList.item(i);
+                WordModel word = new WordModel(
+                        parser.getValue(elementInfo, "word"),
+                        parser.getValue(elementInfo, "meaning"));
+                wordList.add(word);
             }
-            mSpellingModel.setSpellingsList(mWordList);
-
-        } catch (IOException e) {
+            model.setSpellingsList(wordList);
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {
@@ -201,63 +214,42 @@ public class AppReader {
         }
     }
 
-    public static void readFlashContent(Context myContext, String folderPath) {
+    public static void readFlashContent(Context myContext, String fileName) {
 
-        FlashModel mModel = FlashModel.getInstance();
-        String filePath = null;
-        ArrayList<String> mFileList = new ArrayList<String>();
-        ArrayList<Card> mCardsList = new ArrayList<Card>();
-        Resources res = myContext.getResources(); // if you are in an activity
-        AssetManager am = res.getAssets();
-        String fileList[];
+        FlashModel model = FlashModel.getInstance();
+        ArrayList<Card> cardList = new ArrayList<Card>();
         try {
-            fileList = am.list(folderPath);
-            if (fileList != null) {
-                for (int i = 0; i < fileList.length; i++) {
-                    Log.d("", fileList[i]);
-                    if (fileList[i].endsWith(".txt")) {
-                        filePath = fileList[i];
-                        break;
-                    }
-                    // mFileList.add(fileList[i]);
-                }
-            }
+            XMLParser parser = new XMLParser();
+            br = new BufferedReader(new InputStreamReader(myContext.getAssets().open(fileName))); // throwing a FileNotFoundException
+            String xml = "", temp = "";
+            while ((temp = br.readLine()) != null) {
+                xml += temp;
+            } //getting xml
+            Document doc = parser.getDomElement(xml); // getting DOM element
+            Element elementAuthor = (Element) doc.getElementsByTagName("author").item(0);
+            model.setAuthor(parser.getValue(elementAuthor, "name"));
+            model.setName(fileName.substring(5, fileName.length() - 12));
+            NodeList nodeList = doc.getElementsByTagName("item");
+            // looping through all item nodes <app>
+            for (int i = 0; i < nodeList.getLength(); i++) {
 
-            br = new BufferedReader(new InputStreamReader(myContext.getAssets()
-                    .open(folderPath + File.separator + filePath))); // throwing a FileNotFoundException?
-            mModel.setName(br.readLine());
-            mModel.setAuthor(br.readLine());
-            String text;
-            int index = 0;
-            while ((text = br.readLine()) != null) {
-                String que = "", ans = "", hint = "", imagepath = "";
-                String[] dataLine = text.split("__");
-                if (dataLine[0].equals("IMAGE")) {
-                    imagepath = folderPath + File.separator + "IMAGE" + index
-                            + ".png";
-					/*
-					 * Resources r = myContext.getResources(); int picId =
-					 * r.getIdentifier( "image" + String.valueOf(index),
-					 * "drawable", "com.buildmlearnstore.activities");
-					 */
-                }
-                String[] dataArray = dataLine[1].split("==");
-                // TextView answerText = (TextView)
-                // findViewById(R.id.answerText);
-                // answerText.setText(dataArray[1]);
-                ans = dataArray[1];
-
-                hint = dataArray[0];
-                if (dataArray.length == 3) {
-                    que = dataArray[2];
-                }
-                mCardsList.add(new Card(que, ans, hint, imagepath));
-                index++;
+                Element elementInfo = (Element) nodeList.item(i);
+                Card card = new Card(
+                        parser.getValue(elementInfo, "question"),
+                        parser.getValue(elementInfo, "answer"),
+                        parser.getValue(elementInfo, "hint"),
+                        parser.getValue(elementInfo, "image"));
+                cardList.add(card);
             }
-            mModel.setList(mCardsList);
-            br.close();
-        } catch (IOException e) {
+            model.setList(cardList);
+        } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            try {
+                br.close(); // stop reading
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 }

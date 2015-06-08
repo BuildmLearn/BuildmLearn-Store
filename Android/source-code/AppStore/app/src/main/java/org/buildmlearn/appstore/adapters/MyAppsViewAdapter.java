@@ -110,13 +110,11 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
                 if (isLongClick) {
                     // View v at position pos is long-clicked.
                 } else {
-                    if(apps.get(pos).Type==0) {
                         Intent i = new Intent(mContext, StartActivity.class);
                         i.putExtra("option", apps.get(pos).Type);
                         i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
                         mContext.startActivity(i);
-                    }
-                    else Toast.makeText(mContext,"Only Info-apps(Festivals) are functional now.",Toast.LENGTH_LONG).show();
+                   //Toast.makeText(mContext,"Only Info-apps(Festivals) are functional now.",Toast.LENGTH_LONG).show();
                 }
             }
         });

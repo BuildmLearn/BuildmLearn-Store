@@ -4,6 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="TextDimTop">4dp</dimen>
     <dimen name="tool_bar_top_padding">0dp</dimen>
-<dimen name="card_width">300dp</dimen>
+    <dimen name="card_width">300dp</dimen>
     <dimen name="card_height">250dp</dimen>
+    <dimen name="card_spacing">2dp</dimen>
 </resources>
