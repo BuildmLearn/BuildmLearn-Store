@@ -4,15 +4,13 @@ package org.buildmlearn.appstore.activities;
  * Created by Srujan Jha on 06-06-2015.
  */
 
-import java.io.IOException;
 import java.util.ArrayList;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Base64;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
@@ -44,7 +42,6 @@ public class FlashActivity extends AppCompatActivity implements
 
 	private FlashModel mFlashModel;
 	private ArrayList<Card> mCardList;
-	private Drawable d;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -145,14 +142,13 @@ public class FlashActivity extends AppCompatActivity implements
 		if (mCardList.get(index).getImagePath() != null) {
 			questionImage.setVisibility(View.VISIBLE);
 			try {
-				d = Drawable.createFromStream(
-						getAssets().open(mCardList.get(index).getImagePath()),
-						null);
-			} catch (IOException e) {
+				byte[] decodedString = Base64.decode(mCardList.get(index).getImagePath(), Base64.DEFAULT);
+				Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+				questionImage.setImageBitmap(decodedByte);
+			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			questionImage.setImageDrawable(d);
 			// questionImage.setImageBitmap(mBitmap);
 		} else {
 			questionImage.setVisibility(View.GONE);

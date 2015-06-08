@@ -59,46 +59,6 @@ public class QuestionActivity extends AppCompatActivity {
 		iRadButtonList.add(iRad2);
 		iRadButtonList.add(iRad3);
 
-		iSubmitButton = (Button) findViewById(R.id.submit_button);
-		iSubmitButton.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				int selectedAnswer = getSelectedAnswer();
-				if (selectedAnswer == -1) {
-					Toast.makeText(QuestionActivity.this,
-							"Please select an answer!", 1000).show();
-				} else if (selectedAnswer != -1
-						&& selectedAnswer == iCurrentCorrectAnswer) {
-					iRadButtonList.get(iCurrentCorrectAnswer)
-							.setBackgroundColor(Color.GREEN);
-					Toast.makeText(QuestionActivity.this,
-							"That's the correct answer!", 1000).show();
-					mQuizModel.setTotalCorrect(mQuizModel.getTotalCorrect()+1);
-					//gd.correct++;
-					
-					iSubmitButton.setEnabled(false);
-					/*
-					 * iSubmitButton.setVisibility(View.GONE);
-					 * iNextButton.setVisibility(View.VISIBLE);
-					 */
-				} else {
-					iRadButtonList.get(selectedAnswer).setBackgroundColor(
-							Color.RED);
-					iRadButtonList.get(iCurrentCorrectAnswer)
-							.setBackgroundColor(Color.GREEN);
-					Toast.makeText(QuestionActivity.this,
-							"Sorry, wrong answer!", 1000).show();
-					mQuizModel.setTotalWrong(mQuizModel.getTotalWrong()+1);
-					iSubmitButton.setEnabled(false);
-					//gd.wrong++;
-					// iSubmitButton.setVisibility(View.GONE);
-					// iNextButton.setVisibility(View.VISIBLE);
-
-				}
-			}
-		});
-
 		iNextButton = (Button) findViewById(R.id.next_button);
 		iNextButton.setOnClickListener(new OnClickListener() {
 
@@ -130,6 +90,71 @@ public class QuestionActivity extends AppCompatActivity {
 		});
 		// iNextButton.setVisibility(View.GONE);
 
+		iRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(RadioGroup group, int checkedId) {
+				group.setEnabled(false);
+				iRad0.setEnabled(false);
+				iRad1.setEnabled(false);
+				iRad2.setEnabled(false);
+				iRad3.setEnabled(false);
+
+				int answer = R.id.radio0;
+				switch (iCurrentCorrectAnswer) {
+					case 1:
+						answer = R.id.radio0;
+						break;
+					case 2:
+						answer = R.id.radio1;
+						break;
+					case 3:
+						answer = R.id.radio2;
+						break;
+					case 4:
+						answer = R.id.radio3;
+						break;
+				}
+				RadioButton yourAnswer = (RadioButton) findViewById(checkedId);
+				RadioButton originalAnswer = (RadioButton) findViewById(answer);
+				if (iRad0.isChecked() || iRad1.isChecked() || iRad2.isChecked() || iRad3.isChecked()) {
+					if (iRadioGroup.getCheckedRadioButtonId() == answer)
+						mQuizModel.setTotalCorrect(mQuizModel.getTotalCorrect()+1);
+					else {
+						mQuizModel.setTotalWrong(mQuizModel.getTotalWrong() + 1);
+						yourAnswer.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
+					}
+				}
+				originalAnswer.setTextColor(getResources().getColor(android.R.color.holo_green_light));
+
+
+			}
+		});
+		iNextButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+				if(iQuestionIndex==mQuestionAnsList.size()-2){iQuestionIndex++;populateQuestion(iQuestionIndex);iNextButton.setText("Submit");}
+				else if(iQuestionIndex==mQuestionAnsList.size()-1){
+					Intent i=new Intent(QuestionActivity.this,ScoreActivity.class);
+					startActivity(i);
+					finish();
+				}
+				else
+				{
+					iQuestionIndex++;populateQuestion(iQuestionIndex);
+				}
+				iRadioGroup.clearCheck();
+				iRadioGroup.setEnabled(true);
+				iRad0.setTextColor(getResources().getColor(android.R.color.white));
+				iRad1.setTextColor(getResources().getColor(android.R.color.white));
+				iRad2.setTextColor(getResources().getColor(android.R.color.white));
+				iRad3.setTextColor(getResources().getColor(android.R.color.white));
+				iRad0.setEnabled(true);
+				iRad1.setEnabled(true);
+				iRad2.setEnabled(true);
+				iRad3.setEnabled(true);
+			}
+		});
 		populateQuestion(iQuestionIndex);
 
 	}
