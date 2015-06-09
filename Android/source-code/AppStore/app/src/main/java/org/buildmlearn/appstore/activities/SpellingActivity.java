@@ -29,7 +29,7 @@ public class SpellingActivity extends AppCompatActivity implements
 		TextToSpeech.OnInitListener {
 	private TextToSpeech textToSpeech;
 	private ArrayList<WordModel> mWordList;
-	private int count;
+	private int count=0;
 	private AlertDialog mAlert;
 	private TextView mTv_WordNumber;
 	private Button mBtn_Spell, mBtn_Skip;
@@ -75,6 +75,7 @@ public class SpellingActivity extends AppCompatActivity implements
 				mBtn_Spell.setTextColor(Color.WHITE);
 			} else {
 				Intent resultIntent = new Intent(this, ScoreActivity.class);
+				resultIntent.putExtra("Activity",1);// 0: Quiz Template and 1: Spellings Template
 				startActivity(resultIntent);
 				finish();
 

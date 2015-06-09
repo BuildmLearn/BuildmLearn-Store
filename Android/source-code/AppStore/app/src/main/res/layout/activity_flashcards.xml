@@ -40,7 +40,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Previous"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
 
         <Button
             android:id="@+id/flip_button"
@@ -48,15 +51,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Flip"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black"/>
 
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
         <Button
             android:id="@+id/next_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Next"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black"/>
     </LinearLayout>
 
     <FrameLayout
@@ -68,12 +74,12 @@
 
         <include
             android:id="@+id/questionInMain"
-            android:layout_margin="5dp"
             layout="@layout/question"/>
 
         <include
             android:id="@+id/answerInMain"
             layout="@layout/answer"/>
+
     </FrameLayout>
 
     <TextView
@@ -84,7 +90,7 @@
         android:layout_marginBottom="3dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="10dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@android:color/white"
         android:textSize="16sp" />

@@ -1,11 +1,18 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="@dimen/card_width"
     android:layout_height="@dimen/card_width"
-    android:layout_gravity="center"
     android:background="@android:color/background_light"
-    android:gravity="center"
-    tools:context=".FlashActivity" >
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    tools:context=".FlashActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center" >
 
     <TextView
         android:id="@+id/answerText"
@@ -19,3 +26,4 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </ScrollView>
+</android.support.v7.widget.CardView>

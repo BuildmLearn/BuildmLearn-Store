@@ -130,25 +130,27 @@ System.out.println(mOption+filePath);
 			Intent infoIntent = new Intent(StartActivity.this,
 					InfoActivity.class);
 			startActivity(infoIntent);
-
+			finish();
 			break;
 
 		case 1:
 			Intent flashIntent = new Intent(StartActivity.this,
 					FlashActivity.class);
 			startActivity(flashIntent);
+			finish();
 			break;
 
 		case 2:
 			Intent quizIntent = new Intent(StartActivity.this,
 					QuestionActivity.class);
 			startActivity(quizIntent);
+			finish();
 			break;
 		case 3:
 			Intent spellingIntent = new Intent(StartActivity.this,
 					SpellingActivity.class);
 			startActivity(spellingIntent);
-			
+			finish();
 		}
 
 	}

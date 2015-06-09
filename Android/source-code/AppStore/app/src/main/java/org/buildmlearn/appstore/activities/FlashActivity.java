@@ -4,17 +4,18 @@ package org.buildmlearn.appstore.activities;
  * Created by Srujan Jha on 06-06-2015.
  */
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
-import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -24,24 +25,22 @@ import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Card;
 import org.buildmlearn.appstore.models.FlashModel;
 
-public class FlashActivity extends AppCompatActivity implements
-		AnimationListener {
+public class FlashActivity extends AppCompatActivity implements Animation.AnimationListener {
 	View answerView, questionView;
 	Button flipButton;
 	Button preButton;
 	Button nextButton;
 	boolean isFlipped = false;
 	int iQuestionIndex = 0;
-	String flashCardanswer;
 	ImageView questionImage;
 	TextView flashCardText, flashcardNumber;
+	private FlashModel mFlashModel;
+	private ArrayList<Card> mCardList;
 	TextView questionText;
+	String flashCardanswer;
 	private Animation animation1;
 	private Animation animation2;
 	private View currentView;
-
-	private FlashModel mFlashModel;
-	private ArrayList<Card> mCardList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -118,12 +117,7 @@ public class FlashActivity extends AppCompatActivity implements
 
 				} else {
 					finish();
-					/*Intent myIntent = new Intent(FlashActivity.this,
-							ScoreActivity.class);
-					startActivity(myIntent);
-
-					finish();
-*/				}
+                }
 
 			}
 		});
@@ -149,6 +143,7 @@ public class FlashActivity extends AppCompatActivity implements
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			//questionImage.setImageDrawable(R.drawable.notavailable);
 			// questionImage.setImageBitmap(mBitmap);
 		} else {
 			questionImage.setVisibility(View.GONE);
@@ -156,12 +151,13 @@ public class FlashActivity extends AppCompatActivity implements
 		}
 		flashCardanswer = mCardList.get(index).getAnswer();
 
-		flashCardText.setText(mCardList.get(index).getHint());
+		questionText.setText(mCardList.get(index).getHint());
 
-		questionText.setVisibility(View.GONE);
+
+		flashCardText.setVisibility(View.GONE);
 		if (mCardList.get(index).getQuestion() != null) {
-			questionText.setVisibility(View.VISIBLE);
-			questionText.setText(mCardList.get(index).getQuestion());
+            flashCardText.setVisibility(View.VISIBLE);
+            flashCardText.setText(mCardList.get(index).getQuestion());
 		}
 
 	}

@@ -83,6 +83,7 @@ public class QuestionActivity extends AppCompatActivity {
 					reInitialize();
 					Intent myIntent = new Intent(arg0.getContext(),
 							ScoreActivity.class);
+					myIntent.putExtra("Activity",0);
 					startActivity(myIntent);
 					finish();
 				}
