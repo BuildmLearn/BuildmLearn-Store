@@ -1,12 +1,11 @@
 package org.buildmlearn.appstore.activities;
 
-import java.util.ArrayList;
-import java.util.Locale;
-
+import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
@@ -20,10 +19,12 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.SpellingsModel;
 import org.buildmlearn.appstore.models.WordModel;
 
-import org.buildmlearn.appstore.R;
+import java.util.ArrayList;
+import java.util.Locale;
 
 public class SpellingActivity extends AppCompatActivity implements
 		TextToSpeech.OnInitListener {
@@ -57,7 +58,7 @@ public class SpellingActivity extends AppCompatActivity implements
 		totalCorrect=mSpellingModel.getTotalCorrect();
 		totalWorng=mSpellingModel.getTotalWrong();
 		mTv_WordNumber.setText("Word #" + (count + 1) + " of "
-				+ mWordList.size());
+                + mWordList.size());
 	}
 
 	public void click(View view) {
@@ -83,7 +84,9 @@ public class SpellingActivity extends AppCompatActivity implements
 			break;
 
 		case R.id.btn_speak:
-			convertTextToSpeech(mWordList.get(count).getWord());
+            System.out.println("Speak"+Build.VERSION.RELEASE);
+            if (Build.VERSION.RELEASE.startsWith("5"))convertTextToSpeech21(mWordList.get(count).getWord());
+            else convertTextToSpeech(mWordList.get(count).getWord());
 			mBtn_Spell.setEnabled(true);
 			mBtn_Skip.setEnabled(true);
 			mBtn_Skip.setTextColor(Color.RED);
@@ -136,13 +139,23 @@ public class SpellingActivity extends AppCompatActivity implements
 	 * Speaks the string using the specified queuing strategy and speech
 	 * parameters.
 	 */
-	private void convertTextToSpeech(String text) {
+	@TargetApi(21)
+	private void convertTextToSpeech21(String text) {
+System.out.println("Speak"+21);
+		float speechRate = getProgressValue(mSb_SpeechRate.getProgress());
+		textToSpeech.setSpeechRate(speechRate);
+		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
+	}
 
+	private void convertTextToSpeech(String text) {
+        System.out.println("Speak"+text);
 		float speechRate = getProgressValue(mSb_SpeechRate.getProgress());
 		textToSpeech.setSpeechRate(speechRate);
 		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
-
+        while(textToSpeech.isSpeaking())System.out.print("#");
+        System.out.println("Speak");
 	}
+
 
 	@Override
 	public void onInit(int status) {

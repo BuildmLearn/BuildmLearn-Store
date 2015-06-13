@@ -16,9 +16,11 @@ public class SpellingsModel {
 	public static SpellingsModel mSpellingsModel;
 	public static void clearInstance()
     {
-        mSpellingsModel.totalCorrect=0;
-        mSpellingsModel.totalWrong=0;
-        mSpellingsModel.activeCount=0;
+		if(mSpellingsModel!=null) {
+			mSpellingsModel.totalCorrect = 0;
+			mSpellingsModel.totalWrong = 0;
+			mSpellingsModel.activeCount = 0;
+		}
     }
 	public static SpellingsModel getInstance()
 	{

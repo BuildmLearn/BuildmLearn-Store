@@ -214,14 +214,25 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:orientation="vertical">
-                    <TextView
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
                     android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/accent"
                     android:text="Reviews"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
-                    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/web_reload"
+                            android:src="@android:drawable/ic_menu_rotate"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <WebView
                         android:id="@+id/disqus"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />

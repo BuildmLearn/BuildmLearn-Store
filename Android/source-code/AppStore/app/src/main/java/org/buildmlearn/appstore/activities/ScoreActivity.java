@@ -70,10 +70,6 @@ public class ScoreActivity extends AppCompatActivity {
                     mQuizModel.clearInstance();
                     finish();
                 }
-                Intent myIntent = new Intent(arg0.getContext(),
-                        QuestionActivity.class);
-                startActivityForResult(myIntent, 0);
-                finish();
             }
         });
 
