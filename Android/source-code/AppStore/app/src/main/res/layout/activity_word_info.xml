@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BlueBg"
     android:orientation="vertical" >
 
     <TextView
@@ -12,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
         android:text="Word #"
-        android:textColor="@android:color/white"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
     <View
@@ -20,7 +19,7 @@
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:layout_below="@id/tv_word_num"
-        android:background="@android:color/white" />
+        android:background="@color/primary_text" />
 
     <TextView
         android:id="@+id/tv_result"
@@ -65,7 +64,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
-        android:textColor="@android:color/white"
+        android:textColor="@color/primary_text"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -76,7 +75,7 @@
         android:layout_below="@id/tv_word"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
-        android:textColor="@android:color/white"
+        android:textColor="@color/primary_text"
         android:textSize="18sp" />
 
     <Button
@@ -86,8 +85,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
+        android:background="@color/primary_dark"
         android:onClick="doClick"
         android:text="@string/nxt_word"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/primary_text" />
 
 </RelativeLayout>

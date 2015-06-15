@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/BlueBg" >
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/question_no"
@@ -11,7 +10,7 @@
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/white" >
+        android:textColor="@color/primary_dark" >
     </TextView>
 
     <View
@@ -21,7 +20,7 @@
         android:layout_below="@id/question_no"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="#8798AC" >
+        android:background="@color/divider" >
     </View>
 
     <TextView
@@ -31,7 +30,7 @@
         android:layout_below="@id/divider"
         android:layout_margin="10dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/white" >
+        android:textColor="@color/primary_text" >
     </TextView>
 
     <RadioGroup
@@ -47,8 +46,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:onClick="radioClick"
-            android:textColor="@android:color/white" >
-        </RadioButton>
+            android:textColor="@color/primary_text" />
 
         <RadioButton
             android:id="@+id/radio1"
@@ -56,8 +54,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:onClick="radioClick"
-            android:textColor="@android:color/white" >
-        </RadioButton>
+            android:textColor="@color/primary_text" />
 
         <RadioButton
             android:id="@+id/radio2"
@@ -66,8 +63,7 @@
             android:checked="false"
             android:onClick="radioClick"
             android:text="RadioButton"
-            android:textColor="@android:color/white" >
-        </RadioButton>
+            android:textColor="@color/primary_text" />
 
         <RadioButton
             android:id="@+id/radio3"
@@ -75,8 +71,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:onClick="radioClick"
-            android:textColor="@android:color/white" >
-        </RadioButton>
+            android:textColor="@color/primary_text" />
     </RadioGroup>
 
     <LinearLayout
@@ -93,6 +88,7 @@
             android:layout_weight="1"
             android:padding="10dp"
             android:text="Next"
+            android:background="@color/BlueBg"
             android:textColor="@android:color/white" >
         </Button>
 

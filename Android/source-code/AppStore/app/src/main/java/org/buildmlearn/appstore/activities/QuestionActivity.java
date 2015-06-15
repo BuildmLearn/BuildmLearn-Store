@@ -4,26 +4,24 @@ package org.buildmlearn.appstore.activities;
  * Created by Srujan Jha on 06-06-2015.
  */
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Question;
 import org.buildmlearn.appstore.models.QuizModel;
 
-public class QuestionActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class QuestionActivity extends NavigationActivity {
 
 	private TextView iQuestion_no_Label;
 	private TextView iQuestionLabel;
@@ -40,9 +38,10 @@ public class QuestionActivity extends AppCompatActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.questions_view);
+		getLayoutInflater().inflate(R.layout.questions_view, frameLayout);
 		mQuizModel=QuizModel.getInstance();
 		mQuestionAnsList=mQuizModel.getQueAnsList();
+		getSupportActionBar().setTitle(mQuizModel.getQuizName());
 
 		iQuestion_no_Label = (TextView) findViewById(R.id.question_no);
 		iQuestionLabel = (TextView) findViewById(R.id.question_label);
@@ -146,10 +145,10 @@ public class QuestionActivity extends AppCompatActivity {
 				}
 				iRadioGroup.clearCheck();
 				iRadioGroup.setEnabled(true);
-				iRad0.setTextColor(getResources().getColor(android.R.color.white));
-				iRad1.setTextColor(getResources().getColor(android.R.color.white));
-				iRad2.setTextColor(getResources().getColor(android.R.color.white));
-				iRad3.setTextColor(getResources().getColor(android.R.color.white));
+				iRad0.setTextColor(getResources().getColor(android.R.color.black));
+				iRad1.setTextColor(getResources().getColor(android.R.color.black));
+				iRad2.setTextColor(getResources().getColor(android.R.color.black));
+				iRad3.setTextColor(getResources().getColor(android.R.color.black));
 				iRad0.setEnabled(true);
 				iRad1.setEnabled(true);
 				iRad2.setEnabled(true);

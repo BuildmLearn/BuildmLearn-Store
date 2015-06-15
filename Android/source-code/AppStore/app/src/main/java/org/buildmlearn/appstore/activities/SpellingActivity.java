@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +25,7 @@ import org.buildmlearn.appstore.models.WordModel;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class SpellingActivity extends AppCompatActivity implements
+public class SpellingActivity extends NavigationActivity implements
 		TextToSpeech.OnInitListener {
 	private TextToSpeech textToSpeech;
 	private ArrayList<WordModel> mWordList;
@@ -43,7 +42,7 @@ public class SpellingActivity extends AppCompatActivity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_spelling);
+		getLayoutInflater().inflate(R.layout.activity_spelling, frameLayout);
 		mBtn_Spell = (Button) findViewById(R.id.btn_ready);
 
 		mBtn_Skip = (Button) findViewById(R.id.btn_skip);
@@ -52,7 +51,8 @@ public class SpellingActivity extends AppCompatActivity implements
 		mTv_WordNumber = (TextView) findViewById(R.id.tv_word_number);
 		textToSpeech = new TextToSpeech(this, this);
 		mSpellingModel=SpellingsModel.getInstance();
-		
+
+        getSupportActionBar().setTitle(mSpellingModel.getPuzzleName());
 		mWordList = mSpellingModel.getSpellingsList();
 		count = mSpellingModel.getActiveCount();
 		totalCorrect=mSpellingModel.getTotalCorrect();
@@ -89,8 +89,8 @@ public class SpellingActivity extends AppCompatActivity implements
             else convertTextToSpeech(mWordList.get(count).getWord());
 			mBtn_Spell.setEnabled(true);
 			mBtn_Skip.setEnabled(true);
-			mBtn_Skip.setTextColor(Color.RED);
-			mBtn_Spell.setTextColor(Color.GREEN);
+			//mBtn_Skip.setTextColor(Color.RED);
+			//mBtn_Spell.setTextColor(Color.GREEN);
 			// mBtn_Spell.setBackgroundColor(Color.GREEN);
 			// mBtn_Skip.setBackgroundColor(Color.RED);
 			break;

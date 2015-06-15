@@ -6,16 +6,15 @@ package org.buildmlearn.appstore.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.PopupMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
@@ -37,68 +36,68 @@ public class AppDetails extends NavigationActivity {
     private static NetworkImageView mAppScreenshot1;
     private static NetworkImageView mAppScreenshot2;
     private static boolean TxtShowMore=false;
-    private static ImageButton btnShowMore;
+    private static ProgressBar mProgressReviews;
     private WebView webDisqus;
+    public static String mScreenshots[];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getLayoutInflater().inflate(R.layout.activity_app_details,frameLayout);
         Intent i=getIntent();
         mApp=i.getParcelableExtra("App");
+        if(mApp==null)finish();
+        getSupportActionBar().setTitle(mApp.Name);
         mAppIcon=(NetworkImageView)findViewById(R.id.details_AppIcon);
         mAppTitle=(TextView)findViewById(R.id.details_AppTitle);
         mAppSubTitle=(TextView)findViewById(R.id.details_AppSubTitle);
         mAppDescription=(TextView)findViewById(R.id.details_AppDescription);
         mAppAdditionalInfo=(TextView)findViewById(R.id.details_AdditionalInfo);
         mAppAdditionalDetails=(TextView)findViewById(R.id.details_AdditionalDetails);
+        mProgressReviews=(ProgressBar)findViewById(R.id.progressReviews);
         mAppTxtMore=(TextView)findViewById(R.id.details_TxtMore);
         mAppScreenshot1=(NetworkImageView)findViewById(R.id.details_Screenshot1);
         mAppScreenshot2=(NetworkImageView)findViewById(R.id.details_Screenshot2);
+        mScreenshots=mApp.Screenshots;
         ImageLoader imageLoader= VolleySingleton.getInstance(this).getImageLoader();
         mAppIcon.setImageUrl(mApp.AppIcon, imageLoader);
         mAppScreenshot1.setImageUrl(mApp.Screenshots[0], imageLoader);
+        mAppScreenshot1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AppDetails.this, FullScreenViewActivity.class);
+                i.putExtra("position", 0);
+                startActivity(i);
+            }
+        });
         mAppScreenshot2.setImageUrl(mApp.Screenshots[1], imageLoader);
+        mAppScreenshot2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AppDetails.this, FullScreenViewActivity.class);
+                i.putExtra("position", 1);
+                startActivity(i);
+            }
+        });
         mAppTitle.setText(mApp.Name);
         mAppSubTitle.setText(mApp.Author);
-        if(mApp.Description.length()>40)
-        {
-            TxtShowMore=false;
-            mAppDescription.setText(mApp.Description.substring(0,40));
+        if (mApp.Description.length() > 40) {
+            TxtShowMore = false;
+            mAppDescription.setText(mApp.Description.substring(0, 40));
             mAppTxtMore.setText("MORE");
         }
         else mAppTxtMore.setVisibility(View.INVISIBLE);
         mAppAdditionalInfo.setText("Author: \nAuthor Email: \nCategory: \nType: ");
-        mAppAdditionalDetails.setText(mApp.Author+"\n"+mApp.AuthorEmail+"\n"+mApp.Category+"\n"+mApp.Type);
-        btnShowMore = (ImageButton) findViewById(R.id.btn_More_Details);
-        btnShowMore.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                //Creating the instance of PopupMenu
-                PopupMenu popup = new PopupMenu(AppDetails.this, btnShowMore);
-                //Inflating the Popup using xml file
-                popup.getMenuInflater().inflate(R.menu.menu_popup_details, popup.getMenu());
-                //registering popup with OnMenuItemClickListener
-                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    public boolean onMenuItemClick(MenuItem item) {
-
-                        return true;
-                    }
-                });
-                popup.show();//showing popup menu
-            }
-        });//closing the setOnClickListener method
-
+        mAppAdditionalDetails.setText(mApp.Author + "\n" + mApp.AuthorEmail + "\n" + mApp.Category + "\n" + mApp.Type);
         webDisqus = (WebView) findViewById(R.id.disqus);       // set up disqus
         WebSettings webSettings2 = webDisqus.getSettings();
         webSettings2.setJavaScriptEnabled(true);
         webSettings2.setBuiltInZoomControls(true);
         webDisqus.requestFocusFromTouch();
         webDisqus.setWebViewClient(new WebViewClient() {
-
             public void onPageFinished(WebView view, String url) {
+                mProgressReviews.setVisibility(View.GONE);
                 System.out.println("WebListener:"+url);
-                if(url.startsWith("http://disqus.com/"))
+                if(url.startsWith("http://disqus.com/")||url.startsWith("https://disqus.com/"))
                 {
                     webDisqus.loadData(getHtmlComment(), "text/html", null);
                     webDisqus.reload();
@@ -113,12 +112,6 @@ public class AppDetails extends NavigationActivity {
             public void onClick(View v) {
                 webDisqus.loadData(getHtmlComment(), "text/html", null);
                 webDisqus.reload();
-            }
-        });
-        webDisqus.setDownloadListener(new DownloadListener() {
-            @Override
-            public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
-                System.out.println("WebListener\n"+url+" \n"+userAgent+" \n"+contentDisposition+" \n"+mimetype+" \n"+contentLength);
             }
         });
     }

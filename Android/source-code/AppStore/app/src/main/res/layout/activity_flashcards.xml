@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4E79DE"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="5dp"
@@ -17,7 +16,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/white"
+        android:textColor="@color/primary_dark"
         android:textSize="16sp" />
 
     <View
@@ -25,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/flashCardNumber"
-        android:background="@android:color/white" />
+        android:background="@color/divider" />
 
     <LinearLayout
         android:id="@+id/ll_btnlayout"
@@ -40,7 +39,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Previous"
-            android:textColor="@android:color/black"/>
+            android:background="@color/primary"
+            android:textColor="@android:color/white"/>
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"/>
@@ -51,7 +51,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Flip"
-            android:textColor="@android:color/black"/>
+            android:background="@color/primary"
+            android:textColor="@android:color/white"/>
 
         <View
             android:layout_width="1dp"
@@ -62,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Next"
-            android:textColor="@android:color/black"/>
+            android:background="@color/primary"
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 
     <FrameLayout
@@ -92,7 +94,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/white"
+        android:textColor="@color/primary_text"
         android:textSize="16sp" />
 
 </RelativeLayout>

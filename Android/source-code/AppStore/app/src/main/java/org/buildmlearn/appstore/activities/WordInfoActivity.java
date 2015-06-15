@@ -4,15 +4,11 @@ package org.buildmlearn.appstore.activities;
  * Created by Srujan Jha on 06-06-2015.
  */
 
-import java.util.ArrayList;
-import java.util.Locale;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -21,7 +17,10 @@ import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.SpellingsModel;
 import org.buildmlearn.appstore.models.WordModel;
 
-public class WordInfoActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.Locale;
+
+public class WordInfoActivity extends NavigationActivity {
 
 	private Intent spellingIntent;
 	private boolean isCorrect;
@@ -39,10 +38,10 @@ public class WordInfoActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_word_info);
+		getLayoutInflater().inflate(R.layout.activity_word_info, frameLayout);
 		mManager = SpellingsModel.getInstance();
 		mList = mManager.getSpellingsList();
-
+		getSupportActionBar().setTitle(mManager.getPuzzleName());
 		spellingIntent = getIntent();
 		isCorrect = spellingIntent.getBooleanExtra("result", false);
 		position = spellingIntent.getIntExtra("index", 0);

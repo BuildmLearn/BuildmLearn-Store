@@ -11,7 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
@@ -19,13 +18,11 @@ import com.android.volley.toolbox.NetworkImageView;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.activities.AppDetails;
-import org.buildmlearn.appstore.activities.HomeActivity;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.VolleySingleton;
 
+import java.util.ArrayList;
 import java.util.List;
-
-import static android.support.v4.app.ActivityCompat.startActivity;
 
 /**
  * Created by Srujan Jha on 5/29/2015.
@@ -87,10 +84,13 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         }
     }
 
-    List<Apps> apps;
+    List<Apps> apps=new ArrayList<Apps>();
     private static Context mContext;
     public CardViewAdapter(List<Apps> apps,Context context) {
+        this.apps.clear();
         this.apps = apps;
+
+        System.out.println("CardviewAdapter"+this.apps.size());
         this.mContext=context;
     }
 
@@ -123,6 +123,8 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                 } else {
                     Intent i = new Intent(mContext, AppDetails.class);
                     i.putExtra("App", (Parcelable) apps.get(pos));
+                    System.out.println(apps.size());
+                    System.out.println(pos);
                     mContext.startActivity(i);
                 }
             }

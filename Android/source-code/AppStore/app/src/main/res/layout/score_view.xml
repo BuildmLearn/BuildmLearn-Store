@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/BlueBg"
     android:orientation="vertical"
     android:weightSum="1" >
 
@@ -15,7 +14,7 @@
         android:layout_margin="10dp"
         android:text="You have completed the quiz"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/white"
+        android:textColor="@color/primary"
         android:textStyle="bold" >
     </TextView>
 
@@ -24,7 +23,7 @@
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:layout_below="@id/quiz_title"
-        android:background="@android:color/white" />
+        android:background="@color/divider" />
 
     <TextView
         android:id="@+id/tv_correct"
@@ -34,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:text="Total Correct:"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/holo_green_dark"
         android:textSize="20sp" >
     </TextView>
 
@@ -46,7 +45,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:text="Total Wrong:"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp" >
     </TextView>
 
@@ -58,7 +57,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:text="Unanswered: "
-        android:textColor="@android:color/white"
+        android:textColor="@color/primary_text"
         android:textSize="20sp" >
     </TextView>
 
@@ -70,6 +69,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
         android:padding="10dp"
+        android:background="@color/BlueBg"
         android:text="Exit"
         android:textColor="@android:color/white" >
     </Button>
@@ -83,7 +83,8 @@
         android:layout_marginTop="30dp"
         android:padding="10dp"
         android:text="Restart"
-        android:textColor="@android:color/white" >
+        android:background="@color/BlueBg"
+        android:textColor="@android:color/white"  >
     </Button>
 
     <View
@@ -91,6 +92,6 @@
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:layout_above="@id/start_again_button"
-        android:background="@android:color/white" />
+        android:background="@color/divider" />
 
 </RelativeLayout>

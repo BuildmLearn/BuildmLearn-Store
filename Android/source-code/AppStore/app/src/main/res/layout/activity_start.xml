@@ -51,7 +51,7 @@
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:textAppearance="@android:style/TextAppearance.Large"
-        android:textColor="@android:color/white" >
+        android:textColor="@color/primary_text" >
     </Button>
 
 </RelativeLayout>

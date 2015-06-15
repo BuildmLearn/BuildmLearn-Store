@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:text="Enter Spelling"
+        android:textColor="@color/primary_text"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -25,7 +26,9 @@
         android:id="@+id/btn_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
         android:text="@string/submit"
+        android:background="@color/BlueBg"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </LinearLayout>

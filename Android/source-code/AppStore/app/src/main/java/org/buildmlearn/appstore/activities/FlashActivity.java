@@ -4,14 +4,9 @@ package org.buildmlearn.appstore.activities;
  * Created by Srujan Jha on 06-06-2015.
  */
 
-import java.io.IOException;
-import java.util.ArrayList;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -25,7 +20,9 @@ import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Card;
 import org.buildmlearn.appstore.models.FlashModel;
 
-public class FlashActivity extends AppCompatActivity implements Animation.AnimationListener {
+import java.util.ArrayList;
+
+public class FlashActivity extends NavigationActivity implements Animation.AnimationListener {
 	View answerView, questionView;
 	Button flipButton;
 	Button preButton;
@@ -45,16 +42,17 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_flashcards);
+		getLayoutInflater().inflate(R.layout.activity_flashcards, frameLayout);
 		mFlashModel = FlashModel.getInstance();
+		getSupportActionBar().setTitle(mFlashModel.getName());
 		mCardList = mFlashModel.getList();
 		animation1 = AnimationUtils.loadAnimation(this, R.anim.to_middle);
 		animation1.setAnimationListener(this);
 		animation2 = AnimationUtils.loadAnimation(this, R.anim.from_middle);
 		animation2.setAnimationListener(this);
 
-		questionView = (View) findViewById(R.id.questionInMain);
-		answerView = (View) findViewById(R.id.answerInMain);
+		questionView = findViewById(R.id.questionInMain);
+		answerView = findViewById(R.id.answerInMain);
 
 		questionView.setVisibility(View.VISIBLE);
 		answerView.setVisibility(View.GONE);

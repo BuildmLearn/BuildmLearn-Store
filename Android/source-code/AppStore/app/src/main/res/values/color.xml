@@ -11,5 +11,5 @@
     <color name="tabsScrollColor">#1976D2</color>
     <color name="selectedItem">#E8E8E8</color>
     <color name="activeText">#33B5E5</color>
-<color name="BlueBg">#255593</color>
+    <color name="BlueBg">#03A9F4</color>
 </resources>

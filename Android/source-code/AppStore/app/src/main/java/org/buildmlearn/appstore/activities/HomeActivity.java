@@ -7,10 +7,7 @@ package org.buildmlearn.appstore.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.ViewPagerAdapter;
@@ -34,7 +31,6 @@ public class HomeActivity extends NavigationActivity {
         // Assigning ViewPager View and setting the adapter
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(mPagerAdapter);
-
         // Assigning the Sliding Tab Layout View
         mTabs = (SlidingTabLayout) findViewById(R.id.tabs);
         mTabs.setDistributeEvenly(true); // To make the Tabs Fixed set this true, This makes the tabs Space Evenly in Available width
@@ -50,27 +46,10 @@ public class HomeActivity extends NavigationActivity {
         mTabs.setViewPager(mPager);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_home_activity, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-    public void CategoryCardPressed(View v)
-    {
+     public void CategoryCardPressed(View v)  {
         String tag=v.getTag().toString();
         Intent i = new Intent(this, CategoriesView.class);
         i.putExtra("Category", CategoriesCard.CategoryName[Integer.parseInt(tag)]);
         startActivity(i);
-
     }
-
 }
