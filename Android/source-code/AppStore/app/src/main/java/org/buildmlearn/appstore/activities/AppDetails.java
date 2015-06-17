@@ -6,13 +6,12 @@ package org.buildmlearn.appstore.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -35,6 +34,7 @@ public class AppDetails extends NavigationActivity {
     private static TextView mAppTxtMore;
     private static NetworkImageView mAppScreenshot1;
     private static NetworkImageView mAppScreenshot2;
+    private static Button mBtnShare;
     private static boolean TxtShowMore=false;
     private static ProgressBar mProgressReviews;
     private WebView webDisqus;
@@ -96,8 +96,7 @@ public class AppDetails extends NavigationActivity {
         webDisqus.setWebViewClient(new WebViewClient() {
             public void onPageFinished(WebView view, String url) {
                 mProgressReviews.setVisibility(View.GONE);
-                if(url.startsWith("http://disqus.com/")||url.startsWith("https://disqus.com/"))
-                {
+                if (url.startsWith("http://disqus.com/") || url.startsWith("https://disqus.com/")) {
                     webDisqus.loadData(getHtmlComment(), "text/html", null);
                     webDisqus.reload();
                 }
@@ -111,6 +110,20 @@ public class AppDetails extends NavigationActivity {
             public void onClick(View v) {
                 webDisqus.loadData(getHtmlComment(), "text/html", null);
                 webDisqus.reload();
+            }
+        });
+        mBtnShare=(Button)findViewById(R.id.btnShare);
+        mBtnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(android.content.Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+// Add data to the intent, the receiving app will decide what to do with it.
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
+                intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
+                intent.putExtra(Intent.EXTRA_TITLE,"BuildmLearn AppStore");
+                startActivity(Intent.createChooser(intent, "How do you want to share?"));
             }
         });
     }
@@ -141,27 +154,5 @@ public class AppDetails extends NavigationActivity {
             mAppDescription.setText(mApp.Description);
             mAppTxtMore.setText("LESS");
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_app_details, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

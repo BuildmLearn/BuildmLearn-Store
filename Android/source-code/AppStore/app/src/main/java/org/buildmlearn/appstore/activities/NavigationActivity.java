@@ -8,6 +8,7 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.database.MatrixCursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -33,9 +34,12 @@ import org.buildmlearn.appstore.models.Apps;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.drakeet.materialdialog.MaterialDialog;
+
 public class NavigationActivity extends AppCompatActivity {
     String NAME = "Srujan Jha";
     String EMAIL = "srujanjha.jha@gmail.com";
+    private MaterialDialog mAlertDialog=new MaterialDialog(NavigationActivity.this);
     private Toolbar mToolbar;                                     // Declaring the Toolbar Object
     private RecyclerView mRecyclerView;                           // Declaring RecyclerView
     private RecyclerView.Adapter mNavigationAdapter;              // Declaring Adapter For Recycler View
@@ -98,8 +102,24 @@ public class NavigationActivity extends AppCompatActivity {
                         }
                         case 4:
                         {
-                            Toast.makeText(getApplicationContext(), "Feedback is not enabled right now.", Toast.LENGTH_SHORT).show();
-                            break;
+                            mAlertDialog.setTitle("Feedback")
+                                    .setMessage("We just love feedback !")
+                                    .setPositiveButton("SEND SMILE", new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            sendEmail("I love BuildmLearn AppStore. I like the following features:\n");
+                                            mAlertDialog.dismiss();
+                                        }
+                                    })
+                                    .setNegativeButton("SEND FROWN", new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            sendEmail("I didn't like BuildmLearn AppStore. I don't like the following features:\n");
+                                            mAlertDialog.dismiss();}
+                                    })
+                                    .setCanceledOnTouchOutside(true);
+                            mAlertDialog.show();
+                             break;
                         }
                     }
                     return true;
@@ -112,7 +132,22 @@ public class NavigationActivity extends AppCompatActivity {
             }
         });
     }
-
+private void sendEmail(String body)
+{
+    Intent emailIntent = new Intent(Intent.ACTION_SEND);
+    emailIntent.setData(Uri.parse("mailto:"));
+    emailIntent.setType("message/rfc822");
+    emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"srujanjha.jha@gmail.com"});
+    emailIntent.putExtra(Intent.EXTRA_CC, new String[]{"srujanjha@outlook.com"});
+    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "BuildmLearn AppStore Feedback");
+    emailIntent.putExtra(Intent.EXTRA_TEXT, body);
+    try {
+        startActivity(Intent.createChooser(emailIntent, "Give feedback"));
+    }
+    catch (android.content.ActivityNotFoundException ex) {
+        Toast.makeText(NavigationActivity.this, "There is no email client installed.", Toast.LENGTH_SHORT).show();
+    }
+}
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //getMenuInflater().inflate(R.menu.menu_home_activity, menu);

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.ShareActionProvider;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -84,6 +85,9 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
 
     List<Apps> apps=new ArrayList<Apps>();
     private static Context mContext;
+
+    private ShareActionProvider mShareActionProvider;
+
     public CardViewAdapter(List<Apps> apps,Context context) {
         this.apps.clear();
         this.apps = apps;
@@ -134,15 +138,28 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                 //registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-
+                        if (item.getItemId() == R.id.menu_share_2) {
+                            Intent intent=new Intent(android.content.Intent.ACTION_SEND);
+                            intent.setType("text/plain");
+                            intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+// Add data to the intent, the receiving app will decide what to do with it.
+                            intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
+                            intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
+                            intent.putExtra(Intent.EXTRA_TITLE,"BuildmLearn AppStore");
+                            mContext.startActivity(Intent.createChooser(intent, "How do you want to share?"));
+                        }
                         return true;
-                    }
-                });
-                popup.show();//showing popup menu
-            }
-        });//closing the setOnClickListener method
+                    }});
+                    popup.show();//showing popup menu
+                }
+            });//closing the setOnClickListener method
     }
-
+    // Call to update the share intent
+    private void setShareIntent(Intent shareIntent) {
+        if (mShareActionProvider != null) {
+            mShareActionProvider.setShareIntent(shareIntent);
+        }
+    }
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
