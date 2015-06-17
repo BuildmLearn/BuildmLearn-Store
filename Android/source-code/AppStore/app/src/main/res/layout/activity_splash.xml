@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
@@ -9,14 +10,24 @@
         android:layout_height="match_parent"
         android:cropToPadding="true"
         android:src="@drawable/splash" />
-    <ProgressBar
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <mbanje.kurt.fabbutton.FabButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:elevation="10dp"
-        android:background="@xml/progress"
-        android:progressDrawable="@xml/progress"
+        android:id="@+id/determinate"
+        android:layout_gravity="center"
+        android:color="@color/primary"
+        android:src="@drawable/ic_fab_play"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="100"
+        app:fbb_autoStart="true"
+        app:fbb_progressColor="@color/primary_dark"
+        app:fbb_progressWidthRatio="0.1"
+        app:fbb_endBitmap="@drawable/ic_fab_complete"
+        app:fbb_showEndBitmap="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"/>
+        android:layout_marginBottom="80dp"
+        />
 </RelativeLayout>

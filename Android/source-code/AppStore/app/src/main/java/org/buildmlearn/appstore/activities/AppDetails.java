@@ -85,7 +85,7 @@ public class AppDetails extends NavigationActivity {
             mAppDescription.setText(mApp.Description.substring(0, 40));
             mAppTxtMore.setText("MORE");
         }
-        else mAppTxtMore.setVisibility(View.INVISIBLE);
+        else mAppTxtMore.setVisibility(View.GONE);
         mAppAdditionalInfo.setText("Author: \nAuthor Email: \nCategory: \nType: ");
         mAppAdditionalDetails.setText(mApp.Author + "\n" + mApp.AuthorEmail + "\n" + mApp.Category + "\n" + mApp.Type);
         webDisqus = (WebView) findViewById(R.id.disqus);       // set up disqus
@@ -96,7 +96,6 @@ public class AppDetails extends NavigationActivity {
         webDisqus.setWebViewClient(new WebViewClient() {
             public void onPageFinished(WebView view, String url) {
                 mProgressReviews.setVisibility(View.GONE);
-                System.out.println("WebListener:"+url);
                 if(url.startsWith("http://disqus.com/")||url.startsWith("https://disqus.com/"))
                 {
                     webDisqus.loadData(getHtmlComment(), "text/html", null);

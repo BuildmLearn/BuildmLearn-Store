@@ -14,6 +14,7 @@ public class AppsActivity extends NavigationActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getLayoutInflater().inflate(R.layout.activity_apps, frameLayout);
+        getSupportActionBar().setTitle("Store-Apps");
         RecyclerView rv = (RecyclerView)findViewById(R.id.rvAppsCard);
         rv.setHasFixedSize(true);
         GridLayoutManager llm = new GridLayoutManager(this,3);

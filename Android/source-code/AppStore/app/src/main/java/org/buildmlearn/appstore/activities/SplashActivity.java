@@ -5,26 +5,24 @@ package org.buildmlearn.appstore.activities;
  */
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 
+import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.XMLParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
-import org.buildmlearn.appstore.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import mbanje.kurt.fabbutton.FabButton;
 import me.drakeet.materialdialog.MaterialDialog;
 
 public class SplashActivity extends Activity {
@@ -210,18 +208,32 @@ public class SplashActivity extends Activity {
     private static final String TYPE = "type";
     private static final String AUTHOR_NAME = "author_name";
     private static final String AUTHOR_EMAIL = "author_email";
-    private static boolean mInternet=true;
+    private static boolean mInternet=false;
+    private static FabButton fabButton;
+    private float progress=0f;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        fabButton=(FabButton)findViewById(R.id.determinate);
+        fabButton.showProgress(true);
+        fabButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mInternet) {
+                    Intent i = new Intent(getBaseContext(), HomeActivity.class);
+                    startActivity(i);
+                    finish();
+                }
+            }
+        });
         checkInternet();
     }
     private void checkInternet()
     {
         try{
         if(!isNetworkAvailable())
-        {//System.out.println("Not Available");
+        {
             mInternet=false;
             MaterialDialog mAlertDialog=new MaterialDialog(this)
                     .setTitle("Network Connectivity")
@@ -261,14 +273,17 @@ public class SplashActivity extends Activity {
                             ob.Type = parser.getValue(elementApp, TYPE);
                             ob.Author = parser.getValue(elementApp, AUTHOR_NAME);
                             ob.AuthorEmail = parser.getValue(elementApp, AUTHOR_EMAIL);
-                            //System.out.println(ob.Name + ob.AppIcon);
                             appList.add(ob);
                         }
-                        Thread.sleep(1000);
-                        Intent i = new Intent(getBaseContext(), HomeActivity.class);
-                        startActivity(i);
-                        //Remove activity
-                        finish();
+                        for(int i=0;i<11;i++){
+                        runOnUiThread(new Runnable() {
+                            public void run() {
+                                fabButton.setProgress(progress);
+                                progress += 10f;
+                            }
+                        });Thread.sleep(200);
+                            if(i==10)mInternet=true;}
+
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -276,6 +291,7 @@ public class SplashActivity extends Activity {
             };
             // start thread
             background.start();
+
         }
         }
         catch(Exception e){e.printStackTrace();
@@ -285,7 +301,6 @@ public class SplashActivity extends Activity {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        //System.out.println(activeNetworkInfo != null && activeNetworkInfo.isConnected());
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

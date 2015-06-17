@@ -1,16 +1,12 @@
 package org.buildmlearn.appstore.utils;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
-import org.buildmlearn.appstore.activities.HomeActivity;
 import org.buildmlearn.appstore.models.AppInfo;
-import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.models.Card;
 import org.buildmlearn.appstore.models.FlashModel;
 import org.buildmlearn.appstore.models.InfoModel;
@@ -20,13 +16,10 @@ import org.buildmlearn.appstore.models.SpellingsModel;
 import org.buildmlearn.appstore.models.WordModel;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -108,7 +101,6 @@ public class AppReader {
             model.setInfoAuthor(parser.getValue(elementAuthor, "name"));
             model.setInfoName(fileName.substring(5,fileName.length()-12));
             NodeList nodeList = doc.getElementsByTagName("item");
-            System.out.println("InfoName"+model.getInfoName()+model.getInfoAuthor());
                 // looping through all item nodes <app>
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Element elementInfo = (Element) nodeList.item(i);

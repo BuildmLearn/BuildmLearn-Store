@@ -27,12 +27,11 @@ public class TabMyApps extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_tab_my_apps, container, false);
         TextView txtMyApps=(TextView)v.findViewById(R.id.txtMyApps);
-
         ArrayList<AppInfo> appList=listApps(v.getContext());
-        if(appList.size()>0)txtMyApps.setVisibility(View.INVISIBLE);
+        if(appList.size()>0)txtMyApps.setVisibility(View.GONE);
         else txtMyApps.setVisibility(View.VISIBLE);
         RecyclerView rv = (RecyclerView) v.findViewById(R.id.rvMyAppCard);
-        //rv.setHasFixedSize(true);
+        rv.setHasFixedSize(true);
         GridLayoutManager llm = new GridLayoutManager(v.getContext(), 3);
         rv.setLayoutManager(llm);
         MyAppsViewAdapter adapter = new MyAppsViewAdapter(appList, v.getContext());

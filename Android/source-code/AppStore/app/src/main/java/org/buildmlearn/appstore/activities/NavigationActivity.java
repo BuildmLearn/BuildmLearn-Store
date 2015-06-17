@@ -9,7 +9,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.MatrixCursor;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -128,44 +127,35 @@ public class NavigationActivity extends AppCompatActivity {
         if (searchView != null) {
             searchView.setSearchableInfo(searchManager.getSearchableInfo(NavigationActivity.this.getComponentName()));
             searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
-            searchView.setOnSearchClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    System.out.println("SearchClick");
-                }
-            });
             searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override
                 public boolean onQueryTextSubmit(String query) {
                     searchQuery=query;
                     Intent i=new Intent(mContext,SearchResultsActivity.class);
+                    i.putExtra("Search",query);
                     mContext.startActivity(i);
-                    refreshCursor(query);
-                    return false;
+                    return true;
                 }
-
                 @Override
                 public boolean onQueryTextChange(String newText) {
                     searchQuery=newText;
                     refreshCursor(newText);
-                    return false;
+                    return true;
                 }
             });
             searchView.setOnSuggestionListener(new SearchView.OnSuggestionListener() {
                 @Override
                 public boolean onSuggestionSelect(int position) {
-                    System.out.println("suggestion"+position);
                     Intent i = new Intent(mContext, AppDetails.class);
-                    i.putExtra("App", (Parcelable) appList.get(position));
+                    i.putExtra("App", appList.get(position));
                     mContext.startActivity(i);
                     return false;
                 }
 
                 @Override
                 public boolean onSuggestionClick(int position) {
-                    System.out.println("suggestionClick"+position);
                     Intent i = new Intent(mContext, AppDetails.class);
-                    i.putExtra("App", (Parcelable) appList.get(position));
+                    i.putExtra("App", appList.get(position));
                     mContext.startActivity(i);
                     return false;
                 }
@@ -175,7 +165,7 @@ public class NavigationActivity extends AppCompatActivity {
     }
     private void getCustomCursor()
     {
-        //cursor.deactivate();
+        appList.clear();cursor= new MatrixCursor(columns);
         Object[] temp = new Object[] { 0, "search","image" };
         for(int i = 0; i < SplashActivity.appList.size(); i++) {
             appList.add(SplashActivity.appList.get(i));
@@ -187,8 +177,7 @@ public class NavigationActivity extends AppCompatActivity {
     }
     private void refreshCursor(String query)
     {
-        cursor= new MatrixCursor(columns);
-        appList.clear();
+        appList.clear();cursor= new MatrixCursor(columns);
         int k=0;
         Object[] temp = new Object[] { 0, "search","image" };
         for(int i = 0; i < SplashActivity.appList.size(); i++) {
@@ -199,12 +188,6 @@ public class NavigationActivity extends AppCompatActivity {
             temp[2] = appList.get(k++).AppIcon;
             cursor.addRow(temp);
         }
-        System.out.println(appList.size());
         searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        return super.onOptionsItemSelected(item);
     }
 }

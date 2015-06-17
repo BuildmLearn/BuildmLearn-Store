@@ -2,8 +2,6 @@ package org.buildmlearn.appstore.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Parcelable;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,7 +28,7 @@ import java.util.List;
 public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardViewHolder> {
 
     public static class CardViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
-        CardView cvApps;
+        //CardView cvApps;
         TextView appTitle;
         TextView appSubTitle;
         NetworkImageView appLogo;
@@ -40,7 +38,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         CardViewHolder(View itemView) {
             super(itemView);
             imageLoader = VolleySingleton.getInstance(itemView.getContext()).getImageLoader();
-            cvApps = (CardView) itemView.findViewById(R.id.appCard);
+            //cvApps = (CardView) itemView.findViewById(R.id.appCard);
             appTitle = (TextView) itemView.findViewById(R.id.sCardTitle);
             appSubTitle = (TextView) itemView.findViewById(R.id.sCardSubTitle);
             appLogo = (NetworkImageView) itemView.findViewById(R.id.sCardLogo);
@@ -89,8 +87,6 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
     public CardViewAdapter(List<Apps> apps,Context context) {
         this.apps.clear();
         this.apps = apps;
-
-        System.out.println("CardviewAdapter"+this.apps.size());
         this.mContext=context;
     }
 
@@ -122,9 +118,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                     // View v at position pos is long-clicked.
                 } else {
                     Intent i = new Intent(mContext, AppDetails.class);
-                    i.putExtra("App", (Parcelable) apps.get(pos));
-                    System.out.println(apps.size());
-                    System.out.println(pos);
+                    i.putExtra("App", apps.get(pos));
                     mContext.startActivity(i);
                 }
             }

@@ -84,15 +84,10 @@ public class SpellingActivity extends NavigationActivity implements
 			break;
 
 		case R.id.btn_speak:
-            System.out.println("Speak"+Build.VERSION.RELEASE);
             if (Build.VERSION.RELEASE.startsWith("5"))convertTextToSpeech21(mWordList.get(count).getWord());
             else convertTextToSpeech(mWordList.get(count).getWord());
 			mBtn_Spell.setEnabled(true);
 			mBtn_Skip.setEnabled(true);
-			//mBtn_Skip.setTextColor(Color.RED);
-			//mBtn_Spell.setTextColor(Color.GREEN);
-			// mBtn_Spell.setBackgroundColor(Color.GREEN);
-			// mBtn_Skip.setBackgroundColor(Color.RED);
 			break;
 		case R.id.btn_ready:
 
@@ -141,19 +136,15 @@ public class SpellingActivity extends NavigationActivity implements
 	 */
 	@TargetApi(21)
 	private void convertTextToSpeech21(String text) {
-System.out.println("Speak"+21);
 		float speechRate = getProgressValue(mSb_SpeechRate.getProgress());
 		textToSpeech.setSpeechRate(speechRate);
 		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
 	}
 
 	private void convertTextToSpeech(String text) {
-        System.out.println("Speak"+text);
 		float speechRate = getProgressValue(mSb_SpeechRate.getProgress());
 		textToSpeech.setSpeechRate(speechRate);
 		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
-        while(textToSpeech.isSpeaking())System.out.print("#");
-        System.out.println("Speak");
 	}
 
 

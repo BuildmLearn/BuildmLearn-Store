@@ -10,16 +10,14 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.buildmlearn.appstore.activities.AppsActivity;
 import org.buildmlearn.appstore.R;
+import org.buildmlearn.appstore.activities.AppsActivity;
 import org.buildmlearn.appstore.activities.CategoriesActivity;
-import org.buildmlearn.appstore.activities.CategoriesView;
 import org.buildmlearn.appstore.activities.SplashActivity;
 import org.buildmlearn.appstore.adapters.CardViewAdapter;
 import org.buildmlearn.appstore.models.CategoriesCard;
@@ -79,7 +77,7 @@ public class TabStore extends Fragment {
         });
 
         RecyclerView rv = (RecyclerView) v.findViewById(R.id.rvAppCard);
-        //rv.setHasFixedSize(true);
+        rv.setHasFixedSize(true);
         GridLayoutManager llm = new GridLayoutManager(v.getContext(), 3);
         rv.setLayoutManager(llm);
         CardViewAdapter adapter = new CardViewAdapter(SplashActivity.appList, v.getContext());

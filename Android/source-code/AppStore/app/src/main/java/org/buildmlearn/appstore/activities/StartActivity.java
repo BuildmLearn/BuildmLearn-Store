@@ -47,7 +47,6 @@ public class StartActivity extends AppCompatActivity implements OnClickListener 
 
 		author = (TextView) findViewById(R.id.tv_author);
 		title = (TextView) findViewById(R.id.tv_apptitle);
-System.out.println(mOption+filePath);
 		Button startButton = (Button) findViewById(R.id.btn_start);
 		startButton.setOnClickListener(this);
 		new FileReadTask(mOption, filePath).execute();
