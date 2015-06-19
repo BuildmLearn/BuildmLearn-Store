@@ -10,4 +10,12 @@
         android:layout_height="match_parent"
         android:id="@+id/categoriesView"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/txtCategoriesActivity"
+        android:text="No category matches your search !"
+        android:visibility="visible"/>
 </RelativeLayout>

@@ -1,27 +1,23 @@
 package org.buildmlearn.appstore.adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.CardView;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.NetworkImageView;
 
 import org.buildmlearn.appstore.R;
-import org.buildmlearn.appstore.activities.InfoActivity;
+import org.buildmlearn.appstore.activities.HomeActivity;
 import org.buildmlearn.appstore.activities.StartActivity;
 import org.buildmlearn.appstore.models.AppInfo;
-import org.buildmlearn.appstore.utils.VolleySingleton;
 
 import java.util.List;
 
@@ -106,9 +102,28 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
 
         cardViewHolder.setClickListener(new MyAppsViewHolder.ClickListener() {
             @Override
-            public void onClick(View v, int pos, boolean isLongClick) {
+            public void onClick(View v, final int pos, boolean isLongClick) {
                 if (isLongClick) {
-                    // View v at position pos is long-clicked.
+                        //Creating the instance of PopupMenu
+                        PopupMenu popup = new PopupMenu(mContext, v);
+                        //Inflating the Popup using xml file
+                        popup.getMenuInflater().inflate(R.menu.menu_popup_myapps, popup.getMenu());
+                        //registering popup with OnMenuItemClickListener
+                        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                            public boolean onMenuItemClick(MenuItem item) {
+                                SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
+                                SharedPreferences.Editor editor1 = SP.edit();
+                                editor1.putBoolean(apps.get(pos).Name, false);
+                                editor1.commit();
+                                Intent i = new Intent(mContext, HomeActivity.class);
+                                mContext.startActivity(i);
+                                Activity activity = (Activity) mContext;
+                                activity.finish();
+                                return true;
+                            }
+                        });
+                        popup.show();//showing popup menu
+                        // View v at position pos is long-clicked.
                 } else {
                         Intent i = new Intent(mContext, StartActivity.class);
                         i.putExtra("option", apps.get(pos).Type);

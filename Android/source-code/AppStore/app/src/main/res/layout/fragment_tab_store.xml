@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-            <LinearLayout
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -33,112 +33,10 @@
                     android:text="more"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
             </LinearLayout>
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="120dp"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardBackgroundColor="@android:color/black"
-                android:layout_height="60dp">
-                <ImageView
-                    android:id="@+id/appImgCard1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:cropToPadding="false"
-                    android:onClick="CategoryCardPressed"
-                    android:scaleType="centerCrop" />
-                <TextView
-                    android:id="@+id/appTxtCard1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:layout_centerVertical="true"/>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="120dp"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardBackgroundColor="@android:color/black"
-                android:layout_height="60dp">
-                <ImageView
-                    android:id="@+id/appImgCard2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:cropToPadding="false"
-                    android:onClick="CategoryCardPressed"
-                    android:scaleType="centerCrop" />
-                <TextView
-                    android:id="@+id/appTxtCard2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:layout_centerVertical="true"/>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="120dp"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardBackgroundColor="@android:color/black"
-                android:layout_height="60dp">
-                <ImageView
-                    android:id="@+id/appImgCard3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:cropToPadding="false"
-                    android:onClick="CategoryCardPressed"
-                    android:scaleType="centerCrop" />
-                <TextView
-                    android:id="@+id/appTxtCard3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:layout_centerVertical="true"/>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="120dp"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardBackgroundColor="@android:color/black"
-                android:layout_height="60dp">
-                <ImageView
-                    android:id="@+id/appImgCard4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.7"
-                    android:cropToPadding="false"
-                    android:onClick="CategoryCardPressed"
-                    android:scaleType="centerCrop" />
-                <TextView
-                    android:id="@+id/appTxtCard4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:layout_centerVertical="true"/>
-            </android.support.v7.widget.CardView>
-
-        </LinearLayout>
-        </HorizontalScrollView>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/rvCategoriesCard"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -148,6 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/primary_text"
+                android:id="@+id/txtAppsStore"
                 android:layout_weight="0.2"
                 android:text="Featured Apps"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
@@ -167,4 +66,12 @@
             android:layout_height="match_parent"
             android:id="@+id/rvAppCard"/>
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/txtStore"
+        android:text="No app matches your search!"
+        android:visibility="gone"/>
 </FrameLayout>

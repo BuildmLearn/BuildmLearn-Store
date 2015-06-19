@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="home_page_start"
+        android:title="@string/pref_title_app_home_page"
+        android:summary="@string/pref_description_app_home_page"
+        android:defaultValue="true" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <EditTextPreference
+        android:key="number_featured_apps"
+        android:title="@string/pref_title_number_of_featured_apps"
+        android:summary="@string/pref_description_number_of_featured_apps"
+        android:defaultValue="@integer/default_number_of_featured_apps"
+        android:inputType="number"
+        android:hint="6"/>
+    <EditTextPreference
+        android:key="number_featured_categories"
+        android:title="@string/pref_title_number_of_featured_categories"
+        android:summary="@string/pref_description_number_of_featured_categories"
+        android:defaultValue="@integer/default_number_of_featured_categories"
+        android:inputType="number"
+        android:hint="4"/>
+
+</PreferenceScreen>

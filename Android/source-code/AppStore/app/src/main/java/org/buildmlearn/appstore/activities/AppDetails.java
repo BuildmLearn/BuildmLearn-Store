@@ -4,8 +4,12 @@ package org.buildmlearn.appstore.activities;
  * Created by Srujan Jha on 25-05-2015.
  */
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -15,6 +19,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
@@ -25,6 +30,7 @@ import org.buildmlearn.appstore.utils.VolleySingleton;
 
 public class AppDetails extends NavigationActivity {
     private static Apps mApp=new Apps();
+    private Context mContext;
     private static NetworkImageView mAppIcon;
     private static TextView mAppTitle;
     private static TextView mAppSubTitle;
@@ -35,6 +41,7 @@ public class AppDetails extends NavigationActivity {
     private static NetworkImageView mAppScreenshot1;
     private static NetworkImageView mAppScreenshot2;
     private static Button mBtnShare;
+    private static Button mBtnInstall;
     private static boolean TxtShowMore=false;
     private static ProgressBar mProgressReviews;
     private WebView webDisqus;
@@ -43,6 +50,7 @@ public class AppDetails extends NavigationActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getLayoutInflater().inflate(R.layout.activity_app_details,frameLayout);
+        mContext=this;
         Intent i=getIntent();
         mApp=i.getParcelableExtra("App");
         if(mApp==null)finish();
@@ -122,8 +130,26 @@ public class AppDetails extends NavigationActivity {
 // Add data to the intent, the receiving app will decide what to do with it.
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
                 intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
-                intent.putExtra(Intent.EXTRA_TITLE,"BuildmLearn AppStore");
+                intent.putExtra(Intent.EXTRA_TITLE, "BuildmLearn AppStore");
                 startActivity(Intent.createChooser(intent, "How do you want to share?"));
+            }
+        });
+        mBtnInstall=(Button)findViewById(R.id.btnInstall);
+        mBtnInstall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
+                if(SP.getBoolean(mApp.Name,false)) {
+                    Toast.makeText(mContext, "The app is already installed", Toast.LENGTH_LONG).show();
+                    return;
+                }
+                SharedPreferences.Editor editor1 = SP.edit();
+                editor1.putBoolean(mApp.Name,true);
+                editor1.commit();
+                Intent i = new Intent(mContext, HomeActivity.class);
+                mContext.startActivity(i);
+                Activity activity = (Activity) mContext;
+                activity.finish();
             }
         });
     }

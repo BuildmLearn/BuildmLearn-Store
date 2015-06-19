@@ -5,6 +5,7 @@ package org.buildmlearn.appstore.activities;
  */
 
 import android.app.SearchManager;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.database.MatrixCursor;
@@ -29,6 +30,8 @@ import android.widget.Toast;
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.NavigationAdapter;
 import org.buildmlearn.appstore.adapters.SearchListAdapter;
+import org.buildmlearn.appstore.fragments.TabMyApps;
+import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.models.Apps;
 
 import java.util.ArrayList;
@@ -37,10 +40,10 @@ import java.util.List;
 import me.drakeet.materialdialog.MaterialDialog;
 
 public class NavigationActivity extends AppCompatActivity {
-    String NAME = "Srujan Jha";
-    String EMAIL = "srujanjha.jha@gmail.com";
+    String NAME = "BuildmLearn AppStore";
+    String EMAIL = "Promoting mLearning";
     private MaterialDialog mAlertDialog=new MaterialDialog(NavigationActivity.this);
-    private Toolbar mToolbar;                                     // Declaring the Toolbar Object
+    private static Toolbar mToolbar;                                     // Declaring the Toolbar Object
     private RecyclerView mRecyclerView;                           // Declaring RecyclerView
     private RecyclerView.Adapter mNavigationAdapter;              // Declaring Adapter For Recycler View
     private RecyclerView.LayoutManager mLayoutManager;            // Declaring Layout Manager as a linear layout manager
@@ -51,9 +54,12 @@ public class NavigationActivity extends AppCompatActivity {
     public static List<Apps> appList=new ArrayList<Apps>();
     private MatrixCursor cursor = new MatrixCursor(columns);
     public static int mActive=1;
-    private SearchView searchView=null;
-    private Context mContext;
+    private static SearchView searchView=null;
+    private static MenuItem searchItem;
+    private static Context mContext;
     public static String searchQuery="";
+    public static int mActiveSearchInterface=0;//0-MyApps, 1-Store, 2-Categories, 3-InnerCategories
+    public static int color_divider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +69,7 @@ public class NavigationActivity extends AppCompatActivity {
         frameLayout = (FrameLayout)findViewById(R.id.content_frame);
         mToolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(mToolbar);
+        color_divider=getResources().getColor(R.color.divider);
         mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView); // Assigning the RecyclerView Object to the xml View
         mRecyclerView.setHasFixedSize(true);                            // Letting the system know that the list objects are of fixed size
         mNavigationAdapter = new NavigationAdapter(NAME,EMAIL,mActive);       // Creating the Adapter of NavigationAdapter class(which we are going to see in a bit)
@@ -74,7 +81,6 @@ public class NavigationActivity extends AppCompatActivity {
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawer, mToolbar, R.string.start,R.string.close);
         mDrawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
         mDrawerToggle.syncState();               // Finally we set the drawer toggle sync State
-
         final GestureDetector mGestureDetector = new GestureDetector(NavigationActivity.this, new GestureDetector.SimpleOnGestureListener() {
             @Override public boolean onSingleTapUp(MotionEvent e) {
                 return true;
@@ -86,8 +92,13 @@ public class NavigationActivity extends AppCompatActivity {
                 View child = recyclerView.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
                 if (child != null && mGestureDetector.onTouchEvent(motionEvent)) {
                     mDrawer.closeDrawers();
+                    if(mActive==recyclerView.getChildPosition(child))return false;
                     switch(recyclerView.getChildPosition(child))
                     {
+                        case 0:
+                        {
+                            break;
+                        }
                         case 1:
                         {
                             startActivity(new Intent(NavigationActivity.this,HomeActivity.class));break;
@@ -100,7 +111,7 @@ public class NavigationActivity extends AppCompatActivity {
                         {
                             startActivity(new Intent(NavigationActivity.this,SettingsActivity.class));break;
                         }
-                        case 4:
+                        case 5:
                         {
                             mAlertDialog.setTitle("Feedback")
                                     .setMessage("We just love feedback !")
@@ -121,6 +132,22 @@ public class NavigationActivity extends AppCompatActivity {
                             mAlertDialog.show();
                              break;
                         }
+                        case 6:
+                        {
+                            Uri uri = Uri.parse("market://details?id=" + mContext.getPackageName());
+                            Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                            try {
+                                startActivity(goToMarket);
+                            } catch (ActivityNotFoundException e) {
+                                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + mContext.getPackageName())));
+                            }
+                            break;
+                        }
+                        case 7:
+                        {
+                            Toast.makeText(mContext,"About page is yet to be created",Toast.LENGTH_SHORT).show();
+                            break;
+                        }
                     }
                     return true;
                 }
@@ -130,10 +157,14 @@ public class NavigationActivity extends AppCompatActivity {
             @Override
             public void onTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
             }
+
+            @Override
+            public void onRequestDisallowInterceptTouchEvent(boolean b) {
+
+            }
         });
     }
-private void sendEmail(String body)
-{
+    private void sendEmail(String body){
     Intent emailIntent = new Intent(Intent.ACTION_SEND);
     emailIntent.setData(Uri.parse("mailto:"));
     emailIntent.setType("message/rfc822");
@@ -150,30 +181,43 @@ private void sendEmail(String body)
 }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //getMenuInflater().inflate(R.menu.menu_home_activity, menu);
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu_home_activity, menu);
         getCustomCursor();
-        MenuItem searchItem = menu.findItem(R.id.action_search);
+        searchItem = menu.findItem(R.id.action_search);
         SearchManager searchManager = (SearchManager) NavigationActivity.this.getSystemService(Context.SEARCH_SERVICE);
         if (searchItem != null) {
             searchView = (SearchView) searchItem.getActionView();
         }
         if (searchView != null) {
             searchView.setSearchableInfo(searchManager.getSearchableInfo(NavigationActivity.this.getComponentName()));
-            searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
+            if(mActiveSearchInterface==1)searchView.setSuggestionsAdapter(new SearchListAdapter(this, cursor, true));
+            searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+                @Override
+                public boolean onClose() {
+                    if(mActiveSearchInterface==0)
+                        TabMyApps.closeSearch();
+                    else if(mActiveSearchInterface==1)
+                        TabStore.closeSearch();
+                    else if(mActiveSearchInterface==2)
+                        CategoriesActivity.closeSearch();
+                    else if(mActiveSearchInterface==3)
+                        CategoriesView.closeSearch();
+                    return false;
+                }
+            });
             searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override
                 public boolean onQueryTextSubmit(String query) {
                     searchQuery=query;
-                    Intent i=new Intent(mContext,SearchResultsActivity.class);
-                    i.putExtra("Search",query);
-                    mContext.startActivity(i);
+                    refineSearch(query);
                     return true;
                 }
                 @Override
                 public boolean onQueryTextChange(String newText) {
                     searchQuery=newText;
+                    refineSearch(newText);
+                    if(searchQuery.equals(""))return false;
                     refreshCursor(newText);
                     return true;
                 }
@@ -198,8 +242,7 @@ private void sendEmail(String body)
         }
         return super.onCreateOptionsMenu(menu);
     }
-    private void getCustomCursor()
-    {
+    private void getCustomCursor()    {
         appList.clear();cursor= new MatrixCursor(columns);
         Object[] temp = new Object[] { 0, "search","image" };
         for(int i = 0; i < SplashActivity.appList.size(); i++) {
@@ -210,8 +253,7 @@ private void sendEmail(String body)
             cursor.addRow(temp);
         }
     }
-    private void refreshCursor(String query)
-    {
+    private void refreshCursor(String query)    {
         appList.clear();cursor= new MatrixCursor(columns);
         int k=0;
         Object[] temp = new Object[] { 0, "search","image" };
@@ -223,6 +265,21 @@ private void sendEmail(String body)
             temp[2] = appList.get(k++).AppIcon;
             cursor.addRow(temp);
         }
-        searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
+        if(mActiveSearchInterface==1)searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
+    }
+    public static void clearSearch()    {
+        searchView.clearFocus();
+        searchView.setQuery("",false);
+        searchItem.collapseActionView();
+    }
+    private void refineSearch(String query)    {
+        if(mActiveSearchInterface==0)
+            TabMyApps.refineSearch(query);
+        else if(mActiveSearchInterface==1)
+            TabStore.refineSearch(query);
+        else if(mActiveSearchInterface==2)
+            CategoriesActivity.refineSearch(query);
+        else if(mActiveSearchInterface==3)
+            CategoriesView.refineSearch(query);
     }
 }

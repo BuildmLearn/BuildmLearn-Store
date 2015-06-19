@@ -23,11 +23,11 @@
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
 </LinearLayout>
 <android.support.v7.widget.RecyclerView
     android:id="@+id/RecyclerView"
-    android:layout_width="304dp"
+    android:layout_width="290dp"
     android:layout_height="match_parent"
     android:layout_gravity="left|start"
     android:background="#ffffff"

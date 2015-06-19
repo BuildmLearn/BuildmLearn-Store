@@ -22,11 +22,66 @@ import org.w3c.dom.NodeList;
 import java.util.ArrayList;
 import java.util.List;
 
-import mbanje.kurt.fabbutton.FabButton;
 import me.drakeet.materialdialog.MaterialDialog;
 
 public class SplashActivity extends Activity {
     private String XML="<applications>\n" +
+            "<app>\n" +
+            "\t<title>Festivals</title>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
+            "\t<appIcon>http://s13.postimg.org/r34jqda9j/logo_h.png</appIcon>\n" +
+            "\t<screenshots>\n" +
+            "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
+            "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
+            "\t</screenshots>\n" +
+            "\t<category>Social Studies</category>\n" +
+            "\t<type>Info</type>\n" +
+            "\t<author_name>Author</author_name>\n" +
+            "\t<author_email>Author@gmail.com</author_email>\n" +
+            "\t<bundleURL>placeholder</bundleURL>\n" +
+            "</app>\n" +
+            "<app>\n" +
+            "\t<title>Biology</title>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
+            "\t<appIcon>http://s13.postimg.org/63ofyv8l3/logo_c.png</appIcon>\n" +
+            "\t<screenshots>\n" +
+            "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
+            "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
+            "\t</screenshots>\n" +
+            "\t<category>Biology</category>\n" +
+            "\t<type>Quiz</type>\n" +
+            "\t<author_name>Author</author_name>\n" +
+            "\t<author_email>Author@gmail.com</author_email>\n" +
+            "\t<bundleURL>placeholder</bundleURL>\n" +
+            "</app>\n" +
+            "<app>\n" +
+            "\t<title>Spell</title>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
+            "\t<appIcon>http://s13.postimg.org/9i6mf03zr/logo_b.png</appIcon>\n" +
+            "\t<screenshots>\n" +
+            "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
+            "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
+            "\t</screenshots>\n" +
+            "\t<category>Science</category>\n" +
+            "\t<type>Spellings</type>\n" +
+            "\t<author_name>Author</author_name>\n" +
+            "\t<author_email>Author@gmail.com</author_email>\n" +
+            "\t<bundleURL>placeholder</bundleURL>\n" +
+            "</app>\n" +
+            "<app>\n" +
+            "\t<title>Animal</title>\n" +
+            "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
+            "\t<appIcon>http://s13.postimg.org/lu9ishruf/logo_l.png</appIcon>\n" +
+            "\t<screenshots>\n" +
+            "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
+            "\t\t<url>http://s21.postimg.org/jszl533d3/screen.png</url>\n" +
+            "\t</screenshots>\n" +
+            "\t<category>Biology</category>\n" +
+            "\t<type>Flashcards</type>\n" +
+            "\t<author_name>Author</author_name>\n" +
+            "\t<author_email>Author@gmail.com</author_email>\n" +
+            "\t<bundleURL>placeholder</bundleURL>\n" +
+            "</app>\n" +
             "<app>\n" +
             "\t<title>Biology Quiz</title>\n" +
             "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
@@ -196,7 +251,6 @@ public class SplashActivity extends Activity {
             "\t<bundleURL>placeholder</bundleURL>\n" +
             "</app>\n" +
             "</applications>";
-    private static final String URL = "http://api.androidhive.info/pizza/?format=xml";
     public static List<Apps> appList=new ArrayList<Apps>();
     static final String KEY_ITEM = "app"; // parent node
     private static final String TITLE = "title";
@@ -208,25 +262,11 @@ public class SplashActivity extends Activity {
     private static final String TYPE = "type";
     private static final String AUTHOR_NAME = "author_name";
     private static final String AUTHOR_EMAIL = "author_email";
-    private static boolean mInternet=false;
-    private static FabButton fabButton;
-    private float progress=0f;
+    private MaterialDialog mAlertDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        fabButton=(FabButton)findViewById(R.id.determinate);
-        fabButton.showProgress(true);
-        fabButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mInternet) {
-                    Intent i = new Intent(getBaseContext(), HomeActivity.class);
-                    startActivity(i);
-                    finish();
-                }
-            }
-        });
         checkInternet();
     }
     private void checkInternet()
@@ -234,17 +274,16 @@ public class SplashActivity extends Activity {
         try{
         if(!isNetworkAvailable())
         {
-            mInternet=false;
-            MaterialDialog mAlertDialog=new MaterialDialog(this)
+            mAlertDialog=new MaterialDialog(this)
                     .setTitle("Network Connectivity")
                     .setMessage("No internet connection available!")
                     .setPositiveButton("RETRY", new View.OnClickListener() {
                          @Override
-                         public void onClick(View v) {checkInternet();}
+                         public void onClick(View v) {mAlertDialog.dismiss();checkInternet();}
                     })
                     .setNegativeButton("OK", new View.OnClickListener() {
                         @Override
-                        public void onClick(View v) {finish();}
+                        public void onClick(View v) {mAlertDialog.dismiss();finish();}
                     });
             mAlertDialog.show();
         }
@@ -275,15 +314,10 @@ public class SplashActivity extends Activity {
                             ob.AuthorEmail = parser.getValue(elementApp, AUTHOR_EMAIL);
                             appList.add(ob);
                         }
-                        for(int i=0;i<11;i++){
-                        runOnUiThread(new Runnable() {
-                            public void run() {
-                                fabButton.setProgress(progress);
-                                progress += 10f;
-                            }
-                        });Thread.sleep(200);
-                            if(i==10)mInternet=true;}
-
+                        Thread.sleep(4000);
+                        Intent i = new Intent(getBaseContext(), HomeActivity.class);
+                        startActivity(i);
+                        finish();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -291,7 +325,6 @@ public class SplashActivity extends Activity {
             };
             // start thread
             background.start();
-
         }
         }
         catch(Exception e){e.printStackTrace();

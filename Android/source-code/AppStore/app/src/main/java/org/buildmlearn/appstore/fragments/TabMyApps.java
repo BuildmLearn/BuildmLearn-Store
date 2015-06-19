@@ -4,7 +4,7 @@ package org.buildmlearn.appstore.fragments;
  * Created by Srujan Jha on 25-05-2015.
  */
 
-import android.graphics.Rect;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -17,46 +17,64 @@ import android.widget.TextView;
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.MyAppsViewAdapter;
 import org.buildmlearn.appstore.models.AppInfo;
+import org.buildmlearn.appstore.utils.SpacesItemDecoration;
 
 import java.util.ArrayList;
 
 import static org.buildmlearn.appstore.utils.AppReader.listApps;
 
+
 public class TabMyApps extends Fragment {
+    private static ArrayList<AppInfo> appList;
+    private static RecyclerView mRecyclerView;
+    private static Context mContext;
+    private static TextView txtMyApps;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_tab_my_apps, container, false);
-        TextView txtMyApps=(TextView)v.findViewById(R.id.txtMyApps);
-        ArrayList<AppInfo> appList=listApps(v.getContext());
-        if(appList.size()>0)txtMyApps.setVisibility(View.GONE);
+        mContext = v.getContext();
+        txtMyApps = (TextView) v.findViewById(R.id.txtMyApps);
+        appList = listApps(v.getContext());
+        if (appList.size() > 0) txtMyApps.setVisibility(View.GONE);
         else txtMyApps.setVisibility(View.VISIBLE);
-        RecyclerView rv = (RecyclerView) v.findViewById(R.id.rvMyAppCard);
-        rv.setHasFixedSize(true);
+        mRecyclerView = (RecyclerView) v.findViewById(R.id.rvMyAppCard);
+        mRecyclerView.setHasFixedSize(true);
         GridLayoutManager llm = new GridLayoutManager(v.getContext(), 3);
-        rv.setLayoutManager(llm);
+        mRecyclerView.setLayoutManager(llm);
         MyAppsViewAdapter adapter = new MyAppsViewAdapter(appList, v.getContext());
-        rv.setAdapter(adapter);
+        mRecyclerView.setAdapter(adapter);
         int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.card_spacing);
-        rv.addItemDecoration(new SpacesItemDecoration(spacingInPixels));
+        mRecyclerView.addItemDecoration(new SpacesItemDecoration(spacingInPixels));
         return v;
     }
-    public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
-        private int space;
-
-        public SpacesItemDecoration(int space) {
-            this.space = space;
+    public static void refineSearch(String query) {
+        ArrayList<AppInfo> tempList = new ArrayList<>();
+        if (query.equals("")) {closeSearch();return;}
+        else for (int i = 0; i < appList.size(); i++) {
+            if (appList.get(i).Name.toLowerCase().contains(query.toLowerCase()))
+                tempList.add(appList.get(i));
         }
 
-        @Override
-        public void getItemOffsets(Rect outRect, View view,
-                                   RecyclerView parent, RecyclerView.State state) {
-            outRect.left = space;
-            outRect.right = space;
-            outRect.bottom = space;
-
-            // Add top margin only for the first item to avoid double space between items
-            if(parent.getChildPosition(view) == 0)
-                outRect.top = space;
+        if (tempList.size() != 0) {
+            MyAppsViewAdapter adapter = new MyAppsViewAdapter(tempList, mContext);
+            mRecyclerView.setAdapter(adapter);
+            txtMyApps.setVisibility(View.GONE);
+            mRecyclerView.setVisibility(View.VISIBLE);
+        } else {
+            txtMyApps.setText("Sorry, No app matches your search!");
+            mRecyclerView.setVisibility(View.GONE);
+            txtMyApps.setVisibility(View.VISIBLE);
         }
+
+    }
+    public static void closeSearch()    {
+        MyAppsViewAdapter adapter = new MyAppsViewAdapter(appList, mContext);
+        mRecyclerView.setAdapter(adapter);
+        if (appList.size() > 0) {txtMyApps.setVisibility(View.GONE);
+            mRecyclerView.setVisibility(View.VISIBLE);}
+        else {txtMyApps.setVisibility(View.VISIBLE);
+            txtMyApps.setText("There are no downloaded apps.\nSwipe Right to navigate to the Store and download interesting apps!");
+            mRecyclerView.setVisibility(View.GONE);}
     }
 }

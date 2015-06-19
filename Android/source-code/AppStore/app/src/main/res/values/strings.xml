@@ -2,7 +2,6 @@
     <string name="app_name">AppStore</string>
     <string name="title_activity_home_activitiy">Home</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
     <string name="start">Start</string>
     <string name="close">Close</string>
     <string name="title_activity_app_details">AppDetails</string>
@@ -10,7 +9,6 @@
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Work in Progress !!</string>
     <string name="title_activity_categories">Categories</string>
-    <string name="title_activity_settings">Settings</string>
     <string name="title_activity_search_results">Search Results</string>
 
     <string name="search_hint">Science</string>

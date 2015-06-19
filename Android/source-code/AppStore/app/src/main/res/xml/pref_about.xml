@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:selectable="false"
+        android:enabled="true"
+        android:key="about_license"
+        android:title="Open Source Licenses"
+        android:summary="License details for Open-Source software" />
+    <Preference
+        android:selectable="false"
+        android:enabled="true"
+        android:key="about_build"
+        android:title="Build Version"
+        android:summary="1.0.0.0" />
+</PreferenceScreen>

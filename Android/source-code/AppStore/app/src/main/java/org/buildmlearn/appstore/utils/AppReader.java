@@ -1,10 +1,11 @@
 package org.buildmlearn.appstore.utils;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.graphics.BitmapFactory;
-import android.util.Log;
+import android.preference.PreferenceManager;
 
 import org.buildmlearn.appstore.models.AppInfo;
 import org.buildmlearn.appstore.models.Card;
@@ -32,8 +33,8 @@ public class AppReader {
     private static BufferedReader br;
 
     public static ArrayList<AppInfo> listApps(Context context) {
-
         ArrayList<AppInfo> mFileList = new ArrayList<AppInfo>();
+        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(context);
         Resources res = context.getResources();
         AssetManager am = res.getAssets();
         String appList[],iconList[];
@@ -42,9 +43,12 @@ public class AppReader {
             iconList = am.list("Icons");
             if (appList != null) {
                 for (int i = 0; i < appList.length; i++) {
-                    Log.d("", appList[i]);
                     AppInfo app=new AppInfo();
                     app.Name=(appList[i].substring(0,appList[i].indexOf(".buildmlearn")));
+                    if(!SP.contains(app.Name)){SharedPreferences.Editor editor1 = SP.edit();
+                    editor1.putBoolean(app.Name,false);
+                        editor1.commit();continue;}
+                    if(!SP.getBoolean(app.Name,false))continue;
                     app.AppIcon=BitmapFactory.decodeStream(am.open("Icons/" + iconList[i]));
                     BufferedReader br = new BufferedReader(new InputStreamReader(context.getAssets().open("Apps/"+appList[i])));
                     String type=br.readLine();
@@ -52,7 +56,6 @@ public class AppReader {
                     else if(type.contains("QuizTemplate"))app.Type=2;
                     else if(type.contains("FlashCardsTemplate"))app.Type=1;
                     else if(type.contains("SpellingTemplate"))app.Type=3;
-
                     mFileList.add(app);
                 }
             }
@@ -60,31 +63,6 @@ public class AppReader {
             e.printStackTrace();
         }
         return mFileList;
-    }
-
-    public static String ReadFile(Context myContext, String file) {
-
-        BufferedReader br = null;
-
-        try {
-            br = new BufferedReader(new InputStreamReader(myContext.getAssets()
-                    .open(file))); // throwing a FileNotFoundException?
-            String text = "";
-            String tmp = "";
-            while ((tmp = br.readLine()) != null) {
-                text = text + tmp;
-            }
-            return text;
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                br.close(); // stop reading
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-        }
-        return "";
     }
 
     public static void readInfoFile(Context myContext, String fileName) {
