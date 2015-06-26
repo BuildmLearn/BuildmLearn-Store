@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,7 +22,7 @@ import org.buildmlearn.appstore.models.WordModel;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class WordInfoActivity extends NavigationActivity {
+public class WordInfoActivity extends AppCompatActivity {
 
 	private Intent spellingIntent;
 	private boolean isCorrect;
@@ -38,10 +40,19 @@ public class WordInfoActivity extends NavigationActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getLayoutInflater().inflate(R.layout.activity_word_info, frameLayout);
+        setContentView(R.layout.activity_word_info);
+		Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_word_info);
+		mToolbar.setNavigationIcon(R.drawable.ic_back);
+		mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				onBackPressed();
+			}
+		});
+		mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
 		mManager = SpellingsModel.getInstance();
 		mList = mManager.getSpellingsList();
-		getSupportActionBar().setTitle(mManager.getPuzzleName());
+		mToolbar.setTitle(mManager.getPuzzleName());
 		spellingIntent = getIntent();
 		isCorrect = spellingIntent.getBooleanExtra("result", false);
 		position = spellingIntent.getIntExtra("index", 0);

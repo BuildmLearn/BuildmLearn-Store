@@ -47,7 +47,7 @@ public class NavigationActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;                           // Declaring RecyclerView
     private RecyclerView.Adapter mNavigationAdapter;              // Declaring Adapter For Recycler View
     private RecyclerView.LayoutManager mLayoutManager;            // Declaring Layout Manager as a linear layout manager
-    private DrawerLayout mDrawer;                                 // Declaring DrawerLayout
+    private static DrawerLayout mDrawer;                                 // Declaring DrawerLayout
     private ActionBarDrawerToggle mDrawerToggle;                  // Declaring Action Bar Drawer Toggle
     protected FrameLayout frameLayout;
     private String[] columns = new String[] { "_id", "search","image" };
@@ -68,6 +68,9 @@ public class NavigationActivity extends AppCompatActivity {
         mContext=this;
         frameLayout = (FrameLayout)findViewById(R.id.content_frame);
         mToolbar = (Toolbar) findViewById(R.id.tool_bar);
+        mToolbar.setBackgroundColor(getResources().getColor(R.color.primary));
+        mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+        mToolbar.setTitle("Home");
         setSupportActionBar(mToolbar);
         color_divider=getResources().getColor(R.color.divider);
         mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView); // Assigning the RecyclerView Object to the xml View
@@ -282,4 +285,5 @@ public class NavigationActivity extends AppCompatActivity {
         else if(mActiveSearchInterface==3)
             CategoriesView.refineSearch(query);
     }
+
 }

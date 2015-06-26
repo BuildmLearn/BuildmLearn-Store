@@ -3,6 +3,7 @@ package org.buildmlearn.appstore.utils;
 /**
  * Created by Srujan Jha on 25-05-2015.
  */
+
 import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v4.view.PagerAdapter;
@@ -17,8 +18,6 @@ import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import org.buildmlearn.appstore.R;
 
 public class SlidingTabLayout extends HorizontalScrollView {
     public interface TabColorizer {
@@ -180,7 +179,7 @@ public class SlidingTabLayout extends HorizontalScrollView {
             if (i == mViewPager.getCurrentItem()) {
                 tabView.setSelected(true);
             }
-            tabTitleView.setTextColor(getResources().getColorStateList(R.color.selector));
+            tabTitleView.setTextColor(getResources().getColor(android.R.color.white));
             tabTitleView.setTextSize(14);
         }
     }

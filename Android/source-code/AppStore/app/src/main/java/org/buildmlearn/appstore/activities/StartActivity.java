@@ -21,12 +21,6 @@ import org.buildmlearn.appstore.utils.AppReader;
 
 public class StartActivity extends AppCompatActivity implements OnClickListener {
 
-	/** Called when the activity is first created. */
-	public static int QUIZ=101;
-	public static int SPELLINGS=102;
-	public static int INFO=103;
-	public static int FLASHCARD=104;
-
 	public static String FILENAME="filename";
 	public static String OPTION="option";
 
@@ -37,20 +31,14 @@ public class StartActivity extends AppCompatActivity implements OnClickListener 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// getWindow().requestFeature(Window.FEATURE_ACTION_BAR); // Add this
-		// line
-
 		setContentView(R.layout.activity_start);
-
 		mOption = getIntent().getIntExtra(OPTION, 0);
 		filePath = getIntent().getStringExtra(FILENAME);
-
 		author = (TextView) findViewById(R.id.tv_author);
 		title = (TextView) findViewById(R.id.tv_apptitle);
 		Button startButton = (Button) findViewById(R.id.btn_start);
 		startButton.setOnClickListener(this);
 		new FileReadTask(mOption, filePath).execute();
-
 	}
 
 	private class FileReadTask extends AsyncTask<Void, Void, Void> {
@@ -59,41 +47,32 @@ public class StartActivity extends AppCompatActivity implements OnClickListener 
 		String mFilePath;
 
 		public FileReadTask(int option, String filePath) {
-
 			this.mOption = option;
-
 			this.mFilePath = filePath;
 		}
 
 		@Override
 		protected Void doInBackground(Void... params) {
-
 			switch (mOption) {
 			case 0:
 				AppReader.readInfoFile(getApplicationContext(), mFilePath);
 				break;
 			case 1:
 				AppReader.readFlashContent(getApplicationContext(), mFilePath);
-
-				break;
+                break;
 			case 2:
 				AppReader.readQuizFile(getApplicationContext(), mFilePath);
-				
 				break;
 			case 3:
-
 				AppReader.readSpellingsContent(getApplicationContext(), mFilePath);
 				break;
-
 			}
-
 			return null;
 		}
 
 		@Override
 		protected void onPostExecute(Void result) {
 			super.onPostExecute(result);
-
 			switch (mOption) {
 			case 0:
 				author.setText(InfoModel.getInstance().getInfoAuthor());

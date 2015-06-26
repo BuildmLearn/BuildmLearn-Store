@@ -8,6 +8,8 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +27,7 @@ import org.buildmlearn.appstore.models.WordModel;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class SpellingActivity extends NavigationActivity implements
+public class SpellingActivity extends AppCompatActivity implements
 		TextToSpeech.OnInitListener {
 	private TextToSpeech textToSpeech;
 	private ArrayList<WordModel> mWordList;
@@ -42,17 +44,23 @@ public class SpellingActivity extends NavigationActivity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getLayoutInflater().inflate(R.layout.activity_spelling, frameLayout);
+		setContentView(R.layout.activity_spelling);
+		Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_spelling);
+		mToolbar.setNavigationIcon(R.drawable.ic_back);
+		mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				onBackPressed();
+			}
+		});
+		mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
 		mBtn_Spell = (Button) findViewById(R.id.btn_ready);
-
 		mBtn_Skip = (Button) findViewById(R.id.btn_skip);
 		mSb_SpeechRate = (SeekBar) findViewById(R.id.sb_speech);
-
 		mTv_WordNumber = (TextView) findViewById(R.id.tv_word_number);
 		textToSpeech = new TextToSpeech(this, this);
 		mSpellingModel=SpellingsModel.getInstance();
-
-        getSupportActionBar().setTitle(mSpellingModel.getPuzzleName());
+        mToolbar.setTitle(mSpellingModel.getPuzzleName());
 		mWordList = mSpellingModel.getSpellingsList();
 		count = mSpellingModel.getActiveCount();
 		totalCorrect=mSpellingModel.getTotalCorrect();

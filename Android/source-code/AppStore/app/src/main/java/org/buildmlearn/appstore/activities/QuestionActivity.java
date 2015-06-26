@@ -7,6 +7,8 @@ package org.buildmlearn.appstore.activities;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -21,7 +23,7 @@ import org.buildmlearn.appstore.models.QuizModel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuestionActivity extends NavigationActivity {
+public class QuestionActivity extends AppCompatActivity {
 
 	private TextView iQuestion_no_Label;
 	private TextView iQuestionLabel;
@@ -38,10 +40,19 @@ public class QuestionActivity extends NavigationActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getLayoutInflater().inflate(R.layout.questions_view, frameLayout);
+		setContentView(R.layout.questions_view);
+		Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_app_questions_view);
+		mToolbar.setNavigationIcon(R.drawable.ic_back);
+		mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				onBackPressed();
+			}
+		});
+		mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
 		mQuizModel=QuizModel.getInstance();
 		mQuestionAnsList=mQuizModel.getQueAnsList();
-		getSupportActionBar().setTitle(mQuizModel.getQuizName());
+		mToolbar.setTitle(mQuizModel.getQuizName());
 
 		iQuestion_no_Label = (TextView) findViewById(R.id.question_no);
 		iQuestionLabel = (TextView) findViewById(R.id.question_label);

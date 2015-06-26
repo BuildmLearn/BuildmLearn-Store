@@ -1,4 +1,17 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:context="org.buildmlearn.appstore.activities.FlashActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar_flashcards"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+        android:elevation="7dp"
+        android:paddingTop="@dimen/tool_bar_top_padding" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -98,3 +111,4 @@
         android:textSize="16sp" />
 
 </RelativeLayout>
+    </LinearLayout>

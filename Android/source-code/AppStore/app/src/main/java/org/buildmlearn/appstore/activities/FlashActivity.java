@@ -7,6 +7,8 @@ package org.buildmlearn.appstore.activities;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -22,7 +24,7 @@ import org.buildmlearn.appstore.models.FlashModel;
 
 import java.util.ArrayList;
 
-public class FlashActivity extends NavigationActivity implements Animation.AnimationListener {
+public class FlashActivity extends AppCompatActivity implements Animation.AnimationListener {
 	View answerView, questionView;
 	Button flipButton;
 	Button preButton;
@@ -42,9 +44,18 @@ public class FlashActivity extends NavigationActivity implements Animation.Anima
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getLayoutInflater().inflate(R.layout.activity_flashcards, frameLayout);
+		setContentView(R.layout.activity_flashcards);
+		Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_flashcards);
+		mToolbar.setNavigationIcon(R.drawable.ic_back);
+		mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				onBackPressed();
+			}
+		});
+		mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
 		mFlashModel = FlashModel.getInstance();
-		getSupportActionBar().setTitle(mFlashModel.getName());
+		mToolbar.setTitle(mFlashModel.getName());
 		mCardList = mFlashModel.getList();
 		animation1 = AnimationUtils.loadAnimation(this, R.anim.to_middle);
 		animation1.setAnimationListener(this);

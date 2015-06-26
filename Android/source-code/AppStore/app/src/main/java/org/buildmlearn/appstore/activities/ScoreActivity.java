@@ -6,6 +6,8 @@ package org.buildmlearn.appstore.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -15,7 +17,7 @@ import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.QuizModel;
 import org.buildmlearn.appstore.models.SpellingsModel;
 
-public class ScoreActivity extends NavigationActivity {
+public class ScoreActivity extends AppCompatActivity {
 	private QuizModel mQuizModel;
     private SpellingsModel mSpellingsModel;
 	private TextView mTv_correct, mTv_wrong, mTv_unanswered;
@@ -24,14 +26,22 @@ public class ScoreActivity extends NavigationActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-        getLayoutInflater().inflate(R.layout.score_view, frameLayout);
-
+        setContentView(R.layout.score_view);
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_app_score_view);
+        mToolbar.setNavigationIcon(R.drawable.ic_back);
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         Intent intent=getIntent();
         activity=intent.getIntExtra("Activity",0);
         if(activity==1)
-        {mSpellingsModel=SpellingsModel.getInstance();getSupportActionBar().setTitle(mSpellingsModel.getPuzzleName());}
+        {mSpellingsModel=SpellingsModel.getInstance();mToolbar.setTitle(mSpellingsModel.getPuzzleName());}
         else
-        {mQuizModel = QuizModel.getInstance();getSupportActionBar().setTitle(mQuizModel.getQuizName());}
+        {mQuizModel = QuizModel.getInstance();mToolbar.setTitle(mQuizModel.getQuizName());}
 
 		mTv_correct = (TextView) findViewById(R.id.tv_correct);
 		mTv_wrong = (TextView) findViewById(R.id.tv_wrong);

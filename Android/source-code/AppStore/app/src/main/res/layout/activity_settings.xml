@@ -5,7 +5,7 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="org.buildmlearn.appstore.activities.SettingsActivity">>
+    tools:context="org.buildmlearn.appstore.activities.SettingsActivity">
         <android.support.v7.widget.Toolbar
             android:id="@+id/tool_bar_settings"
             android:layout_height="wrap_content"

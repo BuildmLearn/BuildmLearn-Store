@@ -88,5 +88,10 @@ public class CategoriesView extends NavigationActivity {
             mRecyclerView.setVisibility(View.VISIBLE);
         }
     }
-
+    @Override
+    public void onBackPressed()
+    {
+        NavigationActivity.mActive=1;
+        super.onBackPressed();
+    }
 }

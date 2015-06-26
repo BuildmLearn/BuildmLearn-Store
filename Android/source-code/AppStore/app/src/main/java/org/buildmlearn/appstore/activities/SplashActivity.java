@@ -267,6 +267,12 @@ public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        /*VideoView videoView=(VideoView)findViewById(R.id.videoView);
+        String uriPath = "android.resource://"+getPackageName()+"/raw/splashscreen";
+        System.out.println(uriPath);
+        Uri uri = Uri.parse(uriPath);
+        videoView.setVideoURI(uri);
+        videoView.start();*/
         checkInternet();
     }
     private void checkInternet()
@@ -334,6 +340,6 @@ public class SplashActivity extends Activity {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+        return (activeNetworkInfo != null && activeNetworkInfo.isConnected());
     }
 }

@@ -43,7 +43,6 @@ public class TabStore extends Fragment {
         mContext = v.getContext();
         txtStore=(TextView)v.findViewById(R.id.txtStore);
         txtAppsStore=(TextView)v.findViewById(R.id.txtAppsStore);
-
         TextView txtMoreApps = (TextView) v.findViewById(R.id.txtMoreApps);
         TextView txtMoreCategories = (TextView) v.findViewById(R.id.txtMoreCategories);
         txtMoreApps.setOnClickListener(new View.OnClickListener() {
@@ -63,9 +62,7 @@ public class TabStore extends Fragment {
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
         x= Integer.parseInt(SP.getString("number_featured_categories", "4"));
         y= Integer.parseInt(SP.getString("number_featured_apps","6"));
-
         int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.card_spacing);
-
         mRecyclerView1 = (RecyclerView) v.findViewById(R.id.rvCategoriesCard);
         mRecyclerView1.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
@@ -74,7 +71,6 @@ public class TabStore extends Fragment {
         CardCategoriesAdapter adapter1 = new CardCategoriesAdapter(mContext,x);
         mRecyclerView1.setAdapter(adapter1);
         mRecyclerView1.addItemDecoration(new SpacesItemDecoration(spacingInPixels));
-
         mRecyclerView2 = (RecyclerView) v.findViewById(R.id.rvAppCard);
         mRecyclerView2.setHasFixedSize(true);
         GridLayoutManager glm = new GridLayoutManager(v.getContext(), 3);

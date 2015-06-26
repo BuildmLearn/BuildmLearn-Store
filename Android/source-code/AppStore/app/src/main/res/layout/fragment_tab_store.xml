@@ -18,7 +18,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/primary_text"
+                    android:textColor="@color/primary_dark"
                     android:layout_weight="0.2"
                     android:text="Featured Categories"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
@@ -45,7 +45,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/primary_dark"
                 android:id="@+id/txtAppsStore"
                 android:layout_weight="0.2"
                 android:text="Featured Apps"

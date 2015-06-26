@@ -137,6 +137,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                 } else {
                     Intent i = new Intent(mContext, AppDetails.class);
                     i.putExtra("App", apps.get(rndList.get(pos)));
+                    i.putExtra("mActive",false);
                     mContext.startActivity(i);
                 }
             }

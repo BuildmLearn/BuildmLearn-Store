@@ -33,6 +33,7 @@ public class CategoriesActivity extends NavigationActivity {
         getLayoutInflater().inflate(R.layout.activity_categories, frameLayout);
         mContext=this;
         mCategories = CategoriesCard.getCategoriesList();
+        getSupportActionBar().setTitle("Categories");
         txtCategories=(TextView)findViewById(R.id.txtCategoriesActivity);
         txtCategories.setVisibility(View.GONE);
         mRecyclerView = (RecyclerView) findViewById(R.id.categoriesView);
@@ -60,7 +61,6 @@ public class CategoriesActivity extends NavigationActivity {
             mRecyclerView.setVisibility(View.GONE);
             txtCategories.setVisibility(View.VISIBLE);
         }
-
     }
     public static void closeSearch()    {
         CategoriesAdapter adapter = new CategoriesAdapter(mCategories, mContext);
@@ -74,5 +74,10 @@ public class CategoriesActivity extends NavigationActivity {
             mRecyclerView.setVisibility(View.VISIBLE);
         }
     }
-
+    @Override
+    public void onBackPressed()
+    {
+        NavigationActivity.mActive=1;
+        super.onBackPressed();
+    }
 }

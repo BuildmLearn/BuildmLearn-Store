@@ -11,9 +11,8 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
-import android.support.v4.app.NavUtils;
 import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
+import android.view.View;
 
 import org.buildmlearn.appstore.R;
 
@@ -38,52 +37,30 @@ public class SettingsActivity extends PreferenceActivity{
      * shown on tablets.
      */
     private static final boolean ALWAYS_SIMPLE_PREFS = false;
+    private static Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_settings);
+        mToolbar = (Toolbar) findViewById(R.id.tool_bar_settings);
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
+        mToolbar.setNavigationIcon(R.drawable.ic_back);
+        mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+        mToolbar.setSubtitleTextColor(getResources().getColor(android.R.color.white));
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         mToolbar.setTitle("Settings");
     }
-
-    /**
-     * Set up the {@link android.app.ActionBar}, if the API is available.
-     */
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void setupActionBar() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            // Show the Up button in the action bar.
-            //getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == android.R.id.home) {
-            // This ID represents the Home or Up button. In the case of this
-            // activity, the Up button is shown. Use NavUtils to allow users
-            // to navigate up one level in the application structure. For
-            // more details, see the Navigation pattern on Android Design:
-            //
-            // http://developer.android.com/design/patterns/navigation.html#up-vs-back
-            //
-            // TODO: If Settings has multiple levels, Up should navigate up
-            // that hierarchy.
-            NavUtils.navigateUpFromSameTask(this);
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-
         setupSimplePreferencesScreen();
     }
-
     /**
      * Shows the simplified settings UI if the device configuration if the
      * device configuration dictates that a simplified, single-pane UI should be
@@ -93,19 +70,16 @@ public class SettingsActivity extends PreferenceActivity{
         if (!isSimplePreferences(this)) {
             return;
         }
-
         // In the simplified UI, fragments are not used at all and we instead
         // use the older PreferenceActivity APIs.
 
         // Add 'general' preferences.
         addPreferencesFromResource(R.xml.pref_general);
-
         // Add 'notifications' preferences, and a corresponding header.
         PreferenceCategory fakeHeader = new PreferenceCategory(this);
         fakeHeader.setTitle(R.string.pref_header_about);
         getPreferenceScreen().addPreference(fakeHeader);
         addPreferencesFromResource(R.xml.pref_about);
-
         // Bind the summaries of EditText/List/Dialog/Ringtone preferences to
         // their values. When their values change, their summaries are updated
         // to reflect the new value, per the Android Design guidelines.
@@ -203,7 +177,7 @@ public class SettingsActivity extends PreferenceActivity{
         sBindPreferenceSummaryToValueListener.onPreferenceChange(preference,
                 PreferenceManager
                         .getDefaultSharedPreferences(preference.getContext())
-                        .getString(preference.getKey().toString(), ""));
+                        .getString(preference.getKey(), ""));
     }
 
     /**

@@ -4,7 +4,7 @@
     android:layout_width="@dimen/card_width"
     android:layout_height="@dimen/card_width"
     android:background="@android:color/background_light"
-    app:cardCornerRadius="10dp"
+    app:cardCornerRadius="3dp"
     app:cardElevation="10dp"
     tools:context=".FlashActivity">
 <LinearLayout
@@ -26,7 +26,6 @@
         android:layout_gravity="center"
         android:textColor="@color/primary_text"
         android:text="Hello"
-        android:padding="5dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
          />
 

@@ -3,7 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="org.buildmlearn.appstore.activities.AppDetails">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar_app_details"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+        android:elevation="7dp"
+        android:paddingTop="@dimen/tool_bar_top_padding" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -13,7 +21,7 @@
             android:orientation="vertical">
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                card_view:cardCornerRadius="10dp"
+                card_view:cardCornerRadius="3dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_margin="5dp"
@@ -73,7 +81,7 @@
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                card_view:cardCornerRadius="10dp"
+                card_view:cardCornerRadius="3dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="5dp">
@@ -113,7 +121,7 @@
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                card_view:cardCornerRadius="10dp"
+                card_view:cardCornerRadius="3dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="5dp">
@@ -158,7 +166,7 @@
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                card_view:cardCornerRadius="10dp"
+                card_view:cardCornerRadius="3dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="5dp">
@@ -186,6 +194,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/secondary_text"
+                            android:lineSpacingMultiplier="1.5"
                             android:text="Last updated on: \nCurrent Version: \nCategory: \nPublisher: "
                             android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
                         <TextView
@@ -194,6 +203,7 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/details_AdditionalDetails"
                             android:textColor="@color/primary_text"
+                            android:lineSpacingMultiplier="1.5"
                             android:text="5/19/2015\n1.0.0.8\nScience\nSrujan Jha"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
                     </LinearLayout>
@@ -201,7 +211,7 @@
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                card_view:cardCornerRadius="10dp"
+                card_view:cardCornerRadius="3dp"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_margin="5dp">

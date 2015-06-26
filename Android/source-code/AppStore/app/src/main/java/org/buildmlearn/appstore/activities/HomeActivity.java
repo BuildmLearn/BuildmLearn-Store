@@ -20,7 +20,7 @@ public class HomeActivity extends NavigationActivity {
     private ViewPager mPager;
     private ViewPagerAdapter mPagerAdapter;
     private SlidingTabLayout mTabs;
-    private CharSequence Titles[]={"My Apps","Store"};
+    private CharSequence Titles[]={"Store","My Apps"};
     private int mNumberoftabs =2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +49,7 @@ public class HomeActivity extends NavigationActivity {
                 TabMyApps.closeSearch();
                 getSupportActionBar().collapseActionView();
                 getSupportActionBar().setTitle("Home");
+
                 if(NavigationActivity.searchQuery.equals("")){return;}
                 NavigationActivity.clearSearch();
             }
@@ -66,9 +67,5 @@ public class HomeActivity extends NavigationActivity {
         });
         // Setting the ViewPager For the SlidingTabsLayout
         mTabs.setViewPager(mPager);
-    }
-    public static void reload()
-    {
-
     }
 }

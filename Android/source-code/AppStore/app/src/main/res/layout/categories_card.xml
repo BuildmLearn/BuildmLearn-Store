@@ -9,7 +9,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        card_view:cardCornerRadius="10dp"
+        card_view:cardCornerRadius="3dp"
         card_view:cardBackgroundColor="@android:color/black"
         android:layout_height="100dp">
         <ImageView

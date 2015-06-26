@@ -106,7 +106,7 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
                     // View v at position pos is long-clicked.
                 } else {
                     Intent i = new Intent(mContext, CategoriesView.class);
-                    i.putExtra("Category", CategoriesCard.CategoryName[pos]);
+                    i.putExtra("Category", CategoriesCard.CategoryName[rndList.get(pos)]);
                     mContext.startActivity(i);
                 }
             }

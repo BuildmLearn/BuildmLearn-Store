@@ -37,7 +37,9 @@ public class TabMyApps extends Fragment {
         txtMyApps = (TextView) v.findViewById(R.id.txtMyApps);
         appList = listApps(v.getContext());
         if (appList.size() > 0) txtMyApps.setVisibility(View.GONE);
-        else txtMyApps.setVisibility(View.VISIBLE);
+        else {
+            txtMyApps.setVisibility(View.VISIBLE);
+        }
         mRecyclerView = (RecyclerView) v.findViewById(R.id.rvMyAppCard);
         mRecyclerView.setHasFixedSize(true);
         GridLayoutManager llm = new GridLayoutManager(v.getContext(), 3);
@@ -74,7 +76,7 @@ public class TabMyApps extends Fragment {
         if (appList.size() > 0) {txtMyApps.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.VISIBLE);}
         else {txtMyApps.setVisibility(View.VISIBLE);
-            txtMyApps.setText("There are no downloaded apps.\nSwipe Right to navigate to the Store and download interesting apps!");
+            txtMyApps.setText("There are no downloaded apps.\nSwipe Left to navigate to the Store and download interesting apps!");
             mRecyclerView.setVisibility(View.GONE);}
     }
 }

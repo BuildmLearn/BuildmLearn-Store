@@ -18,6 +18,6 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:id="@+id/txtMyApps"
-        android:text="There are no downloaded apps.\nSwipe Right to navigate to the Store and download interesting apps!"
+        android:text="There are no downloaded apps.\nSwipe Left to navigate to the Store and download interesting apps!"
         android:visibility="visible"/>
 </FrameLayout>

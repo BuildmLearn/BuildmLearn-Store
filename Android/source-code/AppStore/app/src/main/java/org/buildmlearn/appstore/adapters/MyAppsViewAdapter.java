@@ -15,9 +15,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.buildmlearn.appstore.R;
+import org.buildmlearn.appstore.activities.AppDetails;
 import org.buildmlearn.appstore.activities.HomeActivity;
+import org.buildmlearn.appstore.activities.SplashActivity;
 import org.buildmlearn.appstore.activities.StartActivity;
 import org.buildmlearn.appstore.models.AppInfo;
+import org.buildmlearn.appstore.models.Apps;
 
 import java.util.List;
 
@@ -125,11 +128,24 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
                         popup.show();//showing popup menu
                         // View v at position pos is long-clicked.
                 } else {
+                    String appName=apps.get(pos).Name;
+                    for(Apps app:SplashActivity.appList) {
+                        if (app.Name.equals(appName)) {
+                            Intent i = new Intent(mContext, AppDetails.class);
+                            i.putExtra("App", app);
+                            i.putExtra("mActive", true);
+                            i.putExtra("option", apps.get(pos).Type);
+                            i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
+                            mContext.startActivity(i);
+                            return;
+                        } else {
+
+                        }
+                    }
                         Intent i = new Intent(mContext, StartActivity.class);
                         i.putExtra("option", apps.get(pos).Type);
                         i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
                         mContext.startActivity(i);
-                   //Toast.makeText(mContext,"Only Info-apps(Festivals) are functional now.",Toast.LENGTH_LONG).show();
                 }
             }
         });

@@ -10,6 +10,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -28,7 +30,7 @@ import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.VolleySingleton;
 
-public class AppDetails extends NavigationActivity {
+public class AppDetails extends AppCompatActivity {
     private static Apps mApp=new Apps();
     private Context mContext;
     private static NetworkImageView mAppIcon;
@@ -46,15 +48,27 @@ public class AppDetails extends NavigationActivity {
     private static ProgressBar mProgressReviews;
     private WebView webDisqus;
     public static String mScreenshots[];
+    private boolean mActive=false;//false:App is not installed. true:Launch the app
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getLayoutInflater().inflate(R.layout.activity_app_details,frameLayout);
+        setContentView(R.layout.activity_app_details);
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_app_details);
+        mToolbar.setNavigationIcon(R.drawable.ic_back);
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         mContext=this;
-        Intent i=getIntent();
-        mApp=i.getParcelableExtra("App");
+        final Intent intent=getIntent();
+        mActive=intent.getBooleanExtra("mActive",false);
+        mApp=intent.getParcelableExtra("App");
+        mToolbar.setTitle(mApp.Name);
+        mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+       // setSupportActionBar(mToolbar);
         if(mApp==null)finish();
-        getSupportActionBar().setTitle(mApp.Name);
         mAppIcon=(NetworkImageView)findViewById(R.id.details_AppIcon);
         mAppTitle=(TextView)findViewById(R.id.details_AppTitle);
         mAppSubTitle=(TextView)findViewById(R.id.details_AppSubTitle);
@@ -135,12 +149,16 @@ public class AppDetails extends NavigationActivity {
             }
         });
         mBtnInstall=(Button)findViewById(R.id.btnInstall);
+        if(mActive)mBtnInstall.setText("LAUNCH");
+        else mBtnInstall.setText("INSTALL");
         mBtnInstall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
+                if(!mActive){
+                    SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
                 if(SP.getBoolean(mApp.Name,false)) {
                     Toast.makeText(mContext, "The app is already installed", Toast.LENGTH_LONG).show();
+
                     return;
                 }
                 SharedPreferences.Editor editor1 = SP.edit();
@@ -148,8 +166,14 @@ public class AppDetails extends NavigationActivity {
                 editor1.commit();
                 Intent i = new Intent(mContext, HomeActivity.class);
                 mContext.startActivity(i);
-                Activity activity = (Activity) mContext;
-                activity.finish();
+                    Activity activity = (Activity) mContext;
+                    activity.finish();}
+                else{
+                    Intent i = new Intent(mContext, StartActivity.class);
+                    i.putExtra("option", intent.getIntExtra("option",0));
+                    i.putExtra("filename", intent.getStringExtra("filename"));
+                    mContext.startActivity(i);
+                }
             }
         });
     }
