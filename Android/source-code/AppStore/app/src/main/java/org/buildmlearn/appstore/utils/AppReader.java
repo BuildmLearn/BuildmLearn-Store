@@ -31,6 +31,7 @@ import java.util.HashMap;
 
 public class AppReader {
     private static BufferedReader br;
+    public static ArrayList<AppInfo>AppList;
 
     public static ArrayList<AppInfo> listApps(Context context) {
         ArrayList<AppInfo> mFileList = new ArrayList<AppInfo>();
@@ -62,6 +63,7 @@ public class AppReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        AppList=mFileList;
         return mFileList;
     }
 

@@ -99,7 +99,6 @@ public class TabStore extends Fragment {
             mRecyclerView2.setVisibility(View.GONE);
             txtStore.setVisibility(View.VISIBLE);
         }
-
     }
     public static void closeSearch()    {
         txtAppsStore.setText("Featured Apps");

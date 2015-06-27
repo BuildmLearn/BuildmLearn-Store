@@ -17,11 +17,10 @@ import android.widget.TextView;
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.MyAppsViewAdapter;
 import org.buildmlearn.appstore.models.AppInfo;
+import org.buildmlearn.appstore.utils.AppReader;
 import org.buildmlearn.appstore.utils.SpacesItemDecoration;
 
 import java.util.ArrayList;
-
-import static org.buildmlearn.appstore.utils.AppReader.listApps;
 
 
 public class TabMyApps extends Fragment {
@@ -35,8 +34,8 @@ public class TabMyApps extends Fragment {
         View v = inflater.inflate(R.layout.fragment_tab_my_apps, container, false);
         mContext = v.getContext();
         txtMyApps = (TextView) v.findViewById(R.id.txtMyApps);
-        appList = listApps(v.getContext());
-        if (appList.size() > 0) txtMyApps.setVisibility(View.GONE);
+        appList = AppReader.AppList;//listApps(v.getContext());
+        if (appList.size() > 0){ txtMyApps.setVisibility(View.GONE);}
         else {
             txtMyApps.setVisibility(View.VISIBLE);
         }

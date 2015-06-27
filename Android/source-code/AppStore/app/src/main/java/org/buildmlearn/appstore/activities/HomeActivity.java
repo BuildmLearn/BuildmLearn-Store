@@ -8,12 +8,16 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.view.ViewPager;
+import android.view.View;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.ViewPagerAdapter;
 import org.buildmlearn.appstore.fragments.TabMyApps;
 import org.buildmlearn.appstore.fragments.TabStore;
+import org.buildmlearn.appstore.utils.AppReader;
 import org.buildmlearn.appstore.utils.SlidingTabLayout;
+
+import static org.buildmlearn.appstore.utils.AppReader.listApps;
 
 public class HomeActivity extends NavigationActivity {
 
@@ -22,22 +26,26 @@ public class HomeActivity extends NavigationActivity {
     private SlidingTabLayout mTabs;
     private CharSequence Titles[]={"Store","My Apps"};
     private int mNumberoftabs =2;
+    private boolean mAppSection=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        boolean AppSection = SP.getBoolean("home_page_start", true);
+        mAppSection = SP.getBoolean("home_page_start", true);
         NavigationActivity.mActive=1;
         super.onCreate(savedInstanceState);
         getLayoutInflater().inflate(R.layout.activity_home, frameLayout);
+        listApps(this);
+        mTabs = (SlidingTabLayout) findViewById(R.id.tabs);
+        if(AppReader.AppList.size()>0) {mNumberoftabs=2;mTabs.setVisibility(View.VISIBLE);}
+            else {mNumberoftabs=1;mTabs.setVisibility(View.GONE);}
         // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles for the Tabs and Number Of Tabs.
         mPagerAdapter =  new ViewPagerAdapter(getSupportFragmentManager(),Titles,mNumberoftabs);
         // Assigning ViewPager View and setting the adapter
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(mPagerAdapter);
-        if(AppSection){NavigationActivity.mActiveSearchInterface=0;}
+        if(mAppSection){NavigationActivity.mActiveSearchInterface=0;}
         else {mPager.setCurrentItem(1,true);NavigationActivity.mActiveSearchInterface=1;}
         // Assigning the Sliding Tab Layout View
-        mTabs = (SlidingTabLayout) findViewById(R.id.tabs);
         mTabs.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
@@ -49,8 +57,6 @@ public class HomeActivity extends NavigationActivity {
                 TabMyApps.closeSearch();
                 getSupportActionBar().collapseActionView();
                 getSupportActionBar().setTitle("Home");
-
-                if(NavigationActivity.searchQuery.equals("")){return;}
                 NavigationActivity.clearSearch();
             }
             @Override

@@ -58,7 +58,7 @@ public class NavigationActivity extends AppCompatActivity {
     private static MenuItem searchItem;
     private static Context mContext;
     public static String searchQuery="";
-    public static int mActiveSearchInterface=0;//0-MyApps, 1-Store, 2-Categories, 3-InnerCategories
+    public static int mActiveSearchInterface=0;//0-MyApps, 1-Store, 2-Categories, 3-InnerCategories, 4-AppsActivity
     public static int color_divider;
 
     @Override
@@ -198,14 +198,16 @@ public class NavigationActivity extends AppCompatActivity {
             searchView.setOnCloseListener(new SearchView.OnCloseListener() {
                 @Override
                 public boolean onClose() {
-                    if(mActiveSearchInterface==0)
+                    if(mActiveSearchInterface==1)
                         TabMyApps.closeSearch();
-                    else if(mActiveSearchInterface==1)
+                    else if(mActiveSearchInterface==0)
                         TabStore.closeSearch();
                     else if(mActiveSearchInterface==2)
                         CategoriesActivity.closeSearch();
                     else if(mActiveSearchInterface==3)
                         CategoriesView.closeSearch();
+                    else if(mActiveSearchInterface==4)
+                        AppsActivity.closeSearch();
                     return false;
                 }
             });
@@ -233,7 +235,6 @@ public class NavigationActivity extends AppCompatActivity {
                     mContext.startActivity(i);
                     return false;
                 }
-
                 @Override
                 public boolean onSuggestionClick(int position) {
                     Intent i = new Intent(mContext, AppDetails.class);
@@ -276,14 +277,17 @@ public class NavigationActivity extends AppCompatActivity {
         searchItem.collapseActionView();
     }
     private void refineSearch(String query)    {
-        if(mActiveSearchInterface==0)
+        if(mActiveSearchInterface==1)
             TabMyApps.refineSearch(query);
-        else if(mActiveSearchInterface==1)
+        else if(mActiveSearchInterface==0)
             TabStore.refineSearch(query);
         else if(mActiveSearchInterface==2)
             CategoriesActivity.refineSearch(query);
         else if(mActiveSearchInterface==3)
             CategoriesView.refineSearch(query);
+        else if(mActiveSearchInterface==4)
+            AppsActivity.refineSearch(query);
+
     }
 
 }

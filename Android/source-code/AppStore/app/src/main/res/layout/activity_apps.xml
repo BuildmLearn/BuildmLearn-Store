@@ -11,5 +11,12 @@
         android:layout_height="match_parent"
         android:id="@+id/rvAppsCard"
         />
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/txtAppsActivity"
+        android:text="No app matches your search!"
+        android:visibility="gone"/>
 </RelativeLayout>
