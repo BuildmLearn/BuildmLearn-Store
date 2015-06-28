@@ -21,7 +21,10 @@ import com.android.volley.toolbox.NetworkImageView;
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.activities.AppDetails;
 import org.buildmlearn.appstore.activities.HomeActivity;
+import org.buildmlearn.appstore.activities.NavigationActivity;
+import org.buildmlearn.appstore.models.AppInfo;
 import org.buildmlearn.appstore.models.Apps;
+import org.buildmlearn.appstore.utils.AppReader;
 import org.buildmlearn.appstore.utils.VolleySingleton;
 
 import java.util.ArrayList;
@@ -137,6 +140,16 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                 } else {
                     Intent i = new Intent(mContext, AppDetails.class);
                     i.putExtra("App", apps.get(rndList.get(pos)));
+                    String appName=apps.get(pos).Name;
+                    for(AppInfo app: AppReader.AppList) {
+                        if (app.Name.equals(appName)) {
+                            i.putExtra("mActive", true);
+                            i.putExtra("option", app.Type);
+                            i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
+                            mContext.startActivity(i);
+                            return;
+                        }
+                    }
                     i.putExtra("mActive",false);
                     mContext.startActivity(i);
                 }
@@ -162,10 +175,12 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                             SharedPreferences.Editor editor1 = SP.edit();
                             editor1.putBoolean(v.getTag().toString(),true);
                             editor1.commit();
-                            Intent i = new Intent(mContext, HomeActivity.class);
-                            mContext.startActivity(i);
-                            Activity activity = (Activity) mContext;
-                            activity.finish();
+                            /*Intent i = new Intent(mContext, HomeActivity.class);
+                            mContext.startActivity(i);*/
+                            HomeActivity.MyAppsView();
+                            Toast.makeText(mContext, "Thank you for installing "+v.getTag().toString(), Toast.LENGTH_LONG).show();
+                            if(NavigationActivity.mActive>1){Activity activity = (Activity) mContext;
+                            activity.finish();}
                         }
                         if (item.getItemId() == R.id.menu_share_2) {
                             Intent intent = new Intent(android.content.Intent.ACTION_SEND);

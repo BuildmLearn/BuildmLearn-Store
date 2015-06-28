@@ -80,14 +80,13 @@ public class SpellingActivity extends AppCompatActivity implements
 						+ mWordList.size());
 				mBtn_Spell.setEnabled(false);
 				mBtn_Skip.setEnabled(false);
-				mBtn_Skip.setTextColor(Color.WHITE);
-				mBtn_Spell.setTextColor(Color.WHITE);
+				mBtn_Skip.setTextColor(getResources().getColor(R.color.primary_light));
+				mBtn_Spell.setTextColor(getResources().getColor(R.color.primary_light));
 			} else {
 				Intent resultIntent = new Intent(this, ScoreActivity.class);
 				resultIntent.putExtra("Activity",1);// 0: Quiz Template and 1: Spellings Template
 				startActivity(resultIntent);
 				finish();
-
 			}
 			break;
 
@@ -95,7 +94,9 @@ public class SpellingActivity extends AppCompatActivity implements
             if (Build.VERSION.RELEASE.startsWith("5"))convertTextToSpeech21(mWordList.get(count).getWord());
             else convertTextToSpeech(mWordList.get(count).getWord());
 			mBtn_Spell.setEnabled(true);
-			mBtn_Skip.setEnabled(true);
+            mBtn_Spell.setTextColor(Color.WHITE);
+            mBtn_Skip.setTextColor(Color.WHITE);
+            mBtn_Skip.setEnabled(true);
 			break;
 		case R.id.btn_ready:
 
@@ -118,9 +119,7 @@ public class SpellingActivity extends AppCompatActivity implements
 					submit();
 				}
 			});
-
 			break;
-
 		}
 
 	}
@@ -201,6 +200,11 @@ public class SpellingActivity extends AppCompatActivity implements
 		float per = temp * 2;
 		return per;
 	}
-
+	@Override
+	public void onBackPressed()
+	{
+		SpellingsModel.clearInstance();
+		super.onBackPressed();
+	}
 
 }

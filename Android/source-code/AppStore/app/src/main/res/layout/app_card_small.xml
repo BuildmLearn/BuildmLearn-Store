@@ -15,8 +15,8 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
             <com.android.volley.toolbox.NetworkImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_gravity="center"
                 android:id="@+id/sCardLogo"
                 android:cropToPadding="true"
@@ -26,6 +26,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
+                android:paddingRight="2dp"
+                android:paddingLeft="3dp"
                 android:id="@+id/btn_More_Cards"
                 style="?android:attr/borderlessButtonStyle"
                 android:src="@drawable/ic_more"/>

@@ -10,6 +10,7 @@ import android.widget.TextView;
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.CardViewAdapter;
 import org.buildmlearn.appstore.models.Apps;
+import org.buildmlearn.appstore.utils.SpacesItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +33,8 @@ public class AppsActivity extends NavigationActivity {
         GridLayoutManager llm = new GridLayoutManager(this,3);
         mRecyclerView.setLayoutManager(llm);
         CardViewAdapter adapter = new CardViewAdapter(SplashActivity.appList,this);
+        int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.card_spacing);
+        mRecyclerView.addItemDecoration(new SpacesItemDecoration(spacingInPixels));
         mRecyclerView.setAdapter(adapter);
     }
     public static void refineSearch(String query)    {

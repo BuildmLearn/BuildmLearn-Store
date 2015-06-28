@@ -158,14 +158,16 @@ public class AppDetails extends AppCompatActivity {
                     SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
                 if(SP.getBoolean(mApp.Name,false)) {
                     Toast.makeText(mContext, "The app is already installed", Toast.LENGTH_LONG).show();
-
                     return;
                 }
                 SharedPreferences.Editor editor1 = SP.edit();
                 editor1.putBoolean(mApp.Name,true);
                 editor1.commit();
-                Intent i = new Intent(mContext, HomeActivity.class);
-                mContext.startActivity(i);
+                /*Intent i = new Intent(mContext, HomeActivity.class);
+                mContext.startActivity(i);*/
+                    //onBackPressed();
+                    HomeActivity.MyAppsView();
+                    Toast.makeText(mContext, "Thank you for installing "+mApp.Name, Toast.LENGTH_LONG).show();
                     Activity activity = (Activity) mContext;
                     activity.finish();}
                 else{

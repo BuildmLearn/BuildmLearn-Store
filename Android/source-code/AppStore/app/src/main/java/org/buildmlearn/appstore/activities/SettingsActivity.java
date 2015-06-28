@@ -38,13 +38,14 @@ public class SettingsActivity extends PreferenceActivity{
      */
     private static final boolean ALWAYS_SIMPLE_PREFS = false;
     private static Toolbar mToolbar;
+    private static Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        mContext=this;
         mToolbar = (Toolbar) findViewById(R.id.tool_bar_settings);
-        //getActionBar().setDisplayHomeAsUpEnabled(true);
         mToolbar.setNavigationIcon(R.drawable.ic_back);
         mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         mToolbar.setSubtitleTextColor(getResources().getColor(android.R.color.white));
@@ -80,6 +81,26 @@ public class SettingsActivity extends PreferenceActivity{
         fakeHeader.setTitle(R.string.pref_header_about);
         getPreferenceScreen().addPreference(fakeHeader);
         addPreferencesFromResource(R.xml.pref_about);
+        /*final EditTextPreference msgLimitPref = (EditTextPreference)
+                findPreference("number_featured_categories");
+        msgLimitPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                System.out.println("Closed");
+                msgLimitPref.getDialog().dismiss();
+                PopupMenu popup = new PopupMenu(preference.getContext(), msgLimitPref.getEditText());
+                //Inflating the Popup using xml file
+                popup.getMenuInflater().inflate(R.menu.menu_popup_myapps, popup.getMenu());
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        return true;
+                    }
+                });
+                popup.show();//showing popup menu
+                return true;
+            }
+        });*/
         // Bind the summaries of EditText/List/Dialog/Ringtone preferences to
         // their values. When their values change, their summaries are updated
         // to reflect the new value, per the Android Design guidelines.
@@ -145,7 +166,7 @@ public class SettingsActivity extends PreferenceActivity{
                 txtCategories.setText(x+"");
                 preference.setSummary(x+"");
             }
-            else if(preference.getKey().equals("number_featured_categories")){
+            /*else if(preference.getKey().equals("number_featured_categories")){
                 int x=4;EditTextPreference txtCategories=(EditTextPreference)preference;
                 try{x=Integer.parseInt(stringValue);
                     if(x<3)x=3;
@@ -153,7 +174,7 @@ public class SettingsActivity extends PreferenceActivity{
                 }catch (Exception e){x=4;}
                 txtCategories.setText(x+"");
                 preference.setSummary(x+"");
-            }
+            }*/
             else preference.setSummary(stringValue);
             return true;
         }
@@ -190,11 +211,34 @@ public class SettingsActivity extends PreferenceActivity{
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.pref_general);
+
+           /* final EditTextPreference msgLimitPref = (EditTextPreference)
+                    findPreference("number_featured_categories");
+
+            System.out.println(msgLimitPref);
+            msgLimitPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    System.out.println("Closed");
+                    msgLimitPref.getDialog().dismiss();
+                    PopupMenu popup = new PopupMenu(mContext, msgLimitPref.getEditText());
+                    //Inflating the Popup using xml file
+                    popup.getMenuInflater().inflate(R.menu.menu_popup_myapps, popup.getMenu());
+                    //registering popup with OnMenuItemClickListener
+                    popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        public boolean onMenuItemClick(MenuItem item) {
+                            return true;
+                        }
+                    });
+                    popup.show();//showing popup menu
+                    return true;
+                }
+            });*/
             // Bind the summaries of EditText/List/Dialog/Ringtone preferences
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            //bindPreferenceSummaryToValue(findPreference("home_page_start"));
+            // bindPreferenceSummaryToValue(findPreference("home_page_start"));
         }
     }
 

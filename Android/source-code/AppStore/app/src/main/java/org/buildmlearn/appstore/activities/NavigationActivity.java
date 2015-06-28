@@ -4,6 +4,7 @@ package org.buildmlearn.appstore.activities;
  * Created by Srujan Jha on 25-05-2015.
  */
 
+import android.app.Activity;
 import android.app.SearchManager;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -19,11 +20,13 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.GestureDetector;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
@@ -81,7 +84,13 @@ public class NavigationActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);                 // Setting the layout Manager
         mDrawer = (DrawerLayout) findViewById(R.id.DrawerLayout);        // Drawer object Assigned to the view
         mDrawer.setStatusBarBackgroundColor(getResources().getColor(R.color.primary_dark));
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawer, mToolbar, R.string.start,R.string.close);
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawer, mToolbar, R.string.start,R.string.close){
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(drawerView.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+            }
+        };
         mDrawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
         mDrawerToggle.syncState();               // Finally we set the drawer toggle sync State
         final GestureDetector mGestureDetector = new GestureDetector(NavigationActivity.this, new GestureDetector.SimpleOnGestureListener() {
@@ -94,7 +103,7 @@ public class NavigationActivity extends AppCompatActivity {
             public boolean onInterceptTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
                 View child = recyclerView.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
                 if (child != null && mGestureDetector.onTouchEvent(motionEvent)) {
-                    mDrawer.closeDrawers();
+                    mDrawer.closeDrawers();mDrawer.closeDrawer(Gravity.LEFT);
                     if(mActive==recyclerView.getChildPosition(child))return false;
                     switch(recyclerView.getChildPosition(child))
                     {
@@ -104,11 +113,13 @@ public class NavigationActivity extends AppCompatActivity {
                         }
                         case 1:
                         {
-                            startActivity(new Intent(NavigationActivity.this,HomeActivity.class));break;
+                            startActivity(new Intent(NavigationActivity.this,HomeActivity.class));
+                            finish();break;
                         }
                         case 2:
                         {
-                            startActivity(new Intent(NavigationActivity.this,CategoriesActivity.class));break;
+                            startActivity(new Intent(NavigationActivity.this,CategoriesActivity.class));
+                            finish();break;
                         }
                         case 3:
                         {
@@ -272,9 +283,7 @@ public class NavigationActivity extends AppCompatActivity {
         if(mActiveSearchInterface==1)searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
     }
     public static void clearSearch()    {
-        searchView.clearFocus();
-        searchView.setQuery("",false);
-        searchItem.collapseActionView();
+        searchView.onActionViewCollapsed();
     }
     private void refineSearch(String query)    {
         if(mActiveSearchInterface==1)

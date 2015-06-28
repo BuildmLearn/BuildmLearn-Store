@@ -6,7 +6,6 @@ package org.buildmlearn.appstore.activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
@@ -72,12 +71,12 @@ public class WordInfoActivity extends AppCompatActivity {
 		}
 		if (isCorrect) {
 			mTv_Result.setText(getString(R.string.msg_successful));
-			mTv_Result.setTextColor(Color.GREEN);
+			mTv_Result.setTextColor(getResources().getColor(android.R.color.holo_green_light));
 			// convertTextToSpeech(getString(R.string.msg_successful));
 			mTv_enteredWord.setVisibility(View.GONE);
 		} else {
 			mTv_Result.setText(getString(R.string.msg_failure));
-			mTv_Result.setTextColor(Color.RED);
+			mTv_Result.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
 			mTv_enteredWord.setText(getString(R.string.you_entered) + " "
 					+ enteredText.toLowerCase());
 			// convertTextToSpeech("Wrong");
@@ -131,13 +130,11 @@ public class WordInfoActivity extends AppCompatActivity {
 	private void convertTextToSpeech(String text) {
 
 		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
-	}/*
-	 * 
-	 * @Override public void onInit(int status) { if (status ==
-	 * TextToSpeech.SUCCESS) { int result = textToSpeech.setLanguage(Locale.US);
-	 * if (result == TextToSpeech.LANG_MISSING_DATA || result ==
-	 * TextToSpeech.LANG_NOT_SUPPORTED) { Log.e("error",
-	 * "This Language is not supported"); } } else { Log.e("error",
-	 * "Initilization Failed!"); } }
-	 */
+	}
+	@Override
+	public void onBackPressed()
+	{
+		SpellingsModel.clearInstance();
+		super.onBackPressed();
+	}
 }

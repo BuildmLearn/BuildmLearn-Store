@@ -138,8 +138,6 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
                             i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
                             mContext.startActivity(i);
                             return;
-                        } else {
-
                         }
                     }
                         Intent i = new Intent(mContext, StartActivity.class);

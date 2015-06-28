@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="org.buildmlearn.appstore.activities.ScoreActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/tool_bar_app_score_view"

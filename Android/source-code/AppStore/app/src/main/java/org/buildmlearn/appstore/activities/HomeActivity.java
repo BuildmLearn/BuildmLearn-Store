@@ -21,7 +21,7 @@ import static org.buildmlearn.appstore.utils.AppReader.listApps;
 
 public class HomeActivity extends NavigationActivity {
 
-    private ViewPager mPager;
+    private static ViewPager mPager;
     private ViewPagerAdapter mPagerAdapter;
     private SlidingTabLayout mTabs;
     private CharSequence Titles[]={"Store","My Apps"};
@@ -55,7 +55,6 @@ public class HomeActivity extends NavigationActivity {
                 NavigationActivity.searchQuery="";
                 TabStore.closeSearch();
                 TabMyApps.closeSearch();
-                getSupportActionBar().collapseActionView();
                 getSupportActionBar().setTitle("Home");
                 NavigationActivity.clearSearch();
             }
@@ -73,5 +72,9 @@ public class HomeActivity extends NavigationActivity {
         });
         // Setting the ViewPager For the SlidingTabsLayout
         mTabs.setViewPager(mPager);
+    }
+    public static void MyAppsView()
+    {mPager.setCurrentItem(1,true);
+
     }
 }

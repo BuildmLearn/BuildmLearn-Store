@@ -10,16 +10,20 @@
     <string name="pref_title_app_home_page">Open the app with My-Apps Section</string>
     <string name="pref_description_app_home_page">You can start the app with either My-Apps Section or Store Section.</string>
     <string name="pref_title_number_of_featured_apps">Number of Featured Apps</string>
-    <string name="pref_description_number_of_featured_apps">Type between 6-</string>
+    <string name="pref_description_number_of_featured_apps">Enter between 6-</string>
     <string name="pref_title_number_of_featured_categories">Number of Featured Categories</string>
-    <string name="pref_description_number_of_featured_categories">Enter between 3-12</string>
+    <string name="pref_description_number_of_featured_categories">Enter between 3-10</string>
    <!-- <string name="pref_title_app_theme">Change the theme of the app</string>
     <string name="pref_description_app_theme">Select a color from the list that best suits you</string>
-    <string-array name="pref_app_theme_colors">
-        <item>Blue</item>
-        <item>Red</item>
-        <item>Orange</item>
-        <item>Green</item>
-        <item>Purple</item>
-    </string-array>-->
+    -->
+    <string-array name="pref_featured_categories_list">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
 </resources>

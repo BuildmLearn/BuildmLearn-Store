@@ -16,18 +16,21 @@
         android:defaultValue="@integer/default_number_of_featured_apps"
         android:inputType="number"
         android:hint="6"/>
-    <EditTextPreference
+    <!--<EditTextPreference
         android:key="number_featured_categories"
         android:title="@string/pref_title_number_of_featured_categories"
         android:summary="@string/pref_description_number_of_featured_categories"
         android:defaultValue="@integer/default_number_of_featured_categories"
         android:inputType="number"
-        android:hint="4"/>
-    <!--<ListPreference
-        android:key="app_theme"
-        android:title="@string/pref_title_app_theme"
-        android:entries="@array/pref_app_theme_colors"
-        android:entryValues="@array/pref_app_theme_colors"
-        android:defaultValue="0"/>
--->
+        android:hint="4"/>-->
+    <ListPreference
+        android:key="number_featured_categories"
+        android:title="@string/pref_title_number_of_featured_categories"
+        android:summary="@string/pref_description_number_of_featured_categories"
+        android:defaultValue="@integer/default_number_of_featured_categories"
+        android:selectable="true"
+        android:entries="@array/pref_featured_categories_list"
+        android:entryValues="@array/pref_featured_categories_list"/>
+
+
 </PreferenceScreen>

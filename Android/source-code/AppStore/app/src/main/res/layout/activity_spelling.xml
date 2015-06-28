@@ -4,6 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               xmlns:tools="http://schemas.android.com/tools"
+              android:fitsSystemWindows="true"
               tools:context="org.buildmlearn.appstore.activities.SpellingActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/tool_bar_spelling"

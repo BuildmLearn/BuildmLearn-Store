@@ -53,15 +53,14 @@ public class ScoreActivity extends AppCompatActivity {
                     int unanswered = mSpellingsModel.getSpellingsList().size()- mSpellingsModel.getTotalCorrect() - mSpellingsModel.getTotalWrong();
                     mTv_unanswered.setText("Unanswered: " + unanswered);
                }
-               else
-        {
-                           mTv_correct.setText("Total Correct: " + mQuizModel.getTotalCorrect());
-                   mTv_wrong.setText("Total Wrong: " + mQuizModel.getTotalWrong());
-                   int unanswered = mQuizModel.getQueAnsList().size()-mQuizModel.getTotalCorrect() - mQuizModel.getTotalWrong();
-                    mTv_unanswered.setText("Unanswered: " + unanswered);
-                }
+               else {
+            mTv_correct.setText("Total Correct: " + mQuizModel.getTotalCorrect());
+            mTv_wrong.setText("Total Wrong: " + mQuizModel.getTotalWrong());
+            int unanswered = mQuizModel.getQueAnsList().size() - mQuizModel.getTotalCorrect() - mQuizModel.getTotalWrong();
+            mTv_unanswered.setText("Unanswered: " + unanswered);
+        }
 		mQuizModel.clearInstance();
-
+        mSpellingsModel.clearInstance();
 		Button startAgainButton = (Button) findViewById(R.id.start_again_button);
 		startAgainButton.setOnClickListener(new OnClickListener() {
 
@@ -71,13 +70,11 @@ public class ScoreActivity extends AppCompatActivity {
                     Intent myIntent = new Intent(arg0.getContext(),
                             SpellingActivity.class);
                     startActivityForResult(myIntent, 0);
-                    mSpellingsModel.clearInstance();
                     finish();
                 } else {
                     Intent myIntent = new Intent(arg0.getContext(),
                             QuestionActivity.class);
                     startActivityForResult(myIntent, 0);
-                    mQuizModel.clearInstance();
                     finish();
                 }
             }
@@ -88,8 +85,6 @@ public class ScoreActivity extends AppCompatActivity {
 
 			@Override
 			public void onClick(View arg0) {
-                mSpellingsModel.clearInstance();
-                mQuizModel.clearInstance();
 				finish();
 			}
 		});

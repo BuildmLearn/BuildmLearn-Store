@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
               android:orientation="vertical"
               xmlns:tools="http://schemas.android.com/tools"
+              android:fitsSystemWindows="true"
               tools:context="org.buildmlearn.appstore.activities.WordInfoActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/tool_bar_word_info"
@@ -100,7 +101,7 @@ android:layout_width="match_parent"
         android:background="@color/primary_dark"
         android:onClick="doClick"
         android:text="@string/nxt_word"
-        android:textColor="@color/primary_text" />
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>
 </LinearLayout>
