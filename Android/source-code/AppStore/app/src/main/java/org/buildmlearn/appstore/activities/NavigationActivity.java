@@ -12,26 +12,22 @@ import android.content.Intent;
 import android.database.MatrixCursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.view.GestureDetector;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import org.buildmlearn.appstore.R;
-import org.buildmlearn.appstore.adapters.NavigationAdapter;
 import org.buildmlearn.appstore.adapters.SearchListAdapter;
 import org.buildmlearn.appstore.fragments.TabMyApps;
 import org.buildmlearn.appstore.fragments.TabStore;
@@ -43,16 +39,11 @@ import java.util.List;
 import me.drakeet.materialdialog.MaterialDialog;
 
 public class NavigationActivity extends AppCompatActivity {
-    String NAME = "BuildmLearn AppStore";
-    String EMAIL = "Promoting mLearning";
     private MaterialDialog mAlertDialog=new MaterialDialog(NavigationActivity.this);
-    private static Toolbar mToolbar;                                     // Declaring the Toolbar Object
-    private RecyclerView mRecyclerView;                           // Declaring RecyclerView
-    private RecyclerView.Adapter mNavigationAdapter;              // Declaring Adapter For Recycler View
-    private RecyclerView.LayoutManager mLayoutManager;            // Declaring Layout Manager as a linear layout manager
+    private static Toolbar mToolbar;
     private static DrawerLayout mDrawer;                                 // Declaring DrawerLayout
     private ActionBarDrawerToggle mDrawerToggle;                  // Declaring Action Bar Drawer Toggle
-    protected FrameLayout frameLayout;
+    public static FrameLayout frameLayout;
     private String[] columns = new String[] { "_id", "search","image" };
     public static List<Apps> appList=new ArrayList<Apps>();
     private MatrixCursor cursor = new MatrixCursor(columns);
@@ -63,6 +54,7 @@ public class NavigationActivity extends AppCompatActivity {
     public static String searchQuery="";
     public static int mActiveSearchInterface=0;//0-MyApps, 1-Store, 2-Categories, 3-InnerCategories, 4-AppsActivity
     public static int color_divider;
+    protected NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,12 +68,7 @@ public class NavigationActivity extends AppCompatActivity {
         mToolbar.setTitle("Home");
         setSupportActionBar(mToolbar);
         color_divider=getResources().getColor(R.color.divider);
-        mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView); // Assigning the RecyclerView Object to the xml View
-        mRecyclerView.setHasFixedSize(true);                            // Letting the system know that the list objects are of fixed size
-        mNavigationAdapter = new NavigationAdapter(NAME,EMAIL,mActive);       // Creating the Adapter of NavigationAdapter class(which we are going to see in a bit)
-        mRecyclerView.setAdapter(mNavigationAdapter);                              // Setting the adapter to RecyclerView
-        mLayoutManager = new LinearLayoutManager(this);                 // Creating a layout Manager
-        mRecyclerView.setLayoutManager(mLayoutManager);                 // Setting the layout Manager
+        navigationView=(NavigationView)findViewById(R.id.navigation_view);
         mDrawer = (DrawerLayout) findViewById(R.id.DrawerLayout);        // Drawer object Assigned to the view
         mDrawer.setStatusBarBackgroundColor(getResources().getColor(R.color.primary_dark));
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawer, mToolbar, R.string.start,R.string.close){
@@ -93,88 +80,73 @@ public class NavigationActivity extends AppCompatActivity {
         };
         mDrawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
         mDrawerToggle.syncState();               // Finally we set the drawer toggle sync State
-        final GestureDetector mGestureDetector = new GestureDetector(NavigationActivity.this, new GestureDetector.SimpleOnGestureListener() {
-            @Override public boolean onSingleTapUp(MotionEvent e) {
-                return true;
-            }
-        });
-        mRecyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public boolean onInterceptTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
-                View child = recyclerView.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
-                if (child != null && mGestureDetector.onTouchEvent(motionEvent)) {
-                    mDrawer.closeDrawers();mDrawer.closeDrawer(Gravity.LEFT);
-                    if(mActive==recyclerView.getChildPosition(child))return false;
-                    switch(recyclerView.getChildPosition(child))
-                    {
-                        case 0:
-                        {
-                            break;
-                        }
-                        case 1:
-                        {
-                            startActivity(new Intent(NavigationActivity.this,HomeActivity.class));
-                            finish();break;
-                        }
-                        case 2:
-                        {
-                            startActivity(new Intent(NavigationActivity.this,CategoriesActivity.class));
-                            finish();break;
-                        }
-                        case 3:
-                        {
-                            startActivity(new Intent(NavigationActivity.this,SettingsActivity.class));break;
-                        }
-                        case 5:
-                        {
-                            mAlertDialog.setTitle("Feedback")
-                                    .setMessage("We just love feedback !")
-                                    .setPositiveButton("SEND SMILE", new View.OnClickListener() {
-                                        @Override
-                                        public void onClick(View v) {
-                                            sendEmail("I love BuildmLearn AppStore. I like the following features:\n");
-                                            mAlertDialog.dismiss();
-                                        }
-                                    })
-                                    .setNegativeButton("SEND FROWN", new View.OnClickListener() {
-                                        @Override
-                                        public void onClick(View v) {
-                                            sendEmail("I didn't like BuildmLearn AppStore. I don't like the following features:\n");
-                                            mAlertDialog.dismiss();}
-                                    })
-                                    .setCanceledOnTouchOutside(true);
-                            mAlertDialog.show();
-                             break;
-                        }
-                        case 6:
-                        {
-                            Uri uri = Uri.parse("market://details?id=" + mContext.getPackageName());
-                            Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
-                            try {
-                                startActivity(goToMarket);
-                            } catch (ActivityNotFoundException e) {
-                                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + mContext.getPackageName())));
-                            }
-                            break;
-                        }
-                        case 7:
-                        {
-                            Toast.makeText(mContext,"About page is yet to be created",Toast.LENGTH_SHORT).show();
-                            break;
-                        }
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                mDrawer.closeDrawers();
+                mDrawer.closeDrawer(Gravity.LEFT);
+                if(mActive==menuItem.getItemId())return false;
+                switch (menuItem.getItemId()) {
+                    case R.id.navigation_item_1: {
+                        Intent i = new Intent(NavigationActivity.this, HomeActivity.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(i);
+                        finish();
+                        menuItem.setChecked(true);
+                        break;
                     }
-                    return true;
+                    case R.id.navigation_item_2: {
+                        Intent i = new Intent(NavigationActivity.this, CategoriesActivity.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(i);
+                        finish();
+                        menuItem.setChecked(true);
+                        break;
+                    }
+                    case R.id.navigation_item_3: {
+                        Intent i = new Intent(NavigationActivity.this, SettingsActivity.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(i);
+                        finish();
+                        break;
+                    }
+                    case R.id.navigation_item_4: {
+                        mAlertDialog.setTitle("Feedback")
+                                .setMessage("We just love feedback !")
+                                .setPositiveButton("SEND SMILE", new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        sendEmail("I love BuildmLearn AppStore. I like the following features:\n");
+                                        mAlertDialog.dismiss();
+                                    }
+                                })
+                                .setNegativeButton("SEND FROWN", new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        sendEmail("I didn't like BuildmLearn AppStore. I don't like the following features:\n");
+                                        mAlertDialog.dismiss();
+                                    }
+                                })
+                                .setCanceledOnTouchOutside(true);
+                        mAlertDialog.show();
+                        break;
+                    }
+                    case R.id.navigation_item_5: {
+                        Uri uri = Uri.parse("market://details?id=" + mContext.getPackageName());
+                        Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                        try {
+                            startActivity(goToMarket);
+                        } catch (ActivityNotFoundException e) {
+                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + mContext.getPackageName())));
+                        }
+                        break;
+                    }
+                    case R.id.navigation_item_6: {
+                        showSnackBar("About page is yet to be created");
+                        break;
+                    }
                 }
-                return false;
-            }
-
-            @Override
-            public void onTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
-            }
-
-            @Override
-            public void onRequestDisallowInterceptTouchEvent(boolean b) {
-
+                return true;
             }
         });
     }
@@ -190,7 +162,7 @@ public class NavigationActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(emailIntent, "Give feedback"));
     }
     catch (android.content.ActivityNotFoundException ex) {
-        Toast.makeText(NavigationActivity.this, "There is no email client installed.", Toast.LENGTH_SHORT).show();
+        showSnackBar("There is no email client installed.");
     }
 }
     @Override
@@ -299,5 +271,10 @@ public class NavigationActivity extends AppCompatActivity {
             AppsActivity.refineSearch(query);
 
     }
-
+    public static void showSnackBar(String s)
+    {
+        Snackbar
+                .make(frameLayout, s, Snackbar.LENGTH_LONG)
+                .show();
+    }
 }

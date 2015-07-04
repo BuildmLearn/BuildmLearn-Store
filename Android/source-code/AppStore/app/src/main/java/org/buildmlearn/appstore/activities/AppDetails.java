@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -19,16 +20,14 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 
 import org.buildmlearn.appstore.R;
-import org.buildmlearn.appstore.fragments.TabMyApps;
-import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.VolleySingleton;
 
@@ -50,11 +49,13 @@ public class AppDetails extends AppCompatActivity {
     private static ProgressBar mProgressReviews;
     private WebView webDisqus;
     public static String mScreenshots[];
+    private LinearLayout mLinearLayout;
     private boolean mActive=false;//false:App is not installed. true:Launch the app
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app_details);
+        mLinearLayout=(LinearLayout)findViewById(R.id.ll_details);
         Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_app_details);
         mToolbar.setNavigationIcon(R.drawable.ic_back);
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -159,14 +160,9 @@ public class AppDetails extends AppCompatActivity {
                 if(!mActive){
                     SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
                     SharedPreferences.Editor editor1 = SP.edit();
-                    editor1.putBoolean(mApp.Name,true);
+                    editor1.putBoolean(mApp.Name, true);
                     editor1.commit();
-                    Intent i = new Intent(mContext, HomeActivity.class);
-                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                    mContext.startActivity(i);
-                    Toast.makeText(mContext, "Thank you for installing "+mApp.Name, Toast.LENGTH_LONG).show();
-                    Activity activity = (Activity) mContext;
-                    activity.finish();
+                    Snackbar.make(mLinearLayout, "Thank you for installing " + mApp.Name, Snackbar.LENGTH_LONG).show();
                 }
                 else{
                     Intent i = new Intent(mContext, StartActivity.class);

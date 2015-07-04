@@ -19,10 +19,8 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import org.buildmlearn.appstore.R;
-import org.buildmlearn.appstore.utils.AppReader;
 
 import java.util.List;
 
@@ -66,7 +64,6 @@ public class SettingsActivity extends PreferenceActivity{
         });
         mToolbar.setTitle("Settings");
         numberOfInstalledApps=SplashActivity.appList.size();
-        System.out.println(numberOfInstalledApps+"@");
     }
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {

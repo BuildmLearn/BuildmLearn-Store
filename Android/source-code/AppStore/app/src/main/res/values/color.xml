@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#03A9F4</color>
-    <color name="primary_dark">#0288D1</color>
-    <color name="primary_light">#B3E5FC</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
     <color name="accent">#448AFF</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#727272</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
-    <color name="tabsScrollColor">#1976D2</color>
+    <color name="tabsScrollColor">@color/primary_light</color>
     <color name="selectedItem">#E8E8E8</color>
-    <color name="activeText">#33B5E5</color>
+    <color name="activeText">@color/accent</color>
     <color name="BlueBg">@color/primary</color>
-
-    <color name="primary_orange">#FF5722</color>
-    <color name="primary_dark_orange">#E64A19</color>
-    <color name="primary_light_orange">#FFCCBC</color>
-    <color name="accent_orange">#FF9800</color>
-
-    <color name="primary_purple">#673AB7</color>
-    <color name="primary_dark_purple">#512DA8</color>
-    <color name="primary_light_purple">#D1C4E9</color>
-    <color name="accent_purple">#E040FB</color>
-
-    <color name="primary_green">#8BC34A</color>
-    <color name="primary_dark_green">#689F38</color>
-    <color name="primary_light_green">#DCEDC8</color>
-    <color name="accent_green">#4CAF50</color>
-
-    <color name="primary_red">#F44336</color>
-    <color name="primary_dark_red">#D32F2F</color>
-    <color name="primary_light_red">#FFCDD2</color>
-    <color name="accent_red">#FF5252</color>
-
-
 </resources>

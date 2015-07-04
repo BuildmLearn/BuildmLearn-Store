@@ -31,9 +31,10 @@ public class HomeActivity extends NavigationActivity {
     protected void onCreate(Bundle savedInstanceState) {
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         mAppSection = SP.getBoolean("home_page_start", true);
-        NavigationActivity.mActive=1;
+        NavigationActivity.mActive = R.id.navigation_item_1;
         super.onCreate(savedInstanceState);
         getLayoutInflater().inflate(R.layout.activity_home, frameLayout);
+        navigationView.getMenu().findItem(R.id.navigation_item_1).setChecked(true);
         listApps(this);
         mTabs = (SlidingTabLayout) findViewById(R.id.tabs);
         if(AppReader.AppList.size()>0) {mNumberoftabs=2;mTabs.setVisibility(View.VISIBLE);}
@@ -51,6 +52,10 @@ public class HomeActivity extends NavigationActivity {
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
             @Override
             public void onPageSelected(int position) {
+                if(position==1)
+                {
+                    TabMyApps.refreshList();
+                }
                 NavigationActivity.mActiveSearchInterface=position;
                 NavigationActivity.searchQuery="";
                 TabStore.closeSearch();
@@ -76,5 +81,11 @@ public class HomeActivity extends NavigationActivity {
     public static void MyAppsView()
     {
         mPager.setCurrentItem(1,true);
+    }
+    @Override
+    public void onBackPressed()
+    {
+        finish();
+        System.exit(0);
     }
 }

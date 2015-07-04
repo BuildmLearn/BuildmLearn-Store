@@ -7,9 +7,11 @@ package org.buildmlearn.appstore.activities;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 
 import org.buildmlearn.appstore.R;
@@ -265,11 +267,13 @@ public class SplashActivity extends Activity {
     private static final String AUTHOR_EMAIL = "author_email";
     private MaterialDialog mAlertDialog;
     private Context mContext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         mContext=this;
+        appList.clear();
         checkInternet();
     }
     private void checkInternet()
@@ -317,7 +321,24 @@ public class SplashActivity extends Activity {
                             ob.AuthorEmail = parser.getValue(elementApp, AUTHOR_EMAIL);
                             appList.add(ob);
                         }
-                        Thread.sleep(4000);
+                        Thread.sleep(2000);
+                        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
+                        int x= Integer.parseInt(SP.getString("number_featured_categories", "4"));
+                        int y= Integer.parseInt(SP.getString("number_featured_apps","6"));
+                        SharedPreferences.Editor editor1 = SP.edit();
+                        if(x>appList.size()){
+                            editor1.putString("number_featured_apps", appList.size() + "");
+                            editor1.commit();}
+                        if(x<6){
+                            editor1.putString("number_featured_apps", "6");
+                            editor1.commit();}
+                        if(y>10){
+                            editor1.putString("number_featured_categories","10");
+                            editor1.commit();}
+                        if(y<3){
+                            editor1.putString("number_featured_categories","3");
+                            editor1.commit();}
+
                         Intent i = new Intent(getBaseContext(), HomeActivity.class);
                         startActivity(i);
                         finish();

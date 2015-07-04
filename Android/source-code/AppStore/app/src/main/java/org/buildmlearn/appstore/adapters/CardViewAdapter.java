@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,7 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
@@ -24,7 +24,6 @@ import org.buildmlearn.appstore.activities.HomeActivity;
 import org.buildmlearn.appstore.activities.NavigationActivity;
 import org.buildmlearn.appstore.activities.StartActivity;
 import org.buildmlearn.appstore.fragments.TabMyApps;
-import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.models.AppInfo;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.AppReader;
@@ -176,45 +175,45 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                             SharedPreferences.Editor editor1 = SP.edit();
                             editor1.putBoolean(v.getTag().toString(), true);
                             editor1.commit();
-                            if(AppReader.listApps(mContext).size()==1) {
-                                Intent i = new Intent(mContext, HomeActivity.class);
-                                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                mContext.startActivity(i);
+                            if (NavigationActivity.mActive == R.id.navigation_item_1 && AppReader.AppList.size()>0) {
+                                AppReader.listApps(mContext);
+                            }
                                 NavigationActivity.clearSearch();
-                            }else TabMyApps.refreshList();
-                            Toast.makeText(mContext, "Thank you for installing "+v.getTag().toString(), Toast.LENGTH_LONG).show();
-                            if(NavigationActivity.mActive>1)
-                            {
-                                Activity activity=(Activity)mContext;
-                                activity.finish();
-                            }
-                        }
-                        else if(item.getItemId()==R.id.menu_launch)
-                        {
-                            Intent intent = new Intent(mContext, StartActivity.class);
-                            String appName=apps.get(rndList.get(i)).Name;
-                            for(AppInfo app: AppReader.AppList) {
-                                if (app.Name.equals(appName)) {
-                                    intent.putExtra("option", app.Type);
-                                    intent.putExtra("filename", "Apps/" + appName + ".buildmlearn");
-                                }
-                            }
-                            mContext.startActivity(intent);
-                            NavigationActivity.clearSearch();
-                        }
-                        if (item.getItemId() == R.id.menu_share_2) {
-                            Intent intent = new Intent(android.content.Intent.ACTION_SEND);
-                            intent.setType("text/plain");
-                            intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);// Add data to the intent, the receiving app will decide what to do with it.
-                            intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
-                            intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
-                            intent.putExtra(Intent.EXTRA_TITLE, "BuildmLearn AppStore");
-                            mContext.startActivity(Intent.createChooser(intent, "How do you want to share?"));
-                            NavigationActivity.clearSearch();
-                        }
-                        return true;
+                        NavigationActivity.showSnackBar("Thank you for installing " + v.getTag().toString());
+                        Snackbar.make(v, "Thank you for installing " + v.getTag().toString(), Snackbar.LENGTH_LONG);
                     }
-                });
+
+                    else if(item.getItemId()==R.id.menu_launch)
+
+                    {
+                        Intent intent = new Intent(mContext, StartActivity.class);
+                        String appName = apps.get(rndList.get(i)).Name;
+                        for (AppInfo app : AppReader.AppList) {
+                            if (app.Name.equals(appName)) {
+                                intent.putExtra("option", app.Type);
+                                intent.putExtra("filename", "Apps/" + appName + ".buildmlearn");
+                            }
+                        }
+                        mContext.startActivity(intent);
+                        NavigationActivity.clearSearch();
+                    }
+
+                    if(item.getItemId()==R.id.menu_share_2)
+
+                    {
+                        Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+                        intent.setType("text/plain");
+                        intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);// Add data to the intent, the receiving app will decide what to do with it.
+                        intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
+                        intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
+                        intent.putExtra(Intent.EXTRA_TITLE, "BuildmLearn AppStore");
+                        mContext.startActivity(Intent.createChooser(intent, "How do you want to share?"));
+                        NavigationActivity.clearSearch();
+                    }
+
+                    return true;
+                }
+            });
                 popup.show();//showing popup menu
             }
             });//closing the setOnClickListener method

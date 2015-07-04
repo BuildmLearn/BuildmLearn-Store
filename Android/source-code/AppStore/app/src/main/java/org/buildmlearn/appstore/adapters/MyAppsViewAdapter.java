@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,7 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.activities.AppDetails;
@@ -27,6 +27,8 @@ import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.AppReader;
 
 import java.util.List;
+
+import me.drakeet.materialdialog.MaterialDialog;
 
 /**
  * Created by Srujan Jha on 5/29/2015.
@@ -98,7 +100,7 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
         MyAppsViewHolder pvh = new MyAppsViewHolder(v);
         return pvh;
     }
-
+private MaterialDialog mAlertDialog;
     @Override
     public void onBindViewHolder(final MyAppsViewHolder cardViewHolder, int i) {
         if(apps.get(i).Name.length()<12)
@@ -118,18 +120,31 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
                         //registering popup with OnMenuItemClickListener
                         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                             public boolean onMenuItemClick(MenuItem item) {
-                                SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
-                                SharedPreferences.Editor editor1 = SP.edit();
-                                editor1.putBoolean(apps.get(pos).Name, false);
-                                editor1.commit();
-                                if(AppReader.listApps(mContext).size()==0) {
-                                    Intent i = new Intent(mContext, HomeActivity.class);
-                                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                    mContext.startActivity(i);
-                                    NavigationActivity.clearSearch();
-                                }else TabMyApps.refreshList();
-                                Toast.makeText(mContext, "The app is unistalled.", Toast.LENGTH_LONG).show();
-                                return true;
+                                mAlertDialog=new MaterialDialog(mContext)
+                                        .setTitle("Uninstall")
+                                        .setMessage("Do you want to uninstall "+apps.get(pos).Name+" ?")
+                                        .setPositiveButton("YES", new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+                                                mAlertDialog.dismiss();
+                                                SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
+                                                SharedPreferences.Editor editor1 = SP.edit();
+                                                editor1.putBoolean(apps.get(pos).Name, false);
+                                                editor1.commit();
+                                                if(AppReader.listApps(mContext).size()==0) {
+                                                    Intent i = new Intent(mContext, HomeActivity.class);
+                                                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                                    mContext.startActivity(i);
+                                                    NavigationActivity.clearSearch();
+                                                }else TabMyApps.refreshList();
+                                                NavigationActivity.showSnackBar("The app is unistalled.");
+                                                }
+                                        })
+                                        .setNegativeButton("NO", new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {mAlertDialog.dismiss();}
+                                        });
+                                mAlertDialog.show(); return true;
                             }
                         });
                         popup.show();//showing popup menu

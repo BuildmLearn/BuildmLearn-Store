@@ -29,10 +29,11 @@ public class CategoriesActivity extends NavigationActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        NavigationActivity.mActive = 2;
+        NavigationActivity.mActive = R.id.navigation_item_2;
         NavigationActivity.mActiveSearchInterface=2;
         super.onCreate(savedInstanceState);
         getLayoutInflater().inflate(R.layout.activity_categories, frameLayout);
+        navigationView.getMenu().findItem(R.id.navigation_item_2).setChecked(true);
         mContext=this;
         mCategories = CategoriesCard.getCategoriesList();
         getSupportActionBar().setTitle("Categories");

@@ -5,29 +5,4 @@
         <item name="colorAccent">@color/accent</item>
         <item name="android:windowActionBarOverlay">true</item>
     </style>
-   <!-- <style name="AppTheme_Orange" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/primary_orange</item>
-        <item name="colorPrimaryDark">@color/primary_dark_orange</item>
-        <item name="colorAccent">@color/accent_orange</item>
-        <item name="android:windowActionBarOverlay">true</item>
-    </style>
-    <style name="AppTheme_Green" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/primary_green</item>
-        <item name="colorPrimaryDark">@color/primary_dark_green</item>
-        <item name="colorAccent">@color/accent_green</item>
-        <item name="android:windowActionBarOverlay">true</item>
-    </style>
-    <style name="AppTheme_Red" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/primary_red</item>
-        <item name="colorPrimaryDark">@color/primary_dark_red</item>
-        <item name="colorAccent">@color/accent_red</item>
-        <item name="android:windowActionBarOverlay">true</item>
-    </style>
-    <style name="AppTheme_Purple" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/primary_purple</item>
-        <item name="colorPrimaryDark">@color/primary_dark_purple</item>
-        <item name="colorAccent">@color/accent_purple</item>
-        <item name="android:windowActionBarOverlay">true</item>
-    </style>
--->
 </resources>
