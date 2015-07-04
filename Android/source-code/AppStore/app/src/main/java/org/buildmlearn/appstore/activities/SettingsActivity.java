@@ -1,7 +1,10 @@
 package org.buildmlearn.appstore.activities;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,9 +15,14 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import org.buildmlearn.appstore.R;
+import org.buildmlearn.appstore.utils.AppReader;
 
 import java.util.List;
 
@@ -38,6 +46,7 @@ public class SettingsActivity extends PreferenceActivity{
      */
     private static final boolean ALWAYS_SIMPLE_PREFS = false;
     private static Toolbar mToolbar;
+    private int numberOfInstalledApps=6;
     private static Context mContext;
 
     @Override
@@ -56,6 +65,8 @@ public class SettingsActivity extends PreferenceActivity{
             }
         });
         mToolbar.setTitle("Settings");
+        numberOfInstalledApps=SplashActivity.appList.size();
+        System.out.println(numberOfInstalledApps+"@");
     }
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
@@ -81,36 +92,36 @@ public class SettingsActivity extends PreferenceActivity{
         fakeHeader.setTitle(R.string.pref_header_about);
         getPreferenceScreen().addPreference(fakeHeader);
         addPreferencesFromResource(R.xml.pref_about);
-        /*final EditTextPreference msgLimitPref = (EditTextPreference)
-                findPreference("number_featured_categories");
-        msgLimitPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                System.out.println("Closed");
-                msgLimitPref.getDialog().dismiss();
-                PopupMenu popup = new PopupMenu(preference.getContext(), msgLimitPref.getEditText());
-                //Inflating the Popup using xml file
-                popup.getMenuInflater().inflate(R.menu.menu_popup_myapps, popup.getMenu());
-                //registering popup with OnMenuItemClickListener
-                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    public boolean onMenuItemClick(MenuItem item) {
-                        return true;
-                    }
-                });
-                popup.show();//showing popup menu
-                return true;
-            }
-        });*/
-        // Bind the summaries of EditText/List/Dialog/Ringtone preferences to
-        // their values. When their values change, their summaries are updated
-        // to reflect the new value, per the Android Design guidelines.
-        bindPreferenceSummaryToValue(findPreference("number_featured_apps"));
-        bindPreferenceSummaryToValue(findPreference("number_featured_categories"));
-    }
+        final EditTextPreference numberOfFeaturedApps = (EditTextPreference)findPreference("number_featured_apps");
+        final EditText editText=numberOfFeaturedApps.getEditText();
+        editText.addTextChangedListener(new TextWatcher() {
+                                            @Override
+                                            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+                                            @Override
+                                            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+                                            @Override
+                                            public void afterTextChanged(Editable s) {
+                                                try{
+                                                    String strEnteredVal = s.toString();
+                                                    int num = Integer.parseInt(strEnteredVal);
+                                                    System.out.println(num+"#");
+                                                    if (num >numberOfInstalledApps )editText.setText(numberOfInstalledApps+"");
+                                                   // else if(num<6)editText.setText("6");
+                                                }catch(Exception e){System.out.println(e.toString());}
+                                            }
+                                        }
+                );
+
+            // Bind the summaries of EditText/List/Dialog/Ringtone preferences to
+            // their values. When their values change, their summaries are updated
+            // to reflect the new value, per the Android Design guidelines.
+            bindPreferenceSummaryToValue(findPreference("number_featured_apps"));
+            bindPreferenceSummaryToValue(findPreference("number_featured_categories"));
+        }
 
     /**
-     * {@inheritDoc}
-     */
+    * {@inheritDoc}
+    */
     @Override
     public boolean onIsMultiPane() {
         return isXLargeTablet(this) && !isSimplePreferences(this);
@@ -164,17 +175,8 @@ public class SettingsActivity extends PreferenceActivity{
                     else if(x>SplashActivity.appList.size())x=SplashActivity.appList.size();
                 }catch (Exception e){x=6;}
                 txtCategories.setText(x+"");
-                preference.setSummary(x+"");
+                preference.setSummary(x + "");
             }
-            /*else if(preference.getKey().equals("number_featured_categories")){
-                int x=4;EditTextPreference txtCategories=(EditTextPreference)preference;
-                try{x=Integer.parseInt(stringValue);
-                    if(x<3)x=3;
-                    else if(x>10)x=10;
-                }catch (Exception e){x=4;}
-                txtCategories.setText(x+"");
-                preference.setSummary(x+"");
-            }*/
             else preference.setSummary(stringValue);
             return true;
         }
@@ -192,9 +194,7 @@ public class SettingsActivity extends PreferenceActivity{
     private static void bindPreferenceSummaryToValue(Preference preference) {
         // Set the listener to watch for value changes.
         preference.setOnPreferenceChangeListener(sBindPreferenceSummaryToValueListener);
-
-        // Trigger the listener immediately with the preference's
-        // current value.
+        // Trigger the listener immediately with the preference's current value.
         sBindPreferenceSummaryToValueListener.onPreferenceChange(preference,
                 PreferenceManager
                         .getDefaultSharedPreferences(preference.getContext())
@@ -211,34 +211,6 @@ public class SettingsActivity extends PreferenceActivity{
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.pref_general);
-
-           /* final EditTextPreference msgLimitPref = (EditTextPreference)
-                    findPreference("number_featured_categories");
-
-            System.out.println(msgLimitPref);
-            msgLimitPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    System.out.println("Closed");
-                    msgLimitPref.getDialog().dismiss();
-                    PopupMenu popup = new PopupMenu(mContext, msgLimitPref.getEditText());
-                    //Inflating the Popup using xml file
-                    popup.getMenuInflater().inflate(R.menu.menu_popup_myapps, popup.getMenu());
-                    //registering popup with OnMenuItemClickListener
-                    popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                        public boolean onMenuItemClick(MenuItem item) {
-                            return true;
-                        }
-                    });
-                    popup.show();//showing popup menu
-                    return true;
-                }
-            });*/
-            // Bind the summaries of EditText/List/Dialog/Ringtone preferences
-            // to their values. When their values change, their summaries are
-            // updated to reflect the new value, per the Android Design
-            // guidelines.
-            // bindPreferenceSummaryToValue(findPreference("home_page_start"));
         }
     }
 
@@ -253,5 +225,26 @@ public class SettingsActivity extends PreferenceActivity{
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.pref_about);
         }
+    }
+    @Override
+    public void onBackPressed()
+    {
+        EditTextPreference numberOfFeaturedApps = (EditTextPreference)findPreference("number_featured_apps");
+        final EditText editText=numberOfFeaturedApps.getEditText();
+        String stringValue = editText.getText().toString();
+        int x=6;
+        try{x=Integer.parseInt(stringValue);
+            if(x<3)x=3;
+            else if(x>SplashActivity.appList.size())x=SplashActivity.appList.size();
+        }catch (Exception e){x=6;}
+        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
+        SharedPreferences.Editor editor1 = SP.edit();
+        editor1.putString("number_featured_apps", x+"");
+        editor1.commit();
+        Intent i = new Intent(mContext, HomeActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        mContext.startActivity(i);
+        Activity activity = (Activity) mContext;
+        activity.finish();
     }
 }

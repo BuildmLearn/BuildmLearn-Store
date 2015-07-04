@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.buildmlearn.appstore.R;
+import org.buildmlearn.appstore.activities.HomeActivity;
 import org.buildmlearn.appstore.adapters.MyAppsViewAdapter;
 import org.buildmlearn.appstore.models.AppInfo;
 import org.buildmlearn.appstore.utils.AppReader;
@@ -43,6 +44,7 @@ public class TabMyApps extends Fragment {
         mRecyclerView.setHasFixedSize(true);
         GridLayoutManager llm = new GridLayoutManager(v.getContext(), 3);
         mRecyclerView.setLayoutManager(llm);
+
         MyAppsViewAdapter adapter = new MyAppsViewAdapter(appList, v.getContext());
         mRecyclerView.setAdapter(adapter);
         int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.card_spacing);
@@ -67,7 +69,6 @@ public class TabMyApps extends Fragment {
             mRecyclerView.setVisibility(View.GONE);
             txtMyApps.setVisibility(View.VISIBLE);
         }
-
     }
     public static void closeSearch()    {
         MyAppsViewAdapter adapter = new MyAppsViewAdapter(appList, mContext);
@@ -77,5 +78,12 @@ public class TabMyApps extends Fragment {
         else {txtMyApps.setVisibility(View.VISIBLE);
             txtMyApps.setText("There are no downloaded apps.\nSwipe Left to navigate to the Store and download interesting apps!");
             mRecyclerView.setVisibility(View.GONE);}
+    }
+    public static void refreshList()
+    {
+        appList=AppReader.AppList;
+        MyAppsViewAdapter adapter = new MyAppsViewAdapter(appList, mContext);
+        mRecyclerView.setAdapter(adapter);
+        HomeActivity.MyAppsView();
     }
 }

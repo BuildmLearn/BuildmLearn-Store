@@ -74,7 +74,7 @@ public class HomeActivity extends NavigationActivity {
         mTabs.setViewPager(mPager);
     }
     public static void MyAppsView()
-    {mPager.setCurrentItem(1,true);
-
+    {
+        mPager.setCurrentItem(1,true);
     }
 }

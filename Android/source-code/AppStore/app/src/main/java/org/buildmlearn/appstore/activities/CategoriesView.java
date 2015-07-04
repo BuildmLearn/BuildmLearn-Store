@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.CardViewAdapter;
+import org.buildmlearn.appstore.fragments.TabMyApps;
+import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.SpacesItemDecoration;
 
@@ -90,11 +92,5 @@ public class CategoriesView extends NavigationActivity {
             txtCategories.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.VISIBLE);
         }
-    }
-    @Override
-    public void onBackPressed()
-    {
-        NavigationActivity.mActive=1;
-        super.onBackPressed();
     }
 }

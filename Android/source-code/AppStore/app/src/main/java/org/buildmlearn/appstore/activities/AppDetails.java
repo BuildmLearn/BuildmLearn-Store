@@ -27,6 +27,8 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 
 import org.buildmlearn.appstore.R;
+import org.buildmlearn.appstore.fragments.TabMyApps;
+import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.VolleySingleton;
 
@@ -67,6 +69,8 @@ public class AppDetails extends AppCompatActivity {
         mApp=intent.getParcelableExtra("App");
         mToolbar.setTitle(mApp.Name);
         mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
+        mActive=SP.getBoolean(mApp.Name,false);
        // setSupportActionBar(mToolbar);
         if(mApp==null)finish();
         mAppIcon=(NetworkImageView)findViewById(R.id.details_AppIcon);
@@ -114,7 +118,6 @@ public class AppDetails extends AppCompatActivity {
         WebSettings webSettings2 = webDisqus.getSettings();
         webSettings2.setJavaScriptEnabled(true);
         webSettings2.setBuiltInZoomControls(true);
-        webDisqus.requestFocusFromTouch();
         webDisqus.setWebViewClient(new WebViewClient() {
             public void onPageFinished(WebView view, String url) {
                 mProgressReviews.setVisibility(View.GONE);
@@ -140,8 +143,7 @@ public class AppDetails extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(android.content.Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
-// Add data to the intent, the receiving app will decide what to do with it.
+                intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);// Add data to the intent, the receiving app will decide what to do with it.
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
                 intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
                 intent.putExtra(Intent.EXTRA_TITLE, "BuildmLearn AppStore");
@@ -156,20 +158,16 @@ public class AppDetails extends AppCompatActivity {
             public void onClick(View v) {
                 if(!mActive){
                     SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
-                if(SP.getBoolean(mApp.Name,false)) {
-                    Toast.makeText(mContext, "The app is already installed", Toast.LENGTH_LONG).show();
-                    return;
-                }
-                SharedPreferences.Editor editor1 = SP.edit();
-                editor1.putBoolean(mApp.Name,true);
-                editor1.commit();
-                /*Intent i = new Intent(mContext, HomeActivity.class);
-                mContext.startActivity(i);*/
-                    //onBackPressed();
-                    HomeActivity.MyAppsView();
+                    SharedPreferences.Editor editor1 = SP.edit();
+                    editor1.putBoolean(mApp.Name,true);
+                    editor1.commit();
+                    Intent i = new Intent(mContext, HomeActivity.class);
+                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    mContext.startActivity(i);
                     Toast.makeText(mContext, "Thank you for installing "+mApp.Name, Toast.LENGTH_LONG).show();
                     Activity activity = (Activity) mContext;
-                    activity.finish();}
+                    activity.finish();
+                }
                 else{
                     Intent i = new Intent(mContext, StartActivity.class);
                     i.putExtra("option", intent.getIntExtra("option",0));
@@ -206,5 +204,11 @@ public class AppDetails extends AppCompatActivity {
             mAppDescription.setText(mApp.Description);
             mAppTxtMore.setText("LESS");
         }
+    }
+    @Override
+    public void onBackPressed()
+    {
+        NavigationActivity.clearSearch();
+        super.onBackPressed();
     }
 }

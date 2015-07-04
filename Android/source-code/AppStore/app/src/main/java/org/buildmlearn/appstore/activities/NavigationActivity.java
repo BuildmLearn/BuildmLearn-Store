@@ -283,6 +283,7 @@ public class NavigationActivity extends AppCompatActivity {
         if(mActiveSearchInterface==1)searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
     }
     public static void clearSearch()    {
+        searchQuery="";
         searchView.onActionViewCollapsed();
     }
     private void refineSearch(String query)    {

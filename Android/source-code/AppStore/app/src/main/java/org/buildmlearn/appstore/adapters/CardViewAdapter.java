@@ -22,6 +22,9 @@ import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.activities.AppDetails;
 import org.buildmlearn.appstore.activities.HomeActivity;
 import org.buildmlearn.appstore.activities.NavigationActivity;
+import org.buildmlearn.appstore.activities.StartActivity;
+import org.buildmlearn.appstore.fragments.TabMyApps;
+import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.models.AppInfo;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.AppReader;
@@ -110,7 +113,6 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         for(int i=0;i<apps.size();i++)rndList.add(i);
         this.mContext=context;
     }
-
     @Override
     public int getItemCount() {
         return rndList.size();
@@ -124,7 +126,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
     }
 
     @Override
-    public void onBindViewHolder(final CardViewHolder cardViewHolder, int i) {
+    public void onBindViewHolder(final CardViewHolder cardViewHolder, final int i) {
         if(apps.get(rndList.get(i)).Name.length()<12)
             cardViewHolder.appTitle.setText(apps.get(rndList.get(i)).Name);
         else
@@ -150,7 +152,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                             return;
                         }
                     }
-                    i.putExtra("mActive",false);
+                    i.putExtra("mActive", false);
                     mContext.startActivity(i);
                 }
             }
@@ -159,38 +161,56 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         cardViewHolder.btnShowMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
+                SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
+                boolean mActive=SP.getBoolean(apps.get(rndList.get(i)).Name,false);
                 //Creating the instance of PopupMenu
                 PopupMenu popup = new PopupMenu(mContext, cardViewHolder.btnShowMore);
                 //Inflating the Popup using xml file
-                popup.getMenuInflater().inflate(R.menu.menu_popup_apps, popup.getMenu());
+                if(mActive)popup.getMenuInflater().inflate(R.menu.menu_popup_apps_launch, popup.getMenu());
+                else popup.getMenuInflater().inflate(R.menu.menu_popup_apps, popup.getMenu());
                 //registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
                         if (item.getItemId() == R.id.menu_install) {
                             SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
-                            if(SP.getBoolean(v.getTag().toString(),false)) {
-                                Toast.makeText(mContext, "The app is already installed", Toast.LENGTH_LONG).show();
-                                return false;
-                            }
                             SharedPreferences.Editor editor1 = SP.edit();
-                            editor1.putBoolean(v.getTag().toString(),true);
+                            editor1.putBoolean(v.getTag().toString(), true);
                             editor1.commit();
-                            /*Intent i = new Intent(mContext, HomeActivity.class);
-                            mContext.startActivity(i);*/
-                            HomeActivity.MyAppsView();
+                            if(AppReader.listApps(mContext).size()==1) {
+                                Intent i = new Intent(mContext, HomeActivity.class);
+                                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                mContext.startActivity(i);
+                                NavigationActivity.clearSearch();
+                            }else TabMyApps.refreshList();
                             Toast.makeText(mContext, "Thank you for installing "+v.getTag().toString(), Toast.LENGTH_LONG).show();
-                            if(NavigationActivity.mActive>1){Activity activity = (Activity) mContext;
-                            activity.finish();}
+                            if(NavigationActivity.mActive>1)
+                            {
+                                Activity activity=(Activity)mContext;
+                                activity.finish();
+                            }
+                        }
+                        else if(item.getItemId()==R.id.menu_launch)
+                        {
+                            Intent intent = new Intent(mContext, StartActivity.class);
+                            String appName=apps.get(rndList.get(i)).Name;
+                            for(AppInfo app: AppReader.AppList) {
+                                if (app.Name.equals(appName)) {
+                                    intent.putExtra("option", app.Type);
+                                    intent.putExtra("filename", "Apps/" + appName + ".buildmlearn");
+                                }
+                            }
+                            mContext.startActivity(intent);
+                            NavigationActivity.clearSearch();
                         }
                         if (item.getItemId() == R.id.menu_share_2) {
                             Intent intent = new Intent(android.content.Intent.ACTION_SEND);
                             intent.setType("text/plain");
-                            intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
-// Add data to the intent, the receiving app will decide what to do with it.
+                            intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);// Add data to the intent, the receiving app will decide what to do with it.
                             intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
                             intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
                             intent.putExtra(Intent.EXTRA_TITLE, "BuildmLearn AppStore");
                             mContext.startActivity(Intent.createChooser(intent, "How do you want to share?"));
+                            NavigationActivity.clearSearch();
                         }
                         return true;
                     }

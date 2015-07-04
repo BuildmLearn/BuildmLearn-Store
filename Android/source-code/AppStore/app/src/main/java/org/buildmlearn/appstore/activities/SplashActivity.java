@@ -14,6 +14,7 @@ import android.view.View;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Apps;
+import org.buildmlearn.appstore.utils.AppReader;
 import org.buildmlearn.appstore.utils.XMLParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -263,16 +264,12 @@ public class SplashActivity extends Activity {
     private static final String AUTHOR_NAME = "author_name";
     private static final String AUTHOR_EMAIL = "author_email";
     private MaterialDialog mAlertDialog;
+    private Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        /*VideoView videoView=(VideoView)findViewById(R.id.videoView);
-        String uriPath = "android.resource://"+getPackageName()+"/raw/splashscreen";
-        System.out.println(uriPath);
-        Uri uri = Uri.parse(uriPath);
-        videoView.setVideoURI(uri);
-        videoView.start();*/
+        mContext=this;
         checkInternet();
     }
     private void checkInternet()

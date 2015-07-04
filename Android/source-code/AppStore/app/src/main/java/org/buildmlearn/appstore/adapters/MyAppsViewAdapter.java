@@ -13,14 +13,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.activities.AppDetails;
 import org.buildmlearn.appstore.activities.HomeActivity;
+import org.buildmlearn.appstore.activities.NavigationActivity;
 import org.buildmlearn.appstore.activities.SplashActivity;
 import org.buildmlearn.appstore.activities.StartActivity;
+import org.buildmlearn.appstore.fragments.TabMyApps;
 import org.buildmlearn.appstore.models.AppInfo;
 import org.buildmlearn.appstore.models.Apps;
+import org.buildmlearn.appstore.utils.AppReader;
 
 import java.util.List;
 
@@ -118,10 +122,13 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
                                 SharedPreferences.Editor editor1 = SP.edit();
                                 editor1.putBoolean(apps.get(pos).Name, false);
                                 editor1.commit();
-                                Intent i = new Intent(mContext, HomeActivity.class);
-                                mContext.startActivity(i);
-                                Activity activity = (Activity) mContext;
-                                activity.finish();
+                                if(AppReader.listApps(mContext).size()==0) {
+                                    Intent i = new Intent(mContext, HomeActivity.class);
+                                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    mContext.startActivity(i);
+                                    NavigationActivity.clearSearch();
+                                }else TabMyApps.refreshList();
+                                Toast.makeText(mContext, "The app is unistalled.", Toast.LENGTH_LONG).show();
                                 return true;
                             }
                         });
@@ -137,6 +144,7 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
                             i.putExtra("option", apps.get(pos).Type);
                             i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
                             mContext.startActivity(i);
+                            NavigationActivity.clearSearch();
                             return;
                         }
                     }
@@ -144,6 +152,7 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
                         i.putExtra("option", apps.get(pos).Type);
                         i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
                         mContext.startActivity(i);
+                    NavigationActivity.clearSearch();
                 }
             }
         });

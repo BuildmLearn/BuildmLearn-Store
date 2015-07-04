@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.CategoriesAdapter;
+import org.buildmlearn.appstore.fragments.TabMyApps;
+import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.models.CategoriesCard;
 
 import java.util.ArrayList;
@@ -73,11 +75,5 @@ public class CategoriesActivity extends NavigationActivity {
             txtCategories.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.VISIBLE);
         }
-    }
-    @Override
-    public void onBackPressed()
-    {
-        NavigationActivity.mActive=1;
-        super.onBackPressed();
     }
 }

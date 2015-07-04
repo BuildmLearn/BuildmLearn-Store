@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppStore</string>
+    <string name="app_name">BuildmLearn Store</string>
     <string name="title_activity_home_activitiy">Home</string>
     <string name="hello_world">Hello world!</string>
     <string name="start">Start</string>

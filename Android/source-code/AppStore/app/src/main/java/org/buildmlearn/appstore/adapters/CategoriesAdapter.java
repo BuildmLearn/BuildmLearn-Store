@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.activities.CategoriesView;
+import org.buildmlearn.appstore.activities.NavigationActivity;
 import org.buildmlearn.appstore.models.CategoriesCard;
 
 import java.util.List;
@@ -91,6 +92,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
                     Intent i = new Intent(mContext, CategoriesView.class);
                     i.putExtra("Category", mCategories.get(pos).Name);
                     mContext.startActivity(i);
+                    NavigationActivity.clearSearch();
                 }
             }
         });
