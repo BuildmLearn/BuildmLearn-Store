@@ -17,16 +17,18 @@ import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.utils.AppReader;
 import org.buildmlearn.appstore.utils.SlidingTabLayout;
 
+import me.drakeet.materialdialog.MaterialDialog;
+
 import static org.buildmlearn.appstore.utils.AppReader.listApps;
 
 public class HomeActivity extends NavigationActivity {
 
     private static ViewPager mPager;
     private ViewPagerAdapter mPagerAdapter;
-    private SlidingTabLayout mTabs;
+    private static SlidingTabLayout mTabs;
     private CharSequence Titles[]={"Store","My Apps"};
-    private int mNumberoftabs =2;
-    private boolean mAppSection=true;
+    private static int mNumberoftabs =2;
+    public static boolean mAppSection=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
@@ -80,12 +82,23 @@ public class HomeActivity extends NavigationActivity {
     }
     public static void MyAppsView()
     {
-        mPager.setCurrentItem(1,true);
+        mPager.setCurrentItem(1, true);
     }
+    private MaterialDialog mAlertDialog;
     @Override
-    public void onBackPressed()
-    {
-        finish();
-        System.exit(0);
+    public void onBackPressed(){
+        mAlertDialog=new MaterialDialog(this)
+                .setTitle("Exit")
+                .setMessage("Do you want to close BuildmLearn Store ?")
+                .setPositiveButton("NO", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {mAlertDialog.dismiss();}
+                })
+                .setNegativeButton("YES", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {mAlertDialog.dismiss();finish();System.exit(0);}
+                });
+        mAlertDialog.show();
+
     }
 }

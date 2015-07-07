@@ -29,6 +29,7 @@ import com.android.volley.toolbox.NetworkImageView;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Apps;
+import org.buildmlearn.appstore.utils.AppReader;
 import org.buildmlearn.appstore.utils.VolleySingleton;
 
 public class AppDetails extends AppCompatActivity {
@@ -55,6 +56,8 @@ public class AppDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app_details);
+        Intent intent=getIntent();
+        mApp=intent.getParcelableExtra("App");
         mLinearLayout=(LinearLayout)findViewById(R.id.ll_details);
         Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_app_details);
         mToolbar.setNavigationIcon(R.drawable.ic_back);
@@ -65,9 +68,6 @@ public class AppDetails extends AppCompatActivity {
             }
         });
         mContext=this;
-        final Intent intent=getIntent();
-        mActive=intent.getBooleanExtra("mActive",false);
-        mApp=intent.getParcelableExtra("App");
         mToolbar.setTitle(mApp.Name);
         mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
@@ -162,12 +162,18 @@ public class AppDetails extends AppCompatActivity {
                     SharedPreferences.Editor editor1 = SP.edit();
                     editor1.putBoolean(mApp.Name, true);
                     editor1.commit();
+                    if(AppReader.listApps(mContext).size()==1){Intent i = new Intent(mContext, HomeActivity.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        i.putExtra("View",1);
+                        mContext.startActivity(i);
+                        Activity activity = (Activity) mContext;
+                        activity.finish();}
                     Snackbar.make(mLinearLayout, "Thank you for installing " + mApp.Name, Snackbar.LENGTH_LONG).show();
+                    mActive=true;mBtnInstall.setText("LAUNCH");
                 }
                 else{
                     Intent i = new Intent(mContext, StartActivity.class);
-                    i.putExtra("option", intent.getIntExtra("option",0));
-                    i.putExtra("filename", intent.getStringExtra("filename"));
+                    i.putExtra("filename", mApp.Name);
                     mContext.startActivity(i);
                 }
             }

@@ -13,8 +13,6 @@ import android.widget.TextView;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.CardViewAdapter;
-import org.buildmlearn.appstore.fragments.TabMyApps;
-import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.SpacesItemDecoration;
 
@@ -28,16 +26,18 @@ public class CategoriesView extends NavigationActivity {
     private static RecyclerView mRecyclerView;
     private static Context mContext;
     private static TextView txtCategories;
-
+    private boolean onBack=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        NavigationActivity.mActive=2;
+        NavigationActivity.mActive=R.id.navigation_item_2;
         NavigationActivity.mActiveSearchInterface=3;
         super.onCreate(savedInstanceState);
         getLayoutInflater().inflate(R.layout.activity_categories_view, frameLayout);
+        navigationView.getMenu().findItem(R.id.navigation_item_2).setChecked(true);
         mContext=this;
         Intent i=getIntent();
         mCategory=i.getStringExtra("Category");
+        onBack=i.getBooleanExtra("Home",false);
         getSupportActionBar().setTitle(mCategory);
         initializeData();
         txtCategories=(TextView)findViewById(R.id.txtCategoriesView);
@@ -93,4 +93,10 @@ public class CategoriesView extends NavigationActivity {
             mRecyclerView.setVisibility(View.VISIBLE);
         }
     }
+    @Override
+    public void onBackPressed(){
+        if(onBack){navigationView.getMenu().findItem(R.id.navigation_item_1).setChecked(true);NavigationActivity.mActive=R.id.navigation_item_1;}
+        super.onBackPressed();
+    }
+
 }

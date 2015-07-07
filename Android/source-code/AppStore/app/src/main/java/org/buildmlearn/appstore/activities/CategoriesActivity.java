@@ -13,12 +13,12 @@ import android.widget.TextView;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.adapters.CategoriesAdapter;
-import org.buildmlearn.appstore.fragments.TabMyApps;
-import org.buildmlearn.appstore.fragments.TabStore;
 import org.buildmlearn.appstore.models.CategoriesCard;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import me.drakeet.materialdialog.MaterialDialog;
 
 public class CategoriesActivity extends NavigationActivity {
 
@@ -76,5 +76,23 @@ public class CategoriesActivity extends NavigationActivity {
             txtCategories.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.VISIBLE);
         }
+    }
+    private MaterialDialog mAlertDialog;
+    @Override
+    public void onBackPressed(){
+        closeSearch();
+        mAlertDialog=new MaterialDialog(this)
+                .setTitle("Exit")
+                .setMessage("Do you want to close BuildmLearn Store ?")
+                .setPositiveButton("NO", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {mAlertDialog.dismiss();}
+                })
+                .setNegativeButton("YES", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {mAlertDialog.dismiss();System.exit(0);finish();}
+                });
+        mAlertDialog.show();
+
     }
 }

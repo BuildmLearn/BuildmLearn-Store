@@ -4,6 +4,7 @@ package org.buildmlearn.appstore.fragments;
  * Created by Srujan Jha on 25-05-2015.
  */
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -56,7 +57,9 @@ public class TabStore extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(mContext, CategoriesActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
+                ((Activity)mContext).finish();
             }
         });
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);

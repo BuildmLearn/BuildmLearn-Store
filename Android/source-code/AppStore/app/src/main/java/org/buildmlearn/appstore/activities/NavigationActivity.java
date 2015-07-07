@@ -52,9 +52,9 @@ public class NavigationActivity extends AppCompatActivity {
     private static MenuItem searchItem;
     private static Context mContext;
     public static String searchQuery="";
-    public static int mActiveSearchInterface=0;//0-MyApps, 1-Store, 2-Categories, 3-InnerCategories, 4-AppsActivity
+    public static int mActiveSearchInterface=0;//1-MyApps, 0-Store, 2-Categories, 3-InnerCategories, 4-AppsActivity
     public static int color_divider;
-    protected NavigationView navigationView;
+    public static NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -177,7 +177,7 @@ public class NavigationActivity extends AppCompatActivity {
         }
         if (searchView != null) {
             searchView.setSearchableInfo(searchManager.getSearchableInfo(NavigationActivity.this.getComponentName()));
-            if(mActiveSearchInterface==1)searchView.setSuggestionsAdapter(new SearchListAdapter(this, cursor, true));
+            if(mActiveSearchInterface==0 || mActiveSearchInterface==4)searchView.setSuggestionsAdapter(new SearchListAdapter(this, cursor, true));
             searchView.setOnCloseListener(new SearchView.OnCloseListener() {
                 @Override
                 public boolean onClose() {
@@ -252,7 +252,7 @@ public class NavigationActivity extends AppCompatActivity {
             temp[2] = appList.get(k++).AppIcon;
             cursor.addRow(temp);
         }
-        if(mActiveSearchInterface==1)searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
+        if(mActiveSearchInterface==0 || mActiveSearchInterface==4)searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
     }
     public static void clearSearch()    {
         searchQuery="";

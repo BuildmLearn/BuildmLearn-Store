@@ -15,7 +15,7 @@ import org.buildmlearn.appstore.activities.NavigationActivity;
 import org.buildmlearn.appstore.utils.VolleySingleton;
 
 /**
- * Created by sruja on 6/15/2015.
+ * Created by Srujan Jha on 6/15/2015.
  */
 public class SearchListAdapter extends CursorAdapter {
         private TextView text;

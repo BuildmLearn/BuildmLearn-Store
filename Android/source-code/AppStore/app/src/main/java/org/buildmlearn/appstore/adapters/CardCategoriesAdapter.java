@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.buildmlearn.appstore.R;
+import org.buildmlearn.appstore.activities.CategoriesActivity;
 import org.buildmlearn.appstore.activities.CategoriesView;
 import org.buildmlearn.appstore.activities.NavigationActivity;
 import org.buildmlearn.appstore.models.CategoriesCard;
@@ -108,7 +109,9 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
                 } else {
                     Intent i = new Intent(mContext, CategoriesView.class);
                     i.putExtra("Category", CategoriesCard.CategoryName[rndList.get(pos)]);
+                    i.putExtra("Home",true);
                     mContext.startActivity(i);
+                    CategoriesActivity.closeSearch();
                     NavigationActivity.clearSearch();
                 }
             }

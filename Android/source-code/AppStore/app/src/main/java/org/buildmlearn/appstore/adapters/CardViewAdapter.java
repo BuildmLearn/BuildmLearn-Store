@@ -23,8 +23,6 @@ import org.buildmlearn.appstore.activities.AppDetails;
 import org.buildmlearn.appstore.activities.HomeActivity;
 import org.buildmlearn.appstore.activities.NavigationActivity;
 import org.buildmlearn.appstore.activities.StartActivity;
-import org.buildmlearn.appstore.fragments.TabMyApps;
-import org.buildmlearn.appstore.models.AppInfo;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.AppReader;
 import org.buildmlearn.appstore.utils.VolleySingleton;
@@ -126,7 +124,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
 
     @Override
     public void onBindViewHolder(final CardViewHolder cardViewHolder, final int i) {
-        if(apps.get(rndList.get(i)).Name.length()<12)
+        if(apps.get(rndList.get(i)).Name.length()<11)
             cardViewHolder.appTitle.setText(apps.get(rndList.get(i)).Name);
         else
             cardViewHolder.appTitle.setText(apps.get(rndList.get(i)).Name.substring(0,9)+"...");
@@ -141,7 +139,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                 } else {
                     Intent i = new Intent(mContext, AppDetails.class);
                     i.putExtra("App", apps.get(rndList.get(pos)));
-                    String appName=apps.get(pos).Name;
+                    /*String appName=apps.get(pos).Name;
                     for(AppInfo app: AppReader.AppList) {
                         if (app.Name.equals(appName)) {
                             i.putExtra("mActive", true);
@@ -150,7 +148,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                             mContext.startActivity(i);
                             return;
                         }
-                    }
+                    }*/
                     i.putExtra("mActive", false);
                     mContext.startActivity(i);
                 }
@@ -175,31 +173,25 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                             SharedPreferences.Editor editor1 = SP.edit();
                             editor1.putBoolean(v.getTag().toString(), true);
                             editor1.commit();
-                            if (NavigationActivity.mActive == R.id.navigation_item_1 && AppReader.AppList.size()>0) {
-                                AppReader.listApps(mContext);
-                            }
-                                NavigationActivity.clearSearch();
-                        NavigationActivity.showSnackBar("Thank you for installing " + v.getTag().toString());
-                        Snackbar.make(v, "Thank you for installing " + v.getTag().toString(), Snackbar.LENGTH_LONG);
+                            NavigationActivity.clearSearch();
+                            NavigationActivity.showSnackBar("Thank you for installing " + v.getTag().toString());
+                            Snackbar.make(v, "Thank you for installing " + v.getTag().toString(), Snackbar.LENGTH_LONG);
+                            if(AppReader.listApps(mContext).size()==1){Intent i = new Intent(mContext, HomeActivity.class);
+                                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                i.putExtra("View",1);
+                                mContext.startActivity(i);
+                                Activity activity = (Activity) mContext;
+                                activity.finish();}
                     }
-
                     else if(item.getItemId()==R.id.menu_launch)
-
                     {
                         Intent intent = new Intent(mContext, StartActivity.class);
                         String appName = apps.get(rndList.get(i)).Name;
-                        for (AppInfo app : AppReader.AppList) {
-                            if (app.Name.equals(appName)) {
-                                intent.putExtra("option", app.Type);
-                                intent.putExtra("filename", "Apps/" + appName + ".buildmlearn");
-                            }
-                        }
+                        intent.putExtra("filename",appName);
                         mContext.startActivity(intent);
                         NavigationActivity.clearSearch();
                     }
-
                     if(item.getItemId()==R.id.menu_share_2)
-
                     {
                         Intent intent = new Intent(android.content.Intent.ACTION_SEND);
                         intent.setType("text/plain");
@@ -210,7 +202,6 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                         mContext.startActivity(Intent.createChooser(intent, "How do you want to share?"));
                         NavigationActivity.clearSearch();
                     }
-
                     return true;
                 }
             });

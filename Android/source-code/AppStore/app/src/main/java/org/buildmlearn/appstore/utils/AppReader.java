@@ -50,6 +50,7 @@ public class AppReader {
                     editor1.putBoolean(app.Name,false);
                         editor1.commit();continue;}
                     if(!SP.getBoolean(app.Name,false))continue;
+
                     app.AppIcon=BitmapFactory.decodeStream(am.open("Icons/" + iconList[i]));
                     BufferedReader br = new BufferedReader(new InputStreamReader(context.getAssets().open("Apps/"+appList[i])));
                     String type=br.readLine();
@@ -57,6 +58,11 @@ public class AppReader {
                     else if(type.contains("QuizTemplate"))app.Type=2;
                     else if(type.contains("FlashCardsTemplate"))app.Type=1;
                     else if(type.contains("SpellingTemplate"))app.Type=3;
+                    br.readLine();
+                    type=br.readLine();
+                    int x=type.indexOf("<name>")+6;
+                    int y=type.indexOf("<",x+1);
+                    app.Author=type.substring(x,y);
                     mFileList.add(app);
                 }
             }
@@ -80,8 +86,7 @@ public class AppReader {
             Element elementAuthor= (Element) doc.getElementsByTagName("author").item(0);
             model.setInfoAuthor(parser.getValue(elementAuthor, "name"));
             model.setInfoName(fileName.substring(5,fileName.length()-12));
-            NodeList nodeList = doc.getElementsByTagName("item");
-                // looping through all item nodes <app>
+            NodeList nodeList = doc.getElementsByTagName("item");   // looping through all item nodes <app>
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Element elementInfo = (Element) nodeList.item(i);
                 String infoKey = parser.getValue(elementInfo, "item_title");

@@ -16,7 +16,6 @@ import android.view.View;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Apps;
-import org.buildmlearn.appstore.utils.AppReader;
 import org.buildmlearn.appstore.utils.XMLParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -358,6 +357,7 @@ public class SplashActivity extends Activity {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return (activeNetworkInfo != null && activeNetworkInfo.isConnected());
+        return true;
+        //return (activeNetworkInfo != null && activeNetworkInfo.isConnected());
     }
 }

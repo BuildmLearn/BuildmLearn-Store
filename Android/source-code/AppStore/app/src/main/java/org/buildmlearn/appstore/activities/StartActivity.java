@@ -19,10 +19,10 @@ import org.buildmlearn.appstore.models.QuizModel;
 import org.buildmlearn.appstore.models.SpellingsModel;
 import org.buildmlearn.appstore.utils.AppReader;
 
-public class StartActivity extends AppCompatActivity implements OnClickListener {
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
-	public static String FILENAME="filename";
-	public static String OPTION="option";
+public class StartActivity extends AppCompatActivity implements OnClickListener {
 
 	private int mOption;
 	private String filePath;
@@ -32,12 +32,21 @@ public class StartActivity extends AppCompatActivity implements OnClickListener 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start);
-		mOption = getIntent().getIntExtra(OPTION, 0);
-		filePath = getIntent().getStringExtra(FILENAME);
+		filePath = "Apps/"+getIntent().getStringExtra("filename")+".buildmlearn";
 		author = (TextView) findViewById(R.id.tv_author);
 		title = (TextView) findViewById(R.id.tv_apptitle);
 		Button startButton = (Button) findViewById(R.id.btn_start);
-		startButton.setOnClickListener(this);
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open(filePath))); // throwing a FileNotFoundException
+            String type=br.readLine();
+            if(type.contains("InfoTemplate"))mOption=0;
+            else if(type.contains("QuizTemplate"))mOption=2;
+            else if(type.contains("FlashCardsTemplate"))mOption=1;
+            else if(type.contains("SpellingTemplate"))mOption=3;
+            else finish();
+        }catch(Exception e){finish();}
+
+        startButton.setOnClickListener(this);
 		new FileReadTask(mOption, filePath).execute();
 	}
 

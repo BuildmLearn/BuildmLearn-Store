@@ -26,7 +26,7 @@ public class AppsActivity extends NavigationActivity {
         getLayoutInflater().inflate(R.layout.activity_apps, frameLayout);
         mContext=this;
         NavigationActivity.mActiveSearchInterface=4;
-        getSupportActionBar().setTitle("AppStore");
+        getSupportActionBar().setTitle("Apps");
         txtAppsActivity=(TextView)findViewById(R.id.txtAppsActivity);
         mRecyclerView = (RecyclerView)findViewById(R.id.rvAppsCard);
         mRecyclerView.setHasFixedSize(true);
@@ -47,6 +47,7 @@ public class AppsActivity extends NavigationActivity {
         if(tempList.size()!=0){
             CardViewAdapter adapter = new CardViewAdapter(tempList, mContext);
             mRecyclerView.setAdapter(adapter);
+            mRecyclerView.setVisibility(View.VISIBLE);
             txtAppsActivity.setVisibility(View.GONE);
         }
         else{

@@ -1,17 +1,16 @@
 package org.buildmlearn.appstore.adapters;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -37,12 +36,15 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
 
     public static class MyAppsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
         TextView appTitle;
+        TextView appAuthor;
         ImageView appLogo;
-
+        ImageButton btnShowMore;
         MyAppsViewHolder(View itemView) {
             super(itemView);
-            appTitle = (TextView) itemView.findViewById(R.id.sMyCardTitle);
-            appLogo = (ImageView) itemView.findViewById(R.id.sMyCardLogo);
+            appTitle = (TextView) itemView.findViewById(R.id.sCardTitle);
+            appLogo = (ImageView) itemView.findViewById(R.id.sCardLogo);
+            appAuthor=(TextView) itemView.findViewById(R.id.sCardSubTitle);
+            btnShowMore = (ImageButton) itemView.findViewById(R.id.btn_More_Cards);
             itemView.setOnClickListener(this);
             itemView.setOnLongClickListener(this);
         }
@@ -103,11 +105,12 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
 private MaterialDialog mAlertDialog;
     @Override
     public void onBindViewHolder(final MyAppsViewHolder cardViewHolder, int i) {
-        if(apps.get(i).Name.length()<12)
+        if(apps.get(i).Name.length()<11)
             cardViewHolder.appTitle.setText(apps.get(i).Name);
         else
             cardViewHolder.appTitle.setText(apps.get(i).Name.substring(0,9)+"...");
         cardViewHolder.appLogo.setImageBitmap(apps.get(i).AppIcon);
+        cardViewHolder.appAuthor.setText(apps.get(i).Author);
 
         cardViewHolder.setClickListener(new MyAppsViewHolder.ClickListener() {
             @Override
@@ -155,20 +158,47 @@ private MaterialDialog mAlertDialog;
                         if (app.Name.equals(appName)) {
                             Intent i = new Intent(mContext, AppDetails.class);
                             i.putExtra("App", app);
-                            i.putExtra("mActive", true);
-                            i.putExtra("option", apps.get(pos).Type);
-                            i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
                             mContext.startActivity(i);
                             NavigationActivity.clearSearch();
                             return;
                         }
                     }
-                        Intent i = new Intent(mContext, StartActivity.class);
-                        i.putExtra("option", apps.get(pos).Type);
-                        i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
-                        mContext.startActivity(i);
+                    Intent i = new Intent(mContext, StartActivity.class);
+                    i.putExtra("filename", apps.get(pos).Name);
+                    mContext.startActivity(i);
                     NavigationActivity.clearSearch();
                 }
+            }
+        });
+        cardViewHolder.btnShowMore.setTag(apps.get(i).Name);
+        cardViewHolder.btnShowMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                PopupMenu popup = new PopupMenu(mContext, cardViewHolder.btnShowMore);
+                popup.getMenuInflater().inflate(R.menu.menu_popup_apps_launch, popup.getMenu());
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        if (item.getItemId() == R.id.menu_launch) {
+                            Intent intent = new Intent(mContext, StartActivity.class);
+                            String appName = v.getTag().toString();
+                            intent.putExtra("filename", appName);
+                            mContext.startActivity(intent);
+                            NavigationActivity.clearSearch();
+                        } else if (item.getItemId() == R.id.menu_share_2) {
+                            Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+                            intent.setType("text/plain");
+                            intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);// Add data to the intent, the receiving app will decide what to do with it.
+                            intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
+                            intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
+                            intent.putExtra(Intent.EXTRA_TITLE, "BuildmLearn AppStore");
+                            mContext.startActivity(Intent.createChooser(intent, "How do you want to share?"));
+                            NavigationActivity.clearSearch();
+                        }
+                        return true;
+                    }
+                });
+                popup.show();//showing popup menu
             }
         });
     }
