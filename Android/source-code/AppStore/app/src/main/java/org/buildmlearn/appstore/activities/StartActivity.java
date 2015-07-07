@@ -33,6 +33,7 @@ public class StartActivity extends AppCompatActivity implements OnClickListener 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start);
 		filePath = "Apps/"+getIntent().getStringExtra("filename")+".buildmlearn";
+		System.out.println(filePath);
 		author = (TextView) findViewById(R.id.tv_author);
 		title = (TextView) findViewById(R.id.tv_apptitle);
 		Button startButton = (Button) findViewById(R.id.btn_start);

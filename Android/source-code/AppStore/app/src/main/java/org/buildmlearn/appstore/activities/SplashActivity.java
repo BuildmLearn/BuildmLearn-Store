@@ -14,6 +14,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.XMLParser;
@@ -270,6 +272,7 @@ public class SplashActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_splash);
         mContext=this;
         appList.clear();

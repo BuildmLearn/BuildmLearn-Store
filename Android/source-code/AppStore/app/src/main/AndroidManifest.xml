@@ -110,6 +110,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.buildmlearn.appstore.activities.HomeActivity" />
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="824ec7f8d76a07f08940c54b7a450c0969b327b7" />
     </application>
 
 </manifest>
