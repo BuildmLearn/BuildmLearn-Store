@@ -22,6 +22,21 @@
     <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\packages\DrawerLayout.1.0.4\lib\DrawerLayout.dll">
       <PackagePath>DrawerLayout.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\Assets\Apps\Animal.xml">
+      <PackagePath>Assets\Apps\Animal.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\Assets\Biology.xml">
+      <PackagePath>Assets\Biology.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\Assets\Festivals.xml">
+      <PackagePath>Assets\Festivals.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\Assets\Spell.xml">
+      <PackagePath>Assets\Spell.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\Assets\BuildmLearnStore.xml">
+      <PackagePath>Assets\BuildmLearnStore.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\Assets\aka.png">
       <PackagePath>Assets\aka.png</PackagePath>
     </AppxPackagedFile>
@@ -265,9 +280,6 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\Assets\BuildmLearnStore.xml">
-      <PackagePath>Assets\BuildmLearnStore.xml</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
@@ -282,6 +294,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\bin\Debug\MyAppsPage.xbf">
+      <PackagePath>MyAppsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\bin\Debug\Templates\StartPage.xbf">
+      <PackagePath>Templates\StartPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\bin\Debug\AppStore.xr.xml">
       <PackagePath>AppStore.xr.xml</PackagePath>

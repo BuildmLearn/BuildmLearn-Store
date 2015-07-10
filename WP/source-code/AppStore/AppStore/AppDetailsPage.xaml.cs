@@ -1,5 +1,6 @@
 ﻿using AppStore.Common;
 using AppStore.Models;
+using AppStore.Templates;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -31,10 +32,10 @@ namespace AppStore
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
         Apps app;
+        bool appInstalled = false;
         public AppDetailsPage()
         {
             this.InitializeComponent();
-            app = AppInstance.app;
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
@@ -101,6 +102,10 @@ namespace AppStore
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+            app = AppInstance.app;
+            appInstalled = AppInstance.installed;
+            if (appInstalled) btnAppInstall.Content = "LAUNCH";
+            else btnAppInstall.Content = "INSTALL";
             txtAppName.Text = app.Name;
             txtAppAuthor.Text = app.Author;
             if (app.Description.Length > 50)
@@ -215,5 +220,12 @@ namespace AppStore
             }
         }
 
+        private void btnAppInstall_Click(object sender, RoutedEventArgs e)
+        {
+            if (appInstalled)
+            {
+                Frame.Navigate(typeof(StartPage));
+            }
+        }
     }
 }

@@ -27,7 +27,7 @@
                 <StackPanel Margin="10,0,0,0">
                     <TextBlock Name="txtAppName" Text="App Name" FontSize="30" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontWeight="Bold"/>
                     <TextBlock Name="txtAppAuthor" Text="App Author" FontSize="20" Opacity="0.7" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
-                    <Button Name="btnAppInstall" Content="INSTALL" Background="#FF1976D2" BorderThickness="0" FontFamily="Global User Interface" />
+                    <Button Name="btnAppInstall" Content="INSTALL" Background="#FF1976D2" BorderThickness="0" FontFamily="Global User Interface" Click="btnAppInstall_Click" />
                 </StackPanel>
             </StackPanel>
         </StackPanel>

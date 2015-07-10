@@ -83,21 +83,21 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <None Include="Assets\Apps\Animal.buildmlearn" />
-    <None Include="Assets\Apps\Biology Info.buildmlearn" />
-    <None Include="Assets\Apps\Biology Quiz.buildmlearn" />
-    <None Include="Assets\Apps\Biology.buildmlearn" />
-    <None Include="Assets\Apps\Chemistry Quiz.buildmlearn" />
-    <None Include="Assets\Apps\Chemistry Spellings.buildmlearn" />
-    <None Include="Assets\Apps\English Words.buildmlearn" />
-    <None Include="Assets\Apps\Festivals.buildmlearn" />
-    <None Include="Assets\Apps\History Info.buildmlearn" />
-    <None Include="Assets\Apps\Maths Info.buildmlearn" />
-    <None Include="Assets\Apps\Maths Puzzle.buildmlearn" />
-    <None Include="Assets\Apps\Physics Flashcards.buildmlearn" />
-    <None Include="Assets\Apps\Physics Info.buildmlearn" />
-    <None Include="Assets\Apps\Spell.buildmlearn" />
-    <None Include="Assets\Apps\Vocabulary.buildmlearn" />
+    <Content Include="Assets\Apps\Animal.xml" />
+    <Content Include="Assets\Apps\Biology Info.xml" />
+    <Content Include="Assets\Apps\Biology Quiz.xml" />
+    <Content Include="Assets\Apps\Biology.xml" />
+    <Content Include="Assets\Apps\Chemistry Quiz.xml" />
+    <Content Include="Assets\Apps\Chemistry Spellings.xml" />
+    <Content Include="Assets\Apps\English Words.xml" />
+    <Content Include="Assets\Apps\Festivals.xml" />
+    <Content Include="Assets\Apps\History Info..xml" />
+    <Content Include="Assets\Apps\Maths Info.xml" />
+    <Content Include="Assets\Apps\Maths Puzzle.xml" />
+    <Content Include="Assets\Apps\Physics Flashcards.xml" />
+    <Content Include="Assets\Apps\Physics Info.xml" />
+    <Content Include="Assets\Apps\Spell.xml" />
+    <Content Include="Assets\Apps\Vocabulary.xml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +113,7 @@
     <Compile Include="CategoryPage.xaml.cs">
       <DependentUpon>CategoryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\AppReader.cs" />
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
@@ -123,10 +124,23 @@
     <Compile Include="Models\AppInstance.cs" />
     <Compile Include="Models\AppList.cs" />
     <Compile Include="Models\Apps.cs" />
+    <Compile Include="Models\Card.cs" />
     <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\CategoryInstance.cs" />
+    <Compile Include="Models\FlashModel.cs" />
+    <Compile Include="Models\InfoModel.cs" />
+    <Compile Include="Models\Question.cs" />
+    <Compile Include="Models\QuizModel.cs" />
     <Compile Include="Models\Resources.cs" />
+    <Compile Include="Models\SpellingsModel.cs" />
+    <Compile Include="Models\WordModel.cs" />
+    <Compile Include="MyAppsPage.xaml.cs">
+      <DependentUpon>MyAppsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -232,6 +246,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MyAppsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Templates\StartPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

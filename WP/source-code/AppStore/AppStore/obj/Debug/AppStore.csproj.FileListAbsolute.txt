@@ -48,3 +48,13 @@ C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\
 C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\CategoryPage.g.cs
 C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\CategoryPage.xaml
 C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\CategoryPage.xbf
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\bin\Debug\MyAppsPage.xbf
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\bin\Debug\Templates\StartPage.xbf
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\MyAppsPage.g.i.cs
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\MyAppsPage.g.cs
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\Templates\StartPage.g.i.cs
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\Templates\StartPage.g.cs
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\Templates\StartPage.xaml
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\Templates\StartPage.xbf
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\MyAppsPage.xaml
+C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\AppStore\AppStore\obj\Debug\MyAppsPage.xbf

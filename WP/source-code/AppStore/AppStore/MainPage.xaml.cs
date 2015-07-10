@@ -96,7 +96,18 @@ namespace AppStore
             GridFeaturedApps.SelectedIndex = -1;
             selectionGridApps = false;
         }
-        private async void ListMenuItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void NavigateTo(Type page)
+        {
+            CoreDispatcher dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
+            await dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+            {
+                Frame.Navigate(page);
+            });
+            selectionListMenus = true;
+            ListMenuItems.SelectedIndex = -1;
+            selectionListMenus = false;
+        }
+        private void ListMenuItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionListMenus) return;
             switch (ListMenuItems.SelectedIndex)
@@ -104,16 +115,10 @@ namespace AppStore
                 case 0:
                     break;
                 case 1:
+                    NavigateTo(typeof(MyAppsPage));
                     break;
                 case 2:
-                    CoreDispatcher dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
-                    await dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-                    {
-                        Frame.Navigate(typeof(CategoriesPage));
-                    });
-                    selectionListMenus = true;
-                    ListMenuItems.SelectedIndex = -1;
-                    selectionListMenus = false;
+                    NavigateTo(typeof(CategoriesPage));
                     break;
                 case 3:
                     break;

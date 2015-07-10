@@ -1,5 +1,7 @@
 Assets\aka.png
+Assets\Apps\Animal.xml
 Assets\background_header.png
+Assets\Biology.xml
 Assets\BuildmLearnStore.xml
 Assets\card_biology.png
 Assets\card_chemistry.png
@@ -11,6 +13,7 @@ Assets\card_mathematics.png
 Assets\card_physics.png
 Assets\card_science.png
 Assets\card_socialstudies.png
+Assets\Festivals.xml
 Assets\ic_action.png
 Assets\ic_action_device_access_volume_on.png
 Assets\ic_addwish.png
@@ -63,6 +66,7 @@ Assets\notavailable.png
 Assets\SmallLogo.scale-100.png
 Assets\SmallLogo.scale-140.png
 Assets\SmallLogo.scale-240.png
+Assets\Spell.xml
 Assets\spinner_triangle.png
 Assets\splash.png
 Assets\SplashScreen.scale-100.png
@@ -81,3 +85,5 @@ AppStore.xr.xml
 CategoriesPage.xbf
 CategoryPage.xbf
 MainPage.xbf
+MyAppsPage.xbf
+Templates\StartPage.xbf

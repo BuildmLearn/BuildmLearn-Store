@@ -28,6 +28,16 @@
           <m3:Rotation Preference="portrait" />
         </m3:InitialRotationPreference>
       </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileTypeAssociation">
+          <FileTypeAssociation Name="buildmlearn">
+            <DisplayName>buildmlearn</DisplayName>
+            <SupportedFileTypes>
+              <FileType ContentType="text/xml">.buildmlearn</FileType>
+            </SupportedFileTypes>
+          </FileTypeAssociation>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>

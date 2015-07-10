@@ -46,7 +46,7 @@
                         </DataTemplate>
                     </GridView.ItemTemplate>
                 </GridView>
-                    <TextBlock Text="Featured Categories" FontSize="20"/>
+                    <TextBlock Text="Featured Apps" FontSize="20"/>
                 </StackPanel>
                 <GridView x:ConnectionId='2' x:Name="GridFeaturedApps" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
                                                                                                                                    Margin="0,125,0,0">
