@@ -1,0 +1,77 @@
+﻿<Page
+    x:Class="AppStore.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppStore"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:drawerLayout="using:DrawerLayout" mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="RootLayout">  
+    <Grid.RowDefinitions>  
+        <RowDefinition Height="Auto" />  
+        <RowDefinition Height="*" />  
+    </Grid.RowDefinitions>  
+    <!-- Title Bar -->  
+    <Grid x:Name="TitleBar" Background="#00ADEF" Grid.Row ="0" Height="60">  
+    <Grid.ColumnDefinitions>  
+        <ColumnDefinition Width="Auto" />  
+        <ColumnDefinition Width="*" />  
+    </Grid.ColumnDefinitions>  
+  
+    <Image Margin="5"  x:Name="DrawerIcon"  Grid.Column="0" Source="/Assets/ic_action.png" HorizontalAlignment="Left" Tapped="DrawerIcon_Tapped" />  
+    <TextBlock Grid.Column="1" Text="BuildmLearn Store" FontSize="20" Foreground="White" VerticalAlignment="Center" />  
+    </Grid>  
+    <!-- Drawer Layout -->  
+    <drawerLayout:DrawerLayout Grid.Row="1"  x:Name="DrawerLayout">
+            <Grid x:Name="MainFragment" Margin="19,9.5,19,0">
+                <!-- Main Content goes here -->
+                <StackPanel Height="125" VerticalAlignment="Top">
+                    <TextBlock  Text="Featured Categories" FontSize="20" />
+                    <GridView x:Name="GridFeaturedCategories" Margin="0,10" Height="50" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
+                  ContainerContentChanging="GridFeaturedCategories_ContentChanging" SelectionChanged="GridFeaturedCategories_SelectionChanged" 
+                  ScrollViewer.HorizontalScrollMode="Auto" ScrollViewer.VerticalScrollMode="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    <GridView.ItemsPanel>
+        <ItemsPanelTemplate>
+            <VariableSizedWrapGrid Orientation="Horizontal" />
+        </ItemsPanelTemplate>
+    </GridView.ItemsPanel>
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Height="60" Width="120" Margin="5,0" Background="Black">
+                                <Image x:Name="categoryIcon" Source="{Binding Background}" Stretch="UniformToFill" Opacity="0.8"/>
+                                <TextBlock x:Name="categoryName" Text="{Binding Name}" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+                    <TextBlock Text="Featured Apps" FontSize="20"/>
+                </StackPanel>
+                <GridView x:Name="GridFeaturedApps" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
+                  ContainerContentChanging="GridFeaturedApps_ContentChanging" SelectionChanged="GridFeaturedApps_SelectionChanged" Margin="0,125,0,0">
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Width="103" Margin="5" >
+                                <Image x:Name="appIcon"  Height="100" Width="100" Source="{Binding AppIcon}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="appName" Text="{Binding Name}" FontSize="18" TextWrapping="Wrap"/>
+                                <TextBlock x:Name="appAuthor" Text="{Binding Author}" FontSize="14" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            
+            </Grid>
+            <Grid x:Name="ListFragment" Background="#F4F4F4">  
+       <ListView x:Name="ListMenuItems" SelectionChanged="ListMenuItems_SelectionChanged">  
+           <ListView.ItemTemplate>  
+               <DataTemplate>  
+                    <TextBlock Text="{Binding}" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" Foreground="Black" />  
+               </DataTemplate>  
+           </ListView.ItemTemplate>  
+       </ListView>  
+  
+   </Grid>  
+</drawerLayout:DrawerLayout>    <!-- DrawerLayout code goes here -->  
+    </Grid> 
+</Page>

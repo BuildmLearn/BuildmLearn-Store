@@ -1,0 +1,226 @@
+<applications>
+    <app>
+        <title>Festivals</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>
+        <appIcon>http://s13.postimg.org/r34jqda9j/logo_h.png</appIcon>
+        <screenshots>
+            <url>http://s21.postimg.org/jszl533d3/screen.png</url>
+            <url>http://s21.postimg.org/jszl533d3/screen.png</url>
+        </screenshots>
+        <category>Social Studies</category>
+        <type>Info</type>
+        <author_name>Author</author_name>
+        <author_email>Author@gmail.com</author_email>
+        <bundleURL>placeholder</bundleURL>
+    </app>
+	<app>
+        <title>Biology</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>
+        <appIcon>http://s13.postimg.org/63ofyv8l3/logo_c.png</appIcon>
+        <screenshots>
+            <url>http://s21.postimg.org/jszl533d3/screen.png</url>
+            <url>http://s21.postimg.org/jszl533d3/screen.png</url>
+        </screenshots>
+        <category>Biology</category>
+        <type>Quiz</type>
+        <author_name>Author</author_name>
+        <author_email>Author@gmail.com</author_email>
+        <bundleURL>placeholder</bundleURL>
+    </app>
+	<app>
+        <title>Spell</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>
+        <appIcon>http://s13.postimg.org/9i6mf03zr/logo_b.png</appIcon>
+        <screenshots>
+            <url>http://s21.postimg.org/jszl533d3/screen.png</url>
+            <url>http://s21.postimg.org/jszl533d3/screen.png</url>
+        </screenshots>
+        <category>Science</category>
+        <type>Spellings</type>
+        <author_name>Author</author_name>
+        <author_email>Author@gmail.com</author_email>
+        <bundleURL>placeholder</bundleURL>
+    </app>
+	<app>
+        <title>Animal</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>
+        <appIcon>http://s13.postimg.org/lu9ishruf/logo_l.png</appIcon>
+        <screenshots>
+            <url>http://s21.postimg.org/jszl533d3/screen.png</url>
+            <url>http://s21.postimg.org/jszl533d3/screen.png</url>
+        </screenshots>
+        <category>Biology</category>
+        <type>Flashcards</type>
+        <author_name>Author</author_name>
+        <author_email>Author@gmail.com</author_email>
+        <bundleURL>placeholder</bundleURL>
+    </app>
+<app>
+	<title>Biology Quiz</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/9i6mf03zr/logo_b.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>Biology</category>
+	<type>Quiz</type>
+	<author_name>Author</author_name>
+	<author_email>Author@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Chemistry Spellings</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/63ofyv8l3/logo_c.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>Chemistry</category>
+	<type>Spellings</type>
+	<author_name>Author1</author_name>
+	<author_email>Author1@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>History Info</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/r34jqda9j/logo_h.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>History</category>
+	<type>Info</type>
+	<author_name>Author2</author_name>
+	<author_email>Author2@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Vocabulary</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/lu9ishruf/logo_l.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>English</category>
+	<type>Spellings</type>
+	<author_name>Author3</author_name>
+	<author_email>Author3@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Maths Puzzle</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/qhfku9f7b/logo_m.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>Mathematics</category>
+	<type>Quiz</type>
+	<author_name>Author4</author_name>
+	<author_email>Author4@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Physics Info</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/n815nsr3r/logo_p.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>Physics</category>
+	<type>Info</type>
+	<author_name>Author5</author_name>
+	<author_email>Author5@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Biology Info</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/9i6mf03zr/logo_b.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>Biology</category>
+	<type>Info</type>
+	<author_name>Author</author_name>
+	<author_email>Author@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Chemistry Quiz</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/63ofyv8l3/logo_c.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>Chemistry</category>
+	<type>Quiz</type>
+	<author_name>Author1</author_name>
+	<author_email>Author1@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>History Spellings</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/r34jqda9j/logo_h.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>History</category>
+	<type>Spellings</type>
+	<author_name>Author2</author_name>
+	<author_email>Author2@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>English Words</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/lu9ishruf/logo_l.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>English</category>
+	<type>Flashcards</type>
+	<author_name>Author3</author_name>
+	<author_email>Author3@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Maths Info</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/qhfku9f7b/logo_m.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>Mathematics</category>
+	<type>Info</type>
+	<author_name>Author4</author_name>
+	<author_email>Author4@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+<app>
+	<title>Physics Flashcards</title>
+	<description>This is an application with a good description</description>
+	<appIcon>http://s13.postimg.org/n815nsr3r/logo_p.png</appIcon>
+	<screenshots>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+		<url>http://s21.postimg.org/jszl533d3/screen.png</url>
+	</screenshots>
+	<category>Physics</category>
+	<type>Flashcards</type>
+	<author_name>Author5</author_name>
+	<author_email>Author5@gmail.com</author_email>
+	<bundleURL>placeholder</bundleURL>
+</app>
+</applications>

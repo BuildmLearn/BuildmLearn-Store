@@ -1,0 +1,31 @@
+<buildmlearn_application type="SpellingTemplate">
+  <author>
+    <name>Srujan Jha</name>
+    <email></email>
+  </author>
+  <title>Biology</title>
+  <description></description>
+  <version>1</version>
+  <data>
+    <item>
+      <word>cat</word>
+      <meaning>Cats are animals which are hated by dogs.</meaning>
+    </item>
+    <item>
+      <word>cat</word>
+      <meaning>Cats are animals which are hated by dogs.</meaning>
+    </item>
+    <item>
+      <word>cat</word>
+      <meaning>Cats are animals which are hated by dogs.</meaning>
+    </item>
+    <item>
+      <word>cat</word>
+      <meaning>Cats are animals which are hated by dogs.</meaning>
+    </item>
+    <item>
+      <word>cat</word>
+      <meaning>Cats are animals which are hated by dogs.</meaning>
+    </item>
+  </data>
+</buildmlearn_application>

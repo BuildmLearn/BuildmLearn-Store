@@ -1,0 +1,8 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <ReferenceAssembly PathName="c:\users\srujan jha\documents\visual studio 2015\projects\appstore\packages\drawerlayout.1.0.4\lib\drawerlayout.dll" HashGuid="b0d3b3f8-90b7-6a66-b416-66f64dcf26fa" />
+    <ReferenceAssembly PathName="c:\users\srujan jha\documents\visual studio 2015\projects\appstore\packages\microsoft.applicationinsights.runtimetelemetry.0.11.1-build00694\lib\portable-win81+wpa81\microsoft.applicationinsights.extensibility.runtimetelemetry.winmd" HashGuid="e8ffcc49-b552-58ee-7b16-8fba2f1f880a" />
+    <ReferenceAssembly PathName="c:\users\srujan jha\documents\visual studio 2015\projects\appstore\packages\microsoft.applicationinsights.windowsphone.0.11.1-build00694\lib\wpa81\microsoft.applicationinsights.extensibility.windows.winmd" HashGuid="2cc9fd37-9839-0765-e369-aa937f791053" />
+    <ReferenceAssembly PathName="c:\users\srujan jha\documents\visual studio 2015\projects\appstore\packages\microsoft.applicationinsights.0.11.1-build00694\lib\portable-win81+wpa81\microsoft.applicationinsights.winmd" HashGuid="3232f9fa-00ef-9384-cb76-87569394cf07" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>
