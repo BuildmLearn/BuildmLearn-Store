@@ -1,0 +1,51 @@
+<buildmlearn_application type="QuizTemplate">
+  <author>
+    <name>Srujan Jha</name>
+    <email></email>
+  </author>
+  <title>Hello</title>
+  <description></description>
+  <version>1</version>
+  <data>
+    <item>
+      <question>How many cats do you have?</question>
+      <option>I hate cats!</option>
+      <option>I have two nice kittens.</option>
+      <option>I have seven beasts.</option>
+      <option>Cats? Well, we own eleven dogs.</option>
+      <answer>2</answer>
+    </item>
+    <item>
+      <question>How many cats do you have?</question>
+      <option>I hate cats!</option>
+      <option>I have two nice kittens.</option>
+      <option>I have seven beasts.</option>
+      <option>Cats? Well, we own eleven dogs.</option>
+      <answer>2</answer>
+    </item>
+    <item>
+      <question>How many cats do you have?</question>
+      <option>I hate cats!</option>
+      <option>I have two nice kittens.</option>
+      <option>I have seven beasts.</option>
+      <option>Cats? Well, we own eleven dogs.</option>
+      <answer>2</answer>
+    </item>
+    <item>
+      <question>How many cats do you have?</question>
+      <option>I hate cats!</option>
+      <option>I have two nice kittens.</option>
+      <option>I have seven beasts.</option>
+      <option>Cats? Well, we own eleven dogs.</option>
+      <answer>2</answer>
+    </item>
+    <item>
+      <question>How many cats do you have?</question>
+      <option>I hate cats!</option>
+      <option>I have two nice kittens.</option>
+      <option>I have seven beasts.</option>
+      <option>Cats? Well, we own eleven dogs.</option>
+      <answer>2</answer>
+    </item>
+  </data>
+</buildmlearn_application>

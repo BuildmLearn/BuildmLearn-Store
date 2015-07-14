@@ -29,18 +29,42 @@
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-        <GridView x:Name="GridApps" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
+            <GridView x:Name="GridApps" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
                   ContainerContentChanging="GridApps_ContentChanging" SelectionChanged="GridApps_SelectionChanged">
-                    <GridView.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Width="103" Margin="5" >
-                                <Image x:Name="appIcon"  Height="100" Width="100" Source="{Binding AppIcon}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                <TextBlock x:Name="appName" Text="{Binding Name}" FontSize="18" TextWrapping="Wrap"/>
-                                <TextBlock x:Name="appAuthor" Text="{Binding Author}" FontSize="14" TextWrapping="Wrap"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </GridView.ItemTemplate>
-         </GridView>            
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Width="103" Margin="5" Holding="StackPanel_Holding"  >
+                            <FlyoutBase.AttachedFlyout>
+                                        <MenuFlyout>
+                                            <MenuFlyoutItem x:Name="InstallButton"
+                                                            Text="install"
+                                                            Click="InstallButton_Click"/>
+                                            <MenuFlyoutItem x:Name="ShareButton"
+                                                            Text="share"
+                                                            Click="ShareButton_Click"/>
+                                        </MenuFlyout>
+                                    </FlyoutBase.AttachedFlyout>
+                            <Image x:Name="appIcon"  Height="100" Width="100" Source="{Binding AppIcon}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock x:Name="appName" Text="{Binding Name}" FontSize="18" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="appAuthor" Text="{Binding Author}" FontSize="14" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
         </Grid>
     </Grid>
+    <Page.BottomAppBar>
+        <CommandBar Background="#FF1976D2" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="Search" Icon="Find" Click="Search_Click"/>
+                <AppBarButton Label="Home" Click="Home_Click" Icon="Home"/>
+                <AppBarButton Name="btnMyApps" Label="My Apps" Icon="ViewAll" Click="MyApps_Click"/>
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="settings" Click="Settings_Click"/>
+                <AppBarButton Label="feedback" Click="Feedback_Click"/>
+                <AppBarButton Label="about" Click="About_Click"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>

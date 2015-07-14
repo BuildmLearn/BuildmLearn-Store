@@ -1,0 +1,39 @@
+<buildmlearn_application type="InfoTemplate">
+  <author>
+    <name>Srujan Jha</name>
+    <email></email>
+  </author>
+  <title>Festivals</title>
+  <description></description>
+  <version>1</version>
+  <data>
+    <item>
+      <item_title>Prague</item_title>
+      <item_description>Prague is the city which lies in the heart of Europe.</item_description>
+    </item>
+    <item>
+      <item_title>Prague</item_title>
+      <item_description>Prague is the city which lies in the heart of Europe.</item_description>
+    </item>
+    <item>
+      <item_title>Prague</item_title>
+      <item_description>Prague is the city which lies in the heart of Europe.</item_description>
+    </item>
+    <item>
+      <item_title>Prague</item_title>
+      <item_description>Prague is the city which lies in the heart of Europe.</item_description>
+    </item>
+    <item>
+      <item_title>Prague</item_title>
+      <item_description>Prague is the city which lies in the heart of Europe.</item_description>
+    </item>
+    <item>
+      <item_title>Prague</item_title>
+      <item_description>Prague is the city which lies in the heart of Europe.</item_description>
+    </item>
+    <item>
+      <item_title>Prague</item_title>
+      <item_description>Prague is the city which lies in the heart of Europe.</item_description>
+    </item>
+  </data>
+</buildmlearn_application>

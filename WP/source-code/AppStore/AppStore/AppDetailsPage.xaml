@@ -26,8 +26,11 @@
                 <Image Name="imgAppIcon" Height="110" Width="110" Source="Assets/notavailable.png"/>
                 <StackPanel Margin="10,0,0,0">
                     <TextBlock Name="txtAppName" Text="App Name" FontSize="30" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontWeight="Bold"/>
-                    <TextBlock Name="txtAppAuthor" Text="App Author" FontSize="20" Opacity="0.7" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
-                    <Button Name="btnAppInstall" Content="INSTALL" Background="#FF1976D2" BorderThickness="0" FontFamily="Global User Interface" Click="btnAppInstall_Click" />
+                    <TextBlock Name="txtAppAuthor" Text="App Author" FontSize="20" Opacity="0.9" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+                        <StackPanel Orientation="Horizontal">
+                    <Button Name="btnAppInstall" Content="INSTALL" Background="#FF1976D2" Foreground="White" BorderThickness="0" FontFamily="Global User Interface" Click="btnAppInstall_Click" />
+                            <Button Name="btnAppShare" Margin="10,0,0,0" Content="Share" Background="White" Foreground="Black" BorderThickness="0" FontFamily="Global User Interface" Click="btnAppShare_Click" />
+                            </StackPanel>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
@@ -60,7 +63,26 @@
     </Grid>
         <Grid x:Name="FullScreen" Visibility="Collapsed" >
             <FlipView x:Name="FullScreenshots"/>
-            <Button Content="Close" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Click" Background="#FF1976D2" BorderThickness="0" FontFamily="Global User Interface" />
+            <Button Content="Close" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Click" Background="#FF1976D2" Foreground="White" BorderThickness="0" FontFamily="Global User Interface" />
         </Grid>
         </Grid>
+    <Page.BottomAppBar>
+        <CommandBar Background="#FF1976D2" Opacity="0.9"  >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="Search" Icon="Find" Click="Search_Click"/>
+                <AppBarButton Name="btnMyApps" Label="My Apps" Icon="ViewAll" Click="MyApps_Click"/>
+                <AppBarButton Name="Home" Label="Home" Icon="Home" Click="Home_Click"/>
+                <AppBarButton Label="Categories" Click="Categories_Click">
+                    <AppBarButton.Icon>
+                        <BitmapIcon UriSource="Assets/ic_categories.png"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="settings" Click="Settings_Click"/>
+                <AppBarButton Label="feedback" Click="Feedback_Click"/>
+                <AppBarButton Label="about" Click="About_Click"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
     </Page>

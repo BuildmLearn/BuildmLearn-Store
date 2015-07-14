@@ -1,0 +1,120 @@
+﻿<Page
+    x:Class="AppStore.Templates.FlashCardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppStore.Templates"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="BuildmLearn Store" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Name="pageTitle" Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Name="FlashNumber" FontSize="20" TextWrapping="Wrap" FontWeight="Bold" Foreground="#FF1976D2"/>
+                    <Rectangle Height="2" Margin="10" Fill="{ThemeResource ButtonBorderThemeBrush}" />
+                    <TextBlock Name="FlashQuestion" FontSize="25" TextWrapping="Wrap" FontWeight="Bold"/>
+                    <Border Name="frontCard" BorderThickness="2" CornerRadius="10" Background="White" >
+                        <Border.Projection>
+                            <PlaneProjection/>
+                        </Border.Projection>
+                        <Border.RenderTransform>
+                            <CompositeTransform />
+                        </Border.RenderTransform>
+                        <Image Height="250" Margin="5" Name="FlashCard" Source="ms-appx:///Assets/notavailable.png"/>
+                    </Border>
+                    <Border Name="backCard" Visibility="Collapsed" BorderThickness="2" Height="260" CornerRadius="10" Background="White" >
+                        <TextBlock Name="FlashText" Text="Card" Foreground="Black" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <TextBlock Name="FlashHint" Text="Hint:" FontSize="20" TextWrapping="Wrap"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Name="Previous" Content="Previous" Margin="5" BorderThickness="0" Background="#FF1976D2" Foreground="White" Click="Previous_Click"/>
+                        <Button Name="Flip" Content="Flip" Margin="5" BorderThickness="0" Background="#FF1976D2" Foreground="White" Click="Flip_Click"/>
+                        <Button Name="Next" Content="Next" Margin="5" BorderThickness="0" Background="#FF1976D2" Foreground="White" Click="Next_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+            </Grid>
+    </Grid>
+<!--Storyboard animation-->
+        <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="VisualStateGroup">
+                    <!--This animation will be invoked when you tap on the front rectangle-->
+                <VisualState x:Name="FlipCardFront" >
+                    <Storyboard >
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="frontCard">
+                            <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                            <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="90"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="backCard">
+                            <DiscreteObjectKeyFrame KeyTime="0:0:0.25">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <Visibility>Visible</Visibility>
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>
+                        </ObjectAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="backCard">
+                            <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="-90"/>
+                            <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="frontCard">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0.25">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                </VisualState>
+ 
+                <!--This animation will be invoked when you tap on the backward rectangle-->
+                <VisualState x:Name="FlipCardBack" >
+                    <Storyboard >
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="backCard">
+                            <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                            <EasingDoubleKeyFrame KeyTime="0:0:.25" Value="-90"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="backCard">
+                            <DiscreteObjectKeyFrame KeyTime="0:0:.25">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <Visibility>Visible</Visibility>
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>
+                        </ObjectAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="frontCard">
+                            <EasingDoubleKeyFrame KeyTime="0:0:.25" Value="90"/>
+                            <EasingDoubleKeyFrame KeyTime="0:0:.5" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="backCard">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0.25">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        
+</Page>

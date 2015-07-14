@@ -15,8 +15,7 @@ namespace AppStore.Models
         private string mPuzzleDescription;
         private List<WordModel> mSpellingsList;
         private int totalCorrect = 0, totalWrong = 0, activeCount = 0;
-
-
+      
         public static SpellingsModel mSpellingsModel;
         public static void clearInstance()
         {

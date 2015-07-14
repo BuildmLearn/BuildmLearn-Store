@@ -70,7 +70,7 @@ namespace AppStore.Common
                 List<string> infoTitleList = new List<string>();
                 List<string> infoDescriptionList = new List<string>();
                 XmlDocument doc = new XmlDocument();
-                doc.LoadXml(XDocument.Load("Assets/" + fileName + ".xml").ToString());
+                doc.LoadXml(XDocument.Load("Assets/Apps/" + fileName + ".xml").ToString());
                 model.setInfoName(doc.GetElementsByTagName("title").ElementAt(0).InnerText.Trim());
                 model.setInfoDescription(doc.GetElementsByTagName("description").ElementAt(0).InnerText.Trim());
                 string[] author = doc.GetElementsByTagName("author").ElementAt(0).InnerText.Split('\n');
@@ -84,7 +84,7 @@ namespace AppStore.Common
                     infoTitleList.Add(info_title.ElementAt(i).InnerText.Trim());
                     infoDescriptionList.Add(info_description.ElementAt(i).InnerText.Trim());
                 }
-                model.setListTitleList(infoTitleList);
+                model.setInfoTitleList(infoTitleList);
                 model.setInfoDescriptionList(infoDescriptionList);
             }
             catch (Exception) { }
@@ -96,7 +96,7 @@ namespace AppStore.Common
                 QuizModel model = QuizModel.getInstance();
                 List<Question> mQuestionList = new List<Question>();
                 XmlDocument doc = new XmlDocument();
-                doc.LoadXml(XDocument.Load("Assets/" + fileName + ".xml").ToString());
+                doc.LoadXml(XDocument.Load("Assets/Apps/" + fileName + ".xml").ToString());
                 model.setQuizName(doc.GetElementsByTagName("title").ElementAt(0).InnerText.Trim());
                 model.setQuizDescription(doc.GetElementsByTagName("description").ElementAt(0).InnerText.Trim());
                 string[] author = doc.GetElementsByTagName("author").ElementAt(0).InnerText.Split('\n');
@@ -129,7 +129,7 @@ namespace AppStore.Common
                 SpellingsModel model = SpellingsModel.getInstance();
                 List<WordModel> wordList = new List<WordModel>();
                 XmlDocument doc = new XmlDocument();
-                doc.LoadXml(XDocument.Load("Assets/" + fileName + ".xml").ToString());
+                doc.LoadXml(XDocument.Load("Assets/Apps/" + fileName + ".xml").ToString());
                 model.setPuzzleName(doc.GetElementsByTagName("title").ElementAt(0).InnerText.Trim());
                 model.setPuzzleDescription(doc.GetElementsByTagName("description").ElementAt(0).InnerText.Trim());
                 string[] author = doc.GetElementsByTagName("author").ElementAt(0).InnerText.Split('\n');
@@ -167,7 +167,7 @@ namespace AppStore.Common
                 for (int i = 0; i < item.Length; i++)
                 {
                     string[] ar = item.ElementAt(i).InnerText.Split('\n');
-                    Card card = new Card(ar[1], ar[2], ar[3], ar[4]);
+                    Card card = new Card(ar[1].Trim(), ar[2].Trim(), ar[3].Trim(), ar[4].Trim());
                     cardList.Add(card);
                 }
                 model.setCardList(cardList);

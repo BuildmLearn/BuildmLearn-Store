@@ -5,10 +5,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
+using Windows.UI;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -34,6 +37,7 @@ namespace AppStore
         public MyAppsPage()
         {
             this.InitializeComponent();
+            AppCommon.RegisterForShare();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
@@ -100,7 +104,7 @@ namespace AppStore
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            GridMyApps.ItemsSource = AppList.getAppList().appList;
+            GridMyApps.ItemsSource = AppList.getMyAppList().myappList;
             this.navigationHelper.OnNavigatedTo(e);
         }
 
@@ -139,20 +143,61 @@ namespace AppStore
             Image appIcon = (Image)templateRoot.FindName("appIcon");
             appIcon.Source = new BitmapImage(new Uri(app.AppIcon));
         }
-        private async void GridMyApps_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void GridMyApps_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionGridApps) return;
             AppInstance.app = (Apps)GridMyApps.SelectedItem;
             AppInstance.installed = true;
-            CoreDispatcher dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
-            await dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-            {
-                Frame.Navigate(typeof(AppDetailsPage));
-            });
+            Frame.Navigate(typeof(AppDetailsPage));
             selectionGridApps = true;
             GridMyApps.SelectedIndex = -1;
             selectionGridApps = false;
         }
-
+        private void Search_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(SearchPage)); }
+        private void Settings_Click(object sender, RoutedEventArgs e) { }
+        private void Home_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MainPage)); }
+        private void Categories_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(CategoriesPage)); }
+        private void About_Click(object sender, RoutedEventArgs e) { }
+        Apps appHolding;
+        private void StackPanel_Holding(object sender, HoldingRoutedEventArgs e)
+        {
+            FrameworkElement senderElement = sender as FrameworkElement;
+            StackPanel stackPanel = sender as StackPanel;
+            TextBlock txt = (TextBlock)stackPanel.Children.ElementAt(1);
+            foreach (Apps app in AppList.getMyAppList().myappList)
+            {
+                if (app.Name.Equals(txt.Text))
+                {
+                    appHolding = app; break;
+                }
+            }
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            FlyoutBase flyoutBase = FlyoutBase.GetAttachedFlyout(senderElement);
+            flyoutBase.ShowAt(senderElement);
+        }
+        private void Feedback_Click(object sender, RoutedEventArgs e) { AppCommon.ComposeEmail(); }
+        private async void UninstallButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageDialog msg = new MessageDialog("Do you want to uninstall the " + appHolding.Name + " ?", "Uninstall");
+            msg.Commands.Add(new UICommand("Yes"));
+            msg.Commands.Add(new UICommand("No"));
+            msg.DefaultCommandIndex = 1;
+            msg.CancelCommandIndex = 0;
+            var result = await msg.ShowAsync();
+            if (result.Label.Equals("Yes"))
+            {
+                var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+                localSettings.Values[appHolding.Name] = false;
+                AppList.getMyAppList().myappList.Remove(appHolding);
+                if (AppList.getMyAppList().myappList.Count == 0) Frame.GoBack();
+                GridMyApps.ItemsSource=(new List<Apps>());
+                GridMyApps.ItemsSource = AppList.getMyAppList().myappList;
+            }
+        }
+        private void ShareButton_Click(object sender, RoutedEventArgs e)
+        {
+            var datacontext = (e.OriginalSource as FrameworkElement).DataContext;
+            DataTransferManager.ShowShareUI();
+        }
     }
 }

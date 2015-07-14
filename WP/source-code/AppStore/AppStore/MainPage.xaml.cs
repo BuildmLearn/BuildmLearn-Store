@@ -1,12 +1,17 @@
-﻿using AppStore.Models;
+﻿using AppStore.Common;
+using AppStore.Models;
+using AppStore.Templates;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
+using Windows.UI.Notifications;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,35 +30,40 @@ namespace AppStore
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        bool selectionGridCategories= false, selectionGridApps = false, selectionListMenus = false;
+        bool selectionGridCategories = false, selectionGridApps = false;
         public MainPage()
         {
             this.InitializeComponent();
-            DrawerLayout.InitializeDrawerLayout();
-            string[] menuItems = new string[8] { "Home", "My Apps", "Categories", "Settings", "", "Feedback", "Rate my app", "About" };
-            ListMenuItems.ItemsSource = menuItems.ToList();
             this.NavigationCacheMode = NavigationCacheMode.Required;
+            AppCommon.RegisterForShare();
         }
-        private void DrawerIcon_Tapped(object sender, TappedRoutedEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (DrawerLayout.IsDrawerOpen)
-                DrawerLayout.CloseDrawer();
-            else
-                DrawerLayout.OpenDrawer();
-        }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
+            if (AppList.getMyAppList().myappList.Count > 0)
+                btnMyApps.Visibility = Visibility.Visible;
+            else btnMyApps.Visibility = Visibility.Collapsed;
             GridFeaturedApps.ItemsSource = AppList.getAppList().appList;
             GridFeaturedCategories.ItemsSource = Models.Resources.getCategoriesList();
-            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
-        }
-        void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
-        {
-            if (DrawerLayout.IsDrawerOpen)
+            if(e.Parameter!=null)
+             if (!String.IsNullOrWhiteSpace(e.Parameter.ToString()))
             {
-                DrawerLayout.CloseDrawer();
-                e.Handled = true;
+                string appName = e.Parameter.ToString();
+                foreach (Apps app in AppList.getAppList().appList)
+                {
+                    if (app.Name.Equals(appName))
+                    {
+                        AppInstance.app = app;
+                        CoreDispatcher dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
+                        await dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+                        { Frame.Navigate(typeof(StartPage),"remove"); });
+                    }
+                }
             }
+            if(Frame.BackStack.Count>0)
+                Frame.BackStack.Clear();
+        }
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
         }
         private void GridFeaturedApps_ContentChanging(ListViewBase sender, ContainerContentChangingEventArgs args)
         {
@@ -83,61 +93,20 @@ namespace AppStore
             Image appIcon = (Image)templateRoot.FindName("appIcon");
             appIcon.Source = new BitmapImage(new Uri(app.AppIcon));
         }
-        private async void GridFeaturedApps_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void GridFeaturedApps_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionGridApps) return;
             AppInstance.app = (Apps)GridFeaturedApps.SelectedItem;
-            CoreDispatcher dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
-            await dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-            {
-                Frame.Navigate(typeof(AppDetailsPage));
-            });
+            Frame.Navigate(typeof(AppDetailsPage));
             selectionGridApps = true;
             GridFeaturedApps.SelectedIndex = -1;
             selectionGridApps = false;
         }
-        private async void NavigateTo(Type page)
-        {
-            CoreDispatcher dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
-            await dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-            {
-                Frame.Navigate(page);
-            });
-            selectionListMenus = true;
-            ListMenuItems.SelectedIndex = -1;
-            selectionListMenus = false;
-        }
-        private void ListMenuItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (selectionListMenus) return;
-            switch (ListMenuItems.SelectedIndex)
-            {
-                case 0:
-                    break;
-                case 1:
-                    NavigateTo(typeof(MyAppsPage));
-                    break;
-                case 2:
-                    NavigateTo(typeof(CategoriesPage));
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-
-            }
-        }
-        private async void GridFeaturedCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void GridFeaturedCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionGridCategories) return;
             CategoryInstance.category = (Categories)GridFeaturedCategories.SelectedItem;
-            CoreDispatcher dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
-            await dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-            {
-                Frame.Navigate(typeof(CategoryPage));
-            });
+            Frame.Navigate(typeof(CategoryPage));
             selectionGridCategories = true;GridFeaturedCategories.SelectedIndex = -1;selectionGridCategories = false;
         }
         private void GridFeaturedCategories_ContentChanging(ListViewBase sender, ContainerContentChangingEventArgs args)
@@ -153,6 +122,48 @@ namespace AppStore
             TextBlock categoryName = (TextBlock)templateRoot.FindName("categoryName");
             categoryName.Text = category.Name;
             categoryIcon.Source = new BitmapImage(new Uri(category.Background));
+        }
+        private void Search_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(SearchPage)); }
+        private void Settings_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(Settings)); }
+        private void MyApps_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MyAppsPage)); }
+        private void Categories_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(CategoriesPage)); }
+        private void About_Click(object sender, RoutedEventArgs e) {  }
+        Apps appHolding;
+        private void StackPanel_Holding(object sender, HoldingRoutedEventArgs e)
+        {
+            FrameworkElement senderElement = sender as FrameworkElement;
+            StackPanel stackPanel=sender as StackPanel;
+            TextBlock txt=(TextBlock)stackPanel.Children.ElementAt(1);
+            foreach (Apps app in AppList.getAppList().appList)
+            {
+                if (app.Name.Equals(txt.Text))
+                {
+                    appHolding = app;break;
+                }
+            }
+            //var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            FlyoutBase flyoutBase = FlyoutBase.GetAttachedFlyout(senderElement);
+            flyoutBase.ShowAt(senderElement);
+        }
+        private void Feedback_Click(object sender, RoutedEventArgs e) { AppCommon.ComposeEmail(); }
+        private void InstallButton_Click(object sender, RoutedEventArgs e)
+        {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if ((bool)localSettings.Values[appHolding.Name]) return;
+            localSettings.Values[appHolding.Name] = true;
+            AppList.getMyAppList().myappList.Add(appHolding);
+            btnMyApps.Visibility = Visibility.Visible;
+            var toastTemplate = ToastTemplateType.ToastImageAndText01;
+            var toastXml = ToastNotificationManager.GetTemplateContent(toastTemplate);
+            var toastTextElements = toastXml.GetElementsByTagName("text");
+            toastTextElements[0].AppendChild(toastXml.CreateTextNode(appHolding.Name + " is installed."));
+            var toast = new ToastNotification(toastXml);
+            ToastNotificationManager.CreateToastNotifier().Show(toast);
+        }
+        private void ShareButton_Click(object sender, RoutedEventArgs e)
+        {
+            var datacontext = (e.OriginalSource as FrameworkElement).DataContext;
+            DataTransferManager.ShowShareUI();
         }
     }
 }

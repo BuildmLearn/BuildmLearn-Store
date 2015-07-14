@@ -16,7 +16,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="AppStore.App">
-      <m3:VisualElements DisplayName="BuildmLearn Store" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="BuildmLearn Store is a store for educational mobile apps created using BuildmLearn Toolkit. Anyone using the BuildmLearn AppStore will have access to all published applications. This application will also have various templates using which the apps can be rendered." ForegroundText="light" BackgroundColor="transparent">
+      <m3:VisualElements DisplayName="BuildmLearn Store" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="BuildmLearn Store is a store for educational mobile apps created using BuildmLearn Toolkit. Anyone using the BuildmLearn AppStore will have access to all published applications. This application will also have various templates using which the apps can be rendered." ForegroundText="light" BackgroundColor="transparent" ToastCapable="true">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
           <m3:ShowNameOnTiles>
             <m3:ShowOn Tile="square150x150Logo" />
@@ -37,10 +37,16 @@
             </SupportedFileTypes>
           </FileTypeAssociation>
         </Extension>
+        <Extension Category="windows.shareTarget">
+          <ShareTarget>
+            <DataFormat>Text</DataFormat>
+          </ShareTarget>
+        </Extension>
       </Extensions>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
 </Package>

@@ -5,10 +5,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
 using Windows.UI.Core;
+using Windows.UI.Notifications;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -34,7 +36,7 @@ namespace AppStore
         public CategoryPage()
         {
             this.InitializeComponent();
-
+            AppCommon.RegisterForShare();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
@@ -101,6 +103,9 @@ namespace AppStore
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            if (AppList.getMyAppList().myappList.Count > 0)
+                btnMyApps.Visibility = Visibility.Visible;
+            else btnMyApps.Visibility = Visibility.Collapsed;
             pageTitle.Text = CategoryInstance.category.Name;
             List<Apps> listApps = new List<Apps>();
             foreach(Apps app in AppList.getAppList().appList)
@@ -147,19 +152,55 @@ namespace AppStore
             Image appIcon = (Image)templateRoot.FindName("appIcon");
             appIcon.Source = new BitmapImage(new Uri(app.AppIcon));
         }
-        private async void GridApps_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void GridApps_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionGridApps) return;
             AppInstance.app = (Apps)GridApps.SelectedItem;
-            CoreDispatcher dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
-            await dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-            {
-                Frame.Navigate(typeof(AppDetailsPage));
-            });
+            Frame.Navigate(typeof(AppDetailsPage));
             selectionGridApps = true;
             GridApps.SelectedIndex = -1;
             selectionGridApps = false;
         }
-
+        private void Search_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(SearchPage)); }
+        private void Settings_Click(object sender, RoutedEventArgs e) { }
+        private void Home_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MainPage)); }
+        private void MyApps_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MyAppsPage)); }
+        private void About_Click(object sender, RoutedEventArgs e) { }
+        Apps appHolding;
+        private void StackPanel_Holding(object sender, HoldingRoutedEventArgs e)
+        {
+            FrameworkElement senderElement = sender as FrameworkElement;
+            StackPanel stackPanel = sender as StackPanel;
+            TextBlock txt = (TextBlock)stackPanel.Children.ElementAt(1);
+            foreach (Apps app in AppList.getAppList().appList)
+            {
+                if (app.Name.Equals(txt.Text))
+                {
+                    appHolding = app; break;
+                }
+            }
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            FlyoutBase flyoutBase = FlyoutBase.GetAttachedFlyout(senderElement);
+            flyoutBase.ShowAt(senderElement);
+        }
+        private void Feedback_Click(object sender, RoutedEventArgs e) { AppCommon.ComposeEmail(); }
+        private void InstallButton_Click(object sender, RoutedEventArgs e)
+        {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if ((bool)localSettings.Values[appHolding.Name]) return;
+            localSettings.Values[appHolding.Name] = true;
+            AppList.getMyAppList().myappList.Add(appHolding);
+            var toastTemplate = ToastTemplateType.ToastImageAndText01;
+            var toastXml = ToastNotificationManager.GetTemplateContent(toastTemplate);
+            var toastTextElements = toastXml.GetElementsByTagName("text");
+            toastTextElements[0].AppendChild(toastXml.CreateTextNode(appHolding.Name + " is installed."));
+            var toast = new ToastNotification(toastXml);
+            ToastNotificationManager.CreateToastNotifier().Show(toast);
+        }
+        private void ShareButton_Click(object sender, RoutedEventArgs e)
+        {
+            var datacontext = (e.OriginalSource as FrameworkElement).DataContext;
+            DataTransferManager.ShowShareUI();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using AppStore.Models;
+﻿
+using AppStore.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,6 +11,8 @@ using Windows.ApplicationModel.Activation;
 using Windows.Data.Xml.Dom;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Networking.Connectivity;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -106,6 +109,17 @@ namespace AppStore
             // Ensure the current window is active
             Window.Current.Activate();
         }
+        public static bool HasInternet()
+        {
+            var connectionProfile = NetworkInformation.GetInternetConnectionProfile();
+            return (connectionProfile != null &&
+                    connectionProfile.GetNetworkConnectivityLevel() == NetworkConnectivityLevel.InternetAccess);
+        }
+        private void CommandInvokedHandler(Windows.UI.Popups.IUICommand command)
+        {
+            // Display message showing the label of the command that was invoked
+            if (command.Label.Equals("Close app")) Application.Current.Exit();
+        }
         private void ExtendSplashScreen()
         {
             try
@@ -118,6 +132,15 @@ namespace AppStore
                     {
                         string[] ar = item.InnerText.Split('\n');
                         AppList.getAppList().appList.Add(new Apps(ar[1], ar[2], ar[10], ar[11], ar[3], new string[] { ar[5], ar[6] }, ar[9], ar[8]));
+                        var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+                        if (localSettings.Values.ContainsKey(ar[1].Trim()))
+                        {
+                            if ((bool)localSettings.Values[ar[1].Trim()])
+                            {
+                                AppList.getMyAppList().myappList.Add(new Apps(ar[1], ar[2], ar[10], ar[11], ar[3], new string[] { ar[5], ar[6] }, ar[9], ar[8]));
+                            }
+                        }
+                        else localSettings.Values.Add(ar[1].Trim(), false);
                     }
                     catch (Exception) { }
                 }

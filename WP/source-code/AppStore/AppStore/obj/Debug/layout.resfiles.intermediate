@@ -1,7 +1,20 @@
 Assets\aka.png
 Assets\Apps\Animal.xml
+Assets\Apps\Biology Info.xml
+Assets\Apps\Biology Quiz.xml
+Assets\Apps\Biology.xml
+Assets\Apps\Chemistry Quiz.xml
+Assets\Apps\Chemistry Spellings.xml
+Assets\Apps\English Words.xml
+Assets\Apps\Festivals.xml
+Assets\Apps\History Info..xml
+Assets\Apps\Maths Info.xml
+Assets\Apps\Maths Puzzle.xml
+Assets\Apps\Physics Flashcards.xml
+Assets\Apps\Physics Info.xml
+Assets\Apps\Spell.xml
+Assets\Apps\Vocabulary.xml
 Assets\background_header.png
-Assets\Biology.xml
 Assets\BuildmLearnStore.xml
 Assets\card_biology.png
 Assets\card_chemistry.png
@@ -13,7 +26,6 @@ Assets\card_mathematics.png
 Assets\card_physics.png
 Assets\card_science.png
 Assets\card_socialstudies.png
-Assets\Festivals.xml
 Assets\ic_action.png
 Assets\ic_action_device_access_volume_on.png
 Assets\ic_addwish.png
@@ -30,6 +42,8 @@ Assets\ic_logout.png
 Assets\ic_logout_g.png
 Assets\ic_mail.png
 Assets\ic_more.png
+Assets\ic_myapps.png
+Assets\ic_myapps_g.png
 Assets\ic_search.png
 Assets\ic_search_g.png
 Assets\ic_search_w.png
@@ -53,6 +67,7 @@ Assets\Icons\Spell.png
 Assets\Icons\Vocabulary.png
 Assets\Logo.scale-100.png
 Assets\Logo.scale-140.png
+Assets\Logo.scale-240.png
 Assets\logo_a.png
 Assets\logo_a1.png
 Assets\logo_b.png
@@ -66,7 +81,6 @@ Assets\notavailable.png
 Assets\SmallLogo.scale-100.png
 Assets\SmallLogo.scale-140.png
 Assets\SmallLogo.scale-240.png
-Assets\Spell.xml
 Assets\spinner_triangle.png
 Assets\splash.png
 Assets\SplashScreen.scale-100.png
@@ -78,6 +92,8 @@ Assets\Square71x71Logo.scale-240.png
 Assets\StoreLogo.scale-100.png
 Assets\StoreLogo.scale-140.png
 Assets\StoreLogo.scale-240.png
+Assets\WideLogo.scale-100.png
+Assets\WideLogo.scale-140.png
 Assets\WideLogo.scale-240.png
 App.xbf
 AppDetailsPage.xbf
@@ -86,4 +102,13 @@ CategoriesPage.xbf
 CategoryPage.xbf
 MainPage.xbf
 MyAppsPage.xbf
+SearchPage.xbf
+Settings.xbf
+Templates\FlashCardPage.xbf
+Templates\InfoDetailPage.xbf
+Templates\InfoPage.xbf
+Templates\QuizPage.xbf
+Templates\ScorePage.xbf
+Templates\SpellingsPage.xbf
 Templates\StartPage.xbf
+Templates\WordInfoPage.xbf

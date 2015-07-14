@@ -8,38 +8,44 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="LayoutRoot">
-
-        <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition/>
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
-
+    <Grid x:Name="RootLayout">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="110" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
-        <!-- Title Panel -->
+        <!-- Title Bar -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0">
             <TextBlock Text="BuildmLearn Store" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="Categories" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            <TextBlock x:Name="pageTitle" Text="Categories" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
         </StackPanel>
-
-        <!--TODO: Content should be placed within the following grid-->
-        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-             <GridView x:Name="GridCategories" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
+        <Grid x:Name="MainFragment" Margin="19,9.5,19,0" Grid.Row="1">
+            <!-- Main Content goes here -->
+            <GridView x:Name="GridCategories" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
                   ContainerContentChanging="GridCategories_ContentChanging" SelectionChanged="GridCategories_SelectionChanged" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <GridView.ItemTemplate>
-                        <DataTemplate>
+                <GridView.ItemTemplate>
+                    <DataTemplate>
                         <Grid Height="120" Width="300" Margin="10">
                             <Image x:Name="categoryIcon" Source="{Binding Background}" Stretch="UniformToFill" Opacity="0.8"/>
-                            <TextBlock x:Name="categoryName" Text="{Binding Name}" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock x:Name="categoryName" Foreground="White" Text="{Binding Name}" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Grid>
                     </DataTemplate>
-                    </GridView.ItemTemplate>
-                </GridView>
-       </Grid>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
     </Grid>
+    <Page.BottomAppBar>
+        <CommandBar Background="#FF1976D2"  Opacity="0.9" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="Search" Icon="Find" Click="Search_Click"/>
+                <AppBarButton Label="Home" Icon="Home" Click="Home_Click"/>
+                <AppBarButton Name="btnMyApps" Label="My Apps" Icon="ViewAll" Click="MyApps_Click"/>
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="settings" Click="Settings_Click"/>
+                <AppBarButton Label="feedback" Click="Feedback_Click"/>
+                <AppBarButton Label="about" Click="About_Click"/>
+                
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>

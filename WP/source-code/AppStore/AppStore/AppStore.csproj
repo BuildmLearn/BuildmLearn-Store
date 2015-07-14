@@ -14,9 +14,11 @@
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <NuGetPackageImportStamp>f17dfb23</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>d0bf7ca5</NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>
     </ApplicationInsightsResourceId>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -98,7 +100,6 @@
     <Content Include="Assets\Apps\Physics Info.xml" />
     <Content Include="Assets\Apps\Spell.xml" />
     <Content Include="Assets\Apps\Vocabulary.xml" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -113,6 +114,7 @@
     <Compile Include="CategoryPage.xaml.cs">
       <DependentUpon>CategoryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\AppCommon.cs" />
     <Compile Include="Common\AppReader.cs" />
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
@@ -129,6 +131,7 @@
     <Compile Include="Models\CategoryInstance.cs" />
     <Compile Include="Models\FlashModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
+    <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\QuizModel.cs" />
     <Compile Include="Models\Resources.cs" />
@@ -138,8 +141,35 @@
       <DependentUpon>MyAppsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\FlashCardPage.xaml.cs">
+      <DependentUpon>FlashCardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\InfoDetailPage.xaml.cs">
+      <DependentUpon>InfoDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\InfoPage.xaml.cs">
+      <DependentUpon>InfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\QuizPage.xaml.cs">
+      <DependentUpon>QuizPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\ScorePage.xaml.cs">
+      <DependentUpon>ScorePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\SpellingsPage.xaml.cs">
+      <DependentUpon>SpellingsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Templates\StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\WordInfoPage.xaml.cs">
+      <DependentUpon>WordInfoPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +222,8 @@
     <Content Include="Assets\ic_logout_g.png" />
     <Content Include="Assets\ic_mail.png" />
     <Content Include="Assets\ic_more.png" />
+    <Content Include="Assets\ic_myapps.png" />
+    <Content Include="Assets\ic_myapps_g.png" />
     <Content Include="Assets\ic_search.png" />
     <Content Include="Assets\ic_search_g.png" />
     <Content Include="Assets\ic_search_w.png" />
@@ -200,6 +232,7 @@
     <Content Include="Assets\ic_share.png" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\Logo.scale-140.png" />
+    <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\logo1.png" />
     <Content Include="Assets\logo_a.png" />
     <Content Include="Assets\logo_a1.png" />
@@ -224,6 +257,8 @@
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-140.png" />
     <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\WideLogo.scale-100.png" />
+    <Content Include="Assets\WideLogo.scale-140.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
   </ItemGroup>
   <ItemGroup>
@@ -253,15 +288,46 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="SearchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Settings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Templates\FlashCardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Templates\InfoDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Templates\InfoPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Templates\QuizPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Templates\ScorePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Templates\SpellingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Templates\StartPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="DrawerLayout">
-      <HintPath>..\packages\DrawerLayout.1.0.4\lib\DrawerLayout.dll</HintPath>
-    </Reference>
+    <Page Include="Templates\WordInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

@@ -6,9 +6,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
+using Windows.UI.Core;
+using Windows.UI.Notifications;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -18,6 +21,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
+
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -36,6 +40,7 @@ namespace AppStore
         public AppDetailsPage()
         {
             this.InitializeComponent();
+            AppCommon.RegisterForShare();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
@@ -101,9 +106,13 @@ namespace AppStore
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+            if (AppList.getMyAppList().myappList.Count > 0)
+                btnMyApps.Visibility = Visibility.Visible;
+            else btnMyApps.Visibility = Visibility.Collapsed;
             app = AppInstance.app;
-            appInstalled = AppInstance.installed;
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (localSettings.Values.ContainsKey(app.Name))
+            appInstalled=(bool)(localSettings.Values[app.Name]);
             if (appInstalled) btnAppInstall.Content = "LAUNCH";
             else btnAppInstall.Content = "INSTALL";
             txtAppName.Text = app.Name;
@@ -203,21 +212,6 @@ namespace AppStore
                 LayoutRoot.Visibility = Visibility.Visible;
                 e.Handled = true;
             }
-            else
-            {
-                Frame frame = Window.Current.Content as Frame;
-                if (frame == null)
-                {
-                    return;
-                }
-                if (frame.CanGoBack)
-                {
-                    frame.Navigate(typeof(MainPage));
-                    frame.GoBack();
-                    //Indicate the back button press is handled so the app does not exit
-                    e.Handled = true;
-                }
-            }
         }
 
         private void btnAppInstall_Click(object sender, RoutedEventArgs e)
@@ -226,6 +220,33 @@ namespace AppStore
             {
                 Frame.Navigate(typeof(StartPage));
             }
+            else
+            {
+                var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+                localSettings.Values[app.Name] = true;
+                AppList.getMyAppList().myappList.Add(app);
+                appInstalled = true;
+                var toastTemplate = ToastTemplateType.ToastImageAndText01;
+                var toastXml = ToastNotificationManager.GetTemplateContent(toastTemplate);
+                var toastTextElements = toastXml.GetElementsByTagName("text");
+                toastTextElements[0].AppendChild(toastXml.CreateTextNode(app.Name+" is installed."));
+                var toast = new ToastNotification(toastXml);
+                ToastNotificationManager.CreateToastNotifier().Show(toast);
+                btnAppInstall.Content = "LAUNCH";
+            }
         }
+        private void btnAppShare_Click(object sender, RoutedEventArgs e)
+        {
+            var datacontext = (e.OriginalSource as FrameworkElement).DataContext;
+            DataTransferManager.ShowShareUI();
+        }
+        private void Search_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(SearchPage)); }
+        private void Home_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MainPage)); }
+        private void Settings_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(Settings)); }
+        private void MyApps_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MyAppsPage)); }
+        private void Categories_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(CategoriesPage)); }
+        private void About_Click(object sender, RoutedEventArgs e) { }
+        private void Feedback_Click(object sender, RoutedEventArgs e) { AppCommon.ComposeEmail(); }
+
     }
 }

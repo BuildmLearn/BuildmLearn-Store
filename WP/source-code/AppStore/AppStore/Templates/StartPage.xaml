@@ -23,13 +23,27 @@
 
         <!-- Title Panel -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            <TextBlock Text="BuildmLearn Store" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
         </StackPanel>
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-
+            <StackPanel Margin="0,100,0,0">
+                <Border BorderThickness="2" Width="110" Height="110" CornerRadius="10" Background="#FF1976D2">
+                    <Image Name="AppLogo" Margin="5" Height="100" Width="100"/>
+                </Border>
+                <Rectangle Height="100"/>
+                <TextBlock Name="AppName" Margin="10" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <Rectangle Height="2" Margin="10" Fill="{ThemeResource ButtonBorderThemeBrush}" />
+                <TextBlock Name="AppAuthor" Margin="10" FontSize="25" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <Button Height="70" Width="150" Name="Start" Content="Start" BorderThickness="0" Background="#FF1976D2" Foreground="White" Click="Start_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+           
         </Grid>
     </Grid>
+    <Page.BottomAppBar>
+    <CommandBar x:Name="SecondaryTileCommandBar" Padding="10,0,10,0" IsSticky="True" IsOpen="True" Background="#FF1976D2" Opacity="0.9">
+        <AppBarButton x:Name="PinUnPinCommandButton" Icon="Pin" Label="Pin" Click="pinToAppBar_Click"/>
+    </CommandBar>
+</Page.BottomAppBar>
 </Page>

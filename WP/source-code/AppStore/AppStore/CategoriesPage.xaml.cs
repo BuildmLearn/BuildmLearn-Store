@@ -34,7 +34,6 @@ namespace AppStore
         public CategoriesPage()
         {
             this.InitializeComponent();
-
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
@@ -101,6 +100,9 @@ namespace AppStore
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            if (AppList.getMyAppList().myappList.Count > 0)
+                btnMyApps.Visibility = Visibility.Visible;
+            else btnMyApps.Visibility = Visibility.Collapsed;
             GridCategories.ItemsSource = Models.Resources.getCategoriesList();
             this.navigationHelper.OnNavigatedTo(e);
         }
@@ -112,15 +114,11 @@ namespace AppStore
 
         #endregion
         bool selectionGridCategories = false;
-        private async void GridCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void GridCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionGridCategories) return;
             CategoryInstance.category = (Categories)GridCategories.SelectedItem;
-            CoreDispatcher dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
-            await dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
-            {
-                Frame.Navigate(typeof(CategoryPage));
-            });
+            Frame.Navigate(typeof(CategoryPage));
             selectionGridCategories = true; GridCategories.SelectedIndex = -1; selectionGridCategories = false;
         }
         private void GridCategories_ContentChanging(ListViewBase sender, ContainerContentChangingEventArgs args)
@@ -137,6 +135,11 @@ namespace AppStore
             categoryName.Text = category.Name;
             categoryIcon.Source = new BitmapImage(new Uri(category.Background));
         }
-        
+        private void Search_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(SearchPage)); }
+        private void Settings_Click(object sender, RoutedEventArgs e) { }
+        private void Home_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MainPage)); }
+        private void MyApps_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MyAppsPage)); }
+        private void About_Click(object sender, RoutedEventArgs e) { }
+        private void Feedback_Click(object sender, RoutedEventArgs e) { }
     }
 }

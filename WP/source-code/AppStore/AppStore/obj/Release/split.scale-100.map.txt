@@ -1,0 +1,12 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-100"
+"ResourceDimensions"		"scale-100"
+
+[Files]
+"C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Release\split.scale-100.pri"			"resources.pri"
+"C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Release\PackageLayout\Assets\WideLogo.scale-100.png"			"Assets\WideLogo.scale-100.png"
+"C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Release\PackageLayout\Assets\StoreLogo.scale-100.png"			"Assets\StoreLogo.scale-100.png"
+"C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Release\PackageLayout\Assets\Square71x71Logo.scale-100.png"			"Assets\Square71x71Logo.scale-100.png"
+"C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Release\PackageLayout\Assets\SplashScreen.scale-100.png"			"Assets\SplashScreen.scale-100.png"
+"C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Release\PackageLayout\Assets\SmallLogo.scale-100.png"			"Assets\SmallLogo.scale-100.png"
+"C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Release\PackageLayout\Assets\Logo.scale-100.png"			"Assets\Logo.scale-100.png"

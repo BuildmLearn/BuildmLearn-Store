@@ -13,7 +13,7 @@ namespace AppStore.Models
         private string mInfoDescription;
         private string mInfoAuthor;
         private string mInfoAuthorEmail;
-        private List<string> mListTitleList=new List<string>();
+        private List<string> mInfoTitleList=new List<string>();
         private List<string> mInfoDescriptionList=new List<string>();
         public static InfoModel mModel;
         public static InfoModel getInstance()
@@ -70,13 +70,13 @@ namespace AppStore.Models
         {
             this.mInfoVersion = mInfoVersion;
         }
-        public List<string> getListTitleList()
+        public List<string> getInfoTitleList()
         {
-            return mListTitleList;
+            return mInfoTitleList;
         }
-        public void setListTitleList(List<string> mListTitleList)
+        public void setInfoTitleList(List<string> mInfoTitleList)
         {
-            this.mListTitleList = mListTitleList;
+            this.mInfoTitleList = mInfoTitleList;
         }
 
     }

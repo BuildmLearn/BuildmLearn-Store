@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="801c2a9a-7f98-47ab-a48a-510297690696" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AppDetailsPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/AppDetailsPage.xbf">
+				<Candidate type="Path">
+					<Value>AppDetailsPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AppStore.xr.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/AppStore.xr.xml">
+				<Candidate type="Path">
+					<Value>AppStore.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CategoriesPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/CategoriesPage.xbf">
+				<Candidate type="Path">
+					<Value>CategoriesPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CategoryPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/CategoryPage.xbf">
+				<Candidate type="Path">
+					<Value>CategoryPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/MainPage.xbf">
+				<Candidate type="Path">
+					<Value>MainPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MyAppsPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/MyAppsPage.xbf">
+				<Candidate type="Path">
+					<Value>MyAppsPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SearchPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/SearchPage.xbf">
+				<Candidate type="Path">
+					<Value>SearchPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Settings.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Settings.xbf">
+				<Candidate type="Path">
+					<Value>Settings.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="aka.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/aka.png">
+					<Candidate type="Path">
+						<Value>Assets\aka.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="background_header.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/background_header.png">
+					<Candidate type="Path">
+						<Value>Assets\background_header.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BuildmLearnStore.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/BuildmLearnStore.xml">
+					<Candidate type="Path">
+						<Value>Assets\BuildmLearnStore.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_biology.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_biology.png">
+					<Candidate type="Path">
+						<Value>Assets\card_biology.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_chemistry.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_chemistry.png">
+					<Candidate type="Path">
+						<Value>Assets\card_chemistry.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_english.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_english.png">
+					<Candidate type="Path">
+						<Value>Assets\card_english.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_geography.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_geography.png">
+					<Candidate type="Path">
+						<Value>Assets\card_geography.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_history.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_history.png">
+					<Candidate type="Path">
+						<Value>Assets\card_history.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_literature.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_literature.png">
+					<Candidate type="Path">
+						<Value>Assets\card_literature.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_mathematics.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_mathematics.png">
+					<Candidate type="Path">
+						<Value>Assets\card_mathematics.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_physics.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_physics.png">
+					<Candidate type="Path">
+						<Value>Assets\card_physics.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_science.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_science.png">
+					<Candidate type="Path">
+						<Value>Assets\card_science.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="card_socialstudies.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/card_socialstudies.png">
+					<Candidate type="Path">
+						<Value>Assets\card_socialstudies.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_action.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_action.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_action.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_action_device_access_volume_on.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_action_device_access_volume_on.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_action_device_access_volume_on.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_addwish.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_addwish.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_addwish.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_back.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_back.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_back.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_categories.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_categories.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_categories.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_categories_g.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_categories_g.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_categories_g.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_close.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_close.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_close.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_downloads.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_downloads.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_downloads.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_feedback.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_feedback.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_feedback.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_feedback_g.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_feedback_g.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_feedback_g.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_home.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_home.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_home.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_home_g.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_home_g.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_home_g.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_logout.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_logout.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_logout.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_logout_g.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_logout_g.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_logout_g.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_mail.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_mail.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_mail.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_more.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_more.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_more.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_myapps.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_myapps.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_myapps.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_myapps_g.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_myapps_g.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_myapps_g.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_search.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_search.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_search.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_search_g.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_search_g.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_search_g.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_search_w.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_search_w.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_search_w.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_settings.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_settings.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_settings.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_settings_g.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_settings_g.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_settings_g.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ic_share.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/ic_share.png">
+					<Candidate type="Path">
+						<Value>Assets\ic_share.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo1.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/logo1.png">
+					<Candidate type="Path">
+						<Value>Assets\logo1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_a.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/logo_a.png">
+					<Candidate type="Path">
+						<Value>Assets\logo_a.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_a1.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/logo_a1.png">
+					<Candidate type="Path">
+						<Value>Assets\logo_a1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_b.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/logo_b.png">
+					<Candidate type="Path">
+						<Value>Assets\logo_b.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_c.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/logo_c.png">
+					<Candidate type="Path">
+						<Value>Assets\logo_c.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_h.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/logo_h.png">
+					<Candidate type="Path">
+						<Value>Assets\logo_h.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_l.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/logo_l.png">
+					<Candidate type="Path">
+						<Value>Assets\logo_l.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_m.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/logo_m.png">
+					<Candidate type="Path">
+						<Value>Assets\logo_m.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_p.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/logo_p.png">
+					<Candidate type="Path">
+						<Value>Assets\logo_p.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="notavailable.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/notavailable.png">
+					<Candidate type="Path">
+						<Value>Assets\notavailable.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="spinner_triangle.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/spinner_triangle.png">
+					<Candidate type="Path">
+						<Value>Assets\spinner_triangle.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="splash.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/splash.png">
+					<Candidate type="Path">
+						<Value>Assets\splash.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WideLogo.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/WideLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\WideLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Apps">
+					<NamedResource name="Animal.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Animal.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Animal.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Biology Info.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Biology%20Info.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Biology Info.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Biology Quiz.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Biology%20Quiz.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Biology Quiz.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Biology.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Biology.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Biology.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Chemistry Quiz.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Chemistry%20Quiz.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Chemistry Quiz.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Chemistry Spellings.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Chemistry%20Spellings.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Chemistry Spellings.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="English Words.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/English%20Words.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\English Words.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Festivals.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Festivals.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Festivals.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="History Info..xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/History%20Info..xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\History Info..xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Maths Info.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Maths%20Info.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Maths Info.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Maths Puzzle.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Maths%20Puzzle.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Maths Puzzle.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Physics Flashcards.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Physics%20Flashcards.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Physics Flashcards.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Physics Info.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Physics%20Info.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Physics Info.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Spell.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Spell.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Spell.xml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Vocabulary.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Apps/Vocabulary.xml">
+						<Candidate type="Path">
+							<Value>Assets\Apps\Vocabulary.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Icons">
+					<NamedResource name="Animal.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Animal.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Animal.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Biology Info.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Biology%20Info.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Biology Info.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Biology Quiz.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Biology%20Quiz.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Biology Quiz.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Biology.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Biology.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Biology.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Chemistry Quiz.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Chemistry%20Quiz.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Chemistry Quiz.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Chemistry Spellings.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Chemistry%20Spellings.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Chemistry Spellings.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="English Words.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/English%20Words.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\English Words.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Festivals.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Festivals.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Festivals.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="History Info.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/History%20Info.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\History Info.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Maths Info.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Maths%20Info.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Maths Info.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Maths Puzzle.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Maths%20Puzzle.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Maths Puzzle.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Physics Flashcards.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Physics%20Flashcards.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Physics Flashcards.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Physics Info.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Physics%20Info.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Physics Info.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Spell.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Spell.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Spell.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Vocabulary.png" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Assets/Icons/Vocabulary.png">
+						<Candidate type="Path">
+							<Value>Assets\Icons\Vocabulary.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Templates">
+				<NamedResource name="FlashCardPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Templates/FlashCardPage.xbf">
+					<Candidate type="Path">
+						<Value>Templates\FlashCardPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InfoDetailPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Templates/InfoDetailPage.xbf">
+					<Candidate type="Path">
+						<Value>Templates\InfoDetailPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InfoPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Templates/InfoPage.xbf">
+					<Candidate type="Path">
+						<Value>Templates\InfoPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="QuizPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Templates/QuizPage.xbf">
+					<Candidate type="Path">
+						<Value>Templates\QuizPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ScorePage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Templates/ScorePage.xbf">
+					<Candidate type="Path">
+						<Value>Templates\ScorePage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SpellingsPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Templates/SpellingsPage.xbf">
+					<Candidate type="Path">
+						<Value>Templates\SpellingsPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StartPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Templates/StartPage.xbf">
+					<Candidate type="Path">
+						<Value>Templates\StartPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WordInfoPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Templates/WordInfoPage.xbf">
+					<Candidate type="Path">
+						<Value>Templates\WordInfoPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
