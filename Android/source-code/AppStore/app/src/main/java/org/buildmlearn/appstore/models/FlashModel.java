@@ -12,7 +12,7 @@ public class FlashModel {
 	private String mAuthor;
 	private ArrayList<Card> mList;
 
-	public static FlashModel mFlashModel;
+	private static FlashModel mFlashModel;
 
 	public static FlashModel getInstance() {
 		if (mFlashModel == null)

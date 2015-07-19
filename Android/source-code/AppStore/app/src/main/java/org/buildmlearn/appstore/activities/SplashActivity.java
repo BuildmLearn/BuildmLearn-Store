@@ -15,7 +15,7 @@ import android.preference.PreferenceManager;
 import android.view.View;
 
 import com.crashlytics.android.Crashlytics;
-import io.fabric.sdk.android.Fabric;
+
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.Apps;
 import org.buildmlearn.appstore.utils.XMLParser;
@@ -26,10 +26,11 @@ import org.w3c.dom.NodeList;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.fabric.sdk.android.Fabric;
 import me.drakeet.materialdialog.MaterialDialog;
 
 public class SplashActivity extends Activity {
-    private String XML="<applications>\n" +
+    private final String XML="<applications>\n" +
             "<app>\n" +
             "\t<title>Festivals</title>\n" +
             "\t<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi.</description>\n" +
@@ -255,8 +256,8 @@ public class SplashActivity extends Activity {
             "\t<bundleURL>placeholder</bundleURL>\n" +
             "</app>\n" +
             "</applications>";
-    public static List<Apps> appList=new ArrayList<Apps>();
-    static final String KEY_ITEM = "app"; // parent node
+    public static final List<Apps> appList= new ArrayList<>();
+    private static final String KEY_ITEM = "app"; // parent node
     private static final String TITLE = "title";
     private static final String DESCRIPTION = "description";
     private static final String URL1 = "url";
@@ -269,6 +270,10 @@ public class SplashActivity extends Activity {
     private MaterialDialog mAlertDialog;
     private Context mContext;
 
+    /**
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -301,7 +306,6 @@ public class SplashActivity extends Activity {
                 public void run() {
                     try {
                         XMLParser parser = new XMLParser();
-                        //TODO
                         // String xml = parser.getXmlFromUrl(URL); // getting XML
                         Document doc = parser.getDomElement(XML); // getting DOM element
                         NodeList nodeList = doc.getElementsByTagName(KEY_ITEM);
@@ -330,16 +334,16 @@ public class SplashActivity extends Activity {
                         SharedPreferences.Editor editor1 = SP.edit();
                         if(x>appList.size()){
                             editor1.putString("number_featured_apps", appList.size() + "");
-                            editor1.commit();}
+                            editor1.apply();}
                         if(x<6){
                             editor1.putString("number_featured_apps", "6");
-                            editor1.commit();}
+                            editor1.apply();}
                         if(y>10){
                             editor1.putString("number_featured_categories","10");
-                            editor1.commit();}
+                            editor1.apply();}
                         if(y<3){
                             editor1.putString("number_featured_categories","3");
-                            editor1.commit();}
+                            editor1.apply();}
 
                         Intent i = new Intent(getBaseContext(), HomeActivity.class);
                         startActivity(i);
@@ -360,7 +364,6 @@ public class SplashActivity extends Activity {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return true;
-        //return (activeNetworkInfo != null && activeNetworkInfo.isConnected());
+        return (activeNetworkInfo != null && activeNetworkInfo.isConnected());
     }
 }

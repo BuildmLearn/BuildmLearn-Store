@@ -11,7 +11,7 @@ public class QuizModel {
     private ArrayList<Question> mQueAnsList;
     private int totalCorrect=0,totalWrong=0;
 
-    public static QuizModel mQuizModel;
+    private static QuizModel mQuizModel;
     public static void clearInstance()
     {
         if(mQuizModel!=null) {

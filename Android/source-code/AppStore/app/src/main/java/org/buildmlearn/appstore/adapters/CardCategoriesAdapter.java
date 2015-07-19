@@ -25,8 +25,8 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
 
     public static class CardViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
         //CardView cvApps;
-        TextView appTitle;
-        ImageView appImage;
+        final TextView appTitle;
+        final ImageView appImage;
 
         CardViewHolder(View itemView) {
             super(itemView);
@@ -44,7 +44,7 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
              * @param position    of the clicked item
              * @param isLongClick true if long click, false otherwise
              */
-            public void onClick(View v, int position, boolean isLongClick);
+            void onClick(View v, int position, boolean isLongClick);
 
         }
 
@@ -55,13 +55,14 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
             this.clickListener = clickListener;
         }
 
+        @SuppressWarnings("deprecation")
         @Override
         public void onClick(View v) {
-
             // If not long clicked, pass last variable as false.
             clickListener.onClick(v, getPosition(), false);
         }
 
+        @SuppressWarnings("deprecation")
         @Override
         public boolean onLongClick(View v) {
 
@@ -72,11 +73,11 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
     }
 
 
-    ArrayList<Integer> rndList = new ArrayList<>();
+    private final ArrayList<Integer> rndList = new ArrayList<>();
     private static Context mContext;
 
     public CardCategoriesAdapter(Context context, int x) {
-        this.mContext = context;
+        mContext = context;
         Random rnd = new Random();
         while (rndList.size() != x) {
             int c = rnd.nextInt(10);
@@ -92,8 +93,7 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
     @Override
     public CardViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.categories_card_store, viewGroup, false);
-        CardViewHolder pvh = new CardViewHolder(v);
-        return pvh;
+        return new CardViewHolder(v);
     }
 
     @Override
@@ -118,8 +118,4 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
         });
     }
 
-    @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
-    }
 }

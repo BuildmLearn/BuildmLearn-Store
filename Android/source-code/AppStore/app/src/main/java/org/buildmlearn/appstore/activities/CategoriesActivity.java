@@ -4,8 +4,11 @@ package org.buildmlearn.appstore.activities;
  * Created by Srujan Jha on 26-05-2015.
  */
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.GravityCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -17,8 +20,6 @@ import org.buildmlearn.appstore.models.CategoriesCard;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import me.drakeet.materialdialog.MaterialDialog;
 
 public class CategoriesActivity extends NavigationActivity {
 
@@ -77,22 +78,15 @@ public class CategoriesActivity extends NavigationActivity {
             mRecyclerView.setVisibility(View.VISIBLE);
         }
     }
-    private MaterialDialog mAlertDialog;
     @Override
-    public void onBackPressed(){
+    public void onBackPressed() {
         closeSearch();
-        mAlertDialog=new MaterialDialog(this)
-                .setTitle("Exit")
-                .setMessage("Do you want to close BuildmLearn Store ?")
-                .setPositiveButton("NO", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {mAlertDialog.dismiss();}
-                })
-                .setNegativeButton("YES", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {mAlertDialog.dismiss();System.exit(0);finish();}
-                });
-        mAlertDialog.show();
-
+        if(isDrawerOpened)
+        {mDrawer.closeDrawers();mDrawer.closeDrawer(GravityCompat.START);return;}
+        Intent i = new Intent(mContext, HomeActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        mContext.startActivity(i);
+        Activity activity = (Activity) mContext;
+        activity.finish();
     }
 }

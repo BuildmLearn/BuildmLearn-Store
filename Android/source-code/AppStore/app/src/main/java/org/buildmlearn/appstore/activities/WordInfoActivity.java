@@ -23,16 +23,11 @@ import java.util.Locale;
 
 public class WordInfoActivity extends AppCompatActivity {
 
-	private Intent spellingIntent;
 	private boolean isCorrect;
 	private int position;
-	private TextView mTv_Result, mTv_enteredWord, mTv_word, mTv_description,
-			mTv_Word_num;
 	private SpellingsModel mManager;
 	private ArrayList<WordModel> mList;
-	private Button mBtn_Next;
 	private TextToSpeech textToSpeech;
-	private String enteredText;
 	private int activeWordCount;
 
 	@SuppressLint("DefaultLocale")
@@ -52,17 +47,17 @@ public class WordInfoActivity extends AppCompatActivity {
 		mManager = SpellingsModel.getInstance();
 		mList = mManager.getSpellingsList();
 		mToolbar.setTitle(mManager.getPuzzleName());
-		spellingIntent = getIntent();
+		Intent spellingIntent = getIntent();
 		isCorrect = spellingIntent.getBooleanExtra("result", false);
 		position = spellingIntent.getIntExtra("index", 0);
-		enteredText = spellingIntent.getStringExtra("word");
-		mTv_Result = (TextView) findViewById(R.id.tv_result);
-		mTv_Word_num = (TextView) findViewById(R.id.tv_word_num);
-		mTv_word = (TextView) findViewById(R.id.tv_word);
-		mTv_enteredWord = (TextView) findViewById(R.id.tv_input_word);
+		String enteredText = spellingIntent.getStringExtra("word");
+		TextView mTv_Result = (TextView) findViewById(R.id.tv_result);
+		TextView mTv_Word_num = (TextView) findViewById(R.id.tv_word_num);
+		TextView mTv_word = (TextView) findViewById(R.id.tv_word);
+		TextView mTv_enteredWord = (TextView) findViewById(R.id.tv_input_word);
 
-		mTv_description = (TextView) findViewById(R.id.tv_description);
-		mBtn_Next = (Button) findViewById(R.id.btn_next);
+		TextView mTv_description = (TextView) findViewById(R.id.tv_description);
+		Button mBtn_Next = (Button) findViewById(R.id.btn_next);
 		activeWordCount=mManager.getActiveCount();
 		
 		if (position == mList.size() - 1) {
@@ -127,6 +122,7 @@ public class WordInfoActivity extends AppCompatActivity {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	private void convertTextToSpeech(String text) {
 
 		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);

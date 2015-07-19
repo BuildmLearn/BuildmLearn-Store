@@ -8,14 +8,13 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rvAppCategories"
-        />
+        android:id="@+id/rvAppCategories"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:layout_gravity="center"
         android:id="@+id/txtCategoriesView"
-        android:text="There are no apps to be shown in this particular Category!"
+        android:text="@string/search_categories_error"
         android:visibility="visible"/>
 </RelativeLayout>

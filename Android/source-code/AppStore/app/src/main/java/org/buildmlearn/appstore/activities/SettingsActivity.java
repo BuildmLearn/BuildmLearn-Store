@@ -43,7 +43,6 @@ public class SettingsActivity extends PreferenceActivity{
      * shown on tablets.
      */
     private static final boolean ALWAYS_SIMPLE_PREFS = false;
-    private static Toolbar mToolbar;
     private int numberOfInstalledApps=6;
     private static Context mContext;
 
@@ -52,7 +51,7 @@ public class SettingsActivity extends PreferenceActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         mContext=this;
-        mToolbar = (Toolbar) findViewById(R.id.tool_bar_settings);
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_settings);
         mToolbar.setNavigationIcon(R.drawable.ic_back);
         mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         mToolbar.setSubtitleTextColor(getResources().getColor(android.R.color.white));
@@ -75,6 +74,7 @@ public class SettingsActivity extends PreferenceActivity{
      * device configuration dictates that a simplified, single-pane UI should be
      * shown.
      */
+    @SuppressWarnings("deprecation")
     private void setupSimplePreferencesScreen() {
         if (!isSimplePreferences(this)) {
             return;
@@ -141,8 +141,7 @@ public class SettingsActivity extends PreferenceActivity{
      * "simplified" settings UI should be shown.
      */
     private static boolean isSimplePreferences(Context context) {
-        return ALWAYS_SIMPLE_PREFS
-                || Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB
+        return ALWAYS_SIMPLE_PREFS|| Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB
                 || !isXLargeTablet(context);
     }
 
@@ -161,12 +160,12 @@ public class SettingsActivity extends PreferenceActivity{
      * A preference value change listener that updates the preference's summary
      * to reflect its new value.
      */
-    private static Preference.OnPreferenceChangeListener sBindPreferenceSummaryToValueListener = new Preference.OnPreferenceChangeListener() {
+    private static final Preference.OnPreferenceChangeListener sBindPreferenceSummaryToValueListener = new Preference.OnPreferenceChangeListener() {
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
             if(preference.getKey().equals("number_featured_apps")){
-                int x=6;EditTextPreference txtCategories=(EditTextPreference)preference;
+                int x;EditTextPreference txtCategories=(EditTextPreference)preference;
                 try{x=Integer.parseInt(stringValue);
                     if(x<3)x=3;
                     else if(x>SplashActivity.appList.size())x=SplashActivity.appList.size();
@@ -223,13 +222,14 @@ public class SettingsActivity extends PreferenceActivity{
             addPreferencesFromResource(R.xml.pref_about);
         }
     }
+    @SuppressWarnings("deprecation")
     @Override
     public void onBackPressed()
     {
         EditTextPreference numberOfFeaturedApps = (EditTextPreference)findPreference("number_featured_apps");
         final EditText editText=numberOfFeaturedApps.getEditText();
         String stringValue = editText.getText().toString();
-        int x=6;
+        int x;
         try{x=Integer.parseInt(stringValue);
             if(x<3)x=3;
             else if(x>SplashActivity.appList.size())x=SplashActivity.appList.size();
@@ -237,7 +237,7 @@ public class SettingsActivity extends PreferenceActivity{
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
         SharedPreferences.Editor editor1 = SP.edit();
         editor1.putString("number_featured_apps", x+"");
-        editor1.commit();
+        editor1.apply();
         Intent i = new Intent(mContext, HomeActivity.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         mContext.startActivity(i);

@@ -24,6 +24,7 @@ public class InfoActivity extends AppCompatActivity {
 	private static ArrayList<String> stringList;
 
 	/** Called when the activity is first created. */
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,7 +42,7 @@ public class InfoActivity extends AppCompatActivity {
 		ListView listView = (ListView) findViewById(R.id.list);
 		stringList = InfoModel.getInstance().getListTitleList();
 		mToolbar.setTitle(InfoModel.getInstance().getInfoName());
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+		ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
 				android.R.layout.simple_list_item_1, stringList);
 
 		listView.setAdapter(adapter);

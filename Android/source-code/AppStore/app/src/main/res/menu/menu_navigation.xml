@@ -4,26 +4,26 @@
         <item
             android:id="@+id/navigation_item_1"
             android:checked="true"
-            android:icon="@drawable/ic_home"
-            android:title="HOME"/>
+            android:icon="@drawable/ic_home_g"
+            android:title="@string/home"/>
         <item
             android:id="@+id/navigation_item_2"
-            android:icon="@drawable/ic_categories"
-            android:title="Categories"/>
+            android:icon="@drawable/ic_categories_g"
+            android:title="@string/categories"/>
         <item
             android:id="@+id/navigation_item_3"
-            android:icon="@drawable/ic_settings"
-            android:title="Settings"/>
+            android:icon="@drawable/ic_settings_g"
+            android:title="@string/settings"/>
         </group>
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/navigation_item_4"
-            android:title="Give Feedback"/>
+            android:title="@string/feedback"/>
         <item
             android:id="@+id/navigation_item_5"
-            android:title="Rate my App"/>
+            android:title="@string/rate_my_app"/>
         <item
             android:id="@+id/navigation_item_6"
-            android:title="About"/>
+            android:title="@string/about"/>
     </group>
 </menu>

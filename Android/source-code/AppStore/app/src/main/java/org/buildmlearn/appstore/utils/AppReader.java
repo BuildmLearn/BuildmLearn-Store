@@ -34,7 +34,7 @@ public class AppReader {
     public static ArrayList<AppInfo>AppList;
 
     public static ArrayList<AppInfo> listApps(Context context) {
-        ArrayList<AppInfo> mFileList = new ArrayList<AppInfo>();
+        ArrayList<AppInfo> mFileList = new ArrayList<>();
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(context);
         Resources res = context.getResources();
         AssetManager am = res.getAssets();
@@ -42,29 +42,30 @@ public class AppReader {
         try {
             appList = am.list("Apps");
             iconList = am.list("Icons");
-            if (appList != null) {
-                for (int i = 0; i < appList.length; i++) {
-                    AppInfo app=new AppInfo();
-                    app.Name=(appList[i].substring(0,appList[i].indexOf(".buildmlearn")));
-                    if(!SP.contains(app.Name)){SharedPreferences.Editor editor1 = SP.edit();
-                    editor1.putBoolean(app.Name,false);
-                        editor1.commit();continue;}
-                    if(!SP.getBoolean(app.Name,false))continue;
-
-                    app.AppIcon=BitmapFactory.decodeStream(am.open("Icons/" + iconList[i]));
-                    BufferedReader br = new BufferedReader(new InputStreamReader(context.getAssets().open("Apps/"+appList[i])));
-                    String type=br.readLine();
-                    if(type.contains("InfoTemplate"))app.Type=0;
-                    else if(type.contains("QuizTemplate"))app.Type=2;
-                    else if(type.contains("FlashCardsTemplate"))app.Type=1;
-                    else if(type.contains("SpellingTemplate"))app.Type=3;
-                    br.readLine();
-                    type=br.readLine();
-                    int x=type.indexOf("<name>")+6;
-                    int y=type.indexOf("<",x+1);
-                    app.Author=type.substring(x,y);
-                    mFileList.add(app);
+            for (int i = 0; i < appList.length; i++) {
+                AppInfo app = new AppInfo();
+                app.Name = (appList[i].substring(0, appList[i].indexOf(".buildmlearn")));
+                if (!SP.contains(app.Name)) {
+                    SharedPreferences.Editor editor1 = SP.edit();
+                    editor1.putBoolean(app.Name, false);
+                    editor1.apply();
+                    continue;
                 }
+                if (!SP.getBoolean(app.Name, false)) continue;
+
+                app.AppIcon = BitmapFactory.decodeStream(am.open("Icons/" + iconList[i]));
+                BufferedReader br = new BufferedReader(new InputStreamReader(context.getAssets().open("Apps/" + appList[i])));
+                String type = br.readLine();
+                if (type.contains("InfoTemplate")) app.Type = 0;
+                else if (type.contains("QuizTemplate")) app.Type = 2;
+                else if (type.contains("FlashCardsTemplate")) app.Type = 1;
+                else if (type.contains("SpellingTemplate")) app.Type = 3;
+                br.readLine();
+                type = br.readLine();
+                int x = type.indexOf("<name>") + 6;
+                int y = type.indexOf("<", x + 1);
+                app.Author = type.substring(x, y);
+                mFileList.add(app);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -75,12 +76,12 @@ public class AppReader {
 
     public static void readInfoFile(Context myContext, String fileName) {
         InfoModel model = InfoModel.getInstance();
-        ArrayList<String> stringList = new ArrayList<String>();
+        ArrayList<String> stringList = new ArrayList<>();
         try {
-            HashMap<String, String> mInfoMap = new HashMap<String, String>();
+            HashMap<String, String> mInfoMap = new HashMap<>();
             XMLParser parser = new XMLParser();
             br = new BufferedReader(new InputStreamReader(myContext.getAssets().open(fileName))); // throwing a FileNotFoundException
-            String xml = "", temp = "";
+            String xml = "", temp;
             while ((temp = br.readLine()) != null) {xml+=temp;} //getting xml
             Document doc = parser.getDomElement(xml); // getting DOM element
             Element elementAuthor= (Element) doc.getElementsByTagName("author").item(0);
@@ -110,13 +111,13 @@ public class AppReader {
 
     public static void readQuizFile(Context myContext, String fileName) {
         QuizModel model = QuizModel.getInstance();
-        ArrayList<Question> mQuestionList = new ArrayList<Question>();
+        ArrayList<Question> mQuestionList = new ArrayList<>();
 
         try {
             XMLParser parser = new XMLParser();
 
             br = new BufferedReader(new InputStreamReader(myContext.getAssets().open(fileName))); // throwing a FileNotFoundException
-            String xml = "", temp = "";
+            String xml = "", temp;
             while ((temp = br.readLine()) != null) {
                 xml += temp;
             } //getting xml
@@ -131,7 +132,7 @@ public class AppReader {
             for (int i = 0; i < nodeList.getLength(); i++) {
 
                 Element elementInfo = (Element) nodeList.item(i);
-                ArrayList<String> mOptionList = new ArrayList<String>();
+                ArrayList<String> mOptionList = new ArrayList<>();
                 Question ques = new Question();
                 ques.setQuestion(parser.getValue(elementInfo, "question"));
 
@@ -157,11 +158,11 @@ public class AppReader {
     public static void readSpellingsContent(Context myContext, String fileName) {
 
         SpellingsModel model = SpellingsModel.getInstance();
-        ArrayList<WordModel> wordList = new ArrayList<WordModel>();
+        ArrayList<WordModel> wordList = new ArrayList<>();
         try {
             XMLParser parser = new XMLParser();
             br = new BufferedReader(new InputStreamReader(myContext.getAssets().open(fileName))); // throwing a FileNotFoundException
-            String xml = "", temp = "";
+            String xml = "", temp;
             while ((temp = br.readLine()) != null) {
                 xml += temp;
             } //getting xml
@@ -194,11 +195,11 @@ public class AppReader {
     public static void readFlashContent(Context myContext, String fileName) {
 
         FlashModel model = FlashModel.getInstance();
-        ArrayList<Card> cardList = new ArrayList<Card>();
+        ArrayList<Card> cardList = new ArrayList<>();
         try {
             XMLParser parser = new XMLParser();
             br = new BufferedReader(new InputStreamReader(myContext.getAssets().open(fileName))); // throwing a FileNotFoundException
-            String xml = "", temp = "";
+            String xml = "", temp;
             while ((temp = br.readLine()) != null) {
                 xml += temp;
             } //getting xml

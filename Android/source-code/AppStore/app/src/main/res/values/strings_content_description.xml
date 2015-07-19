@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cd_splash">Splash-Screen</string>
+    <string name="cd_imgcard">Logo on card</string>
+    <string name="cd_imgcardcategories">Image on Categories</string>
+    <string name="cd_more">More button</string>
+    <string name="cd_imgLogo">App logo</string>
+    <string name="cd_imgQuestion">Image in Question</string>
+    <string name="cd_reviews_reload">Reload Reviews</string>
+</resources>

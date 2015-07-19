@@ -20,7 +20,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/primary_dark"
                     android:layout_weight="0.2"
-                    android:text="Featured Categories"
+                    android:text="@string/featured_categories"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
                 <TextView
                     android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                     android:id="@+id/txtMoreCategories"
                     android:gravity="end"
                     android:clickable="true"
-                    android:text="more"
+                    android:text="@string/more"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
             </LinearLayout>
         <android.support.v7.widget.RecyclerView
@@ -48,7 +48,7 @@
                 android:textColor="@color/primary_dark"
                 android:id="@+id/txtAppsStore"
                 android:layout_weight="0.2"
-                android:text="Featured Apps"
+                android:text="@string/featured_apps"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
             <TextView
                 android:layout_width="match_parent"
@@ -56,7 +56,7 @@
                 android:textColor="@color/accent"
                 android:layout_weight="0.8"
                 android:gravity="end"
-                android:text="more"
+                android:text="@string/more"
                 android:clickable="true"
                 android:id="@+id/txtMoreApps"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
@@ -72,6 +72,6 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:id="@+id/txtStore"
-        android:text="No app matches your search!"
+        android:text="@string/search_app_error"
         android:visibility="gone"/>
 </FrameLayout>

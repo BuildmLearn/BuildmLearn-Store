@@ -2,8 +2,6 @@ package org.buildmlearn.appstore.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Parcelable;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,13 +22,11 @@ import java.util.List;
 public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>{
 
         public static class CategoriesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
-            CardView mCardView;
-            TextView mName;
-            ImageView mBackground;
+            final TextView mName;
+            final ImageView mBackground;
 
             CategoriesViewHolder(View itemView) {
                 super(itemView);
-                mCardView = (CardView)itemView.findViewById(R.id.categoriesCardView);
                 mName = (TextView)itemView.findViewById(R.id.txtCardCategories);
                 mBackground = (ImageView)itemView.findViewById(R.id.imgCardCategories);
                 itemView.setOnClickListener(this);
@@ -46,7 +42,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
                  * @param position of the clicked item
                  * @param isLongClick true if long click, false otherwise
                  */
-                public void onClick(View v, int position, boolean isLongClick);
+                 void onClick(View v, int position, boolean isLongClick);
 
             }
             private ClickListener clickListener;
@@ -54,6 +50,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
             public void setClickListener(ClickListener clickListener) {
                 this.clickListener = clickListener;
             }
+            @SuppressWarnings("deprecation")
             @Override
             public void onClick(View v) {
 
@@ -61,6 +58,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
                 clickListener.onClick(v, getPosition(), false);
             }
 
+            @SuppressWarnings("deprecation")
             @Override
             public boolean onLongClick(View v) {
                 // If long clicked, passed last variable as true.
@@ -68,11 +66,11 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
                 return true;
             }
         }
-    List<CategoriesCard> mCategories;
+    private final List<CategoriesCard> mCategories;
     private static Context mContext;
     public CategoriesAdapter(List<CategoriesCard> mCategories,Context context){
         this.mCategories = mCategories;
-        this.mContext=context;
+        mContext=context;
     }
     @Override
     public CategoriesViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
@@ -97,10 +95,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
             }
         });
     }
-    @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
-    }
+
     @Override
     public int getItemCount() {
         return mCategories.size();

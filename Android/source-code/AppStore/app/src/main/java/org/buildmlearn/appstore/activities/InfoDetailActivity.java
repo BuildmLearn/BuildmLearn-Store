@@ -16,11 +16,6 @@ import org.buildmlearn.appstore.models.InfoModel;
 import java.util.HashMap;
 
 public class InfoDetailActivity extends AppCompatActivity {
-	private TextView mTv_title;
-	private TextView mTv_details;
-
-	private String title;
-	private HashMap<String, String> mMap;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -35,11 +30,11 @@ public class InfoDetailActivity extends AppCompatActivity {
 			}
 		});
 		mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
-		title = getIntent().getStringExtra("detail_title");
-		mMap = InfoModel.getInstance().getInfoMap();
+		String title = getIntent().getStringExtra("detail_title");
+		HashMap<String, String> mMap = InfoModel.getInstance().getInfoMap();
 		mToolbar.setTitle(InfoModel.getInstance().getInfoName());
-		mTv_title = (TextView) findViewById(R.id.titleText);
-		mTv_details = (TextView) findViewById(R.id.detailText);
+		TextView mTv_title = (TextView) findViewById(R.id.titleText);
+		TextView mTv_details = (TextView) findViewById(R.id.detailText);
 		mTv_title.setText(title);
 		mTv_details.setText(mMap.get(title));
 

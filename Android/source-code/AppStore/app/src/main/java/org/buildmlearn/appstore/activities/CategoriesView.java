@@ -22,7 +22,7 @@ import java.util.List;
 public class CategoriesView extends NavigationActivity {
 
     private static String mCategory="";
-    private static List<Apps> appList=new ArrayList<>();
+    private static final List<Apps> appList=new ArrayList<>();
     private static RecyclerView mRecyclerView;
     private static Context mContext;
     private static TextView txtCategories;
@@ -98,5 +98,4 @@ public class CategoriesView extends NavigationActivity {
         if(onBack){navigationView.getMenu().findItem(R.id.navigation_item_1).setChecked(true);NavigationActivity.mActive=R.id.navigation_item_1;}
         super.onBackPressed();
     }
-
 }

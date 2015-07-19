@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:textColor="#ffffff"
-            android:text="BuildmLearn AppStore"
+            android:text="@string/app_name"
             android:textSize="14sp"
             android:textStyle="bold"/>
         <TextView
@@ -28,7 +28,7 @@
             android:textColor="#ffffff"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="5dp"
-            android:text="Promoting mLearning"
+            android:text="@string/moto"
             android:textSize="14sp"
             android:textStyle="normal"/>
     </LinearLayout>
@@ -36,6 +36,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/cd_imgLogo"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="38dp"
         android:id="@+id/header_circleView"/>

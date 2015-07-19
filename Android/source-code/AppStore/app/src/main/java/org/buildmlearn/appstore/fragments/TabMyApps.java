@@ -12,7 +12,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.activities.HomeActivity;
@@ -28,18 +27,12 @@ public class TabMyApps extends Fragment {
     private static ArrayList<AppInfo> appList;
     private static RecyclerView mRecyclerView;
     private static Context mContext;
-    private static TextView txtMyApps;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_tab_my_apps, container, false);
         mContext = v.getContext();
-        txtMyApps = (TextView) v.findViewById(R.id.txtMyApps);
-        appList = AppReader.AppList;//listApps(v.getContext());
-        if (appList.size() > 0){ txtMyApps.setVisibility(View.GONE);}
-        else {
-            txtMyApps.setVisibility(View.VISIBLE);
-        }
+        appList = AppReader.AppList;
         mRecyclerView = (RecyclerView) v.findViewById(R.id.rvMyAppCard);
         mRecyclerView.setHasFixedSize(true);
         GridLayoutManager llm = new GridLayoutManager(v.getContext(), 3);
@@ -62,21 +55,17 @@ public class TabMyApps extends Fragment {
         if (tempList.size() != 0) {
             MyAppsViewAdapter adapter = new MyAppsViewAdapter(tempList, mContext);
             mRecyclerView.setAdapter(adapter);
-            txtMyApps.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.VISIBLE);
         } else {
-            txtMyApps.setText("Sorry, No app matches your search!");
             mRecyclerView.setVisibility(View.GONE);
-            txtMyApps.setVisibility(View.VISIBLE);
         }
     }
     public static void closeSearch()    {
         MyAppsViewAdapter adapter = new MyAppsViewAdapter(appList, mContext);
         mRecyclerView.setAdapter(adapter);
-        if (appList.size() > 0) {txtMyApps.setVisibility(View.GONE);
+        if (appList.size() > 0) {
             mRecyclerView.setVisibility(View.VISIBLE);}
-        else {txtMyApps.setVisibility(View.VISIBLE);
-            txtMyApps.setText("There are no downloaded apps.\nSwipe Left to navigate to the Store and download interesting apps!");
+        else {
             mRecyclerView.setVisibility(View.GONE);}
     }
     public static void refreshList()

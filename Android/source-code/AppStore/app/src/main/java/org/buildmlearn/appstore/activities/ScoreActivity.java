@@ -20,7 +20,6 @@ import org.buildmlearn.appstore.models.SpellingsModel;
 public class ScoreActivity extends AppCompatActivity {
 	private QuizModel mQuizModel;
     private SpellingsModel mSpellingsModel;
-	private TextView mTv_correct, mTv_wrong, mTv_unanswered;
     private int activity=0;// 0: Quiz Template and 1: Spellings Template
 	/** Called when the activity is first created. */
 	@Override
@@ -43,9 +42,9 @@ public class ScoreActivity extends AppCompatActivity {
         else
         {mQuizModel = QuizModel.getInstance();mToolbar.setTitle(mQuizModel.getQuizName());}
 
-		mTv_correct = (TextView) findViewById(R.id.tv_correct);
-		mTv_wrong = (TextView) findViewById(R.id.tv_wrong);
-		mTv_unanswered = (TextView) findViewById(R.id.tv_unanswered);
+        TextView mTv_correct = (TextView) findViewById(R.id.tv_correct);
+        TextView mTv_wrong = (TextView) findViewById(R.id.tv_wrong);
+        TextView mTv_unanswered = (TextView) findViewById(R.id.tv_unanswered);
         if(activity==1)
         {
             mTv_correct.setText("Total Correct: " + mSpellingsModel.getTotalCorrect());
@@ -59,8 +58,8 @@ public class ScoreActivity extends AppCompatActivity {
             int unanswered = mQuizModel.getQueAnsList().size() - mQuizModel.getTotalCorrect() - mQuizModel.getTotalWrong();
             mTv_unanswered.setText("Unanswered: " + unanswered);
         }
-		mQuizModel.clearInstance();
-        mSpellingsModel.clearInstance();
+		QuizModel.clearInstance();
+        SpellingsModel.clearInstance();
 		Button startAgainButton = (Button) findViewById(R.id.start_again_button);
 		startAgainButton.setOnClickListener(new OnClickListener() {
 

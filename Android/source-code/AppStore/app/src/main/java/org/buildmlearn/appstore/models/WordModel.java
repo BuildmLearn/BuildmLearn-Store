@@ -17,14 +17,9 @@ public class WordModel {
 	public String getWord() {
 		return mWord;
 	}
-	public void setWord(String mWord) {
-		this.mWord = mWord;
-	}
+
 	public String getDescription() {
 		return mDescription;
 	}
-	public void setDescription(String mDescription) {
-		this.mDescription = mDescription;
-	}
-	
+
 }

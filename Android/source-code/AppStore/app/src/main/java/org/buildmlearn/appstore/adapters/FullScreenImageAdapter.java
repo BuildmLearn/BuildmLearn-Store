@@ -7,7 +7,6 @@ package org.buildmlearn.appstore.adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,10 +20,9 @@ import org.buildmlearn.appstore.R;
 
 public class FullScreenImageAdapter extends PagerAdapter {
 
-    private Activity _activity;
-    private String[] _imagePaths;
-    private LayoutInflater inflater;
-    private ImageLoader _imageLoader;
+    private final Activity _activity;
+    private final String[] _imagePaths;
+    private final ImageLoader _imageLoader;
 
     // constructor
     public FullScreenImageAdapter(Activity activity,String[] imagePaths,ImageLoader imageLoader) {
@@ -40,7 +38,7 @@ public class FullScreenImageAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return view == ((RelativeLayout) object);
+        return view == object;
     }
 
     @Override
@@ -48,7 +46,7 @@ public class FullScreenImageAdapter extends PagerAdapter {
         NetworkImageView imgDisplay;
         Button btnClose;
 
-        inflater = (LayoutInflater) _activity
+        LayoutInflater inflater = (LayoutInflater) _activity
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View viewLayout = inflater.inflate(R.layout.layout_fullscreen_image, container, false);
 
@@ -65,14 +63,14 @@ public class FullScreenImageAdapter extends PagerAdapter {
             }
         });
 
-        ((ViewPager) container).addView(viewLayout);
+        container.addView(viewLayout);
 
         return viewLayout;
     }
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        ((ViewPager) container).removeView((RelativeLayout) object);
+        container.removeView((RelativeLayout) object);
 
     }
 }

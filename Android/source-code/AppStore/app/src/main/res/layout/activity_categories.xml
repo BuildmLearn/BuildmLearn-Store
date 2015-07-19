@@ -16,6 +16,6 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:id="@+id/txtCategoriesActivity"
-        android:text="No category matches your search !"
+        android:text="@string/search_category_error"
         android:visibility="visible"/>
 </RelativeLayout>

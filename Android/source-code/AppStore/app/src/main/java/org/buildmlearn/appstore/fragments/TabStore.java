@@ -33,11 +33,11 @@ import java.util.List;
 
 public class TabStore extends Fragment {
 
-    private static RecyclerView mRecyclerView1,mRecyclerView2;
+    private static RecyclerView mRecyclerView2;
     private static TextView txtAppsStore;
     private static Context mContext;
     private static TextView txtStore;
-    private static int x=4,y=6;
+    private static int y=6;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_tab_store, container, false);
@@ -63,15 +63,15 @@ public class TabStore extends Fragment {
             }
         });
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
-        x= Integer.parseInt(SP.getString("number_featured_categories", "4"));
+        int x = Integer.parseInt(SP.getString("number_featured_categories", "4"));
         y= Integer.parseInt(SP.getString("number_featured_apps","6"));
         int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.card_spacing);
-        mRecyclerView1 = (RecyclerView) v.findViewById(R.id.rvCategoriesCard);
+        RecyclerView mRecyclerView1 = (RecyclerView) v.findViewById(R.id.rvCategoriesCard);
         mRecyclerView1.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
         llm.setOrientation(LinearLayoutManager.HORIZONTAL);
         mRecyclerView1.setLayoutManager(llm);
-        CardCategoriesAdapter adapter1 = new CardCategoriesAdapter(mContext,x);
+        CardCategoriesAdapter adapter1 = new CardCategoriesAdapter(mContext, x);
         mRecyclerView1.setAdapter(adapter1);
         mRecyclerView1.addItemDecoration(new SpacesItemDecoration(spacingInPixels));
         mRecyclerView2 = (RecyclerView) v.findViewById(R.id.rvAppCard);

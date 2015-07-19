@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         android:alpha="0.7"
         android:cropToPadding="false"
+        android:contentDescription="@string/cd_imgcard"
         android:scaleType="centerCrop" />
     <TextView
         android:id="@+id/appTxtCard"

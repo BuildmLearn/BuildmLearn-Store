@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_launch"
-        android:title="Launch"/>
+        android:title="@string/launch"/>
     <item
         android:id="@+id/menu_share_2"
-        android:title="Share"/>
+        android:title="@string/share"/>
 </menu>

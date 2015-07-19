@@ -20,8 +20,8 @@
         android:layout_marginTop="15dp"
         android:paddingTop="2dp"
         android:paddingBottom="2dp"
-        android:background="@drawable/button_background"
+        style="?android:attr/borderlessButtonStyle"
         android:textColor="#ffffff"
-        android:text="Close" />
+        android:text="@string/close" />
 
 </RelativeLayout>

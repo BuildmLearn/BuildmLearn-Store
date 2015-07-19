@@ -8,12 +8,13 @@ import android.view.View;
  * Created by sruja on 6/18/2015.
  */
 public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
-    private int space;
+    private final int space;
 
     public SpacesItemDecoration(int space) {
         this.space = space;
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public void getItemOffsets(Rect outRect, View view,
                                RecyclerView parent, RecyclerView.State state) {

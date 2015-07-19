@@ -63,6 +63,7 @@
             android:enabled="false"
             android:onClick="click"
             android:text="@string/ready"
+            style="?android:attr/borderlessButtonStyle"
             android:background="@color/BlueBg"
             android:textColor="@android:color/white"/>
 
@@ -76,7 +77,8 @@
             android:onClick="click"
             android:background="@color/BlueBg"
             android:text="@string/skip"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            style="?android:attr/borderlessButtonStyle"/>
     </LinearLayout>
 
     <LinearLayout

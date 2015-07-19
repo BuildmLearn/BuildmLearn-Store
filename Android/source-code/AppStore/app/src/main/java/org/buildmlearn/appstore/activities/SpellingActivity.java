@@ -101,8 +101,7 @@ public class SpellingActivity extends AppCompatActivity implements
 		case R.id.btn_ready:
 
 			LayoutInflater factory = LayoutInflater.from(this);
-			final View textEntryView = factory.inflate(
-					R.layout.dialog_spellinginput, null);
+			final View textEntryView = factory.inflate(R.layout.dialog_spellinginput,null);
 			Builder builder = new Builder(this);
 			mAlert = builder.create();
 			mAlert.setCancelable(true);
@@ -148,6 +147,7 @@ public class SpellingActivity extends AppCompatActivity implements
 		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
 	}
 
+	@SuppressWarnings("deprecation")
 	private void convertTextToSpeech(String text) {
 		float speechRate = getProgressValue(mSb_SpeechRate.getProgress());
 		textToSpeech.setSpeechRate(speechRate);
@@ -168,9 +168,9 @@ public class SpellingActivity extends AppCompatActivity implements
 		}
 	}
 
-	public void submit() {
+	private void submit() {
 		String input = mEt_Spelling.getText().toString().trim();
-		if (input == null || input.length() == 0) {
+		if (input.length() == 0) {
 			Toast.makeText(SpellingActivity.this, "Please enter the spelling",
 					Toast.LENGTH_SHORT).show();
 
@@ -197,8 +197,7 @@ public class SpellingActivity extends AppCompatActivity implements
 
 	private float getProgressValue(int percent) {
 		float temp = ((float) percent / 100);
-		float per = temp * 2;
-		return per;
+		return temp * 2;
 	}
 	@Override
 	public void onBackPressed()

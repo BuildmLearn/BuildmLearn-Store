@@ -25,18 +25,15 @@ import org.buildmlearn.appstore.models.FlashModel;
 import java.util.ArrayList;
 
 public class FlashActivity extends AppCompatActivity implements Animation.AnimationListener {
-	View answerView, questionView;
-	Button flipButton;
-	Button preButton;
-	Button nextButton;
-	boolean isFlipped = false;
-	int iQuestionIndex = 0;
-	ImageView questionImage;
-	TextView flashCardText, flashcardNumber;
-	private FlashModel mFlashModel;
+	private View answerView, questionView;
+	private Button preButton;
+	private boolean isFlipped = false;
+	private int iQuestionIndex = 0;
+	private ImageView questionImage;
+	private TextView flashCardText, flashcardNumber;
 	private ArrayList<Card> mCardList;
-	TextView questionText;
-	String flashCardanswer;
+	private TextView questionText;
+	private String flashCardanswer;
 	private Animation animation1;
 	private Animation animation2;
 	private View currentView;
@@ -54,7 +51,7 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 			}
 		});
 		mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
-		mFlashModel = FlashModel.getInstance();
+		FlashModel mFlashModel = FlashModel.getInstance();
 		mToolbar.setTitle(mFlashModel.getName());
 		mCardList = mFlashModel.getList();
 		animation1 = AnimationUtils.loadAnimation(this, R.anim.to_middle);
@@ -74,9 +71,9 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 		questionText = (TextView) findViewById(R.id.questionhint);
 		flashcardNumber = (TextView) findViewById(R.id.flashCardNumber);
 
-		flipButton = (Button) findViewById(R.id.flip_button);
+		Button flipButton = (Button) findViewById(R.id.flip_button);
 		preButton = (Button) findViewById(R.id.pre_button);
-		nextButton = (Button) findViewById(R.id.next_button);
+		Button nextButton = (Button) findViewById(R.id.next_button);
 
 		populateQuestion(iQuestionIndex);
 		currentView = questionView;
@@ -116,7 +113,7 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 			@Override
 			public void onClick(View v) {
 
-				if (iQuestionIndex < mCardList.size()-1) {
+				if (iQuestionIndex < mCardList.size() - 1) {
 					isFlipped = false;
 					iQuestionIndex++;
 					questionView.setVisibility(View.VISIBLE);
@@ -126,13 +123,13 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 
 				} else {
 					finish();
-                }
+				}
 
 			}
 		});
 	}
 
-	public void populateQuestion(int index) {
+	private void populateQuestion(int index) {
 		if (index == 0) {
 			preButton.setEnabled(false);
 
@@ -149,20 +146,14 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 				Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
 				questionImage.setImageBitmap(decodedByte);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			//questionImage.setImageDrawable(R.drawable.notavailable);
-			// questionImage.setImageBitmap(mBitmap);
 		} else {
 			questionImage.setVisibility(View.GONE);
 
 		}
 		flashCardanswer = mCardList.get(index).getAnswer();
-
 		questionText.setText(mCardList.get(index).getHint());
-
-
 		flashCardText.setVisibility(View.GONE);
 		if (mCardList.get(index).getQuestion() != null) {
             flashCardText.setVisibility(View.VISIBLE);
@@ -201,19 +192,9 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 	}
 
 	@Override
-	public void onAnimationRepeat(Animation animation) {
-		// TODO Auto-generated method stub
-
-	}
+	public void onAnimationRepeat(Animation animation) {}
 
 	@Override
-	public void onAnimationStart(Animation animation) {
-		// TODO Auto-generated method stub
+	public void onAnimationStart(Animation animation) {}
 
-	}
-
-	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-	}
 }

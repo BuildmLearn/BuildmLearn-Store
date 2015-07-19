@@ -16,6 +16,7 @@
 
     <ImageView
         android:id="@+id/questionImage"
+        android:contentDescription="@string/cd_imgQuestion"
         android:layout_width="@dimen/card_width"
         android:layout_height="@dimen/card_height" />
 
@@ -25,7 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/primary_text"
-        android:text="Hello"
         android:textAppearance="?android:attr/textAppearanceMedium"
          />
 

@@ -2,6 +2,7 @@ package org.buildmlearn.appstore.activities;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.view.GravityCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -65,6 +66,8 @@ public class AppsActivity extends NavigationActivity {
     @Override
     public void onBackPressed()
     {
+        if(isDrawerOpened)
+        {mDrawer.closeDrawers();mDrawer.closeDrawer(GravityCompat.START);return;}
         NavigationActivity.mActiveSearchInterface=0;
         super.onBackPressed();
     }

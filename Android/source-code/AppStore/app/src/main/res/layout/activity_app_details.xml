@@ -19,7 +19,7 @@
         <LinearLayout
             android:id="@+id/ll_details"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:descendantFocusability="blocksDescendants" >
             <android.support.v7.widget.CardView
@@ -49,15 +49,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="20sp"
-                            android:id="@+id/details_AppTitle"
-                            android:text="Science Quiz" />
+                            android:id="@+id/details_AppTitle"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/details_AppSubTitle"
                             android:textSize="16sp"
-                            android:textColor="@color/secondary_text"
-                            android:text="Srujan Jha"/>
+                            android:textColor="@color/secondary_text"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -66,7 +64,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
                                 android:id="@+id/btnInstall"
-                                android:text="INSTALL"
+                                android:text="@string/install"
                                 android:background="@color/primary"
                                 android:elevation="7dp"
                                 android:textColor="@android:color/white"
@@ -76,7 +74,7 @@
                                 android:layout_height="wrap_content"
                                 android:id="@+id/btnShare"
                                 android:layout_marginLeft="10dp"
-                                android:text="SHARE"
+                                android:text="@string/share"
                                 style="?android:attr/borderlessButtonStyle"/>
                         </LinearLayout>
                     </LinearLayout>
@@ -99,7 +97,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/accent"
-                        android:text="Details"
+                        android:text="@string/details"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
                     <TextView
                         android:layout_marginLeft="10dp"
@@ -108,7 +106,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/primary_text"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero interdum, scelerisque massa sit amet, finibus velit. In ac dui scelerisque, pretium arcu non, molestie nisi."
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
                     <TextView
                         android:layout_marginLeft="10dp"
@@ -118,7 +115,7 @@
                         android:id="@+id/details_TxtMore"
                         android:clickable="true"
                         android:onClick="showMore"
-                        android:text="more"
+                        android:text="@string/more"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -139,7 +136,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/accent"
-                        android:text="Screenshots"
+                        android:text="@string/screenshots"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
                     <HorizontalScrollView
                         android:layout_width="match_parent"
@@ -184,7 +181,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/accent"
-                    android:text="Additional Information"
+                    android:text="@string/additional_information"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -198,7 +195,6 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/secondary_text"
                             android:lineSpacingMultiplier="1.5"
-                            android:text="Last updated on: \nCurrent Version: \nCategory: \nPublisher: "
                             android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
                         <TextView
                             android:layout_marginLeft="10dp"
@@ -207,7 +203,6 @@
                             android:id="@+id/details_AdditionalDetails"
                             android:textColor="@color/primary_text"
                             android:lineSpacingMultiplier="1.5"
-                            android:text="5/19/2015\n1.0.0.8\nScience\nSrujan Jha"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -233,12 +228,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/accent"
-                    android:text="Reviews"
+                    android:text="@string/reviews"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/web_reload"
+                            android:contentDescription="@string/cd_reviews_reload"
                             android:src="@android:drawable/ic_menu_rotate"
                             android:visibility="gone"/>
                     </LinearLayout>

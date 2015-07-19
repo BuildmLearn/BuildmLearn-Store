@@ -38,11 +38,11 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
 
     public static class CardViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
         //CardView cvApps;
-        TextView appTitle;
-        TextView appSubTitle;
-        NetworkImageView appLogo;
-        ImageLoader imageLoader;
-        ImageButton btnShowMore;
+        final TextView appTitle;
+        final TextView appSubTitle;
+        final NetworkImageView appLogo;
+        final ImageLoader imageLoader;
+        final ImageButton btnShowMore;
 
         CardViewHolder(View itemView) {
             super(itemView);
@@ -66,7 +66,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
              * @param position of the clicked item
              * @param isLongClick true if long click, false otherwise
              */
-            public void onClick(View v, int position, boolean isLongClick);
+            void onClick(View v, int position, boolean isLongClick);
 
         }
         private ClickListener clickListener;
@@ -75,6 +75,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
             this.clickListener = clickListener;
         }
 
+        @SuppressWarnings("deprecation")
         @Override
         public void onClick(View v) {
 
@@ -82,6 +83,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
             clickListener.onClick(v, getPosition(), false);
         }
 
+        @SuppressWarnings("deprecation")
         @Override
         public boolean onLongClick(View v) {
 
@@ -91,8 +93,8 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         }
     }
 
-    List<Apps> apps=new ArrayList<Apps>();
-    ArrayList<Integer> rndList = new ArrayList<>();
+    private List<Apps> apps= new ArrayList<>();
+    private final ArrayList<Integer> rndList = new ArrayList<>();
     private static Context mContext;
     public CardViewAdapter(List<Apps> apps,Context context,int x) {
         this.apps.clear();
@@ -102,13 +104,13 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
             int c = rnd.nextInt(apps.size());
             if (!rndList.contains(c)) rndList.add(c);
         }
-        this.mContext=context;
+        mContext=context;
     }
     public CardViewAdapter(List<Apps> apps,Context context) {
         this.apps.clear();
         this.apps = apps;
         for(int i=0;i<apps.size();i++)rndList.add(i);
-        this.mContext=context;
+        mContext=context;
     }
     @Override
     public int getItemCount() {
@@ -118,8 +120,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
     @Override
     public CardViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.app_card_small, viewGroup, false);
-        CardViewHolder pvh = new CardViewHolder(v);
-        return pvh;
+        return new CardViewHolder(v);
     }
 
     @Override
@@ -172,7 +173,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                             SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
                             SharedPreferences.Editor editor1 = SP.edit();
                             editor1.putBoolean(v.getTag().toString(), true);
-                            editor1.commit();
+                            editor1.apply();
                             NavigationActivity.clearSearch();
                             NavigationActivity.showSnackBar("Thank you for installing " + v.getTag().toString());
                             Snackbar.make(v, "Thank you for installing " + v.getTag().toString(), Snackbar.LENGTH_LONG);
@@ -208,9 +209,5 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                 popup.show();//showing popup menu
             }
             });//closing the setOnClickListener method
-    }
-    @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
     }
 }

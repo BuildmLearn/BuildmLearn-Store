@@ -1,7 +1,7 @@
 package org.buildmlearn.appstore.activities;
 
 /**
- * Created by Srujan Jha on 25-05-2015.
+ * Created by Srujan Jha
  */
 
 import android.app.Activity;
@@ -35,16 +35,8 @@ import org.buildmlearn.appstore.utils.VolleySingleton;
 public class AppDetails extends AppCompatActivity {
     private static Apps mApp=new Apps();
     private Context mContext;
-    private static NetworkImageView mAppIcon;
-    private static TextView mAppTitle;
-    private static TextView mAppSubTitle;
     private static TextView mAppDescription;
-    private static TextView mAppAdditionalInfo;
-    private static TextView mAppAdditionalDetails;
     private static TextView mAppTxtMore;
-    private static NetworkImageView mAppScreenshot1;
-    private static NetworkImageView mAppScreenshot2;
-    private static Button mBtnShare;
     private static Button mBtnInstall;
     private static boolean TxtShowMore=false;
     private static ProgressBar mProgressReviews;
@@ -74,16 +66,16 @@ public class AppDetails extends AppCompatActivity {
         mActive=SP.getBoolean(mApp.Name,false);
        // setSupportActionBar(mToolbar);
         if(mApp==null)finish();
-        mAppIcon=(NetworkImageView)findViewById(R.id.details_AppIcon);
-        mAppTitle=(TextView)findViewById(R.id.details_AppTitle);
-        mAppSubTitle=(TextView)findViewById(R.id.details_AppSubTitle);
+        NetworkImageView mAppIcon = (NetworkImageView) findViewById(R.id.details_AppIcon);
+        TextView mAppTitle = (TextView) findViewById(R.id.details_AppTitle);
+        TextView mAppSubTitle = (TextView) findViewById(R.id.details_AppSubTitle);
         mAppDescription=(TextView)findViewById(R.id.details_AppDescription);
-        mAppAdditionalInfo=(TextView)findViewById(R.id.details_AdditionalInfo);
-        mAppAdditionalDetails=(TextView)findViewById(R.id.details_AdditionalDetails);
+        TextView mAppAdditionalInfo = (TextView) findViewById(R.id.details_AdditionalInfo);
+        TextView mAppAdditionalDetails = (TextView) findViewById(R.id.details_AdditionalDetails);
         mProgressReviews=(ProgressBar)findViewById(R.id.progressReviews);
         mAppTxtMore=(TextView)findViewById(R.id.details_TxtMore);
-        mAppScreenshot1=(NetworkImageView)findViewById(R.id.details_Screenshot1);
-        mAppScreenshot2=(NetworkImageView)findViewById(R.id.details_Screenshot2);
+        NetworkImageView mAppScreenshot1 = (NetworkImageView) findViewById(R.id.details_Screenshot1);
+        NetworkImageView mAppScreenshot2 = (NetworkImageView) findViewById(R.id.details_Screenshot2);
         mScreenshots=mApp.Screenshots;
         ImageLoader imageLoader= VolleySingleton.getInstance(this).getImageLoader();
         mAppIcon.setImageUrl(mApp.AppIcon, imageLoader);
@@ -117,7 +109,6 @@ public class AppDetails extends AppCompatActivity {
         mAppAdditionalDetails.setText(mApp.Author + "\n" + mApp.AuthorEmail + "\n" + mApp.Category + "\n" + mApp.Type);
         webDisqus = (WebView) findViewById(R.id.disqus);       // set up disqus
         WebSettings webSettings2 = webDisqus.getSettings();
-        webSettings2.setJavaScriptEnabled(true);
         webSettings2.setBuiltInZoomControls(true);
         webDisqus.setWebViewClient(new WebViewClient() {
             public void onPageFinished(WebView view, String url) {
@@ -138,11 +129,11 @@ public class AppDetails extends AppCompatActivity {
                 webDisqus.reload();
             }
         });
-        mBtnShare=(Button)findViewById(R.id.btnShare);
+        Button mBtnShare = (Button) findViewById(R.id.btnShare);
         mBtnShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(android.content.Intent.ACTION_SEND);
+                Intent intent = new Intent(android.content.Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);// Add data to the intent, the receiving app will decide what to do with it.
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
@@ -161,7 +152,7 @@ public class AppDetails extends AppCompatActivity {
                     SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
                     SharedPreferences.Editor editor1 = SP.edit();
                     editor1.putBoolean(mApp.Name, true);
-                    editor1.commit();
+                    editor1.apply();
                     if(AppReader.listApps(mContext).size()==1){Intent i = new Intent(mContext, HomeActivity.class);
                         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                         i.putExtra("View",1);
@@ -180,8 +171,7 @@ public class AppDetails extends AppCompatActivity {
         });
     }
 
-    public String getHtmlComment() {
-
+    private String getHtmlComment() {
         return "<div id='disqus_thread'></div>"
                 + "<script type='text/javascript'>"
                 + "var disqus_identifier = '"+ mApp.Name+"_"+mApp.Author + "';"

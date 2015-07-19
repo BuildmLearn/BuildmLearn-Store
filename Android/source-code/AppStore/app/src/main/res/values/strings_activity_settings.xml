@@ -1,21 +1,13 @@
 <resources>
     <string name="title_activity_settings">Settings</string>
-
-    <!-- Strings related to Settings -->
-
-    <!-- Example General settings -->
     <string name="pref_header_general">General</string>
     <string name="pref_header_about">About</string>
-
     <string name="pref_title_app_home_page">Launch this app with Store Section</string>
     <string name="pref_description_app_home_page">You can launch this app with either My-Apps Section or Store Section.</string>
     <string name="pref_title_number_of_featured_apps">Number of Featured Apps</string>
     <string name="pref_description_number_of_featured_apps">Enter between 6-</string>
     <string name="pref_title_number_of_featured_categories">Number of Featured Categories</string>
-    <string name="pref_description_number_of_featured_categories">Enter between 3-10</string>
-   <!-- <string name="pref_title_app_theme">Change the theme of the app</string>
-    <string name="pref_description_app_theme">Select a color from the list that best suits you</string>
-    -->
+    <string name="pref_description_number_of_featured_categories">Enter between 3&#8211;10</string>
     <string-array name="pref_featured_categories_list">
         <item>3</item>
         <item>4</item>

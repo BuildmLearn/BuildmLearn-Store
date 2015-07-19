@@ -16,6 +16,7 @@
             android:id="@+id/imgCardCategories"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:contentDescription="@string/cd_imgcardcategories"
             android:alpha="0.5"
             android:cropToPadding="false"
             android:scaleType="centerCrop" />

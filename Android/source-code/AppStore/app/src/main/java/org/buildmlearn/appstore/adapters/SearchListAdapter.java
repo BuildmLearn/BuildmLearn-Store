@@ -22,8 +22,8 @@ public class SearchListAdapter extends CursorAdapter {
         private NetworkImageView image;
 
 
-    public SearchListAdapter(Context context, Cursor c, boolean autoRequery) {
-        super(context, c, autoRequery);
+    public SearchListAdapter(Context context, Cursor c) {
+        super(context, c,true);
     }
 
     @Override

@@ -15,17 +15,15 @@ import org.buildmlearn.appstore.utils.VolleySingleton;
 public class FullScreenViewActivity extends Activity
 
     {
-        private FullScreenImageAdapter adapter;
-        private ViewPager viewPager;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_fullscreen_view);
-            viewPager = (ViewPager) findViewById(R.id.pager);
+            ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
             Intent i = getIntent();
             int position = i.getIntExtra("position", 0);
-            adapter = new FullScreenImageAdapter(FullScreenViewActivity.this,AppDetails.mScreenshots, VolleySingleton.getInstance(this).getImageLoader());
+            FullScreenImageAdapter adapter = new FullScreenImageAdapter(FullScreenViewActivity.this, AppDetails.mScreenshots, VolleySingleton.getInstance(this).getImageLoader());
             viewPager.setAdapter(adapter);
             // displaying selected image first
             viewPager.setCurrentItem(position);

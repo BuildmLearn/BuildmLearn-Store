@@ -28,8 +28,8 @@ public class QuestionActivity extends AppCompatActivity {
 	private TextView iQuestion_no_Label;
 	private TextView iQuestionLabel;
 	private RadioButton iRad1, iRad2, iRad3, iRad0;
-	private Button iSubmitButton, iNextButton;
-	private List<RadioButton> iRadButtonList = new ArrayList<RadioButton>();
+	private Button iNextButton;
+	private final List<RadioButton> iRadButtonList = new ArrayList<>();
 	private int iQuestionIndex = 0;
 	private int iCurrentCorrectAnswer;
 	private RadioGroup iRadioGroup;
@@ -85,14 +85,10 @@ public class QuestionActivity extends AppCompatActivity {
 
 				if (iQuestionIndex <mQuestionAnsList.size()) {
 					populateQuestion(iQuestionIndex);
-
-					iSubmitButton.setEnabled(true);
-					// iNextButton.setVisibility(View.GONE);
 				} else {
 					// if the quiz is over
 					reInitialize();
-					Intent myIntent = new Intent(arg0.getContext(),
-							ScoreActivity.class);
+					Intent myIntent = new Intent(arg0.getContext(),ScoreActivity.class);
 					myIntent.putExtra("Activity",0);
 					startActivity(myIntent);
 					finish();
@@ -170,11 +166,7 @@ public class QuestionActivity extends AppCompatActivity {
 
 	}
 
-	public void radioClick(View v) {
-
-	}
-
-	public void populateQuestion(int index) {
+	private void populateQuestion(int index) {
 		for (int i = 0; i < iRadButtonList.size(); i++) {
 			iRadButtonList.get(i).setBackgroundColor(Color.TRANSPARENT);
 			iRadButtonList.get(i).setChecked(false);
@@ -196,21 +188,8 @@ public class QuestionActivity extends AppCompatActivity {
 
 		iCurrentCorrectAnswer = mQuestionAnsList.get(index).getOptionNumber();
 	}
-
-	public int getSelectedAnswer() {
-		int selected = -1;
-		for (int i = 0; i < iRadButtonList.size(); i++) {
-			if (iRadButtonList.get(i).isChecked()) {
-				return i;
-			}
-		}
-		return selected;
-	}
-
-	public void reInitialize() {
-
+	private void reInitialize() {
 		iQuestionIndex = 0;
-	//	gd.iQuizList.clear();
 	}
 
 

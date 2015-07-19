@@ -35,10 +35,10 @@ import me.drakeet.materialdialog.MaterialDialog;
 public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.MyAppsViewHolder> {
 
     public static class MyAppsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
-        TextView appTitle;
-        TextView appAuthor;
-        ImageView appLogo;
-        ImageButton btnShowMore;
+        final TextView appTitle;
+        final TextView appAuthor;
+        final ImageView appLogo;
+        final ImageButton btnShowMore;
         MyAppsViewHolder(View itemView) {
             super(itemView);
             appTitle = (TextView) itemView.findViewById(R.id.sCardTitle);
@@ -59,7 +59,7 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
              * @param position of the clicked item
              * @param isLongClick true if long click, false otherwise
              */
-            public void onClick(View v, int position, boolean isLongClick);
+             void onClick(View v, int position, boolean isLongClick);
 
         }
         private ClickListener clickListener;
@@ -68,6 +68,7 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
             this.clickListener = clickListener;
         }
 
+        @SuppressWarnings("deprecation")
         @Override
         public void onClick(View v) {
 
@@ -75,6 +76,7 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
             clickListener.onClick(v, getPosition(), false);
         }
 
+        @SuppressWarnings("deprecation")
         @Override
         public boolean onLongClick(View v) {
 
@@ -84,11 +86,11 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
         }
     }
 
-    List<AppInfo> apps;
+    private final List<AppInfo> apps;
     private static Context mContext;
     public MyAppsViewAdapter(List<AppInfo> apps, Context context) {
         this.apps = apps;
-        this.mContext=context;
+        mContext=context;
     }
 
     @Override
@@ -99,10 +101,10 @@ public class MyAppsViewAdapter extends RecyclerView.Adapter<MyAppsViewAdapter.My
     @Override
     public MyAppsViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.myapp_card_small, viewGroup, false);
-        MyAppsViewHolder pvh = new MyAppsViewHolder(v);
-        return pvh;
+        return new MyAppsViewHolder(v);
     }
-private MaterialDialog mAlertDialog;
+
+    private MaterialDialog mAlertDialog;
     @Override
     public void onBindViewHolder(final MyAppsViewHolder cardViewHolder, int i) {
         if(apps.get(i).Name.length()<11)
@@ -133,7 +135,7 @@ private MaterialDialog mAlertDialog;
                                                 SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
                                                 SharedPreferences.Editor editor1 = SP.edit();
                                                 editor1.putBoolean(apps.get(pos).Name, false);
-                                                editor1.commit();
+                                                editor1.apply();
                                                 if(AppReader.listApps(mContext).size()==0) {
                                                     Intent i = new Intent(mContext, HomeActivity.class);
                                                     i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -203,8 +205,4 @@ private MaterialDialog mAlertDialog;
         });
     }
 
-    @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
-    }
 }

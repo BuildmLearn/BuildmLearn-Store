@@ -13,7 +13,7 @@ public class SpellingsModel {
 	private int totalCorrect=0,totalWrong=0,activeCount=0;
 	
 
-	public static SpellingsModel mSpellingsModel;
+	private static SpellingsModel mSpellingsModel;
 	public static void clearInstance()
     {
 		if(mSpellingsModel!=null) {

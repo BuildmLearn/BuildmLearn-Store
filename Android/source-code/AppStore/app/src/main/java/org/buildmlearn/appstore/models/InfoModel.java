@@ -14,7 +14,7 @@ public class InfoModel {
 	private ArrayList<String> mListTitleList;
 	private HashMap<String, String> mInfoMap;
 
-	public static InfoModel mModel;
+	private static InfoModel mModel;
 
 	public static InfoModel getInstance() {
 		if (mModel == null)

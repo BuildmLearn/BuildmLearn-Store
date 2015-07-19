@@ -4,12 +4,10 @@ package org.buildmlearn.appstore.utils;
  * Created by Srujan Jha on 25-05-2015.
  */
 
-import android.R;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -27,8 +25,6 @@ class SlidingTabStrip extends LinearLayout {
     private final int mSelectedIndicatorThickness;
     private final Paint mSelectedIndicatorPaint;
 
-    private final int mDefaultBottomBorderColor;
-
     private int mSelectedPosition;
     private float mSelectionOffset;
 
@@ -36,21 +32,16 @@ class SlidingTabStrip extends LinearLayout {
     private final SimpleTabColorizer mDefaultTabColorizer;
 
     SlidingTabStrip(Context context) {
-        this(context, null);
-    }
-
-    SlidingTabStrip(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        super(context, null);
         setWillNotDraw(false);
 
         final float density = getResources().getDisplayMetrics().density;
 
         TypedValue outValue = new TypedValue();
-        context.getTheme().resolveAttribute(R.attr.colorForeground, outValue, true);
+        context.getTheme().resolveAttribute(android.R.attr.colorForeground, outValue, true);
         final int themeForegroundColor =  outValue.data;
 
-        mDefaultBottomBorderColor = setColorAlpha(themeForegroundColor,
-                DEFAULT_BOTTOM_BORDER_COLOR_ALPHA);
+        int mDefaultBottomBorderColor = setColorAlpha(themeForegroundColor);
 
         mDefaultTabColorizer = new SimpleTabColorizer();
         mDefaultTabColorizer.setIndicatorColors(DEFAULT_SELECTED_INDICATOR_COLOR);
@@ -123,7 +114,8 @@ class SlidingTabStrip extends LinearLayout {
     /**
      * Set the alpha value of the {@code color} to be the given {@code alpha} value.
      */
-    private static int setColorAlpha(int color, byte alpha) {
+    private static int setColorAlpha(int color) {
+        byte alpha=SlidingTabStrip.DEFAULT_BOTTOM_BORDER_COLOR_ALPHA;
         return Color.argb(alpha, Color.red(color), Color.green(color), Color.blue(color));
     }
 

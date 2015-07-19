@@ -1,24 +1,16 @@
 <resources>
     <string name="app_name">BuildmLearn Store</string>
+    <string name="moto">Promoting Education&#8230;&#8230;&#8230;</string>
     <string name="title_activity_home_activitiy">Home</string>
     <string name="hello_world">Hello world!</string>
     <string name="start">Start</string>
     <string name="close">Close</string>
     <string name="title_activity_app_details">AppDetails</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Work in Progress !!</string>
     <string name="title_activity_categories">Categories</string>
-    <string name="title_activity_search_results">Search Results</string>
 
-    <string name="search_hint">Science</string>
     <string name="title_activity_categories_view">CategoriesView</string>
     <string name="title_activity_apps">AppsActivity</string>
 	
-	<string name="app_quiz">Quiz Time</string>
-    <string name="app_info">Basic mLearning</string>
-    <string name="app_flashcards">Learn with FlashCards</string>
-    <string name="app_spelling">Learn Spellings</string>
     <string name="msg_txt">Press SPELL IT when you are ready. You may adjust the speech rate using the slider. Listen to the word as many times before answering. If you are not sure, you can skip the word.</string>
     <string name="speak">Listen</string>
     <string name="ready">Spell it!</string>
@@ -29,18 +21,40 @@
     <string name="nxt_word">Next Word</string>
     <string name="restart">Restart</string>
     <string name="exit">Exit</string>
-    <string name="correct">Correct Spelled:</string>
-    <string name="wrong_spelled">Wrong Spelled:</string>
-    <string name="last_word">That was the last word</string>
     <string name="skip">Skip</string>
-    <string name="unanswered">Unanswered:</string>
+    <string name="unanswered">Unanswered: </string>
     <string name="you_entered">You Entered</string>
     <string name="normal">Normal</string>
     <string name="low">Low</string>
     <string name="high">High</string>
     <string name="speech_rate">Speech Rate:</string>
-    <string name="about_us">This application has been developed using the BuildmLearn Toolkit.\n\nTo know more about BuildmLearn Toolkit visit http://buildmlearn.org/</string>
-    <string name="action_info">Info</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="flip">Flip</string>
 
 
+    <string name="install">INSTALL</string>
+    <string name="share">Share</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="home">HOME</string>
+    <string name="search">Search</string>
+    <string name="categories">Categories</string>
+    <string name="settings">Settings</string>
+    <string name="search_category_error">No category matches your search!</string>
+    <string name="feedback">Give Feedback</string>
+    <string name="rate_my_app">Rate My App</string>
+    <string name="about">About</string>
+    <string name="search_categories_error">There are no apps to be shown in this particular Category!</string>
+    <string name="search_app_error">No app matches your search!</string>
+    <string name="featured_categories">Featured Categories</string>
+    <string name="search_text">SearchText</string>
+    <string name="word">Word #</string>
+    <string name="quiz_completion">You have completed the quiz!</string>
+    <string name="more">more</string>
+    <string name="featured_apps">Featured Apps</string>
+    <string name="launch">Launch</string>
+    <string name="reviews">Reviews</string>
+    <string name="screenshots">Screenshots</string>
+    <string name="details">Details</string>
+    <string name="additional_information">Additional Information</string>
 </resources>

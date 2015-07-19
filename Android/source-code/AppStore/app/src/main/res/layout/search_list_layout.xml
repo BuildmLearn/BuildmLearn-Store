@@ -20,5 +20,5 @@
         android:textColor="@color/primary_text"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/SrowText"
-        android:text="SearchText"/>
+        android:text="@string/search_text"/>
 </LinearLayout>

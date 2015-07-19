@@ -25,14 +25,13 @@ import java.io.InputStreamReader;
 public class StartActivity extends AppCompatActivity implements OnClickListener {
 
 	private int mOption;
-	private String filePath;
 	private TextView author, title;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start);
-		filePath = "Apps/"+getIntent().getStringExtra("filename")+".buildmlearn";
+		String filePath = "Apps/" + getIntent().getStringExtra("filename") + ".buildmlearn";
 		System.out.println(filePath);
 		author = (TextView) findViewById(R.id.tv_author);
 		title = (TextView) findViewById(R.id.tv_apptitle);
@@ -53,8 +52,8 @@ public class StartActivity extends AppCompatActivity implements OnClickListener 
 
 	private class FileReadTask extends AsyncTask<Void, Void, Void> {
 
-		int mOption;
-		String mFilePath;
+		final int mOption;
+		final String mFilePath;
 
 		public FileReadTask(int option, String filePath) {
 			this.mOption = option;

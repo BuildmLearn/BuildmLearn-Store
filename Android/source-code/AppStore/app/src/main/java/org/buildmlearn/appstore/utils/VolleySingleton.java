@@ -14,14 +14,13 @@ import com.android.volley.toolbox.Volley;
 public class VolleySingleton {
 
     private static VolleySingleton instance;
-    private RequestQueue requestQueue;
     private static ImageLoader imageLoader;
 
     private VolleySingleton(Context context) {
-        requestQueue = Volley.newRequestQueue(context);
+        RequestQueue requestQueue = Volley.newRequestQueue(context);
 
         imageLoader = new ImageLoader(requestQueue, new ImageLoader.ImageCache() {
-            private final LruCache<String, Bitmap> cache = new LruCache<String, Bitmap>(20);
+            private final LruCache<String, Bitmap> cache = new LruCache<>(20);
 
 
             @Override
@@ -42,10 +41,6 @@ public class VolleySingleton {
             instance = new VolleySingleton(context);
         }
         return instance;
-    }
-
-    public RequestQueue getRequestQueue() {
-        return requestQueue;
     }
 
     public ImageLoader getImageLoader() {

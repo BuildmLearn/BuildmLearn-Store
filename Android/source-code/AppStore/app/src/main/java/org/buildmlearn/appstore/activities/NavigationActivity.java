@@ -14,12 +14,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -39,22 +39,19 @@ import java.util.List;
 import me.drakeet.materialdialog.MaterialDialog;
 
 public class NavigationActivity extends AppCompatActivity {
-    private MaterialDialog mAlertDialog=new MaterialDialog(NavigationActivity.this);
-    private static Toolbar mToolbar;
-    private static DrawerLayout mDrawer;                                 // Declaring DrawerLayout
-    private ActionBarDrawerToggle mDrawerToggle;                  // Declaring Action Bar Drawer Toggle
-    public static FrameLayout frameLayout;
-    private String[] columns = new String[] { "_id", "search","image" };
-    public static List<Apps> appList=new ArrayList<Apps>();
+    private final MaterialDialog mAlertDialog=new MaterialDialog(NavigationActivity.this);
+    static DrawerLayout mDrawer;                                 // Declaring DrawerLayout
+    static FrameLayout frameLayout;
+    private final String[] columns = new String[] { "_id", "search","image" };
+    public static final List<Apps> appList= new ArrayList<>();
     private MatrixCursor cursor = new MatrixCursor(columns);
-    public static int mActive=1;
+    static int mActive=1;
     private static SearchView searchView=null;
-    private static MenuItem searchItem;
     private static Context mContext;
-    public static String searchQuery="";
-    public static int mActiveSearchInterface=0;//1-MyApps, 0-Store, 2-Categories, 3-InnerCategories, 4-AppsActivity
-    public static int color_divider;
-    public static NavigationView navigationView;
+    static String searchQuery="";
+    static int mActiveSearchInterface=0;//1-MyApps, 0-Store, 2-Categories, 3-InnerCategories, 4-AppsActivity
+    static NavigationView navigationView;
+    static boolean isDrawerOpened=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,20 +59,25 @@ public class NavigationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_navigation);
         mContext=this;
         frameLayout = (FrameLayout)findViewById(R.id.content_frame);
-        mToolbar = (Toolbar) findViewById(R.id.tool_bar);
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar);
         mToolbar.setBackgroundColor(getResources().getColor(R.color.primary));
         mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         mToolbar.setTitle("Home");
         setSupportActionBar(mToolbar);
-        color_divider=getResources().getColor(R.color.divider);
         navigationView=(NavigationView)findViewById(R.id.navigation_view);
         mDrawer = (DrawerLayout) findViewById(R.id.DrawerLayout);        // Drawer object Assigned to the view
         mDrawer.setStatusBarBackgroundColor(getResources().getColor(R.color.primary_dark));
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawer, mToolbar, R.string.start,R.string.close){
+        ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawer, mToolbar, R.string.start, R.string.close) {
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
+                isDrawerOpened = true;
                 InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(drawerView.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+            }
+
+            public void onDrawerClosed(View drawerView) {
+                super.onDrawerClosed(drawerView);
+                isDrawerOpened = false;
             }
         };
         mDrawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
@@ -84,7 +86,8 @@ public class NavigationActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 mDrawer.closeDrawers();
-                mDrawer.closeDrawer(Gravity.LEFT);
+                mDrawer.closeDrawer(GravityCompat.START);
+                isDrawerOpened=false;
                 if(mActive==menuItem.getItemId())return false;
                 switch (menuItem.getItemId()) {
                     case R.id.navigation_item_1: {
@@ -170,14 +173,14 @@ public class NavigationActivity extends AppCompatActivity {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu_home_activity, menu);
         getCustomCursor();
-        searchItem = menu.findItem(R.id.action_search);
+        MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchManager searchManager = (SearchManager) NavigationActivity.this.getSystemService(Context.SEARCH_SERVICE);
         if (searchItem != null) {
             searchView = (SearchView) searchItem.getActionView();
         }
         if (searchView != null) {
             searchView.setSearchableInfo(searchManager.getSearchableInfo(NavigationActivity.this.getComponentName()));
-            if(mActiveSearchInterface==0 || mActiveSearchInterface==4)searchView.setSuggestionsAdapter(new SearchListAdapter(this, cursor, true));
+            if(mActiveSearchInterface==0 || mActiveSearchInterface==4)searchView.setSuggestionsAdapter(new SearchListAdapter(this, cursor));
             searchView.setOnCloseListener(new SearchView.OnCloseListener() {
                 @Override
                 public boolean onClose() {
@@ -252,7 +255,7 @@ public class NavigationActivity extends AppCompatActivity {
             temp[2] = appList.get(k++).AppIcon;
             cursor.addRow(temp);
         }
-        if(mActiveSearchInterface==0 || mActiveSearchInterface==4)searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor,true));
+        if(mActiveSearchInterface==0 || mActiveSearchInterface==4)searchView.setSuggestionsAdapter(new SearchListAdapter(this,cursor));
     }
     public static void clearSearch()    {
         searchQuery="";

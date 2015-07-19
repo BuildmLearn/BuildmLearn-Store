@@ -27,7 +27,7 @@ public class Apps implements Parcelable {
         dest.writeString(AuthorEmail);
         dest.writeString(AppIcon);
         dest.writeInt(Screenshots.length);
-        for(int i=0;i<Screenshots.length;i++)dest.writeString(Screenshots[i]);
+        for (String Screenshot : Screenshots) dest.writeString(Screenshot);
 
     }
     // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
