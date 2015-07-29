@@ -10,22 +10,24 @@ import org.buildmlearn.appstore.adapters.FullScreenImageAdapter;
 import org.buildmlearn.appstore.utils.VolleySingleton;
 
 /**
- * Created by sruja on 6/15/2015.
+ * This activity deals with showing a full screen image when an image in the screenshots gallery is selected.
  */
 public class FullScreenViewActivity extends Activity
-
-    {
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_fullscreen_view);
-            ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-            Intent i = getIntent();
-            int position = i.getIntExtra("position", 0);
-            FullScreenImageAdapter adapter = new FullScreenImageAdapter(FullScreenViewActivity.this, AppDetails.mScreenshots, VolleySingleton.getInstance(this).getImageLoader());
-            viewPager.setAdapter(adapter);
-            // displaying selected image first
-            viewPager.setCurrentItem(position);
-        }
+{
+    /**
+     * The method is executed first when the activity is created.
+     * @param savedInstanceState The bundle stores all the related parameters, if it has to be used when resuming the app.
+     */
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_fullscreen_view);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        Intent i = getIntent();
+        int position = i.getIntExtra("position", 0);
+        FullScreenImageAdapter adapter = new FullScreenImageAdapter(FullScreenViewActivity.this, AppDetails.mScreenshots, VolleySingleton.getInstance(this).getImageLoader());
+        viewPager.setAdapter(adapter);
+        // displaying selected image first
+        viewPager.setCurrentItem(position);
+    }
 }

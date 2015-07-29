@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by Srujan Jha on 6/6/2015.
+ * Template model for Info-Type of apps.
  */
 
 public class InfoModel {

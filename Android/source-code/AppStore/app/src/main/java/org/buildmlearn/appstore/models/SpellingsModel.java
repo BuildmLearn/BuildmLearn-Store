@@ -1,10 +1,10 @@
 package org.buildmlearn.appstore.models;
 
-/**
- * Created by Srujan Jha on 6/6/2015.
- */
 import java.util.ArrayList;
 
+/**
+ * Template model for Spellings Puzzle type of apps.
+ */
 public class SpellingsModel {
 
 	private String mPuzzleName;

@@ -1,7 +1,7 @@
 package org.buildmlearn.appstore.models;
 
 /**
- * Created by Srujan Jha on 6/6/2015.
+ * Template model for Flash cards type of apps. It contains all the data regarding a flash card.
  */
 public class Card {
 	private String mQuestion,mAnswer,mHint,mImagePath;

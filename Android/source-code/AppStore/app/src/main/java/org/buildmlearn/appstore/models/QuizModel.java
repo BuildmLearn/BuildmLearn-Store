@@ -3,7 +3,7 @@ package org.buildmlearn.appstore.models;
 import java.util.ArrayList;
 
 /**
- * Created by Srujan Jha on 6/6/2015.
+ * Template model for Quiz type of apps
  */
 public class QuizModel {
     private String mQuizName;

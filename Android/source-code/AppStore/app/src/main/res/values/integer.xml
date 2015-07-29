@@ -2,4 +2,5 @@
 <resources>
     <integer name="default_number_of_featured_apps">6</integer>
     <integer name="default_number_of_featured_categories">4</integer>
+    <integer name="default_number_of_charactes_in_description">40</integer>
 </resources>

@@ -15,17 +15,28 @@ import org.buildmlearn.appstore.activities.NavigationActivity;
 import org.buildmlearn.appstore.utils.VolleySingleton;
 
 /**
- * Created by Srujan Jha on 6/15/2015.
+ * An adapter class for the search list suggestions.
  */
 public class SearchListAdapter extends CursorAdapter {
         private TextView text;
         private NetworkImageView image;
 
-
+    /**
+     * Constructor of the Adapter class
+     * @param context Context of the current Activity
+     * @param c Cursor object to be populated
+     */
     public SearchListAdapter(Context context, Cursor c) {
         super(context, c,true);
     }
 
+    /**
+     * Inflates the view objects
+     * @param context Context of the current activity
+     * @param cursor Cursor position of the current view
+     * @param parent Viewgroup object, which contains all the object of the view to be populated
+     * @return View object which is to be populated
+     */
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -34,7 +45,9 @@ public class SearchListAdapter extends CursorAdapter {
         image=(NetworkImageView)view.findViewById(R.id.SrowIcon);
         return view;
     }
-
+    /**
+     * Binds the content ot different views
+     */
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
         text.setText(NavigationActivity.appList.get(cursor.getPosition()).Name);

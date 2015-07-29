@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Srujan Jha on 5/26/2015.
+ * Template model for Categories
  */
 public class CategoriesCard {
     public static final String[] CategoryName={"Science","Mathematics","Literature","SocialStudies","History","Geography","English","Physics","Chemistry","Biology"};

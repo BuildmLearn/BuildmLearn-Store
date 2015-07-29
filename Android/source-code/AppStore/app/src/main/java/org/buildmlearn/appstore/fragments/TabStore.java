@@ -1,9 +1,5 @@
 package org.buildmlearn.appstore.fragments;
 
-/**
- * Created by Srujan Jha on 25-05-2015.
- */
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -31,6 +27,9 @@ import org.buildmlearn.appstore.utils.SpacesItemDecoration;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Fragment class of the Store section on the Home Page.
+ */
 public class TabStore extends Fragment {
 
     private static RecyclerView mRecyclerView2;
@@ -38,6 +37,14 @@ public class TabStore extends Fragment {
     private static Context mContext;
     private static TextView txtStore;
     private static int y=6;
+
+    /**
+     * It is called when the fragment is created.
+     * @param inflater Inflater object which inflates the layout to the container
+     * @param container Viewgroup object which is inflated
+     * @param savedInstanceState Any instance which need to be loaded, once the app is resumed.
+     * @return View object of the fragment
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_tab_store, container, false);
@@ -48,23 +55,23 @@ public class TabStore extends Fragment {
         TextView txtMoreCategories = (TextView) v.findViewById(R.id.txtMoreCategories);
         txtMoreApps.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v1) {
                 Intent i = new Intent(mContext, AppsActivity.class);
-                startActivity(i);
+                TabStore.this.startActivity(i);
             }
         });
         txtMoreCategories.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v1) {
                 Intent i = new Intent(mContext, CategoriesActivity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(i);
-                ((Activity)mContext).finish();
+                TabStore.this.startActivity(i);
+                ((Activity) mContext).finish();
             }
         });
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
-        int x = Integer.parseInt(SP.getString("number_featured_categories", "4"));
-        y= Integer.parseInt(SP.getString("number_featured_apps","6"));
+        int x = Integer.parseInt(SP.getString("number_featured_categories", getResources().getInteger(R.integer.default_number_of_featured_apps)+""));
+        y= Integer.parseInt(SP.getString("number_featured_apps",getResources().getInteger(R.integer.default_number_of_featured_categories)+""));
         int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.card_spacing);
         RecyclerView mRecyclerView1 = (RecyclerView) v.findViewById(R.id.rvCategoriesCard);
         mRecyclerView1.setHasFixedSize(true);
@@ -83,6 +90,11 @@ public class TabStore extends Fragment {
         mRecyclerView2.addItemDecoration(new SpacesItemDecoration(spacingInPixels));
         return v;
     }
+
+    /**
+     * This method is called from the Navigation Activity, which controls all the search view.
+     * @param query A string with search query.
+     */
     public static void refineSearch(String query)    {
         txtAppsStore.setText("Search Results");
         List<Apps> tempList=new ArrayList<>();
@@ -103,6 +115,10 @@ public class TabStore extends Fragment {
             txtStore.setVisibility(View.VISIBLE);
         }
     }
+
+    /**
+     * This method is called from the Navigation Activity. It closes the search view for this activity.
+     */
     public static void closeSearch()    {
         txtAppsStore.setText("Featured Apps");
         mRecyclerView2.setVisibility(View.VISIBLE);

@@ -1,9 +1,5 @@
 package org.buildmlearn.appstore.activities;
 
-/**
- * Created by Srujan Jha on 06-06-2015.
- */
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -11,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -24,6 +19,9 @@ import org.buildmlearn.appstore.models.FlashModel;
 
 import java.util.ArrayList;
 
+/**
+ * This activity deals with the Flash Card apps. Any Flash card app is launched using this activity. It renders XML to show cards in the particular app.
+ */
 public class FlashActivity extends AppCompatActivity implements Animation.AnimationListener {
 	private View answerView, questionView;
 	private Button preButton;
@@ -38,6 +36,10 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 	private Animation animation2;
 	private View currentView;
 
+	/**
+	 * The method is executed first when the activity is created.
+	 * @param savedInstanceState The bundle stores all the related parameters, if it has to be used when resuming the app.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -47,7 +49,7 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 		mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				onBackPressed();
+				FlashActivity.this.onBackPressed();
 			}
 		});
 		mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
@@ -78,8 +80,7 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 		populateQuestion(iQuestionIndex);
 		currentView = questionView;
 
-		flipButton.setOnClickListener(new OnClickListener() {
-
+		flipButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 
@@ -90,26 +91,20 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 			}
 		});
 
-		preButton.setOnClickListener(new OnClickListener() {
-
+		preButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				if (iQuestionIndex != 0) {
 					isFlipped = false;
-
 					iQuestionIndex--;
 					questionView.setVisibility(View.VISIBLE);
 					answerView.setVisibility(View.GONE);
 					currentView = questionView;
-
-					populateQuestion(iQuestionIndex);
+					FlashActivity.this.populateQuestion(iQuestionIndex);
 				}
-
 			}
 		});
-
-		nextButton.setOnClickListener(new OnClickListener() {
-
+		nextButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 
@@ -119,26 +114,27 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 					questionView.setVisibility(View.VISIBLE);
 					answerView.setVisibility(View.GONE);
 					currentView = questionView;
-					populateQuestion(iQuestionIndex);
+					FlashActivity.this.populateQuestion(iQuestionIndex);
 
 				} else {
-					finish();
+					FlashActivity.this.finish();
 				}
 
 			}
 		});
 	}
 
+	/**
+	 * This method populates questions to the cards.
+	 * @param index This is the number of the question which has to be loaded.
+	 */
 	private void populateQuestion(int index) {
 		if (index == 0) {
 			preButton.setEnabled(false);
-
 		} else
 			preButton.setEnabled(true);
-
 		int cardNum = index + 1;
 		flashcardNumber.setText("Card #" + cardNum + " of " + mCardList.size());
-
 		if (mCardList.get(index).getImagePath() != null) {
 			questionImage.setVisibility(View.VISIBLE);
 			try {
@@ -150,7 +146,6 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 			}
 		} else {
 			questionImage.setVisibility(View.GONE);
-
 		}
 		flashCardanswer = mCardList.get(index).getAnswer();
 		questionText.setText(mCardList.get(index).getHint());
@@ -159,24 +154,23 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
             flashCardText.setVisibility(View.VISIBLE);
             flashCardText.setText(mCardList.get(index).getQuestion());
 		}
-
 	}
 
+    /**
+     * This method is called when the animation ends. It sets the state of the card, whether it is flipped or not.
+     * @param animation Animation Object
+     */
 	@Override
 	public void onAnimationEnd(Animation animation) {
 		if (animation == animation1) {
-
 			TextView answerText = (TextView) findViewById(R.id.answerText);
-
 			if (!isFlipped) {
-
 				answerView.setVisibility(View.VISIBLE);
 				questionView.setVisibility(View.GONE);
 				isFlipped = true;
 				answerText.setText(flashCardanswer);
 				currentView = answerView;
 			} else {
-
 				isFlipped = false;
 				answerText.setText("");
 				questionView.setVisibility(View.VISIBLE);
@@ -186,14 +180,20 @@ public class FlashActivity extends AppCompatActivity implements Animation.Animat
 			currentView.clearAnimation();
 			currentView.setAnimation(animation2);
 			currentView.startAnimation(animation2);
-
 		}
-
 	}
 
+    /**
+     * Default methods implemented when the Class Animation.AnimationListener is implemented. No use as such for this project.
+     * @param animation Animation Object
+     */
 	@Override
 	public void onAnimationRepeat(Animation animation) {}
 
+    /**
+     * Default methods implemented when the Class Animation.AnimationListener is implemented. No use as such for this project.
+     * @param animation Animation Object
+     */
 	@Override
 	public void onAnimationStart(Animation animation) {}
 

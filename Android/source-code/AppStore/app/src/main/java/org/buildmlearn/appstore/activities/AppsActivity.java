@@ -16,11 +16,20 @@ import org.buildmlearn.appstore.utils.SpacesItemDecoration;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * This activity deals with the apps shown when "more" button on the Home Page is pressed. It shows a grid of all the apps in the Store.
+ * This activity extends Navigation Activity and thus has a navigation drawer(with "Home" selected) and a local search tool.
+ */
 public class AppsActivity extends NavigationActivity {
+
     private static RecyclerView mRecyclerView;
     private static Context mContext;
     private static TextView txtAppsActivity;
+
+    /**
+     * The method is executed first when the activity is created.
+     * @param savedInstanceState The bundle stores all the related parameters, if it has to be used when resuming the app.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +47,11 @@ public class AppsActivity extends NavigationActivity {
         mRecyclerView.addItemDecoration(new SpacesItemDecoration(spacingInPixels));
         mRecyclerView.setAdapter(adapter);
     }
+
+    /**
+     * This method is called from the Navigation Activity, which controls all the search view.
+     * @param query A string with search query.
+     */
     public static void refineSearch(String query)    {
         List<Apps> tempList=new ArrayList<>();
         if(query.equals("")){closeSearch();return;}
@@ -52,17 +66,25 @@ public class AppsActivity extends NavigationActivity {
             txtAppsActivity.setVisibility(View.GONE);
         }
         else{
-            txtAppsActivity.setText("Sorry, No app matches your search!");
+            txtAppsActivity.setText(mContext.getResources().getString(R.string.search_app_error));
             mRecyclerView.setVisibility(View.GONE);
             txtAppsActivity.setVisibility(View.VISIBLE);
         }
     }
+
+    /**
+     * This method is called from the Navigation Activity. It closes the search view for this activity.
+     */
     public static void closeSearch()    {
         mRecyclerView.setVisibility(View.VISIBLE);
         txtAppsActivity.setVisibility(View.GONE);
         CardViewAdapter adapter = new CardViewAdapter(SplashActivity.appList, mContext);
         mRecyclerView.setAdapter(adapter);
     }
+
+    /**
+     * It is automatically called when the back button is pressed. It closes the drawer, if it is in open state.
+     */
     @Override
     public void onBackPressed()
     {

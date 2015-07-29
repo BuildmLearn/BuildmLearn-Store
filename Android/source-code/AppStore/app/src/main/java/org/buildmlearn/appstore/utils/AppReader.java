@@ -26,13 +26,17 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by Srujan Jha on 6/6/2015.
+ * Helper class to read through different types of buildmlearn files-Info, Quiz, FlashCards and Spellings Puzzle.
  */
-
 public class AppReader {
     private static BufferedReader br;
     public static ArrayList<AppInfo>AppList;
 
+    /**
+     * Gets the list of Installed Apps.
+     * @param context Context object of the current Activity
+     * @return ArrayList of apps
+     */
     public static ArrayList<AppInfo> listApps(Context context) {
         ArrayList<AppInfo> mFileList = new ArrayList<>();
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(context);
@@ -74,6 +78,11 @@ public class AppReader {
         return mFileList;
     }
 
+    /**
+     * Reads the Info type of app
+     * @param myContext Context object of the Activity
+     * @param fileName Name of the file to be read
+     */
     public static void readInfoFile(Context myContext, String fileName) {
         InfoModel model = InfoModel.getInstance();
         ArrayList<String> stringList = new ArrayList<>();
@@ -109,6 +118,11 @@ public class AppReader {
         }
     }
 
+    /**
+     * Reads the Quiz type of app
+     * @param myContext Context object of the Activity
+     * @param fileName Name of the file to be read
+     */
     public static void readQuizFile(Context myContext, String fileName) {
         QuizModel model = QuizModel.getInstance();
         ArrayList<Question> mQuestionList = new ArrayList<>();
@@ -155,6 +169,11 @@ public class AppReader {
         }
     }
 
+    /**
+     * Reads the Spelling Puzzle type of app
+     * @param myContext Context object of the Activity
+     * @param fileName Name of the file to be read
+     */
     public static void readSpellingsContent(Context myContext, String fileName) {
 
         SpellingsModel model = SpellingsModel.getInstance();
@@ -192,8 +211,12 @@ public class AppReader {
         }
     }
 
+    /**
+     * Reads the FlashCards type of app
+     * @param myContext Context object of the Activity
+     * @param fileName Name of the file to be read
+     */
     public static void readFlashContent(Context myContext, String fileName) {
-
         FlashModel model = FlashModel.getInstance();
         ArrayList<Card> cardList = new ArrayList<>();
         try {
@@ -210,7 +233,6 @@ public class AppReader {
             NodeList nodeList = doc.getElementsByTagName("item");
             // looping through all item nodes <app>
             for (int i = 0; i < nodeList.getLength(); i++) {
-
                 Element elementInfo = (Element) nodeList.item(i);
                 Card card = new Card(
                         parser.getValue(elementInfo, "question"),

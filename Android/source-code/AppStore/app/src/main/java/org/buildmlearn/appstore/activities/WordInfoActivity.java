@@ -1,10 +1,5 @@
 package org.buildmlearn.appstore.activities;
 
-/**
- * Created by Srujan Jha on 06-06-2015.
- */
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -21,6 +16,9 @@ import org.buildmlearn.appstore.models.WordModel;
 import java.util.ArrayList;
 import java.util.Locale;
 
+/**
+ * This class deals with displaying result for Spellings Puzzle apps.
+ */
 public class WordInfoActivity extends AppCompatActivity {
 
 	private boolean isCorrect;
@@ -30,7 +28,10 @@ public class WordInfoActivity extends AppCompatActivity {
 	private TextToSpeech textToSpeech;
 	private int activeWordCount;
 
-	@SuppressLint("DefaultLocale")
+	/**
+	 * The method is executed first when the activity is created.
+	 * @param savedInstanceState The bundle stores all the related parameters, if it has to be used when resuming the app.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -40,7 +41,7 @@ public class WordInfoActivity extends AppCompatActivity {
 		mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				onBackPressed();
+				WordInfoActivity.this.onBackPressed();
 			}
 		});
 		mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
@@ -78,15 +79,14 @@ public class WordInfoActivity extends AppCompatActivity {
 		}
 		textToSpeech = new TextToSpeech(this,
 				new TextToSpeech.OnInitListener() {
-
 					@Override
 					public void onInit(int arg0) {
 						if (arg0 == TextToSpeech.SUCCESS) {
 							textToSpeech.setLanguage(Locale.US);
 							if (isCorrect)
-								convertTextToSpeech(getString(R.string.msg_successful));
+								WordInfoActivity.this.convertTextToSpeech(getString(R.string.msg_successful));
 							else
-								convertTextToSpeech(getString(R.string.msg_failure));
+								WordInfoActivity.this.convertTextToSpeech(getString(R.string.msg_failure));
 						}
 					}
 				});
@@ -96,37 +96,53 @@ public class WordInfoActivity extends AppCompatActivity {
 
 	}
 
-	@Override
+    /**
+     * Releases the resources used by the TextToSpeech engine. It is good
+     * practice for instance to call this method in the onDestroy() method of an
+     * Activity so the TextToSpeech engine can be cleanly stopped.
+     *
+     * @see android.app.Activity#onDestroy()
+     */
+    @Override
 	public void onDestroy() {
 		super.onDestroy();
 		textToSpeech.shutdown();
 	}
 
+    /**
+     * This method is called when Next button is pressed. It navigates to next question(if available), otherwise it navigates to ScoreActivity which shows the current score.
+     * @param v: It contains the view object of the button pressed.
+     */
 	public void doClick(View v) {
 		switch (v.getId()) {
 		case R.id.btn_next:
 			if (position < mList.size() - 1) {
 				mManager.setActiveCount(activeWordCount+1);
-
 				Intent spellingAgain = new Intent(this, SpellingActivity.class);
 				startActivity(spellingAgain);
 				finish();
 			} else {
-
 				Intent resultIntent = new Intent(this, ScoreActivity.class);
 				startActivity(resultIntent);
 				finish();
-
 			}
 			break;
 		}
 	}
 
+    /**
+     * This method converts the given text to speech. It is used by spellings puzzle.
+     * @param text: This is converted to speech.
+     */
 	@SuppressWarnings("deprecation")
 	private void convertTextToSpeech(String text) {
 
 		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
 	}
+
+	/**
+	 * This method is automatically called when the back button is pressed.
+	 */
 	@Override
 	public void onBackPressed()
 	{

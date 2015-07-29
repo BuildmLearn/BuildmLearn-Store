@@ -3,7 +3,7 @@ package org.buildmlearn.appstore.models;
 import android.graphics.Bitmap;
 
 /**
- * Created by Srujan Jha on 5/28/2015.
+ * Model class of the App, currently used for installed apps, rendered from the BuildmLearn file of the apps.
  */
 public class AppInfo {
     public String Name,Description,Category,Author,AuthorEmail;

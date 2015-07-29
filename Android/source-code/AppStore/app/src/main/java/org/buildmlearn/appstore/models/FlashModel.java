@@ -1,11 +1,10 @@
 package org.buildmlearn.appstore.models;
 
-/**
- * Created by Srujan Jha on 6/6/2015.
- */
-
 import java.util.ArrayList;
 
+/**
+ * Template model for the FlashCard type of apps.
+ */
 public class FlashModel {
 
 	private String mName;

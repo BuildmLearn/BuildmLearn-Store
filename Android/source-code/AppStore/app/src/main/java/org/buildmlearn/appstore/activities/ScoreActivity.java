@@ -1,9 +1,5 @@
 package org.buildmlearn.appstore.activities;
 
-/**
- * Created by Srujan Jha on 06-06-2015.
- */
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,21 +13,28 @@ import org.buildmlearn.appstore.R;
 import org.buildmlearn.appstore.models.QuizModel;
 import org.buildmlearn.appstore.models.SpellingsModel;
 
+/**
+ * This activity shows the current score (total answered, unanswered and total wrong attempts) related to
+ * the current Quiz or Spellings Puzzle app.
+ */
 public class ScoreActivity extends AppCompatActivity {
 	private QuizModel mQuizModel;
     private SpellingsModel mSpellingsModel;
     private int activity=0;// 0: Quiz Template and 1: Spellings Template
-	/** Called when the activity is first created. */
-	@Override
+	/**
+     * The method is executed first when the activity is created.
+     * @param savedInstanceState The bundle stores all the related parameters, if it has to be used when resuming the app.
+     */
+    @Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.score_view);
         Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_app_score_view);
         mToolbar.setNavigationIcon(R.drawable.ic_back);
-        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        mToolbar.setNavigationOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                ScoreActivity.this.onBackPressed();
             }
         });
         mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
@@ -62,31 +65,29 @@ public class ScoreActivity extends AppCompatActivity {
         SpellingsModel.clearInstance();
 		Button startAgainButton = (Button) findViewById(R.id.start_again_button);
 		startAgainButton.setOnClickListener(new OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
                 if (activity == 1) {
                     Intent myIntent = new Intent(arg0.getContext(),
                             SpellingActivity.class);
-                    startActivityForResult(myIntent, 0);
-                    finish();
+                    ScoreActivity.this.startActivityForResult(myIntent, 0);
+                    ScoreActivity.this.finish();
                 } else {
                     Intent myIntent = new Intent(arg0.getContext(),
                             QuestionActivity.class);
-                    startActivityForResult(myIntent, 0);
-                    finish();
+                    ScoreActivity.this.startActivityForResult(myIntent, 0);
+                    ScoreActivity.this.finish();
                 }
             }
         });
 
 		Button quitButton = (Button) findViewById(R.id.quit_button);
 		quitButton.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				finish();
-			}
-		});
+            @Override
+            public void onClick(View arg0) {
+                ScoreActivity.this.finish();
+            }
+        });
 	}
 
 }

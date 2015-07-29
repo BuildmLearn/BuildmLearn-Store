@@ -1,9 +1,5 @@
 package org.buildmlearn.appstore.utils;
 
-/**
- * Created by Srujan Jha on 25-05-2015.
- */
-
 import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v4.view.PagerAdapter;
@@ -19,7 +15,13 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+/**
+ * Helper class which extends to HorizontalScrollView, and sets the layout of the Tabs.
+ */
 public class SlidingTabLayout extends HorizontalScrollView {
+    /**
+     * Sets the Interface to color the tabs.
+     */
     public interface TabColorizer {
         int getIndicatorColor(int position);
     }
@@ -37,14 +39,29 @@ public class SlidingTabLayout extends HorizontalScrollView {
 
     private final SlidingTabStrip mTabStrip;
 
+    /**
+     * Constructor of the Helper Class.
+     * @param context Context object of the current Activity.
+     */
     public SlidingTabLayout(Context context) {
         this(context, null);
     }
 
+    /**
+     * Another Constructor of the Helper Class
+     * @param context Context object of the current Activity.
+     * @param attrs AttributeSet Object
+     */
     public SlidingTabLayout(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
+    /**
+     * Another Constructor of the Helper Class
+     * @param context Context Object of the current Activity.
+     * @param attrs AttributeSet Object
+     * @param defStyle Default Style Object
+     */
     public SlidingTabLayout(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         // Disable the Scroll Bar
@@ -59,7 +76,7 @@ public class SlidingTabLayout extends HorizontalScrollView {
     /**
      * Set the custom {@link TabColorizer} to be used.
      *
-     * If you only require simple custmisation then you can use
+     * If you only require simple customisation then you can use
      * {@link #setSelectedIndicatorColors(int...)} to achieve
      * similar effects.
      */
@@ -67,6 +84,9 @@ public class SlidingTabLayout extends HorizontalScrollView {
         mTabStrip.setCustomTabColorizer(tabColorizer);
     }
 
+    /**
+     * Distributes the tabs evenly in the available space.
+     */
     public void setDistributeEvenly() {
         mDistributeEvenly = true;
     }
@@ -140,6 +160,9 @@ public class SlidingTabLayout extends HorizontalScrollView {
         return textView;
     }
 
+    /**
+     * Populates tabs strip
+     */
     private void populateTabStrip() {
         final PagerAdapter adapter = mViewPager.getAdapter();
         final View.OnClickListener tabClickListener = new TabClickListener();
@@ -185,10 +208,18 @@ public class SlidingTabLayout extends HorizontalScrollView {
         }
     }
 
+    /**
+     * Sets the description to the Content Description property as the xml attribute to the view.
+     * @param i Current Index
+     * @param desc Description in String
+     */
     public void setContentDescription(int i, String desc) {
         mContentDescriptions.put(i, desc);
     }
 
+    /**
+     * This method is executed when the window is attached to the view.
+     */
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
@@ -198,12 +229,16 @@ public class SlidingTabLayout extends HorizontalScrollView {
         }
     }
 
+    /**
+     * Scrolls the tabs
+     * @param tabIndex Index of the current tab
+     * @param positionOffset Offset applied to the current tab
+     */
     private void scrollToTab(int tabIndex, int positionOffset) {
         final int tabStripChildCount = mTabStrip.getChildCount();
         if (tabStripChildCount == 0 || tabIndex < 0 || tabIndex >= tabStripChildCount) {
             return;
         }
-
         View selectedChild = mTabStrip.getChildAt(tabIndex);
         if (selectedChild != null) {
             int targetScrollX = selectedChild.getLeft() + positionOffset;
@@ -212,14 +247,22 @@ public class SlidingTabLayout extends HorizontalScrollView {
                 // If we're not at the first child and are mid-scroll, make sure we obey the offset
                 targetScrollX -= mTitleOffset;
             }
-
             scrollTo(targetScrollX, 0);
         }
     }
 
+    /**
+     * Helper class which implements a listener
+     */
     private class InternalViewPagerListener implements ViewPager.OnPageChangeListener {
         private int mScrollState;
 
+        /**
+         * This method is executed when the page is scrolled/swiped in the view-pager.
+         * @param position Current position of the page
+         * @param positionOffset Offset applied to the page
+         * @param positionOffsetPixels Offsets applied in term of pixels
+         */
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
             int tabStripChildCount = mTabStrip.getChildCount();
@@ -241,6 +284,10 @@ public class SlidingTabLayout extends HorizontalScrollView {
             }
         }
 
+        /**
+         * This method is executed when the page scrol state is changed.
+         * @param state The current state.
+         */
         @Override
         public void onPageScrollStateChanged(int state) {
             mScrollState = state;
@@ -250,6 +297,10 @@ public class SlidingTabLayout extends HorizontalScrollView {
             }
         }
 
+        /**
+         * This method is executed when a page is selected.
+         * @param position The position of the page which is currently in view.
+         */
         @Override
         public void onPageSelected(int position) {
             if (mScrollState == ViewPager.SCROLL_STATE_IDLE) {
@@ -266,6 +317,9 @@ public class SlidingTabLayout extends HorizontalScrollView {
 
     }
 
+    /**
+     * Helper class which implements a listener to the click/tap event on the tabs.
+     */
     private class TabClickListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {

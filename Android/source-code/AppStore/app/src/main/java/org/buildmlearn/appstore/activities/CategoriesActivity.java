@@ -1,9 +1,5 @@
 package org.buildmlearn.appstore.activities;
 
-/**
- * Created by Srujan Jha on 26-05-2015.
- */
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +17,10 @@ import org.buildmlearn.appstore.models.CategoriesCard;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This activity shows all the categories. The user is navigated to this page, when "Categories" is selected in the navigation drawer
+ * or "more" button is pressed in the Featured Categories section on the Home Page.
+ */
 public class CategoriesActivity extends NavigationActivity {
 
     private static List<CategoriesCard> mCategories;
@@ -28,6 +28,10 @@ public class CategoriesActivity extends NavigationActivity {
     private static Context mContext;
     private static TextView txtCategories;
 
+    /**
+     * The method is executed first when the activity is created.
+     * @param savedInstanceState The bundle stores all the related parameters, if it has to be used when resuming the app.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         NavigationActivity.mActive = R.id.navigation_item_2;
@@ -47,6 +51,11 @@ public class CategoriesActivity extends NavigationActivity {
         CategoriesAdapter adapter = new CategoriesAdapter(mCategories, this);
         mRecyclerView.setAdapter(adapter);
     }
+
+    /**
+     * This method is called from the Navigation Activity, which controls all the search view.
+     * @param query A string with search query.
+     */
     public static void refineSearch(String query)    {
         List<CategoriesCard> tempList=new ArrayList<>();
         if(query.equals("")){closeSearch();return;}
@@ -61,11 +70,15 @@ public class CategoriesActivity extends NavigationActivity {
             mRecyclerView.setVisibility(View.VISIBLE);
         }
         else{
-            txtCategories.setText("Sorry, No category matches your search!");
+            txtCategories.setText(mContext.getResources().getString(R.string.search_categories_error));
             mRecyclerView.setVisibility(View.GONE);
             txtCategories.setVisibility(View.VISIBLE);
         }
     }
+
+    /**
+     * This method is called from the Navigation Activity. It closes the search view for this activity.
+     */
     public static void closeSearch()    {
         CategoriesAdapter adapter = new CategoriesAdapter(mCategories, mContext);
         mRecyclerView.setAdapter(adapter);
@@ -78,6 +91,10 @@ public class CategoriesActivity extends NavigationActivity {
             mRecyclerView.setVisibility(View.VISIBLE);
         }
     }
+
+    /**
+     * This activity is automatically called when back button is pressed. It closes the navigation drawer, if it is already in open state. It navigates to Home Activity, after clearing all the Back Stacks.
+     */
     @Override
     public void onBackPressed() {
         closeSearch();

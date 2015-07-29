@@ -19,10 +19,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * Created by Srujan Jha on 6/19/2015.
+ * This adapter class populates cards related to categories in the Featured Categories section of the Home page.
  */
 public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAdapter.CardViewHolder> {
 
+    /**
+     * Holder class to contain all the views required during populating content into it.
+     */
     public static class CardViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
         //CardView cvApps;
         final TextView appTitle;
@@ -76,6 +79,11 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
     private final ArrayList<Integer> rndList = new ArrayList<>();
     private static Context mContext;
 
+    /**
+     * Constructor to the Adapter
+     * @param context: Context of the activity currently in view/active.
+     * @param x:Number of categories to be populated
+     */
     public CardCategoriesAdapter(Context context, int x) {
         mContext = context;
         Random rnd = new Random();
@@ -85,17 +93,32 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
         }
     }
 
+    /**
+     * Gets the total number of cards which is populated
+     * @return Size of the Categories-List which is randomly generated
+     */
     @Override
     public int getItemCount() {
         return rndList.size();
     }
 
+    /**
+     * Inflates the layout
+     * @param viewGroup:View group object, which is inflated with the current layout.
+     * @param i: Index of the object
+     * @return CardViewHolder object of the current view.
+     */
     @Override
     public CardViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.categories_card_store, viewGroup, false);
         return new CardViewHolder(v);
     }
 
+    /**
+     * It binds content to the views.
+     * @param cardViewHolder:Holder object which contains all the views which needs to be populated
+     * @param i:Index of the card, which is being populated.
+     */
     @Override
     public void onBindViewHolder(final CardViewHolder cardViewHolder, int i) {
 
@@ -107,10 +130,10 @@ public class CardCategoriesAdapter extends RecyclerView.Adapter<CardCategoriesAd
                 if (isLongClick) {
                     // View v at position pos is long-clicked.
                 } else {
-                    Intent i = new Intent(mContext, CategoriesView.class);
-                    i.putExtra("Category", CategoriesCard.CategoryName[rndList.get(pos)]);
-                    i.putExtra("Home",true);
-                    mContext.startActivity(i);
+                    Intent i1 = new Intent(mContext, CategoriesView.class);
+                    i1.putExtra("Category", CategoriesCard.CategoryName[rndList.get(pos)]);
+                    i1.putExtra("Home", true);
+                    mContext.startActivity(i1);
                     CategoriesActivity.closeSearch();
                     NavigationActivity.clearSearch();
                 }

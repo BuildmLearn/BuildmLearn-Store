@@ -27,6 +27,9 @@ import org.buildmlearn.appstore.models.WordModel;
 import java.util.ArrayList;
 import java.util.Locale;
 
+/**
+ * This activity renders the launched spellings puzzle app.
+ */
 public class SpellingActivity extends AppCompatActivity implements
 		TextToSpeech.OnInitListener {
 	private TextToSpeech textToSpeech;
@@ -38,19 +41,23 @@ public class SpellingActivity extends AppCompatActivity implements
 	private EditText mEt_Spelling;
 	private SeekBar mSb_SpeechRate;
 	private SpellingsModel mSpellingModel;
-	private int totalCorrect,totalWorng;
-	
-	
+	private int totalCorrect,totalWrong;
+
+
+	/**
+	 * The method is executed first when the activity is created.
+	 * @param savedInstanceState The bundle stores all the related parameters, if it has to be used when resuming the app.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_spelling);
 		Toolbar mToolbar = (Toolbar) findViewById(R.id.tool_bar_spelling);
 		mToolbar.setNavigationIcon(R.drawable.ic_back);
-		mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+		mToolbar.setNavigationOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				onBackPressed();
+				SpellingActivity.this.onBackPressed();
 			}
 		});
 		mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
@@ -64,20 +71,23 @@ public class SpellingActivity extends AppCompatActivity implements
 		mWordList = mSpellingModel.getSpellingsList();
 		count = mSpellingModel.getActiveCount();
 		totalCorrect=mSpellingModel.getTotalCorrect();
-		totalWorng=mSpellingModel.getTotalWrong();
+		totalWrong=mSpellingModel.getTotalWrong();
 		mTv_WordNumber.setText("Word #" + (count + 1) + " of "
                 + mWordList.size());
 	}
 
+    /**
+     * This method is executed when next/skip button is pressed, hence it populates the next question in the current view.
+     * If the last question is currently active, it navigates to the ScoreActivity to show the current score.
+     * @param view: It contains view object of the button.
+     */
 	public void click(View view) {
 		switch (view.getId()) {
 		case R.id.btn_skip:
 			if (count < mWordList.size() - 1) {
-
 				count++;
 				mSpellingModel.setActiveCount(count);
-				mTv_WordNumber.setText("Word #" + (count + 1) + " of "
-						+ mWordList.size());
+				mTv_WordNumber.setText("Word #" + (count + 1) + " of " + mWordList.size());
 				mBtn_Spell.setEnabled(false);
 				mBtn_Skip.setEnabled(false);
 				mBtn_Skip.setTextColor(getResources().getColor(R.color.primary_light));
@@ -89,7 +99,6 @@ public class SpellingActivity extends AppCompatActivity implements
 				finish();
 			}
 			break;
-
 		case R.id.btn_speak:
             if (Build.VERSION.RELEASE.startsWith("5"))convertTextToSpeech21(mWordList.get(count).getWord());
             else convertTextToSpeech(mWordList.get(count).getWord());
@@ -99,7 +108,6 @@ public class SpellingActivity extends AppCompatActivity implements
             mBtn_Skip.setEnabled(true);
 			break;
 		case R.id.btn_ready:
-
 			LayoutInflater factory = LayoutInflater.from(this);
 			final View textEntryView = factory.inflate(R.layout.dialog_spellinginput,null);
 			Builder builder = new Builder(this);
@@ -112,15 +120,13 @@ public class SpellingActivity extends AppCompatActivity implements
 			mEt_Spelling = (EditText) mAlert.findViewById(R.id.et_spelling);
 			Button mBtn_Submit = (Button) mAlert.findViewById(R.id.btn_submit);
 			mBtn_Submit.setOnClickListener(new OnClickListener() {
-
 				@Override
 				public void onClick(View v) {
-					submit();
+					SpellingActivity.this.submit();
 				}
 			});
 			break;
 		}
-
 	}
 
 	/**
@@ -137,8 +143,8 @@ public class SpellingActivity extends AppCompatActivity implements
 	}
 
 	/**
-	 * Speaks the string using the specified queuing strategy and speech
-	 * parameters.
+	 * Speaks the string using the specified queuing strategy and speech parameters.
+     * @param text: The text which is to be converted to speech
 	 */
 	@TargetApi(21)
 	private void convertTextToSpeech21(String text) {
@@ -147,14 +153,21 @@ public class SpellingActivity extends AppCompatActivity implements
 		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
 	}
 
-	@SuppressWarnings("deprecation")
+    /**
+     * Speaks the string using the specified queuing strategy and speech parameters.
+     * @param text: The text which is to be converted to speech
+     */
+    @SuppressWarnings("deprecation")
 	private void convertTextToSpeech(String text) {
 		float speechRate = getProgressValue(mSb_SpeechRate.getProgress());
 		textToSpeech.setSpeechRate(speechRate);
 		textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
 	}
 
-
+    /**
+     * Initializes the Speech Synthesis
+     * @param status: If the language is supported, it logs for the success.
+     */
 	@Override
 	public void onInit(int status) {
 		if (status == TextToSpeech.SUCCESS) {
@@ -164,10 +177,14 @@ public class SpellingActivity extends AppCompatActivity implements
 				Log.e("error", "This Language is not supported");
 			}
 		} else {
-			Log.e("error", "Initilization Failed!");
+			Log.e("error", "Initialization Failed!");
 		}
 	}
 
+    /**
+     * This method is called when the submit button is pressed. It populates the next question into the view.
+     * In case, the current view already has the last question, it navigates to the ScoreActivity.
+     */
 	private void submit() {
 		String input = mEt_Spelling.getText().toString().trim();
 		if (input.length() == 0) {
@@ -182,7 +199,7 @@ public class SpellingActivity extends AppCompatActivity implements
 				isCorrect = true;
 				mSpellingModel.setTotalCorrect(totalCorrect+1);
 			} else {
-				mSpellingModel.setTotalWrong(totalWorng+1);
+				mSpellingModel.setTotalWrong(totalWrong+1);
 			}
 			Intent wordInfoIntent = new Intent(SpellingActivity.this,
 					WordInfoActivity.class);
@@ -195,10 +212,20 @@ public class SpellingActivity extends AppCompatActivity implements
 		}
 	}
 
+    /**
+     * Gets the value of the seek-bar to represent the speech synthesis.
+     * @param percent: The value obtained from the seek-bar.
+     * @return Float value of twice the percent value obtained by the seek-bar, which determines speech synthesis rate.
+     */
 	private float getProgressValue(int percent) {
 		float temp = ((float) percent / 100);
 		return temp * 2;
 	}
+
+    /**
+     * It is automatically called when the back button is pressed. It clears all the instances of the Spellings Model, which are active.
+     * This helps in getting the correct result when a new instance is created.
+     */
 	@Override
 	public void onBackPressed()
 	{

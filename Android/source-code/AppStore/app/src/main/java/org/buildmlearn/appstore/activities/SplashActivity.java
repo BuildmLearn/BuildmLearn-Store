@@ -1,9 +1,5 @@
 package org.buildmlearn.appstore.activities;
 
-/**
- * Created by Srujan Jha on 25-05-2015.
- */
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -29,6 +25,9 @@ import java.util.List;
 import io.fabric.sdk.android.Fabric;
 import me.drakeet.materialdialog.MaterialDialog;
 
+/**
+ * Shows the splash screen and in the meanwhile, it download and renders the xml file.
+ */
 public class SplashActivity extends Activity {
     private final String XML="<applications>\n" +
             "<app>\n" +
@@ -271,8 +270,8 @@ public class SplashActivity extends Activity {
     private Context mContext;
 
     /**
-     *
-     * @param savedInstanceState
+     * The method is executed when the activity is created. SplashActivity deals with displaying a brand logo and in the meantime download/parse the xml data to be shown on the next page-store.
+     * @param savedInstanceState When resuming, this bundle will have all the parameters saved for this instance.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -281,9 +280,13 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.activity_splash);
         mContext=this;
         appList.clear();
-        checkInternet();
+        parseXML();
     }
-    private void checkInternet()
+
+    /**
+     * It parses the xml data to be shown on the store. If the phone is not connected to Internet, it displays a popup for the user to either connect the phone to internet and retry or exit the app.
+     */
+    private void parseXML()
     {
         try{
         if(!isNetworkAvailable())
@@ -292,12 +295,18 @@ public class SplashActivity extends Activity {
                     .setTitle("Network Connectivity")
                     .setMessage("No internet connection available!")
                     .setPositiveButton("RETRY", new View.OnClickListener() {
-                         @Override
-                         public void onClick(View v) {mAlertDialog.dismiss();checkInternet();}
+                        @Override
+                        public void onClick(View v) {
+                            mAlertDialog.dismiss();
+                            SplashActivity.this.parseXML();
+                        }
                     })
                     .setNegativeButton("OK", new View.OnClickListener() {
                         @Override
-                        public void onClick(View v) {mAlertDialog.dismiss();finish();}
+                        public void onClick(View v) {
+                            mAlertDialog.dismiss();
+                            SplashActivity.this.finish();
+                        }
                     });
             mAlertDialog.show();
         }
@@ -308,7 +317,7 @@ public class SplashActivity extends Activity {
                         XMLParser parser = new XMLParser();
                         // String xml = parser.getXmlFromUrl(URL); // getting XML
                         Document doc = parser.getDomElement(XML); // getting DOM element
-                        NodeList nodeList = doc.getElementsByTagName(KEY_ITEM);
+                        NodeList nodeList = doc.getElementsByTagName(KEY_ITEM); //getting the list of nodes by tag-name- app
                         // looping through all item nodes <app>
                         for (int i = 0; i < nodeList.getLength(); i++) {
                             Element elementApp = (Element) nodeList.item(i);
@@ -360,6 +369,11 @@ public class SplashActivity extends Activity {
         catch(Exception e){e.printStackTrace();
         }
     }
+
+    /**
+     * The method check whether the phone is connected to internet or not.
+     * @return true: if internet is available and false otherwise.
+     */
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);

@@ -1,24 +1,26 @@
 package org.buildmlearn.appstore.models;
 
 /**
- * Created by Srujan Jha on 6/6/2015.
+ * Template class for the words for the Spellings puzzle apps.
  */
 
 public class WordModel {
 
 	private String mWord;
 	private String mDescription;
+
 	public WordModel(String word,String description)
 	{
 		mWord=word;
 		mDescription=description;
 		
 	}
-	public String getWord() {
+
+    public String getWord() {
 		return mWord;
 	}
 
-	public String getDescription() {
+    public String getDescription() {
 		return mDescription;
 	}
 

@@ -25,15 +25,7 @@ import org.buildmlearn.appstore.R;
 import java.util.List;
 
 /**
- * A {@link PreferenceActivity} that presents a set of application settings. On
- * handset devices, settings are presented as a single list. On tablets,
- * settings are split by category, with category headers shown to the left of
- * the list of settings.
- * <p>
- * See <a href="http://developer.android.com/design/patterns/settings.html">
- * Android Design: Settings</a> for design guidelines and the <a
- * href="http://developer.android.com/guide/topics/ui/settings.html">Settings
- * API Guide</a> for more information on developing a Settings UI.
+ * This Activity extends to Preference Activity, and implements all the settings required by the app.
  */
 public class SettingsActivity extends PreferenceActivity{
     /**
@@ -46,6 +38,10 @@ public class SettingsActivity extends PreferenceActivity{
     private int numberOfInstalledApps=6;
     private static Context mContext;
 
+    /**
+     * The method is executed first when the activity is created.
+     * @param savedInstanceState The bundle stores all the related parameters, if it has to be used when resuming the app.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +54,7 @@ public class SettingsActivity extends PreferenceActivity{
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                SettingsActivity.this.onBackPressed();
             }
         });
         mToolbar.setTitle("Settings");
@@ -164,16 +160,19 @@ public class SettingsActivity extends PreferenceActivity{
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
-            if(preference.getKey().equals("number_featured_apps")){
-                int x;EditTextPreference txtCategories=(EditTextPreference)preference;
-                try{x=Integer.parseInt(stringValue);
-                    if(x<3)x=3;
-                    else if(x>SplashActivity.appList.size())x=SplashActivity.appList.size();
-                }catch (Exception e){x=6;}
-                txtCategories.setText(x+"");
+            if (preference.getKey().equals("number_featured_apps")) {
+                int x;
+                EditTextPreference txtCategories = (EditTextPreference) preference;
+                try {
+                    x = Integer.parseInt(stringValue);
+                    if (x < 3) x = 3;
+                    else if (x > SplashActivity.appList.size()) x = SplashActivity.appList.size();
+                } catch (Exception e) {
+                    x = 6;
+                }
+                txtCategories.setText(x + "");
                 preference.setSummary(x + "");
-            }
-            else preference.setSummary(stringValue);
+            } else preference.setSummary(stringValue);
             return true;
         }
     };
@@ -222,6 +221,10 @@ public class SettingsActivity extends PreferenceActivity{
             addPreferencesFromResource(R.xml.pref_about);
         }
     }
+
+    /**
+     * This method is called when the back button is pressed. It makes the changes to the preferences and navigates to the Home Page clearing all of the back stacks.
+     */
     @SuppressWarnings("deprecation")
     @Override
     public void onBackPressed()

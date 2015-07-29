@@ -22,9 +22,15 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 /**
- * Created by Srujan Jha on 5/29/2015.
+ * This is a helper class, which is used to parse xml files.
  */
 public class XMLParser {
+
+    /**
+     * It gets xml form a given url.
+     * @param url The link which contains the xml data.
+     * @return XML string
+     */
     @SuppressWarnings("deprecation")
     public String getXmlFromUrl(String url) {
         String xml = null;
@@ -43,17 +49,20 @@ public class XMLParser {
         // return XML
         return xml;
     }
+
+    /**
+     * Gets the Document object from the xml string.
+     * @param xml XML data
+     * @return Document object of the XML string.
+     */
     public Document getDomElement(String xml){
         Document doc;
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         try {
-
             DocumentBuilder db = dbf.newDocumentBuilder();
-
             InputSource is = new InputSource();
             is.setCharacterStream(new StringReader(xml));
             doc = db.parse(is);
-
         } catch (ParserConfigurationException e) {
             Log.e("Error: ", e.getMessage());
             return null;
@@ -67,12 +76,24 @@ public class XMLParser {
         // return DOM
         return doc;
     }
+
+    /**
+     * Gets the value of the item from the Document object.
+     * @param item Element object
+     * @param str Tag
+     * @return Value of the Element by tag name given in the Tag
+     */
     public String getValue(Element item, String str) {
         NodeList n = item.getElementsByTagName(str);
         return this.getElementValue(n.item(0));
     }
 
-    public final String getElementValue( Node elem ) {
+    /**
+     * Gets the element value of the node.
+     * @param elem Node object
+     * @return String value of the node
+     */
+    public final String getElementValue(Node elem) {
         Node child;
         if( elem != null){
             if (elem.hasChildNodes()){

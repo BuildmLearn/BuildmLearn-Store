@@ -51,10 +51,26 @@
     <string name="word">Word #</string>
     <string name="quiz_completion">You have completed the quiz!</string>
     <string name="more">more</string>
+    <string name="less">less</string>
     <string name="featured_apps">Featured Apps</string>
     <string name="launch">Launch</string>
     <string name="reviews">Reviews</string>
     <string name="screenshots">Screenshots</string>
     <string name="details">Details</string>
     <string name="additional_information">Additional Information</string>
+
+
+    <string name="email_body">BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students.
+        The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning.
+        The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\nI want you to try this.
+        http://www.buildmlearn.org
+        ThankYou.</string>
+    <string name="email_title">Try BuildmLearn Store</string>
+    <string name="email_subject">Try BuildmLearn Store</string>
+    <string name="share_title">How do you want to share?</string>
+    <string name="install_success">Thank you for installing </string>
+    <string name="uninstall_success">The app is uninstalled.</string>
+    <string name="no_email_client_error">There is no email client installed on this phone.</string>
+    <string name="feedback_subject">BuildmLearn Store Feedback</string>
+
 </resources>

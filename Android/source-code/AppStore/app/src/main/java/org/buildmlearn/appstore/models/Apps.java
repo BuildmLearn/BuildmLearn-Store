@@ -5,7 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by Srujan Jha on 5/29/2015.
+ * Model class of the app, currently used for store apps, rendered from the Store XML.
  */
 public class Apps implements Parcelable {
     public String Name,Description,Category,Author,AuthorEmail,AppIcon,Type;
@@ -30,7 +30,9 @@ public class Apps implements Parcelable {
         for (String Screenshot : Screenshots) dest.writeString(Screenshot);
 
     }
-    // this is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
+    /**
+     * This is used to regenerate your object. All Parcelables must have a CREATOR that implements these two methods
+     */
     public static final Parcelable.Creator<Apps> CREATOR = new Parcelable.Creator<Apps>() {
         public Apps createFromParcel(Parcel in) {
             return new Apps(in);
@@ -41,7 +43,10 @@ public class Apps implements Parcelable {
         }
     };
 
-    // example constructor that takes a Parcel and gives you an object populated with it's values
+    /**
+     * Example constructor that takes a Parcel and gives you an object populated with it's values
+     * @param in Parcelable object
+     */
     private Apps(Parcel in) {
         Name=in.readString();
         Description=in.readString();

@@ -32,10 +32,13 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Created by Srujan Jha on 5/29/2015.
+ * An Adapter class, which populates cards related to apps in various activities like HomeActivity, AppsActivity etc.
  */
 public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardViewHolder> {
 
+    /**
+     * Holder class to contain all the views required during populating content into it.
+     */
     public static class CardViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
         //CardView cvApps;
         final TextView appTitle;
@@ -96,6 +99,12 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
     private List<Apps> apps= new ArrayList<>();
     private final ArrayList<Integer> rndList = new ArrayList<>();
     private static Context mContext;
+    /**
+     * Constructor to the Adapter class
+     * @param apps: List of apps which needs to be populated.
+     * @param context: Context of the activity currently in view/active.
+     * @param x:Number of categories to be populated
+     */
     public CardViewAdapter(List<Apps> apps,Context context,int x) {
         this.apps.clear();
         this.apps = apps;
@@ -106,23 +115,44 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         }
         mContext=context;
     }
+
+    /**
+     * Constructor of the Adapter class
+     * @param apps List of apps which needs to be populated
+     * @param context Context of the current Activity
+     */
     public CardViewAdapter(List<Apps> apps,Context context) {
         this.apps.clear();
         this.apps = apps;
         for(int i=0;i<apps.size();i++)rndList.add(i);
         mContext=context;
     }
+    /**
+     * Gets the total number of app-cards which is populated
+     * @return Size of the App-List which is randomly generated
+     */
     @Override
     public int getItemCount() {
         return rndList.size();
     }
 
+    /**
+     * Inflates the layout
+     * @param viewGroup: contains the viewgroup object which is being populated
+     * @param i Current index
+     * @return CardViewHolder Object of the current view
+     */
     @Override
     public CardViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.app_card_small, viewGroup, false);
         return new CardViewHolder(v);
     }
 
+    /**
+     * Binds content to the cardviewholder object
+     * @param cardViewHolder Contains the cardviewholder object of the view.
+     * @param i Index of the populated view.
+     */
     @Override
     public void onBindViewHolder(final CardViewHolder cardViewHolder, final int i) {
         if(apps.get(rndList.get(i)).Name.length()<11)
@@ -138,20 +168,20 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                 if (isLongClick) {
                     // View v at position pos is long-clicked.
                 } else {
-                    Intent i = new Intent(mContext, AppDetails.class);
-                    i.putExtra("App", apps.get(rndList.get(pos)));
-                    /*String appName=apps.get(pos).Name;
-                    for(AppInfo app: AppReader.AppList) {
-                        if (app.Name.equals(appName)) {
-                            i.putExtra("mActive", true);
-                            i.putExtra("option", app.Type);
-                            i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
-                            mContext.startActivity(i);
-                            return;
-                        }
-                    }*/
-                    i.putExtra("mActive", false);
-                    mContext.startActivity(i);
+                    Intent i1 = new Intent(mContext, AppDetails.class);
+                    i1.putExtra("App", apps.get(rndList.get(pos)));
+                /*String appName=apps.get(pos).Name;
+                for(AppInfo app: AppReader.AppList) {
+                    if (app.Name.equals(appName)) {
+                        i.putExtra("mActive", true);
+                        i.putExtra("option", app.Type);
+                        i.putExtra("filename", "Apps/" + apps.get(pos).Name + ".buildmlearn");
+                        mContext.startActivity(i);
+                        return;
+                    }
+                }*/
+                    i1.putExtra("mActive", false);
+                    mContext.startActivity(i1);
                 }
             }
         });
@@ -160,54 +190,54 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
             @Override
             public void onClick(final View v) {
                 SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
-                boolean mActive=SP.getBoolean(apps.get(rndList.get(i)).Name,false);
+                boolean mActive = SP.getBoolean(apps.get(rndList.get(i)).Name, false);
                 //Creating the instance of PopupMenu
                 PopupMenu popup = new PopupMenu(mContext, cardViewHolder.btnShowMore);
                 //Inflating the Popup using xml file
-                if(mActive)popup.getMenuInflater().inflate(R.menu.menu_popup_apps_launch, popup.getMenu());
+                if (mActive)
+                    popup.getMenuInflater().inflate(R.menu.menu_popup_apps_launch, popup.getMenu());
                 else popup.getMenuInflater().inflate(R.menu.menu_popup_apps, popup.getMenu());
                 //registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         if (item.getItemId() == R.id.menu_install) {
-                            SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
-                            SharedPreferences.Editor editor1 = SP.edit();
+                            SharedPreferences SP1 = PreferenceManager.getDefaultSharedPreferences(mContext);
+                            SharedPreferences.Editor editor1 = SP1.edit();
                             editor1.putBoolean(v.getTag().toString(), true);
                             editor1.apply();
                             NavigationActivity.clearSearch();
-                            NavigationActivity.showSnackBar("Thank you for installing " + v.getTag().toString());
-                            Snackbar.make(v, "Thank you for installing " + v.getTag().toString(), Snackbar.LENGTH_LONG);
-                            if(AppReader.listApps(mContext).size()==1){Intent i = new Intent(mContext, HomeActivity.class);
-                                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                i.putExtra("View",1);
-                                mContext.startActivity(i);
+                            Snackbar.make(NavigationActivity.frameLayout, "Thank you for installing " + v.getTag().toString(), Snackbar.LENGTH_LONG).show();
+                            if (AppReader.listApps(mContext).size() == 1) {
+                                Intent i1 = new Intent(mContext, HomeActivity.class);
+                                i1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                i1.putExtra("View", 1);
+                                mContext.startActivity(i1);
                                 Activity activity = (Activity) mContext;
-                                activity.finish();}
+                                activity.finish();
+                            }
+                        } else if (item.getItemId() == R.id.menu_launch) {
+                            Intent intent = new Intent(mContext, StartActivity.class);
+                            String appName = apps.get(rndList.get(i)).Name;
+                            intent.putExtra("filename", appName);
+                            mContext.startActivity(intent);
+                            NavigationActivity.clearSearch();
+                        }
+                        if (item.getItemId() == R.id.menu_share_2) {
+                            Intent intent = new Intent(Intent.ACTION_SEND);
+                            intent.setType("text/plain");
+                            intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);// Add data to the intent, the receiving app will decide what to do with it.
+                            intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
+                            intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
+                            intent.putExtra(Intent.EXTRA_TITLE, "BuildmLearn AppStore");
+                            mContext.startActivity(Intent.createChooser(intent, "How do you want to share?"));
+                            NavigationActivity.clearSearch();
+                        }
+                        return true;
                     }
-                    else if(item.getItemId()==R.id.menu_launch)
-                    {
-                        Intent intent = new Intent(mContext, StartActivity.class);
-                        String appName = apps.get(rndList.get(i)).Name;
-                        intent.putExtra("filename",appName);
-                        mContext.startActivity(intent);
-                        NavigationActivity.clearSearch();
-                    }
-                    if(item.getItemId()==R.id.menu_share_2)
-                    {
-                        Intent intent = new Intent(android.content.Intent.ACTION_SEND);
-                        intent.setType("text/plain");
-                        intent.addFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);// Add data to the intent, the receiving app will decide what to do with it.
-                        intent.putExtra(Intent.EXTRA_SUBJECT, "Try BuildmLearn AppStore !!!");
-                        intent.putExtra(Intent.EXTRA_TEXT, "BuildmLearn is a group of volunteers who collaborate to promote m-Learning with the specific aim of creating open source tools and enablers for teachers and students. The group is involved in developing easy to use m-Learning solutions, tool-kits and utilities for teachers (or parents) and students that help facilitate learning. The group comprises several like minded members of a wider community who collaborate to participate in a community building process.\n\nI want you to try this.\n\nhttp://www.buildmlearn.org\n\nThankYou.");
-                        intent.putExtra(Intent.EXTRA_TITLE, "BuildmLearn AppStore");
-                        mContext.startActivity(Intent.createChooser(intent, "How do you want to share?"));
-                        NavigationActivity.clearSearch();
-                    }
-                    return true;
-                }
-            });
+                });
                 popup.show();//showing popup menu
             }
-            });//closing the setOnClickListener method
+        });//closing the setOnClickListener method
     }
 }

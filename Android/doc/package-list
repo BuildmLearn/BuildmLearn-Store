@@ -1,0 +1,5 @@
+org.buildmlearn.appstore.activities
+org.buildmlearn.appstore.adapters
+org.buildmlearn.appstore.fragments
+org.buildmlearn.appstore.models
+org.buildmlearn.appstore.utils

@@ -1,8 +1,5 @@
 package org.buildmlearn.appstore.activities;
 
-/**
- * Created by Srujan Jha on 06-06-2015.
- */
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -22,11 +19,18 @@ import org.buildmlearn.appstore.utils.AppReader;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * This is the stating page, which is navigated to, when an app is launched. It reads through the respective buildmlearn file for the app, which has to be rendered.
+ */
 public class StartActivity extends AppCompatActivity implements OnClickListener {
 
 	private int mOption;
 	private TextView author, title;
 
+	/**
+	 * The method is executed first when the activity is created.
+	 * @param savedInstanceState The bundle stores all the related parameters, if it has to be used when resuming the app.
+	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -50,16 +54,29 @@ public class StartActivity extends AppCompatActivity implements OnClickListener 
 		new FileReadTask(mOption, filePath).execute();
 	}
 
+	/**
+	 * This class is a private async class, which renders different type of buildmlearn files to launch particular type of apps.
+	 */
 	private class FileReadTask extends AsyncTask<Void, Void, Void> {
 
 		final int mOption;
 		final String mFilePath;
 
+        /**
+         * This is a default constructor called when an object is created for this class.
+         * @param option: It contains the type of the file which is to be rendered.
+         * @param filePath: It contains the path of the file, which is to be rendered.
+         */
 		public FileReadTask(int option, String filePath) {
 			this.mOption = option;
 			this.mFilePath = filePath;
 		}
 
+        /**
+         * This method is automatically called, when the class is set to be executed.
+         * @param params: It contains null.
+         * @return It being a Void Task, returns null.
+         */
 		@Override
 		protected Void doInBackground(Void... params) {
 			switch (mOption) {
@@ -79,6 +96,10 @@ public class StartActivity extends AppCompatActivity implements OnClickListener 
 			return null;
 		}
 
+        /**
+         * This method is called after the task has been performed.
+         * @param result: It does not contain any valid information, being null from the doInBackground() method.
+         */
 		@Override
 		protected void onPostExecute(Void result) {
 			super.onPostExecute(result);
@@ -86,60 +107,51 @@ public class StartActivity extends AppCompatActivity implements OnClickListener 
 			case 0:
 				author.setText(InfoModel.getInstance().getInfoAuthor());
 				title.setText(InfoModel.getInstance().getInfoName());
-
 				break;
 			case 1:
 				author.setText(FlashModel.getInstance().getAuthor());
 				title.setText(FlashModel.getInstance().getName());
-
 				break;
-
 			case 2:
 				author.setText(QuizModel.getInstance().getQuizAuthor());
 				title.setText(QuizModel.getInstance().getQuizName());
-
 				break;
-
 			case 3:
 				author.setText(SpellingsModel.getInstance().getPuzzleAuthor());
 				title.setText(SpellingsModel.getInstance().getPuzzleName());
 				break;
-				
 			}
 		}
-
 	}
 
+    /**
+     * This method is called when the start button is pressed, and it navigates to respective activity depending on the type of the app which is launched.
+     * @param v View Object of the button pressed
+     */
 	@Override
 	public void onClick(View v) {
 		switch (mOption) {
 		case 0:
-			Intent infoIntent = new Intent(StartActivity.this,
-					InfoActivity.class);
+			Intent infoIntent = new Intent(StartActivity.this,InfoActivity.class);
 			startActivity(infoIntent);
 			finish();
 			break;
 
 		case 1:
-			Intent flashIntent = new Intent(StartActivity.this,
-					FlashActivity.class);
+			Intent flashIntent = new Intent(StartActivity.this,FlashActivity.class);
 			startActivity(flashIntent);
 			finish();
 			break;
 
 		case 2:
-			Intent quizIntent = new Intent(StartActivity.this,
-					QuestionActivity.class);
+			Intent quizIntent = new Intent(StartActivity.this,QuestionActivity.class);
 			startActivity(quizIntent);
 			finish();
 			break;
 		case 3:
-			Intent spellingIntent = new Intent(StartActivity.this,
-					SpellingActivity.class);
+			Intent spellingIntent = new Intent(StartActivity.this,SpellingActivity.class);
 			startActivity(spellingIntent);
 			finish();
 		}
-
 	}
-
 }

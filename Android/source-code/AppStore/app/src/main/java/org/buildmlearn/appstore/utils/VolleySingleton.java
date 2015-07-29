@@ -9,13 +9,17 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
 /**
- * Created by Srujan Jha on 5/30/2015.
+ * Singleton class of the Volley
  */
 public class VolleySingleton {
 
     private static VolleySingleton instance;
     private static ImageLoader imageLoader;
 
+    /**
+     * Private Constructor of the class
+     * @param context Context object of the current activity
+     */
     private VolleySingleton(Context context) {
         RequestQueue requestQueue = Volley.newRequestQueue(context);
 
@@ -35,7 +39,11 @@ public class VolleySingleton {
         });
     }
 
-
+    /**
+     * Gets the instance of the Volley
+     * @param context Context object of the current Activity
+     * @return The object of VolleySingleton class
+     */
     public static VolleySingleton getInstance(Context context) {
         if (instance == null) {
             instance = new VolleySingleton(context);
@@ -43,6 +51,10 @@ public class VolleySingleton {
         return instance;
     }
 
+    /**
+     * Gets the ImageLoader instance of the Volley
+     * @return ImageLoader Object
+     */
     public ImageLoader getImageLoader() {
         return imageLoader;
     }
