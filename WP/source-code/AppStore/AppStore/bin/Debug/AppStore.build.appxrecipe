@@ -1,385 +1,387 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SRUJAN</Machine>
-    <WindowsUser>Srujan Jha</WindowsUser>
+    <Machine>LAPTOP-SRUJAN</Machine>
+    <WindowsUser>Srujan</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>801c2a9a-7f98-47ab-a48a-510297690696</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\AppStore.exe">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\AppStore.exe">
       <PackagePath>AppStore.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Animal.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Animal.xml">
       <PackagePath>Assets\Apps\Animal.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Biology Info.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Biology Info.xml">
       <PackagePath>Assets\Apps\Biology Info.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Biology Quiz.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Biology Quiz.xml">
       <PackagePath>Assets\Apps\Biology Quiz.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Biology.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Biology.xml">
       <PackagePath>Assets\Apps\Biology.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Chemistry Quiz.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Chemistry Quiz.xml">
       <PackagePath>Assets\Apps\Chemistry Quiz.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Chemistry Spellings.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Chemistry Spellings.xml">
       <PackagePath>Assets\Apps\Chemistry Spellings.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\English Words.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\English Words.xml">
       <PackagePath>Assets\Apps\English Words.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Festivals.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Festivals.xml">
       <PackagePath>Assets\Apps\Festivals.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\History Info..xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\History Info..xml">
       <PackagePath>Assets\Apps\History Info..xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Maths Info.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Maths Info.xml">
       <PackagePath>Assets\Apps\Maths Info.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Maths Puzzle.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Maths Puzzle.xml">
       <PackagePath>Assets\Apps\Maths Puzzle.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Physics Flashcards.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Physics Flashcards.xml">
       <PackagePath>Assets\Apps\Physics Flashcards.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Physics Info.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Physics Info.xml">
       <PackagePath>Assets\Apps\Physics Info.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Spell.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Spell.xml">
       <PackagePath>Assets\Apps\Spell.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Vocabulary.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Apps\Vocabulary.xml">
       <PackagePath>Assets\Apps\Vocabulary.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\BuildmLearnStore.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\BuildmLearnStore.xml">
       <PackagePath>Assets\BuildmLearnStore.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\aka.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\aka.png">
       <PackagePath>Assets\aka.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\background_header.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\background_header.png">
       <PackagePath>Assets\background_header.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_biology.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_biology.png">
       <PackagePath>Assets\card_biology.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_chemistry.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_chemistry.png">
       <PackagePath>Assets\card_chemistry.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_english.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_english.png">
       <PackagePath>Assets\card_english.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_geography.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_geography.png">
       <PackagePath>Assets\card_geography.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_history.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_history.png">
       <PackagePath>Assets\card_history.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_literature.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_literature.png">
       <PackagePath>Assets\card_literature.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_mathematics.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_mathematics.png">
       <PackagePath>Assets\card_mathematics.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_physics.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_physics.png">
       <PackagePath>Assets\card_physics.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_science.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_science.png">
       <PackagePath>Assets\card_science.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_socialstudies.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\card_socialstudies.png">
       <PackagePath>Assets\card_socialstudies.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Animal.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Animal.png">
       <PackagePath>Assets\Icons\Animal.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Biology Info.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Biology Info.png">
       <PackagePath>Assets\Icons\Biology Info.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Biology Quiz.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Biology Quiz.png">
       <PackagePath>Assets\Icons\Biology Quiz.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Biology.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Biology.png">
       <PackagePath>Assets\Icons\Biology.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Chemistry Quiz.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Chemistry Quiz.png">
       <PackagePath>Assets\Icons\Chemistry Quiz.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Chemistry Spellings.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Chemistry Spellings.png">
       <PackagePath>Assets\Icons\Chemistry Spellings.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\English Words.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\English Words.png">
       <PackagePath>Assets\Icons\English Words.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Festivals.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Festivals.png">
       <PackagePath>Assets\Icons\Festivals.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\History Info.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\History Info.png">
       <PackagePath>Assets\Icons\History Info.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Maths Info.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Maths Info.png">
       <PackagePath>Assets\Icons\Maths Info.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Maths Puzzle.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Maths Puzzle.png">
       <PackagePath>Assets\Icons\Maths Puzzle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Physics Flashcards.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Physics Flashcards.png">
       <PackagePath>Assets\Icons\Physics Flashcards.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Physics Info.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Physics Info.png">
       <PackagePath>Assets\Icons\Physics Info.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Spell.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Spell.png">
       <PackagePath>Assets\Icons\Spell.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Vocabulary.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Icons\Vocabulary.png">
       <PackagePath>Assets\Icons\Vocabulary.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_action.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_action.png">
       <PackagePath>Assets\ic_action.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_action_device_access_volume_on.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_action_device_access_volume_on.png">
       <PackagePath>Assets\ic_action_device_access_volume_on.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_addwish.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_addwish.png">
       <PackagePath>Assets\ic_addwish.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_back.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_back.png">
       <PackagePath>Assets\ic_back.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_categories.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_categories.png">
       <PackagePath>Assets\ic_categories.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_categories_g.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_categories_g.png">
       <PackagePath>Assets\ic_categories_g.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_close.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_close.png">
       <PackagePath>Assets\ic_close.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_downloads.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_downloads.png">
       <PackagePath>Assets\ic_downloads.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_feedback.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_feedback.png">
       <PackagePath>Assets\ic_feedback.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_feedback_g.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_feedback_g.png">
       <PackagePath>Assets\ic_feedback_g.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_home.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_home.png">
       <PackagePath>Assets\ic_home.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_home_g.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_home_g.png">
       <PackagePath>Assets\ic_home_g.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_logout.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_logout.png">
       <PackagePath>Assets\ic_logout.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_logout_g.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_logout_g.png">
       <PackagePath>Assets\ic_logout_g.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_mail.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_mail.png">
       <PackagePath>Assets\ic_mail.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_more.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_more.png">
       <PackagePath>Assets\ic_more.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_myapps.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_myapps.png">
       <PackagePath>Assets\ic_myapps.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_myapps_g.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_myapps_g.png">
       <PackagePath>Assets\ic_myapps_g.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_search.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_search.png">
       <PackagePath>Assets\ic_search.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_search_g.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_search_g.png">
       <PackagePath>Assets\ic_search_g.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_search_w.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_search_w.png">
       <PackagePath>Assets\ic_search_w.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_settings.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_settings.png">
       <PackagePath>Assets\ic_settings.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_settings_g.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_settings_g.png">
       <PackagePath>Assets\ic_settings_g.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_share.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\ic_share.png">
       <PackagePath>Assets\ic_share.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Logo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Logo.scale-140.png">
       <PackagePath>Assets\Logo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo1.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo1.png">
       <PackagePath>Assets\logo1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_a.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_a.png">
       <PackagePath>Assets\logo_a.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_a1.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_a1.png">
       <PackagePath>Assets\logo_a1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_b.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_b.png">
       <PackagePath>Assets\logo_b.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_c.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_c.png">
       <PackagePath>Assets\logo_c.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_h.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_h.png">
       <PackagePath>Assets\logo_h.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_l.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_l.png">
       <PackagePath>Assets\logo_l.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_m.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_m.png">
       <PackagePath>Assets\logo_m.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_p.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\logo_p.png">
       <PackagePath>Assets\logo_p.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\notavailable.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\notavailable.png">
       <PackagePath>Assets\notavailable.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SmallLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SmallLogo.scale-140.png">
       <PackagePath>Assets\SmallLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\spinner_triangle.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\spinner_triangle.png">
       <PackagePath>Assets\spinner_triangle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\splash.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\splash.png">
       <PackagePath>Assets\splash.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SplashScreen.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SplashScreen.scale-140.png">
       <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Square71x71Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Square71x71Logo.scale-100.png">
       <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Square71x71Logo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Square71x71Logo.scale-140.png">
       <PackagePath>Assets\Square71x71Logo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\StoreLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\StoreLogo.scale-140.png">
       <PackagePath>Assets\StoreLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\WideLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\WideLogo.scale-100.png">
       <PackagePath>Assets\WideLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\WideLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\WideLogo.scale-140.png">
       <PackagePath>Assets\WideLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\App.xbf">
-      <PackagePath>App.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\AppDetailsPage.xbf">
-      <PackagePath>AppDetailsPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\CategoriesPage.xbf">
-      <PackagePath>CategoriesPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\CategoryPage.xbf">
-      <PackagePath>CategoryPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\MyAppsPage.xbf">
-      <PackagePath>MyAppsPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\SearchPage.xbf">
-      <PackagePath>SearchPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Settings.xbf">
-      <PackagePath>Settings.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\FlashCardPage.xbf">
-      <PackagePath>Templates\FlashCardPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\InfoDetailPage.xbf">
-      <PackagePath>Templates\InfoDetailPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\InfoPage.xbf">
-      <PackagePath>Templates\InfoPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\QuizPage.xbf">
-      <PackagePath>Templates\QuizPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\ScorePage.xbf">
-      <PackagePath>Templates\ScorePage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\SpellingsPage.xbf">
-      <PackagePath>Templates\SpellingsPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\StartPage.xbf">
-      <PackagePath>Templates\StartPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\WordInfoPage.xbf">
-      <PackagePath>Templates\WordInfoPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\AppStore.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\AppStore.xr.xml">
       <PackagePath>AppStore.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan Jha\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\AppDetailsPage.xbf">
+      <PackagePath>AppDetailsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\CategoriesPage.xbf">
+      <PackagePath>CategoriesPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\CategoryPage.xbf">
+      <PackagePath>CategoryPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\MyAppsPage.xbf">
+      <PackagePath>MyAppsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\SearchPage.xbf">
+      <PackagePath>SearchPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Settings.xbf">
+      <PackagePath>Settings.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\FlashCardPage.xbf">
+      <PackagePath>Templates\FlashCardPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\InfoDetailPage.xbf">
+      <PackagePath>Templates\InfoDetailPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\InfoPage.xbf">
+      <PackagePath>Templates\InfoPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\QuizPage.xbf">
+      <PackagePath>Templates\QuizPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\ScorePage.xbf">
+      <PackagePath>Templates\ScorePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\SpellingsPage.xbf">
+      <PackagePath>Templates\SpellingsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\StartPage.xbf">
+      <PackagePath>Templates\StartPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\WordInfoPage.xbf">
+      <PackagePath>Templates\WordInfoPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

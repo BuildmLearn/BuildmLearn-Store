@@ -20,22 +20,21 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="BuildmLearn Store" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <StackPanel Orientation="Horizontal">
-                <Image Name="imgAppIcon" Height="110" Width="110" Source="Assets/notavailable.png"/>
-                <StackPanel Margin="10,0,0,0">
-                    <TextBlock Name="txtAppName" Text="App Name" FontSize="30" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontWeight="Bold"/>
-                    <TextBlock Name="txtAppAuthor" Text="App Author" FontSize="20" Opacity="0.9" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                <TextBlock Text="BuildmLearn Store" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+                <StackPanel Orientation="Horizontal">
+                    <Image Name="imgAppIcon" Height="110" Width="110" Source="Assets/notavailable.png"/>
+                    <StackPanel Margin="10,0,0,0">
+                        <TextBlock Name="txtAppName" Text="App Name" FontSize="30" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontWeight="Bold"/>
+                        <TextBlock Name="txtAppAuthor" Text="App Author" FontSize="20" Opacity="0.9" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
                         <StackPanel Orientation="Horizontal">
-                    <Button Name="btnAppInstall" Content="INSTALL" Background="#FF1976D2" Foreground="White" BorderThickness="0" FontFamily="Global User Interface" Click="btnAppInstall_Click" />
+                            <Button Name="btnAppInstall" Content="INSTALL" Background="#FF1976D2" Foreground="White" BorderThickness="0" FontFamily="Global User Interface" Click="btnAppInstall_Click" />
                             <Button Name="btnAppShare" Margin="10,0,0,0" Content="Share" Background="White" Foreground="Black" BorderThickness="0" FontFamily="Global User Interface" Click="btnAppShare_Click" />
-                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
-        </StackPanel>
-        <!--TODO: Content should be placed within the following grid-->
-        <ScrollViewer Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <ScrollViewer Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <StackPanel>
                 <TextBlock Text="Details" FontSize="25" FontWeight="Bold" Foreground="#FF1976D2"/>
                 <TextBlock Name="txtAppDetails" FontSize="20" TextWrapping="Wrap"/>
@@ -58,7 +57,10 @@
                     <TextBlock Name="txtAddInfo1" FontSize="20" TextWrapping="Wrap"/>
                     <TextBlock Name="txtAddInfo2" Margin="10,0,0,0" FontSize="20" TextWrapping="Wrap"/>
                 </StackPanel>
-            </StackPanel>
+                    <TextBlock Margin="0,5" Text="Reviews" FontSize="25" FontWeight="Bold" Foreground="#FF1976D2"/>
+                    <WebView Name="webAppReviews" Height="250" FrameDOMContentLoaded="webAppReviews_FrameDOMContentLoaded" IsHitTestVisible="False"/>
+                    <HyperlinkButton Name="OpenInBrowser" IsEnabled="False" Click="HyperlinkButton_Click" Content="Open reviews in browser" Foreground="#FF1976D2"/>
+                </StackPanel>
         </ScrollViewer>
     </Grid>
         <Grid x:Name="FullScreen" Visibility="Collapsed" >
@@ -79,6 +81,7 @@
                 </AppBarButton>
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
+                <AppBarButton Label="open reviews in browser" Click="Browser_Click"/>
                 <AppBarButton Label="settings" Click="Settings_Click"/>
                 <AppBarButton Label="feedback" Click="Feedback_Click"/>
                 <AppBarButton Label="about" Click="About_Click"/>

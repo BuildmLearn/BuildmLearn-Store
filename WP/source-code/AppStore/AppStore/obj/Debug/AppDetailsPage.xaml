@@ -20,22 +20,21 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="BuildmLearn Store" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <StackPanel Orientation="Horizontal">
-                <Image Name="imgAppIcon" Height="110" Width="110" Source="Assets/notavailable.png"/>
-                <StackPanel Margin="10,0,0,0">
-                    <TextBlock Name="txtAppName" Text="App Name" FontSize="30" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontWeight="Bold"/>
-                    <TextBlock Name="txtAppAuthor" Text="App Author" FontSize="20" Opacity="0.9" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                <TextBlock Text="BuildmLearn Store" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+                <StackPanel Orientation="Horizontal">
+                    <Image Name="imgAppIcon" Height="110" Width="110" Source="Assets/notavailable.png"/>
+                    <StackPanel Margin="10,0,0,0">
+                        <TextBlock Name="txtAppName" Text="App Name" FontSize="30" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontWeight="Bold"/>
+                        <TextBlock Name="txtAppAuthor" Text="App Author" FontSize="20" Opacity="0.9" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
                         <StackPanel Orientation="Horizontal">
-                    <Button x:ConnectionId='4' Name="btnAppInstall" Content="INSTALL" Background="#FF1976D2" Foreground="White" BorderThickness="0" FontFamily="Global User Interface"                             />
-                            <Button x:ConnectionId='5' Name="btnAppShare" Margin="10,0,0,0" Content="Share" Background="White" Foreground="Black" BorderThickness="0" FontFamily="Global User Interface"                           />
-                            </StackPanel>
+                            <Button x:ConnectionId='6' Name="btnAppInstall" Content="INSTALL" Background="#FF1976D2" Foreground="White" BorderThickness="0" FontFamily="Global User Interface"                             />
+                            <Button x:ConnectionId='7' Name="btnAppShare" Margin="10,0,0,0" Content="Share" Background="White" Foreground="Black" BorderThickness="0" FontFamily="Global User Interface"                           />
+                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
-        </StackPanel>
-        <!--TODO: Content should be placed within the following grid-->
-        <ScrollViewer Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <ScrollViewer Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <StackPanel>
                 <TextBlock Text="Details" FontSize="25" FontWeight="Bold" Foreground="#FF1976D2"/>
                 <TextBlock Name="txtAppDetails" FontSize="20" TextWrapping="Wrap"/>
@@ -58,7 +57,10 @@
                     <TextBlock Name="txtAddInfo1" FontSize="20" TextWrapping="Wrap"/>
                     <TextBlock Name="txtAddInfo2" Margin="10,0,0,0" FontSize="20" TextWrapping="Wrap"/>
                 </StackPanel>
-            </StackPanel>
+                    <TextBlock Margin="0,5" Text="Reviews" FontSize="25" FontWeight="Bold" Foreground="#FF1976D2"/>
+                    <WebView x:ConnectionId='4' Name="webAppReviews" Height="280"                                                             IsHitTestVisible="False"/>
+                    <HyperlinkButton x:ConnectionId='5' Name="OpenInBrowser" IsEnabled="False"                               Content="Open reviews in browser" Foreground="#FF1976D2"/>
+                </StackPanel>
         </ScrollViewer>
     </Grid>
         <Grid x:Name="FullScreen" Visibility="Collapsed" >
@@ -69,19 +71,20 @@
     <Page.BottomAppBar>
         <CommandBar Background="#FF1976D2" Opacity="0.9"  >
             <CommandBar.PrimaryCommands>
-                <AppBarButton x:ConnectionId='6' Label="Search" Icon="Find"                     />
-                <AppBarButton x:ConnectionId='7' Name="btnMyApps" Label="My Apps" Icon="ViewAll"                     />
-                <AppBarButton x:ConnectionId='8' Name="Home" Label="Home" Icon="Home"                   />
-                <AppBarButton x:ConnectionId='9' Label="Categories"                         >
+                <AppBarButton x:ConnectionId='8' Label="Search" Icon="Find"                     />
+                <AppBarButton x:ConnectionId='9' Name="btnMyApps" Label="My Apps" Icon="ViewAll"                     />
+                <AppBarButton x:ConnectionId='10' Name="Home" Label="Home" Icon="Home"                   />
+                <AppBarButton x:ConnectionId='11' Label="Categories"                         >
                     <AppBarButton.Icon>
                         <BitmapIcon UriSource="Assets/ic_categories.png"/>
                     </AppBarButton.Icon>
                 </AppBarButton>
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
-                <AppBarButton x:ConnectionId='10' Label="settings"                       />
-                <AppBarButton x:ConnectionId='11' Label="feedback"                       />
-                <AppBarButton x:ConnectionId='12' Label="about"                    />
+                <AppBarButton x:ConnectionId='12' Label="open reviews in browser"                      />
+                <AppBarButton x:ConnectionId='13' Label="settings"                       />
+                <AppBarButton x:ConnectionId='14' Label="feedback"                       />
+                <AppBarButton x:ConnectionId='15' Label="about"                    />
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>

@@ -12,6 +12,7 @@ using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
 using Windows.UI.Core;
 using Windows.UI.Notifications;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -115,6 +116,10 @@ namespace AppStore
             appInstalled=(bool)(localSettings.Values[app.Name]);
             if (appInstalled) btnAppInstall.Content = "LAUNCH";
             else btnAppInstall.Content = "INSTALL";
+
+            webAppReviews.NavigateToString(getHtmlComment());
+           
+
             txtAppName.Text = app.Name;
             txtAppAuthor.Text = app.Author;
             if (app.Description.Length > 50)
@@ -129,7 +134,7 @@ namespace AppStore
             }
             txtAddInfo1.Text=("Author: \nAuthor Email: \nCategory: \nType: ");
             txtAddInfo2.Text=(app.Author + "\n" + app.AuthorEmail + "\n" + app.Category + "\n" + app.Type);
-            //webAppReviews.NavigateToString(getHtmlComment());
+            
             List<Image> images = new List<Image>();
             foreach(string screenshot in app.Screenshots)
             {
@@ -141,6 +146,19 @@ namespace AppStore
             imgAppIcon.Source = new BitmapImage(new Uri(app.AppIcon));
             GridScreenshots.ItemsSource = app.Screenshots;
             this.navigationHelper.OnNavigatedTo(e);
+        }
+        private string getHtmlComment()
+        {
+            return "<div id='disqus_thread'></div>"
+                    + "<script type='text/javascript'>"
+                    + "var disqus_identifier = '" + app.Name + "_" + app.Author + "';"
+                    + "var disqus_title = '" + app.Name + "';"
+                    + "var disqus_url='http://www.buildmlearn.org/appstore/" + app.Name + "_" + app.Author + "';"
+                    + "var disqus_shortname = 'buildmlearn';"
+                    + " (function() { var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;"
+                    + "dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';"
+                    + "(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq); })();"
+                    + "</script>";
         }
         private void GridScreenshots_ContainerContentChanging(ListViewBase sender, ContainerContentChangingEventArgs args)
         {
@@ -248,5 +266,17 @@ namespace AppStore
         private void About_Click(object sender, RoutedEventArgs e) { }
         private void Feedback_Click(object sender, RoutedEventArgs e) { AppCommon.ComposeEmail(); }
 
+        private async void Browser_Click(object sender, RoutedEventArgs e) { await Windows.System.Launcher.LaunchUriAsync(appReviewsUri); }
+        private async void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(appReviewsUri);
+        }
+        Uri appReviewsUri;
+
+        private void webAppReviews_FrameDOMContentLoaded(WebView sender, WebViewDOMContentLoadedEventArgs args)
+        {
+            OpenInBrowser.IsEnabled = true;
+            appReviewsUri = args.Uri;
+        }
     }
 }
