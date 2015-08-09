@@ -160,7 +160,7 @@ namespace AppStore
             selectionGridApps = false;
         }
         private void Home_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MainPage)); }
-        private void Settings_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(Settings)); }
+        private async void Settings_Click(object sender, RoutedEventArgs e) { ContentDialog dlg = new ContentDialog(); dlg=new SettingsDialog(); await dlg.ShowAsync(); }
         private void MyApps_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MyAppsPage)); }
         private void Categories_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(CategoriesPage)); }
         private void About_Click(object sender, RoutedEventArgs e) { }
@@ -207,7 +207,7 @@ namespace AppStore
             List<Apps> list = new List<Apps>();
             foreach(Apps app in AppList.getAppList().appList)
             {
-                if (app.Name.Contains(Search.Text)) { list.Add(app); }
+                if (app.Name.ToLower().Contains(Search.Text.ToLower())) { list.Add(app); }
             }
             GridFeaturedApps.ItemsSource = list;
         }

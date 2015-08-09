@@ -110,6 +110,9 @@
     <Compile Include="AppDetailsPage.xaml.cs">
       <DependentUpon>AppDetailsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AppsPage.xaml.cs">
+      <DependentUpon>AppsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CategoriesPage.xaml.cs">
       <DependentUpon>CategoriesPage.xaml</DependentUpon>
     </Compile>
@@ -146,8 +149,8 @@
     <Compile Include="SearchPage.xaml.cs">
       <DependentUpon>SearchPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Settings.xaml.cs">
-      <DependentUpon>Settings.xaml</DependentUpon>
+    <Compile Include="SettingsDialog.xaml.cs">
+      <DependentUpon>SettingsDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Templates\FlashCardPage.xaml.cs">
       <DependentUpon>FlashCardPage.xaml</DependentUpon>
@@ -273,6 +276,10 @@
       <SubType>
       </SubType>
     </Page>
+    <Page Include="AppsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CategoriesPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>
@@ -294,9 +301,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Settings.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="SettingsDialog.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Templates\FlashCardPage.xaml">
       <Generator>MSBuild:Compile</Generator>

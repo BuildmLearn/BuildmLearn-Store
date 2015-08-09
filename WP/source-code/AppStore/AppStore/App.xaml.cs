@@ -122,6 +122,8 @@ namespace AppStore
         }
         private void ExtendSplashScreen()
         {
+            AppList.getAppList().appList.Clear();
+            AppList.getMyAppList().myappList.Clear();
             try
             {
                 XmlDocument xmldoc = new XmlDocument();

@@ -21,8 +21,11 @@
         <!-- Drawer Layout -->
         <Grid x:Name="MainFragment" Margin="19,9.5,19,0" Grid.Row="1">
             <!-- Main Content goes here -->
-            <StackPanel Height="125" VerticalAlignment="Top">
-                <TextBlock  Text="Featured Categories" FontSize="20" />
+            <StackPanel Height="132" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="300" Text="Featured Categories" FontSize="20" />
+                    <HyperlinkButton FontSize="18" Foreground="#FF1976D2" Content="more" Click="MoreCategories_Click"/>
+                </StackPanel>
                 <GridView x:Name="GridFeaturedCategories" Margin="0,10" Height="50" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
                   ContainerContentChanging="GridFeaturedCategories_ContentChanging" SelectionChanged="GridFeaturedCategories_SelectionChanged" 
                   ScrollViewer.HorizontalScrollMode="Auto" ScrollViewer.VerticalScrollMode="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto">
@@ -40,7 +43,10 @@
                         </DataTemplate>
                     </GridView.ItemTemplate>
                 </GridView>
-                <TextBlock Text="Featured Apps" FontSize="20"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="300" Text="Featured Apps" FontSize="20" />
+                    <HyperlinkButton FontSize="18" Foreground="#FF1976D2" Content="more" Click="MoreApps_Click"/>
+                </StackPanel>
             </StackPanel>
             <GridView x:Name="GridFeaturedApps" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
                   ContainerContentChanging="GridFeaturedApps_ContentChanging" SelectionChanged="GridFeaturedApps_SelectionChanged" Margin="0,125,0,0">

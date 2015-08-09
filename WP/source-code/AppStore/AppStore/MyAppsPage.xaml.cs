@@ -154,7 +154,7 @@ namespace AppStore
             selectionGridApps = false;
         }
         private void Search_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(SearchPage)); }
-        private void Settings_Click(object sender, RoutedEventArgs e) { }
+        private async void Settings_Click(object sender, RoutedEventArgs e) { ContentDialog dlg = new ContentDialog(); dlg = new SettingsDialog(); await dlg.ShowAsync(); }
         private void Home_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MainPage)); }
         private void Categories_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(CategoriesPage)); }
         private void About_Click(object sender, RoutedEventArgs e) { }

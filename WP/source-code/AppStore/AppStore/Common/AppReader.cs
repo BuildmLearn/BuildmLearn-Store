@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using Windows.Data.Xml.Dom;
 using Windows.Storage;
+using Windows.UI.Popups;
 
 namespace AppStore.Common
 {
@@ -62,7 +63,7 @@ namespace AppStore.Common
             return mFileList;
         }
         */
-        public static void readInfoFile(string fileName)
+        public async static void readInfoFile(string fileName)
         {
             try
             {
@@ -87,7 +88,8 @@ namespace AppStore.Common
                 model.setInfoTitleList(infoTitleList);
                 model.setInfoDescriptionList(infoDescriptionList);
             }
-            catch (Exception) { }
+            catch (Exception e)
+            { }
         }
         public static void readQuizFile(string fileName)
         {

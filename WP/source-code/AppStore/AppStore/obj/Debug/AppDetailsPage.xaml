@@ -58,7 +58,7 @@
                     <TextBlock Name="txtAddInfo2" Margin="10,0,0,0" FontSize="20" TextWrapping="Wrap"/>
                 </StackPanel>
                     <TextBlock Margin="0,5" Text="Reviews" FontSize="25" FontWeight="Bold" Foreground="#FF1976D2"/>
-                    <WebView x:ConnectionId='4' Name="webAppReviews" Height="280"                                                             IsHitTestVisible="False"/>
+                    <WebView x:ConnectionId='4' Name="webAppReviews" Height="250"                                                             IsHitTestVisible="False"/>
                     <HyperlinkButton x:ConnectionId='5' Name="OpenInBrowser" IsEnabled="False"                               Content="Open reviews in browser" Foreground="#FF1976D2"/>
                 </StackPanel>
         </ScrollViewer>

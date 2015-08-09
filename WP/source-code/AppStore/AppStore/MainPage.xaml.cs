@@ -31,6 +31,12 @@ namespace AppStore
     public sealed partial class MainPage : Page
     {
         bool selectionGridCategories = false, selectionGridApps = false;
+        HashSet<Apps> featuredApps = new HashSet<Apps>();
+        HashSet<Categories> featuredCategories = new HashSet<Categories>();
+        List<int> nofeaturedApps = new List<int>();
+        List<int> nofeaturedCategories = new List<int>();
+
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -42,13 +48,52 @@ namespace AppStore
             if (AppList.getMyAppList().myappList.Count > 0)
                 btnMyApps.Visibility = Visibility.Visible;
             else btnMyApps.Visibility = Visibility.Collapsed;
-            GridFeaturedApps.ItemsSource = AppList.getAppList().appList;
-            GridFeaturedCategories.ItemsSource = Models.Resources.getCategoriesList();
+            int fa = 6, fc = 4;
+            try
+            {
+                var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+                if (localSettings.Values.ContainsKey("Featured_Categories"))
+                {Int32.TryParse(localSettings.Values["Featured_Categories"].ToString(),out fc); }
+                else localSettings.Values.Add("Featured_Categories", "4");
+                if (localSettings.Values.ContainsKey("Featured_Apps"))
+                { Int32.TryParse(localSettings.Values["Featured_Apps"].ToString(), out fa); }
+                else localSettings.Values.Add("Featured_Apps", "6");
+            }
+            catch (Exception ex)
+            { }
+            Random rnd = new Random();
+            featuredCategories.Clear();
+            featuredApps.Clear();
+                int l = AppList.getAppList().appList.Count;
+                for (int i = 0; i < fa; i++)
+                {
+                while (true)
+                {
+                    int x = rnd.Next(0, l);
+                    Apps ob = AppList.getAppList().appList.ElementAt(x);
+                    if (!nofeaturedApps.Contains(x))
+                    { featuredApps.Add(ob);nofeaturedApps.Add(x); break;}
+                }
+                }
+                rnd = new Random();
+                for (int i = 0; i < fc; i++)
+                {
+                while (true)
+                {
+                    int x = rnd.Next(0, 10);
+                    Categories ob = Models.Resources.getCategoriesList().ElementAt(x);
+                    if (!nofeaturedCategories.Contains(x))
+                    { featuredCategories.Add(ob); nofeaturedCategories.Add(x); break; }
+                }
+                }
+            
+            GridFeaturedApps.ItemsSource = featuredApps;
+            GridFeaturedCategories.ItemsSource = featuredCategories;
             if(e.Parameter!=null)
              if (!String.IsNullOrWhiteSpace(e.Parameter.ToString()))
             {
                 string appName = e.Parameter.ToString();
-                foreach (Apps app in AppList.getAppList().appList)
+                foreach (Apps app in featuredApps)
                 {
                     if (app.Name.Equals(appName))
                     {
@@ -124,7 +169,7 @@ namespace AppStore
             categoryIcon.Source = new BitmapImage(new Uri(category.Background));
         }
         private void Search_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(SearchPage)); }
-        private void Settings_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(Settings)); }
+        private async void Settings_Click(object sender, RoutedEventArgs e) { ContentDialog dlg = new ContentDialog(); dlg=new SettingsDialog(); await dlg.ShowAsync(); }
         private void MyApps_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MyAppsPage)); }
         private void Categories_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(CategoriesPage)); }
         private void About_Click(object sender, RoutedEventArgs e) {  }
@@ -134,7 +179,7 @@ namespace AppStore
             FrameworkElement senderElement = sender as FrameworkElement;
             StackPanel stackPanel=sender as StackPanel;
             TextBlock txt=(TextBlock)stackPanel.Children.ElementAt(1);
-            foreach (Apps app in AppList.getAppList().appList)
+            foreach (Apps app in featuredApps)
             {
                 if (app.Name.Equals(txt.Text))
                 {
@@ -160,6 +205,16 @@ namespace AppStore
             var toast = new ToastNotification(toastXml);
             ToastNotificationManager.CreateToastNotifier().Show(toast);
         }
+
+        private void MoreCategories_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(CategoriesPage));
+        }
+        private void MoreApps_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AppsPage));
+        }
+
         private void ShareButton_Click(object sender, RoutedEventArgs e)
         {
             var datacontext = (e.OriginalSource as FrameworkElement).DataContext;

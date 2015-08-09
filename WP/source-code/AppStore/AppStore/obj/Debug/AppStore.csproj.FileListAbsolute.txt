@@ -203,7 +203,6 @@ C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\MainPage.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\MyAppsPage.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\SearchPage.xbf
-C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Settings.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\FlashCardPage.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\InfoDetailPage.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\Templates\InfoPage.xbf
@@ -232,8 +231,6 @@ C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\MyAppsPage.g.cs
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\SearchPage.g.i.cs
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\SearchPage.g.cs
-C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Settings.g.i.cs
-C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Settings.g.cs
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Templates\FlashCardPage.g.i.cs
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Templates\FlashCardPage.g.cs
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Templates\InfoDetailPage.g.i.cs
@@ -257,7 +254,6 @@ C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\MainPage.xaml
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\MyAppsPage.xaml
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\SearchPage.xaml
-C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Settings.xaml
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Templates\FlashCardPage.xaml
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Templates\InfoDetailPage.xaml
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Templates\InfoPage.xaml
@@ -272,7 +268,6 @@ C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\MainPage.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\MyAppsPage.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\SearchPage.xbf
-C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Settings.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Templates\FlashCardPage.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Templates\InfoDetailPage.xbf
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\Templates\InfoPage.xbf
@@ -298,3 +293,13 @@ C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\ProjectArchitectures.txt
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\AppsPage.g.i.cs
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\AppsPage.g.cs
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\SettingsDialog.g.i.cs
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\SettingsDialog.g.cs
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\AppsPage.xaml
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\AppsPage.xbf
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\SettingsDialog.xaml
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\obj\Debug\SettingsDialog.xbf
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\AppsPage.xbf
+C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Debug\SettingsDialog.xbf

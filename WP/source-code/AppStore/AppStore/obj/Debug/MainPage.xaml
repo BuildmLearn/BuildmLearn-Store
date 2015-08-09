@@ -21,8 +21,11 @@
         <!-- Drawer Layout -->
         <Grid x:Name="MainFragment" Margin="19,9.5,19,0" Grid.Row="1">
             <!-- Main Content goes here -->
-            <StackPanel Height="125" VerticalAlignment="Top">
-                <TextBlock  Text="Featured Categories" FontSize="20" />
+            <StackPanel Height="132" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="300" Text="Featured Categories" FontSize="20" />
+                    <HyperlinkButton x:ConnectionId='7' FontSize="18" Foreground="#FF1976D2" Content="more"                             />
+                </StackPanel>
                 <GridView x:ConnectionId='5' x:Name="GridFeaturedCategories" Margin="0,10" Height="50" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
                                                                                                                                                
                   ScrollViewer.HorizontalScrollMode="Auto" ScrollViewer.VerticalScrollMode="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto">
@@ -40,7 +43,10 @@
                         </DataTemplate>
                     </GridView.ItemTemplate>
                 </GridView>
-                <TextBlock Text="Featured Apps" FontSize="20"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="300" Text="Featured Apps" FontSize="20" />
+                    <HyperlinkButton x:ConnectionId='6' FontSize="18" Foreground="#FF1976D2" Content="more"                       />
+                </StackPanel>
             </StackPanel>
             <GridView x:ConnectionId='1' x:Name="GridFeaturedApps" ItemsSource="{Binding}" Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
                                                                                                                                    Margin="0,125,0,0">
@@ -71,18 +77,18 @@
     <Page.BottomAppBar>
         <CommandBar Background="#FF1976D2" Opacity="0.9"  >
             <CommandBar.PrimaryCommands>
-                <AppBarButton x:ConnectionId='6' Label="Search" Icon="Find"                     />
-                <AppBarButton x:ConnectionId='7' Name="btnMyApps" Label="My Apps" Icon="ViewAll"                     />
-                <AppBarButton x:ConnectionId='8' Label="Categories"                         >
+                <AppBarButton x:ConnectionId='8' Label="Search" Icon="Find"                     />
+                <AppBarButton x:ConnectionId='9' Name="btnMyApps" Label="My Apps" Icon="ViewAll"                     />
+                <AppBarButton x:ConnectionId='10' Label="Categories"                         >
                     <AppBarButton.Icon>
                         <BitmapIcon UriSource="Assets/ic_categories.png"/>
                     </AppBarButton.Icon>
                 </AppBarButton>
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
-                <AppBarButton x:ConnectionId='9' Label="settings"                       />
-                <AppBarButton x:ConnectionId='10' Label="feedback"                       />
-                <AppBarButton x:ConnectionId='11' Label="about"                    />
+                <AppBarButton x:ConnectionId='11' Label="settings"                       />
+                <AppBarButton x:ConnectionId='12' Label="feedback"                       />
+                <AppBarButton x:ConnectionId='13' Label="about"                    />
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>

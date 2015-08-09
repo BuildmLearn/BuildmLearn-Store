@@ -93,6 +93,60 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="T:AppStore.AppsPage">
+            <summary>
+            An empty page that can be used on its own or navigated to within a Frame.
+            </summary>
+        </member>
+        <member name="P:AppStore.AppsPage.NavigationHelper">
+            <summary>
+            Gets the <see cref="P:AppStore.AppsPage.NavigationHelper"/> associated with this <see cref="T:Windows.UI.Xaml.Controls.Page"/>.
+            </summary>
+        </member>
+        <member name="P:AppStore.AppsPage.DefaultViewModel">
+            <summary>
+            Gets the view model for this <see cref="T:Windows.UI.Xaml.Controls.Page"/>.
+            This can be changed to a strongly typed view model.
+            </summary>
+        </member>
+        <member name="M:AppStore.AppsPage.NavigationHelper_LoadState(System.Object,AppStore.Common.LoadStateEventArgs)">
+            <summary>
+            Populates the page with content passed during navigation.  Any saved state is also
+            provided when recreating a page from a prior session.
+            </summary>
+            <param name="sender">
+            The source of the event; typically <see cref="P:AppStore.AppsPage.NavigationHelper"/>
+            </param>
+            <param name="e">Event data that provides both the navigation parameter passed to
+            <see cref="M:Windows.UI.Xaml.Controls.Frame.Navigate(System.Type,System.Object)"/> when this page was initially requested and
+            a dictionary of state preserved by this page during an earlier
+            session.  The state will be null the first time a page is visited.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.NavigationHelper_SaveState(System.Object,AppStore.Common.SaveStateEventArgs)">
+            <summary>
+            Preserves state associated with this page in case the application is suspended or the
+            page is discarded from the navigation cache.  Values must conform to the serialization
+            requirements of <see cref="P:AppStore.Common.SuspensionManager.SessionState"/>.
+            </summary>
+            <param name="sender">The source of the event; typically <see cref="P:AppStore.AppsPage.NavigationHelper"/></param>
+            <param name="e">Event data that provides an empty dictionary to be populated with
+            serializable state.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
         <member name="T:AppStore.CategoriesPage">
             <summary>
             An empty page that can be used on its own or navigated to within a Frame.
@@ -645,60 +699,6 @@
             serializable state.</param>
         </member>
         <member name="M:AppStore.SearchPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
-            <summary>
-            The methods provided in this section are simply used to allow
-            NavigationHelper to respond to the page's navigation methods.
-            <para>
-            Page specific logic should be placed in event handlers for the  
-            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
-            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
-            The navigation parameter is available in the LoadState method 
-            in addition to page state preserved during an earlier session.
-            </para>
-            </summary>
-            <param name="e">Provides data for navigation methods and event
-            handlers that cannot cancel the navigation request.</param>
-        </member>
-        <member name="T:AppStore.Settings">
-            <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
-            </summary>
-        </member>
-        <member name="P:AppStore.Settings.NavigationHelper">
-            <summary>
-            Gets the <see cref="P:AppStore.Settings.NavigationHelper"/> associated with this <see cref="T:Windows.UI.Xaml.Controls.Page"/>.
-            </summary>
-        </member>
-        <member name="P:AppStore.Settings.DefaultViewModel">
-            <summary>
-            Gets the view model for this <see cref="T:Windows.UI.Xaml.Controls.Page"/>.
-            This can be changed to a strongly typed view model.
-            </summary>
-        </member>
-        <member name="M:AppStore.Settings.NavigationHelper_LoadState(System.Object,AppStore.Common.LoadStateEventArgs)">
-            <summary>
-            Populates the page with content passed during navigation.  Any saved state is also
-            provided when recreating a page from a prior session.
-            </summary>
-            <param name="sender">
-            The source of the event; typically <see cref="P:AppStore.Settings.NavigationHelper"/>
-            </param>
-            <param name="e">Event data that provides both the navigation parameter passed to
-            <see cref="M:Windows.UI.Xaml.Controls.Frame.Navigate(System.Type,System.Object)"/> when this page was initially requested and
-            a dictionary of state preserved by this page during an earlier
-            session.  The state will be null the first time a page is visited.</param>
-        </member>
-        <member name="M:AppStore.Settings.NavigationHelper_SaveState(System.Object,AppStore.Common.SaveStateEventArgs)">
-            <summary>
-            Preserves state associated with this page in case the application is suspended or the
-            page is discarded from the navigation cache.  Values must conform to the serialization
-            requirements of <see cref="P:AppStore.Common.SuspensionManager.SessionState"/>.
-            </summary>
-            <param name="sender">The source of the event; typically <see cref="P:AppStore.Settings.NavigationHelper"/></param>
-            <param name="e">Event data that provides an empty dictionary to be populated with
-            serializable state.</param>
-        </member>
-        <member name="M:AppStore.Settings.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
             <summary>
             The methods provided in this section are simply used to allow
             NavigationHelper to respond to the page's navigation methods.

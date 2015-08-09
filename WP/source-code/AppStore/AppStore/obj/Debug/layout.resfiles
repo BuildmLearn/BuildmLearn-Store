@@ -97,13 +97,14 @@ Assets\WideLogo.scale-140.png
 Assets\WideLogo.scale-240.png
 App.xbf
 AppDetailsPage.xbf
+AppsPage.xbf
 AppStore.xr.xml
 CategoriesPage.xbf
 CategoryPage.xbf
 MainPage.xbf
 MyAppsPage.xbf
 SearchPage.xbf
-Settings.xbf
+SettingsDialog.xbf
 Templates\FlashCardPage.xbf
 Templates\InfoDetailPage.xbf
 Templates\InfoPage.xbf
