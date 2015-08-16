@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d92/classglobal_1_1_windows_u_i_1_1_xaml_1_1_markup_1_1_i_component_connector">
+<title>global::WindowsUI::Xaml::Markup::IComponentConnector class Reference</title>
+<para>Inheritance diagram for global::WindowsUI::Xaml::Markup::IComponentConnector</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d36/classglobal_1_1_windows_u_i_1_1_xaml_1_1_markup_1_1_i_component_connector__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for global::WindowsUI::Xaml::Markup::IComponentConnector</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/da7/classglobal_1_1_windows_u_i_1_1_xaml_1_1_markup_1_1_i_component_connector__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+</section>

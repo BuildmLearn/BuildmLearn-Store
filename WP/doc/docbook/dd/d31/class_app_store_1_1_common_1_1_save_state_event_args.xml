@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">
+<title>AppStore::Common::SaveStateEventArgs class Reference</title>
+<para>Inheritance diagram for AppStore::Common::SaveStateEventArgs</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/df3/class_app_store_1_1_common_1_1_save_state_event_args__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::SaveStateEventArgs</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d40/class_app_store_1_1_common_1_1_save_state_event_args__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args_1ab1c282d192a357ea5d7a4eedef62892b">SaveStateEventArgs</link> (
+Dictionary&lt; string, Object &gt; pageState)<para><emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;SaveStateEventArgs&quot;/&gt; class.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Class used to hold the event data required when a page attempts to save state. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 416 of file NavigationHelper.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NavigationHelper.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args_1ab1c282d192a357ea5d7a4eedef62892b">
+                <title>AppStore.Common.SaveStateEventArgs.SaveStateEventArgs (Dictionary&lt; string, Object &gt; pageState)</title> <emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;SaveStateEventArgs&quot;/&gt; class.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>pageState</entry>
+                                <entry>
+<para>An empty dictionary to be populated with serializable state.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_064740139d7b1b4addfb5439241106ac">
+    <title>C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj Directory Reference</title>
+<para>Directory dependency diagram for C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_064740139d7b1b4addfb5439241106ac_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Directories </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_6c83cbc0db8c38873473c4af1743f985">C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/Debug</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_9d8453883b6ad62def5c8356fa448ac7">C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/Release</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_fa12ee735a5321822daf374b4bc8ab20">C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/x86</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/</para>
+    </simplesect>
+</section>

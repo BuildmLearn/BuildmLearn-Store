@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d2c/_flash_model_8cs">
+    <title>FlashModel.cs File Reference</title>
+<para>Include dependency diagram for FlashModel.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d39/_flash_model_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for FlashModel.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/da1/_flash_model_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">AppStore::Models::FlashModel</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Flash card App-Template
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/FlashModel.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+2 
+3 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+4 {
+<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">8 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">FlashModel</link>
+9 &#32;&#32;&#32;&#32;{
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mFlashName;
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mFlashAuthor;
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mFlashVersion;
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mFlashDescription;
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mFlashAuthorEmail;
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;List&lt;Card&gt;&#32;mCardList;
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">FlashModel</link>&#32;mFlashModel;
+17 
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">FlashModel</link>&#32;getInstance()
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(mFlashModel&#32;==&#32;null)
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mFlashModel&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">FlashModel</link>();
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mFlashModel;
+27 
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getFlashAuthor()
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mFlashAuthor;
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setFlashAuthor(<emphasis class="keywordtype">string</emphasis>&#32;mFlashAuthor)
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mFlashAuthor&#32;=&#32;mFlashAuthor;
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getFlashName()
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mFlashName;
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setFlashName(<emphasis class="keywordtype">string</emphasis>&#32;mFlashName)
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mFlashName&#32;=&#32;mFlashName;
+60 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;List&lt;Card&gt;&#32;getCardList()
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mCardList;
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setCardList(List&lt;Card&gt;&#32;mCardList)
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mCardList&#32;=&#32;mCardList;
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getFlashDescription()
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mFlashDescription;
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+89 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setFlashDescription(<emphasis class="keywordtype">string</emphasis>&#32;mFlashDescription)
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mFlashDescription&#32;=&#32;mFlashDescription;
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getFlashAuthorEmail()
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mFlashAuthorEmail;
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setFlashAuthorEmail(<emphasis class="keywordtype">string</emphasis>&#32;mFlashAuthorEmail)
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mFlashAuthorEmail&#32;=&#32;mFlashAuthorEmail;
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getFlashVersion()
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mFlashVersion;
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setFlashVersion(<emphasis class="keywordtype">string</emphasis>&#32;mFlashVersion)
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mFlashVersion&#32;=&#32;mFlashVersion;
+124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+125 &#32;&#32;&#32;&#32;}
+126 }
+    </computeroutput></literallayout>
+</section>

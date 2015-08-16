@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d09/_relay_command_8cs">
+    <title>RelayCommand.cs File Reference</title>
+<para>Include dependency diagram for RelayCommand.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/dd5/_relay_command_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for RelayCommand.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d17/_relay_command_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">AppStore::Common::RelayCommand</link></para>
+<para><emphasis>&lt;summary&gt;
+A command whose sole purpose is to relay its functionality 
+to other objects by invoking delegates.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d5e/namespace_app_store_1_1_common">AppStore::Common</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/da9/namespace_system_1_1_windows_1_1_input">System::Windows::Input</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Common/RelayCommand.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Windows.Input;
+3 
+4 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Common
+5 {
+<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">13 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">RelayCommand</link>&#32;:&#32;<link linkend="d6/d2b/class_i_command">ICommand</link>
+14 &#32;&#32;&#32;&#32;{
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;readonly&#32;Action&#32;_execute;
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;readonly&#32;Func&lt;bool&gt;&#32;_canExecute;
+17 
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">event</emphasis>&#32;EventHandler&#32;CanExecuteChanged;
+22 
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">RelayCommand</link>(Action&#32;execute)
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;<emphasis class="keyword">this</emphasis>(execute,&#32;null)
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+31 
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">RelayCommand</link>(Action&#32;execute,&#32;Func&lt;bool&gt;&#32;canExecute)
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(execute&#32;==&#32;null)
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;ArgumentNullException(<emphasis class="stringliteral">&quot;execute&quot;</emphasis>);
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_execute&#32;=&#32;execute;
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_canExecute&#32;=&#32;canExecute;
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+44 
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;CanExecute(<emphasis class="keywordtype">object</emphasis>&#32;parameter)
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;_canExecute&#32;==&#32;null&#32;?&#32;<emphasis class="keyword">true</emphasis>&#32;:&#32;_canExecute();
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+56 
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Execute(<emphasis class="keywordtype">object</emphasis>&#32;parameter)
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_execute();
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+67 
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;RaiseCanExecuteChanged()
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;handler&#32;=&#32;CanExecuteChanged;
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(handler&#32;!=&#32;null)
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;handler(<emphasis class="keyword">this</emphasis>,&#32;<link linkend="d5/d6c/class_event_args">EventArgs</link>.Empty);
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+81 &#32;&#32;&#32;&#32;}
+82 }
+    </computeroutput></literallayout>
+</section>

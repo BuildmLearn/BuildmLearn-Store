@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d0e/_suspension_manager_8cs">
+    <title>SuspensionManager.cs File Reference</title>
+<para>Include dependency diagram for SuspensionManager.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d4c/_suspension_manager_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for SuspensionManager.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/db0/_suspension_manager_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">AppStore::Common::SuspensionManager</link></para>
+<para><emphasis>&lt;summary&gt;
+SuspensionManager captures global session state to simplify process lifetime management
+for an application.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception">AppStore::Common::SuspensionManagerException</link></para>
+<para><emphasis>&lt;summary&gt;
+Handles the exception related to the SuspensionManager.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d5e/namespace_app_store_1_1_common">AppStore::Common</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d30/namespace_system_1_1_i_o">System::IO</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d85/namespace_system_1_1_runtime_1_1_serialization">System::Runtime::Serialization</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d66/namespace_system_1_1_threading_1_1_tasks">System::Threading::Tasks</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d91/namespace_windows_1_1_storage">Windows::Storage</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d1a/namespace_windows_1_1_storage_1_1_streams">Windows::Storage::Streams</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Common/SuspensionManager.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.IO;
+4 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Runtime.Serialization;
+5 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Threading.Tasks;
+6 <emphasis class="keyword">using</emphasis>&#32;Windows.Storage;
+7 <emphasis class="keyword">using</emphasis>&#32;Windows.Storage.Streams;
+8 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml;
+9 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+10 
+11 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Common
+12 {
+<link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">20 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;sealed&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">SuspensionManager</link>
+21 &#32;&#32;&#32;&#32;{
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;Dictionary&lt;string,&#32;object&gt;&#32;_sessionState&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Dictionary&lt;string,&#32;object&gt;();
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;List&lt;Type&gt;&#32;_knownTypes&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;Type&gt;();
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">const</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;sessionStateFilename&#32;=&#32;<emphasis class="stringliteral">&quot;_sessionState.xml&quot;</emphasis>;
+25 
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;Dictionary&lt;string,&#32;object&gt;&#32;SessionState
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_sessionState;&#32;}
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+37 
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;List&lt;Type&gt;&#32;KnownTypes
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_knownTypes;&#32;}
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+47 
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;async&#32;Task&#32;SaveAsync()
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Save&#32;the&#32;navigation&#32;state&#32;for&#32;all&#32;registered&#32;frames</emphasis>
+60 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(var&#32;weakFrameReference&#32;<emphasis class="keywordflow">in</emphasis>&#32;_registeredFrames)
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame&#32;frame;
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(weakFrameReference.TryGetTarget(out&#32;frame))
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SaveFrameNavigationState(frame);
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+68 
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Serialize&#32;the&#32;session&#32;state&#32;synchronously&#32;to&#32;avoid&#32;asynchronous&#32;access&#32;to&#32;shared</emphasis>
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;state</emphasis>
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;MemoryStream&#32;sessionData&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;MemoryStream();
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DataContractSerializer&#32;serializer&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;DataContractSerializer(typeof(Dictionary&lt;string,&#32;object&gt;),&#32;_knownTypes);
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;serializer.WriteObject(sessionData,&#32;_sessionState);
+74 
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Get&#32;an&#32;output&#32;stream&#32;for&#32;the&#32;SessionState&#32;file&#32;and&#32;write&#32;the&#32;state&#32;asynchronously</emphasis>
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StorageFile&#32;file&#32;=&#32;await&#32;ApplicationData.Current.LocalFolder.CreateFileAsync(sessionStateFilename,&#32;CreationCollisionOption.ReplaceExisting);
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">using</emphasis>&#32;(Stream&#32;fileStream&#32;=&#32;await&#32;file.OpenStreamForWriteAsync())
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sessionData.Seek(0,&#32;SeekOrigin.Begin);
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;await&#32;sessionData.CopyToAsync(fileStream);
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(<link linkend="df/d70/class_exception">Exception</link>&#32;e)
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception">SuspensionManagerException</link>(e);
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+88 
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;async&#32;Task&#32;RestoreAsync(String&#32;sessionBaseKey&#32;=&#32;null)
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_sessionState&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Dictionary&lt;String,&#32;Object&gt;();
+103 
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Get&#32;the&#32;input&#32;stream&#32;for&#32;the&#32;SessionState&#32;file</emphasis>
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StorageFile&#32;file&#32;=&#32;await&#32;ApplicationData.Current.LocalFolder.GetFileAsync(sessionStateFilename);
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">using</emphasis>&#32;(IInputStream&#32;inStream&#32;=&#32;await&#32;file.OpenSequentialReadAsync())
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Deserialize&#32;the&#32;Session&#32;State</emphasis>
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DataContractSerializer&#32;serializer&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;DataContractSerializer(typeof(Dictionary&lt;string,&#32;object&gt;),&#32;_knownTypes);
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_sessionState&#32;=&#32;(Dictionary&lt;string,&#32;object&gt;)serializer.ReadObject(inStream.AsStreamForRead());
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+114 
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Restore&#32;any&#32;registered&#32;frames&#32;to&#32;their&#32;saved&#32;state</emphasis>
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(var&#32;weakFrameReference&#32;<emphasis class="keywordflow">in</emphasis>&#32;_registeredFrames)
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame&#32;frame;
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(weakFrameReference.TryGetTarget(out&#32;frame)&#32;&amp;&amp;&#32;(string)frame.GetValue(FrameSessionBaseKeyProperty)&#32;==&#32;sessionBaseKey)
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frame.ClearValue(FrameSessionStateProperty);
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RestoreFrameNavigationState(frame);
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(<link linkend="df/d70/class_exception">Exception</link>&#32;e)
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception">SuspensionManagerException</link>(e);
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+131 
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;DependencyProperty&#32;FrameSessionStateKeyProperty&#32;=
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DependencyProperty.RegisterAttached(<emphasis class="stringliteral">&quot;_FrameSessionStateKey&quot;</emphasis>,&#32;typeof(String),&#32;typeof(<link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">SuspensionManager</link>),&#32;null);
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;DependencyProperty&#32;FrameSessionBaseKeyProperty&#32;=
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DependencyProperty.RegisterAttached(<emphasis class="stringliteral">&quot;_FrameSessionBaseKeyParams&quot;</emphasis>,&#32;typeof(String),&#32;typeof(<link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">SuspensionManager</link>),&#32;null);
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;DependencyProperty&#32;FrameSessionStateProperty&#32;=
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DependencyProperty.RegisterAttached(<emphasis class="stringliteral">&quot;_FrameSessionState&quot;</emphasis>,&#32;typeof(Dictionary&lt;String,&#32;Object&gt;),&#32;typeof(<link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">SuspensionManager</link>),&#32;null);
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;List&lt;WeakReference&lt;Frame&gt;&gt;&#32;_registeredFrames&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;WeakReference&lt;Frame&gt;&gt;();
+139 
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;RegisterFrame(Frame&#32;frame,&#32;String&#32;sessionStateKey,&#32;String&#32;sessionBaseKey&#32;=&#32;null)
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(frame.GetValue(FrameSessionStateKeyProperty)&#32;!=&#32;null)
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;InvalidOperationException(<emphasis class="stringliteral">&quot;Frames&#32;can&#32;only&#32;be&#32;registered&#32;to&#32;one&#32;session&#32;state&#32;key&quot;</emphasis>);
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+160 
+161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(frame.GetValue(FrameSessionStateProperty)&#32;!=&#32;null)
+162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;InvalidOperationException(<emphasis class="stringliteral">&quot;Frames&#32;must&#32;be&#32;either&#32;be&#32;registered&#32;before&#32;accessing&#32;frame&#32;session&#32;state,&#32;or&#32;not&#32;registered&#32;at&#32;all&quot;</emphasis>);
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+165 
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!<emphasis class="keywordtype">string</emphasis>.IsNullOrEmpty(sessionBaseKey))
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frame.SetValue(FrameSessionBaseKeyProperty,&#32;sessionBaseKey);
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sessionStateKey&#32;=&#32;sessionBaseKey&#32;+&#32;<emphasis class="stringliteral">&quot;_&quot;</emphasis>&#32;+&#32;sessionStateKey;
+170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+171 
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Use&#32;a&#32;dependency&#32;property&#32;to&#32;associate&#32;the&#32;session&#32;key&#32;with&#32;a&#32;frame,&#32;and&#32;keep&#32;a&#32;list&#32;of&#32;frames&#32;whose</emphasis>
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;navigation&#32;state&#32;should&#32;be&#32;managed</emphasis>
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frame.SetValue(FrameSessionStateKeyProperty,&#32;sessionStateKey);
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_registeredFrames.Add(<emphasis class="keyword">new</emphasis>&#32;WeakReference&lt;Frame&gt;(frame));
+176 
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Check&#32;to&#32;see&#32;if&#32;navigation&#32;state&#32;can&#32;be&#32;restored</emphasis>
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RestoreFrameNavigationState(frame);
+179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+180 
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;UnregisterFrame(Frame&#32;frame)
+189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Remove&#32;session&#32;state&#32;and&#32;remove&#32;the&#32;frame&#32;from&#32;the&#32;list&#32;of&#32;frames&#32;whose&#32;navigation</emphasis>
+191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;state&#32;will&#32;be&#32;saved&#32;(along&#32;with&#32;any&#32;weak&#32;references&#32;that&#32;are&#32;no&#32;longer&#32;reachable)</emphasis>
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SessionState.Remove((String)frame.GetValue(FrameSessionStateKeyProperty));
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_registeredFrames.RemoveAll((weakFrameReference)&#32;=&gt;
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame&#32;testFrame;
+196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;!weakFrameReference.TryGetTarget(out&#32;testFrame)&#32;||&#32;testFrame&#32;==&#32;frame;
+197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;});
+198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+199 
+213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;Dictionary&lt;String,&#32;Object&gt;&#32;SessionStateForFrame(Frame&#32;frame)
+214 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;frameState&#32;=&#32;(Dictionary&lt;String,&#32;Object&gt;)frame.GetValue(FrameSessionStateProperty);
+216 
+217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(frameState&#32;==&#32;null)
+218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;frameSessionKey&#32;=&#32;(String)frame.GetValue(FrameSessionStateKeyProperty);
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(frameSessionKey&#32;!=&#32;null)
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Registered&#32;frames&#32;reflect&#32;the&#32;corresponding&#32;session&#32;state</emphasis>
+223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!_sessionState.ContainsKey(frameSessionKey))
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_sessionState[frameSessionKey]&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Dictionary&lt;String,&#32;Object&gt;();
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frameState&#32;=&#32;(Dictionary&lt;String,&#32;Object&gt;)_sessionState[frameSessionKey];
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Frames&#32;that&#32;aren&apos;t&#32;registered&#32;have&#32;transient&#32;state</emphasis>
+232 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frameState&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Dictionary&lt;String,&#32;Object&gt;();
+233 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+234 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frame.SetValue(FrameSessionStateProperty,&#32;frameState);
+235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;frameState;
+237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+238 
+243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;RestoreFrameNavigationState(Frame&#32;frame)
+244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+245 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;frameState&#32;=&#32;SessionStateForFrame(frame);
+246 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(frameState.ContainsKey(<emphasis class="stringliteral">&quot;Navigation&quot;</emphasis>))
+247 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+248 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frame.SetNavigationState((String)frameState[<emphasis class="stringliteral">&quot;Navigation&quot;</emphasis>]);
+249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+250 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+251 
+256 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SaveFrameNavigationState(Frame&#32;frame)
+257 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+258 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;frameState&#32;=&#32;SessionStateForFrame(frame);
+259 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frameState[<emphasis class="stringliteral">&quot;Navigation&quot;</emphasis>]&#32;=&#32;frame.GetNavigationState();
+260 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+261 &#32;&#32;&#32;&#32;}
+<link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception">265 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception">SuspensionManagerException</link>&#32;:&#32;<link linkend="df/d70/class_exception">Exception</link>
+266 &#32;&#32;&#32;&#32;{
+270 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception">SuspensionManagerException</link>()
+271 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+272 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+273 
+278 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception">SuspensionManagerException</link>(<link linkend="df/d70/class_exception">Exception</link>&#32;e)
+279 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;base(<emphasis class="stringliteral">&quot;SuspensionManager&#32;failed&quot;</emphasis>,&#32;e)
+280 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+281 
+282 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+283 &#32;&#32;&#32;&#32;}
+284 }
+    </computeroutput></literallayout>
+</section>

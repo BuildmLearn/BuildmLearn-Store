@@ -1,0 +1,9 @@
+<map id="org.buildmlearn.appstore.activities.AppDetails.onCreate" name="org.buildmlearn.appstore.activities.AppDetails.onCreate">
+<area shape="rect" id="node2" href="$dd/d52/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_app_details.html#a767a23ca17e84ad2eb3a4d6031222453" title="This method is called automatically when the back button is pressed. " alt="" coords="276,5,499,47"/>
+<area shape="rect" id="node4" href="$dc/d8d/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_volley_singleton.html#a0ae2f754208733f98580d31801f723c6" title="Gets the instance of the Volley. " alt="" coords="289,71,485,112"/>
+<area shape="rect" id="node6" href="$dc/d8d/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_volley_singleton.html#ae1d23a0e0cccd5c9894722131a3ea1f0" title="Gets the ImageLoader instance of the Volley. " alt="" coords="283,136,491,177"/>
+<area shape="rect" id="node7" href="$dd/d52/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_app_details.html#a8a082f9870307fa1e471538b3b3ffe9b" title="This method build the HTML content which needs to be loaded to the reviews section. " alt="" coords="276,201,499,243"/>
+<area shape="rect" id="node8" href="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#aec556fcddde1c33f82e823933f3fb1a6" title="Gets the list of Installed Apps. " alt="" coords="289,267,485,308"/>
+<area shape="rect" id="node3" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a3819b15bd7eeb6b579ffc4ae12bb289b" title="It clears the text in the search tool and collapses the search tool. " alt="" coords="547,5,769,47"/>
+<area shape="rect" id="node5" href="$dc/d8d/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_volley_singleton.html#a701f3cfa1b0637eb979515798176e891" title="Private Constructor of the class. " alt="" coords="555,71,761,112"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$d1/d87/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_card_categories_adapter_1_1_card_view_holder.html" title="Holder class to contain all the views required during populating content into it. ..." alt="" coords="200,71,452,112"/>
+<area shape="rect" id="node3" href="$df/da8/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_card_view_adapter_1_1_card_view_holder.html" title="Holder class to contain all the views required during populating content into it. ..." alt="" coords="215,136,437,177"/>
+<area shape="rect" id="node4" href="$dc/d9f/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_categories_adapter_1_1_categories_view_holder.html" title="Holder class to contain all the views required during populating content into it. ..." alt="" coords="196,201,456,243"/>
+<area shape="rect" id="node5" href="$df/d2d/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_my_apps_view_adapter_1_1_my_apps_view_holder.html" title="Holder class to contain all the views required during populating content into it. ..." alt="" coords="196,5,456,47"/>
+<area shape="rect" id="node6" href="$df/d00/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout_1_1_tab_click_listener.html" title="Helper class which implements a listener to the click/tap event on the tabs. " alt="" coords="215,267,437,308"/>
+</map>

@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d26/class_app_store_1_1_models_1_1_card">
+<title>AppStore::Models::Card class Reference</title>
+<para>Inheritance diagram for AppStore::Models::Card</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d55/class_app_store_1_1_models_1_1_card__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::Card</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d31/class_app_store_1_1_models_1_1_card__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mQuestion</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mAnswer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mHint</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mImagePath</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d26/class_app_store_1_1_models_1_1_card_1a93a01476c90cbe061655ead559e48364">Card</link> (
+string question, string answer, string hint, string imagePath)<para><emphasis>&lt;summary&gt;
+Public constructor
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d0/d26/class_app_store_1_1_models_1_1_card_1a4b516fe27b456956f22ffef2a54f64f8">getQuestion</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the question.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d26/class_app_store_1_1_models_1_1_card_1a02ce70b9050f2799558d1b10469c680e">setQuestion</link> (
+string mQuestion)<para><emphasis>&lt;summary&gt;
+Sets the Question.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d0/d26/class_app_store_1_1_models_1_1_card_1a68dde5c36fe60d40446a8ce9be755a89">getAnswer</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the answer.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d26/class_app_store_1_1_models_1_1_card_1a41057abbc0f3d42a9375c9b80b661def">setAnswer</link> (
+string mAnswer)<para><emphasis>&lt;summary&gt;
+Sets the answer
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d0/d26/class_app_store_1_1_models_1_1_card_1a506d003eb182ea3e39465d9c52e1a38b">getHint</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the hint
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d26/class_app_store_1_1_models_1_1_card_1a4015d09cfe6acceb1c79077cb509c704">setHint</link> (
+string mHint)<para><emphasis>&lt;summary&gt;
+Sets the hint
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d0/d26/class_app_store_1_1_models_1_1_card_1a87ac8b54eb46bd07152648110bafad75">getImagePath</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the ImagePath
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d0/d26/class_app_store_1_1_models_1_1_card_1a5b047749b7febb41521e052735bfc3c2">setImagePath</link> (
+string mImagePath)<para><emphasis>&lt;summary&gt;
+Sets the ImagePath
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is related to the FlashCard App-Template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>It is the model of cards. </para>
+                <para>Definition at line 7 of file Card.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Card.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/d26/class_app_store_1_1_models_1_1_card_1a93a01476c90cbe061655ead559e48364">
+                <title>AppStore.Models.Card.Card (string question, string answer, string hint, string imagePath)</title> <emphasis>&lt;summary&gt;
+Public constructor
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>question</entry>
+                                <entry>
+<para>String question</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>answer</entry>
+                                <entry>
+<para>String answer</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>hint</entry>
+                                <entry>
+<para>String hint</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>imagePath</entry>
+                                <entry>
+<para>String imagePath</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d26/class_app_store_1_1_models_1_1_card_1a4b516fe27b456956f22ffef2a54f64f8">
+                <title>string AppStore.Models.Card.getQuestion ()</title> <emphasis>&lt;summary&gt;
+Gets the question.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>String <link linkend="d4/d22/class_app_store_1_1_models_1_1_question">Question</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d0/d26/class_app_store_1_1_models_1_1_card_1a02ce70b9050f2799558d1b10469c680e">
+                <title>void AppStore.Models.Card.setQuestion (string mQuestion)</title> <emphasis>&lt;summary&gt;
+Sets the Question.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mQuestion</entry>
+                                <entry>
+<para>String <link linkend="d4/d22/class_app_store_1_1_models_1_1_question">Question</link></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d26/class_app_store_1_1_models_1_1_card_1a68dde5c36fe60d40446a8ce9be755a89">
+                <title>string AppStore.Models.Card.getAnswer ()</title> <emphasis>&lt;summary&gt;
+Gets the answer.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>String Answer</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d0/d26/class_app_store_1_1_models_1_1_card_1a41057abbc0f3d42a9375c9b80b661def">
+                <title>void AppStore.Models.Card.setAnswer (string mAnswer)</title> <emphasis>&lt;summary&gt;
+Sets the answer
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mAnswer</entry>
+                                <entry>
+<para>String answer</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d26/class_app_store_1_1_models_1_1_card_1a506d003eb182ea3e39465d9c52e1a38b">
+                <title>string AppStore.Models.Card.getHint ()</title> <emphasis>&lt;summary&gt;
+Gets the hint
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>String Hint</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d0/d26/class_app_store_1_1_models_1_1_card_1a4015d09cfe6acceb1c79077cb509c704">
+                <title>void AppStore.Models.Card.setHint (string mHint)</title> <emphasis>&lt;summary&gt;
+Sets the hint
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>String Hint</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d0/d26/class_app_store_1_1_models_1_1_card_1a87ac8b54eb46bd07152648110bafad75">
+                <title>string AppStore.Models.Card.getImagePath ()</title> <emphasis>&lt;summary&gt;
+Gets the ImagePath
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>String ImagePath</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d0/d26/class_app_store_1_1_models_1_1_card_1a5b047749b7febb41521e052735bfc3c2">
+                <title>void AppStore.Models.Card.setImagePath (string mImagePath)</title> <emphasis>&lt;summary&gt;
+Sets the ImagePath
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>String Imagepath</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

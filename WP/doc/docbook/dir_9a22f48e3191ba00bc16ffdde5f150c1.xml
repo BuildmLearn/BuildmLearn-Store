@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_9a22f48e3191ba00bc16ffdde5f150c1">
+    <title>C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Templates Directory Reference</title>
+<para>Directory dependency diagram for C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Templates</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_9a22f48e3191ba00bc16ffdde5f150c1_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> File </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d0/dd8/_flash_card_page_8xaml_8cs">FlashCardPage.xaml.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d2/de3/_info_detail_page_8xaml_8cs">InfoDetailPage.xaml.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d4/dbf/_info_page_8xaml_8cs">InfoPage.xaml.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dc/d88/_quiz_page_8xaml_8cs">QuizPage.xaml.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d4/de8/_score_page_8xaml_8cs">ScorePage.xaml.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dc/df8/_spellings_page_8xaml_8cs">SpellingsPage.xaml.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="db/da9/_start_page_8xaml_8cs">StartPage.xaml.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dc/d39/_word_info_page_8xaml_8cs">WordInfoPage.xaml.cs</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Templates/</para>
+    </simplesect>
+</section>

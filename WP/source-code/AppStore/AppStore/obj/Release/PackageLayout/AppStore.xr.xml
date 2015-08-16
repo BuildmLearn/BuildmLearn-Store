@@ -2,10 +2,10 @@
 <Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Screenshots" />
-    <RootPropertyPathName Name="Name" />
-    <RootPropertyPathName Name="Background" />
     <RootPropertyPathName Name="Author" />
+    <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="AppIcon" />
+    <RootPropertyPathName Name="Background" />
     <RootPropertyPathName Name="mWord" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -57,6 +57,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Name" />
       <RootProperty Name="Visibility" />
       <RootEvent Name="Holding" />
@@ -84,6 +85,7 @@
       <RootProperty Name="Opacity" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
       <RootProperty Name="TextAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
@@ -91,6 +93,7 @@
       <RootProperty Name="Content" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="IsEnabled" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
@@ -104,6 +107,12 @@
       <RootProperty Name="ItemsPanel" />
       <RootEvent Name="ContainerContentChanging" />
       <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootEvent Name="FrameDOMContentLoaded" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
@@ -140,7 +149,6 @@
       <RootProperty Name="UriSource" />
     </RootType>
     <RootType FullName="AppStore.AppDetailsPage" />
-    <RootType FullName="AppStore.CategoriesPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
       <RootMethod Name="GetAttachedFlyout" />
       <RootMethod Name="SetAttachedFlyout" />
@@ -152,6 +160,8 @@
       <RootProperty Name="Text" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="AppStore.AppsPage" />
+    <RootType FullName="AppStore.CategoriesPage" />
     <RootType FullName="AppStore.CategoryPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
@@ -164,11 +174,21 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="InputScope" />
       <RootProperty Name="Name" />
       <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="AppStore.SearchPage" />
-    <RootType FullName="AppStore.Settings" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
+      <RootProperty Name="Title" />
+      <RootProperty Name="PrimaryButtonText" />
+      <RootProperty Name="SecondaryButtonText" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="PrimaryButtonClick" />
+      <RootEvent Name="SecondaryButtonClick" />
+    </RootType>
+    <RootType FullName="AppStore.SettingsDialog" />
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
     </RootType>

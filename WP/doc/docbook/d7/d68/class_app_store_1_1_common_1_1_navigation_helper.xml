@@ -1,0 +1,468 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">
+<title>AppStore::Common::NavigationHelper class Reference</title>
+<para>Inheritance diagram for AppStore::Common::NavigationHelper</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/da3/class_app_store_1_1_common_1_1_navigation_helper__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::NavigationHelper</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/dd0/class_app_store_1_1_common_1_1_navigation_helper__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>RelayCommand _goBackCommand</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>RelayCommand _goForwardCommand</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>String _pageKey</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1af1d93ce1045dea852d2abadefde8228b">NavigationHelper</link> (
+<link linkend="db/d2f/class_page">Page</link> page)<para><emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;NavigationHelper&quot;/&gt; class.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a21b249bffb46f6f8c65aab7aeb0543fb">CanGoBack</link> (
+)<para><emphasis>&lt;summary&gt;
+Virtual method used by the &lt;see cref=&quot;GoBackCommand&quot;/&gt; property
+to determine if the &lt;see cref=&quot;Frame&quot;/&gt; can go back.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1aa9566ee10b78e2e5e99d39876d79c996">CanGoForward</link> (
+)<para><emphasis>&lt;summary&gt;
+Virtual method used by the &lt;see cref=&quot;GoForwardCommand&quot;/&gt; property
+to determine if the &lt;see cref=&quot;Frame&quot;/&gt; can go forward.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a58c243ef929925c722779e0797657307">GoBack</link> (
+)<para><emphasis>&lt;summary&gt;
+Virtual method used by the &lt;see cref=&quot;GoBackCommand&quot;/&gt; property
+to invoke the &lt;see cref=&quot;Windows.UI.Xaml.Controls.Frame.GoBack&quot;/&gt; method.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a285835ddfc26480da97453aae33c50c8">GoForward</link> (
+)<para><emphasis>&lt;summary&gt;
+Virtual method used by the &lt;see cref=&quot;GoForwardCommand&quot;/&gt; property
+to invoke the &lt;see cref=&quot;Windows.UI.Xaml.Controls.Frame.GoForward&quot;/&gt; method.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a7561edbc040d8300b85f1aee20bea76b">OnNavigatedTo</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+Invoked when this page is about to be displayed in a Frame.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a7bcec3d03a396e17d3a941062ba23a75">OnNavigatedFrom</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+Invoked when this page will no longer be displayed in a Frame.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1aa2f70ef1cd62723515fe746cc82d1561">HardwareButtons_BackPressed</link> (
+object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)<para><emphasis>&lt;summary&gt;
+Invoked when the hardware back button is pressed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a8ca6e944490eafddace8f6ac0e55b36f">CoreDispatcher_AcceleratorKeyActivated</link> (
+CoreDispatcher sender, AcceleratorKeyEventArgs e)<para><emphasis>&lt;summary&gt;
+Invoked on every keystroke, including system keys such as Alt key combinations, when
+this page is active and occupies the entire window.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a032ffecae2bc711cdfd2c1d5c4fce7b7">CoreWindow_PointerPressed</link> (
+CoreWindow sender, PointerEventArgs e)<para><emphasis>&lt;summary&gt;
+Invoked on every mouse click, touch screen tap, or equivalent interaction when this
+page is active and occupies the entire window.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para><link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link> aids in navigation between pages. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>It provides commands used to navigate back and forward as well as registers for standard mouse and keyboard shortcuts used to go back and forward in Windows and the hardware back button in Windows Phone. In addition it integrates SuspensionManger to handle process lifetime management and state management when navigating between pages. </para>
+
+<para>To make use of <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>, follow these two steps or start with a BasicPage or any other <link linkend="db/d2f/class_page">Page</link> item template other than BlankPage.</para>
+
+<para>1) Create an instance of the <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link> somewhere such as in the constructor for the page and register a callback for the LoadState and SaveState events. <literallayout><computeroutput>public&#32;MyPage()
+{
+&#32;&#32;&#32;&#32;this.InitializeComponent();
+&#32;&#32;&#32;&#32;var&#32;navigationHelper&#32;=&#32;new&#32;NavigationHelper(this);
+&#32;&#32;&#32;&#32;this.navigationHelper.LoadState&#32;+=&#32;navigationHelper_LoadState;
+&#32;&#32;&#32;&#32;this.navigationHelper.SaveState&#32;+=&#32;navigationHelper_SaveState;
+}
+
+private&#32;async&#32;void&#32;navigationHelper_LoadState(object&#32;sender,&#32;LoadStateEventArgs&#32;e)
+{&#32;}
+private&#32;async&#32;void&#32;navigationHelper_SaveState(object&#32;sender,&#32;LoadStateEventArgs&#32;e)
+{&#32;}
+</computeroutput></literallayout></para>
+
+<para>2) Register the page to call into the <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link> whenever the page participates in navigation by overriding the Windows.UI.Xaml.Controls.Page.OnNavigatedTo and Windows.UI.Xaml.Controls.Page.OnNavigatedFrom events. <literallayout><computeroutput>protected&#32;override&#32;void&#32;OnNavigatedTo(NavigationEventArgs&#32;e)
+{
+&#32;&#32;&#32;&#32;navigationHelper.OnNavigatedTo(e);
+}
+
+protected&#32;override&#32;void&#32;OnNavigatedFrom(NavigationEventArgs&#32;e)
+{
+&#32;&#32;&#32;&#32;navigationHelper.OnNavigatedFrom(e);
+}
+</computeroutput></literallayout> </para>
+                <para>Definition at line 55 of file NavigationHelper.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NavigationHelper.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1af1d93ce1045dea852d2abadefde8228b">
+                <title>AppStore.Common.NavigationHelper.NavigationHelper (Page page)</title> <emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;NavigationHelper&quot;/&gt; class.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>page</entry>
+                                <entry>
+<para>A reference to the current page used for navigation. This reference allows for frame manipulation and to ensure that keyboard navigation requests only occur when the page is occupying the entire window.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a21b249bffb46f6f8c65aab7aeb0543fb">
+                <title>virtual bool AppStore.Common.NavigationHelper.CanGoBack ()</title> <emphasis>&lt;summary&gt;
+Virtual method used by the &lt;see cref=&quot;GoBackCommand&quot;/&gt; property
+to determine if the &lt;see cref=&quot;Frame&quot;/&gt; can go back.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>true if the <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a65d562d05986ba5a73002f2593883df4">Frame</link> has at least one entry in the back navigation history. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1aa9566ee10b78e2e5e99d39876d79c996">
+                <title>virtual bool AppStore.Common.NavigationHelper.CanGoForward ()</title> <emphasis>&lt;summary&gt;
+Virtual method used by the &lt;see cref=&quot;GoForwardCommand&quot;/&gt; property
+to determine if the &lt;see cref=&quot;Frame&quot;/&gt; can go forward.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>true if the <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a65d562d05986ba5a73002f2593883df4">Frame</link> has at least one entry in the forward navigation history. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a58c243ef929925c722779e0797657307">
+                <title>virtual void AppStore.Common.NavigationHelper.GoBack ()</title> <emphasis>&lt;summary&gt;
+Virtual method used by the &lt;see cref=&quot;GoBackCommand&quot;/&gt; property
+to invoke the &lt;see cref=&quot;Windows.UI.Xaml.Controls.Frame.GoBack&quot;/&gt; method.</emphasis>
+                
+            </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a285835ddfc26480da97453aae33c50c8">
+                <title>virtual void AppStore.Common.NavigationHelper.GoForward ()</title> <emphasis>&lt;summary&gt;
+Virtual method used by the &lt;see cref=&quot;GoForwardCommand&quot;/&gt; property
+to invoke the &lt;see cref=&quot;Windows.UI.Xaml.Controls.Frame.GoForward&quot;/&gt; method.</emphasis>
+                
+            </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a7561edbc040d8300b85f1aee20bea76b">
+                <title>void AppStore.Common.NavigationHelper.OnNavigatedTo (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+Invoked when this page is about to be displayed in a Frame.</emphasis>
+                
+<para>This method calls <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a63f9bedd7df70b848bedf05419d40539">LoadState</link>, where all page specific navigation and process lifetime management logic should be placed. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that describes how this page was reached. The Parameter property provides the group to be displayed.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a7bcec3d03a396e17d3a941062ba23a75">
+                <title>void AppStore.Common.NavigationHelper.OnNavigatedFrom (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+Invoked when this page will no longer be displayed in a Frame.</emphasis>
+                
+<para>This method calls <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1affc7edbf3299ce0a7cc0b10ef010070c">SaveState</link>, where all page specific navigation and process lifetime management logic should be placed. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that describes how this page was reached. The Parameter property provides the group to be displayed.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1aa2f70ef1cd62723515fe746cc82d1561">
+                <title>void AppStore.Common.NavigationHelper.HardwareButtons_BackPressed (object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Invoked when the hardware back button is pressed.</emphasis>
+                
+<para>For Windows Phone only. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Instance that triggered the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data describing the conditions that led to the event.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a8ca6e944490eafddace8f6ac0e55b36f">
+                <title>void AppStore.Common.NavigationHelper.CoreDispatcher_AcceleratorKeyActivated (CoreDispatcher sender, AcceleratorKeyEventArgs e)</title> <emphasis>&lt;summary&gt;
+Invoked on every keystroke, including system keys such as Alt key combinations, when
+this page is active and occupies the entire window.</emphasis>
+                
+<para>Used to detect keyboard navigation between pages even when the page itself doesn&apos;t have focus. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Instance that triggered the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data describing the conditions that led to the event.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d68/class_app_store_1_1_common_1_1_navigation_helper_1a032ffecae2bc711cdfd2c1d5c4fce7b7">
+                <title>void AppStore.Common.NavigationHelper.CoreWindow_PointerPressed (CoreWindow sender, PointerEventArgs e)</title> <emphasis>&lt;summary&gt;
+Invoked on every mouse click, touch screen tap, or equivalent interaction when this
+page is active and occupies the entire window.</emphasis>
+                
+<para>Used to detect browser-style next and previous mouse button clicks to navigate between pages. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Instance that triggered the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data describing the conditions that led to the event.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

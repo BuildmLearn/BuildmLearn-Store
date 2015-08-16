@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">
+<title>AppStore::Common::SuspensionManager class Reference</title>
+<para>Inheritance diagram for AppStore::Common::SuspensionManager</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/da6/class_app_store_1_1_common_1_1_suspension_manager__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::SuspensionManager</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d8c/class_app_store_1_1_common_1_1_suspension_manager__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Dictionary&lt; string, object &gt; _sessionState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static List&lt; Type &gt; _knownTypes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static DependencyProperty FrameSessionStateKeyProperty</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static DependencyProperty FrameSessionBaseKeyProperty</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static DependencyProperty FrameSessionStateProperty</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static List&lt; WeakReference&lt; Frame &gt; &gt; _registeredFrames</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string sessionStateFilename</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static async Task <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1ae4db8757e5db7b1dbeaf095646a88484">SaveAsync</link> (
+)<para><emphasis>&lt;summary&gt;
+Save the current &lt;see cref=&quot;SessionState&quot;/&gt;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static async Task <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a633ec2b085908a90dade53b234ca5466">RestoreAsync</link> (
+String sessionBaseKey)<para><emphasis>&lt;summary&gt;
+Restores previously saved &lt;see cref=&quot;SessionState&quot;/&gt;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1ae3bdf40f19a04f7807435d79c501e91f">RegisterFrame</link> (
+Frame frame, String sessionStateKey, String sessionBaseKey)<para><emphasis>&lt;summary&gt;
+Registers a &lt;see cref=&quot;Frame&quot;/&gt; instance to allow its navigation history to be saved to
+and restored from &lt;see cref=&quot;SessionState&quot;/&gt;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a698055e688da82157d2ad925821704aa">UnregisterFrame</link> (
+Frame frame)<para><emphasis>&lt;summary&gt;
+Disassociates a &lt;see cref=&quot;Frame&quot;/&gt; previously registered by &lt;see cref=&quot;RegisterFrame&quot;/&gt;
+from &lt;see cref=&quot;SessionState&quot;/&gt;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Dictionary&lt; String, Object &gt; <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1aa693200dcd56b5b5a0193fb645d51847">SessionStateForFrame</link> (
+Frame frame)<para><emphasis>&lt;summary&gt;
+Provides storage for session state associated with the specified &lt;see cref=&quot;Frame&quot;/&gt;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1ab8cfd4af0e1033ed702a3279df31c9fc">RestoreFrameNavigationState</link> (
+Frame frame)<para><emphasis>&lt;summary&gt;
+Loads the navigation state.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a56832e5a2e62fde107d5ef3372f0d7f2">SaveFrameNavigationState</link> (
+Frame frame)<para><emphasis>&lt;summary&gt;
+Saves the navigation state.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para><link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">SuspensionManager</link> captures global session state to simplify process lifetime management for an application. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Note that session state will be automatically cleared under a variety of conditions and should only be used to store information that would be convenient to carry across sessions, but that should be discarded when an application crashes or is upgraded. </para>
+                <para>Definition at line 21 of file SuspensionManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SuspensionManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1ae4db8757e5db7b1dbeaf095646a88484">
+                <title>static async Task AppStore.Common.SuspensionManager.SaveAsync ()</title> <emphasis>&lt;summary&gt;
+Save the current &lt;see cref=&quot;SessionState&quot;/&gt;.</emphasis>
+                
+<para>Any Frame instances registered with <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1ae3bdf40f19a04f7807435d79c501e91f">RegisterFrame</link> will also preserve their current navigation stack, which in turn gives their active <link linkend="db/d2f/class_page">Page</link> an opportunity to save its state. </para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>An asynchronous task that reflects when session state has been saved.</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a633ec2b085908a90dade53b234ca5466">
+                <title>static async Task AppStore.Common.SuspensionManager.RestoreAsync (String sessionBaseKey=null)</title> <emphasis>&lt;summary&gt;
+Restores previously saved &lt;see cref=&quot;SessionState&quot;/&gt;.</emphasis>
+                
+<para>Any Frame instances registered with <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1ae3bdf40f19a04f7807435d79c501e91f">RegisterFrame</link> will also restore their prior navigation state, which in turn gives their active <link linkend="db/d2f/class_page">Page</link> an opportunity restore its state. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sessionBaseKey</entry>
+                                <entry>
+<para>An optional key that identifies the type of session. This can be used to distinguish between multiple application launch scenarios.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>An asynchronous task that reflects when session state has been read. The content of <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a0399ae48df18ef96d1f8dc4974d036de">SessionState</link> should not be relied upon until this task completes.</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1ae3bdf40f19a04f7807435d79c501e91f">
+                <title>static void AppStore.Common.SuspensionManager.RegisterFrame (Frame frame, String sessionStateKey, String sessionBaseKey=null)</title> <emphasis>&lt;summary&gt;
+Registers a &lt;see cref=&quot;Frame&quot;/&gt; instance to allow its navigation history to be saved to
+and restored from &lt;see cref=&quot;SessionState&quot;/&gt;.</emphasis>
+                
+<para>Frames should be registered once immediately after creation if they will participate in session state management. Upon registration if state has already been restored for the specified key the navigation history will immediately be restored. Subsequent invocations of <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a633ec2b085908a90dade53b234ca5466">RestoreAsync</link> will also restore navigation history. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>frame</entry>
+                                <entry>
+<para>An instance whose navigation history should be managed by <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">SuspensionManager</link></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>sessionStateKey</entry>
+                                <entry>
+<para>A unique key into <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a0399ae48df18ef96d1f8dc4974d036de">SessionState</link> used to store navigation-related information.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>sessionBaseKey</entry>
+                                <entry>
+<para>An optional key that identifies the type of session. This can be used to distinguish between multiple application launch scenarios.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a698055e688da82157d2ad925821704aa">
+                <title>static void AppStore.Common.SuspensionManager.UnregisterFrame (Frame frame)</title> <emphasis>&lt;summary&gt;
+Disassociates a &lt;see cref=&quot;Frame&quot;/&gt; previously registered by &lt;see cref=&quot;RegisterFrame&quot;/&gt;
+from &lt;see cref=&quot;SessionState&quot;/&gt;.</emphasis>
+                
+<para>Any navigation state previously captured will be removed. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>frame</entry>
+                                <entry>
+<para>An instance whose navigation history should no longer be managed.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1aa693200dcd56b5b5a0193fb645d51847">
+                <title>static Dictionary&lt;String, Object&gt; AppStore.Common.SuspensionManager.SessionStateForFrame (Frame frame)</title> <emphasis>&lt;summary&gt;
+Provides storage for session state associated with the specified &lt;see cref=&quot;Frame&quot;/&gt;.</emphasis>
+                
+<para>Frames that have been previously registered with <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1ae3bdf40f19a04f7807435d79c501e91f">RegisterFrame</link> have their session state saved and restored automatically as a part of the global <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a0399ae48df18ef96d1f8dc4974d036de">SessionState</link>. Frames that are not registered have transient state that can still be useful when restoring pages that have been discarded from the navigation cache. </para>
+
+<para>Apps may choose to rely on <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link> to manage page-specific state instead of working with frame session state directly.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>frame</entry>
+                                <entry>
+<para>The instance for which session state is desired.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>A collection of state subject to the same serialization mechanism as <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a0399ae48df18ef96d1f8dc4974d036de">SessionState</link>.</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1ab8cfd4af0e1033ed702a3279df31c9fc">
+                <title>static void AppStore.Common.SuspensionManager.RestoreFrameNavigationState (Frame frame)</title> <emphasis>&lt;summary&gt;
+Loads the navigation state.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>frame</entry>
+                                <entry>
+<para>Frame Object</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1a56832e5a2e62fde107d5ef3372f0d7f2">
+                <title>static void AppStore.Common.SuspensionManager.SaveFrameNavigationState (Frame frame)</title> <emphasis>&lt;summary&gt;
+Saves the navigation state.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>frame</entry>
+                                <entry>
+<para>Frame Object</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

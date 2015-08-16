@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 using System.Threading.Tasks;
-using Windows.ApplicationModel;
 using Windows.Storage;
 using Windows.Storage.Streams;
 using Windows.UI.Xaml;
@@ -239,6 +236,10 @@ namespace AppStore.Common
             return frameState;
         }
 
+        /// <summary>
+        /// Loads the navigation state.
+        /// </summary>
+        /// <param name="frame">Frame Object</param>
         private static void RestoreFrameNavigationState(Frame frame)
         {
             var frameState = SessionStateForFrame(frame);
@@ -248,18 +249,32 @@ namespace AppStore.Common
             }
         }
 
+        /// <summary>
+        /// Saves the navigation state.
+        /// </summary>
+        /// <param name="frame">Frame Object</param>
         private static void SaveFrameNavigationState(Frame frame)
         {
             var frameState = SessionStateForFrame(frame);
             frameState["Navigation"] = frame.GetNavigationState();
         }
     }
+    /// <summary>
+    /// Handles the exception related to the SuspensionManager.
+    /// </summary>
     public class SuspensionManagerException : Exception
     {
+        /// <summary>
+        /// Deafult constructor
+        /// </summary>
         public SuspensionManagerException()
         {
         }
 
+        /// <summary>
+        /// Constructor with the Exception Object
+        /// </summary>
+        /// <param name="e"></param>
         public SuspensionManagerException(Exception e)
             : base("SuspensionManager failed", e)
         {

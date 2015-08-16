@@ -1,20 +1,7 @@
 ﻿using AppStore.Common;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
-using Windows.UI.Core;
-using Windows.UI.ViewManagement;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -22,15 +9,19 @@ using Windows.UI.Xaml.Navigation;
 namespace AppStore.Templates
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// This page deals with the Info app tmeplate.
     /// </summary>
     public sealed partial class InfoPage : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
         private Models.InfoModel info;
+        bool selectionWordList = false;
         public static string infoTitle = "";
 
+        /// <summary>
+        /// Public Construtor to the InfoPage. Populates the views pertaining to this page.
+        /// </summary>
         public InfoPage()
         {
             this.InitializeComponent();
@@ -108,13 +99,31 @@ namespace AppStore.Templates
             this.navigationHelper.OnNavigatedTo(e);
         }
 
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// <para>
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="NavigationHelper.LoadState"/>
+        /// and <see cref="NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+        /// </para>
+        /// </summary>
+        /// <param name="e">Provides data for navigation methods and event
+        /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
         }
 
         #endregion
-        bool selectionWordList = false;
+
+        /// <summary>
+        /// It populates the list of the words in the view.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
         private void InfoList_ContainerContentChanging(ListViewBase sender, ContainerContentChangingEventArgs args)
         {
             args.Handled = true;
@@ -127,6 +136,12 @@ namespace AppStore.Templates
             TextBlock wordTitle = (TextBlock)templateRoot.FindName("InfoTitle");
             wordTitle.Text = word;
         }
+
+        /// <summary>
+        /// Executed when the user taps/selects an info-word from the Info-App Template Page. The app navigates to the Details page of the word.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
         private void InfoList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionWordList) return;

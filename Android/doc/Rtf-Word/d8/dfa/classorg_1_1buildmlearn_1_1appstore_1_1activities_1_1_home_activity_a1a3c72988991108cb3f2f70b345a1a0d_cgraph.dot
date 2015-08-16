@@ -1,0 +1,33 @@
+digraph "org.buildmlearn.appstore.activities.HomeActivity.onCreate"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="org.buildmlearn.appstore.activities.\lHomeActivity.onCreate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="org.buildmlearn.appstore.utils.\lSlidingTabLayout.setOnPageChangeListener",height=0.2,width=0.4,color="black",URL="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#a1432bea11a08f521a457c714d1d8f7a6",tooltip="Set the ViewPager.OnPageChangeListener. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="org.buildmlearn.appstore.fragments.\lTabMyApps.refreshList",height=0.2,width=0.4,color="black",URL="$d0/df6/classorg_1_1buildmlearn_1_1appstore_1_1fragments_1_1_tab_my_apps.html#a35f6e10d8f45a3c9995c0b70c18f438d",tooltip="Refreshes the list of apps. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="org.buildmlearn.appstore.activities.\lHomeActivity.MyAppsView",height=0.2,width=0.4,color="black",URL="$d8/dfa/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_home_activity.html#a104177f795c32e9b28838760f994dc5f",tooltip="Set the current view to My-Apps section. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="org.buildmlearn.appstore.fragments.\lTabStore.closeSearch",height=0.2,width=0.4,color="black",URL="$d8/dd4/classorg_1_1buildmlearn_1_1appstore_1_1fragments_1_1_tab_store.html#a9b04ad8cb6754042ab570357d36cc1da",tooltip="This method is called from the Navigation Activity. "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="org.buildmlearn.appstore.fragments.\lTabMyApps.closeSearch",height=0.2,width=0.4,color="black",URL="$d0/df6/classorg_1_1buildmlearn_1_1appstore_1_1fragments_1_1_tab_my_apps.html#ad2cfa4949b0adb6836ee7ddc5e07803b",tooltip="This method is called from the Navigation Activity. "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="org.buildmlearn.appstore.activities.\lNavigationActivity.clearSearch",height=0.2,width=0.4,color="black",URL="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a3819b15bd7eeb6b579ffc4ae12bb289b",tooltip="It clears the text in the search tool and collapses the search tool. "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="org.buildmlearn.appstore.utils.\lSlidingTabLayout.setDistributeEvenly",height=0.2,width=0.4,color="black",URL="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#a01535eff86c41187853e669f50126f08",tooltip="Distributes the tabs evenly in the available space. "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="org.buildmlearn.appstore.utils.\lSlidingTabLayout.setCustomTabColorizer",height=0.2,width=0.4,color="black",URL="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#ae8c85fbcb10f34e53ce134b9ba1e3771",tooltip="Set the custom TabColorizer to be used. "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="org.buildmlearn.appstore.utils.\lSlidingTabStrip.setCustomTabColorizer",height=0.2,width=0.4,color="black",URL="$d2/d6d/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_strip.html#a9b6dfb94b1bb062bdcb6842bbe606f91",tooltip="Sets colors to the tabs. "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="org.buildmlearn.appstore.utils.\lSlidingTabLayout.setViewPager",height=0.2,width=0.4,color="black",URL="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#a122f48ed0894e06f391afac8621a6421",tooltip="Sets the associated view pager. "];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="org.buildmlearn.appstore.utils.\lSlidingTabLayout.populateTabStrip",height=0.2,width=0.4,color="black",URL="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#a372e773548f8b02b384a9297c618bb65",tooltip="Populates tabs strip. "];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="org.buildmlearn.appstore.utils.\lSlidingTabLayout.createDefaultTabView",height=0.2,width=0.4,color="black",URL="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#ae1a0a68a2e16ac093b4d8b80bcbaeb88",tooltip="Create a default view to be used for tabs. "];
+}

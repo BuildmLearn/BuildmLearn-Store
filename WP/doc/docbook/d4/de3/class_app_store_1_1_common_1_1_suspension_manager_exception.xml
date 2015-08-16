@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception">
+<title>AppStore::Common::SuspensionManagerException class Reference</title>
+<para>Inheritance diagram for AppStore::Common::SuspensionManagerException</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dc1/class_app_store_1_1_common_1_1_suspension_manager_exception__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::SuspensionManagerException</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/db8/class_app_store_1_1_common_1_1_suspension_manager_exception__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception_1a7d9056ce136765e17138de55f113d05e">SuspensionManagerException</link> (
+)<para><emphasis>&lt;summary&gt;
+Deafult constructor
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception_1a6ae6c84f01133bd7ce2d42a07f7bab2a">SuspensionManagerException</link> (
+<link linkend="df/d70/class_exception">Exception</link> e)<para><emphasis>&lt;summary&gt;
+Constructor with the Exception Object
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Handles the exception related to the <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">SuspensionManager</link>. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 266 of file SuspensionManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SuspensionManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception_1a7d9056ce136765e17138de55f113d05e">
+                <title>AppStore.Common.SuspensionManagerException.SuspensionManagerException ()</title> <emphasis>&lt;summary&gt;
+Deafult constructor
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception_1a6ae6c84f01133bd7ce2d42a07f7bab2a">
+                <title>AppStore.Common.SuspensionManagerException.SuspensionManagerException (Exception e)</title> <emphasis>&lt;summary&gt;
+Constructor with the Exception Object
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

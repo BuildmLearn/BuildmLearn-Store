@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.activities.CategoriesView.refineSearch" name="org.buildmlearn.appstore.activities.CategoriesView.refineSearch">
+<area shape="rect" id="node2" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a205e1d750606e6ca55b3cb753fc6f9cc" title="This method sends the search query to respective active activities, to refresh their view with the cu..." alt="" coords="276,29,499,71"/>
+<area shape="rect" id="node3" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a0d03e67c759108fd119b9e5ad2e48014" title="This method creates menu items to be shown on the Action Bar. " alt="" coords="547,29,803,71"/>
+</map>

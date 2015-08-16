@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d6b/_card_8cs">
+    <title>Card.cs File Reference</title>
+<para>Include dependency diagram for Card.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d52/_card_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Card.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/dbc/_card_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d26/class_app_store_1_1_models_1_1_card">AppStore::Models::Card</link></para>
+<para><emphasis>&lt;summary&gt;
+It is related to the FlashCard App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/Card.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+2 {
+<link linkend="d0/d26/class_app_store_1_1_models_1_1_card">6 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d0/d26/class_app_store_1_1_models_1_1_card">Card</link>
+7 &#32;&#32;&#32;&#32;{
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mQuestion,&#32;mAnswer,&#32;mHint,&#32;mImagePath;
+9 
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d0/d26/class_app_store_1_1_models_1_1_card">Card</link>(<emphasis class="keywordtype">string</emphasis>&#32;question,&#32;<emphasis class="keywordtype">string</emphasis>&#32;answer,&#32;<emphasis class="keywordtype">string</emphasis>&#32;hint,&#32;<emphasis class="keywordtype">string</emphasis>&#32;imagePath)
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mQuestion&#32;=&#32;question;
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mAnswer&#32;=&#32;answer;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mHint&#32;=&#32;hint;
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mImagePath&#32;=&#32;imagePath;
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+24 
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getQuestion()
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mQuestion;
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+33 
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setQuestion(<emphasis class="keywordtype">string</emphasis>&#32;mQuestion)
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mQuestion&#32;=&#32;mQuestion;
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+42 
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getAnswer()
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mAnswer;
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+51 
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setAnswer(<emphasis class="keywordtype">string</emphasis>&#32;mAnswer)
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mAnswer&#32;=&#32;mAnswer;
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+60 
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getHint()
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mHint;
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+69 
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setHint(<emphasis class="keywordtype">string</emphasis>&#32;mHint)
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mHint&#32;=&#32;mHint;
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+78 
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getImagePath()
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mImagePath;
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+87 
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setImagePath(<emphasis class="keywordtype">string</emphasis>&#32;mImagePath)
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mImagePath&#32;=&#32;mImagePath;
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+96 
+97 &#32;&#32;&#32;&#32;}
+98 }
+    </computeroutput></literallayout>
+</section>

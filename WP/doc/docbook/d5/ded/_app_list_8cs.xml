@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/ded/_app_list_8cs">
+    <title>AppList.cs File Reference</title>
+<para>Include dependency diagram for AppList.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d31/_app_list_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for AppList.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d3a/_app_list_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppStore::Models::AppList</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model which contains the list of all the apps both installed and else.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/AppList.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+2 
+3 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+4 {
+<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">8 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>
+9 &#32;&#32;&#32;&#32;{
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>&#32;obAppList&#32;=&#32;null;
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;List&lt;Apps&gt;&#32;myappList;
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;List&lt;Apps&gt;&#32;appList;
+13 
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>&#32;getAppList()
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(obAppList&#32;==&#32;null)&#32;obAppList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>();
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;obAppList;
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>&#32;getMyAppList()
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(obAppList&#32;==&#32;null)&#32;obAppList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>();
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;obAppList;
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>()
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;Apps&gt;();
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;myappList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;Apps&gt;();
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+42 &#32;&#32;&#32;&#32;}
+43 }
+    </computeroutput></literallayout>
+</section>

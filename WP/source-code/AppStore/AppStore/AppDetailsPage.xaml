@@ -59,7 +59,7 @@
                 </StackPanel>
                     <TextBlock Margin="0,5" Text="Reviews" FontSize="25" FontWeight="Bold" Foreground="#FF1976D2"/>
                     <WebView Name="webAppReviews" Height="250" FrameDOMContentLoaded="webAppReviews_FrameDOMContentLoaded" IsHitTestVisible="False"/>
-                    <HyperlinkButton Name="OpenInBrowser" IsEnabled="False" Click="HyperlinkButton_Click" Content="Open reviews in browser" Foreground="#FF1976D2"/>
+                    <HyperlinkButton Name="OpenInBrowser" IsEnabled="False" Click="Browser_Click" Content="Open reviews in browser" Foreground="#FF1976D2"/>
                 </StackPanel>
         </ScrollViewer>
     </Grid>

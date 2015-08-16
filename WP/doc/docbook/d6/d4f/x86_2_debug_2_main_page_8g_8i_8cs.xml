@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d4f/x86_2_debug_2_main_page_8g_8i_8cs">
+    <title>MainPage.g.i.cs File Reference</title>
+<para>Include dependency diagram for MainPage.g.i.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/ded/x86_2_debug_2_main_page_8g_8i_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for MainPage.g.i.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d18/x86_2_debug_2_main_page_8g_8i_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d1a/class_app_store_1_1_main_page">AppStore::MainPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page is the Home Page.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/x86/Debug/MainPage.g.i.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 
+3 <emphasis class="preprocessor">#pragma&#32;checksum&#32;&quot;c:\users\srujan&#32;jha\documents\visual&#32;studio&#32;2015\Projects\AppStore\AppStore\MainPage.xaml&quot;&#32;&quot;{406ea660-64cf-4c82-b6f0-42d48172a799}&quot;&#32;&quot;99DBABA012784CC25FC6A275830C2B98&quot;</emphasis>
+4 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+5 <emphasis class="comment">//&#32;&lt;auto-generated&gt;</emphasis>
+6 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;This&#32;code&#32;was&#32;generated&#32;by&#32;a&#32;tool.</emphasis>
+7 <emphasis class="comment">//</emphasis>
+8 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;Changes&#32;to&#32;this&#32;file&#32;may&#32;cause&#32;incorrect&#32;behavior&#32;and&#32;will&#32;be&#32;lost&#32;if</emphasis>
+9 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;the&#32;code&#32;is&#32;regenerated.</emphasis>
+10 <emphasis class="comment">//&#32;&lt;/auto-generated&gt;</emphasis>
+11 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+12 
+13 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+14 {
+15 &#32;&#32;&#32;&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>MainPage&#32;:&#32;global::Windows.UI.Xaml.Controls.Page
+16 &#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a0773e0774aa03922c1f75566009f642f">RootLayout</link>;&#32;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a3cc8154c3a7a669e4ab5a1c8fec28e3c">TitleBar</link>;&#32;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::DrawerLayout.DrawerLayout&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a5fb3d649c35df9110807275ebad465cb">DrawerLayout</link>;&#32;
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a32a1ab8567e48cfbe4e0d9e7e9dfebf9">MainFragment</link>;&#32;
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a1e328bba60c9a7d2f5876e34de3e41f1">ListFragment</link>;&#32;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.ListView&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a3d0edec043d3125708f21e9f383feab7">ListMenuItems</link>;&#32;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.GridView&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1abcee9d038c37511f285804a8033fd810">myGridView</link>;&#32;
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Image&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a5657adca70480c3d602ff50c8416f696">DrawerIcon</link>;&#32;
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a98f140522e205ece92aefaf785417d2c">_contentLoaded</link>;
+35 
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1ac8b315b1b75187e63cf1809160929330">InitializeComponent</link>()
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_contentLoaded)
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>;
+42 
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_contentLoaded&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::Windows.UI.Xaml.Application.LoadComponent(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Uri(<emphasis class="stringliteral">&quot;ms-appx:///MainPage.xaml&quot;</emphasis>),&#32;global::Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation.Application);
+45 &#32;
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a0773e0774aa03922c1f75566009f642f">RootLayout</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;RootLayout&quot;</emphasis>);
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a3cc8154c3a7a669e4ab5a1c8fec28e3c">TitleBar</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;TitleBar&quot;</emphasis>);
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a5fb3d649c35df9110807275ebad465cb">DrawerLayout</link>&#32;=&#32;(global::DrawerLayout.DrawerLayout)this.FindName(<emphasis class="stringliteral">&quot;DrawerLayout&quot;</emphasis>);
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a32a1ab8567e48cfbe4e0d9e7e9dfebf9">MainFragment</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;MainFragment&quot;</emphasis>);
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a1e328bba60c9a7d2f5876e34de3e41f1">ListFragment</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;ListFragment&quot;</emphasis>);
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a3d0edec043d3125708f21e9f383feab7">ListMenuItems</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.ListView)this.FindName(<emphasis class="stringliteral">&quot;ListMenuItems&quot;</emphasis>);
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1abcee9d038c37511f285804a8033fd810">myGridView</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.GridView)this.FindName(<emphasis class="stringliteral">&quot;myGridView&quot;</emphasis>);
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a5657adca70480c3d602ff50c8416f696">DrawerIcon</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Image)this.FindName(<emphasis class="stringliteral">&quot;DrawerIcon&quot;</emphasis>);
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+55 &#32;&#32;&#32;&#32;}
+56 }
+57 
+58 
+59 
+    </computeroutput></literallayout>
+</section>

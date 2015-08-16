@@ -1,19 +1,8 @@
 ﻿using AppStore.Common;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
-using Windows.UI.Core;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
@@ -22,7 +11,7 @@ using Windows.UI.Xaml.Navigation;
 namespace AppStore.Templates
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// This page deals with the Quiz-App template.
     /// </summary>
     public sealed partial class QuizPage : Page
     {
@@ -32,6 +21,10 @@ namespace AppStore.Templates
         private int iQuestionIndex = 0;
         private int iCurrentCorrectAnswer=0;
         private int iNumberofQuestions = 0;
+
+        /// <summary>
+        /// Public Construtor to the QuizPage. Populates the views pertaining to this page.
+        /// </summary>
         public QuizPage()
         {
             this.InitializeComponent();
@@ -110,12 +103,31 @@ namespace AppStore.Templates
             this.navigationHelper.OnNavigatedTo(e);
         }
 
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// <para>
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="NavigationHelper.LoadState"/>
+        /// and <see cref="NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+        /// </para>
+        /// </summary>
+        /// <param name="e">Provides data for navigation methods and event
+        /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
         }
+        
         #endregion
 
+        /// <summary>
+        /// Executed when any of the options are checked.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Options_Checked(object sender, RoutedEventArgs e)
         {
             Next.IsEnabled = true;
@@ -139,6 +151,11 @@ namespace AppStore.Templates
             Option4.IsEnabled = false;
         }
 
+        /// <summary>
+        /// Executed when the Next Button is tapped. It populates the next question in the current view.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             if (iQuestionIndex == iNumberofQuestions - 2) { iQuestionIndex++; populateQuestion(iQuestionIndex); Next.Content = "Submit"; }
@@ -168,6 +185,11 @@ namespace AppStore.Templates
             Option3.Background = new SolidColorBrush(Windows.UI.Colors.White);
             Option4.Background = new SolidColorBrush(Windows.UI.Colors.White);
         }
+        
+        /// <summary>
+        /// It populates the question with the index passed into the current view.
+        /// </summary>
+        /// <param name="index">The index of the question which will be populated in the current view.</param>
         public void populateQuestion(int index)
         {
             QuestionNumber.Text="Question #" + (index+1) + " of " + iNumberofQuestions;

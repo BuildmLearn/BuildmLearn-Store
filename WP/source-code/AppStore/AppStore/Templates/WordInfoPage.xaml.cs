@@ -1,20 +1,8 @@
 ﻿using AppStore.Common;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
-using Windows.UI.Core;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -22,7 +10,7 @@ using Windows.UI.Xaml.Navigation;
 namespace AppStore.Templates
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// The page deals with shwoing the word info based on the word which comes up while running the Spellings Puzzle app-template.
     /// </summary>
     public sealed partial class WordInfoPage : Page
     {
@@ -30,6 +18,9 @@ namespace AppStore.Templates
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
         Models.SpellingsModel puzzle;
 
+        /// <summary>
+        /// Public Construtor to the WordInfoPage. Populates the views pertaining to this page.
+        /// </summary>
         public WordInfoPage()
         {
             this.InitializeComponent();
@@ -109,6 +100,19 @@ namespace AppStore.Templates
             this.navigationHelper.OnNavigatedTo(e);
         }
 
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// <para>
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="NavigationHelper.LoadState"/>
+        /// and <see cref="NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+        /// </para>
+        /// </summary>
+        /// <param name="e">Provides data for navigation methods and event
+        /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             Answer.Visibility = Visibility.Collapsed;
@@ -116,10 +120,22 @@ namespace AppStore.Templates
         }
 
         #endregion
+
+        /// <summary>
+        /// The app navigates to the previous page which is the word page of the Spellings App-Template.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             Frame.GoBack();
         }
+
+        /// <summary>
+        /// Executed when the Enter button is tapped/pressed. It checks the correct word with the spelling entered by the user.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Enter_Click(object sender, RoutedEventArgs e)
         {
             Enter.IsEnabled = false;
@@ -137,6 +153,12 @@ namespace AppStore.Templates
                 Response.Text = "Sorry, the word you entered is wrong!";
             }
         }
+
+        /// <summary>
+        /// It populates the next word question in the current view.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             if (puzzle.getActiveCount() + 1 == puzzle.getSpellingsList().Count) Frame.Navigate(typeof(ScorePage));
@@ -144,6 +166,11 @@ namespace AppStore.Templates
             Frame.GoBack();
         }
 
+        /// <summary>
+        /// Executed when the text in the textbox is changed by the user.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">TextChangedEventArgs e is a parameter called e that contains the event data, see the TextChangedEventArgs MSDN page for more information.</param>
         private void Word_TextChanged(object sender, TextChangedEventArgs e)
         {
             Enter.IsEnabled = true;

@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.models.FlashModel.getName" name="org.buildmlearn.appstore.models.FlashModel.getName">
+<area shape="rect" id="node2" href="$d6/d1d/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_flash_activity.html#a76bd9b78546b0a6b5867988002f88e36" title="The method is executed first when the activity is created. " alt="" coords="291,5,513,47"/>
+<area shape="rect" id="node3" href="$d3/dbf/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_start_activity_1_1_file_read_task.html#a1170e20ba70058ef64883f3cc85e209b" title="This method is called after the task has been performed. " alt="" coords="268,71,536,112"/>
+</map>

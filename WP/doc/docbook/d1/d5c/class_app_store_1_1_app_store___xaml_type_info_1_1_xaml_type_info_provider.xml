@@ -1,0 +1,1357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider">
+<title>AppStore::AppStore_XamlTypeInfo::XamlTypeInfoProvider class Reference</title>
+<para>Inheritance diagram for AppStore::AppStore_XamlTypeInfo::XamlTypeInfoProvider</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d5d/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::AppStore_XamlTypeInfo::XamlTypeInfoProvider</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/df4/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::System.Collections.Generic.Dictionary&lt; string, global::Windows.UI.Xaml.Markup.IXamlType &gt; _xamlTypeCacheByName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::System.Collections.Generic.Dictionary&lt; global::System.Type, global::Windows.UI.Xaml.Markup.IXamlType &gt; _xamlTypeCacheByType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::System.Collections.Generic.Dictionary&lt; string, global::Windows.UI.Xaml.Markup.IXamlMember &gt; _xamlMembers</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string[] _typeNameTable</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::System.Type[] _typeTable</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlType <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a16e41b6113dae3fd17bc32401a9dfa26">GetXamlTypeByType</link> (
+global::System.Type type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlType <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0af6f7fcf150611407890c9937170ff1">GetXamlTypeByName</link> (
+string typeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlMember <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ae1e8c039a1ec550c6eeeca413ebf8ea4">GetMemberByLongName</link> (
+string longMemberName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlType <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a16e41b6113dae3fd17bc32401a9dfa26">GetXamlTypeByType</link> (
+global::System.Type type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlType <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0af6f7fcf150611407890c9937170ff1">GetXamlTypeByName</link> (
+string typeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlMember <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ae1e8c039a1ec550c6eeeca413ebf8ea4">GetMemberByLongName</link> (
+string longMemberName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a68b6753e10189e35f1e297f3b5ef4e72">InitTypeTables</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1adbf75aee2ba0231fb6c650b63d177b5a">LookupTypeIndexByName</link> (
+string typeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aea1111980891c2503a70c3951bf69c91">LookupTypeIndexByType</link> (
+global::System.Type type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ad127ce76476cf41b7f2d5544b4d8f80d">Activate_0_AppDetailsPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4634def4a762db7bf23b88a33868ccff">Activate_5_ObservableDictionary</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ad3a6f272289c3959c36163784bf11d53">Activate_8_AppsPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9a4ef0f1c5f044e335f32674b647880e">Activate_9_CategoriesPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0c464a4e9e5894a8a7b6e637643d6ea6">Activate_10_CategoryPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ab9ee2b481c54e1692f461148a8f141e1">Activate_11_MainPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1abe53b075f3f5dd93841207834d6694a2">Activate_12_MyAppsPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8270307b8154441ddb498a14882a3d3c">Activate_13_SearchPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a6c593a96868cd52b3f924a8cdd60a122">Activate_14_SettingsDialog</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a63c39cb821f0814b2ddf7f734a7522f4">Activate_17_FlashCardPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a3e369fbc843a8a61e400a657c470fca2">Activate_18_InfoDetailPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a612ca433d6a1a219736d34b48e1987f8">Activate_19_InfoPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aa0067e11beac5f0be36a3bfc9ca37144">Activate_20_QuizPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a1634e6f2ab6da841eb94ecf5d2811a7e">Activate_21_ScorePage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a072919ed924715a65757da038fb3fce7">Activate_22_SpellingsPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9a20f29a8837f36756e9edaa4e77a102">Activate_23_StartPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4efacaaabcaba698ab37a3a9dc62cf7d">Activate_24_WordInfoPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac908a9bbf761cb99a2ac3df74f79cf7a">MapAdd_5_ObservableDictionary</link> (
+object instance, object key, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlType <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac1edc90b7cb67b0521af2d5989eaaadb">CreateXamlType</link> (
+int typeIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1abce5304c2c8996123e1b4b1eb3ba5e85">get_0_AppDetailsPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8e01af039648172440ab1284f41266aa">get_1_AppDetailsPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0062894c912b0339cc26600a27440612">get_2_AppsPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8d92c43a72af2ee8ec82ea429c7c7a7d">get_3_AppsPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a16de11a6f59f4a364f896c4ff029f8d2">get_4_CategoriesPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a68c592b988e6bf4469d3fd1b96d22667">get_5_CategoriesPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac31b9f122aa6d8d6f08931e26cc3f81b">get_6_CategoryPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a25c0ea531c4ed31b0dbf77b0b9653240">get_7_CategoryPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a76f8acaf7fc203e48d3da9bf5f1c3725">get_8_MyAppsPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a155cf0be1eea0ddc5d1d05b91372946d">get_9_MyAppsPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0055ac324d49afb5068e6be25b2fcf12">get_10_SearchPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a423302e9f7378e02b85708acd7c83037">get_11_SearchPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a711f4a09e69d9009793a973421155208">get_12_FlashCardPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ae35e9b22415329b6611d2290b4e41e19">get_13_FlashCardPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a2ecc2acbd66aacfc7035e72571f9072b">get_14_InfoDetailPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4a7c29ecd3cb5e3ffc5f1a920dfdacd4">get_15_InfoDetailPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af0011c9991e6e5cac6eba7f3ae234624">get_16_InfoPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aba97cad2fb4ab2f9e03d23348e200716">get_17_InfoPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a313050a50038c63465bd7b2d4546d7d7">get_18_QuizPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a10c9e5d3777eed3a92fa815e59a37a60">get_19_QuizPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af410d365255deadce4314f5328fdda7b">get_20_ScorePage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0c1ab99fa3b12cdbbb5009b36bd3bb52">get_21_ScorePage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a90adfbf5ce23b646723e837a435b870d">get_22_SpellingsPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a809179ccd941c0648378edee8975bcaa">get_23_SpellingsPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aee43db9908b57c4d9150f9b38da9af22">get_24_StartPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a658ccafa5599aedf1bf6102412c15e2d">get_25_StartPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a34dd815c9ee9cfdcbc7fc8234fe7b70a">get_26_WordInfoPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a571365e612486681149dc29d7d4b5a93">get_27_WordInfoPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlMember <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9e547f97a5fbc34b02b332c087ccfd1e">CreateXamlMember</link> (
+string longMemberName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a68b6753e10189e35f1e297f3b5ef4e72">InitTypeTables</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1adbf75aee2ba0231fb6c650b63d177b5a">LookupTypeIndexByName</link> (
+string typeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aea1111980891c2503a70c3951bf69c91">LookupTypeIndexByType</link> (
+global::System.Type type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ad127ce76476cf41b7f2d5544b4d8f80d">Activate_0_AppDetailsPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4634def4a762db7bf23b88a33868ccff">Activate_5_ObservableDictionary</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1abe306edeb3e16c13708f4896269ebb2c">Activate_8_CategoriesPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a2b86c6e1936ac0fd6bc4991b9813ffa9">Activate_9_CategoryPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a94bd5334747765d4eac8ba786a05a287">Activate_10_MainPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a1b0e75abca72b133592eb1a0a1220b32">Activate_11_MyAppsPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0bfe0ba5cfc5ca1c4da635fad9f09df2">Activate_12_SearchPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a443932f8f4872dc06bbb676ef1f7c4ed">Activate_13_Settings</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aff34590452efea608f5f9dd8a217ebd4">Activate_14_FlashCardPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a2cf45d3c9fd4145f353cc0dabf036fe2">Activate_15_InfoDetailPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ab36851d3a00f9aba6aa6b7de005cb9f6">Activate_16_InfoPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8372563335c68cfdc1406c4cd2a52eb6">Activate_17_QuizPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1afe8e0ce9b4fc7c6d800f15d18ac766de">Activate_18_ScorePage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a307d96161ed290904e029e41220f4f81">Activate_19_SpellingsPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a99dc8c63cc6c05f02261c3c23d663fb7">Activate_20_StartPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9d8be4c76c1d3c7f9f69f08ce0ea557c">Activate_21_WordInfoPage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac908a9bbf761cb99a2ac3df74f79cf7a">MapAdd_5_ObservableDictionary</link> (
+object instance, object key, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlType <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac1edc90b7cb67b0521af2d5989eaaadb">CreateXamlType</link> (
+int typeIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1abce5304c2c8996123e1b4b1eb3ba5e85">get_0_AppDetailsPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8e01af039648172440ab1284f41266aa">get_1_AppDetailsPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a074126ccc1dca075c6b2ade08de0b810">get_2_CategoriesPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a6bd34aff2fe5bd536b66785fd613b991">get_3_CategoriesPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a600f6237a96f987ec1879ab94403fe65">get_4_CategoryPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a96343fc573e8152b0a666a88f324bdb4">get_5_CategoryPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4a5e2c0536ceb4e35bc04c0aa6434f17">get_6_MyAppsPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1afb7dd1a7158d3950916a57d2f298e121">get_7_MyAppsPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0b096b3a65c037ca643c24021744e6e0">get_8_SearchPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aac4db279ee8c55549ae9d78e59e3cf9f">get_9_SearchPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aa695843e0eccc9b429ca4dfa06f2bfc1">get_10_Settings_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af8afd20503e14ad9dc81d9b91ef1daaa">get_11_Settings_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a711f4a09e69d9009793a973421155208">get_12_FlashCardPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ae35e9b22415329b6611d2290b4e41e19">get_13_FlashCardPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a2ecc2acbd66aacfc7035e72571f9072b">get_14_InfoDetailPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4a7c29ecd3cb5e3ffc5f1a920dfdacd4">get_15_InfoDetailPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af0011c9991e6e5cac6eba7f3ae234624">get_16_InfoPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aba97cad2fb4ab2f9e03d23348e200716">get_17_InfoPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a313050a50038c63465bd7b2d4546d7d7">get_18_QuizPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a10c9e5d3777eed3a92fa815e59a37a60">get_19_QuizPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af410d365255deadce4314f5328fdda7b">get_20_ScorePage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0c1ab99fa3b12cdbbb5009b36bd3bb52">get_21_ScorePage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a90adfbf5ce23b646723e837a435b870d">get_22_SpellingsPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a809179ccd941c0648378edee8975bcaa">get_23_SpellingsPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aee43db9908b57c4d9150f9b38da9af22">get_24_StartPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a658ccafa5599aedf1bf6102412c15e2d">get_25_StartPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a34dd815c9ee9cfdcbc7fc8234fe7b70a">get_26_WordInfoPage_NavigationHelper</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a571365e612486681149dc29d7d4b5a93">get_27_WordInfoPage_DefaultViewModel</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlMember <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9e547f97a5fbc34b02b332c087ccfd1e">CreateXamlMember</link> (
+string longMemberName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a16e41b6113dae3fd17bc32401a9dfa26">
+                <title>global::Windows.UI.Xaml.Markup.IXamlType AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByType (global::System.Type type)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0af6f7fcf150611407890c9937170ff1">
+                <title>global::Windows.UI.Xaml.Markup.IXamlType AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByName (string typeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ae1e8c039a1ec550c6eeeca413ebf8ea4">
+                <title>global::Windows.UI.Xaml.Markup.IXamlMember AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.GetMemberByLongName (string longMemberName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a16e41b6113dae3fd17bc32401a9dfa26">
+                <title>global::Windows.UI.Xaml.Markup.IXamlType AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByType (global::System.Type type)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0af6f7fcf150611407890c9937170ff1">
+                <title>global::Windows.UI.Xaml.Markup.IXamlType AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByName (string typeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ae1e8c039a1ec550c6eeeca413ebf8ea4">
+                <title>global::Windows.UI.Xaml.Markup.IXamlMember AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.GetMemberByLongName (string longMemberName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a68b6753e10189e35f1e297f3b5ef4e72">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.InitTypeTables ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1adbf75aee2ba0231fb6c650b63d177b5a">
+                <title>int AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.LookupTypeIndexByName (string typeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aea1111980891c2503a70c3951bf69c91">
+                <title>int AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.LookupTypeIndexByType (global::System.Type type)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ad127ce76476cf41b7f2d5544b4d8f80d">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_0_AppDetailsPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4634def4a762db7bf23b88a33868ccff">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_5_ObservableDictionary ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ad3a6f272289c3959c36163784bf11d53">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_8_AppsPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9a4ef0f1c5f044e335f32674b647880e">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_9_CategoriesPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0c464a4e9e5894a8a7b6e637643d6ea6">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_10_CategoryPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ab9ee2b481c54e1692f461148a8f141e1">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_11_MainPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1abe53b075f3f5dd93841207834d6694a2">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_12_MyAppsPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8270307b8154441ddb498a14882a3d3c">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_13_SearchPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a6c593a96868cd52b3f924a8cdd60a122">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_14_SettingsDialog ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a63c39cb821f0814b2ddf7f734a7522f4">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_17_FlashCardPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a3e369fbc843a8a61e400a657c470fca2">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_18_InfoDetailPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a612ca433d6a1a219736d34b48e1987f8">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_19_InfoPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aa0067e11beac5f0be36a3bfc9ca37144">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_20_QuizPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a1634e6f2ab6da841eb94ecf5d2811a7e">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_21_ScorePage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a072919ed924715a65757da038fb3fce7">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_22_SpellingsPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9a20f29a8837f36756e9edaa4e77a102">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_23_StartPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4efacaaabcaba698ab37a3a9dc62cf7d">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_24_WordInfoPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac908a9bbf761cb99a2ac3df74f79cf7a">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.MapAdd_5_ObservableDictionary (object instance, object key, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac1edc90b7cb67b0521af2d5989eaaadb">
+                <title>global::Windows.UI.Xaml.Markup.IXamlType AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.CreateXamlType (int typeIndex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1abce5304c2c8996123e1b4b1eb3ba5e85">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_0_AppDetailsPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8e01af039648172440ab1284f41266aa">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_1_AppDetailsPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0062894c912b0339cc26600a27440612">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_2_AppsPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8d92c43a72af2ee8ec82ea429c7c7a7d">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_3_AppsPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a16de11a6f59f4a364f896c4ff029f8d2">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_4_CategoriesPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a68c592b988e6bf4469d3fd1b96d22667">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_5_CategoriesPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac31b9f122aa6d8d6f08931e26cc3f81b">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_6_CategoryPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a25c0ea531c4ed31b0dbf77b0b9653240">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_7_CategoryPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a76f8acaf7fc203e48d3da9bf5f1c3725">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_8_MyAppsPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a155cf0be1eea0ddc5d1d05b91372946d">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_9_MyAppsPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0055ac324d49afb5068e6be25b2fcf12">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_10_SearchPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a423302e9f7378e02b85708acd7c83037">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_11_SearchPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a711f4a09e69d9009793a973421155208">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_12_FlashCardPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ae35e9b22415329b6611d2290b4e41e19">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_13_FlashCardPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a2ecc2acbd66aacfc7035e72571f9072b">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_14_InfoDetailPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4a7c29ecd3cb5e3ffc5f1a920dfdacd4">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_15_InfoDetailPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af0011c9991e6e5cac6eba7f3ae234624">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_16_InfoPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aba97cad2fb4ab2f9e03d23348e200716">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_17_InfoPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a313050a50038c63465bd7b2d4546d7d7">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_18_QuizPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a10c9e5d3777eed3a92fa815e59a37a60">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_19_QuizPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af410d365255deadce4314f5328fdda7b">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_20_ScorePage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0c1ab99fa3b12cdbbb5009b36bd3bb52">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_21_ScorePage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a90adfbf5ce23b646723e837a435b870d">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_22_SpellingsPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a809179ccd941c0648378edee8975bcaa">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_23_SpellingsPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aee43db9908b57c4d9150f9b38da9af22">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_24_StartPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a658ccafa5599aedf1bf6102412c15e2d">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_25_StartPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a34dd815c9ee9cfdcbc7fc8234fe7b70a">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_26_WordInfoPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a571365e612486681149dc29d7d4b5a93">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_27_WordInfoPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9e547f97a5fbc34b02b332c087ccfd1e">
+                <title>global::Windows.UI.Xaml.Markup.IXamlMember AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.CreateXamlMember (string longMemberName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a68b6753e10189e35f1e297f3b5ef4e72">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.InitTypeTables ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1adbf75aee2ba0231fb6c650b63d177b5a">
+                <title>int AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.LookupTypeIndexByName (string typeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aea1111980891c2503a70c3951bf69c91">
+                <title>int AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.LookupTypeIndexByType (global::System.Type type)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ad127ce76476cf41b7f2d5544b4d8f80d">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_0_AppDetailsPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4634def4a762db7bf23b88a33868ccff">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_5_ObservableDictionary ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1abe306edeb3e16c13708f4896269ebb2c">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_8_CategoriesPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a2b86c6e1936ac0fd6bc4991b9813ffa9">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_9_CategoryPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a94bd5334747765d4eac8ba786a05a287">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_10_MainPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a1b0e75abca72b133592eb1a0a1220b32">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_11_MyAppsPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0bfe0ba5cfc5ca1c4da635fad9f09df2">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_12_SearchPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a443932f8f4872dc06bbb676ef1f7c4ed">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_13_Settings ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aff34590452efea608f5f9dd8a217ebd4">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_14_FlashCardPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a2cf45d3c9fd4145f353cc0dabf036fe2">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_15_InfoDetailPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ab36851d3a00f9aba6aa6b7de005cb9f6">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_16_InfoPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8372563335c68cfdc1406c4cd2a52eb6">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_17_QuizPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1afe8e0ce9b4fc7c6d800f15d18ac766de">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_18_ScorePage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a307d96161ed290904e029e41220f4f81">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_19_SpellingsPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a99dc8c63cc6c05f02261c3c23d663fb7">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_20_StartPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9d8be4c76c1d3c7f9f69f08ce0ea557c">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.Activate_21_WordInfoPage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac908a9bbf761cb99a2ac3df74f79cf7a">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.MapAdd_5_ObservableDictionary (object instance, object key, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ac1edc90b7cb67b0521af2d5989eaaadb">
+                <title>global::Windows.UI.Xaml.Markup.IXamlType AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.CreateXamlType (int typeIndex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1abce5304c2c8996123e1b4b1eb3ba5e85">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_0_AppDetailsPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a8e01af039648172440ab1284f41266aa">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_1_AppDetailsPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a074126ccc1dca075c6b2ade08de0b810">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_2_CategoriesPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a6bd34aff2fe5bd536b66785fd613b991">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_3_CategoriesPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a600f6237a96f987ec1879ab94403fe65">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_4_CategoryPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a96343fc573e8152b0a666a88f324bdb4">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_5_CategoryPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4a5e2c0536ceb4e35bc04c0aa6434f17">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_6_MyAppsPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1afb7dd1a7158d3950916a57d2f298e121">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_7_MyAppsPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0b096b3a65c037ca643c24021744e6e0">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_8_SearchPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aac4db279ee8c55549ae9d78e59e3cf9f">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_9_SearchPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aa695843e0eccc9b429ca4dfa06f2bfc1">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_10_Settings_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af8afd20503e14ad9dc81d9b91ef1daaa">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_11_Settings_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a711f4a09e69d9009793a973421155208">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_12_FlashCardPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1ae35e9b22415329b6611d2290b4e41e19">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_13_FlashCardPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a2ecc2acbd66aacfc7035e72571f9072b">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_14_InfoDetailPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a4a7c29ecd3cb5e3ffc5f1a920dfdacd4">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_15_InfoDetailPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af0011c9991e6e5cac6eba7f3ae234624">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_16_InfoPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aba97cad2fb4ab2f9e03d23348e200716">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_17_InfoPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a313050a50038c63465bd7b2d4546d7d7">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_18_QuizPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a10c9e5d3777eed3a92fa815e59a37a60">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_19_QuizPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1af410d365255deadce4314f5328fdda7b">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_20_ScorePage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a0c1ab99fa3b12cdbbb5009b36bd3bb52">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_21_ScorePage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a90adfbf5ce23b646723e837a435b870d">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_22_SpellingsPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a809179ccd941c0648378edee8975bcaa">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_23_SpellingsPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1aee43db9908b57c4d9150f9b38da9af22">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_24_StartPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a658ccafa5599aedf1bf6102412c15e2d">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_25_StartPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a34dd815c9ee9cfdcbc7fc8234fe7b70a">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_26_WordInfoPage_NavigationHelper (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a571365e612486681149dc29d7d4b5a93">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.get_27_WordInfoPage_DefaultViewModel (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider_1a9e547f97a5fbc34b02b332c087ccfd1e">
+                <title>global::Windows.UI.Xaml.Markup.IXamlMember AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider.CreateXamlMember (string longMemberName)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

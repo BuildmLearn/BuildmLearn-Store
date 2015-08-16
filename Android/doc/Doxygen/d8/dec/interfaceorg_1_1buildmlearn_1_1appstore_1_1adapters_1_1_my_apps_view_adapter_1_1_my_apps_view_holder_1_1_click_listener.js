@@ -1,0 +1,4 @@
+var interfaceorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_my_apps_view_adapter_1_1_my_apps_view_holder_1_1_click_listener =
+[
+    [ "onClick", "d8/dec/interfaceorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_my_apps_view_adapter_1_1_my_apps_view_holder_1_1_click_listener.html#a41c1fdac95af51e34c6d030ac708ae27", null ]
+];

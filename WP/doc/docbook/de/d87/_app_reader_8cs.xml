@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d87/_app_reader_8cs">
+    <title>AppReader.cs File Reference</title>
+<para>Include dependency diagram for AppReader.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d9d/_app_reader_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for AppReader.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/da3/_app_reader_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader">AppStore::Common::AppReader</link></para>
+<para><emphasis>&lt;summary&gt;
+This class deals with reading the App-Templates.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d5e/namespace_app_store_1_1_common">AppStore::Common</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Common/AppReader.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d2/d12/namespace_app_store_1_1_models">Models</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+4 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Linq;
+5 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Xml.Linq;
+6 <emphasis class="keyword">using</emphasis>&#32;Windows.Data.Xml.Dom;
+7 
+8 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Common
+9 {
+<link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader">13 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader">AppReader</link>
+14 &#32;&#32;&#32;&#32;{
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+16 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;public&#32;static&#32;List&lt;Apps&gt;&#32;listApps()</emphasis>
+17 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+18 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;AppInfo&gt;&#32;mFileList&#32;=&#32;new&#32;List&lt;AppInfo&gt;();</emphasis>
+19 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SharedPreferences&#32;SP&#32;=&#32;PreferenceManager.getDefaultSharedPreferences(context);</emphasis>
+20 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Resources&#32;res&#32;=&#32;context.getResources();</emphasis>
+21 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AssetManager&#32;am&#32;=&#32;res.getAssets();</emphasis>
+22 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;string&#32;appList[],&#32;iconList[];</emphasis>
+23 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;try</emphasis>
+24 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+25 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appList&#32;=&#32;am.list(&quot;Apps&quot;);</emphasis>
+26 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;iconList&#32;=&#32;am.list(&quot;Icons&quot;);</emphasis>
+27 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(appList&#32;!=&#32;null)</emphasis>
+28 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+29 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;for&#32;(int&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;appList.length;&#32;i++)</emphasis>
+30 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+31 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AppInfo&#32;app&#32;=&#32;new&#32;AppInfo();</emphasis>
+32 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;app.Name&#32;=&#32;(appList[i].substring(0,&#32;appList[i].indexOf(&quot;.buildmlearn&quot;)));</emphasis>
+33 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(!SP.contains(app.Name))</emphasis>
+34 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+35 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SharedPreferences.Editor&#32;editor1&#32;=&#32;SP.edit();</emphasis>
+36 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;editor1.putBoolean(app.Name,&#32;false);</emphasis>
+37 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;editor1.commit();&#32;continue;</emphasis>
+38 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+39 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(!SP.getBoolean(app.Name,&#32;false))&#32;continue;</emphasis>
+40 <emphasis class="comment"></emphasis>
+41 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;app.AppIcon&#32;=&#32;BitmapFactory.decodeStream(am.open(&quot;Icons/&quot;&#32;+&#32;iconList[i]));</emphasis>
+42 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BufferedReader&#32;br&#32;=&#32;new&#32;BufferedReader(new&#32;InputStreamReader(context.getAssets().open(&quot;Apps/&quot;&#32;+&#32;appList[i])));</emphasis>
+43 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;string&#32;type&#32;=&#32;br.readLine();</emphasis>
+44 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(type.contains(&quot;InfoTemplate&quot;))&#32;app.Type&#32;=&#32;0;</emphasis>
+45 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(type.contains(&quot;QuizTemplate&quot;))&#32;app.Type&#32;=&#32;2;</emphasis>
+46 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(type.contains(&quot;FlashCardsTemplate&quot;))&#32;app.Type&#32;=&#32;1;</emphasis>
+47 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(type.contains(&quot;SpellingTemplate&quot;))&#32;app.Type&#32;=&#32;3;</emphasis>
+48 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;br.readLine();</emphasis>
+49 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;type&#32;=&#32;br.readLine();</emphasis>
+50 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;int&#32;x&#32;=&#32;type.indexOf(&quot;&lt;name&gt;&quot;)&#32;+&#32;6;</emphasis>
+51 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;int&#32;y&#32;=&#32;type.indexOf(&quot;&lt;&quot;,&#32;x&#32;+&#32;1);</emphasis>
+52 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;app.Author&#32;=&#32;type.substring(x,&#32;y);</emphasis>
+53 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mFileList.add(app);</emphasis>
+54 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+55 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+56 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+57 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;catch&#32;(IOException&#32;e)</emphasis>
+58 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+59 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.printStackTrace();</emphasis>
+60 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+61 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AppList&#32;=&#32;mFileList;</emphasis>
+62 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;return&#32;mFileList;</emphasis>
+63 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+64 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;readInfoFile(<emphasis class="keywordtype">string</emphasis>&#32;fileName)
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">InfoModel</link>&#32;model&#32;=&#32;<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">InfoModel</link>.<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a3467a71d9d49362dcb59246a1a4dd182">getInstance</link>();
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;string&gt;&#32;infoTitleList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;string&gt;();
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;string&gt;&#32;infoDescriptionList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;string&gt;();
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlDocument&#32;doc&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;XmlDocument();
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;doc.LoadXml(XDocument.Load(<emphasis class="stringliteral">&quot;Assets/Apps/&quot;</emphasis>&#32;+&#32;fileName&#32;+&#32;<emphasis class="stringliteral">&quot;.xml&quot;</emphasis>).ToString());
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a481f635ffe4000521b81af1852f468fc">setInfoName</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;title&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1afa093085642315b0f42cc556481b1b42">setInfoDescription</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;description&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;author&#32;=&#32;doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;author&quot;</emphasis>).ElementAt(0).InnerText.Split(<emphasis class="charliteral">&apos;\n&apos;</emphasis>);
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a58cd3abc282a80661cc295a36147b0a6">setInfoAuthor</link>(author[1].Trim());
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a304b21f619b00f2a369352164f31d71d">setInfoAuthorEmail</link>(author[2].Trim());
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a9bd7f4a1d60b2ff55ade75ceff8f2393">setInfoVersion</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;version&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlNodeList&#32;info_title&#32;=&#32;doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;item_title&quot;</emphasis>);
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlNodeList&#32;info_description&#32;=&#32;doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;item_description&quot;</emphasis>);
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;info_title.Length;&#32;i++)
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;infoTitleList.Add(info_title.ElementAt(i).InnerText.Trim());
+89 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;infoDescriptionList.Add(info_description.ElementAt(i).InnerText.Trim());
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a8ff76ef95df78d0ffeb07f4b2e66bd5a">setInfoTitleList</link>(infoTitleList);
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a1f74ce2ff128a7347259e8323c6d3dec">setInfoDescriptionList</link>(infoDescriptionList);
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(<link linkend="df/d70/class_exception">Exception</link>&#32;e)
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;}
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+97 
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;readQuizFile(<emphasis class="keywordtype">string</emphasis>&#32;fileName)
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>&#32;model&#32;=&#32;<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ac58052dc3491a2c7cf249230cc7f7765">getInstance</link>();
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;Question&gt;&#32;mQuestionList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;Question&gt;();
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlDocument&#32;doc&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;XmlDocument();
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;doc.LoadXml(XDocument.Load(<emphasis class="stringliteral">&quot;Assets/Apps/&quot;</emphasis>&#32;+&#32;fileName&#32;+&#32;<emphasis class="stringliteral">&quot;.xml&quot;</emphasis>).ToString());
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a021b278401cdbb6b02a85fb3a3239b74">setQuizName</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;title&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1adf287414376af2374218d2031ca1d506">setQuizDescription</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;description&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;author&#32;=&#32;doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;author&quot;</emphasis>).ElementAt(0).InnerText.Split(<emphasis class="charliteral">&apos;\n&apos;</emphasis>);
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a4a4959899efad2af3ec2607dc01aa883">setQuizAuthor</link>(author[1].Trim());
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a647f1effb52d15a6d4cd132a3c67fbe7">setQuizAuthorEmail</link>(author[2].Trim());
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a93649985b3ddaa5a0c48d72397219652">setQuizVersion</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;version&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlNodeList&#32;questions&#32;=&#32;doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;item&quot;</emphasis>);
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;questions.Length;&#32;i++)
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d4/d22/class_app_store_1_1_models_1_1_question">Question</link>&#32;q&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d4/d22/class_app_store_1_1_models_1_1_question">Question</link>();
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;ar&#32;=&#32;questions.ElementAt(i).InnerText.Split(<emphasis class="charliteral">&apos;\n&apos;</emphasis>);
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;string&gt;&#32;options&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;string&gt;();
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;options.Add(ar[2].Trim());
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;options.Add(ar[3].Trim());
+124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;options.Add(ar[4].Trim());
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;options.Add(ar[5].Trim());
+126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;q.<link linkend="d4/d22/class_app_store_1_1_models_1_1_question_1ad03cdbcb5d6b145d046a971bfc90b015">setOptionNumber</link>(Convert.ToInt16(ar[6].Trim()));
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;q.<link linkend="d4/d22/class_app_store_1_1_models_1_1_question_1ad1bf249cb7fd9466c3cac80259c7cf71">setAnswerOption</link>(options);
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;q.<link linkend="d4/d22/class_app_store_1_1_models_1_1_question_1a17688888881c08bb1097abb8a1d88967">setQuestion</link>(ar[1].Trim());
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mQuestionList.Add(q);
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1aa39a8f6efc5ddeb627f62c6ab7f31112">setQueAnsList</link>(mQuestionList);
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(<link linkend="df/d70/class_exception">Exception</link>)&#32;{&#32;}
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+135 
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;readSpellingsFile(<emphasis class="keywordtype">string</emphasis>&#32;fileName)
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>&#32;model&#32;=&#32;<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a89393bf0ef882c954c1f60e0fd519d1b">getInstance</link>();
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;WordModel&gt;&#32;wordList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;WordModel&gt;();
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlDocument&#32;doc&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;XmlDocument();
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;doc.LoadXml(XDocument.Load(<emphasis class="stringliteral">&quot;Assets/Apps/&quot;</emphasis>&#32;+&#32;fileName&#32;+&#32;<emphasis class="stringliteral">&quot;.xml&quot;</emphasis>).ToString());
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a571aef365a8a88790d882861630f4724">setPuzzleName</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;title&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a7415a8b6035b2910ac079a43fb4e0ad8">setPuzzleDescription</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;description&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;author&#32;=&#32;doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;author&quot;</emphasis>).ElementAt(0).InnerText.Split(<emphasis class="charliteral">&apos;\n&apos;</emphasis>);
+151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1af72e248e7b2e95784790e2b7805020be">setPuzzleAuthor</link>(author[1].Trim());
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a6cfe0ca96797a292a6aefab7c4f4a51b">setPuzzleAuthorEmail</link>(author[2].Trim());
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a260fb98a9c2ee02bbd1c75d97b1a2368">setPuzzleVersion</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;version&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlNodeList&#32;item&#32;=&#32;doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;item&quot;</emphasis>);
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;looping&#32;through&#32;all&#32;item&#32;nodes&#32;&lt;app&gt;</emphasis>
+156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;item.Length;&#32;i++)
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;ar&#32;=&#32;item.ElementAt(i).InnerText.Split(<emphasis class="charliteral">&apos;\n&apos;</emphasis>);
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model">WordModel</link>&#32;word&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model">WordModel</link>(ar[1].Trim(),&#32;ar[2].Trim());
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wordList.Add(word);
+161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ae20ad903e75d8350048819dd8068e126">setSpellingsList</link>(wordList);
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(<link linkend="df/d70/class_exception">Exception</link>)&#32;{&#32;}
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+166 
+171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;readFlashFile(<emphasis class="keywordtype">string</emphasis>&#32;fileName)
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">FlashModel</link>&#32;model&#32;=&#32;<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">FlashModel</link>.<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1aaa472210c70496a7cdad19a6d17d4dd2">getInstance</link>();
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;Card&gt;&#32;cardList&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;Card&gt;();
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlDocument&#32;doc&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;XmlDocument();
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;doc.LoadXml(XDocument.Load(<emphasis class="stringliteral">&quot;Assets/Apps/&quot;</emphasis>&#32;+&#32;fileName&#32;+&#32;<emphasis class="stringliteral">&quot;.xml&quot;</emphasis>).ToString());
+179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1aedcea3ef476e8de377772da4eba07160">setFlashName</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;title&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1aa4720be2fdc78a7cb1cb45a50324e12c">setFlashDescription</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;description&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;author&#32;=&#32;doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;author&quot;</emphasis>).ElementAt(0).InnerText.Split(<emphasis class="charliteral">&apos;\n&apos;</emphasis>);
+182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1acfdf78fb96794dca2496d9c98dcbe926">setFlashAuthor</link>(author[1].Trim());
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ad7a7b843458abf39c27254d626916d4b">setFlashAuthorEmail</link>(author[2].Trim());
+184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1a00c3ce6b69b89a05df715e26770de783">setFlashVersion</link>(doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;version&quot;</emphasis>).ElementAt(0).InnerText.Trim());
+185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlNodeList&#32;item&#32;=&#32;doc.GetElementsByTagName(<emphasis class="stringliteral">&quot;item&quot;</emphasis>);
+186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;looping&#32;through&#32;all&#32;item&#32;nodes&#32;&lt;app&gt;</emphasis>
+187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;item.Length;&#32;i++)
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;ar&#32;=&#32;item.ElementAt(i).InnerText.Split(<emphasis class="charliteral">&apos;\n&apos;</emphasis>);
+190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d0/d26/class_app_store_1_1_models_1_1_card">Card</link>&#32;card&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d0/d26/class_app_store_1_1_models_1_1_card">Card</link>(ar[1].Trim(),&#32;ar[2].Trim(),&#32;ar[3].Trim(),&#32;ar[4].Trim());
+191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cardList.Add(card);
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.<link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ab2867f05cd86570acb24e8876b54f1e3">setCardList</link>(cardList);
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(<link linkend="df/d70/class_exception">Exception</link>)&#32;{&#32;}
+196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+197 &#32;&#32;&#32;&#32;}
+198 }
+    </computeroutput></literallayout>
+</section>

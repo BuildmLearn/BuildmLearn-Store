@@ -36,13 +36,13 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile files('libs/volley.jar')
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'de.hdodenhof:circleimageview:1.2.1'
     compile 'com.android.support:recyclerview-v7:22.2.0'
     compile 'com.android.support:cardview-v7:22.2.0'
     compile 'me.drakeet.materialdialog:library:1.2.2'
     compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.mcxiaoke.volley:library:1.0.18'
     compile 'com.android.support:design:22.2.0'
     compile('com.crashlytics.sdk.android:crashlytics:2.4.0@aar') {
         transitive = true;

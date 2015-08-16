@@ -1,0 +1,5 @@
+<map id="AppStore.Common.NavigationHelper" name="AppStore.Common.NavigationHelper">
+<area shape="rect" id="node2" href="$d1/d12/class_dependency_object.html" title="{DependencyObject\n||}" alt="" coords="5,169,137,246"/>
+<area shape="rect" id="node3" href="$d1/d53/class_app_store_1_1_common_1_1_relay_command.html" title="A command whose sole purpose is to relay its functionality to other objects by invoking delegates..." alt="" coords="161,132,389,283"/>
+<area shape="rect" id="node4" href="$d6/d2b/class_i_command.html" title="{ICommand\n||}" alt="" coords="233,5,317,83"/>
+</map>

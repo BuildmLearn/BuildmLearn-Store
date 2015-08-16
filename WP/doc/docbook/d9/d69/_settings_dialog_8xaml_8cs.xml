@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d69/_settings_dialog_8xaml_8cs">
+    <title>SettingsDialog.xaml.cs File Reference</title>
+<para>Include dependency diagram for SettingsDialog.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/dd4/_settings_dialog_8xaml_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for SettingsDialog.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d0d/_settings_dialog_8xaml_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d78/class_app_store_1_1_settings_dialog">AppStore::SettingsDialog</link></para>
+<para><emphasis>&lt;summary&gt;
+This class deals with Settings Dialog and implements all the important user-defined settings required by the app.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/SettingsDialog.xaml.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d2/d12/namespace_app_store_1_1_models">Models</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+4 
+5 <emphasis class="comment">//&#32;The&#32;Content&#32;Dialog&#32;item&#32;template&#32;is&#32;documented&#32;at&#32;http://go.microsoft.com/fwlink/?LinkID=390556</emphasis>
+6 
+7 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+8 {
+12 &#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;sealed&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>SettingsDialog&#32;:&#32;ContentDialog
+13 &#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a75760fc96b03e4d1da1005142597dabb">SettingsDialog</link>()
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a1299225699f43c0ba4a4938fbdd32a1c">InitializeComponent</link>();
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;localSettings&#32;=&#32;Windows.Storage.ApplicationData.Current.LocalSettings;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1aab3a041a5501866c52044593f4d57086">featured_categories</link>.Text&#32;=&#32;localSettings.Values[<emphasis class="stringliteral">&quot;Featured_Categories&quot;</emphasis>].ToString();
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a8ad1dde26122ae6efb66445f91a977b4">featured_apps</link>.Text=localSettings.Values[<emphasis class="stringliteral">&quot;Featured_Apps&quot;</emphasis>].ToString();
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+24 
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a40441e71d240466219aa4f5a752ac6a7">ContentDialog_PrimaryButtonClick</link>(ContentDialog&#32;sender,&#32;ContentDialogButtonClickEventArgs&#32;args)
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;fc&#32;=&#32;4,&#32;fa&#32;=&#32;6;
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(Int32.TryParse(<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1aab3a041a5501866c52044593f4d57086">featured_categories</link>.Text,&#32;out&#32;fc))
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(fc&#32;&gt;=&#32;10)
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1aab3a041a5501866c52044593f4d57086">featured_categories</link>.Text&#32;=&#32;10&#32;+&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>;
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(fc&#32;&lt;=&#32;4)
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1aab3a041a5501866c52044593f4d57086">featured_categories</link>.Text&#32;=&#32;4&#32;+&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>;
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1aab3a041a5501866c52044593f4d57086">featured_categories</link>.Text&#32;=&#32;4&#32;+&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>;
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(Int32.TryParse(<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a8ad1dde26122ae6efb66445f91a977b4">featured_apps</link>.Text,&#32;out&#32;fa))
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(fa&#32;&gt;=&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1afdcb2f70903d78954773ca54d5075876">getAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a61f5d3ee5fe499695f7fdd8dce0de7bc">appList</link>.Count)
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a8ad1dde26122ae6efb66445f91a977b4">featured_apps</link>.Text&#32;=&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1afdcb2f70903d78954773ca54d5075876">getAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a61f5d3ee5fe499695f7fdd8dce0de7bc">appList</link>.Count&#32;+&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>;
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(fa&#32;&lt;=&#32;6)
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a8ad1dde26122ae6efb66445f91a977b4">featured_apps</link>.Text&#32;=&#32;6&#32;+&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>;
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a8ad1dde26122ae6efb66445f91a977b4">featured_apps</link>.Text&#32;=&#32;6&#32;+&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>;
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;localSettings&#32;=&#32;Windows.Storage.ApplicationData.Current.LocalSettings;
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;localSettings.Values[<emphasis class="stringliteral">&quot;Featured_Categories&quot;</emphasis>]&#32;=&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1aab3a041a5501866c52044593f4d57086">featured_categories</link>.Text;
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;localSettings.Values[<emphasis class="stringliteral">&quot;Featured_Apps&quot;</emphasis>]&#32;=&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a8ad1dde26122ae6efb66445f91a977b4">featured_apps</link>.Text;
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a82d5cb2618a4b2251ad336f6ecff7e7e">ContentDialog_SecondaryButtonClick</link>(ContentDialog&#32;sender,&#32;ContentDialogButtonClickEventArgs&#32;args)
+60 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+62 &#32;&#32;&#32;&#32;}
+63 }
+    </computeroutput></literallayout>
+</section>

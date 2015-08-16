@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d77/_category_instance_8cs">
+    <title>CategoryInstance.cs File Reference</title>
+<para>Include dependency diagram for CategoryInstance.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/de9/_category_instance_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for CategoryInstance.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d67/_category_instance_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d27/class_app_store_1_1_models_1_1_category_instance">AppStore::Models::CategoryInstance</link></para>
+<para><emphasis>&lt;summary&gt;
+It is an instance of the category.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/CategoryInstance.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+2 {
+<link linkend="de/d27/class_app_store_1_1_models_1_1_category_instance">6 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="de/d27/class_app_store_1_1_models_1_1_category_instance">CategoryInstance</link>
+7 &#32;&#32;&#32;&#32;{
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link>&#32;category;
+9 &#32;&#32;&#32;&#32;}
+10 }
+    </computeroutput></literallayout>
+</section>

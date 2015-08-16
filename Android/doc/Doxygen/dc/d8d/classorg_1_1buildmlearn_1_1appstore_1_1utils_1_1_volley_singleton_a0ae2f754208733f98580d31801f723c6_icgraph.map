@@ -1,0 +1,6 @@
+<map id="org.buildmlearn.appstore.utils.VolleySingleton.getInstance" name="org.buildmlearn.appstore.utils.VolleySingleton.getInstance">
+<area shape="rect" id="node2" href="$dd/d52/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_app_details.html#a5496a1ae07afc43ae065d908ceea260b" title="The method is executed first when the activity is created. " alt="" coords="263,5,485,47"/>
+<area shape="rect" id="node3" href="$d7/d07/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_full_screen_view_activity.html#ab634b24b8cfee4d1feb01426e9f8325b" title="The method is executed first when the activity is created. " alt="" coords="263,71,485,112"/>
+<area shape="rect" id="node4" href="$df/da8/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_card_view_adapter_1_1_card_view_holder.html#acc7b8394cad57217471bcaac46d87104" title="org.buildmlearn.appstore.adapters.\lCardViewAdapter.CardViewHolder.Card\lViewHolder" alt="" coords="249,137,499,193"/>
+<area shape="rect" id="node5" href="$dd/df9/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_search_list_adapter.html#a91dabedaae628786d4ca4d4c1bc98696" title="Binds the content ot different views. " alt="" coords="263,217,485,259"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="org.buildmlearn.appstore.activities.QuestionActivity.onCreate" name="org.buildmlearn.appstore.activities.QuestionActivity.onCreate">
+<area shape="rect" id="node2" href="$da/d2e/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_quiz_model.html#afd56bc8e8b1e5fdd506622bae6362f73" title="org.buildmlearn.appstore.models.\lQuizModel.getInstance" alt="" coords="280,5,495,47"/>
+<area shape="rect" id="node3" href="$da/d2e/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_quiz_model.html#aca9eac557c61f0a772054c1ad2ebe126" title="org.buildmlearn.appstore.models.\lQuizModel.getQueAnsList" alt="" coords="280,71,495,112"/>
+<area shape="rect" id="node4" href="$da/d2e/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_quiz_model.html#ad8b77ee2f097056dd3926a7b245b46b1" title="org.buildmlearn.appstore.models.\lQuizModel.getQuizName" alt="" coords="280,136,495,177"/>
+<area shape="rect" id="node5" href="$d8/d63/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_question_activity.html#acfd73848a225674142d2a993c41b25fc" title="Populates the question according to the index. " alt="" coords="276,201,499,243"/>
+<area shape="rect" id="node6" href="$da/d2e/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_quiz_model.html#a5f45f6253f1bb46810d8335424333209" title="org.buildmlearn.appstore.models.\lQuizModel.setTotalCorrect" alt="" coords="280,267,495,308"/>
+<area shape="rect" id="node7" href="$da/d2e/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_quiz_model.html#a00aede4ce68eefdb825a3c56d37f4ce2" title="org.buildmlearn.appstore.models.\lQuizModel.getTotalCorrect" alt="" coords="280,332,495,373"/>
+<area shape="rect" id="node8" href="$da/d2e/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_quiz_model.html#ae3542c47b32630b9256a4b8145c54cf8" title="org.buildmlearn.appstore.models.\lQuizModel.setTotalWrong" alt="" coords="280,397,495,439"/>
+<area shape="rect" id="node9" href="$da/d2e/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_quiz_model.html#a4882c53765d30ac097e50ca9d2f7f589" title="org.buildmlearn.appstore.models.\lQuizModel.getTotalWrong" alt="" coords="280,463,495,504"/>
+</map>

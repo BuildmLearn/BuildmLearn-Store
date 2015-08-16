@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d6d/namespace_app_store">
+<title>AppStore</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d36/class_app_store_1_1_app">AppStore::App</link></para>
+<para><emphasis>&lt;summary&gt;
+Provides application-specific behavior to supplement the default Application class.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d4a/class_app_store_1_1_app_details">AppStore::AppDetails</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d8e/class_app_store_1_1_app_details_page">AppStore::AppDetailsPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This class deals with the App-Details page, which is shown when the user taps on any app cards displayed on various pages.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d46/class_app_store_1_1_apps_page">AppStore::AppsPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This activity deals with the apps shown when &quot;more&quot; button on the Home Page is pressed.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d14/class_app_store_1_1_blank_page1">AppStore::BlankPage1</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d98/class_app_store_1_1_categories">AppStore::Categories</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d4e/class_app_store_1_1_categories_page">AppStore::CategoriesPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with categorizing apps into certains groups.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d8e/class_app_store_1_1_category_page">AppStore::CategoryPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page is the Category Page, which the app navigates to when the user selects a particular category.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d1a/class_app_store_1_1_main_page">AppStore::MainPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page is the Home Page.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d1a/class_app_store_1_1_menu1">AppStore::Menu1</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d78/class_app_store_1_1_my_apps_page">AppStore::MyAppsPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the My-Apps section of the app.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d17/class_app_store_1_1_program">AppStore::Program</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/da7/class_app_store_1_1_search_page">AppStore::SearchPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This class deals with displaying Search Results according to the search query.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d9d/class_app_store_1_1_settings">AppStore::Settings</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d78/class_app_store_1_1_settings_dialog">AppStore::SettingsDialog</link></para>
+<para><emphasis>&lt;summary&gt;
+This class deals with Settings Dialog and implements all the important user-defined settings required by the app.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info">AppStore::AppStore_XamlTypeInfo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d5e/namespace_app_store_1_1_common">AppStore::Common</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dab/namespace_app_store_1_1_templates">AppStore::Templates</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+</section>

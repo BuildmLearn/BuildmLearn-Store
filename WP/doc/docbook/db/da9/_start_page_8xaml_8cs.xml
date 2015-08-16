@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/da9/_start_page_8xaml_8cs">
+    <title>StartPage.xaml.cs File Reference</title>
+<para>Include dependency diagram for StartPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d7a/_start_page_8xaml_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for StartPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dc8/_start_page_8xaml_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dd6/class_app_store_1_1_templates_1_1_start_page">AppStore::Templates::StartPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the StartPage of all the App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dab/namespace_app_store_1_1_templates">AppStore::Templates</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d57/namespace_windows_1_1_u_i_1_1_start_screen">Windows::UI::StartScreen</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Templates/StartPage.xaml.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="dd/d5e/namespace_app_store_1_1_common">Common</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d2/d12/namespace_app_store_1_1_models">Models</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+4 <emphasis class="keyword">using</emphasis>&#32;Windows.Data.Xml.Dom;
+5 <emphasis class="keyword">using</emphasis>&#32;Windows.Foundation;
+6 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Notifications;
+7 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.StartScreen;
+8 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml;
+9 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+10 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Media;
+11 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Media.Imaging;
+12 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Navigation;
+13 
+14 <emphasis class="comment">//&#32;The&#32;Basic&#32;Page&#32;item&#32;template&#32;is&#32;documented&#32;at&#32;http://go.microsoft.com/fwlink/?LinkID=390556</emphasis>
+15 
+16 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Templates
+17 {
+21 &#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;sealed&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>StartPage&#32;:&#32;<link linkend="db/d2f/class_page">Page</link>
+22 &#32;&#32;&#32;&#32;{
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;navigationHelper;
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;defaultViewModel&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>();
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;removeParameter&#32;=&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>;
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;Type&#32;page;
+27 
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;StartPage()
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.InitializeComponent();
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>(<emphasis class="keyword">this</emphasis>);
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.LoadState&#32;+=&#32;this.NavigationHelper_LoadState;
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.SaveState&#32;+=&#32;this.NavigationHelper_SaveState;
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+38 
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.navigationHelper;&#32;}
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+46 
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;DefaultViewModel
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.defaultViewModel;&#32;}
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+55 
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;NavigationHelper_LoadState(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>&#32;e)
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+70 
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;NavigationHelper_SaveState(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>&#32;e)
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+82 
+83 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;NavigationHelper&#32;registration</emphasis>
+84 
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedTo(NavigationEventArgs&#32;e)
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(e.Parameter&#32;!=&#32;null&#32;&amp;&amp;&#32;e.Parameter.ToString().Equals(<emphasis class="stringliteral">&quot;remove&quot;</emphasis>))&#32;{&#32;removeParameter&#32;=&#32;<emphasis class="stringliteral">&quot;remove&quot;</emphasis>;&#32;Frame.BackStack.<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a3bdcafad13d430ed88ab16dd6b15f4ba">Clear</link>();&#32;}
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;app&#32;=&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>;
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;updateTile();
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Init();
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1adc02e53ccf7be9038f023d629f58a67a">Type</link>.Contains(<emphasis class="stringliteral">&quot;Info&quot;</emphasis>))
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;<link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader">AppReader</link>.<link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader_1a3a89a0ec842c278905bd6f62364aa57e">readInfoFile</link>(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>);&#32;page&#32;=&#32;typeof(InfoPage);&#32;}
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1adc02e53ccf7be9038f023d629f58a67a">Type</link>.Contains(<emphasis class="stringliteral">&quot;Flash&quot;</emphasis>))
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;<link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader">AppReader</link>.<link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader_1a98775d0b7e964b7e298857914125820d">readFlashFile</link>(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>);&#32;page&#32;=&#32;typeof(FlashCardPage);&#32;}
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1adc02e53ccf7be9038f023d629f58a67a">Type</link>.Contains(<emphasis class="stringliteral">&quot;Quiz&quot;</emphasis>))
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;<link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader">AppReader</link>.<link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader_1a4e00abee9b2bab6fb31f8677069b3e05">readQuizFile</link>(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>);&#32;<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a48ae81015f5ec5d71818c8ccc2337fe8">clearInstance</link>();&#32;page&#32;=&#32;typeof(QuizPage);&#32;}
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1adc02e53ccf7be9038f023d629f58a67a">Type</link>.Contains(<emphasis class="stringliteral">&quot;Spellings&quot;</emphasis>))
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;<link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader">AppReader</link>.<link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader_1aaaf7820cf4933f2e8a1ed209a9b084f2">readSpellingsFile</link>(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>);&#32;<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1aa2af5b3afdb862ebd83f812b459ac298">clearInstance</link>();&#32;page&#32;=&#32;typeof(SpellingsPage);&#32;}
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.GoBack();
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedTo(e);
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AppLogo.Source&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;BitmapImage(<emphasis class="keyword">new</emphasis>&#32;Uri(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a591ee9b4836750fc38aa1762e25f20d5">AppIcon</link>));
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AppName.Text&#32;=&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>;
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AppAuthor.Text&#32;=&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a65fea2c46caa3afe1e67c0b2d54c3375">Author</link>;
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+121 
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedFrom(NavigationEventArgs&#32;e)
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedFrom(e);
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+139 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Start_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(page);
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+150 &#32;&#32;&#32;&#32;&#32;&#32;
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;updateTile()
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TileUpdateManager.CreateTileUpdaterForApplication().Clear();
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TileUpdateManager.CreateTileUpdaterForApplication().EnableNotificationQueue(<emphasis class="keyword">true</emphasis>);
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;tileXml&#32;=&#32;TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare150x150Image);
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;tileImage&#32;=&#32;tileXml.GetElementsByTagName(<emphasis class="stringliteral">&quot;image&quot;</emphasis>)[0]&#32;as&#32;XmlElement;
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileImage.SetAttribute(<emphasis class="stringliteral">&quot;src&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;ms-appx:///Assets/aka.png&quot;</emphasis>);
+161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;tileNotification&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;TileNotification(tileXml);
+162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TileUpdateManager.CreateTileUpdaterForApplication().Update(tileNotification);
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileImage.SetAttribute(<emphasis class="stringliteral">&quot;src&quot;</emphasis>,&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a591ee9b4836750fc38aa1762e25f20d5">AppIcon</link>);
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileNotification&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;TileNotification(tileXml);
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileNotification.Tag&#32;=&#32;<emphasis class="stringliteral">&quot;Start&quot;</emphasis>;
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TileUpdateManager.CreateTileUpdaterForApplication().Update(tileNotification);
+167 
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileXml&#32;=&#32;TileUpdateManager.GetTemplateContent(TileTemplateType.TileWide310x150ImageAndText01);
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlNodeList&#32;tileTextAttributes&#32;=&#32;tileXml.GetElementsByTagName(<emphasis class="stringliteral">&quot;text&quot;</emphasis>);
+170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileTextAttributes[0].InnerText&#32;=&#32;<emphasis class="stringliteral">&quot;BuildmLearn&#32;Store:&#32;Promoting&#32;mLearning&quot;</emphasis>;
+171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlNodeList&#32;tileImageAttributes&#32;=&#32;tileXml.GetElementsByTagName(<emphasis class="stringliteral">&quot;image&quot;</emphasis>);
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((XmlElement)tileImageAttributes[0]).SetAttribute(<emphasis class="stringliteral">&quot;src&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;ms-appx:///assets/aka.png&quot;</emphasis>);
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileNotification&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;TileNotification(tileXml);
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TileUpdateManager.CreateTileUpdaterForApplication().Update(tileNotification);
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileTextAttributes[0].InnerText&#32;=&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;By&#32;&quot;</emphasis>&#32;+&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a65fea2c46caa3afe1e67c0b2d54c3375">Author</link>;
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileNotification&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;TileNotification(tileXml);
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileNotification.Tag&#32;=&#32;<emphasis class="stringliteral">&quot;Start&quot;</emphasis>;
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((XmlElement)tileImageAttributes[0]).SetAttribute(<emphasis class="stringliteral">&quot;src&quot;</emphasis>,&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a591ee9b4836750fc38aa1762e25f20d5">AppIcon</link>);
+179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TileUpdateManager.CreateTileUpdaterForApplication().Update(tileNotification);
+180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+181 &#32;&#32;&#32;&#32;
+186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;ToggleAppBarButton(<emphasis class="keywordtype">bool</emphasis>&#32;showPinButton)
+187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(showPinButton)
+189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.PinUnPinCommandButton.Label&#32;=&#32;<emphasis class="stringliteral">&quot;Pin&#32;to&#32;Start&quot;</emphasis>;
+191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.PinUnPinCommandButton.Icon&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SymbolIcon(Symbol.Pin);
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.PinUnPinCommandButton.Label&#32;=&#32;<emphasis class="stringliteral">&quot;Unpin&#32;from&#32;Start&quot;</emphasis>;
+196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.PinUnPinCommandButton.Icon&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SymbolIcon(Symbol.UnPin);
+197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+198 
+199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.PinUnPinCommandButton.UpdateLayout();
+200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;Init()
+206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ToggleAppBarButton(!SecondaryTile.Exists(<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>));
+208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.PinUnPinCommandButton.Click&#32;+=&#32;this.pinToAppBar_Click;
+209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+210 
+216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;async&#32;<emphasis class="keywordtype">void</emphasis>&#32;pinToAppBar_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(SecondaryTile.Exists(<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>.Replace(<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>)))
+219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SecondaryTile&#32;secondaryTile&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SecondaryTile(<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>.Replace(<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>));
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;isUnpinned&#32;=&#32;await&#32;secondaryTile.RequestDeleteForSelectionAsync(GetElementRect((FrameworkElement)sender),&#32;Windows.UI.Popups.Placement.Below);
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(isUnpinned)
+223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ToggleAppBarButton(isUnpinned);
+225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Uri&#32;square150x150Logo&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Uri(<emphasis class="stringliteral">&quot;ms-appx:///Assets/Logo.scale-100.png&quot;</emphasis>);
+230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;tileActivationArguments&#32;=&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>;
+231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SecondaryTile&#32;secondaryTile&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SecondaryTile(<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>.Replace(<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>),
+232 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>,
+233 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tileActivationArguments,
+234 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;square150x150Logo,
+235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TileSize.Square150x150);
+236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;secondaryTile.VisualElements.ShowNameOnSquare150x150Logo&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;secondaryTile.VisualElements.ForegroundText&#32;=&#32;ForegroundText.Dark;
+238 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;secondaryTile.RoamingEnabled&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+239 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ToggleAppBarButton(<emphasis class="keyword">false</emphasis>);
+240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;await&#32;secondaryTile.RequestCreateAsync();
+241 
+242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+244 &#32;&#32;&#32;&#32;&#32;
+250 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;Rect&#32;GetElementRect(FrameworkElement&#32;element)
+251 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+252 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GeneralTransform&#32;buttonTransform&#32;=&#32;element.TransformToVisual(null);
+253 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Point&#32;point&#32;=&#32;buttonTransform.TransformPoint(<emphasis class="keyword">new</emphasis>&#32;Point());
+254 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;Rect(point,&#32;<emphasis class="keyword">new</emphasis>&#32;Size(element.ActualWidth,&#32;element.ActualHeight));
+255 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+256 &#32;&#32;&#32;&#32;}
+257 }
+    </computeroutput></literallayout>
+</section>

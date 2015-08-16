@@ -1,21 +1,9 @@
 ﻿using AppStore.Common;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
 using Windows.Media.SpeechSynthesis;
-using Windows.UI.Core;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -23,13 +11,17 @@ using Windows.UI.Xaml.Navigation;
 namespace AppStore.Templates
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// This page deals with the Spellings Puzzle App-Template.
     /// </summary>
     public sealed partial class SpellingsPage : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
         private Models.SpellingsModel puzzle;
+        
+        /// <summary>
+        /// Public Construtor to the SpellingsPage. Populates the views pertaining to this page.
+        /// </summary>
         public SpellingsPage()
         {
             this.InitializeComponent();
@@ -110,6 +102,19 @@ namespace AppStore.Templates
             this.navigationHelper.OnNavigatedTo(e);
         }
 
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// <para>
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="NavigationHelper.LoadState"/>
+        /// and <see cref="NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+        /// </para>
+        /// </summary>
+        /// <param name="e">Provides data for navigation methods and event
+        /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
@@ -117,10 +122,21 @@ namespace AppStore.Templates
 
         #endregion
 
+        /// <summary>
+        /// Executed when the user wants to spell the word after listening to it.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Spell_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(WordInfoPage));
         }
+
+        /// <summary>
+        /// It populates the next question into the current view.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             if (puzzle.getActiveCount() == puzzle.getSpellingsList().Count - 1)
@@ -132,6 +148,11 @@ namespace AppStore.Templates
             Next.IsEnabled = false; Spell.IsEnabled = false;
         }
 
+        /// <summary>
+        /// Executed when the Listen button is tapped/pressed. It builds the Text-To-Speech api, which will spell the word.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private async void Listen_Click(object sender, RoutedEventArgs e)
         {
             using (var speech = new SpeechSynthesizer())

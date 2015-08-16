@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.utils.SlidingTabStrip" name="org.buildmlearn.appstore.utils.SlidingTabStrip">
+<area shape="rect" id="node4" href="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html" title="Helper class which extends to HorizontalScrollView, and sets the layout of the Tabs. " alt="" coords="13,749,236,1164"/>
+<area shape="rect" id="node2" href="$d7/d95/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_strip_1_1_simple_tab_colorizer.html" title="Class which adds color to the tabs and its indicators. " alt="" coords="12,147,237,253"/>
+<area shape="rect" id="node3" href="$de/d11/interfaceorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout_1_1_tab_colorizer.html" title="Sets the Interface to color the tabs. " alt="" coords="26,5,223,97"/>
+</map>

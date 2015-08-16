@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page">
+<title>AppStore::Templates::ScorePage class Reference</title>
+<para>Inheritance diagram for AppStore::Templates::ScorePage</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/dd4/class_app_store_1_1_templates_1_1_score_page__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Templates::ScorePage</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d04/class_app_store_1_1_templates_1_1_score_page__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Grid LayoutRoot</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Grid ContentRoot</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock ScoreText</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock TotalCorrect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock TotalWrong</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock TotalUnanswered</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button Quit</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button Restart</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock pageTitle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _contentLoaded</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>NavigationHelper navigationHelper</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ObservableDictionary defaultViewModel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SpellingsModel puzzle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QuizModel quiz</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1adff7140fa0870886048b7bdb19c1c635">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1abe922aa91fdf8f186d3fe9bc4716e8cf">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1adff7140fa0870886048b7bdb19c1c635">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1abe922aa91fdf8f186d3fe9bc4716e8cf">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a1e260c06777aa1b0f89e5a3fbadc8cd1">ScorePage</link> (
+)<para><emphasis>&lt;summary&gt;
+Public Construtor to the ScorePage.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a7e7c188c0a50ca1192ad37eb421f31a8">NavigationHelper_LoadState</link> (
+object sender, <link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Populates the page with content passed during navigation.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a07a01cc3d205c44ade7444f1a5483271">NavigationHelper_SaveState</link> (
+object sender, <link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Preserves state associated with this page in case the application is suspended or the
+page is discarded from the navigation cache.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a4fbd5ac28c0e96364e32002a9d09e57b">Restart_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+It restarts the current quiz or spellings puzzle app.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a4329a1961cd97b4757a242649c7c945f">Quit_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+It quits the current app and navigates back to its details page.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a06acfab38a217d85cf8d4d619ae5c532">OnNavigatedTo</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a32976a0eefb40adc41bdb3df49f36f5d">OnNavigatedFrom</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>This page deals with the Score <link linkend="db/d2f/class_page">Page</link> related to the Spellings Puzzle and the Quiz App-Template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 16 of file ScorePage.g.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>ScorePage.g.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1adff7140fa0870886048b7bdb19c1c635">
+                <title>void AppStore.Templates.ScorePage.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1abe922aa91fdf8f186d3fe9bc4716e8cf">
+                <title>void AppStore.Templates.ScorePage.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1adff7140fa0870886048b7bdb19c1c635">
+                <title>void AppStore.Templates.ScorePage.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1abe922aa91fdf8f186d3fe9bc4716e8cf">
+                <title>void AppStore.Templates.ScorePage.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a1e260c06777aa1b0f89e5a3fbadc8cd1">
+                <title>AppStore.Templates.ScorePage.ScorePage ()</title> <emphasis>&lt;summary&gt;
+Public Construtor to the ScorePage.</emphasis>
+                
+<para>Populates the views pertaining to this page. </para>
+
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a7e7c188c0a50ca1192ad37eb421f31a8">
+                <title>void AppStore.Templates.ScorePage.NavigationHelper_LoadState (object sender, LoadStateEventArgs e)</title> <emphasis>&lt;summary&gt;
+Populates the page with content passed during navigation.</emphasis>
+                
+<para>Any saved state is also provided when recreating a page from a prior session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>The source of the event; typically <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a6c93708ebf3ef61c3027dd325b2a872d">NavigationHelper</link> </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that provides both the navigation parameter passed to Frame.Navigate(Type, Object) when this page was initially requested and a dictionary of state preserved by this page during an earlier session. The state will be null the first time a page is visited.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a07a01cc3d205c44ade7444f1a5483271">
+                <title>void AppStore.Templates.ScorePage.NavigationHelper_SaveState (object sender, SaveStateEventArgs e)</title> <emphasis>&lt;summary&gt;
+Preserves state associated with this page in case the application is suspended or the
+page is discarded from the navigation cache.</emphasis>
+                
+<para>Values must conform to the serialization requirements of SuspensionManager.SessionState. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>The source of the event; typically <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a6c93708ebf3ef61c3027dd325b2a872d">NavigationHelper</link></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that provides an empty dictionary to be populated with serializable state.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a4fbd5ac28c0e96364e32002a9d09e57b">
+                <title>void AppStore.Templates.ScorePage.Restart_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+It restarts the current quiz or spellings puzzle app.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a4329a1961cd97b4757a242649c7c945f">
+                <title>void AppStore.Templates.ScorePage.Quit_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+It quits the current app and navigates back to its details page.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a06acfab38a217d85cf8d4d619ae5c532">
+                <title>override void AppStore.Templates.ScorePage.OnNavigatedTo (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis>
+                
+<para><link linkend="db/d2f/class_page">Page</link> specific logic should be placed in event handlers for the NavigationHelper.LoadState and NavigationHelper.SaveState. The navigation parameter is available in the LoadState method in addition to page state preserved during an earlier session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Provides data for navigation methods and event handlers that cannot cancel the navigation request.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/d5a/class_app_store_1_1_templates_1_1_score_page_1a32976a0eefb40adc41bdb3df49f36f5d">
+                <title>override void AppStore.Templates.ScorePage.OnNavigatedFrom (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis>
+                
+<para><link linkend="db/d2f/class_page">Page</link> specific logic should be placed in event handlers for the NavigationHelper.LoadState and NavigationHelper.SaveState. The navigation parameter is available in the LoadState method in addition to page state preserved during an earlier session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Provides data for navigation methods and event handlers that cannot cancel the navigation request.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

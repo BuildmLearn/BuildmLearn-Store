@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d6b/class_app_store_1_1_common_1_1_app_reader">
+<title>AppStore::Common::AppReader class Reference</title>
+<para>Inheritance diagram for AppStore::Common::AppReader</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d15/class_app_store_1_1_common_1_1_app_reader__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::AppReader</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d40/class_app_store_1_1_common_1_1_app_reader__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader_1a3a89a0ec842c278905bd6f62364aa57e">readInfoFile</link> (
+string fileName)<para><emphasis>&lt;summary&gt;
+It reads the Info App-Template, from the .buildmlearn file.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader_1a4e00abee9b2bab6fb31f8677069b3e05">readQuizFile</link> (
+string fileName)<para><emphasis>&lt;summary&gt;
+It reads the Quiz App-Template, from the .buildmlearn file.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader_1aaaf7820cf4933f2e8a1ed209a9b084f2">readSpellingsFile</link> (
+string fileName)<para><emphasis>&lt;summary&gt;
+It reads the Spellings-Puzzle App-Template, from the .buildmlearn file.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader_1a98775d0b7e964b7e298857914125820d">readFlashFile</link> (
+string fileName)<para><emphasis>&lt;summary&gt;
+It reads the Flash-Card App-Template, from the .buildmlearn file.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>This class deals with reading the App-Templates. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 14 of file AppReader.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>AppReader.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="da/d6b/class_app_store_1_1_common_1_1_app_reader_1a3a89a0ec842c278905bd6f62364aa57e">
+                <title>static void AppStore.Common.AppReader.readInfoFile (string fileName)</title> <emphasis>&lt;summary&gt;
+It reads the Info App-Template, from the .buildmlearn file.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fileName</entry>
+                                <entry>
+<para>Name of the file</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d6b/class_app_store_1_1_common_1_1_app_reader_1a4e00abee9b2bab6fb31f8677069b3e05">
+                <title>static void AppStore.Common.AppReader.readQuizFile (string fileName)</title> <emphasis>&lt;summary&gt;
+It reads the Quiz App-Template, from the .buildmlearn file.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fileName</entry>
+                                <entry>
+<para>Name of the file</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d6b/class_app_store_1_1_common_1_1_app_reader_1aaaf7820cf4933f2e8a1ed209a9b084f2">
+                <title>static void AppStore.Common.AppReader.readSpellingsFile (string fileName)</title> <emphasis>&lt;summary&gt;
+It reads the Spellings-Puzzle App-Template, from the .buildmlearn file.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fileName</entry>
+                                <entry>
+<para>Name of the file</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="da/d6b/class_app_store_1_1_common_1_1_app_reader_1a98775d0b7e964b7e298857914125820d">
+                <title>static void AppStore.Common.AppReader.readFlashFile (string fileName)</title> <emphasis>&lt;summary&gt;
+It reads the Flash-Card App-Template, from the .buildmlearn file.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fileName</entry>
+                                <entry>
+<para>Name of the file</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

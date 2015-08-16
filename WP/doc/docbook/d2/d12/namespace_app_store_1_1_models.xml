@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d12/namespace_app_store_1_1_models">
+<title>AppStore::Models</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppStore::Models::AppInstance</link></para>
+<para><emphasis>&lt;summary&gt;
+This is the model of the app instance, and whether it is installed or not.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppStore::Models::AppList</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model which contains the list of all the apps both installed and else.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">AppStore::Models::Apps</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Info App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d26/class_app_store_1_1_models_1_1_card">AppStore::Models::Card</link></para>
+<para><emphasis>&lt;summary&gt;
+It is related to the FlashCard App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">AppStore::Models::Categories</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Categories
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d27/class_app_store_1_1_models_1_1_category_instance">AppStore::Models::CategoryInstance</link></para>
+<para><emphasis>&lt;summary&gt;
+It is an instance of the category.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">AppStore::Models::FlashModel</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Flash card App-Template
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">AppStore::Models::InfoModel</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Info App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d4c/class_app_store_1_1_models_1_1_menu_item">AppStore::Models::MenuItem</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the menu items.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d22/class_app_store_1_1_models_1_1_question">AppStore::Models::Question</link></para>
+<para><emphasis>&lt;summary&gt;
+It is related to the Quiz App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">AppStore::Models::QuizModel</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Quiz App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/dd0/class_app_store_1_1_models_1_1_resources">AppStore::Models::Resources</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the all the string resources for catefories.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">AppStore::Models::SpellingsModel</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Spellings App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model">AppStore::Models::WordModel</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Spelings App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

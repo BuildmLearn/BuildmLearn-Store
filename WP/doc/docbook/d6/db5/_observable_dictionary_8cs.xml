@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/db5/_observable_dictionary_8cs">
+    <title>ObservableDictionary.cs File Reference</title>
+<para>Include dependency diagram for ObservableDictionary.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/db4/_observable_dictionary_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for ObservableDictionary.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d3b/_observable_dictionary_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">AppStore::Common::ObservableDictionary</link></para>
+<para><emphasis>&lt;summary&gt;
+Implementation of IObservableMap that supports reentrancy for use as a default view
+model.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args">AppStore::Common::ObservableDictionary::ObservableDictionaryChangedEventArgs</link></para>
+<para><emphasis>&lt;summary&gt;
+ObservableDictionaryChangedEventArgs
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d5e/namespace_app_store_1_1_common">AppStore::Common</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d1b/namespace_windows_1_1_foundation_1_1_collections">Windows::Foundation::Collections</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Common/ObservableDictionary.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Linq;
+4 <emphasis class="keyword">using</emphasis>&#32;Windows.Foundation.Collections;
+5 
+6 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Common
+7 {
+<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">12 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;:&#32;<link linkend="d7/dd1/class_i_observable_map">IObservableMap</link>&lt;string,&#32;object&gt;
+13 &#32;&#32;&#32;&#32;{
+<link linkend="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args">17 </link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args">ObservableDictionaryChangedEventArgs</link>&#32;:&#32;<link linkend="db/ddd/class_i_map_changed_event_args">IMapChangedEventArgs</link>&lt;string&gt;
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args">ObservableDictionaryChangedEventArgs</link>(CollectionChange&#32;change,&#32;<emphasis class="keywordtype">string</emphasis>&#32;key)
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.CollectionChange&#32;=&#32;change;
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Key&#32;=&#32;key;
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+24 
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;CollectionChange&#32;CollectionChange&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">private</emphasis>&#32;set;&#32;}
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Key&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">private</emphasis>&#32;set;&#32;}
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+28 
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;Dictionary&lt;string,&#32;object&gt;&#32;_dictionary&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Dictionary&lt;string,&#32;object&gt;();
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">event</emphasis>&#32;MapChangedEventHandler&lt;string,&#32;object&gt;&#32;MapChanged;
+35 
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;InvokeMapChanged(CollectionChange&#32;change,&#32;<emphasis class="keywordtype">string</emphasis>&#32;key)
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;eventHandler&#32;=&#32;MapChanged;
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(eventHandler&#32;!=&#32;null)
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;eventHandler(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args">ObservableDictionaryChangedEventArgs</link>(change,&#32;key));
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+49 
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Add(<emphasis class="keywordtype">string</emphasis>&#32;key,&#32;<emphasis class="keywordtype">object</emphasis>&#32;value)
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this._dictionary.Add(key,&#32;value);
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.InvokeMapChanged(CollectionChange.ItemInserted,&#32;key);
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+60 
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Add(KeyValuePair&lt;string,&#32;object&gt;&#32;item)
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Add(item.Key,&#32;item.Value);
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+69 
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;Remove(<emphasis class="keywordtype">string</emphasis>&#32;key)
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this._dictionary.Remove(key))
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.InvokeMapChanged(CollectionChange.ItemRemoved,&#32;key);
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">true</emphasis>;
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">false</emphasis>;
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+84 
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;Remove(KeyValuePair&lt;string,&#32;object&gt;&#32;item)
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">object</emphasis>&#32;currentValue;
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this._dictionary.TryGetValue(item.Key,&#32;out&#32;currentValue)&#32;&amp;&amp;
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Object.Equals(item.Value,&#32;currentValue)&#32;&amp;&amp;&#32;this._dictionary.Remove(item.Key))
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.InvokeMapChanged(CollectionChange.ItemRemoved,&#32;item.Key);
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">true</emphasis>;
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">false</emphasis>;
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+101 
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;<emphasis class="keyword">this</emphasis>[<emphasis class="keywordtype">string</emphasis>&#32;key]
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;this._dictionary[key];
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;set
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this._dictionary[key]&#32;=&#32;value;
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.InvokeMapChanged(CollectionChange.ItemChanged,&#32;key);
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+119 
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Clear()
+124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;priorKeys&#32;=&#32;this._dictionary.Keys.ToArray();
+126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this._dictionary.Clear();
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(var&#32;key&#32;<emphasis class="keywordflow">in</emphasis>&#32;priorKeys)
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.InvokeMapChanged(CollectionChange.ItemRemoved,&#32;key);
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+132 
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;ICollection&lt;string&gt;&#32;Keys
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this._dictionary.Keys;&#32;}
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+140 
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;ContainsKey(<emphasis class="keywordtype">string</emphasis>&#32;key)
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;this._dictionary.ContainsKey(key);
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+150 
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;TryGetValue(<emphasis class="keywordtype">string</emphasis>&#32;key,&#32;out&#32;<emphasis class="keywordtype">object</emphasis>&#32;value)
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;this._dictionary.TryGetValue(key,&#32;out&#32;value);
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+161 
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;ICollection&lt;object&gt;&#32;Values
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this._dictionary.Values;&#32;}
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+169 
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;Contains(KeyValuePair&lt;string,&#32;object&gt;&#32;item)
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;this._dictionary.Contains(item);
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+179 
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;Count
+184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this._dictionary.Count;&#32;}
+186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+187 
+191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsReadOnly
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">false</emphasis>;&#32;}
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+195 
+200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;IEnumerator&lt;KeyValuePair&lt;string,&#32;object&gt;&gt;&#32;GetEnumerator()
+201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;this._dictionary.GetEnumerator();
+203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+204 
+209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.IEnumerator&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.IEnumerable.GetEnumerator()
+210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;this._dictionary.GetEnumerator();
+212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+213 
+219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;CopyTo(KeyValuePair&lt;string,&#32;object&gt;[]&#32;array,&#32;<emphasis class="keywordtype">int</emphasis>&#32;arrayIndex)
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;arraySize&#32;=&#32;array.Length;
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(var&#32;pair&#32;<emphasis class="keywordflow">in</emphasis>&#32;this._dictionary)
+223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(arrayIndex&#32;&gt;=&#32;arraySize)&#32;<emphasis class="keywordflow">break</emphasis>;
+225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;array[arrayIndex++]&#32;=&#32;pair;
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+228 &#32;&#32;&#32;&#32;}
+229 }
+    </computeroutput></literallayout>
+</section>

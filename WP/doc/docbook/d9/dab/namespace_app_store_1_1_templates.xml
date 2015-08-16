@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/dab/namespace_app_store_1_1_templates">
+<title>AppStore::Templates</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page">AppStore::Templates::FlashCardPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the Flash-Card App template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/dbb/class_app_store_1_1_templates_1_1_info_detail_page">AppStore::Templates::InfoDetailPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with populating the details of the word selected in Info-AppTemplate.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dec/class_app_store_1_1_templates_1_1_info_page">AppStore::Templates::InfoPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the Info app tmeplate.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/de3/class_app_store_1_1_templates_1_1_quiz_page">AppStore::Templates::QuizPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the Quiz-App template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page">AppStore::Templates::ScorePage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the Score Page related to the Spellings Puzzle and the Quiz App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page">AppStore::Templates::SpellingsPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the Spellings Puzzle App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dd6/class_app_store_1_1_templates_1_1_start_page">AppStore::Templates::StartPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the StartPage of all the App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d66/class_app_store_1_1_templates_1_1_word_info_page">AppStore::Templates::WordInfoPage</link></para>
+<para><emphasis>&lt;summary&gt;
+The page deals with shwoing the word info based on the word which comes up while running the Spellings Puzzle app-template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

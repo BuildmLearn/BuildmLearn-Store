@@ -136,7 +136,6 @@
     <Compile Include="Models\CategoryInstance.cs" />
     <Compile Include="Models\FlashModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
-    <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\QuizModel.cs" />
     <Compile Include="Models\Resources.cs" />
@@ -337,6 +336,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeMap.dgml" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

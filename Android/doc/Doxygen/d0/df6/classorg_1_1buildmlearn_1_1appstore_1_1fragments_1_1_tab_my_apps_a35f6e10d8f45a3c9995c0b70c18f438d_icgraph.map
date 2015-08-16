@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.fragments.TabMyApps.refreshList" name="org.buildmlearn.appstore.fragments.TabMyApps.refreshList">
+<area shape="rect" id="node2" href="$d8/dfa/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_home_activity.html#a1a3c72988991108cb3f2f70b345a1a0d" title="The method is executed first when the activity is created. " alt="" coords="297,5,520,47"/>
+<area shape="rect" id="node3" href="$dc/d6e/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_my_apps_view_adapter.html#ab95b082936ebfbe1ca7120428e7024d7" title="Binds the content to the view. " alt="" coords="283,71,535,112"/>
+</map>

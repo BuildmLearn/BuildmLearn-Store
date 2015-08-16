@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d17/class_app_store_1_1_program">
+<title>AppStore::Program class Reference</title>
+<para>Inheritance diagram for AppStore::Program</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d62/class_app_store_1_1_program__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Program</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d4a/class_app_store_1_1_program__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d4/d17/class_app_store_1_1_program_1a4eb1d9c2c3b66c07855d5a1299403bad">Main</link> (
+string[] args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d4/d17/class_app_store_1_1_program_1a4eb1d9c2c3b66c07855d5a1299403bad">Main</link> (
+string[] args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d4/d17/class_app_store_1_1_program_1a4eb1d9c2c3b66c07855d5a1299403bad">Main</link> (
+string[] args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d4/d17/class_app_store_1_1_program_1a4eb1d9c2c3b66c07855d5a1299403bad">
+                <title>static void AppStore.Program.Main (string[] args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d17/class_app_store_1_1_program_1a4eb1d9c2c3b66c07855d5a1299403bad">
+                <title>static void AppStore.Program.Main (string[] args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d17/class_app_store_1_1_program_1a4eb1d9c2c3b66c07855d5a1299403bad">
+                <title>static void AppStore.Program.Main (string[] args)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

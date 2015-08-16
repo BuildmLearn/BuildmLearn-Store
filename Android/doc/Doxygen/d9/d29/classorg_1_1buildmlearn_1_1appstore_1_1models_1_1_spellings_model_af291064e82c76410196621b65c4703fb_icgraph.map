@@ -1,0 +1,8 @@
+<map id="org.buildmlearn.appstore.models.SpellingsModel.getInstance" name="org.buildmlearn.appstore.models.SpellingsModel.getInstance">
+<area shape="rect" id="node2" href="$df/dcb/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_score_activity.html#ac45846f5044d122523a51f69bf838d8b" title="The method is executed first when the activity is created. " alt="" coords="291,5,513,47"/>
+<area shape="rect" id="node3" href="$d9/dca/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_spelling_activity.html#ab11f98527ad998adcb11f119d815945e" title="The method is executed first when the activity is created. " alt="" coords="291,71,513,112"/>
+<area shape="rect" id="node4" href="$d3/dbf/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_start_activity_1_1_file_read_task.html#a1170e20ba70058ef64883f3cc85e209b" title="This method is called after the task has been performed. " alt="" coords="268,136,536,177"/>
+<area shape="rect" id="node5" href="$d2/d2d/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_word_info_activity.html#a84c1bc2dbaad02b74b37c6390bf8380f" title="The method is executed first when the activity is created. " alt="" coords="291,201,513,243"/>
+<area shape="rect" id="node6" href="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#aaeb43a1338ffba1f17dd7993c82af47f" title="Reads the Spelling Puzzle type of app. " alt="" coords="295,267,509,308"/>
+<area shape="rect" id="node7" href="$d3/dbf/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_start_activity_1_1_file_read_task.html#aed534a6e0d4bcb1df8009e878e2bb95f" title="This method is automatically called, when the class is set to be executed. " alt="" coords="584,267,856,308"/>
+</map>

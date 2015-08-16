@@ -124,7 +124,7 @@ namespace AppStore.AppStore_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[22];
+            _typeNameTable = new string[25];
             _typeNameTable[0] = "AppStore.AppDetailsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -133,22 +133,25 @@ namespace AppStore.AppStore_XamlTypeInfo
             _typeNameTable[5] = "AppStore.Common.ObservableDictionary";
             _typeNameTable[6] = "Object";
             _typeNameTable[7] = "String";
-            _typeNameTable[8] = "AppStore.CategoriesPage";
-            _typeNameTable[9] = "AppStore.CategoryPage";
-            _typeNameTable[10] = "AppStore.MainPage";
-            _typeNameTable[11] = "AppStore.MyAppsPage";
-            _typeNameTable[12] = "AppStore.SearchPage";
-            _typeNameTable[13] = "AppStore.Settings";
-            _typeNameTable[14] = "AppStore.Templates.FlashCardPage";
-            _typeNameTable[15] = "AppStore.Templates.InfoDetailPage";
-            _typeNameTable[16] = "AppStore.Templates.InfoPage";
-            _typeNameTable[17] = "AppStore.Templates.QuizPage";
-            _typeNameTable[18] = "AppStore.Templates.ScorePage";
-            _typeNameTable[19] = "AppStore.Templates.SpellingsPage";
-            _typeNameTable[20] = "AppStore.Templates.StartPage";
-            _typeNameTable[21] = "AppStore.Templates.WordInfoPage";
+            _typeNameTable[8] = "AppStore.AppsPage";
+            _typeNameTable[9] = "AppStore.CategoriesPage";
+            _typeNameTable[10] = "AppStore.CategoryPage";
+            _typeNameTable[11] = "AppStore.MainPage";
+            _typeNameTable[12] = "AppStore.MyAppsPage";
+            _typeNameTable[13] = "AppStore.SearchPage";
+            _typeNameTable[14] = "AppStore.SettingsDialog";
+            _typeNameTable[15] = "Windows.UI.Xaml.Controls.ContentDialog";
+            _typeNameTable[16] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[17] = "AppStore.Templates.FlashCardPage";
+            _typeNameTable[18] = "AppStore.Templates.InfoDetailPage";
+            _typeNameTable[19] = "AppStore.Templates.InfoPage";
+            _typeNameTable[20] = "AppStore.Templates.QuizPage";
+            _typeNameTable[21] = "AppStore.Templates.ScorePage";
+            _typeNameTable[22] = "AppStore.Templates.SpellingsPage";
+            _typeNameTable[23] = "AppStore.Templates.StartPage";
+            _typeNameTable[24] = "AppStore.Templates.WordInfoPage";
 
-            _typeTable = new global::System.Type[22];
+            _typeTable = new global::System.Type[25];
             _typeTable[0] = typeof(global::AppStore.AppDetailsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -157,20 +160,23 @@ namespace AppStore.AppStore_XamlTypeInfo
             _typeTable[5] = typeof(global::AppStore.Common.ObservableDictionary);
             _typeTable[6] = typeof(global::System.Object);
             _typeTable[7] = typeof(global::System.String);
-            _typeTable[8] = typeof(global::AppStore.CategoriesPage);
-            _typeTable[9] = typeof(global::AppStore.CategoryPage);
-            _typeTable[10] = typeof(global::AppStore.MainPage);
-            _typeTable[11] = typeof(global::AppStore.MyAppsPage);
-            _typeTable[12] = typeof(global::AppStore.SearchPage);
-            _typeTable[13] = typeof(global::AppStore.Settings);
-            _typeTable[14] = typeof(global::AppStore.Templates.FlashCardPage);
-            _typeTable[15] = typeof(global::AppStore.Templates.InfoDetailPage);
-            _typeTable[16] = typeof(global::AppStore.Templates.InfoPage);
-            _typeTable[17] = typeof(global::AppStore.Templates.QuizPage);
-            _typeTable[18] = typeof(global::AppStore.Templates.ScorePage);
-            _typeTable[19] = typeof(global::AppStore.Templates.SpellingsPage);
-            _typeTable[20] = typeof(global::AppStore.Templates.StartPage);
-            _typeTable[21] = typeof(global::AppStore.Templates.WordInfoPage);
+            _typeTable[8] = typeof(global::AppStore.AppsPage);
+            _typeTable[9] = typeof(global::AppStore.CategoriesPage);
+            _typeTable[10] = typeof(global::AppStore.CategoryPage);
+            _typeTable[11] = typeof(global::AppStore.MainPage);
+            _typeTable[12] = typeof(global::AppStore.MyAppsPage);
+            _typeTable[13] = typeof(global::AppStore.SearchPage);
+            _typeTable[14] = typeof(global::AppStore.SettingsDialog);
+            _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
+            _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[17] = typeof(global::AppStore.Templates.FlashCardPage);
+            _typeTable[18] = typeof(global::AppStore.Templates.InfoDetailPage);
+            _typeTable[19] = typeof(global::AppStore.Templates.InfoPage);
+            _typeTable[20] = typeof(global::AppStore.Templates.QuizPage);
+            _typeTable[21] = typeof(global::AppStore.Templates.ScorePage);
+            _typeTable[22] = typeof(global::AppStore.Templates.SpellingsPage);
+            _typeTable[23] = typeof(global::AppStore.Templates.StartPage);
+            _typeTable[24] = typeof(global::AppStore.Templates.WordInfoPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -207,20 +213,21 @@ namespace AppStore.AppStore_XamlTypeInfo
 
         private object Activate_0_AppDetailsPage() { return new global::AppStore.AppDetailsPage(); }
         private object Activate_5_ObservableDictionary() { return new global::AppStore.Common.ObservableDictionary(); }
-        private object Activate_8_CategoriesPage() { return new global::AppStore.CategoriesPage(); }
-        private object Activate_9_CategoryPage() { return new global::AppStore.CategoryPage(); }
-        private object Activate_10_MainPage() { return new global::AppStore.MainPage(); }
-        private object Activate_11_MyAppsPage() { return new global::AppStore.MyAppsPage(); }
-        private object Activate_12_SearchPage() { return new global::AppStore.SearchPage(); }
-        private object Activate_13_Settings() { return new global::AppStore.Settings(); }
-        private object Activate_14_FlashCardPage() { return new global::AppStore.Templates.FlashCardPage(); }
-        private object Activate_15_InfoDetailPage() { return new global::AppStore.Templates.InfoDetailPage(); }
-        private object Activate_16_InfoPage() { return new global::AppStore.Templates.InfoPage(); }
-        private object Activate_17_QuizPage() { return new global::AppStore.Templates.QuizPage(); }
-        private object Activate_18_ScorePage() { return new global::AppStore.Templates.ScorePage(); }
-        private object Activate_19_SpellingsPage() { return new global::AppStore.Templates.SpellingsPage(); }
-        private object Activate_20_StartPage() { return new global::AppStore.Templates.StartPage(); }
-        private object Activate_21_WordInfoPage() { return new global::AppStore.Templates.WordInfoPage(); }
+        private object Activate_8_AppsPage() { return new global::AppStore.AppsPage(); }
+        private object Activate_9_CategoriesPage() { return new global::AppStore.CategoriesPage(); }
+        private object Activate_10_CategoryPage() { return new global::AppStore.CategoryPage(); }
+        private object Activate_11_MainPage() { return new global::AppStore.MainPage(); }
+        private object Activate_12_MyAppsPage() { return new global::AppStore.MyAppsPage(); }
+        private object Activate_13_SearchPage() { return new global::AppStore.SearchPage(); }
+        private object Activate_14_SettingsDialog() { return new global::AppStore.SettingsDialog(); }
+        private object Activate_17_FlashCardPage() { return new global::AppStore.Templates.FlashCardPage(); }
+        private object Activate_18_InfoDetailPage() { return new global::AppStore.Templates.InfoDetailPage(); }
+        private object Activate_19_InfoPage() { return new global::AppStore.Templates.InfoPage(); }
+        private object Activate_20_QuizPage() { return new global::AppStore.Templates.QuizPage(); }
+        private object Activate_21_ScorePage() { return new global::AppStore.Templates.ScorePage(); }
+        private object Activate_22_SpellingsPage() { return new global::AppStore.Templates.SpellingsPage(); }
+        private object Activate_23_StartPage() { return new global::AppStore.Templates.StartPage(); }
+        private object Activate_24_WordInfoPage() { return new global::AppStore.Templates.WordInfoPage(); }
         private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -283,124 +290,139 @@ namespace AppStore.AppStore_XamlTypeInfo
                 xamlType = new global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  AppStore.CategoriesPage
+            case 8:   //  AppStore.AppsPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_CategoriesPage;
+                userType.Activator = Activate_8_AppsPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  AppStore.CategoryPage
+            case 9:   //  AppStore.CategoriesPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_CategoryPage;
+                userType.Activator = Activate_9_CategoriesPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  AppStore.MainPage
+            case 10:   //  AppStore.CategoryPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 11:   //  AppStore.MyAppsPage
-                userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_MyAppsPage;
+                userType.Activator = Activate_10_CategoryPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  AppStore.SearchPage
+            case 11:   //  AppStore.MainPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_SearchPage;
+                userType.Activator = Activate_11_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  AppStore.MyAppsPage
+                userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_MyAppsPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  AppStore.Settings
+            case 13:   //  AppStore.SearchPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_Settings;
+                userType.Activator = Activate_13_SearchPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  AppStore.Templates.FlashCardPage
+            case 14:   //  AppStore.SettingsDialog
+                userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentDialog"));
+                userType.Activator = Activate_14_SettingsDialog;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Windows.UI.Xaml.Controls.ContentDialog
+                xamlType = new global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 16:   //  Windows.UI.Xaml.Controls.ContentControl
+                xamlType = new global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 17:   //  AppStore.Templates.FlashCardPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_FlashCardPage;
+                userType.Activator = Activate_17_FlashCardPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  AppStore.Templates.InfoDetailPage
+            case 18:   //  AppStore.Templates.InfoDetailPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_InfoDetailPage;
+                userType.Activator = Activate_18_InfoDetailPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  AppStore.Templates.InfoPage
+            case 19:   //  AppStore.Templates.InfoPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_InfoPage;
+                userType.Activator = Activate_19_InfoPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  AppStore.Templates.QuizPage
+            case 20:   //  AppStore.Templates.QuizPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_QuizPage;
+                userType.Activator = Activate_20_QuizPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  AppStore.Templates.ScorePage
+            case 21:   //  AppStore.Templates.ScorePage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_ScorePage;
+                userType.Activator = Activate_21_ScorePage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  AppStore.Templates.SpellingsPage
+            case 22:   //  AppStore.Templates.SpellingsPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_SpellingsPage;
+                userType.Activator = Activate_22_SpellingsPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  AppStore.Templates.StartPage
+            case 23:   //  AppStore.Templates.StartPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_StartPage;
+                userType.Activator = Activate_23_StartPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  AppStore.Templates.WordInfoPage
+            case 24:   //  AppStore.Templates.WordInfoPage
                 userType = new global::AppStore.AppStore_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_WordInfoPage;
+                userType.Activator = Activate_24_WordInfoPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
@@ -421,54 +443,54 @@ namespace AppStore.AppStore_XamlTypeInfo
             var that = (global::AppStore.AppDetailsPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_2_CategoriesPage_NavigationHelper(object instance)
+        private object get_2_AppsPage_NavigationHelper(object instance)
+        {
+            var that = (global::AppStore.AppsPage)instance;
+            return that.NavigationHelper;
+        }
+        private object get_3_AppsPage_DefaultViewModel(object instance)
+        {
+            var that = (global::AppStore.AppsPage)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_4_CategoriesPage_NavigationHelper(object instance)
         {
             var that = (global::AppStore.CategoriesPage)instance;
             return that.NavigationHelper;
         }
-        private object get_3_CategoriesPage_DefaultViewModel(object instance)
+        private object get_5_CategoriesPage_DefaultViewModel(object instance)
         {
             var that = (global::AppStore.CategoriesPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_4_CategoryPage_NavigationHelper(object instance)
+        private object get_6_CategoryPage_NavigationHelper(object instance)
         {
             var that = (global::AppStore.CategoryPage)instance;
             return that.NavigationHelper;
         }
-        private object get_5_CategoryPage_DefaultViewModel(object instance)
+        private object get_7_CategoryPage_DefaultViewModel(object instance)
         {
             var that = (global::AppStore.CategoryPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_6_MyAppsPage_NavigationHelper(object instance)
+        private object get_8_MyAppsPage_NavigationHelper(object instance)
         {
             var that = (global::AppStore.MyAppsPage)instance;
             return that.NavigationHelper;
         }
-        private object get_7_MyAppsPage_DefaultViewModel(object instance)
+        private object get_9_MyAppsPage_DefaultViewModel(object instance)
         {
             var that = (global::AppStore.MyAppsPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_8_SearchPage_NavigationHelper(object instance)
+        private object get_10_SearchPage_NavigationHelper(object instance)
         {
             var that = (global::AppStore.SearchPage)instance;
             return that.NavigationHelper;
         }
-        private object get_9_SearchPage_DefaultViewModel(object instance)
+        private object get_11_SearchPage_DefaultViewModel(object instance)
         {
             var that = (global::AppStore.SearchPage)instance;
-            return that.DefaultViewModel;
-        }
-        private object get_10_Settings_NavigationHelper(object instance)
-        {
-            var that = (global::AppStore.Settings)instance;
-            return that.NavigationHelper;
-        }
-        private object get_11_Settings_DefaultViewModel(object instance)
-        {
-            var that = (global::AppStore.Settings)instance;
             return that.DefaultViewModel;
         }
         private object get_12_FlashCardPage_NavigationHelper(object instance)
@@ -571,64 +593,64 @@ namespace AppStore.AppStore_XamlTypeInfo
                 xamlMember.Getter = get_1_AppDetailsPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "AppStore.AppsPage.NavigationHelper":
+                userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.AppsPage");
+                xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "NavigationHelper", "AppStore.Common.NavigationHelper");
+                xamlMember.Getter = get_2_AppsPage_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "AppStore.AppsPage.DefaultViewModel":
+                userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.AppsPage");
+                xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "AppStore.Common.ObservableDictionary");
+                xamlMember.Getter = get_3_AppsPage_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
             case "AppStore.CategoriesPage.NavigationHelper":
                 userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.CategoriesPage");
                 xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "NavigationHelper", "AppStore.Common.NavigationHelper");
-                xamlMember.Getter = get_2_CategoriesPage_NavigationHelper;
+                xamlMember.Getter = get_4_CategoriesPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "AppStore.CategoriesPage.DefaultViewModel":
                 userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.CategoriesPage");
                 xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "AppStore.Common.ObservableDictionary");
-                xamlMember.Getter = get_3_CategoriesPage_DefaultViewModel;
+                xamlMember.Getter = get_5_CategoriesPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "AppStore.CategoryPage.NavigationHelper":
                 userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.CategoryPage");
                 xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "NavigationHelper", "AppStore.Common.NavigationHelper");
-                xamlMember.Getter = get_4_CategoryPage_NavigationHelper;
+                xamlMember.Getter = get_6_CategoryPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "AppStore.CategoryPage.DefaultViewModel":
                 userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.CategoryPage");
                 xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "AppStore.Common.ObservableDictionary");
-                xamlMember.Getter = get_5_CategoryPage_DefaultViewModel;
+                xamlMember.Getter = get_7_CategoryPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "AppStore.MyAppsPage.NavigationHelper":
                 userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.MyAppsPage");
                 xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "NavigationHelper", "AppStore.Common.NavigationHelper");
-                xamlMember.Getter = get_6_MyAppsPage_NavigationHelper;
+                xamlMember.Getter = get_8_MyAppsPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "AppStore.MyAppsPage.DefaultViewModel":
                 userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.MyAppsPage");
                 xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "AppStore.Common.ObservableDictionary");
-                xamlMember.Getter = get_7_MyAppsPage_DefaultViewModel;
+                xamlMember.Getter = get_9_MyAppsPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "AppStore.SearchPage.NavigationHelper":
                 userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.SearchPage");
                 xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "NavigationHelper", "AppStore.Common.NavigationHelper");
-                xamlMember.Getter = get_8_SearchPage_NavigationHelper;
+                xamlMember.Getter = get_10_SearchPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "AppStore.SearchPage.DefaultViewModel":
                 userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.SearchPage");
                 xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "AppStore.Common.ObservableDictionary");
-                xamlMember.Getter = get_9_SearchPage_DefaultViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "AppStore.Settings.NavigationHelper":
-                userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.Settings");
-                xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "NavigationHelper", "AppStore.Common.NavigationHelper");
-                xamlMember.Getter = get_10_Settings_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "AppStore.Settings.DefaultViewModel":
-                userType = (global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStore.Settings");
-                xamlMember = new global::AppStore.AppStore_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "AppStore.Common.ObservableDictionary");
-                xamlMember.Getter = get_11_Settings_DefaultViewModel;
+                xamlMember.Getter = get_11_SearchPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "AppStore.Templates.FlashCardPage.NavigationHelper":

@@ -1,0 +1,537 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">
+<title>AppStore::Common::ObservableDictionary class Reference</title>
+<para>Inheritance diagram for AppStore::Common::ObservableDictionary</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d92/class_app_store_1_1_common_1_1_observable_dictionary__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::ObservableDictionary</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/dab/class_app_store_1_1_common_1_1_observable_dictionary__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args">AppStore::Common::ObservableDictionary::ObservableDictionaryChangedEventArgs</link></para>
+<para><emphasis>&lt;summary&gt;
+ObservableDictionaryChangedEventArgs
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, object &gt; _dictionary</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a267598d860e6b4afdf3a543bc0d91bc9">InvokeMapChanged</link> (
+CollectionChange change, string key)<para><emphasis>&lt;summary&gt;
+Invokes the change in the map.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>System.Collections.IEnumerator System.Collections.IEnumerable. <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a505cc5e2093c4cbd2016e6aed37e438b">GetEnumerator</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Enumerator of the Collection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1aacbf00655d8570dd8f9d1d3839b38c18">Add</link> (
+string key, object value)<para><emphasis>&lt;summary&gt;
+Adds the collection of key and value to the list.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a664676de840706ba0c365d16ec58daba">Add</link> (
+KeyValuePair&lt; string, object &gt; item)<para><emphasis>&lt;summary&gt;
+Adds the item to the list.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a99cfd2dd5c5637768e64c06b646d59f8">Remove</link> (
+string key)<para><emphasis>&lt;summary&gt;
+Removes the item with the key from the list.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a33db4e574f61476d4f18f476ae73f317">Remove</link> (
+KeyValuePair&lt; string, object &gt; item)<para><emphasis>&lt;summary&gt;
+Removes the item with the item from the list.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a3bdcafad13d430ed88ab16dd6b15f4ba">Clear</link> (
+)<para><emphasis>&lt;summary&gt;
+Clears the list
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a317c8b9a094b5db79989dc847cc110fa">ContainsKey</link> (
+string key)<para><emphasis>&lt;summary&gt;
+Checks whether the list contains the key.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1ac448ef0339d5dd694700ae7e748f368b">TryGetValue</link> (
+string key, out object value)<para><emphasis>&lt;summary&gt;
+Tries to get the value from the list with the key to the variable value.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a7d09bd8f2c56354837a60dbbeba81714">Contains</link> (
+KeyValuePair&lt; string, object &gt; item)<para><emphasis>&lt;summary&gt;
+Checks whether the collection contains the item.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>IEnumerator&lt; KeyValuePair&lt; string, object &gt; &gt; <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a05a84044f7b431203eb86b171d0dd9b1">GetEnumerator</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Enumerator of the Collection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a3c3d798a04bc2ed689576c503ff8e0ac">CopyTo</link> (
+KeyValuePair&lt; string, object &gt;[] array, int arrayIndex)<para><emphasis>&lt;summary&gt;
+It copies the array from the list with the arrayIndex.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Implementation of <link linkend="d7/dd1/class_i_observable_map">IObservableMap</link> that supports reentrancy for use as a default view model. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 13 of file ObservableDictionary.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>ObservableDictionary.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a267598d860e6b4afdf3a543bc0d91bc9">
+                <title>void AppStore.Common.ObservableDictionary.InvokeMapChanged (CollectionChange change, string key)</title> <emphasis>&lt;summary&gt;
+Invokes the change in the map.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>change</entry>
+                                <entry>
+<para>CollectionChange object</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>key</entry>
+                                <entry>
+<para>String key</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a505cc5e2093c4cbd2016e6aed37e438b">
+                <title>System.Collections.IEnumerator System.Collections.IEnumerable. AppStore.Common.ObservableDictionary.GetEnumerator ()</title> <emphasis>&lt;summary&gt;
+Gets the Enumerator of the Collection.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Enumerator of the KeyValuePair</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1aacbf00655d8570dd8f9d1d3839b38c18">
+                <title>void AppStore.Common.ObservableDictionary.Add (string key, object value)</title> <emphasis>&lt;summary&gt;
+Adds the collection of key and value to the list.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>key</entry>
+                                <entry>
+<para>String key</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>value</entry>
+                                <entry>
+<para>String value</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a664676de840706ba0c365d16ec58daba">
+                <title>void AppStore.Common.ObservableDictionary.Add (KeyValuePair&lt; string, object &gt; item)</title> <emphasis>&lt;summary&gt;
+Adds the item to the list.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>item</entry>
+                                <entry>
+<para>KeyValuePair object</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a99cfd2dd5c5637768e64c06b646d59f8">
+                <title>bool AppStore.Common.ObservableDictionary.Remove (string key)</title> <emphasis>&lt;summary&gt;
+Removes the item with the key from the list.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>key</entry>
+                                <entry>
+<para>String key</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>True:If it is removed, False:If it is not</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a33db4e574f61476d4f18f476ae73f317">
+                <title>bool AppStore.Common.ObservableDictionary.Remove (KeyValuePair&lt; string, object &gt; item)</title> <emphasis>&lt;summary&gt;
+Removes the item with the item from the list.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>item</entry>
+                                <entry>
+<para>KeyValuePair object</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>True:If it is removed, False:If it is not</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a3bdcafad13d430ed88ab16dd6b15f4ba">
+                <title>void AppStore.Common.ObservableDictionary.Clear ()</title> <emphasis>&lt;summary&gt;
+Clears the list
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a317c8b9a094b5db79989dc847cc110fa">
+                <title>bool AppStore.Common.ObservableDictionary.ContainsKey (string key)</title> <emphasis>&lt;summary&gt;
+Checks whether the list contains the key.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>key</entry>
+                                <entry>
+<para>String key</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>True:if the list contains the key, false otherwise. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1ac448ef0339d5dd694700ae7e748f368b">
+                <title>bool AppStore.Common.ObservableDictionary.TryGetValue (string key, out object value)</title> <emphasis>&lt;summary&gt;
+Tries to get the value from the list with the key to the variable value.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>key</entry>
+                                <entry>
+<para>string key</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>value</entry>
+                                <entry>
+<para>Object variable where the list item is returned to</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>True: if the it gets the item, false otherwise.</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a7d09bd8f2c56354837a60dbbeba81714">
+                <title>bool AppStore.Common.ObservableDictionary.Contains (KeyValuePair&lt; string, object &gt; item)</title> <emphasis>&lt;summary&gt;
+Checks whether the collection contains the item.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>item</entry>
+                                <entry>
+<para>KeyValuePair item</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>True: if the list contains the item, false otherwise.</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a05a84044f7b431203eb86b171d0dd9b1">
+                <title>IEnumerator&lt;KeyValuePair&lt;string, object&gt; &gt; AppStore.Common.ObservableDictionary.GetEnumerator ()</title> <emphasis>&lt;summary&gt;
+Gets the Enumerator of the Collection.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Enumerator of the KeyValuePair</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a3c3d798a04bc2ed689576c503ff8e0ac">
+                <title>void AppStore.Common.ObservableDictionary.CopyTo (KeyValuePair&lt; string, object &gt;[] array, int arrayIndex)</title> <emphasis>&lt;summary&gt;
+It copies the array from the list with the arrayIndex.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>array</entry>
+                                <entry>
+<para>KeyValuePair object</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>arrayIndex</entry>
+                                <entry>
+<para>Integer index</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

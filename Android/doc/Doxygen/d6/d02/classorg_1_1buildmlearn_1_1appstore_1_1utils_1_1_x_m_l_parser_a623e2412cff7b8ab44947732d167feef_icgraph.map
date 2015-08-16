@@ -1,0 +1,9 @@
+<map id="org.buildmlearn.appstore.utils.XMLParser.getElementValue" name="org.buildmlearn.appstore.utils.XMLParser.getElementValue">
+<area shape="rect" id="node2" href="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#abe6c5c2f0c98582beef2eca8fd9ae462" title="Reads the Quiz type of app. " alt="" coords="507,5,703,47"/>
+<area shape="rect" id="node4" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a42151792145130629c7bf2a16b2885bc" title="Gets the value of the item from the Document object. " alt="" coords="249,71,445,112"/>
+<area shape="rect" id="node3" href="$d3/dbf/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_start_activity_1_1_file_read_task.html#aed534a6e0d4bcb1df8009e878e2bb95f" title="This method is automatically called, when the class is set to be executed. " alt="" coords="764,71,1036,112"/>
+<area shape="rect" id="node5" href="$df/d05/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_splash_activity.html#a524ae9928ab2c671026d7bfa84701531" title="It parses the xml data to be shown on the store. " alt="" coords="493,225,716,267"/>
+<area shape="rect" id="node7" href="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#aaeb43a1338ffba1f17dd7993c82af47f" title="Reads the Spelling Puzzle type of app. " alt="" coords="498,71,711,112"/>
+<area shape="rect" id="node8" href="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#aefcab830573415c5c0d3d21a31e05e46" title="Reads the FlashCards type of app. " alt="" coords="507,136,703,177"/>
+<area shape="rect" id="node6" href="$df/d05/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_splash_activity.html#a87a3b8f0b5f853a7f8c658bde17b5020" title="The method is executed when the activity is created. " alt="" coords="789,225,1011,267"/>
+</map>

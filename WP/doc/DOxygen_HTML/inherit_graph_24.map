@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d5/d6c/class_event_args.html" title="EventArgs" alt="" coords="5,46,87,73"/>
+<area shape="rect" id="node2" href="$d4/df7/class_app_store_1_1_common_1_1_load_state_event_args.html" title="Class used to hold the event data required when a page attempts to load state. " alt="" coords="135,5,329,47"/>
+<area shape="rect" id="node3" href="$dd/d31/class_app_store_1_1_common_1_1_save_state_event_args.html" title="Class used to hold the event data required when a page attempts to save state. " alt="" coords="135,71,329,112"/>
+</map>

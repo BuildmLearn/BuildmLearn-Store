@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model">
+<title>AppStore::Models::InfoModel class Reference</title>
+<para>Inheritance diagram for AppStore::Models::InfoModel</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/db4/class_app_store_1_1_models_1_1_info_model__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::InfoModel</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d7c/class_app_store_1_1_models_1_1_info_model__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mInfoName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mInfoVersion</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mInfoDescription</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mInfoAuthor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mInfoAuthorEmail</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; mInfoTitleList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; mInfoDescriptionList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static InfoModel mModel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">InfoModel</link> <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a3467a71d9d49362dcb59246a1a4dd182">getInstance</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the object for InfoModel.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a3f02febcce8a0871cde100bdbfc49fbd">getInfoDescriptionList</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the InfoDescription List.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a1f74ce2ff128a7347259e8323c6d3dec">setInfoDescriptionList</link> (
+List&lt; string &gt; mInfoDescriptionList)<para><emphasis>&lt;summary&gt;
+Sets the InfoDescription List.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a542ad3bf45c224bb0e16a8693ec60aba">getInfoAuthor</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Author of the Info App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a304b21f619b00f2a369352164f31d71d">setInfoAuthorEmail</link> (
+string mInfoAuthorEmail)<para><emphasis>&lt;summary&gt;
+Sets the AuthorEmail of the Info App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1afeca1bc8acb9bb2d3ea54f03091f70b7">getInfoDescription</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Description of the Info App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1afa093085642315b0f42cc556481b1b42">setInfoDescription</link> (
+string mInfoDescription)<para><emphasis>&lt;summary&gt;
+Sets the Description of the Info App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1ab9af0ca209b4ad238467a2be90ac3e11">getInfoAuthorEmail</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Email of the Author of the Info App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a58cd3abc282a80661cc295a36147b0a6">setInfoAuthor</link> (
+string mInfoAuthor)<para><emphasis>&lt;summary&gt;
+Sets the Author of the Info App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1ae7976225132cc4aec3f22c5a4cb4d5e9">getInfoName</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Name of the Info App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a481f635ffe4000521b81af1852f468fc">setInfoName</link> (
+string mInfoName)<para><emphasis>&lt;summary&gt;
+Sets the name of the Info App-Tmeplate
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a9452d5fcddedeb76f93fc4eeda95d77f">getInfoVersion</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the version of the Info App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a9bd7f4a1d60b2ff55ade75ceff8f2393">setInfoVersion</link> (
+string mInfoVersion)<para><emphasis>&lt;summary&gt;
+Sets the InfoVersion
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a2ab1fb7e49935d42d55d11c7435b327e">getInfoTitleList</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the InfoTitleList
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model_1a8ff76ef95df78d0ffeb07f4b2e66bd5a">setInfoTitleList</link> (
+List&lt; string &gt; mInfoTitleList)<para><emphasis>&lt;summary&gt;
+Sets the InfoTitle List
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model for the Info App-Template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 9 of file InfoModel.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>InfoModel.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a3467a71d9d49362dcb59246a1a4dd182">
+                <title>static InfoModel AppStore.Models.InfoModel.getInstance ()</title> <emphasis>&lt;summary&gt;
+Gets the object for InfoModel.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a3f02febcce8a0871cde100bdbfc49fbd">
+                <title>List&lt;string&gt; AppStore.Models.InfoModel.getInfoDescriptionList ()</title> <emphasis>&lt;summary&gt;
+Gets the InfoDescription List.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a1f74ce2ff128a7347259e8323c6d3dec">
+                <title>void AppStore.Models.InfoModel.setInfoDescriptionList (List&lt; string &gt; mInfoDescriptionList)</title> <emphasis>&lt;summary&gt;
+Sets the InfoDescription List.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mInfoDescriptionList</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a542ad3bf45c224bb0e16a8693ec60aba">
+                <title>string AppStore.Models.InfoModel.getInfoAuthor ()</title> <emphasis>&lt;summary&gt;
+Gets the Author of the Info App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the Author of the Info App-Template</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a304b21f619b00f2a369352164f31d71d">
+                <title>void AppStore.Models.InfoModel.setInfoAuthorEmail (string mInfoAuthorEmail)</title> <emphasis>&lt;summary&gt;
+Sets the AuthorEmail of the Info App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mInfoAuthorEmail</entry>
+                                <entry>
+<para>Email fo the Author</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1afeca1bc8acb9bb2d3ea54f03091f70b7">
+                <title>string AppStore.Models.InfoModel.getInfoDescription ()</title> <emphasis>&lt;summary&gt;
+Gets the Description of the Info App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the Description</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1afa093085642315b0f42cc556481b1b42">
+                <title>void AppStore.Models.InfoModel.setInfoDescription (string mInfoDescription)</title> <emphasis>&lt;summary&gt;
+Sets the Description of the Info App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mInfoDescription</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1ab9af0ca209b4ad238467a2be90ac3e11">
+                <title>string AppStore.Models.InfoModel.getInfoAuthorEmail ()</title> <emphasis>&lt;summary&gt;
+Gets the Email of the Author of the Info App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the InfoAuthorEmail</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a58cd3abc282a80661cc295a36147b0a6">
+                <title>void AppStore.Models.InfoModel.setInfoAuthor (string mInfoAuthor)</title> <emphasis>&lt;summary&gt;
+Sets the Author of the Info App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mInfoAuthor</entry>
+                                <entry>
+<para>Author of the Info App-Template</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1ae7976225132cc4aec3f22c5a4cb4d5e9">
+                <title>string AppStore.Models.InfoModel.getInfoName ()</title> <emphasis>&lt;summary&gt;
+Gets the Name of the Info App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a481f635ffe4000521b81af1852f468fc">
+                <title>void AppStore.Models.InfoModel.setInfoName (string mInfoName)</title> <emphasis>&lt;summary&gt;
+Sets the name of the Info App-Tmeplate
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mInfoName</entry>
+                                <entry>
+<para>Name of the Info App-Template</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a9452d5fcddedeb76f93fc4eeda95d77f">
+                <title>string AppStore.Models.InfoModel.getInfoVersion ()</title> <emphasis>&lt;summary&gt;
+Gets the version of the Info App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the version of the Info App-Template</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a9bd7f4a1d60b2ff55ade75ceff8f2393">
+                <title>void AppStore.Models.InfoModel.setInfoVersion (string mInfoVersion)</title> <emphasis>&lt;summary&gt;
+Sets the InfoVersion
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mInfoVersion</entry>
+                                <entry>
+<para>Version of the Info App-Template</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a2ab1fb7e49935d42d55d11c7435b327e">
+                <title>List&lt;string&gt; AppStore.Models.InfoModel.getInfoTitleList ()</title> <emphasis>&lt;summary&gt;
+Gets the InfoTitleList
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Return the list of the InfoTitle</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d9/d84/class_app_store_1_1_models_1_1_info_model_1a8ff76ef95df78d0ffeb07f4b2e66bd5a">
+                <title>void AppStore.Models.InfoModel.setInfoTitleList (List&lt; string &gt; mInfoTitleList)</title> <emphasis>&lt;summary&gt;
+Sets the InfoTitle List
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mInfoTitleList</entry>
+                                <entry>
+<para>List of the Title List.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

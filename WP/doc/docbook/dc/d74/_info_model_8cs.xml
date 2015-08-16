@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d74/_info_model_8cs">
+    <title>InfoModel.cs File Reference</title>
+<para>Include dependency diagram for InfoModel.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/db8/_info_model_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for InfoModel.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d14/_info_model_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">AppStore::Models::InfoModel</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Info App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/InfoModel.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+2 
+3 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+4 {
+<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">8 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">InfoModel</link>
+9 &#32;&#32;&#32;&#32;{
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mInfoName;
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mInfoVersion;
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mInfoDescription;
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mInfoAuthor;
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mInfoAuthorEmail;
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;List&lt;string&gt;&#32;mInfoTitleList=<emphasis class="keyword">new</emphasis>&#32;List&lt;string&gt;();
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;List&lt;string&gt;&#32;mInfoDescriptionList=<emphasis class="keyword">new</emphasis>&#32;List&lt;string&gt;();
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">InfoModel</link>&#32;mModel;
+18 
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">InfoModel</link>&#32;getInstance()
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(mModel&#32;==&#32;null)
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mModel&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d9/d84/class_app_store_1_1_models_1_1_info_model">InfoModel</link>();
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mModel;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+29 
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;List&lt;string&gt;&#32;getInfoDescriptionList()
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mInfoDescriptionList;
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+38 
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setInfoDescriptionList(List&lt;string&gt;&#32;mInfoDescriptionList)
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mInfoDescriptionList&#32;=&#32;mInfoDescriptionList;
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+47 
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getInfoAuthor()
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mInfoAuthor;
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+56 
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setInfoAuthorEmail(<emphasis class="keywordtype">string</emphasis>&#32;mInfoAuthorEmail)
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mInfoAuthorEmail&#32;=&#32;mInfoAuthorEmail;
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getInfoDescription()
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mInfoDescription;
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setInfoDescription(<emphasis class="keywordtype">string</emphasis>&#32;mInfoDescription)
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mInfoDescription&#32;=&#32;mInfoDescription;
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getInfoAuthorEmail()
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mInfoAuthorEmail;
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setInfoAuthor(<emphasis class="keywordtype">string</emphasis>&#32;mInfoAuthor)
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mInfoAuthor&#32;=&#32;mInfoAuthor;
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getInfoName()
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mInfoName;
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setInfoName(<emphasis class="keywordtype">string</emphasis>&#32;mInfoName)
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mInfoName&#32;=&#32;mInfoName;
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getInfoVersion()
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mInfoVersion;
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setInfoVersion(<emphasis class="keywordtype">string</emphasis>&#32;mInfoVersion)
+126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mInfoVersion&#32;=&#32;mInfoVersion;
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;List&lt;string&gt;&#32;getInfoTitleList()
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mInfoTitleList;
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setInfoTitleList(List&lt;string&gt;&#32;mInfoTitleList)
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mInfoTitleList&#32;=&#32;mInfoTitleList;
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+145 
+146 &#32;&#32;&#32;&#32;}
+147 }
+    </computeroutput></literallayout>
+</section>

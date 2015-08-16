@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/de0/_app_details_page_8xaml_8cs">
+    <title>AppDetailsPage.xaml.cs File Reference</title>
+<para>Include dependency diagram for AppDetailsPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d5d/_app_details_page_8xaml_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for AppDetailsPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d4c/_app_details_page_8xaml_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d8e/class_app_store_1_1_app_details_page">AppStore::AppDetailsPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This class deals with the App-Details page, which is shown when the user taps on any app cards displayed on various pages.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d1b/namespace_system_1_1_collections_1_1_generic">System::Collections::Generic</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d0d/namespace_windows_1_1_application_model_1_1_data_transfer">Windows::ApplicationModel::DataTransfer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d4b/namespace_windows_1_1_u_i_1_1_notifications">Windows::UI::Notifications</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/dd1/namespace_windows_1_1_u_i_1_1_xaml_1_1_controls_1_1_primitives">Windows::UI::Xaml::Controls::Primitives</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d37/namespace_windows_1_1_u_i_1_1_xaml_1_1_media_1_1_imaging">Windows::UI::Xaml::Media::Imaging</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/AppDetailsPage.xaml.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="dd/d5e/namespace_app_store_1_1_common">Common</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d2/d12/namespace_app_store_1_1_models">Models</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d9/dab/namespace_app_store_1_1_templates">Templates</link>;
+4 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+5 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+6 <emphasis class="keyword">using</emphasis>&#32;Windows.ApplicationModel.DataTransfer;
+7 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Notifications;
+8 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml;
+9 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+10 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls.Primitives;
+11 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Media.Imaging;
+12 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Navigation;
+13 
+14 
+15 <emphasis class="comment">//&#32;The&#32;Basic&#32;Page&#32;item&#32;template&#32;is&#32;documented&#32;at&#32;http://go.microsoft.com/fwlink/?LinkID=390556</emphasis>
+16 
+17 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+18 {
+<link linkend="dd/d8e/class_app_store_1_1_app_details_page">22 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;sealed&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis><link linkend="dd/d8e/class_app_store_1_1_app_details_page">AppDetailsPage</link>&#32;:&#32;<link linkend="db/d2f/class_page">Page</link>
+23 &#32;&#32;&#32;&#32;{
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a4df3f6444908f20b0ec0fe439648234c">navigationHelper</link>;
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ad06188559a2305a97f9ce9f3ccc4ec91">defaultViewModel</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>();
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ad13f28ca285319f49cc8f2f7551b6fd0">selectionGridScreenshots</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>,&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aed65934740d40900e7c73f9e9a51d023">appInstalled</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>,&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aa42928f8e81e49edc2e97ba87e62e3a1">txtShowMore</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Uri&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3d11ad8d1d4c92d5b8d021e46a11545c">appReviewsUri</link>;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ac39a38cbf7f5e4a8ef66086d2a167634">app</link>;
+29 
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a977145f7bd1de85a37a6e0c5ceb8b97b">AppDetailsPage</link>()
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a9417500770b9c582016446949cfee213">InitializeComponent</link>();
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common">AppCommon</link>.<link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common_1aa48807c92512f9590d329e4865de1c85">RegisterForShare</link>();
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ad5ee58e0497336799c074ab38089ea90">NavigationHelper</link>(<emphasis class="keyword">this</emphasis>);
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.LoadState&#32;+=&#32;this.<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a99fa937fa4a2db58e8a28d45f744d2f4">NavigationHelper_LoadState</link>;
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.SaveState&#32;+=&#32;this.<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a04f64853a401094a4c6736530996ec26">NavigationHelper_SaveState</link>;
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+41 &#32;&#32;&#32;&#32;
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a4df3f6444908f20b0ec0fe439648234c">navigationHelper</link>;&#32;}
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+49 
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a494dd517711fe6b769efefb1d7ebcb0f">DefaultViewModel</link>
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ad06188559a2305a97f9ce9f3ccc4ec91">defaultViewModel</link>;&#32;}
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+58 
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a99fa937fa4a2db58e8a28d45f744d2f4">NavigationHelper_LoadState</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>&#32;e)
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+73 
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a04f64853a401094a4c6736530996ec26">NavigationHelper_SaveState</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>&#32;e)
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;
+86 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;NavigationHelper&#32;registration</emphasis>
+87 
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3de909d7d41b2e9fc4c636dab182fcd2">OnNavigatedTo</link>(NavigationEventArgs&#32;e)
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a7272c3ebe6aa36dd13b2c093c1b8dc2e">getMyAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a2131edd2cd784131e92e377c618c03a1">myappList</link>.Count&#32;&gt;&#32;0)
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a85e759849832d8fe2600eae4b8b8e2db">btnMyApps</link>.Visibility&#32;=&#32;Visibility.Visible;
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a85e759849832d8fe2600eae4b8b8e2db">btnMyApps</link>.Visibility&#32;=&#32;Visibility.Collapsed;
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;app&#32;=&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>;
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;localSettings&#32;=&#32;Windows.Storage.ApplicationData.Current.LocalSettings;
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(localSettings.Values.ContainsKey(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>))
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aed65934740d40900e7c73f9e9a51d023">appInstalled</link>=(<emphasis class="keywordtype">bool</emphasis>)(localSettings.Values[app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>]);
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aed65934740d40900e7c73f9e9a51d023">appInstalled</link>)&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3b7dae47e7100b4291d32265a351a16c">btnAppInstall</link>.Content&#32;=&#32;<emphasis class="stringliteral">&quot;LAUNCH&quot;</emphasis>;
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3b7dae47e7100b4291d32265a351a16c">btnAppInstall</link>.Content&#32;=&#32;<emphasis class="stringliteral">&quot;INSTALL&quot;</emphasis>;
+112 
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a78c3773d1b808ffb18f3ea3e2697efdc">webAppReviews</link>.NavigateToString(<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a28cd2eee7d44d0c2db46017fc6f55adf">getHtmlComment</link>());
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+115 
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a752f35aa5eb3fb6d2929018d1ebbfcd0">txtAppName</link>.Text&#32;=&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>;
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a75a0516cb2bc6345d33336e624b0ffcf">txtAppAuthor</link>.Text&#32;=&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a65fea2c46caa3afe1e67c0b2d54c3375">Author</link>;
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a3c2dd06a414af419ab5b60728b89231f">Description</link>.Length&#32;&gt;&#32;50)
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aa42928f8e81e49edc2e97ba87e62e3a1">txtShowMore</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab8b86d135950fea251f823ad282714af">txtAppDetails</link>.Text&#32;=&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a3c2dd06a414af419ab5b60728b89231f">Description</link>.Substring(0,&#32;50)&#32;+&#32;<emphasis class="stringliteral">&quot;...&quot;</emphasis>;
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2aa5627b80540565aab4078a25dca80e">detailsShowMore</link>.Content&#32;=&#32;<emphasis class="stringliteral">&quot;more&quot;</emphasis>;
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab8b86d135950fea251f823ad282714af">txtAppDetails</link>.Text&#32;=&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a3c2dd06a414af419ab5b60728b89231f">Description</link>;
+126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2aa5627b80540565aab4078a25dca80e">detailsShowMore</link>.Visibility&#32;=&#32;Visibility.Collapsed;
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab3c2885e29736dc527e7c1bff033c03b">txtAddInfo1</link>.Text=(<emphasis class="stringliteral">&quot;Author:&#32;\nAuthor&#32;Email:&#32;\nCategory:&#32;\nType:&#32;&quot;</emphasis>);
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a17ff8ce764f527a4ad0fab631e6d8882">txtAddInfo2</link>.Text=(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a65fea2c46caa3afe1e67c0b2d54c3375">Author</link>&#32;+&#32;<emphasis class="stringliteral">&quot;\n&quot;</emphasis>&#32;+&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a5d784ab1879c8b5b90e8e93333042432">AuthorEmail</link>&#32;+&#32;<emphasis class="stringliteral">&quot;\n&quot;</emphasis>&#32;+&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1ab5b7d9ed975ff8f33813d1e71e0c2be0">Category</link>&#32;+&#32;<emphasis class="stringliteral">&quot;\n&quot;</emphasis>&#32;+&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1adc02e53ccf7be9038f023d629f58a67a">Type</link>);
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;Image&gt;&#32;images&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;Image&gt;();
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>(<emphasis class="keywordtype">string</emphasis>&#32;screenshot&#32;<emphasis class="keywordflow">in</emphasis>&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a5001efd1e863b8ba5428a3db49d119b7">Screenshots</link>)
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Image&#32;image&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Image();
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;image.Source&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;BitmapImage(<emphasis class="keyword">new</emphasis>&#32;Uri(screenshot));
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;images.Add(image);
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a382045daa62481aebf135adf7ea9bd32">FullScreenshots</link>.ItemsSource&#32;=&#32;images;
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2eabef47315aa6f401eff3f8c3cd765a">imgAppIcon</link>.Source&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;BitmapImage(<emphasis class="keyword">new</emphasis>&#32;Uri(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a591ee9b4836750fc38aa1762e25f20d5">AppIcon</link>));
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a0dd522bc48df5443a11f96c15a383835">GridScreenshots</link>.ItemsSource&#32;=&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a5001efd1e863b8ba5428a3db49d119b7">Screenshots</link>;
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedTo(e);
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a6b9c5a259c021a9f5f80d87c9b022c6f">OnNavigatedFrom</link>(NavigationEventArgs&#32;e)
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedFrom(e);
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+161 
+162 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+163 &#32;&#32;&#32;&#32;
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a28cd2eee7d44d0c2db46017fc6f55adf">getHtmlComment</link>()
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="stringliteral">&quot;&lt;div&#32;id=&apos;disqus_thread&apos;&gt;&lt;/div&gt;&quot;</emphasis>
+171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;<emphasis class="stringliteral">&quot;&lt;script&#32;type=&apos;text/javascript&apos;&gt;&quot;</emphasis>
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;<emphasis class="stringliteral">&quot;var&#32;disqus_identifier&#32;=&#32;&apos;&quot;</emphasis>&#32;+&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>&#32;+&#32;<emphasis class="stringliteral">&quot;_&quot;</emphasis>&#32;+&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a65fea2c46caa3afe1e67c0b2d54c3375">Author</link>&#32;+&#32;<emphasis class="stringliteral">&quot;&apos;;&quot;</emphasis>
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;<emphasis class="stringliteral">&quot;var&#32;disqus_title&#32;=&#32;&apos;&quot;</emphasis>&#32;+&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>&#32;+&#32;<emphasis class="stringliteral">&quot;&apos;;&quot;</emphasis>
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;<emphasis class="stringliteral">&quot;var&#32;disqus_url=&apos;http://www.buildmlearn.org/appstore/&quot;</emphasis>&#32;+&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>&#32;+&#32;<emphasis class="stringliteral">&quot;_&quot;</emphasis>&#32;+&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a65fea2c46caa3afe1e67c0b2d54c3375">Author</link>&#32;+&#32;<emphasis class="stringliteral">&quot;&apos;;&quot;</emphasis>
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;<emphasis class="stringliteral">&quot;var&#32;disqus_shortname&#32;=&#32;&apos;buildmlearn&apos;;&quot;</emphasis>
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;(function()&#32;{&#32;var&#32;dsq&#32;=&#32;document.createElement(&apos;script&apos;);&#32;dsq.type&#32;=&#32;&apos;text/javascript&apos;;&#32;dsq.async&#32;=&#32;true;&quot;</emphasis>
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;<emphasis class="stringliteral">&quot;dsq.src&#32;=&#32;&apos;http://&apos;&#32;+&#32;disqus_shortname&#32;+&#32;&apos;.disqus.com/embed.js&apos;;&quot;</emphasis>
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;<emphasis class="stringliteral">&quot;(document.getElementsByTagName(&apos;head&apos;)[0]&#32;||&#32;document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(dsq);&#32;})();&quot;</emphasis>
+179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;<emphasis class="stringliteral">&quot;&lt;/script&gt;&quot;</emphasis>;
+180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab14843118cb3b0d64568cd5e90a2cecd">GridScreenshots_ContainerContentChanging</link>(ListViewBase&#32;sender,&#32;ContainerContentChangingEventArgs&#32;args)
+182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;args.Handled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(args.Phase&#32;!=&#32;0)
+185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="df/d70/class_exception">Exception</link>(<emphasis class="stringliteral">&quot;Not&#32;in&#32;phase&#32;0.&quot;</emphasis>);
+187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StackPanel&#32;templateRoot&#32;=&#32;(StackPanel)args.ItemContainer.ContentTemplateRoot;
+189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Image&#32;appIcon&#32;=&#32;(Image)templateRoot.FindName(<emphasis class="stringliteral">&quot;appScreenshots&quot;</emphasis>);
+190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appIcon.Opacity&#32;=&#32;0;
+191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;args.RegisterUpdateCallback(<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a83c4e7c074e3f9437946f3d0d11547b5">ShowImages</link>);
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;
+199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a83c4e7c074e3f9437946f3d0d11547b5">ShowImages</link>(ListViewBase&#32;sender,&#32;ContainerContentChangingEventArgs&#32;args)
+200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(args.Phase&#32;!=&#32;1)
+202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="df/d70/class_exception">Exception</link>(<emphasis class="stringliteral">&quot;Not&#32;in&#32;phase&#32;1.&quot;</emphasis>);
+204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SelectorItem&#32;itemContainer&#32;=&#32;(SelectorItem)args.ItemContainer;
+206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StackPanel&#32;templateRoot&#32;=&#32;(StackPanel)itemContainer.ContentTemplateRoot;
+207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Image&#32;appImage&#32;=&#32;(Image)templateRoot.FindName(<emphasis class="stringliteral">&quot;appScreenshots&quot;</emphasis>);
+208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appImage.Source&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;BitmapImage(<emphasis class="keyword">new</emphasis>&#32;Uri(args.Item.ToString()));
+209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appImage.Opacity&#32;=&#32;1;
+210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+211 
+217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aa1f922dd4681d17ad59a64edc4d863b6">detailsShowMore_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aa42928f8e81e49edc2e97ba87e62e3a1">txtShowMore</link>)
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aa42928f8e81e49edc2e97ba87e62e3a1">txtShowMore</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab8b86d135950fea251f823ad282714af">txtAppDetails</link>.Text=(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a3c2dd06a414af419ab5b60728b89231f">Description</link>.Substring(0,&#32;50))+<emphasis class="stringliteral">&quot;...&quot;</emphasis>;
+223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2aa5627b80540565aab4078a25dca80e">detailsShowMore</link>.Content=<emphasis class="stringliteral">&quot;more&quot;</emphasis>;
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aa42928f8e81e49edc2e97ba87e62e3a1">txtShowMore</link>&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab8b86d135950fea251f823ad282714af">txtAppDetails</link>.Text&#32;=&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a3c2dd06a414af419ab5b60728b89231f">Description</link>);
+229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2aa5627b80540565aab4078a25dca80e">detailsShowMore</link>.Content&#32;=&#32;<emphasis class="stringliteral">&quot;less&quot;</emphasis>;
+230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+232 &#32;&#32;&#32;&#32;&#32;&#32;
+238 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aaf0dee695fa5301b958b977878367fc0">GridScreenshots_SelectionChanged</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;SelectionChangedEventArgs&#32;e)
+239 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(selectionGridScreenshots)&#32;<emphasis class="keywordflow">return</emphasis>;
+241 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a382045daa62481aebf135adf7ea9bd32">FullScreenshots</link>.SelectedIndex&#32;=&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a0dd522bc48df5443a11f96c15a383835">GridScreenshots</link>.SelectedIndex;
+242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2a2aa476bfbb8a147a880a69c6658ba3">FullScreen</link>.Visibility&#32;=&#32;Visibility.Visible;
+243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a63fb0e738237c6ac5c0c935798c9b318">LayoutRoot</link>.Visibility&#32;=&#32;Visibility.Collapsed;
+244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;selectionGridScreenshots&#32;=&#32;<emphasis class="keyword">true</emphasis>;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a0dd522bc48df5443a11f96c15a383835">GridScreenshots</link>.SelectedIndex&#32;=&#32;-1;&#32;selectionGridScreenshots&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+245 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+246 &#32;&#32;&#32;&#32;&#32;&#32;&#32;
+252 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a087367ef3e3b0b51baac41f42dd1bebe">Button_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+253 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+254 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2a2aa476bfbb8a147a880a69c6658ba3">FullScreen</link>.Visibility&#32;=&#32;Visibility.Collapsed;
+255 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a63fb0e738237c6ac5c0c935798c9b318">LayoutRoot</link>.Visibility&#32;=&#32;Visibility.Visible;
+256 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+257 &#32;&#32;&#32;&#32;&#32;&#32;&#32;
+258 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*void&#32;HardwareButtons_BackPressed(object&#32;sender,&#32;Windows.Phone.UI.Input.BackPressedEventArgs&#32;e)</emphasis>
+259 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+260 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(FullScreen.Visibility&#32;==&#32;Visibility.Visible)</emphasis>
+261 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+262 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;FullScreen.Visibility&#32;=&#32;Visibility.Collapsed;</emphasis>
+263 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;LayoutRoot.Visibility&#32;=&#32;Visibility.Visible;</emphasis>
+264 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.Handled&#32;=&#32;true;</emphasis>
+265 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+266 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}*/</emphasis>
+267 
+273 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a08837b6e4e8426e26e79221d17e45054">btnAppInstall_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+274 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+275 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aed65934740d40900e7c73f9e9a51d023">appInstalled</link>)
+276 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+277 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(typeof(<link linkend="dc/dd6/class_app_store_1_1_templates_1_1_start_page">StartPage</link>));
+278 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+279 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+280 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+281 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;localSettings&#32;=&#32;Windows.Storage.ApplicationData.Current.LocalSettings;
+282 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;localSettings.Values[app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>]&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+283 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a7272c3ebe6aa36dd13b2c093c1b8dc2e">getMyAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a2131edd2cd784131e92e377c618c03a1">myappList</link>.Add(app);
+284 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aed65934740d40900e7c73f9e9a51d023">appInstalled</link>&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+285 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;toastTemplate&#32;=&#32;ToastTemplateType.ToastImageAndText01;
+286 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;toastXml&#32;=&#32;ToastNotificationManager.GetTemplateContent(toastTemplate);
+287 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;toastTextElements&#32;=&#32;toastXml.GetElementsByTagName(<emphasis class="stringliteral">&quot;text&quot;</emphasis>);
+288 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;toastTextElements[0].AppendChild(toastXml.CreateTextNode(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>+<emphasis class="stringliteral">&quot;&#32;is&#32;installed.&quot;</emphasis>));
+289 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;toast&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;ToastNotification(toastXml);
+290 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ToastNotificationManager.CreateToastNotifier().Show(toast);
+291 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3b7dae47e7100b4291d32265a351a16c">btnAppInstall</link>.Content&#32;=&#32;<emphasis class="stringliteral">&quot;LAUNCH&quot;</emphasis>;
+292 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+293 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+294 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+300 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a688d04521c5e2dc8348cd7229fe434d9">btnAppShare_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+301 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+302 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;datacontext&#32;=&#32;(e.OriginalSource&#32;as&#32;FrameworkElement).DataContext;
+303 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DataTransferManager.ShowShareUI();
+304 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+305 &#32;&#32;
+311 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aaef7aefd96ef32a39ab307a347a3af5b">Search_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(<link linkend="d9/da7/class_app_store_1_1_search_page">SearchPage</link>));&#32;}
+312 &#32;&#32;&#32;&#32;
+318 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a32a954403990524fe969e098093d3e13">Home_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(<link linkend="d1/d1a/class_app_store_1_1_main_page">MainPage</link>));&#32;}
+319 &#32;&#32;&#32;&#32;&#32;
+325 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;async&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a9a91879f3d9ffe3686907837a7d6be59">Settings_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;ContentDialog&#32;dlg&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;ContentDialog();&#32;dlg=<emphasis class="keyword">new</emphasis>&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog">SettingsDialog</link>();&#32;await&#32;dlg.ShowAsync();&#32;}
+326 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+332 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3c421b3d5abef29f8f45c7dab72e29de">MyApps_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(<link linkend="d7/d78/class_app_store_1_1_my_apps_page">MyAppsPage</link>));&#32;}
+333 &#32;&#32;&#32;&#32;
+339 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab0d9fbbfa7e9e4cd08d7c131c1a46de5">Categories_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(<link linkend="d0/d4e/class_app_store_1_1_categories_page">CategoriesPage</link>));&#32;}
+340 &#32;&#32;&#32;
+346 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a6c2f931f6860ce10f399fd5799f207ae">About_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;}
+347 &#32;&#32;&#32;&#32;
+353 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a140f5ecd7ff0385c780308dd992ddf6e">Feedback_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;<link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common">AppCommon</link>.<link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common_1a63a454bafcdb1303609ac2cd650abc40">ComposeEmail</link>();&#32;}
+354 
+360 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;async&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aa7ae556841d147859d579d236087b00f">Browser_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;await&#32;Windows.System.Launcher.LaunchUriAsync(appReviewsUri);&#32;}
+361 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+367 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;async&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a8c120602466ac3a7e39448e642bc9503">HyperlinkButton_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;await&#32;Windows.System.Launcher.LaunchUriAsync(appReviewsUri);&#32;}
+368 
+374 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3149f4c706e4ca14b0ab10a3f6c53cec">webAppReviews_FrameDOMContentLoaded</link>(WebView&#32;sender,&#32;WebViewDOMContentLoadedEventArgs&#32;args)
+375 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+376 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a266f0ac8d93d296833895192c81df4ab">OpenInBrowser</link>.IsEnabled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+377 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appReviewsUri&#32;=&#32;args.Uri;
+378 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+379 &#32;&#32;&#32;&#32;}
+380 }
+    </computeroutput></literallayout>
+</section>

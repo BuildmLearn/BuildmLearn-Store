@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d1b/_categories_8cs">
+    <title>Categories.cs File Reference</title>
+<para>Include dependency diagram for Categories.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d01/_categories_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Categories.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d09/_categories_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">AppStore::Models::Categories</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Categories
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/Categories.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+2 {
+<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">6 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link>
+7 &#32;&#32;&#32;&#32;{
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Background&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Name&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link>(<emphasis class="keywordtype">string</emphasis>&#32;mName,&#32;<emphasis class="keywordtype">string</emphasis>&#32;mBackground)
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Name&#32;=&#32;mName;
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Background&#32;=&#32;mBackground;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+20 &#32;&#32;&#32;&#32;}
+21 }
+    </computeroutput></literallayout>
+</section>

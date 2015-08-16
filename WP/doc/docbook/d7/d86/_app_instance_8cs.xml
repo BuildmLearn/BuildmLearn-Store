@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d86/_app_instance_8cs">
+    <title>AppInstance.cs File Reference</title>
+<para>Include dependency diagram for AppInstance.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d54/_app_instance_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for AppInstance.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d41/_app_instance_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppStore::Models::AppInstance</link></para>
+<para><emphasis>&lt;summary&gt;
+This is the model of the app instance, and whether it is installed or not.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/AppInstance.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+<link linkend="d2/d12/namespace_app_store_1_1_models">1 </link><emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+2 {
+<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">6 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>
+7 &#32;&#32;&#32;&#32;{
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;app;
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;installed&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+10 &#32;&#32;&#32;&#32;}
+11 }
+    </computeroutput></literallayout>
+</section>

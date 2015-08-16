@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Windows.System;
-using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -375,6 +369,7 @@ namespace AppStore.Common
     /// Represents the method that will handle the <see cref="NavigationHelper.LoadState"/>event
     /// </summary>
     public delegate void LoadStateEventHandler(object sender, LoadStateEventArgs e);
+  
     /// <summary>
     /// Represents the method that will handle the <see cref="NavigationHelper.SaveState"/>event
     /// </summary>

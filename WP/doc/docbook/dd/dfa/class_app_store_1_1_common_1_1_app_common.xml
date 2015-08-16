@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/dfa/class_app_store_1_1_common_1_1_app_common">
+<title>AppStore::Common::AppCommon class Reference</title>
+<para>Inheritance diagram for AppStore::Common::AppCommon</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d06/class_app_store_1_1_common_1_1_app_common__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::AppCommon</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d3d/class_app_store_1_1_common_1_1_app_common__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static async void <link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common_1a63a454bafcdb1303609ac2cd650abc40">ComposeEmail</link> (
+)<para><emphasis>&lt;summary&gt;
+It composes the email from the default app-client installed in the phone.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common_1aa48807c92512f9590d329e4865de1c85">RegisterForShare</link> (
+)<para><emphasis>&lt;summary&gt;
+It builds the framework for the sharing purposes.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common_1a66bd8a4def7f090cff69b4181f885554">ShareTextHandler</link> (
+DataTransferManager sender, DataRequestedEventArgs e)<para><emphasis>&lt;summary&gt;
+This is the text handler for the sharing purposes.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para><link linkend="dd/d5e/namespace_app_store_1_1_common">Common</link> class for the <link linkend="d9/d36/class_app_store_1_1_app">App</link>. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 11 of file AppCommon.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>AppCommon.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="dd/dfa/class_app_store_1_1_common_1_1_app_common_1a63a454bafcdb1303609ac2cd650abc40">
+                <title>static async void AppStore.Common.AppCommon.ComposeEmail ()</title> <emphasis>&lt;summary&gt;
+It composes the email from the default app-client installed in the phone.</emphasis>
+                
+            </section>
+            <section xml:id="dd/dfa/class_app_store_1_1_common_1_1_app_common_1aa48807c92512f9590d329e4865de1c85">
+                <title>static void AppStore.Common.AppCommon.RegisterForShare ()</title> <emphasis>&lt;summary&gt;
+It builds the framework for the sharing purposes.</emphasis>
+                
+            </section>
+            <section xml:id="dd/dfa/class_app_store_1_1_common_1_1_app_common_1a66bd8a4def7f090cff69b4181f885554">
+                <title>static void AppStore.Common.AppCommon.ShareTextHandler (DataTransferManager sender, DataRequestedEventArgs e)</title> <emphasis>&lt;summary&gt;
+This is the text handler for the sharing purposes.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>DataRequestedEventArgs e is a parameter called e that contains the event data, see the DataRequestedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

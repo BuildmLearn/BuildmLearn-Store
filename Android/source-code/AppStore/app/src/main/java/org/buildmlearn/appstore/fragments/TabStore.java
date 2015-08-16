@@ -36,7 +36,7 @@ public class TabStore extends Fragment {
     private static TextView txtAppsStore;
     private static Context mContext;
     private static TextView txtStore;
-    private static int y=6;
+    private static int y=9;
 
     /**
      * It is called when the fragment is created.

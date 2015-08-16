@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_f7ba2b3753086910c584287bbfacc4a4">
+    <title>C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore Directory Reference</title>
+<para>Directory dependency diagram for C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dir_f7ba2b3753086910c584287bbfacc4a4_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Directories </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_be8a2406dacb0ec65ea9246b50e3a1e9">C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/</para>
+    </simplesect>
+</section>

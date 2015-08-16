@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info">
+<title>AppStore::AppStore_XamlTypeInfo</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member">AppStore::AppStore_XamlTypeInfo::XamlMember</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type">AppStore::AppStore_XamlTypeInfo::XamlSystemBaseType</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider">AppStore::AppStore_XamlTypeInfo::XamlTypeInfoProvider</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type">AppStore::AppStore_XamlTypeInfo::XamlUserType</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate object <link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a394dfc6084b9bf4d6e1e8c58fee1568c">Activator</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a7a60ef4172b18f49847b5217c8262cc2">AddToCollection</link> (
+object instance, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a4438d95d99415a133671c7f858813537">AddToDictionary</link> (
+object instance, object key, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate object <link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ab918ceccf053fbc6ff1cc7a2bb93b02e">Getter</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ace3ed4575f2d5e8db886330515f38268">Setter</link> (
+object instance, object value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

@@ -1,0 +1,17 @@
+digraph "org.buildmlearn.appstore.activities.FlashActivity.onCreate"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="org.buildmlearn.appstore.activities.\lFlashActivity.onCreate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="org.buildmlearn.appstore.models.\lFlashModel.getInstance",height=0.2,width=0.4,color="black",URL="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#ad7225d1b4d75db6f5ce8755339783f28"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="org.buildmlearn.appstore.models.\lFlashModel.getName",height=0.2,width=0.4,color="black",URL="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#a8f57ed59495dd90b0b5934a43f025543"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="org.buildmlearn.appstore.models.\lFlashModel.getList",height=0.2,width=0.4,color="black",URL="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#aa1f2c4eb079a838ac9ce836f566f90fe"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="org.buildmlearn.appstore.activities.\lFlashActivity.populateQuestion",height=0.2,width=0.4,color="black",URL="$d6/d1d/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_flash_activity.html#aca3ef46b22d4aacad25222020ddeb510",tooltip="This method populates questions to the cards. "];
+}

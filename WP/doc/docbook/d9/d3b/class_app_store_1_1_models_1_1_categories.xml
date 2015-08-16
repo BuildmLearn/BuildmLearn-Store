@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d3b/class_app_store_1_1_models_1_1_categories">
+<title>AppStore::Models::Categories class Reference</title>
+<para>Inheritance diagram for AppStore::Models::Categories</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/def/class_app_store_1_1_models_1_1_categories__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::Categories</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/da1/class_app_store_1_1_models_1_1_categories__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories_1aa7e93e1fc5169e39f8b6c08326c30f58">Categories</link> (
+string mName, string mBackground)<para><emphasis>&lt;summary&gt;
+Public Constructor
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model for the <link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link> </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 7 of file Categories.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Categories.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d9/d3b/class_app_store_1_1_models_1_1_categories_1aa7e93e1fc5169e39f8b6c08326c30f58">
+                <title>AppStore.Models.Categories.Categories (string mName, string mBackground)</title> <emphasis>&lt;summary&gt;
+Public Constructor
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mName</entry>
+                                <entry>
+<para>Title of the Category</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>mBackground</entry>
+                                <entry>
+<para>Background to be used for the tile of this Category</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

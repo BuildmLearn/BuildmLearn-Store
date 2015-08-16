@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d6f/_apps_page_8g_8cs">
+    <title>AppsPage.g.cs File Reference</title>
+<para>Include dependency diagram for AppsPage.g.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d0f/_apps_page_8g_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for AppsPage.g.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d41/_apps_page_8g_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d46/class_app_store_1_1_apps_page">AppStore::AppsPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This activity deals with the apps shown when &quot;more&quot; button on the Home Page is pressed.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/Debug/AppsPage.g.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 
+3 <emphasis class="preprocessor">#pragma&#32;checksum&#32;&quot;C:\Users\Srujan\Documents\Visual&#32;Studio&#32;2015\Projects\BuildmLearnStore\AppStore\AppStore\AppsPage.xaml&quot;&#32;&quot;{406ea660-64cf-4c82-b6f0-42d48172a799}&quot;&#32;&quot;CE721976566F61EB3E8103821CBC7DB6&quot;</emphasis>
+4 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+5 <emphasis class="comment">//&#32;&lt;auto-generated&gt;</emphasis>
+6 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;This&#32;code&#32;was&#32;generated&#32;by&#32;a&#32;tool.</emphasis>
+7 <emphasis class="comment">//</emphasis>
+8 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;Changes&#32;to&#32;this&#32;file&#32;may&#32;cause&#32;incorrect&#32;behavior&#32;and&#32;will&#32;be&#32;lost&#32;if</emphasis>
+9 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;the&#32;code&#32;is&#32;regenerated.</emphasis>
+10 <emphasis class="comment">//&#32;&lt;/auto-generated&gt;</emphasis>
+11 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+12 
+13 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+14 {
+15 &#32;&#32;&#32;&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>AppsPage&#32;:&#32;global::Windows.UI.Xaml.Controls.Page,&#32;global::Windows.UI.Xaml.Markup.IComponentConnector
+16 &#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+19 &#32;
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d46/class_app_store_1_1_apps_page_1a5fcc5d0c52eefa47f32685b1b8113a15">Connect</link>(<emphasis class="keywordtype">int</emphasis>&#32;connectionId,&#32;<emphasis class="keywordtype">object</emphasis>&#32;target)
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">switch</emphasis>(connectionId)
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;1:
+25 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;33&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.ListViewBase)(target)).ContainerContentChanging&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1a1890a35d02989dcae9252af0e49493a1">GridFeaturedApps_ContentChanging</link>;
+27 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+28 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+29 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;33&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.Primitives.Selector)(target)).SelectionChanged&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1aea16d38727060bdf2788ef9b7df0255d">GridFeaturedApps_SelectionChanged</link>;
+31 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+32 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;2:
+35 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;36&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.UIElement)(target)).Holding&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1adc237b4531ac5e0bd9a0f42b822f9bc0">StackPanel_Holding</link>;
+37 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+38 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;3:
+41 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;41&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.MenuFlyoutItem)(target)).Click&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1a08c4bb42682935baf431d9eb3ec0fca5">InstallButton_Click</link>;
+43 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+44 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;4:
+47 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;44&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.MenuFlyoutItem)(target)).Click&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1a946081249b3bdce29aa2307e0cbaee5e">ShareButton_Click</link>;
+49 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+50 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;5:
+53 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;61&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.Primitives.ButtonBase)(target)).Click&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1ae784551d3a7508a92da3b58d3e6b4f32">Search_Click</link>;
+55 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+56 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;6:
+59 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;62&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+60 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.Primitives.ButtonBase)(target)).Click&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1adc7e066d21863abe4b86e88622cd77e6">MyApps_Click</link>;
+61 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+62 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;7:
+65 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;63&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.Primitives.ButtonBase)(target)).Click&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1a7eb8eab290e60c98ae30a7f49e884889">Categories_Click</link>;
+67 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+68 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;8:
+71 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;70&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.Primitives.ButtonBase)(target)).Click&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1a9d5668c29eb6a9c99c58dc0c22806116">Settings_Click</link>;
+73 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+74 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;9:
+77 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;71&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.Primitives.ButtonBase)(target)).Click&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1a815e972d89b0b1390ca9d97e01918d6a">Feedback_Click</link>;
+79 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+80 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;10:
+83 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;72&#32;&quot;..\..\AppsPage.xaml&quot;</emphasis>
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((global::Windows.UI.Xaml.Controls.Primitives.ButtonBase)(target)).Click&#32;+=&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1a81778116c7492d8a338da0cb7dcade22">About_Click</link>;
+85 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;default</emphasis>
+86 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#line&#32;hidden</emphasis>
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+89 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="dc/d46/class_app_store_1_1_apps_page_1a298b5b11fdc32fdb9ff81e9c044141bc">_contentLoaded</link>&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+91 &#32;&#32;&#32;&#32;}
+92 }
+93 
+94 
+    </computeroutput></literallayout>
+</section>

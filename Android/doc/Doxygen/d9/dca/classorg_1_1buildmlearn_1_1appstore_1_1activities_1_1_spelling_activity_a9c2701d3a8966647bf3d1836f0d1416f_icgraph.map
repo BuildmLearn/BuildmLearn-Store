@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.activities.SpellingActivity.getProgressValue" name="org.buildmlearn.appstore.activities.SpellingActivity.getProgressValue">
+<area shape="rect" id="node2" href="$d9/dca/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_spelling_activity.html#a6bcb8e8e82276f8e02e4ba846b74fbe6" title="Speaks the string using the specified queuing strategy and speech parameters. " alt="" coords="276,5,528,47"/>
+<area shape="rect" id="node4" href="$d9/dca/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_spelling_activity.html#abeaedc39c33ac9ce8ec3d00da7973bcc" title="Speaks the string using the specified queuing strategy and speech parameters. " alt="" coords="283,71,521,112"/>
+<area shape="rect" id="node3" href="$d9/dca/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_spelling_activity.html#abeccd03866d824b9744d7e8b84f1214d" title="This method is executed when next/skip button is pressed, hence it populates the next question in the..." alt="" coords="576,39,799,80"/>
+</map>

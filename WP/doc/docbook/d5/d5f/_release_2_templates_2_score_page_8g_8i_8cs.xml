@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d5f/_release_2_templates_2_score_page_8g_8i_8cs">
+    <title>ScorePage.g.i.cs File Reference</title>
+<para>Include dependency diagram for ScorePage.g.i.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/dda/_release_2_templates_2_score_page_8g_8i_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for ScorePage.g.i.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d4d/_release_2_templates_2_score_page_8g_8i_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page">AppStore::Templates::ScorePage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the Score Page related to the Spellings Puzzle and the Quiz App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dab/namespace_app_store_1_1_templates">AppStore::Templates</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/Release/Templates/ScorePage.g.i.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 
+3 <emphasis class="preprocessor">#pragma&#32;checksum&#32;&quot;C:\Users\Srujan&#32;Jha\Documents\Visual&#32;Studio&#32;2015\Projects\BuildmLearnStore\AppStore\AppStore\Templates\ScorePage.xaml&quot;&#32;&quot;{406ea660-64cf-4c82-b6f0-42d48172a799}&quot;&#32;&quot;8E073D74CC25D43933514BAD3B24F90D&quot;</emphasis>
+4 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+5 <emphasis class="comment">//&#32;&lt;auto-generated&gt;</emphasis>
+6 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;This&#32;code&#32;was&#32;generated&#32;by&#32;a&#32;tool.</emphasis>
+7 <emphasis class="comment">//</emphasis>
+8 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;Changes&#32;to&#32;this&#32;file&#32;may&#32;cause&#32;incorrect&#32;behavior&#32;and&#32;will&#32;be&#32;lost&#32;if</emphasis>
+9 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;the&#32;code&#32;is&#32;regenerated.</emphasis>
+10 <emphasis class="comment">//&#32;&lt;/auto-generated&gt;</emphasis>
+11 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+12 
+13 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Templates
+14 {
+15 &#32;&#32;&#32;&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>ScorePage&#32;:&#32;global::Windows.UI.Xaml.Controls.Page
+16 &#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;LayoutRoot;&#32;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;ContentRoot;&#32;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;ScoreText;&#32;
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;TotalCorrect;&#32;
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;TotalWrong;&#32;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;TotalUnanswered;&#32;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Button&#32;Quit;&#32;
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Button&#32;Restart;&#32;
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;pageTitle;&#32;
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_contentLoaded;
+37 
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;InitializeComponent()
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_contentLoaded)
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>;
+44 
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_contentLoaded&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::Windows.UI.Xaml.Application.LoadComponent(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Uri(<emphasis class="stringliteral">&quot;ms-appx:///Templates/ScorePage.xaml&quot;</emphasis>),&#32;global::Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation.Application);
+47 &#32;
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;LayoutRoot&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;LayoutRoot&quot;</emphasis>);
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ContentRoot&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;ContentRoot&quot;</emphasis>);
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ScoreText&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;ScoreText&quot;</emphasis>);
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TotalCorrect&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;TotalCorrect&quot;</emphasis>);
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TotalWrong&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;TotalWrong&quot;</emphasis>);
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TotalUnanswered&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;TotalUnanswered&quot;</emphasis>);
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Quit&#32;=&#32;(global::Windows.UI.Xaml.Controls.Button)this.FindName(<emphasis class="stringliteral">&quot;Quit&quot;</emphasis>);
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Restart&#32;=&#32;(global::Windows.UI.Xaml.Controls.Button)this.FindName(<emphasis class="stringliteral">&quot;Restart&quot;</emphasis>);
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pageTitle&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;pageTitle&quot;</emphasis>);
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+58 &#32;&#32;&#32;&#32;}
+59 }
+60 
+61 
+62 
+    </computeroutput></literallayout>
+</section>

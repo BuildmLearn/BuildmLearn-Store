@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d76/_navigation_helper_8cs">
+    <title>NavigationHelper.cs File Reference</title>
+<para>Include dependency diagram for NavigationHelper.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d5d/_navigation_helper_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for NavigationHelper.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d06/_navigation_helper_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">AppStore::Common::NavigationHelper</link></para>
+<para><emphasis>&lt;summary&gt;
+NavigationHelper aids in navigation between pages.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">AppStore::Common::LoadStateEventArgs</link></para>
+<para><emphasis>&lt;summary&gt;
+Class used to hold the event data required when a page attempts to load state.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">AppStore::Common::SaveStateEventArgs</link></para>
+<para><emphasis>&lt;summary&gt;
+Class used to hold the event data required when a page attempts to save state.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d5e/namespace_app_store_1_1_common">AppStore::Common</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Common/NavigationHelper.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+3 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml;
+4 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+5 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Navigation;
+6 
+7 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Common
+8 {
+53 &#32;&#32;&#32;&#32;[Windows.Foundation.Metadata.WebHostHidden]
+<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">54 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;:&#32;<link linkend="d1/d12/class_dependency_object">DependencyObject</link>
+55 &#32;&#32;&#32;&#32;{
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="db/d2f/class_page">Page</link>&#32;<link linkend="db/d2f/class_page">Page</link>&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;Frame&#32;Frame&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.<link linkend="db/d2f/class_page">Page</link>.Frame;&#32;}&#32;}
+58 
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>(<link linkend="db/d2f/class_page">Page</link>&#32;page)
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="db/d2f/class_page">Page</link>&#32;=&#32;page;
+68 
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;When&#32;this&#32;page&#32;is&#32;part&#32;of&#32;the&#32;visual&#32;tree&#32;make&#32;two&#32;changes:</emphasis>
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;1)&#32;Map&#32;application&#32;view&#32;state&#32;to&#32;visual&#32;state&#32;for&#32;the&#32;page</emphasis>
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;2)&#32;Handle&#32;hardware&#32;navigation&#32;requests</emphasis>
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="db/d2f/class_page">Page</link>.Loaded&#32;+=&#32;(sender,&#32;e)&#32;=&gt;
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+74 <emphasis class="preprocessor">#if&#32;WINDOWS_PHONE_APP</emphasis>
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Windows.Phone.UI.Input.HardwareButtons.BackPressed&#32;+=&#32;HardwareButtons_BackPressed;
+76 <emphasis class="preprocessor">#else</emphasis>
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Keyboard&#32;and&#32;mouse&#32;navigation&#32;only&#32;apply&#32;when&#32;occupying&#32;the&#32;entire&#32;window</emphasis>
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this.<link linkend="db/d2f/class_page">Page</link>.ActualHeight&#32;==&#32;Window.Current.Bounds.Height&#32;&amp;&amp;
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">this</emphasis>.Page.ActualWidth&#32;==&#32;Window.Current.Bounds.Width)
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Listen&#32;to&#32;the&#32;window&#32;directly&#32;so&#32;focus&#32;isn&apos;t&#32;required</emphasis>
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Window.Current.CoreWindow.Dispatcher.AcceleratorKeyActivated&#32;+=
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CoreDispatcher_AcceleratorKeyActivated;
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Window.Current.CoreWindow.PointerPressed&#32;+=
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.CoreWindow_PointerPressed;
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+87 <emphasis class="preprocessor">#endif</emphasis>
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;};
+89 
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Undo&#32;the&#32;same&#32;changes&#32;when&#32;the&#32;page&#32;is&#32;no&#32;longer&#32;visible</emphasis>
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="db/d2f/class_page">Page</link>.Unloaded&#32;+=&#32;(sender,&#32;e)&#32;=&gt;
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+93 <emphasis class="preprocessor">#if&#32;WINDOWS_PHONE_APP</emphasis>
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Windows.Phone.UI.Input.HardwareButtons.BackPressed&#32;-=&#32;HardwareButtons_BackPressed;
+95 <emphasis class="preprocessor">#else</emphasis>
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Window.Current.CoreWindow.Dispatcher.AcceleratorKeyActivated&#32;-=
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CoreDispatcher_AcceleratorKeyActivated;
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Window.Current.CoreWindow.PointerPressed&#32;-=
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.CoreWindow_PointerPressed;
+100 <emphasis class="preprocessor">#endif</emphasis>
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;};
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+103 
+104 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;Navigation&#32;support</emphasis>
+105 
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">RelayCommand</link>&#32;_goBackCommand;
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">RelayCommand</link>&#32;_goForwardCommand;
+108 
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">RelayCommand</link>&#32;GoBackCommand
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_goBackCommand&#32;==&#32;null)
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_goBackCommand&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">RelayCommand</link>(
+124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;()&#32;=&gt;&#32;this.GoBack(),
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;()&#32;=&gt;&#32;this.CanGoBack());
+126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;_goBackCommand;
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;set
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_goBackCommand&#32;=&#32;value;
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">RelayCommand</link>&#32;GoForwardCommand
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_goForwardCommand&#32;==&#32;null)
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_goForwardCommand&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">RelayCommand</link>(
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;()&#32;=&gt;&#32;this.GoForward(),
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;()&#32;=&gt;&#32;this.CanGoForward());
+150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;_goForwardCommand;
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+154 
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;CanGoBack()
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.Frame&#32;!=&#32;null&#32;&amp;&amp;&#32;this.Frame.CanGoBack;
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;CanGoForward()
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.Frame&#32;!=&#32;null&#32;&amp;&amp;&#32;this.Frame.CanGoForward;
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+179 
+184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;GoBack()
+185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this.Frame&#32;!=&#32;null&#32;&amp;&amp;&#32;this.Frame.CanGoBack)&#32;this.Frame.GoBack();
+187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;GoForward()
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this.Frame&#32;!=&#32;null&#32;&amp;&amp;&#32;this.Frame.CanGoForward)&#32;this.Frame.GoForward();
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+196 
+197 <emphasis class="preprocessor">#if&#32;WINDOWS_PHONE_APP</emphasis>
+198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;HardwareButtons_BackPressed(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;Windows.Phone.UI.Input.BackPressedEventArgs&#32;e)
+204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this.GoBackCommand.CanExecute(null))
+206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.Handled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.GoBackCommand.<link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command_1a1942f049f7beab85c1ac79bfe2589ef7">Execute</link>(null);
+209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+211 <emphasis class="preprocessor">#else</emphasis>
+212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;CoreDispatcher_AcceleratorKeyActivated(CoreDispatcher&#32;sender,
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AcceleratorKeyEventArgs&#32;e)
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;virtualKey&#32;=&#32;e.VirtualKey;
+223 
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Only&#32;investigate&#32;further&#32;when&#32;Left,&#32;Right,&#32;or&#32;the&#32;dedicated&#32;Previous&#32;or&#32;Next&#32;keys</emphasis>
+225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;are&#32;pressed</emphasis>
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;((e.EventType&#32;==&#32;CoreAcceleratorKeyEventType.SystemKeyDown&#32;||
+227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.EventType&#32;==&#32;CoreAcceleratorKeyEventType.KeyDown)&#32;&amp;&amp;
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(virtualKey&#32;==&#32;VirtualKey.Left&#32;||&#32;virtualKey&#32;==&#32;VirtualKey.Right&#32;||
+229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis class="keywordtype">int</emphasis>)virtualKey&#32;==&#32;166&#32;||&#32;(<emphasis class="keywordtype">int</emphasis>)virtualKey&#32;==&#32;167))
+230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;coreWindow&#32;=&#32;Window.Current.CoreWindow;
+232 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;downState&#32;=&#32;CoreVirtualKeyStates.Down;
+233 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;menuKey&#32;=&#32;(coreWindow.GetKeyState(VirtualKey.Menu)&#32;&amp;&#32;downState)&#32;==&#32;downState;
+234 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;controlKey&#32;=&#32;(coreWindow.GetKeyState(VirtualKey.Control)&#32;&amp;&#32;downState)&#32;==&#32;downState;
+235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;shiftKey&#32;=&#32;(coreWindow.GetKeyState(VirtualKey.Shift)&#32;&amp;&#32;downState)&#32;==&#32;downState;
+236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;noModifiers&#32;=&#32;!menuKey&#32;&amp;&amp;&#32;!controlKey&#32;&amp;&amp;&#32;!shiftKey;
+237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;onlyAlt&#32;=&#32;menuKey&#32;&amp;&amp;&#32;!controlKey&#32;&amp;&amp;&#32;!shiftKey;
+238 
+239 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(((<emphasis class="keywordtype">int</emphasis>)virtualKey&#32;==&#32;166&#32;&amp;&amp;&#32;noModifiers)&#32;||
+240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(virtualKey&#32;==&#32;VirtualKey.Left&#32;&amp;&amp;&#32;onlyAlt))
+241 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;When&#32;the&#32;previous&#32;key&#32;or&#32;Alt+Left&#32;are&#32;pressed&#32;navigate&#32;back</emphasis>
+243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.Handled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.GoBackCommand.Execute(null);
+245 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+246 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(((<emphasis class="keywordtype">int</emphasis>)virtualKey&#32;==&#32;167&#32;&amp;&amp;&#32;noModifiers)&#32;||
+247 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(virtualKey&#32;==&#32;VirtualKey.Right&#32;&amp;&amp;&#32;onlyAlt))
+248 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;When&#32;the&#32;next&#32;key&#32;or&#32;Alt+Right&#32;are&#32;pressed&#32;navigate&#32;forward</emphasis>
+250 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.Handled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+251 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.GoForwardCommand.Execute(null);
+252 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+253 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+254 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+255 
+263 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;CoreWindow_PointerPressed(CoreWindow&#32;sender,
+264 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PointerEventArgs&#32;e)
+265 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+266 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;properties&#32;=&#32;e.CurrentPoint.Properties;
+267 
+268 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Ignore&#32;button&#32;chords&#32;with&#32;the&#32;left,&#32;right,&#32;and&#32;middle&#32;buttons</emphasis>
+269 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(properties.IsLeftButtonPressed&#32;||&#32;properties.IsRightButtonPressed&#32;||
+270 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;properties.IsMiddleButtonPressed)
+271 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>;
+272 
+273 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;If&#32;back&#32;or&#32;foward&#32;are&#32;pressed&#32;(but&#32;not&#32;both)&#32;navigate&#32;appropriately</emphasis>
+274 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;backPressed&#32;=&#32;properties.IsXButton1Pressed;
+275 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;forwardPressed&#32;=&#32;properties.IsXButton2Pressed;
+276 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(backPressed&#32;^&#32;forwardPressed)
+277 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+278 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.Handled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+279 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(backPressed)&#32;this.GoBackCommand.Execute(null);
+280 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(forwardPressed)&#32;this.GoForwardCommand.Execute(null);
+281 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+282 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+283 <emphasis class="preprocessor">#endif</emphasis>
+284 
+285 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+286 
+287 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;Process&#32;lifetime&#32;management</emphasis>
+288 
+289 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;String&#32;_pageKey;
+290 
+296 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">event</emphasis>&#32;<link linkend="dd/d5e/namespace_app_store_1_1_common_1a19e1e736ff78300496e445c9993e80f9">LoadStateEventHandler</link>&#32;LoadState;
+303 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">event</emphasis>&#32;<link linkend="dd/d5e/namespace_app_store_1_1_common_1a6bc37143a9b63d49a100353f11e63a3b">SaveStateEventHandler</link>&#32;SaveState;
+304 
+312 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedTo(NavigationEventArgs&#32;e)
+313 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+314 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;frameState&#32;=&#32;<link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">SuspensionManager</link>.<link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1aa693200dcd56b5b5a0193fb645d51847">SessionStateForFrame</link>(this.Frame);
+315 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this._pageKey&#32;=&#32;<emphasis class="stringliteral">&quot;Page-&quot;</emphasis>&#32;+&#32;this.Frame.BackStackDepth;
+316 
+317 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(e.NavigationMode&#32;==&#32;NavigationMode.New)
+318 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+319 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Clear&#32;existing&#32;state&#32;for&#32;forward&#32;navigation&#32;when&#32;adding&#32;a&#32;new&#32;page&#32;to&#32;the</emphasis>
+320 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;navigation&#32;stack</emphasis>
+321 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;nextPageKey&#32;=&#32;this._pageKey;
+322 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;nextPageIndex&#32;=&#32;this.Frame.BackStackDepth;
+323 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(frameState.Remove(nextPageKey))
+324 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+325 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nextPageIndex++;
+326 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nextPageKey&#32;=&#32;<emphasis class="stringliteral">&quot;Page-&quot;</emphasis>&#32;+&#32;nextPageIndex;
+327 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+328 
+329 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Pass&#32;the&#32;navigation&#32;parameter&#32;to&#32;the&#32;new&#32;page</emphasis>
+330 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this.LoadState&#32;!=&#32;null)
+331 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+332 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.LoadState(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>(e.Parameter,&#32;null));
+333 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+334 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+335 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+336 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+337 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Pass&#32;the&#32;navigation&#32;parameter&#32;and&#32;preserved&#32;page&#32;state&#32;to&#32;the&#32;page,&#32;using</emphasis>
+338 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;the&#32;same&#32;strategy&#32;for&#32;loading&#32;suspended&#32;state&#32;and&#32;recreating&#32;pages&#32;discarded</emphasis>
+339 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;from&#32;cache</emphasis>
+340 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this.LoadState&#32;!=&#32;null)
+341 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+342 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.LoadState(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>(e.Parameter,&#32;(Dictionary&lt;String,&#32;Object&gt;)frameState[<emphasis class="keyword">this</emphasis>._pageKey]));
+343 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+344 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+345 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+346 
+354 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedFrom(NavigationEventArgs&#32;e)
+355 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+356 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;frameState&#32;=&#32;<link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">SuspensionManager</link>.<link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager_1aa693200dcd56b5b5a0193fb645d51847">SessionStateForFrame</link>(this.Frame);
+357 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;pageState&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Dictionary&lt;String,&#32;Object&gt;();
+358 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this.SaveState&#32;!=&#32;null)
+359 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+360 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.SaveState(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>(pageState));
+361 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+362 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frameState[_pageKey]&#32;=&#32;pageState;
+363 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+364 
+365 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+366 &#32;&#32;&#32;&#32;}
+367 
+371 &#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;delegate&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d5e/namespace_app_store_1_1_common_1a19e1e736ff78300496e445c9993e80f9">LoadStateEventHandler</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>&#32;e);
+372 &#32;&#32;
+376 &#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;delegate&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d5e/namespace_app_store_1_1_common_1a6bc37143a9b63d49a100353f11e63a3b">SaveStateEventHandler</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>&#32;e);
+377 
+<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">381 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>&#32;:&#32;<link linkend="d5/d6c/class_event_args">EventArgs</link>
+382 &#32;&#32;&#32;&#32;{
+387 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;Object&#32;NavigationParameter&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">private</emphasis>&#32;set;&#32;}
+392 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;Dictionary&lt;string,&#32;Object&gt;&#32;PageState&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">private</emphasis>&#32;set;&#32;}
+393 
+405 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>(Object&#32;navigationParameter,&#32;Dictionary&lt;string,&#32;Object&gt;&#32;pageState)
+406 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;base()
+407 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+408 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.NavigationParameter&#32;=&#32;navigationParameter;
+409 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.PageState&#32;=&#32;pageState;
+410 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+411 &#32;&#32;&#32;&#32;}
+<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">415 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>&#32;:&#32;<link linkend="d5/d6c/class_event_args">EventArgs</link>
+416 &#32;&#32;&#32;&#32;{
+420 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;Dictionary&lt;string,&#32;Object&gt;&#32;PageState&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;<emphasis class="keyword">private</emphasis>&#32;set;&#32;}
+421 
+426 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>(Dictionary&lt;string,&#32;Object&gt;&#32;pageState)
+427 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;base()
+428 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+429 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.PageState&#32;=&#32;pageState;
+430 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+431 &#32;&#32;&#32;&#32;}
+432 }
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,27 @@
+digraph "org.buildmlearn.appstore.utils.XMLParser.getElementValue"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="org.buildmlearn.appstore.utils.\lXMLParser.getElementValue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="org.buildmlearn.appstore.utils.\lAppReader.readQuizFile",height=0.2,width=0.4,color="black",URL="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#abe6c5c2f0c98582beef2eca8fd9ae462",tooltip="Reads the Quiz type of app. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="org.buildmlearn.appstore.activities.\lStartActivity.FileReadTask.doInBackground",height=0.2,width=0.4,color="black",URL="$d3/dbf/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_start_activity_1_1_file_read_task.html#aed534a6e0d4bcb1df8009e878e2bb95f",tooltip="This method is automatically called, when the class is set to be executed. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="org.buildmlearn.appstore.utils.\lXMLParser.getValue",height=0.2,width=0.4,color="black",URL="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a42151792145130629c7bf2a16b2885bc",tooltip="Gets the value of the item from the Document object. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="org.buildmlearn.appstore.activities.\lSplashActivity.parseXML",height=0.2,width=0.4,color="black",URL="$df/d05/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_splash_activity.html#a524ae9928ab2c671026d7bfa84701531",tooltip="It parses the xml data to be shown on the store. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="org.buildmlearn.appstore.activities.\lSplashActivity.onCreate",height=0.2,width=0.4,color="black",URL="$df/d05/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_splash_activity.html#a87a3b8f0b5f853a7f8c658bde17b5020",tooltip="The method is executed when the activity is created. "];
+  Node5 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="org.buildmlearn.appstore.utils.\lAppReader.readSpellingsContent",height=0.2,width=0.4,color="black",URL="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#aaeb43a1338ffba1f17dd7993c82af47f",tooltip="Reads the Spelling Puzzle type of app. "];
+  Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="org.buildmlearn.appstore.utils.\lAppReader.readFlashContent",height=0.2,width=0.4,color="black",URL="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#aefcab830573415c5c0d3d21a31e05e46",tooltip="Reads the FlashCards type of app. "];
+  Node8 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

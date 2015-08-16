@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d2f/_assembly_info_8cs">
+    <title>AssemblyInfo.cs File Reference</title>
+<para>Include dependency diagram for AssemblyInfo.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d04/_assembly_info_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for AssemblyInfo.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d3e/_assembly_info_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d9d/namespace_system_1_1_reflection">System::Reflection</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d54/namespace_system_1_1_runtime_1_1_compiler_services">System::Runtime::CompilerServices</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dee/namespace_system_1_1_runtime_1_1_interop_services">System::Runtime::InteropServices</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Properties/AssemblyInfo.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Reflection;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Runtime.CompilerServices;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Runtime.InteropServices;
+4 
+5 <emphasis class="comment">//&#32;General&#32;Information&#32;about&#32;an&#32;assembly&#32;is&#32;controlled&#32;through&#32;the&#32;following&#32;</emphasis>
+6 <emphasis class="comment">//&#32;set&#32;of&#32;attributes.&#32;Change&#32;these&#32;attribute&#32;values&#32;to&#32;modify&#32;the&#32;information</emphasis>
+7 <emphasis class="comment">//&#32;associated&#32;with&#32;an&#32;assembly.</emphasis>
+8 [assembly:&#32;AssemblyTitle(<emphasis class="stringliteral">&quot;AppStore&quot;</emphasis>)]
+9 [assembly:&#32;AssemblyDescription(<emphasis class="stringliteral">&quot;BuildmLearn&#32;AppStore&#32;is&#32;a&#32;store&#32;for&#32;educational&#32;mobile&#32;apps&#32;created&#32;using&#32;BuildmLearn&#32;Toolkit.&#32;Anyone&#32;using&#32;the&#32;BuildmLearn&#32;AppStore&#32;will&#32;have&#32;access&#32;to&#32;all&#32;published&#32;applications.&#32;This&#32;application&#32;also&#32;have&#32;various&#32;templates&#32;using&#32;which&#32;the&#32;apps&#32;can&#32;be&#32;rendered.&quot;</emphasis>)]
+10 [assembly:&#32;AssemblyConfiguration(<emphasis class="stringliteral">&quot;&quot;</emphasis>)]
+11 [assembly:&#32;AssemblyCompany(<emphasis class="stringliteral">&quot;BuildmLearn&quot;</emphasis>)]
+12 [assembly:&#32;AssemblyProduct(<emphasis class="stringliteral">&quot;AppStore&quot;</emphasis>)]
+13 [assembly:&#32;AssemblyCopyright(<emphasis class="stringliteral">&quot;Copyright&#32;©&#32;BuildmLearn&#32;2015&quot;</emphasis>)]
+14 [assembly:&#32;AssemblyTrademark(<emphasis class="stringliteral">&quot;&quot;</emphasis>)]
+15 [assembly:&#32;AssemblyCulture(<emphasis class="stringliteral">&quot;&quot;</emphasis>)]
+16 
+17 <emphasis class="comment">//&#32;Version&#32;information&#32;for&#32;an&#32;assembly&#32;consists&#32;of&#32;the&#32;following&#32;four&#32;values:</emphasis>
+18 <emphasis class="comment">//</emphasis>
+19 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;Major&#32;Version</emphasis>
+20 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;Minor&#32;Version&#32;</emphasis>
+21 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;Build&#32;Number</emphasis>
+22 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;Revision</emphasis>
+23 <emphasis class="comment">//</emphasis>
+24 <emphasis class="comment">//&#32;You&#32;can&#32;specify&#32;all&#32;the&#32;values&#32;or&#32;you&#32;can&#32;default&#32;the&#32;Build&#32;and&#32;Revision&#32;Numbers&#32;</emphasis>
+25 <emphasis class="comment">//&#32;by&#32;using&#32;the&#32;&apos;*&apos;&#32;as&#32;shown&#32;below:</emphasis>
+26 <emphasis class="comment">//&#32;[assembly:&#32;AssemblyVersion(&quot;1.0.*&quot;)]</emphasis>
+27 [assembly:&#32;AssemblyVersion(<emphasis class="stringliteral">&quot;1.0.0.0&quot;</emphasis>)]
+28 [assembly:&#32;AssemblyFileVersion(<emphasis class="stringliteral">&quot;1.0.0.0&quot;</emphasis>)]
+29 [assembly:&#32;ComVisible(<emphasis class="keyword">false</emphasis>)]
+    </computeroutput></literallayout>
+</section>

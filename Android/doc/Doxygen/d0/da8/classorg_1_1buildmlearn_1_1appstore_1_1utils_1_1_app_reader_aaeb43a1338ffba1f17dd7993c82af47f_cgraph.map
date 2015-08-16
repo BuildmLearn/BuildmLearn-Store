@@ -1,0 +1,9 @@
+<map id="org.buildmlearn.appstore.utils.AppReader.readSpellingsContent" name="org.buildmlearn.appstore.utils.AppReader.readSpellingsContent">
+<area shape="rect" id="node2" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#af291064e82c76410196621b65c4703fb" title="org.buildmlearn.appstore.models.\lSpellingsModel.getInstance" alt="" coords="267,5,481,47"/>
+<area shape="rect" id="node3" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a15a8449f10403c80625319062f73432e" title="Gets the Document object from the xml string. " alt="" coords="276,71,472,112"/>
+<area shape="rect" id="node4" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#a3a314993416a721ead3b5d8e0a877ed8" title="org.buildmlearn.appstore.models.\lSpellingsModel.setPuzzleAuthor" alt="" coords="267,136,481,177"/>
+<area shape="rect" id="node5" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a42151792145130629c7bf2a16b2885bc" title="Gets the value of the item from the Document object. " alt="" coords="276,201,472,243"/>
+<area shape="rect" id="node7" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#abb5a9649c871924119470ad500077374" title="org.buildmlearn.appstore.models.\lSpellingsModel.setPuzzleName" alt="" coords="267,267,481,308"/>
+<area shape="rect" id="node8" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#a534bcc5c59d7c6f2016f1f10bdee5dca" title="org.buildmlearn.appstore.models.\lSpellingsModel.setSpellingsList" alt="" coords="267,332,481,373"/>
+<area shape="rect" id="node6" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a623e2412cff7b8ab44947732d167feef" title="Gets the element value of the node. " alt="" coords="529,201,725,243"/>
+</map>

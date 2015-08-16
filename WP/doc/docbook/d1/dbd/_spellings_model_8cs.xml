@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/dbd/_spellings_model_8cs">
+    <title>SpellingsModel.cs File Reference</title>
+<para>Include dependency diagram for SpellingsModel.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d3d/_spellings_model_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for SpellingsModel.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/db1/_spellings_model_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">AppStore::Models::SpellingsModel</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Spellings App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/SpellingsModel.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+2 
+3 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+4 {
+<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">8 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>
+9 &#32;&#32;&#32;&#32;{
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleName;
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleAuthor;
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleAuthorEmail;
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleVersion;
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleDescription;
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;List&lt;WordModel&gt;&#32;mSpellingsList;
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;totalCorrect&#32;=&#32;0,&#32;totalWrong&#32;=&#32;0,&#32;activeCount&#32;=&#32;0;
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>&#32;mSpellingsModel;
+18 &#32;&#32;&#32;&#32;
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;clearInstance()
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(mSpellingsModel&#32;!=&#32;null)
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mSpellingsModel.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ac6aba8fbaf09857b4b0c3bdf52e9f2d6">totalCorrect</link>&#32;=&#32;0;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mSpellingsModel.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a1194d757301f7d8700d1d7b816b87659">totalWrong</link>&#32;=&#32;0;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mSpellingsModel.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1af97272ed0e802f42266460faec29c07b">activeCount</link>&#32;=&#32;0;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+31 &#32;&#32;&#32;
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>&#32;getInstance()
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(mSpellingsModel&#32;==&#32;null)
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mSpellingsModel&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>();
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mSpellingsModel;
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+42 &#32;&#32;&#32;&#32;
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getPuzzleName()
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mPuzzleName;
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+51 
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setPuzzleName(<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleName)
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mPuzzleName&#32;=&#32;mPuzzleName;
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+60 &#32;&#32;&#32;&#32;&#32;
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getPuzzleDescription()
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mPuzzleDescription;
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+69 
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setPuzzleDescription(<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleDescription)
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mPuzzleDescription&#32;=&#32;mPuzzleDescription;
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+78 &#32;&#32;&#32;&#32;&#32;
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getPuzzleAuthorEmail()
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mPuzzleAuthorEmail;
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+87 
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setPuzzleAuthorEmail(<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleAuthorEmail)
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mPuzzleAuthorEmail&#32;=&#32;mPuzzleAuthorEmail;
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+96 &#32;&#32;&#32;&#32;
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getPuzzleVersion()
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mPuzzleVersion;
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+105 
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setPuzzleVersion(<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleVersion)
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mPuzzleVersion&#32;=&#32;mPuzzleVersion;
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+114 
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getPuzzleAuthor()
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mPuzzleAuthor;
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+123 
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setPuzzleAuthor(<emphasis class="keywordtype">string</emphasis>&#32;mPuzzleAuthor)
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mPuzzleAuthor&#32;=&#32;mPuzzleAuthor;
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+132 
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;List&lt;WordModel&gt;&#32;getSpellingsList()
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mSpellingsList;
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+141 
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setSpellingsList(List&lt;WordModel&gt;&#32;mSpellingsList)
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mSpellingsList&#32;=&#32;mSpellingsList;
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+150 
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;getTotalCorrect()
+156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;totalCorrect;
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+159 
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setTotalCorrect(<emphasis class="keywordtype">int</emphasis>&#32;totalCorrect)
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.totalCorrect&#32;=&#32;totalCorrect;
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+168 
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;getTotalWrong()
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;totalWrong;
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+177 
+182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setTotalWrong(<emphasis class="keywordtype">int</emphasis>&#32;totalWrong)
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.totalWrong&#32;=&#32;totalWrong;
+185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+186 
+191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;getActiveCount()
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;activeCount;
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+195 
+200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setActiveCount(<emphasis class="keywordtype">int</emphasis>&#32;activeCount)
+201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.activeCount&#32;=&#32;activeCount;
+203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+204 &#32;&#32;&#32;&#32;}
+205 }
+    </computeroutput></literallayout>
+</section>

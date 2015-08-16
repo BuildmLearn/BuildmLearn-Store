@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d4c/class_app_store_1_1_models_1_1_menu_item">
+<title>AppStore::Models::MenuItem class Reference</title>
+<para>Inheritance diagram for AppStore::Models::MenuItem</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d17/class_app_store_1_1_models_1_1_menu_item__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::MenuItem</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d9a/class_app_store_1_1_models_1_1_menu_item__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d4c/class_app_store_1_1_models_1_1_menu_item_1a49cd3243db7485085c46fb1f00fb1ee1">MenuItem</link> (
+string mTitle, string mIcon)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model for the menu items. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 7 of file MenuItem.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MenuItem.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d6/d4c/class_app_store_1_1_models_1_1_menu_item_1a49cd3243db7485085c46fb1f00fb1ee1">
+                <title>AppStore.Models.MenuItem.MenuItem (string mTitle, string mIcon)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

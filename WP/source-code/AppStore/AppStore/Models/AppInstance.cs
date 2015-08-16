@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AppStore.Models
+﻿namespace AppStore.Models
 {
+    /// <summary>
+    /// This is the model of the app instance, and whether it is installed or not.
+    /// </summary>
     class AppInstance
     {
         public static Apps app;

@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.models.SpellingsModel.getSpellingsList" name="org.buildmlearn.appstore.models.SpellingsModel.getSpellingsList">
+<area shape="rect" id="node2" href="$df/dcb/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_score_activity.html#ac45846f5044d122523a51f69bf838d8b" title="The method is executed first when the activity is created. " alt="" coords="268,5,491,47"/>
+<area shape="rect" id="node3" href="$d9/dca/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_spelling_activity.html#ab11f98527ad998adcb11f119d815945e" title="The method is executed first when the activity is created. " alt="" coords="268,71,491,112"/>
+<area shape="rect" id="node4" href="$d2/d2d/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_word_info_activity.html#a84c1bc2dbaad02b74b37c6390bf8380f" title="The method is executed first when the activity is created. " alt="" coords="268,136,491,177"/>
+</map>

@@ -1,0 +1,26 @@
+var class_app_store_1_1_models_1_1_info_model =
+[
+    [ "getInfoAuthor", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a542ad3bf45c224bb0e16a8693ec60aba", null ],
+    [ "getInfoAuthorEmail", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#ab9af0ca209b4ad238467a2be90ac3e11", null ],
+    [ "getInfoDescription", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#afeca1bc8acb9bb2d3ea54f03091f70b7", null ],
+    [ "getInfoDescriptionList", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a3f02febcce8a0871cde100bdbfc49fbd", null ],
+    [ "getInfoName", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#ae7976225132cc4aec3f22c5a4cb4d5e9", null ],
+    [ "getInfoTitleList", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a2ab1fb7e49935d42d55d11c7435b327e", null ],
+    [ "getInfoVersion", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a9452d5fcddedeb76f93fc4eeda95d77f", null ],
+    [ "getInstance", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a3467a71d9d49362dcb59246a1a4dd182", null ],
+    [ "setInfoAuthor", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a58cd3abc282a80661cc295a36147b0a6", null ],
+    [ "setInfoAuthorEmail", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a304b21f619b00f2a369352164f31d71d", null ],
+    [ "setInfoDescription", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#afa093085642315b0f42cc556481b1b42", null ],
+    [ "setInfoDescriptionList", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a1f74ce2ff128a7347259e8323c6d3dec", null ],
+    [ "setInfoName", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a481f635ffe4000521b81af1852f468fc", null ],
+    [ "setInfoTitleList", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a8ff76ef95df78d0ffeb07f4b2e66bd5a", null ],
+    [ "setInfoVersion", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a9bd7f4a1d60b2ff55ade75ceff8f2393", null ],
+    [ "mInfoAuthor", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a533a65745c6b21f40f0acde2aaa0dc3d", null ],
+    [ "mInfoAuthorEmail", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a310cd19167a1aeb248fa7bdec0d5a62d", null ],
+    [ "mInfoDescription", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#ac86274db02f573e71baa17167429237a", null ],
+    [ "mInfoDescriptionList", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#aa9a936733337d9cc80e6aa71dc34ba95", null ],
+    [ "mInfoName", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a0d3488ec7b7c593227d233b830e704b0", null ],
+    [ "mInfoTitleList", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a7766ddc1442c6d9a25b95c131fb52708", null ],
+    [ "mInfoVersion", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a3e62f68676fc1bf54c47ea3578fea066", null ],
+    [ "mModel", "d9/d84/class_app_store_1_1_models_1_1_info_model.html#a7339c9c8e8d36d2ff2c0cc2b27f6b233", null ]
+];

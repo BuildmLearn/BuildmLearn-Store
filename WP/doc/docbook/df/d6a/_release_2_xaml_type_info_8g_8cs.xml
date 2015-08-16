@@ -1,0 +1,1145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d6a/_release_2_xaml_type_info_8g_8cs">
+    <title>XamlTypeInfo.g.cs File Reference</title>
+<para>Include dependency diagram for XamlTypeInfo.g.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/dce/_release_2_xaml_type_info_8g_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for XamlTypeInfo.g.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dad/_release_2_xaml_type_info_8g_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d36/class_app_store_1_1_app">AppStore::App</link></para>
+<para><emphasis>&lt;summary&gt;
+Provides application-specific behavior to supplement the default Application class.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider">AppStore::AppStore_XamlTypeInfo::XamlTypeInfoProvider</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type">AppStore::AppStore_XamlTypeInfo::XamlSystemBaseType</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type">AppStore::AppStore_XamlTypeInfo::XamlUserType</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member">AppStore::AppStore_XamlTypeInfo::XamlMember</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info">AppStore::AppStore_XamlTypeInfo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/Release/XamlTypeInfo.g.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+2 <emphasis class="comment">//&#32;&lt;auto-generated&gt;</emphasis>
+3 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;This&#32;code&#32;was&#32;generated&#32;by&#32;a&#32;tool.</emphasis>
+4 <emphasis class="comment">//</emphasis>
+5 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;Changes&#32;to&#32;this&#32;file&#32;may&#32;cause&#32;incorrect&#32;behavior&#32;and&#32;will&#32;be&#32;lost&#32;if</emphasis>
+6 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;the&#32;code&#32;is&#32;regenerated.</emphasis>
+7 <emphasis class="comment">//&#32;&lt;/auto-generated&gt;</emphasis>
+8 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+9 
+10 
+11 
+12 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+13 {
+14 &#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>App&#32;:&#32;global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
+15 &#32;&#32;&#32;&#32;{
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::AppStore.<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info">AppStore_XamlTypeInfo</link>.<link linkend="d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider">XamlTypeInfoProvider</link>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a5647634f3c98690ad9ad38ce5246076c">_provider</link>;
+17 
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a0e05ee4fe16d8d675cddb2a45ffef6c9">GetXamlType</link>(global::System.Type&#32;type)
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(<link linkend="d9/d36/class_app_store_1_1_app_1a5647634f3c98690ad9ad38ce5246076c">_provider</link>&#32;==&#32;null)
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a5647634f3c98690ad9ad38ce5246076c">_provider</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider();
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a5647634f3c98690ad9ad38ce5246076c">_provider</link>.GetXamlTypeByType(type);
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+26 
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a0e05ee4fe16d8d675cddb2a45ffef6c9">GetXamlType</link>(<emphasis class="keywordtype">string</emphasis>&#32;fullName)
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(<link linkend="d9/d36/class_app_store_1_1_app_1a5647634f3c98690ad9ad38ce5246076c">_provider</link>&#32;==&#32;null)
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a5647634f3c98690ad9ad38ce5246076c">_provider</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider();
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a5647634f3c98690ad9ad38ce5246076c">_provider</link>.GetXamlTypeByName(fullName);
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+35 
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.XmlnsDefinition[]&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a2c06cec0ab8a00c59bbad275493c8c04">GetXmlnsDefinitions</link>()
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::Windows.UI.Xaml.Markup.XmlnsDefinition[0];
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+40 &#32;&#32;&#32;&#32;}
+41 }
+42 
+43 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.AppStore_XamlTypeInfo
+44 {
+45 &#32;&#32;&#32;&#32;
+46 &#32;&#32;&#32;&#32;[<link linkend="d8/dd0/namespace_system">System</link>.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;4.0.0.0&quot;</emphasis>)]&#32;&#32;&#32;&#32;
+47 &#32;&#32;&#32;&#32;[<link linkend="d8/dd0/namespace_system">System</link>.Diagnostics.DebuggerNonUserCodeAttribute()]
+48 &#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>XamlTypeInfoProvider
+49 &#32;&#32;&#32;&#32;{
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;GetXamlTypeByType(global::System.Type&#32;type)
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;xamlType;
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_xamlTypeCacheByType.TryGetValue(type,&#32;out&#32;xamlType))
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;xamlType;
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;typeIndex&#32;=&#32;LookupTypeIndexByType(type);
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(typeIndex&#32;!=&#32;-1)
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+60 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;CreateXamlType(typeIndex);
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(xamlType&#32;!=&#32;null)
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_xamlTypeCacheByName.Add(xamlType.FullName,&#32;xamlType);
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_xamlTypeCacheByType.Add(xamlType.UnderlyingType,&#32;xamlType);
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;xamlType;
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+69 
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;GetXamlTypeByName(<emphasis class="keywordtype">string</emphasis>&#32;typeName)
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<emphasis class="keywordtype">string</emphasis>.IsNullOrEmpty(typeName))
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;null;
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;xamlType;
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_xamlTypeCacheByName.TryGetValue(typeName,&#32;out&#32;xamlType))
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;xamlType;
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;typeIndex&#32;=&#32;LookupTypeIndexByName(typeName);
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(typeIndex&#32;!=&#32;-1)
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;CreateXamlType(typeIndex);
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(xamlType&#32;!=&#32;null)
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_xamlTypeCacheByName.Add(xamlType.FullName,&#32;xamlType);
+89 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_xamlTypeCacheByType.Add(xamlType.UnderlyingType,&#32;xamlType);
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;xamlType;
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+93 
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlMember&#32;GetMemberByLongName(<emphasis class="keywordtype">string</emphasis>&#32;longMemberName)
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<emphasis class="keywordtype">string</emphasis>.IsNullOrEmpty(longMemberName))
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;null;
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::Windows.UI.Xaml.Markup.IXamlMember&#32;xamlMember;
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_xamlMembers.TryGetValue(longMemberName,&#32;out&#32;xamlMember))
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;xamlMember;
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;CreateXamlMember(longMemberName);
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(xamlMember&#32;!=&#32;null)
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_xamlMembers.Add(longMemberName,&#32;xamlMember);
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;xamlMember;
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+112 
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::System.Collections.Generic.Dictionary&lt;string,&#32;global::Windows.UI.Xaml.Markup.IXamlType&gt;
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_xamlTypeCacheByName&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Collections.Generic.Dictionary&lt;string,&#32;global::Windows.UI.Xaml.Markup.IXamlType&gt;();
+115 
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::System.Collections.Generic.Dictionary&lt;global::System.Type,&#32;global::Windows.UI.Xaml.Markup.IXamlType&gt;
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_xamlTypeCacheByType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Collections.Generic.Dictionary&lt;global::System.Type,&#32;global::Windows.UI.Xaml.Markup.IXamlType&gt;();
+118 
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::System.Collections.Generic.Dictionary&lt;string,&#32;global::Windows.UI.Xaml.Markup.IXamlMember&gt;
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_xamlMembers&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Collections.Generic.Dictionary&lt;string,&#32;global::Windows.UI.Xaml.Markup.IXamlMember&gt;();
+121 
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;_typeNameTable&#32;=&#32;null;
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::System.Type[]&#32;_typeTable&#32;=&#32;null;
+124 
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;InitTypeTables()
+126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>[22];
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[0]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.AppDetailsPage&quot;</emphasis>;
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[1]&#32;=&#32;<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>;
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[2]&#32;=&#32;<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.UserControl&quot;</emphasis>;
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[3]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>;
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[4]&#32;=&#32;<emphasis class="stringliteral">&quot;Windows.UI.Xaml.DependencyObject&quot;</emphasis>;
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[5]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>;
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[6]&#32;=&#32;<emphasis class="stringliteral">&quot;Object&quot;</emphasis>;
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[7]&#32;=&#32;<emphasis class="stringliteral">&quot;String&quot;</emphasis>;
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[8]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.CategoriesPage&quot;</emphasis>;
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[9]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.CategoryPage&quot;</emphasis>;
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[10]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.MainPage&quot;</emphasis>;
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[11]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.MyAppsPage&quot;</emphasis>;
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[12]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.SearchPage&quot;</emphasis>;
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[13]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Settings&quot;</emphasis>;
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[14]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.FlashCardPage&quot;</emphasis>;
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[15]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.InfoDetailPage&quot;</emphasis>;
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[16]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.InfoPage&quot;</emphasis>;
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[17]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.QuizPage&quot;</emphasis>;
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[18]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.ScorePage&quot;</emphasis>;
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[19]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.SpellingsPage&quot;</emphasis>;
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[20]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.StartPage&quot;</emphasis>;
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeNameTable[21]&#32;=&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.WordInfoPage&quot;</emphasis>;
+150 
+151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Type[22];
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[0]&#32;=&#32;typeof(global::AppStore.AppDetailsPage);
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[1]&#32;=&#32;typeof(global::Windows.UI.Xaml.Controls.Page);
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[2]&#32;=&#32;typeof(global::Windows.UI.Xaml.Controls.UserControl);
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[3]&#32;=&#32;typeof(global::AppStore.Common.NavigationHelper);
+156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[4]&#32;=&#32;typeof(global::Windows.UI.Xaml.DependencyObject);
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[5]&#32;=&#32;typeof(global::AppStore.Common.ObservableDictionary);
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[6]&#32;=&#32;typeof(global::System.Object);
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[7]&#32;=&#32;typeof(global::System.String);
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[8]&#32;=&#32;typeof(global::AppStore.CategoriesPage);
+161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[9]&#32;=&#32;typeof(global::AppStore.CategoryPage);
+162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[10]&#32;=&#32;typeof(global::AppStore.MainPage);
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[11]&#32;=&#32;typeof(global::AppStore.MyAppsPage);
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[12]&#32;=&#32;typeof(global::AppStore.SearchPage);
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[13]&#32;=&#32;typeof(global::AppStore.Settings);
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[14]&#32;=&#32;typeof(global::AppStore.Templates.FlashCardPage);
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[15]&#32;=&#32;typeof(global::AppStore.Templates.InfoDetailPage);
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[16]&#32;=&#32;typeof(global::AppStore.Templates.InfoPage);
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[17]&#32;=&#32;typeof(global::AppStore.Templates.QuizPage);
+170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[18]&#32;=&#32;typeof(global::AppStore.Templates.ScorePage);
+171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[19]&#32;=&#32;typeof(global::AppStore.Templates.SpellingsPage);
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[20]&#32;=&#32;typeof(global::AppStore.Templates.StartPage);
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeTable[21]&#32;=&#32;typeof(global::AppStore.Templates.WordInfoPage);
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+175 
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;LookupTypeIndexByName(<emphasis class="keywordtype">string</emphasis>&#32;typeName)
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_typeNameTable&#32;==&#32;null)
+179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;InitTypeTables();
+181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i=0;&#32;i&lt;_typeNameTable.Length;&#32;i++)
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(0&#32;==&#32;<emphasis class="keywordtype">string</emphasis>.CompareOrdinal(_typeNameTable[i],&#32;typeName))
+185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;i;
+187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;-1;
+190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+191 
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;LookupTypeIndexByType(global::System.Type&#32;type)
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_typeTable&#32;==&#32;null)
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;InitTypeTables();
+197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>(<emphasis class="keywordtype">int</emphasis>&#32;i=0;&#32;i&lt;_typeTable.Length;&#32;i++)
+199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(type&#32;==&#32;_typeTable[i])
+201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;i;
+203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;-1;
+206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+207 
+208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_0_AppDetailsPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppDetailsPage();&#32;}
+209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_5_ObservableDictionary()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Common.ObservableDictionary();&#32;}
+210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_8_CategoriesPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.CategoriesPage();&#32;}
+211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_9_CategoryPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.CategoryPage();&#32;}
+212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_10_MainPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.MainPage();&#32;}
+213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_11_MyAppsPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.MyAppsPage();&#32;}
+214 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_12_SearchPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.SearchPage();&#32;}
+215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_13_Settings()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Settings();&#32;}
+216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_14_FlashCardPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Templates.FlashCardPage();&#32;}
+217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_15_InfoDetailPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Templates.InfoDetailPage();&#32;}
+218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_16_InfoPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Templates.InfoPage();&#32;}
+219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_17_QuizPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Templates.QuizPage();&#32;}
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_18_ScorePage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Templates.ScorePage();&#32;}
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_19_SpellingsPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Templates.SpellingsPage();&#32;}
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_20_StartPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Templates.StartPage();&#32;}
+223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;Activate_21_WordInfoPage()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.Templates.WordInfoPage();&#32;}
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;MapAdd_5_ObservableDictionary(<emphasis class="keywordtype">object</emphasis>&#32;instance,&#32;<emphasis class="keywordtype">object</emphasis>&#32;key,&#32;<emphasis class="keywordtype">object</emphasis>&#32;item)
+225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;collection&#32;=&#32;(global::System.Collections.Generic.IDictionary&lt;global::System.String,&#32;global::System.Object&gt;)instance;
+227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;newKey&#32;=&#32;(global::System.String)key;
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;newItem&#32;=&#32;(global::System.Object)item;
+229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;collection.Add(newKey,&#32;newItem);
+230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+231 
+232 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;CreateXamlType(<emphasis class="keywordtype">int</emphasis>&#32;typeIndex)
+233 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+234 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType&#32;xamlType&#32;=&#32;null;
+235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType&#32;userType;
+236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;typeName&#32;=&#32;_typeNameTable[typeIndex];
+237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::System.Type&#32;type&#32;=&#32;_typeTable[typeIndex];
+238 
+239 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">switch</emphasis>&#32;(typeIndex)
+240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+241 
+242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;0:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.AppDetailsPage</emphasis>
+243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_0_AppDetailsPage;
+245 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+246 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+247 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+248 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+250 
+251 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;1:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;Windows.UI.Xaml.Controls.Page</emphasis>
+252 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType(typeName,&#32;type);
+253 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+254 
+255 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;2:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;Windows.UI.Xaml.Controls.UserControl</emphasis>
+256 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType(typeName,&#32;type);
+257 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+258 
+259 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;3:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Common.NavigationHelper</emphasis>
+260 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.DependencyObject&quot;</emphasis>));
+261 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsReturnTypeStub();
+262 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+263 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+264 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+265 
+266 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;4:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;Windows.UI.Xaml.DependencyObject</emphasis>
+267 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType(typeName,&#32;type);
+268 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+269 
+270 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;5:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Common.ObservableDictionary</emphasis>
+271 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Object&quot;</emphasis>));
+272 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.DictionaryAdd&#32;=&#32;MapAdd_5_ObservableDictionary;
+273 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsReturnTypeStub();
+274 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+275 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+276 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+277 
+278 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;6:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;Object</emphasis>
+279 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType(typeName,&#32;type);
+280 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+281 
+282 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;7:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;String</emphasis>
+283 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType(typeName,&#32;type);
+284 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+285 
+286 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;8:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.CategoriesPage</emphasis>
+287 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+288 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_8_CategoriesPage;
+289 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+290 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+291 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+292 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+293 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+294 
+295 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;9:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.CategoryPage</emphasis>
+296 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+297 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_9_CategoryPage;
+298 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+299 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+300 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+301 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+302 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+303 
+304 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;10:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.MainPage</emphasis>
+305 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+306 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_10_MainPage;
+307 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+308 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+309 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+310 
+311 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;11:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.MyAppsPage</emphasis>
+312 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+313 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_11_MyAppsPage;
+314 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+315 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+316 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+317 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+318 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+319 
+320 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;12:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.SearchPage</emphasis>
+321 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+322 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_12_SearchPage;
+323 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+324 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+325 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+326 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+327 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+328 
+329 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;13:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Settings</emphasis>
+330 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+331 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_13_Settings;
+332 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+333 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+334 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+335 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+336 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+337 
+338 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;14:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Templates.FlashCardPage</emphasis>
+339 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+340 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_14_FlashCardPage;
+341 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+342 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+343 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+344 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+345 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+346 
+347 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;15:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Templates.InfoDetailPage</emphasis>
+348 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+349 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_15_InfoDetailPage;
+350 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+351 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+352 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+353 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+354 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+355 
+356 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;16:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Templates.InfoPage</emphasis>
+357 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+358 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_16_InfoPage;
+359 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+360 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+361 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+362 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+363 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+364 
+365 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;17:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Templates.QuizPage</emphasis>
+366 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+367 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_17_QuizPage;
+368 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+369 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+370 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+371 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+372 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+373 
+374 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;18:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Templates.ScorePage</emphasis>
+375 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+376 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_18_ScorePage;
+377 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+378 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+379 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+380 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+381 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+382 
+383 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;19:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Templates.SpellingsPage</emphasis>
+384 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+385 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_19_SpellingsPage;
+386 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+387 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+388 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+389 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+390 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+391 
+392 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;20:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Templates.StartPage</emphasis>
+393 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+394 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_20_StartPage;
+395 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+396 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+397 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+398 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+399 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+400 
+401 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;21:&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;AppStore.Templates.WordInfoPage</emphasis>
+402 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType(<emphasis class="keyword">this</emphasis>,&#32;typeName,&#32;type,&#32;GetXamlTypeByName(<emphasis class="stringliteral">&quot;Windows.UI.Xaml.Controls.Page&quot;</emphasis>));
+403 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.Activator&#32;=&#32;Activate_21_WordInfoPage;
+404 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>);
+405 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.AddMemberName(<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>);
+406 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType.SetIsLocalType();
+407 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlType&#32;=&#32;userType;
+408 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+409 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+410 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;xamlType;
+411 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+412 
+413 
+414 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_0_AppDetailsPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+415 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+416 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.AppDetailsPage)instance;
+417 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+418 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+419 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_1_AppDetailsPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+420 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+421 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.AppDetailsPage)instance;
+422 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+423 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+424 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_2_CategoriesPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+425 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+426 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.CategoriesPage)instance;
+427 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+428 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+429 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_3_CategoriesPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+430 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+431 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.CategoriesPage)instance;
+432 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+433 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+434 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_4_CategoryPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+435 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+436 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.CategoryPage)instance;
+437 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+438 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+439 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_5_CategoryPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+440 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+441 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.CategoryPage)instance;
+442 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+443 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+444 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_6_MyAppsPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+445 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+446 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.MyAppsPage)instance;
+447 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+448 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+449 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_7_MyAppsPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+450 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+451 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.MyAppsPage)instance;
+452 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+453 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+454 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_8_SearchPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+455 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+456 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.SearchPage)instance;
+457 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+458 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+459 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_9_SearchPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+460 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+461 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.SearchPage)instance;
+462 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+463 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+464 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_10_Settings_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+465 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+466 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Settings)instance;
+467 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+468 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+469 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_11_Settings_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+470 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+471 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Settings)instance;
+472 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+473 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+474 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_12_FlashCardPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+475 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+476 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.FlashCardPage)instance;
+477 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+478 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+479 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_13_FlashCardPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+480 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+481 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.FlashCardPage)instance;
+482 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+483 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+484 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_14_InfoDetailPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+485 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+486 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.InfoDetailPage)instance;
+487 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+488 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+489 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_15_InfoDetailPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+490 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+491 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.InfoDetailPage)instance;
+492 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+493 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+494 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_16_InfoPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+495 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+496 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.InfoPage)instance;
+497 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+498 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+499 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_17_InfoPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+500 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+501 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.InfoPage)instance;
+502 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+503 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+504 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_18_QuizPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+505 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+506 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.QuizPage)instance;
+507 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+508 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+509 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_19_QuizPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+510 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+511 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.QuizPage)instance;
+512 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+513 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+514 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_20_ScorePage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+515 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+516 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.ScorePage)instance;
+517 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+518 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+519 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_21_ScorePage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+520 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+521 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.ScorePage)instance;
+522 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+523 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+524 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_22_SpellingsPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+525 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+526 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.SpellingsPage)instance;
+527 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+528 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+529 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_23_SpellingsPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+530 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+531 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.SpellingsPage)instance;
+532 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+533 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+534 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_24_StartPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+535 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+536 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.StartPage)instance;
+537 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+538 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+539 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_25_StartPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+540 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+541 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.StartPage)instance;
+542 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+543 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+544 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_26_WordInfoPage_NavigationHelper(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+545 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+546 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.WordInfoPage)instance;
+547 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.NavigationHelper;
+548 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+549 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;get_27_WordInfoPage_DefaultViewModel(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+550 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+551 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;that&#32;=&#32;(global::AppStore.Templates.WordInfoPage)instance;
+552 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;that.DefaultViewModel;
+553 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+554 
+555 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlMember&#32;CreateXamlMember(<emphasis class="keywordtype">string</emphasis>&#32;longMemberName)
+556 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+557 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember&#32;xamlMember&#32;=&#32;null;
+558 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::AppStore.AppStore_XamlTypeInfo.XamlUserType&#32;userType;
+559 
+560 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">switch</emphasis>&#32;(longMemberName)
+561 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+562 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.AppDetailsPage.NavigationHelper&quot;</emphasis>:
+563 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.AppDetailsPage&quot;</emphasis>);
+564 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+565 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_0_AppDetailsPage_NavigationHelper;
+566 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+567 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+568 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.AppDetailsPage.DefaultViewModel&quot;</emphasis>:
+569 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.AppDetailsPage&quot;</emphasis>);
+570 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+571 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_1_AppDetailsPage_DefaultViewModel;
+572 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+573 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+574 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.CategoriesPage.NavigationHelper&quot;</emphasis>:
+575 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.CategoriesPage&quot;</emphasis>);
+576 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+577 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_2_CategoriesPage_NavigationHelper;
+578 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+579 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+580 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.CategoriesPage.DefaultViewModel&quot;</emphasis>:
+581 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.CategoriesPage&quot;</emphasis>);
+582 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+583 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_3_CategoriesPage_DefaultViewModel;
+584 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+585 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+586 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.CategoryPage.NavigationHelper&quot;</emphasis>:
+587 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.CategoryPage&quot;</emphasis>);
+588 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+589 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_4_CategoryPage_NavigationHelper;
+590 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+591 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+592 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.CategoryPage.DefaultViewModel&quot;</emphasis>:
+593 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.CategoryPage&quot;</emphasis>);
+594 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+595 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_5_CategoryPage_DefaultViewModel;
+596 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+597 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+598 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.MyAppsPage.NavigationHelper&quot;</emphasis>:
+599 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.MyAppsPage&quot;</emphasis>);
+600 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+601 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_6_MyAppsPage_NavigationHelper;
+602 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+603 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+604 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.MyAppsPage.DefaultViewModel&quot;</emphasis>:
+605 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.MyAppsPage&quot;</emphasis>);
+606 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+607 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_7_MyAppsPage_DefaultViewModel;
+608 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+609 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+610 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.SearchPage.NavigationHelper&quot;</emphasis>:
+611 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.SearchPage&quot;</emphasis>);
+612 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+613 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_8_SearchPage_NavigationHelper;
+614 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+615 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+616 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.SearchPage.DefaultViewModel&quot;</emphasis>:
+617 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.SearchPage&quot;</emphasis>);
+618 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+619 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_9_SearchPage_DefaultViewModel;
+620 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+621 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+622 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Settings.NavigationHelper&quot;</emphasis>:
+623 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Settings&quot;</emphasis>);
+624 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+625 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_10_Settings_NavigationHelper;
+626 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+627 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+628 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Settings.DefaultViewModel&quot;</emphasis>:
+629 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Settings&quot;</emphasis>);
+630 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+631 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_11_Settings_DefaultViewModel;
+632 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+633 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+634 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.FlashCardPage.NavigationHelper&quot;</emphasis>:
+635 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.FlashCardPage&quot;</emphasis>);
+636 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+637 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_12_FlashCardPage_NavigationHelper;
+638 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+639 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+640 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.FlashCardPage.DefaultViewModel&quot;</emphasis>:
+641 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.FlashCardPage&quot;</emphasis>);
+642 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+643 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_13_FlashCardPage_DefaultViewModel;
+644 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+645 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+646 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.InfoDetailPage.NavigationHelper&quot;</emphasis>:
+647 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.InfoDetailPage&quot;</emphasis>);
+648 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+649 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_14_InfoDetailPage_NavigationHelper;
+650 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+651 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+652 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.InfoDetailPage.DefaultViewModel&quot;</emphasis>:
+653 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.InfoDetailPage&quot;</emphasis>);
+654 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+655 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_15_InfoDetailPage_DefaultViewModel;
+656 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+657 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+658 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.InfoPage.NavigationHelper&quot;</emphasis>:
+659 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.InfoPage&quot;</emphasis>);
+660 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+661 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_16_InfoPage_NavigationHelper;
+662 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+663 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+664 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.InfoPage.DefaultViewModel&quot;</emphasis>:
+665 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.InfoPage&quot;</emphasis>);
+666 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+667 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_17_InfoPage_DefaultViewModel;
+668 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+669 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+670 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.QuizPage.NavigationHelper&quot;</emphasis>:
+671 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.QuizPage&quot;</emphasis>);
+672 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+673 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_18_QuizPage_NavigationHelper;
+674 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+675 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+676 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.QuizPage.DefaultViewModel&quot;</emphasis>:
+677 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.QuizPage&quot;</emphasis>);
+678 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+679 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_19_QuizPage_DefaultViewModel;
+680 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+681 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+682 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.ScorePage.NavigationHelper&quot;</emphasis>:
+683 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.ScorePage&quot;</emphasis>);
+684 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+685 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_20_ScorePage_NavigationHelper;
+686 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+687 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+688 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.ScorePage.DefaultViewModel&quot;</emphasis>:
+689 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.ScorePage&quot;</emphasis>);
+690 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+691 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_21_ScorePage_DefaultViewModel;
+692 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+693 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+694 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.SpellingsPage.NavigationHelper&quot;</emphasis>:
+695 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.SpellingsPage&quot;</emphasis>);
+696 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+697 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_22_SpellingsPage_NavigationHelper;
+698 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+699 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+700 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.SpellingsPage.DefaultViewModel&quot;</emphasis>:
+701 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.SpellingsPage&quot;</emphasis>);
+702 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+703 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_23_SpellingsPage_DefaultViewModel;
+704 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+705 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+706 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.StartPage.NavigationHelper&quot;</emphasis>:
+707 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.StartPage&quot;</emphasis>);
+708 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+709 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_24_StartPage_NavigationHelper;
+710 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+711 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+712 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.StartPage.DefaultViewModel&quot;</emphasis>:
+713 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.StartPage&quot;</emphasis>);
+714 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+715 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_25_StartPage_DefaultViewModel;
+716 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+717 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+718 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.WordInfoPage.NavigationHelper&quot;</emphasis>:
+719 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.WordInfoPage&quot;</emphasis>);
+720 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;NavigationHelper&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.NavigationHelper&quot;</emphasis>);
+721 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_26_WordInfoPage_NavigationHelper;
+722 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+723 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+724 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<emphasis class="stringliteral">&quot;AppStore.Templates.WordInfoPage.DefaultViewModel&quot;</emphasis>:
+725 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;userType&#32;=&#32;(global::AppStore.AppStore_XamlTypeInfo.XamlUserType)GetXamlTypeByName(<emphasis class="stringliteral">&quot;AppStore.Templates.WordInfoPage&quot;</emphasis>);
+726 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::AppStore.AppStore_XamlTypeInfo.XamlMember(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="stringliteral">&quot;DefaultViewModel&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;AppStore.Common.ObservableDictionary&quot;</emphasis>);
+727 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.Getter&#32;=&#32;get_27_WordInfoPage_DefaultViewModel;
+728 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xamlMember.SetIsReadOnly();
+729 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+730 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+731 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;xamlMember;
+732 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+733 &#32;&#32;&#32;&#32;}
+734 
+735 &#32;&#32;&#32;&#32;
+736 &#32;&#32;&#32;&#32;[<link linkend="d8/dd0/namespace_system">System</link>.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;4.0.0.0&quot;</emphasis>)]&#32;&#32;&#32;&#32;
+737 &#32;&#32;&#32;&#32;[<link linkend="d8/dd0/namespace_system">System</link>.Diagnostics.DebuggerNonUserCodeAttribute()]
+738 &#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis>XamlSystemBaseType&#32;:&#32;global::Windows.UI.Xaml.Markup.IXamlType
+739 &#32;&#32;&#32;&#32;{
+740 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;_fullName;
+741 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::System.Type&#32;_underlyingType;
+742 
+743 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;XamlSystemBaseType(<emphasis class="keywordtype">string</emphasis>&#32;fullName,&#32;global::System.Type&#32;underlyingType)
+744 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+745 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_fullName&#32;=&#32;fullName;
+746 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_underlyingType&#32;=&#32;underlyingType;
+747 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+748 
+749 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;FullName&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_fullName;&#32;}&#32;}
+750 
+751 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;global::System.Type&#32;UnderlyingType
+752 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+753 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>
+754 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+755 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;_underlyingType;
+756 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+757 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+758 
+759 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;BaseType&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+760 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlMember&#32;ContentProperty&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+761 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlMember&#32;GetMember(<emphasis class="keywordtype">string</emphasis>&#32;name)&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}
+762 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsArray&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+763 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsCollection&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+764 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsConstructible&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+765 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsDictionary&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+766 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsMarkupExtension&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+767 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsBindable&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+768 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsReturnTypeStub&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+769 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsLocalType&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+770 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;ItemType&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+771 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;KeyType&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}&#32;}
+772 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;ActivateInstance()&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}
+773 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;AddToMap(<emphasis class="keywordtype">object</emphasis>&#32;instance,&#32;<emphasis class="keywordtype">object</emphasis>&#32;key,&#32;<emphasis class="keywordtype">object</emphasis>&#32;item)&#32;&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}
+774 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;AddToVector(<emphasis class="keywordtype">object</emphasis>&#32;instance,&#32;<emphasis class="keywordtype">object</emphasis>&#32;item)&#32;&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}
+775 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;RunInitializer()&#32;&#32;&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}
+776 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;CreateFromString(<emphasis class="keywordtype">string</emphasis>&#32;input)&#32;&#32;&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.NotImplementedException();&#32;}
+777 &#32;&#32;&#32;&#32;}
+778 &#32;&#32;&#32;&#32;
+779 &#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;delegate&#32;<emphasis class="keywordtype">object</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a394dfc6084b9bf4d6e1e8c58fee1568c">Activator</link>();
+780 &#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;delegate&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a7a60ef4172b18f49847b5217c8262cc2">AddToCollection</link>(<emphasis class="keywordtype">object</emphasis>&#32;instance,&#32;<emphasis class="keywordtype">object</emphasis>&#32;item);
+781 &#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;delegate&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a4438d95d99415a133671c7f858813537">AddToDictionary</link>(<emphasis class="keywordtype">object</emphasis>&#32;instance,&#32;<emphasis class="keywordtype">object</emphasis>&#32;key,&#32;<emphasis class="keywordtype">object</emphasis>&#32;item);
+782 
+783 &#32;&#32;&#32;&#32;
+784 &#32;&#32;&#32;&#32;[<link linkend="d8/dd0/namespace_system">System</link>.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;4.0.0.0&quot;</emphasis>)]&#32;&#32;&#32;&#32;
+785 &#32;&#32;&#32;&#32;[<link linkend="d8/dd0/namespace_system">System</link>.Diagnostics.DebuggerNonUserCodeAttribute()]
+786 &#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis>XamlUserType&#32;:&#32;global::AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType
+787 &#32;&#32;&#32;&#32;{
+788 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider&#32;_provider;
+789 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;_baseType;
+790 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_isArray;
+791 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_isMarkupExtension;
+792 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_isBindable;
+793 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_isReturnTypeStub;
+794 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_isLocalType;
+795 
+796 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;_contentPropertyName;
+797 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;_itemTypeName;
+798 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;_keyTypeName;
+799 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::System.Collections.Generic.Dictionary&lt;string,&#32;<emphasis class="keywordtype">string</emphasis>&gt;&#32;_memberNames;
+800 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::System.Collections.Generic.Dictionary&lt;string,&#32;<emphasis class="keywordtype">object</emphasis>&gt;&#32;_enumValues;
+801 
+802 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;XamlUserType(global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider&#32;provider,&#32;<emphasis class="keywordtype">string</emphasis>&#32;fullName,&#32;global::System.Type&#32;fullType,&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;baseType)
+803 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:base(fullName,&#32;fullType)
+804 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+805 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_provider&#32;=&#32;provider;
+806 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_baseType&#32;=&#32;baseType;
+807 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+808 
+809 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;---&#32;Interface&#32;methods&#32;----</emphasis>
+810 
+811 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;BaseType&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_baseType;&#32;}&#32;}
+812 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsArray&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_isArray;&#32;}&#32;}
+813 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsCollection&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;(CollectionAdd&#32;!=&#32;null);&#32;}&#32;}
+814 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsConstructible&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;(<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a394dfc6084b9bf4d6e1e8c58fee1568c">Activator</link>&#32;!=&#32;null);&#32;}&#32;}
+815 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsDictionary&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;(DictionaryAdd&#32;!=&#32;null);&#32;}&#32;}
+816 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsMarkupExtension&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_isMarkupExtension;&#32;}&#32;}
+817 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsBindable&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_isBindable;&#32;}&#32;}
+818 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsReturnTypeStub&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_isReturnTypeStub;&#32;}&#32;}
+819 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsLocalType&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_isLocalType;&#32;}&#32;}
+820 
+821 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlMember&#32;ContentProperty
+822 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+823 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_provider.GetMemberByLongName(_contentPropertyName);&#32;}
+824 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+825 
+826 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;ItemType
+827 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+828 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_provider.GetXamlTypeByName(_itemTypeName);&#32;}
+829 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+830 
+831 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;KeyType
+832 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+833 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_provider.GetXamlTypeByName(_keyTypeName);&#32;}
+834 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+835 
+836 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlMember&#32;GetMember(<emphasis class="keywordtype">string</emphasis>&#32;name)
+837 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+838 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_memberNames&#32;==&#32;null)
+839 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+840 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;null;
+841 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+842 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;longName;
+843 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_memberNames.TryGetValue(name,&#32;out&#32;longName))
+844 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+845 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;_provider.GetMemberByLongName(longName);
+846 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+847 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;null;
+848 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+849 
+850 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;ActivateInstance()
+851 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+852 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a394dfc6084b9bf4d6e1e8c58fee1568c">Activator</link>();&#32;
+853 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+854 
+855 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;AddToMap(<emphasis class="keywordtype">object</emphasis>&#32;instance,&#32;<emphasis class="keywordtype">object</emphasis>&#32;key,&#32;<emphasis class="keywordtype">object</emphasis>&#32;item)&#32;
+856 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+857 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DictionaryAdd(instance,&#32;key,&#32;item);
+858 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+859 
+860 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;AddToVector(<emphasis class="keywordtype">object</emphasis>&#32;instance,&#32;<emphasis class="keywordtype">object</emphasis>&#32;item)
+861 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+862 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CollectionAdd(instance,&#32;item);
+863 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+864 
+865 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;RunInitializer()&#32;
+866 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+867 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/dd0/namespace_system">System</link>.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(UnderlyingType.TypeHandle);
+868 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+869 
+870 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;CreateFromString(<emphasis class="keywordtype">string</emphasis>&#32;input)
+871 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+872 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_enumValues&#32;!=&#32;null)
+873 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+874 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;value&#32;=&#32;0;
+875 
+876 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;valueParts&#32;=&#32;input.Split(<emphasis class="charliteral">&apos;,&apos;</emphasis>);
+877 
+878 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(<emphasis class="keywordtype">string</emphasis>&#32;valuePart&#32;<emphasis class="keywordflow">in</emphasis>&#32;valueParts)&#32;
+879 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+880 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">object</emphasis>&#32;partValue;
+881 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;enumFieldValue&#32;=&#32;0;
+882 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+883 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+884 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_enumValues.TryGetValue(valuePart.Trim(),&#32;out&#32;partValue))
+885 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+886 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;enumFieldValue&#32;=&#32;global::System.Convert.ToInt32(partValue);
+887 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+888 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+889 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+890 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+891 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+892 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;enumFieldValue&#32;=&#32;global::System.Convert.ToInt32(valuePart.Trim());
+893 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+894 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>(&#32;global::System.FormatException&#32;)
+895 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+896 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>(&#32;<emphasis class="keywordtype">string</emphasis>&#32;key&#32;<emphasis class="keywordflow">in</emphasis>&#32;_enumValues.Keys&#32;)
+897 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+898 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(&#32;<emphasis class="keywordtype">string</emphasis>.Compare(valuePart.Trim(),&#32;key,&#32;global::System.StringComparison.OrdinalIgnoreCase)&#32;==&#32;0&#32;)
+899 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+900 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(&#32;_enumValues.TryGetValue(key.Trim(),&#32;out&#32;partValue)&#32;)
+901 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+902 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;enumFieldValue&#32;=&#32;global::System.Convert.ToInt32(partValue);
+903 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+904 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+905 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+906 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+907 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+908 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+909 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;value&#32;|=&#32;enumFieldValue;&#32;
+910 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+911 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>(&#32;global::System.FormatException&#32;)
+912 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+913 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.ArgumentException(input,&#32;FullName);
+914 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+915 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+916 
+917 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;value;&#32;
+918 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+919 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.ArgumentException(input,&#32;FullName);
+920 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+921 
+922 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;---&#32;End&#32;of&#32;Interface&#32;methods</emphasis>
+923 
+924 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a394dfc6084b9bf4d6e1e8c58fee1568c">Activator</link>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a394dfc6084b9bf4d6e1e8c58fee1568c">Activator</link>&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+925 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a7a60ef4172b18f49847b5217c8262cc2">AddToCollection</link>&#32;CollectionAdd&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+926 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1a4438d95d99415a133671c7f858813537">AddToDictionary</link>&#32;DictionaryAdd&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+927 
+928 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetContentPropertyName(<emphasis class="keywordtype">string</emphasis>&#32;contentPropertyName)
+929 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+930 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_contentPropertyName&#32;=&#32;contentPropertyName;
+931 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+932 
+933 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetIsArray()
+934 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+935 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_isArray&#32;=&#32;<emphasis class="keyword">true</emphasis>;&#32;
+936 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+937 
+938 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetIsMarkupExtension()
+939 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+940 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_isMarkupExtension&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+941 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+942 
+943 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetIsBindable()
+944 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+945 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_isBindable&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+946 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+947 
+948 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetIsReturnTypeStub()
+949 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+950 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_isReturnTypeStub&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+951 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+952 
+953 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetIsLocalType()
+954 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+955 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_isLocalType&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+956 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+957 
+958 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetItemTypeName(<emphasis class="keywordtype">string</emphasis>&#32;itemTypeName)
+959 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+960 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_itemTypeName&#32;=&#32;itemTypeName;
+961 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+962 
+963 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetKeyTypeName(<emphasis class="keywordtype">string</emphasis>&#32;keyTypeName)
+964 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+965 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_keyTypeName&#32;=&#32;keyTypeName;
+966 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+967 
+968 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;AddMemberName(<emphasis class="keywordtype">string</emphasis>&#32;shortName)
+969 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+970 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(_memberNames&#32;==&#32;null)
+971 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+972 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_memberNames&#32;=&#32;&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Collections.Generic.Dictionary&lt;string,<emphasis class="keywordtype">string</emphasis>&gt;();
+973 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+974 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_memberNames.Add(shortName,&#32;FullName&#32;+&#32;<emphasis class="stringliteral">&quot;.&quot;</emphasis>&#32;+&#32;shortName);
+975 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+976 
+977 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;AddEnumValue(<emphasis class="keywordtype">string</emphasis>&#32;name,&#32;<emphasis class="keywordtype">object</emphasis>&#32;value)
+978 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+979 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_enumValues&#32;==&#32;null)
+980 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+981 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_enumValues&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Collections.Generic.Dictionary&lt;string,&#32;<emphasis class="keywordtype">object</emphasis>&gt;();
+982 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+983 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_enumValues.Add(name,&#32;value);
+984 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+985 &#32;&#32;&#32;&#32;}
+986 
+987 &#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;delegate&#32;<emphasis class="keywordtype">object</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ab918ceccf053fbc6ff1cc7a2bb93b02e">Getter</link>(<emphasis class="keywordtype">object</emphasis>&#32;instance);
+988 &#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;delegate&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ace3ed4575f2d5e8db886330515f38268">Setter</link>(<emphasis class="keywordtype">object</emphasis>&#32;instance,&#32;<emphasis class="keywordtype">object</emphasis>&#32;value);
+989 
+990 &#32;&#32;&#32;&#32;
+991 &#32;&#32;&#32;&#32;[<link linkend="d8/dd0/namespace_system">System</link>.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;4.0.0.0&quot;</emphasis>)]&#32;&#32;&#32;&#32;
+992 &#32;&#32;&#32;&#32;[<link linkend="d8/dd0/namespace_system">System</link>.Diagnostics.DebuggerNonUserCodeAttribute()]
+993 &#32;&#32;&#32;&#32;<emphasis class="keyword">internal</emphasis>&#32;<emphasis class="keyword">class&#32;</emphasis>XamlMember&#32;:&#32;global::Windows.UI.Xaml.Markup.IXamlMember
+994 &#32;&#32;&#32;&#32;{
+995 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider&#32;_provider;
+996 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;_name;
+997 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_isAttachable;
+998 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_isDependencyProperty;
+999 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_isReadOnly;
+1000 
+1001 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;_typeName;
+1002 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;_targetTypeName;
+1003 
+1004 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;XamlMember(global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider&#32;provider,&#32;<emphasis class="keywordtype">string</emphasis>&#32;name,&#32;<emphasis class="keywordtype">string</emphasis>&#32;typeName)
+1005 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+1006 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_name&#32;=&#32;name;
+1007 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_typeName&#32;=&#32;typeName;
+1008 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_provider&#32;=&#32;provider;
+1009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+1010 
+1011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Name&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_name;&#32;}&#32;}
+1012 
+1013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;Type
+1014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+1015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_provider.GetXamlTypeByName(_typeName);&#32;}
+1016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+1017 
+1018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetTargetTypeName(<emphasis class="keywordtype">string</emphasis>&#32;targetTypeName)
+1019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+1020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_targetTypeName&#32;=&#32;targetTypeName;
+1021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+1022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;global::Windows.UI.Xaml.Markup.IXamlType&#32;TargetType
+1023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+1024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_provider.GetXamlTypeByName(_targetTypeName);&#32;}
+1025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+1026 
+1027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetIsAttachable()&#32;{&#32;_isAttachable&#32;=&#32;<emphasis class="keyword">true</emphasis>;&#32;}
+1028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsAttachable&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_isAttachable;&#32;}&#32;}
+1029 
+1030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetIsDependencyProperty()&#32;{&#32;_isDependencyProperty&#32;=&#32;<emphasis class="keyword">true</emphasis>;&#32;}
+1031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsDependencyProperty&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_isDependencyProperty;&#32;}&#32;}
+1032 
+1033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetIsReadOnly()&#32;{&#32;_isReadOnly&#32;=&#32;<emphasis class="keyword">true</emphasis>;&#32;}
+1034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;IsReadOnly&#32;{&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;_isReadOnly;&#32;}&#32;}
+1035 
+1036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ab918ceccf053fbc6ff1cc7a2bb93b02e">Getter</link>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ab918ceccf053fbc6ff1cc7a2bb93b02e">Getter</link>&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+1037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">object</emphasis>&#32;GetValue(<emphasis class="keywordtype">object</emphasis>&#32;instance)
+1038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+1039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ab918ceccf053fbc6ff1cc7a2bb93b02e">Getter</link>&#32;!=&#32;null)
+1040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ab918ceccf053fbc6ff1cc7a2bb93b02e">Getter</link>(instance);
+1041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+1042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.InvalidOperationException(<emphasis class="stringliteral">&quot;GetValue&quot;</emphasis>);
+1043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+1044 
+1045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ace3ed4575f2d5e8db886330515f38268">Setter</link>&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ace3ed4575f2d5e8db886330515f38268">Setter</link>&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+1046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;SetValue(<emphasis class="keywordtype">object</emphasis>&#32;instance,&#32;<emphasis class="keywordtype">object</emphasis>&#32;value)
+1047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+1048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ace3ed4575f2d5e8db886330515f38268">Setter</link>&#32;!=&#32;null)
+1049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d9/d9a/namespace_app_store_1_1_app_store___xaml_type_info_1ace3ed4575f2d5e8db886330515f38268">Setter</link>(instance,&#32;value);
+1050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+1051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.InvalidOperationException(<emphasis class="stringliteral">&quot;SetValue&quot;</emphasis>);
+1052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+1053 &#32;&#32;&#32;&#32;}
+1054 }
+1055 
+1056 
+    </computeroutput></literallayout>
+</section>

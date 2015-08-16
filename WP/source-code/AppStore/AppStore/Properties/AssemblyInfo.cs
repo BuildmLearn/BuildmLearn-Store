@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AppStore")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("BuildmLearn AppStore is a store for educational mobile apps created using BuildmLearn Toolkit. Anyone using the BuildmLearn AppStore will have access to all published applications. This application also have various templates using which the apps can be rendered.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hewlett-Packard")]
+[assembly: AssemblyCompany("BuildmLearn")]
 [assembly: AssemblyProduct("AppStore")]
-[assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2015")]
+[assembly: AssemblyCopyright("Copyright © BuildmLearn 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

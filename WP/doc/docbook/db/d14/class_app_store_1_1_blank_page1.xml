@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d14/class_app_store_1_1_blank_page1">
+<title>AppStore::BlankPage1 class Reference</title>
+<para>Inheritance diagram for AppStore::BlankPage1</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d07/class_app_store_1_1_blank_page1__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::BlankPage1</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d5e/class_app_store_1_1_blank_page1__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _contentLoaded</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d14/class_app_store_1_1_blank_page1_1a6279cb4f0dc4f12e2864e4d488a9c6b7">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d14/class_app_store_1_1_blank_page1_1adeb14943bccf665bae68653863eef46d">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/d14/class_app_store_1_1_blank_page1_1a6279cb4f0dc4f12e2864e4d488a9c6b7">
+                <title>void AppStore.BlankPage1.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d14/class_app_store_1_1_blank_page1_1adeb14943bccf665bae68653863eef46d">
+                <title>void AppStore.BlankPage1.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

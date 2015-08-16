@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/de3/_blank_page1_8g_8cs">
+    <title>BlankPage1.g.cs File Reference</title>
+<para>Include dependency diagram for BlankPage1.g.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d8c/_blank_page1_8g_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for BlankPage1.g.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d3c/_blank_page1_8g_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d14/class_app_store_1_1_blank_page1">AppStore::BlankPage1</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/Release/BlankPage1.g.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 
+3 <emphasis class="preprocessor">#pragma&#32;checksum&#32;&quot;C:\Users\Srujan&#32;Jha\Documents\Visual&#32;Studio&#32;2015\Projects\BuildmLearnStore\AppStore\AppStore\BlankPage1.xaml&quot;&#32;&quot;{406ea660-64cf-4c82-b6f0-42d48172a799}&quot;&#32;&quot;6B9F282BE9F12B0645C9A00BFC9629A9&quot;</emphasis>
+4 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+5 <emphasis class="comment">//&#32;&lt;auto-generated&gt;</emphasis>
+6 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;This&#32;code&#32;was&#32;generated&#32;by&#32;a&#32;tool.</emphasis>
+7 <emphasis class="comment">//</emphasis>
+8 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;Changes&#32;to&#32;this&#32;file&#32;may&#32;cause&#32;incorrect&#32;behavior&#32;and&#32;will&#32;be&#32;lost&#32;if</emphasis>
+9 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;the&#32;code&#32;is&#32;regenerated.</emphasis>
+10 <emphasis class="comment">//&#32;&lt;/auto-generated&gt;</emphasis>
+11 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+12 
+13 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+14 {
+<link linkend="db/d14/class_app_store_1_1_blank_page1">15 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis><link linkend="db/d14/class_app_store_1_1_blank_page1">BlankPage1</link>&#32;:&#32;global::Windows.UI.Xaml.Controls.Page,&#32;global::Windows.UI.Xaml.Markup.IComponentConnector
+16 &#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+19 &#32;
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="db/d14/class_app_store_1_1_blank_page1_1a6279cb4f0dc4f12e2864e4d488a9c6b7">Connect</link>(<emphasis class="keywordtype">int</emphasis>&#32;connectionId,&#32;<emphasis class="keywordtype">object</emphasis>&#32;target)
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="db/d14/class_app_store_1_1_blank_page1_1a5bfdc4bf0ae9b15182558df7a50f8111">_contentLoaded</link>&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+24 &#32;&#32;&#32;&#32;}
+25 }
+26 
+27 
+    </computeroutput></literallayout>
+</section>

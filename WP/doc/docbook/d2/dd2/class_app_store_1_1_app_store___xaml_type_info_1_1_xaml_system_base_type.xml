@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type">
+<title>AppStore::AppStore_XamlTypeInfo::XamlSystemBaseType class Reference</title>
+<para>Inheritance diagram for AppStore::AppStore_XamlTypeInfo::XamlSystemBaseType</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/dd8/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::AppStore_XamlTypeInfo::XamlSystemBaseType</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d8c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string _fullName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::System.Type _underlyingType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a5ad1c6b00f475dd16ad5a93830c83107">XamlSystemBaseType</link> (
+string fullName, global::System.Type underlyingType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual global::Windows.UI.Xaml.Markup.IXamlMember <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a7bee0251bf04f76e994fdf0d61ddde9d">GetMember</link> (
+string name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual object <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a101ecdbd2d8551fe5022d6aa3fe48b20">ActivateInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a31a4343e0e7868bfbab95ca861fe5823">AddToMap</link> (
+object instance, object key, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a2e333c68e8295d1b18155fc3b0f23437">AddToVector</link> (
+object instance, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1aa984b694e3cd307f0d130ca860585fd0">RunInitializer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual object <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a4806f4aa9306ac2344e7b56c2192b974">CreateFromString</link> (
+string input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a5ad1c6b00f475dd16ad5a93830c83107">XamlSystemBaseType</link> (
+string fullName, global::System.Type underlyingType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual global::Windows.UI.Xaml.Markup.IXamlMember <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a7bee0251bf04f76e994fdf0d61ddde9d">GetMember</link> (
+string name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual object <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a101ecdbd2d8551fe5022d6aa3fe48b20">ActivateInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a31a4343e0e7868bfbab95ca861fe5823">AddToMap</link> (
+object instance, object key, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a2e333c68e8295d1b18155fc3b0f23437">AddToVector</link> (
+object instance, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1aa984b694e3cd307f0d130ca860585fd0">RunInitializer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual object <link linkend="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a4806f4aa9306ac2344e7b56c2192b974">CreateFromString</link> (
+string input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a5ad1c6b00f475dd16ad5a93830c83107">
+                <title>AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.XamlSystemBaseType (string fullName, global::System.Type underlyingType)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a7bee0251bf04f76e994fdf0d61ddde9d">
+                <title>virtual global::Windows.UI.Xaml.Markup.IXamlMember AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.GetMember (string name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a101ecdbd2d8551fe5022d6aa3fe48b20">
+                <title>virtual object AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.ActivateInstance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a31a4343e0e7868bfbab95ca861fe5823">
+                <title>virtual void AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.AddToMap (object instance, object key, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a2e333c68e8295d1b18155fc3b0f23437">
+                <title>virtual void AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.AddToVector (object instance, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1aa984b694e3cd307f0d130ca860585fd0">
+                <title>virtual void AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.RunInitializer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a4806f4aa9306ac2344e7b56c2192b974">
+                <title>virtual object AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.CreateFromString (string input)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a5ad1c6b00f475dd16ad5a93830c83107">
+                <title>AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.XamlSystemBaseType (string fullName, global::System.Type underlyingType)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a7bee0251bf04f76e994fdf0d61ddde9d">
+                <title>virtual global::Windows.UI.Xaml.Markup.IXamlMember AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.GetMember (string name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a101ecdbd2d8551fe5022d6aa3fe48b20">
+                <title>virtual object AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.ActivateInstance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a31a4343e0e7868bfbab95ca861fe5823">
+                <title>virtual void AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.AddToMap (object instance, object key, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a2e333c68e8295d1b18155fc3b0f23437">
+                <title>virtual void AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.AddToVector (object instance, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1aa984b694e3cd307f0d130ca860585fd0">
+                <title>virtual void AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.RunInitializer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type_1a4806f4aa9306ac2344e7b56c2192b974">
+                <title>virtual object AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.CreateFromString (string input)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

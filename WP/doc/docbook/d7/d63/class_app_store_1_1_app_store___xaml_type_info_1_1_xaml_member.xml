@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member">
+<title>AppStore::AppStore_XamlTypeInfo::XamlMember class Reference</title>
+<para>Inheritance diagram for AppStore::AppStore_XamlTypeInfo::XamlMember</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/de9/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::AppStore_XamlTypeInfo::XamlMember</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d20/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider _provider</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string _name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _isAttachable</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _isDependencyProperty</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _isReadOnly</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string _typeName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string _targetTypeName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a7726528570c075f0a9c19a822e12eaff">XamlMember</link> (
+global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a3683f97d9334a1dd86df9a158aca6960">SetTargetTypeName</link> (
+string targetTypeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a29a1b34dc7f0b7c59e047a2fdd5b9212">SetIsAttachable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1ad1c51570d886782acee4412c6f1219a3">SetIsDependencyProperty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a96adc90c3fb36fe8cba910aa5e869ce3">SetIsReadOnly</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1aff3b9813e030b193ebaef4ff10245947">GetValue</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1aa44fbb17b478de43bc5f7f38c6ad4774">SetValue</link> (
+object instance, object value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a7726528570c075f0a9c19a822e12eaff">XamlMember</link> (
+global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a3683f97d9334a1dd86df9a158aca6960">SetTargetTypeName</link> (
+string targetTypeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a29a1b34dc7f0b7c59e047a2fdd5b9212">SetIsAttachable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1ad1c51570d886782acee4412c6f1219a3">SetIsDependencyProperty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a96adc90c3fb36fe8cba910aa5e869ce3">SetIsReadOnly</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1aff3b9813e030b193ebaef4ff10245947">GetValue</link> (
+object instance)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1aa44fbb17b478de43bc5f7f38c6ad4774">SetValue</link> (
+object instance, object value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a7726528570c075f0a9c19a822e12eaff">
+                <title>AppStore.AppStore_XamlTypeInfo.XamlMember.XamlMember (global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a3683f97d9334a1dd86df9a158aca6960">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetTargetTypeName (string targetTypeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a29a1b34dc7f0b7c59e047a2fdd5b9212">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetIsAttachable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1ad1c51570d886782acee4412c6f1219a3">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetIsDependencyProperty ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a96adc90c3fb36fe8cba910aa5e869ce3">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetIsReadOnly ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1aff3b9813e030b193ebaef4ff10245947">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlMember.GetValue (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1aa44fbb17b478de43bc5f7f38c6ad4774">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetValue (object instance, object value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a7726528570c075f0a9c19a822e12eaff">
+                <title>AppStore.AppStore_XamlTypeInfo.XamlMember.XamlMember (global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a3683f97d9334a1dd86df9a158aca6960">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetTargetTypeName (string targetTypeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a29a1b34dc7f0b7c59e047a2fdd5b9212">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetIsAttachable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1ad1c51570d886782acee4412c6f1219a3">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetIsDependencyProperty ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1a96adc90c3fb36fe8cba910aa5e869ce3">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetIsReadOnly ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1aff3b9813e030b193ebaef4ff10245947">
+                <title>object AppStore.AppStore_XamlTypeInfo.XamlMember.GetValue (object instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member_1aa44fbb17b478de43bc5f7f38c6ad4774">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlMember.SetValue (object instance, object value)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

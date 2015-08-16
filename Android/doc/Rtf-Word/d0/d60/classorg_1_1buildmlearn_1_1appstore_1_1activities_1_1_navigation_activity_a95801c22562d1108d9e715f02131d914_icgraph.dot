@@ -1,0 +1,11 @@
+digraph "org.buildmlearn.appstore.activities.NavigationActivity.sendEmail"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="org.buildmlearn.appstore.activities.\lNavigationActivity.sendEmail",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="org.buildmlearn.appstore.activities.\lNavigationActivity.onCreate",height=0.2,width=0.4,color="black",URL="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#ac91b6839b81f831ca5accce5fb956f16",tooltip="The method is executed first when the activity is created. "];
+}

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dcd/class_app_store_1_1_models_1_1_app_list">
+<title>AppStore::Models::AppList class Reference</title>
+<para>Inheritance diagram for AppStore::Models::AppList</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/ddb/class_app_store_1_1_models_1_1_app_list__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::AppList</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d98/class_app_store_1_1_models_1_1_app_list__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static AppList obAppList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Apps &gt; myappList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Apps &gt; appList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link> <link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1afdcb2f70903d78954773ca54d5075876">getAppList</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the list of all the apps in BuildmLearn Store.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link> <link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a7272c3ebe6aa36dd13b2c093c1b8dc2e">getMyAppList</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the list of all the installed apps form BuildmLearn Store.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1aff4783fde4c8638e15eb226854b3a420">AppList</link> (
+)<para><emphasis>&lt;summary&gt;
+Public Constructor
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model which contains the list of all the apps both installed and else. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 9 of file AppList.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>AppList.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/dcd/class_app_store_1_1_models_1_1_app_list_1afdcb2f70903d78954773ca54d5075876">
+                <title>static AppList AppStore.Models.AppList.getAppList ()</title> <emphasis>&lt;summary&gt;
+Gets the list of all the apps in BuildmLearn Store.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the <link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a7272c3ebe6aa36dd13b2c093c1b8dc2e">
+                <title>static AppList AppStore.Models.AppList.getMyAppList ()</title> <emphasis>&lt;summary&gt;
+Gets the list of all the installed apps form BuildmLearn Store.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="dc/dcd/class_app_store_1_1_models_1_1_app_list_1aff4783fde4c8638e15eb226854b3a420">
+                <title>AppStore.Models.AppList.AppList ()</title> <emphasis>&lt;summary&gt;
+Public Constructor
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>

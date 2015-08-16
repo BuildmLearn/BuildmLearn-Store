@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args">
+<title>AppStore::Common::ObservableDictionary::ObservableDictionaryChangedEventArgs class Reference</title>
+<para>Inheritance diagram for AppStore::Common::ObservableDictionary::ObservableDictionaryChangedEventArgs</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d05/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::ObservableDictionary::ObservableDictionaryChangedEventArgs</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/d23/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args_1aeb8a4876ebcd8eeb227899a761700c07">ObservableDictionaryChangedEventArgs</link> (
+<link linkend="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args_1ab53ba4f188e11a98b8cc4eb178949bc6">CollectionChange</link> change, string key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para><link linkend="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args">ObservableDictionaryChangedEventArgs</link> </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 18 of file ObservableDictionary.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>ObservableDictionary.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args_1aeb8a4876ebcd8eeb227899a761700c07">
+                <title>AppStore.Common.ObservableDictionary.ObservableDictionaryChangedEventArgs.ObservableDictionaryChangedEventArgs (CollectionChange change, string key)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

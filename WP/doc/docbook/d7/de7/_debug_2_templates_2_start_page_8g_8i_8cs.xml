@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/de7/_debug_2_templates_2_start_page_8g_8i_8cs">
+    <title>StartPage.g.i.cs File Reference</title>
+<para>Include dependency diagram for StartPage.g.i.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d92/_debug_2_templates_2_start_page_8g_8i_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for StartPage.g.i.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d49/_debug_2_templates_2_start_page_8g_8i_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dd6/class_app_store_1_1_templates_1_1_start_page">AppStore::Templates::StartPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the StartPage of all the App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dab/namespace_app_store_1_1_templates">AppStore::Templates</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/Debug/Templates/StartPage.g.i.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 
+3 <emphasis class="preprocessor">#pragma&#32;checksum&#32;&quot;C:\Users\Srujan\Documents\Visual&#32;Studio&#32;2015\Projects\BuildmLearnStore\AppStore\AppStore\Templates\StartPage.xaml&quot;&#32;&quot;{406ea660-64cf-4c82-b6f0-42d48172a799}&quot;&#32;&quot;7E8AB767D6666DDA3631E84417481913&quot;</emphasis>
+4 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+5 <emphasis class="comment">//&#32;&lt;auto-generated&gt;</emphasis>
+6 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;This&#32;code&#32;was&#32;generated&#32;by&#32;a&#32;tool.</emphasis>
+7 <emphasis class="comment">//</emphasis>
+8 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;Changes&#32;to&#32;this&#32;file&#32;may&#32;cause&#32;incorrect&#32;behavior&#32;and&#32;will&#32;be&#32;lost&#32;if</emphasis>
+9 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;the&#32;code&#32;is&#32;regenerated.</emphasis>
+10 <emphasis class="comment">//&#32;&lt;/auto-generated&gt;</emphasis>
+11 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+12 
+13 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Templates
+14 {
+15 &#32;&#32;&#32;&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>StartPage&#32;:&#32;global::Windows.UI.Xaml.Controls.Page
+16 &#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;LayoutRoot;&#32;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;ContentRoot;&#32;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Button&#32;Start;&#32;
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;AppName;&#32;
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;AppAuthor;&#32;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Image&#32;AppLogo;&#32;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.CommandBar&#32;SecondaryTileCommandBar;&#32;
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.AppBarButton&#32;PinUnPinCommandButton;&#32;
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;_contentLoaded;
+35 
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;InitializeComponent()
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_contentLoaded)
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>;
+42 
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_contentLoaded&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::Windows.UI.Xaml.Application.LoadComponent(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Uri(<emphasis class="stringliteral">&quot;ms-appx:///Templates/StartPage.xaml&quot;</emphasis>),&#32;global::Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation.Application);
+45 &#32;
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;LayoutRoot&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;LayoutRoot&quot;</emphasis>);
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ContentRoot&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;ContentRoot&quot;</emphasis>);
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Start&#32;=&#32;(global::Windows.UI.Xaml.Controls.Button)this.FindName(<emphasis class="stringliteral">&quot;Start&quot;</emphasis>);
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AppName&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;AppName&quot;</emphasis>);
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AppAuthor&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;AppAuthor&quot;</emphasis>);
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AppLogo&#32;=&#32;(global::Windows.UI.Xaml.Controls.Image)this.FindName(<emphasis class="stringliteral">&quot;AppLogo&quot;</emphasis>);
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SecondaryTileCommandBar&#32;=&#32;(global::Windows.UI.Xaml.Controls.CommandBar)this.FindName(<emphasis class="stringliteral">&quot;SecondaryTileCommandBar&quot;</emphasis>);
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PinUnPinCommandButton&#32;=&#32;(global::Windows.UI.Xaml.Controls.AppBarButton)this.FindName(<emphasis class="stringliteral">&quot;PinUnPinCommandButton&quot;</emphasis>);
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+55 &#32;&#32;&#32;&#32;}
+56 }
+57 
+58 
+59 
+    </computeroutput></literallayout>
+</section>

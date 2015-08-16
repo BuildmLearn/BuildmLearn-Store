@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page">
+<title>AppStore::Templates::FlashCardPage class Reference</title>
+<para>Inheritance diagram for AppStore::Templates::FlashCardPage</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d65/class_app_store_1_1_templates_1_1_flash_card_page__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Templates::FlashCardPage</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/d02/class_app_store_1_1_templates_1_1_flash_card_page__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Grid LayoutRoot</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Grid ContentRoot</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock FlashNumber</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock FlashQuestion</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Border frontCard</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Border backCard</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock FlashHint</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button Previous</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button Flip</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button Next</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock FlashText</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Image FlashCard</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock pageTitle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.VisualStateGroup VisualStateGroup</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.VisualState FlipCardFront</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.VisualState FlipCardBack</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _contentLoaded</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>NavigationHelper navigationHelper</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ObservableDictionary defaultViewModel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Models.FlashModel flash</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int iQuestionIndex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool isFlipped</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1ab32af07a43db9485990be843932a923f">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a979ec6b1bb7c790ce8f9db19b7551338">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1ab32af07a43db9485990be843932a923f">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a979ec6b1bb7c790ce8f9db19b7551338">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a778d516406abb0385274ebb7475dfd65">FlashCardPage</link> (
+)<para><emphasis>&lt;summary&gt;
+Public Construtor to the FlashCardPage.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>async void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1aa90e4efdc4ecb2a197089c841a62a138">populateQuestion</link> (
+int index)<para><emphasis>&lt;summary&gt;
+It populates the flash card question of the index passed to the current view.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a26c8ff3cf68fd1d723902f2d1639ec82">NavigationHelper_LoadState</link> (
+object sender, <link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Populates the page with content passed during navigation.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1abcb0936bcd38e6754b99e910571c5bfb">NavigationHelper_SaveState</link> (
+object sender, <link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Preserves state associated with this page in case the application is suspended or the
+page is discarded from the navigation cache.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a9a9b0fad908fe045e70d6b0cddf3e76f">Previous_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Previous Button is tapped.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a16c32f09bde213e735ee180548b580f5">Flip_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Flip Button is tapped.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1ab38a184dc6f6cd1e22c966881a8983d6">Next_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Next Button is tapped.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a1eb1d2d8588fe86816bb3955c0f06043">OnNavigatedTo</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a2c49fb7c9e3f3b91132380644deb4904">OnNavigatedFrom</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static async System.Threading.Tasks.Task&lt; BitmapImage &gt; <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a2b9132ca84d1347f67a1b1ffc20f159a">base64image</link> (
+string base64string)<para><emphasis>&lt;summary&gt;
+It converts string in Base64 to the Bitmap image.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>This page deals with the Flash-Card <link linkend="d9/d36/class_app_store_1_1_app">App</link> template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 16 of file FlashCardPage.g.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>FlashCardPage.g.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1ab32af07a43db9485990be843932a923f">
+                <title>void AppStore.Templates.FlashCardPage.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a979ec6b1bb7c790ce8f9db19b7551338">
+                <title>void AppStore.Templates.FlashCardPage.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1ab32af07a43db9485990be843932a923f">
+                <title>void AppStore.Templates.FlashCardPage.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a979ec6b1bb7c790ce8f9db19b7551338">
+                <title>void AppStore.Templates.FlashCardPage.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a778d516406abb0385274ebb7475dfd65">
+                <title>AppStore.Templates.FlashCardPage.FlashCardPage ()</title> <emphasis>&lt;summary&gt;
+Public Construtor to the FlashCardPage.</emphasis>
+                
+<para>Populates the views pertaining to this page. </para>
+
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1aa90e4efdc4ecb2a197089c841a62a138">
+                <title>async void AppStore.Templates.FlashCardPage.populateQuestion (int index)</title> <emphasis>&lt;summary&gt;
+It populates the flash card question of the index passed to the current view.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>index</entry>
+                                <entry>
+<para>The index of flash card, which is to be populated in the view</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a26c8ff3cf68fd1d723902f2d1639ec82">
+                <title>void AppStore.Templates.FlashCardPage.NavigationHelper_LoadState (object sender, LoadStateEventArgs e)</title> <emphasis>&lt;summary&gt;
+Populates the page with content passed during navigation.</emphasis>
+                
+<para>Any saved state is also provided when recreating a page from a prior session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>The source of the event; typically <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a5f9740e12978747d1d443e73168e3bcd">NavigationHelper</link> </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that provides both the navigation parameter passed to Frame.Navigate(Type, Object) when this page was initially requested and a dictionary of state preserved by this page during an earlier session. The state will be null the first time a page is visited.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1abcb0936bcd38e6754b99e910571c5bfb">
+                <title>void AppStore.Templates.FlashCardPage.NavigationHelper_SaveState (object sender, SaveStateEventArgs e)</title> <emphasis>&lt;summary&gt;
+Preserves state associated with this page in case the application is suspended or the
+page is discarded from the navigation cache.</emphasis>
+                
+<para>Values must conform to the serialization requirements of SuspensionManager.SessionState. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>The source of the event; typically <link linkend="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a5f9740e12978747d1d443e73168e3bcd">NavigationHelper</link></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that provides an empty dictionary to be populated with serializable state.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a9a9b0fad908fe045e70d6b0cddf3e76f">
+                <title>void AppStore.Templates.FlashCardPage.Previous_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Previous Button is tapped.</emphasis>
+                
+<para>It populates previous flash card question to the view. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a16c32f09bde213e735ee180548b580f5">
+                <title>void AppStore.Templates.FlashCardPage.Flip_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Flip Button is tapped.</emphasis>
+                
+<para>It flips the flash card in the view. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1ab38a184dc6f6cd1e22c966881a8983d6">
+                <title>void AppStore.Templates.FlashCardPage.Next_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Next Button is tapped.</emphasis>
+                
+<para>It populates next flash card question to the view. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a1eb1d2d8588fe86816bb3955c0f06043">
+                <title>override void AppStore.Templates.FlashCardPage.OnNavigatedTo (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis>
+                
+<para><link linkend="db/d2f/class_page">Page</link> specific logic should be placed in event handlers for the NavigationHelper.LoadState and NavigationHelper.SaveState. The navigation parameter is available in the LoadState method in addition to page state preserved during an earlier session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Provides data for navigation methods and event handlers that cannot cancel the navigation request.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a2c49fb7c9e3f3b91132380644deb4904">
+                <title>override void AppStore.Templates.FlashCardPage.OnNavigatedFrom (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis>
+                
+<para><link linkend="db/d2f/class_page">Page</link> specific logic should be placed in event handlers for the NavigationHelper.LoadState and NavigationHelper.SaveState. The navigation parameter is available in the LoadState method in addition to page state preserved during an earlier session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Provides data for navigation methods and event handlers that cannot cancel the navigation request.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d5/dab/class_app_store_1_1_templates_1_1_flash_card_page_1a2b9132ca84d1347f67a1b1ffc20f159a">
+                <title>static async System.Threading.Tasks.Task&lt;BitmapImage&gt; AppStore.Templates.FlashCardPage.base64image (string base64string)</title> <emphasis>&lt;summary&gt;
+It converts string in Base64 to the Bitmap image.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>base64string</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+</section>

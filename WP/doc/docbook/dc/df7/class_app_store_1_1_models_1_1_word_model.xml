@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/df7/class_app_store_1_1_models_1_1_word_model">
+<title>AppStore::Models::WordModel class Reference</title>
+<para>Inheritance diagram for AppStore::Models::WordModel</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/dc0/class_app_store_1_1_models_1_1_word_model__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::WordModel</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dd1/class_app_store_1_1_models_1_1_word_model__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mWord</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mDescription</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model_1a8607da2a2713171589b623100d10fc92">WordModel</link> (
+string word, string description)<para><emphasis>&lt;summary&gt;
+Public Construtor to the model.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model_1a00b24df1426e5406c27aae4c4d2d0e4c">getWord</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the word with the WordModel object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model_1a96a34fdc6bdcda3805bb65a1487467c9">setWord</link> (
+string mWord)<para><emphasis>&lt;summary&gt;
+Sets the word to the WordModel object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model_1a62c8068a19bae66c6f8bfe4fbc9430c5">getDescription</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the description with the WordModel object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model_1a20a3e8c9dff0e6e64f5e91073e7e4a06">setDescription</link> (
+string mDescription)<para><emphasis>&lt;summary&gt;
+Sets the description to the WordModel object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model for the Spelings App-Template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 7 of file WordModel.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>WordModel.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/df7/class_app_store_1_1_models_1_1_word_model_1a8607da2a2713171589b623100d10fc92">
+                <title>AppStore.Models.WordModel.WordModel (string word, string description)</title> <emphasis>&lt;summary&gt;
+Public Construtor to the model.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>word</entry>
+                                <entry>
+<para>String Word</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>description</entry>
+                                <entry>
+<para>String Description</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/df7/class_app_store_1_1_models_1_1_word_model_1a00b24df1426e5406c27aae4c4d2d0e4c">
+                <title>string AppStore.Models.WordModel.getWord ()</title> <emphasis>&lt;summary&gt;
+Gets the word with the WordModel object.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the word</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="dc/df7/class_app_store_1_1_models_1_1_word_model_1a96a34fdc6bdcda3805bb65a1487467c9">
+                <title>void AppStore.Models.WordModel.setWord (string mWord)</title> <emphasis>&lt;summary&gt;
+Sets the word to the WordModel object.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mWord</entry>
+                                <entry>
+<para>String word</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dc/df7/class_app_store_1_1_models_1_1_word_model_1a62c8068a19bae66c6f8bfe4fbc9430c5">
+                <title>string AppStore.Models.WordModel.getDescription ()</title> <emphasis>&lt;summary&gt;
+Gets the description with the WordModel object.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="dc/df7/class_app_store_1_1_models_1_1_word_model_1a20a3e8c9dff0e6e64f5e91073e7e4a06">
+                <title>void AppStore.Models.WordModel.setDescription (string mDescription)</title> <emphasis>&lt;summary&gt;
+Sets the description to the WordModel object.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mDescription</entry>
+                                <entry>
+<para>String description</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

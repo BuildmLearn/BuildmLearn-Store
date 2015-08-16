@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dd7/_quiz_model_8cs">
+    <title>QuizModel.cs File Reference</title>
+<para>Include dependency diagram for QuizModel.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/dd2/_quiz_model_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for QuizModel.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/dbf/_quiz_model_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">AppStore::Models::QuizModel</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Quiz App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/QuizModel.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+2 
+3 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+4 {
+<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">8 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>
+9 &#32;&#32;&#32;&#32;{
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mQuizName;
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mQuizAuthor;
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mQuizDescription;
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mQuizVersion;
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;mQuizAuthorEmail;
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;List&lt;Question&gt;&#32;mQueAnsList;
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;totalCorrect&#32;=&#32;0,&#32;totalWrong&#32;=&#32;0;
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>&#32;mQuizModel;
+18 
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;clearInstance()
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(mQuizModel&#32;!=&#32;null)
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mQuizModel.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a7329c0f44fb8602871a3499eb510d994">totalCorrect</link>&#32;=&#32;0;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mQuizModel.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1abc879a2e1212580b482cad72ac7a0aa5">totalWrong</link>&#32;=&#32;0;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+30 
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>&#32;getInstance()
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(mQuizModel&#32;==&#32;null)
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mQuizModel&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>();
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mQuizModel;
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;List&lt;Question&gt;&#32;getQueAnsList()
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mQueAnsList;
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+50 &#32;&#32;&#32;&#32;&#32;
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setQueAnsList(List&lt;Question&gt;&#32;mQueAnsList)
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mQueAnsList&#32;=&#32;mQueAnsList;
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+59 &#32;&#32;&#32;&#32;
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getQuizAuthor()
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mQuizAuthor;
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+68 &#32;&#32;&#32;&#32;
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setQuizAuthor(<emphasis class="keywordtype">string</emphasis>&#32;mQuizAuthor)
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mQuizAuthor&#32;=&#32;mQuizAuthor;
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+77 &#32;&#32;
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getQuizDescription()
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mQuizDescription;
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+86 &#32;&#32;&#32;
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setQuizDescription(<emphasis class="keywordtype">string</emphasis>&#32;mQuizDescription)
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mQuizDescription&#32;=&#32;mQuizDescription;
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+95 &#32;&#32;&#32;&#32;
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setQuizAuthorEmail(<emphasis class="keywordtype">string</emphasis>&#32;mQuizAuthorEmail)
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mQuizAuthorEmail&#32;=&#32;mQuizAuthorEmail;
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+104 &#32;&#32;&#32;
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getQuizVersion()
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mQuizVersion;
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+113 &#32;&#32;&#32;&#32;&#32;
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setQuizVersion(<emphasis class="keywordtype">string</emphasis>&#32;mQuizVersion)
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mQuizVersion&#32;=&#32;mQuizVersion;
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+122 &#32;&#32;&#32;&#32;&#32;
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;getQuizName()
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mQuizName;
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+131 &#32;&#32;&#32;&#32;
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setQuizName(<emphasis class="keywordtype">string</emphasis>&#32;mQuizName)
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mQuizName&#32;=&#32;mQuizName;
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+140 &#32;&#32;&#32;&#32;
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;getTotalWrong()
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;totalWrong;
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+149 &#32;&#32;&#32;&#32;
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setTotalWrong(<emphasis class="keywordtype">int</emphasis>&#32;totalWrong)
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.totalWrong&#32;=&#32;totalWrong;
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+158 &#32;&#32;&#32;&#32;
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;getTotalCorrect()
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;totalCorrect;
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+167 &#32;&#32;&#32;&#32;&#32;
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;setTotalCorrect(<emphasis class="keywordtype">int</emphasis>&#32;totalCorrect)
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.totalCorrect&#32;=&#32;totalCorrect;
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+176 &#32;&#32;&#32;&#32;}
+177 }
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,6 @@
+<map id="org.buildmlearn.appstore.fragments.TabStore.closeSearch" name="org.buildmlearn.appstore.fragments.TabStore.closeSearch">
+<area shape="rect" id="node2" href="$d8/dfa/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_home_activity.html#a1a3c72988991108cb3f2f70b345a1a0d" title="The method is executed first when the activity is created. " alt="" coords="286,5,509,47"/>
+<area shape="rect" id="node3" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a0d03e67c759108fd119b9e5ad2e48014" title="This method creates menu items to be shown on the Action Bar. " alt="" coords="831,93,1087,135"/>
+<area shape="rect" id="node4" href="$d8/dd4/classorg_1_1buildmlearn_1_1appstore_1_1fragments_1_1_tab_store.html#abe9f38b6bf9181eef441a1f89148a8a3" title="This method is called from the Navigation Activity, which controls all the search view..." alt="" coords="283,123,512,164"/>
+<area shape="rect" id="node5" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a205e1d750606e6ca55b3cb753fc6f9cc" title="This method sends the search query to respective active activities, to refresh their view with the cu..." alt="" coords="560,123,783,164"/>
+</map>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dbf/_info_page_8xaml_8cs">
+    <title>InfoPage.xaml.cs File Reference</title>
+<para>Include dependency diagram for InfoPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d22/_info_page_8xaml_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for InfoPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d34/_info_page_8xaml_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/dec/class_app_store_1_1_templates_1_1_info_page">AppStore::Templates::InfoPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the Info app tmeplate.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dab/namespace_app_store_1_1_templates">AppStore::Templates</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Templates/InfoPage.xaml.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="dd/d5e/namespace_app_store_1_1_common">Common</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Linq;
+4 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+5 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Navigation;
+6 
+7 <emphasis class="comment">//&#32;The&#32;Basic&#32;Page&#32;item&#32;template&#32;is&#32;documented&#32;at&#32;http://go.microsoft.com/fwlink/?LinkID=390556</emphasis>
+8 
+9 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Templates
+10 {
+14 &#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;sealed&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>InfoPage&#32;:&#32;<link linkend="db/d2f/class_page">Page</link>
+15 &#32;&#32;&#32;&#32;{
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;navigationHelper;
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;defaultViewModel&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>();
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;Models.InfoModel&#32;info;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;selectionWordList&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;infoTitle&#32;=&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>;
+21 
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;InfoPage()
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.InitializeComponent();
+28 
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>(<emphasis class="keyword">this</emphasis>);
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.LoadState&#32;+=&#32;this.NavigationHelper_LoadState;
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.SaveState&#32;+=&#32;this.NavigationHelper_SaveState;
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+33 
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.navigationHelper;&#32;}
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+41 
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;DefaultViewModel
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.defaultViewModel;&#32;}
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+50 
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;NavigationHelper_LoadState(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>&#32;e)
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+65 
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;NavigationHelper_SaveState(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>&#32;e)
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+77 
+78 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;NavigationHelper&#32;registration</emphasis>
+79 
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedTo(NavigationEventArgs&#32;e)
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;info&#32;=&#32;Models.InfoModel.getInstance();
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;infoTitle&#32;=&#32;info.getInfoName();
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pageTitle.Text&#32;=&#32;info.getInfoName();
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;InfoList.ItemsSource&#32;=&#32;info.getInfoTitleList();
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedTo(e);
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+101 
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedFrom(NavigationEventArgs&#32;e)
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedFrom(e);
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+119 
+120 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+121 
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;InfoList_ContainerContentChanging(ListViewBase&#32;sender,&#32;ContainerContentChangingEventArgs&#32;args)
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;args.Handled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(args.Phase&#32;!=&#32;0)
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="df/d70/class_exception">Exception</link>(<emphasis class="stringliteral">&quot;Not&#32;in&#32;phase&#32;0.&quot;</emphasis>);
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;word&#32;=&#32;args.Item.ToString();
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StackPanel&#32;templateRoot&#32;=&#32;(StackPanel)args.ItemContainer.ContentTemplateRoot;
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TextBlock&#32;wordTitle&#32;=&#32;(TextBlock)templateRoot.FindName(<emphasis class="stringliteral">&quot;InfoTitle&quot;</emphasis>);
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wordTitle.Text&#32;=&#32;word;
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+139 
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;InfoList_SelectionChanged(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;SelectionChangedEventArgs&#32;e)
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(selectionWordList)&#32;<emphasis class="keywordflow">return</emphasis>;
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Models.WordModel&#32;word&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Models.WordModel(info.getInfoTitleList().ElementAt(InfoList.SelectedIndex),
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;info.getInfoDescriptionList().ElementAt(InfoList.SelectedIndex));
+150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(typeof(InfoDetailPage),&#32;word);
+151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;selectionWordList&#32;=&#32;<emphasis class="keyword">true</emphasis>;&#32;InfoList.SelectedIndex&#32;=&#32;-1;&#32;selectionWordList&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+153 &#32;&#32;&#32;&#32;}
+154 }
+    </computeroutput></literallayout>
+</section>

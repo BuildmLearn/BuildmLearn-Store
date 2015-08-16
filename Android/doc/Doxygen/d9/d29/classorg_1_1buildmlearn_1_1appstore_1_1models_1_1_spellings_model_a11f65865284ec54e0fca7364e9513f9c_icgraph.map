@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.models.SpellingsModel.setTotalWrong" name="org.buildmlearn.appstore.models.SpellingsModel.setTotalWrong">
+<area shape="rect" id="node2" href="$d9/dca/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_spelling_activity.html#a884c149192fd5f2755969d659430c8c2" title="This method is called when the submit button is pressed. " alt="" coords="268,5,491,47"/>
+<area shape="rect" id="node3" href="$d9/dca/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_spelling_activity.html#abeccd03866d824b9744d7e8b84f1214d" title="This method is executed when next/skip button is pressed, hence it populates the next question in the..." alt="" coords="539,5,761,47"/>
+</map>

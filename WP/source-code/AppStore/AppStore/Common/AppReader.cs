@@ -2,15 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 using Windows.Data.Xml.Dom;
-using Windows.Storage;
-using Windows.UI.Popups;
 
 namespace AppStore.Common
 {
+    /// <summary>
+    /// This class deals with reading the App-Templates.
+    /// </summary>
     class AppReader
     {
         /*
@@ -63,7 +62,11 @@ namespace AppStore.Common
             return mFileList;
         }
         */
-        public async static void readInfoFile(string fileName)
+        /// <summary>
+        /// It reads the Info App-Template, from the .buildmlearn file.
+        /// </summary>
+        /// <param name="fileName">Name of the file</param>
+        public static void readInfoFile(string fileName)
         {
             try
             {
@@ -91,6 +94,11 @@ namespace AppStore.Common
             catch (Exception e)
             { }
         }
+
+        /// <summary>
+        /// It reads the Quiz App-Template, from the .buildmlearn file.
+        /// </summary>
+        /// <param name="fileName">Name of the file</param>
         public static void readQuizFile(string fileName)
         {
             try
@@ -124,6 +132,11 @@ namespace AppStore.Common
             }
             catch (Exception) { }
         }
+
+        /// <summary>
+        /// It reads the Spellings-Puzzle App-Template, from the .buildmlearn file.
+        /// </summary>
+        /// <param name="fileName">Name of the file</param>
         public static void readSpellingsFile(string fileName)
         {
             try
@@ -150,6 +163,11 @@ namespace AppStore.Common
             }
             catch (Exception) { }
         }
+
+        /// <summary>
+        /// It reads the Flash-Card App-Template, from the .buildmlearn file.
+        /// </summary>
+        /// <param name="fileName">Name of the file</param>
         public static void readFlashFile(string fileName)
         {
             try

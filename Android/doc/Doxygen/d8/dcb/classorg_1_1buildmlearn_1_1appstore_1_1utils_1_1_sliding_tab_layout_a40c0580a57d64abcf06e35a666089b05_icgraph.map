@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.utils.SlidingTabLayout.scrollToTab" name="org.buildmlearn.appstore.utils.SlidingTabLayout.scrollToTab">
+<area shape="rect" id="node2" href="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#a733343ec4e298086e01ae5df8a310152" title="This method is executed when the window is attached to the view. " alt="" coords="249,5,500,47"/>
+<area shape="rect" id="node3" href="$da/d65/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout_1_1_internal_view_pager_listener.html#a16ddc6a6eefc35a915964f0a785c6410" title="This method is executed when the page is scrolled/swiped in the view&#45;pager. " alt="" coords="260,71,489,127"/>
+<area shape="rect" id="node4" href="$da/d65/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout_1_1_internal_view_pager_listener.html#adb9d33fdfc05a7b2b6896e8aa47ca6cb" title="This method is executed when a page is selected. " alt="" coords="260,151,489,207"/>
+</map>

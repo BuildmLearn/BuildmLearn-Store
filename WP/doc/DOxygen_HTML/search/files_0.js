@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['app_2eg_2ecs',['App.g.cs',['../d5/d62/_debug_2_app_8g_8cs.html',1,'']]],
+  ['app_2eg_2ecs',['App.g.cs',['../d5/d6d/_release_2_app_8g_8cs.html',1,'']]],
+  ['app_2eg_2ecs',['App.g.cs',['../d2/d38/x86_2_debug_2_app_8g_8cs.html',1,'']]],
+  ['app_2eg_2ei_2ecs',['App.g.i.cs',['../d7/d83/_debug_2_app_8g_8i_8cs.html',1,'']]],
+  ['app_2eg_2ei_2ecs',['App.g.i.cs',['../d8/dea/_release_2_app_8g_8i_8cs.html',1,'']]],
+  ['app_2eg_2ei_2ecs',['App.g.i.cs',['../d2/d61/x86_2_debug_2_app_8g_8i_8cs.html',1,'']]],
+  ['app_2examl_2ecs',['App.xaml.cs',['../db/da1/_app_8xaml_8cs.html',1,'']]],
+  ['appcommon_2ecs',['AppCommon.cs',['../d3/d24/_app_common_8cs.html',1,'']]],
+  ['appdetails_2eg_2ecs',['AppDetails.g.cs',['../db/d56/_app_details_8g_8cs.html',1,'']]],
+  ['appdetails_2eg_2ei_2ecs',['AppDetails.g.i.cs',['../d5/d7f/_app_details_8g_8i_8cs.html',1,'']]],
+  ['appdetailspage_2eg_2ecs',['AppDetailsPage.g.cs',['../d7/df0/_release_2_app_details_page_8g_8cs.html',1,'']]],
+  ['appdetailspage_2eg_2ecs',['AppDetailsPage.g.cs',['../d4/d18/_debug_2_app_details_page_8g_8cs.html',1,'']]],
+  ['appdetailspage_2eg_2ei_2ecs',['AppDetailsPage.g.i.cs',['../dc/dea/_debug_2_app_details_page_8g_8i_8cs.html',1,'']]],
+  ['appdetailspage_2eg_2ei_2ecs',['AppDetailsPage.g.i.cs',['../dd/d49/_release_2_app_details_page_8g_8i_8cs.html',1,'']]],
+  ['appdetailspage_2examl_2ecs',['AppDetailsPage.xaml.cs',['../d6/de0/_app_details_page_8xaml_8cs.html',1,'']]],
+  ['appinstance_2ecs',['AppInstance.cs',['../d7/d86/_app_instance_8cs.html',1,'']]],
+  ['applist_2ecs',['AppList.cs',['../d5/ded/_app_list_8cs.html',1,'']]],
+  ['appreader_2ecs',['AppReader.cs',['../de/d87/_app_reader_8cs.html',1,'']]],
+  ['apps_2ecs',['Apps.cs',['../d7/d5b/_apps_8cs.html',1,'']]],
+  ['appspage_2eg_2ecs',['AppsPage.g.cs',['../d9/d6f/_apps_page_8g_8cs.html',1,'']]],
+  ['appspage_2eg_2ei_2ecs',['AppsPage.g.i.cs',['../d8/dba/_apps_page_8g_8i_8cs.html',1,'']]],
+  ['appspage_2examl_2ecs',['AppsPage.xaml.cs',['../dc/d2f/_apps_page_8xaml_8cs.html',1,'']]],
+  ['assemblyinfo_2ecs',['AssemblyInfo.cs',['../d7/d2f/_assembly_info_8cs.html',1,'']]]
+];

@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d78/class_app_store_1_1_settings_dialog">
+<title>AppStore::SettingsDialog class Reference</title>
+<para>Inheritance diagram for AppStore::SettingsDialog</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d84/class_app_store_1_1_settings_dialog__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::SettingsDialog</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d8e/class_app_store_1_1_settings_dialog__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBox featured_categories</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBox featured_apps</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _contentLoaded</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a3aabe7f5609c17f8545db4e76ad86598">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a1299225699f43c0ba4a4938fbdd32a1c">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a75760fc96b03e4d1da1005142597dabb">SettingsDialog</link> (
+)<para><emphasis>&lt;summary&gt;
+Public constructor for the SettingsDialog
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a40441e71d240466219aa4f5a752ac6a7">ContentDialog_PrimaryButtonClick</link> (
+<link linkend="d0/d7b/class_content_dialog">ContentDialog</link> sender, ContentDialogButtonClickEventArgs args)<para><emphasis>&lt;summary&gt;
+Method which is executed when the user taps on the &quot;apply&quot; button in the SettingsDialog.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d78/class_app_store_1_1_settings_dialog_1a82d5cb2618a4b2251ad336f6ecff7e7e">ContentDialog_SecondaryButtonClick</link> (
+<link linkend="d0/d7b/class_content_dialog">ContentDialog</link> sender, ContentDialogButtonClickEventArgs args)<para><emphasis>&lt;summary&gt;
+Method which is executed when the user taps on the &quot;cancel&quot; button in the SettingsDialog
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>This class deals with <link linkend="d4/d9d/class_app_store_1_1_settings">Settings</link> Dialog and implements all the important user-defined settings required by the app. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 16 of file SettingsDialog.g.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SettingsDialog.g.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d78/class_app_store_1_1_settings_dialog_1a3aabe7f5609c17f8545db4e76ad86598">
+                <title>void AppStore.SettingsDialog.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d78/class_app_store_1_1_settings_dialog_1a1299225699f43c0ba4a4938fbdd32a1c">
+                <title>void AppStore.SettingsDialog.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d78/class_app_store_1_1_settings_dialog_1a75760fc96b03e4d1da1005142597dabb">
+                <title>AppStore.SettingsDialog.SettingsDialog ()</title> <emphasis>&lt;summary&gt;
+Public constructor for the SettingsDialog
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d7/d78/class_app_store_1_1_settings_dialog_1a40441e71d240466219aa4f5a752ac6a7">
+                <title>void AppStore.SettingsDialog.ContentDialog_PrimaryButtonClick (ContentDialog sender, ContentDialogButtonClickEventArgs args)</title> <emphasis>&lt;summary&gt;
+Method which is executed when the user taps on the &quot;apply&quot; button in the SettingsDialog.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>args</entry>
+                                <entry>
+<para><link linkend="d5/d6c/class_event_args">EventArgs</link> e is a parameter called e that contains the event data, see the <link linkend="d5/d6c/class_event_args">EventArgs</link> MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d78/class_app_store_1_1_settings_dialog_1a82d5cb2618a4b2251ad336f6ecff7e7e">
+                <title>void AppStore.SettingsDialog.ContentDialog_SecondaryButtonClick (ContentDialog sender, ContentDialogButtonClickEventArgs args)</title> <emphasis>&lt;summary&gt;
+Method which is executed when the user taps on the &quot;cancel&quot; button in the SettingsDialog
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>args</entry>
+                                <entry>
+<para><link linkend="d5/d6c/class_event_args">EventArgs</link> e is a parameter called e that contains the event data, see the <link linkend="d5/d6c/class_event_args">EventArgs</link> MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

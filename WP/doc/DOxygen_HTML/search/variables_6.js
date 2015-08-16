@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['featured_5fapps',['featured_apps',['../d7/d78/class_app_store_1_1_settings_dialog.html#a8ad1dde26122ae6efb66445f91a977b4',1,'AppStore::SettingsDialog']]],
+  ['featured_5fcategories',['featured_categories',['../d7/d78/class_app_store_1_1_settings_dialog.html#aab3a041a5501866c52044593f4d57086',1,'AppStore::SettingsDialog']]],
+  ['featuredapps',['featuredApps',['../d1/d1a/class_app_store_1_1_main_page.html#a609467d5a6f9d47d3d38730374492fd8',1,'AppStore::MainPage']]],
+  ['featuredcategories',['featuredCategories',['../d1/d1a/class_app_store_1_1_main_page.html#a1943391c47bb207eac1e94f77c6fd3a2',1,'AppStore::MainPage']]],
+  ['female',['Female',['../d7/d40/class_app_store_1_1_templates_1_1_spellings_page.html#a3d531f492412b4755fe1ac4adfbaa3ae',1,'AppStore::Templates::SpellingsPage']]],
+  ['flash',['flash',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a417b7f2bcd293347385ad5e660cc384c',1,'AppStore::Templates::FlashCardPage']]],
+  ['flashcard',['FlashCard',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a04afdebfa912ad0d079501b616663ca4',1,'AppStore::Templates::FlashCardPage']]],
+  ['flashhint',['FlashHint',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a995c870c04beb8d652cca17587c5d279',1,'AppStore::Templates::FlashCardPage']]],
+  ['flashnumber',['FlashNumber',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a9d1307c45eac33fcd022883999c871a8',1,'AppStore::Templates::FlashCardPage']]],
+  ['flashquestion',['FlashQuestion',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a908cc075aff259987b6e88f5bf40cb75',1,'AppStore::Templates::FlashCardPage']]],
+  ['flashtext',['FlashText',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a39517ff134959d7bcfbe5047d848fc23',1,'AppStore::Templates::FlashCardPage']]],
+  ['flip',['Flip',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a6d764ecb9a17f2297c262be152278ead',1,'AppStore::Templates::FlashCardPage']]],
+  ['flipcardback',['FlipCardBack',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a9a5166be34596215d488080c9d0bf942',1,'AppStore::Templates::FlashCardPage']]],
+  ['flipcardfront',['FlipCardFront',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a8ac381a2d10375eb4223c258c0abccc6',1,'AppStore::Templates::FlashCardPage']]],
+  ['framesessionbasekeyproperty',['FrameSessionBaseKeyProperty',['../d0/d84/class_app_store_1_1_common_1_1_suspension_manager.html#a8f7124b4f813fd14e05dae05103e10ba',1,'AppStore::Common::SuspensionManager']]],
+  ['framesessionstatekeyproperty',['FrameSessionStateKeyProperty',['../d0/d84/class_app_store_1_1_common_1_1_suspension_manager.html#a8e5b6941769b5605fa05b01de937c8b7',1,'AppStore::Common::SuspensionManager']]],
+  ['framesessionstateproperty',['FrameSessionStateProperty',['../d0/d84/class_app_store_1_1_common_1_1_suspension_manager.html#ac15d22c2c3e18968ce80d53db787139c',1,'AppStore::Common::SuspensionManager']]],
+  ['frontcard',['frontCard',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#ac723f917483b166e5cfea402438544be',1,'AppStore::Templates::FlashCardPage']]],
+  ['fullscreen',['FullScreen',['../dd/d8e/class_app_store_1_1_app_details_page.html#a2a2aa476bfbb8a147a880a69c6658ba3',1,'AppStore::AppDetailsPage']]],
+  ['fullscreenshots',['FullScreenshots',['../dd/d8e/class_app_store_1_1_app_details_page.html#a382045daa62481aebf135adf7ea9bd32',1,'AppStore::AppDetailsPage']]]
+];

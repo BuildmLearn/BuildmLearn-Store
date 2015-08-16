@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model">
+<title>AppStore::Models::SpellingsModel class Reference</title>
+<para>Inheritance diagram for AppStore::Models::SpellingsModel</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d40/class_app_store_1_1_models_1_1_spellings_model__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::SpellingsModel</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d11/class_app_store_1_1_models_1_1_spellings_model__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mPuzzleName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mPuzzleAuthor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mPuzzleAuthorEmail</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mPuzzleVersion</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mPuzzleDescription</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; WordModel &gt; mSpellingsList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int totalCorrect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int totalWrong</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int activeCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static SpellingsModel mSpellingsModel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1aa2af5b3afdb862ebd83f812b459ac298">clearInstance</link> (
+)<para><emphasis>&lt;summary&gt;
+Clears the instance of the SpellingsModel
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link> <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a89393bf0ef882c954c1f60e0fd519d1b">getInstance</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the instance of the SpellingsModel
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a766605ee9d05f3e942de5fbb375a42ee">getPuzzleName</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the name of the Puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a571aef365a8a88790d882861630f4724">setPuzzleName</link> (
+string mPuzzleName)<para><emphasis>&lt;summary&gt;
+Sets the name of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a773b2b7e816615728a8a14b447165c80">getPuzzleDescription</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the description of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a7415a8b6035b2910ac079a43fb4e0ad8">setPuzzleDescription</link> (
+string mPuzzleDescription)<para><emphasis>&lt;summary&gt;
+Sets the description of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a9e8fa47d28b05b15f81ed1d1b9909034">getPuzzleAuthorEmail</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the AuthorEmail of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a6cfe0ca96797a292a6aefab7c4f4a51b">setPuzzleAuthorEmail</link> (
+string mPuzzleAuthorEmail)<para><emphasis>&lt;summary&gt;
+Sets the AuthorEmail of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ad300fcc6d973a902bbe1bf9f72ebc0e3">getPuzzleVersion</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the version of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a260fb98a9c2ee02bbd1c75d97b1a2368">setPuzzleVersion</link> (
+string mPuzzleVersion)<para><emphasis>&lt;summary&gt;
+Sets the version of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a1ffb94fc2915b0279c9dc3bfc3a985fd">getPuzzleAuthor</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the author of the Puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1af72e248e7b2e95784790e2b7805020be">setPuzzleAuthor</link> (
+string mPuzzleAuthor)<para><emphasis>&lt;summary&gt;
+Sets the author of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; <link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model">WordModel</link> &gt; <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a5f20aa32702eed0e931e2ecfac18ad94">getSpellingsList</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the SpellingsList of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ae20ad903e75d8350048819dd8068e126">setSpellingsList</link> (
+List&lt; <link linkend="dc/df7/class_app_store_1_1_models_1_1_word_model">WordModel</link> &gt; mSpellingsList)<para><emphasis>&lt;summary&gt;
+Sets the SpellingsList of the puzzle
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a2b149f16fe73dd60bad756272bb6560e">getTotalCorrect</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the total number of correct answers
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ac6dd5a562acc6f7dbf673a06247d8d0d">setTotalCorrect</link> (
+int totalCorrect)<para><emphasis>&lt;summary&gt;
+Sets the total number of the correct answers
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a72973110a4cdaee637ef1e5798900eaa">getTotalWrong</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the total number of the wrong answers
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a6680cdd2544c23c533ba0df784d17d18">setTotalWrong</link> (
+int totalWrong)<para><emphasis>&lt;summary&gt;
+Sets the total number of the wrong answers
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ab144a5b9c3d207c606d97278c012a77f">getActiveCount</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the cuurent index
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a93f84b38440510da0c89c10c4de07e24">setActiveCount</link> (
+int activeCount)<para><emphasis>&lt;summary&gt;
+Sets the active index
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model for the Spellings App-Template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 9 of file SpellingsModel.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SpellingsModel.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1aa2af5b3afdb862ebd83f812b459ac298">
+                <title>static void AppStore.Models.SpellingsModel.clearInstance ()</title> <emphasis>&lt;summary&gt;
+Clears the instance of the SpellingsModel
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a89393bf0ef882c954c1f60e0fd519d1b">
+                <title>static SpellingsModel AppStore.Models.SpellingsModel.getInstance ()</title> <emphasis>&lt;summary&gt;
+Gets the instance of the SpellingsModel
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Instance of <link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a766605ee9d05f3e942de5fbb375a42ee">
+                <title>string AppStore.Models.SpellingsModel.getPuzzleName ()</title> <emphasis>&lt;summary&gt;
+Gets the name of the Puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Name of the Puzzle</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a571aef365a8a88790d882861630f4724">
+                <title>void AppStore.Models.SpellingsModel.setPuzzleName (string mPuzzleName)</title> <emphasis>&lt;summary&gt;
+Sets the name of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mPuzzleName</entry>
+                                <entry>
+<para>Name of the puzzle</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a773b2b7e816615728a8a14b447165c80">
+                <title>string AppStore.Models.SpellingsModel.getPuzzleDescription ()</title> <emphasis>&lt;summary&gt;
+Gets the description of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Description of the puzzle</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a7415a8b6035b2910ac079a43fb4e0ad8">
+                <title>void AppStore.Models.SpellingsModel.setPuzzleDescription (string mPuzzleDescription)</title> <emphasis>&lt;summary&gt;
+Sets the description of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mPuzzleDescription</entry>
+                                <entry>
+<para>Description of the Puzzle</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a9e8fa47d28b05b15f81ed1d1b9909034">
+                <title>string AppStore.Models.SpellingsModel.getPuzzleAuthorEmail ()</title> <emphasis>&lt;summary&gt;
+Gets the AuthorEmail of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>AuthorEmail of the puzzle</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a6cfe0ca96797a292a6aefab7c4f4a51b">
+                <title>void AppStore.Models.SpellingsModel.setPuzzleAuthorEmail (string mPuzzleAuthorEmail)</title> <emphasis>&lt;summary&gt;
+Sets the AuthorEmail of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mPuzzleAuthorEmail</entry>
+                                <entry>
+<para>AuthorEmail of the Puzzle</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ad300fcc6d973a902bbe1bf9f72ebc0e3">
+                <title>string AppStore.Models.SpellingsModel.getPuzzleVersion ()</title> <emphasis>&lt;summary&gt;
+Gets the version of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Version of the Puzzle</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a260fb98a9c2ee02bbd1c75d97b1a2368">
+                <title>void AppStore.Models.SpellingsModel.setPuzzleVersion (string mPuzzleVersion)</title> <emphasis>&lt;summary&gt;
+Sets the version of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mPuzzleVersion</entry>
+                                <entry>
+<para>Version of the puzzle</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a1ffb94fc2915b0279c9dc3bfc3a985fd">
+                <title>string AppStore.Models.SpellingsModel.getPuzzleAuthor ()</title> <emphasis>&lt;summary&gt;
+Gets the author of the Puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Author of the Puzzle</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1af72e248e7b2e95784790e2b7805020be">
+                <title>void AppStore.Models.SpellingsModel.setPuzzleAuthor (string mPuzzleAuthor)</title> <emphasis>&lt;summary&gt;
+Sets the author of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mPuzzleAuthor</entry>
+                                <entry>
+<para>Author of the puzzle</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a5f20aa32702eed0e931e2ecfac18ad94">
+                <title>List&lt;WordModel&gt; AppStore.Models.SpellingsModel.getSpellingsList ()</title> <emphasis>&lt;summary&gt;
+Gets the SpellingsList of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>SpellingsList of the Puzzle</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ae20ad903e75d8350048819dd8068e126">
+                <title>void AppStore.Models.SpellingsModel.setSpellingsList (List&lt; WordModel &gt; mSpellingsList)</title> <emphasis>&lt;summary&gt;
+Sets the SpellingsList of the puzzle
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mSpellingsList</entry>
+                                <entry>
+<para>SpellingsList of the Puzzle</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a2b149f16fe73dd60bad756272bb6560e">
+                <title>int AppStore.Models.SpellingsModel.getTotalCorrect ()</title> <emphasis>&lt;summary&gt;
+Gets the total number of correct answers
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Total number of correct answers</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ac6dd5a562acc6f7dbf673a06247d8d0d">
+                <title>void AppStore.Models.SpellingsModel.setTotalCorrect (int totalCorrect)</title> <emphasis>&lt;summary&gt;
+Sets the total number of the correct answers
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>totalCorrect</entry>
+                                <entry>
+<para>Total number of the correct answers</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a72973110a4cdaee637ef1e5798900eaa">
+                <title>int AppStore.Models.SpellingsModel.getTotalWrong ()</title> <emphasis>&lt;summary&gt;
+Gets the total number of the wrong answers
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Total number of the wrong answers</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a6680cdd2544c23c533ba0df784d17d18">
+                <title>void AppStore.Models.SpellingsModel.setTotalWrong (int totalWrong)</title> <emphasis>&lt;summary&gt;
+Sets the total number of the wrong answers
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>totalWrong</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1ab144a5b9c3d207c606d97278c012a77f">
+                <title>int AppStore.Models.SpellingsModel.getActiveCount ()</title> <emphasis>&lt;summary&gt;
+Gets the cuurent index
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Current index of the question</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a93f84b38440510da0c89c10c4de07e24">
+                <title>void AppStore.Models.SpellingsModel.setActiveCount (int activeCount)</title> <emphasis>&lt;summary&gt;
+Sets the active index
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>activeCount</entry>
+                                <entry>
+<para>Current index of the question</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

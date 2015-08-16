@@ -1,0 +1,12 @@
+<map id="Page" name="Page">
+<area shape="rect" id="node2" href="$d2/d8e/class_app_store_1_1_category_page.html" title="This page is the Category Page, which the app navigates to when the user selects a particular categor..." alt="" coords="5,153,209,685"/>
+<area shape="rect" id="node3" href="$d9/da7/class_app_store_1_1_search_page.html" title="This class deals with displaying Search Results according to the search query. " alt="" coords="234,131,434,707"/>
+<area shape="rect" id="node4" href="$d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html" title="This page deals with the Flash&#45;Card App template. " alt="" coords="458,189,658,648"/>
+<area shape="rect" id="node5" href="$db/dbb/class_app_store_1_1_templates_1_1_info_detail_page.html" title="This page deals with populating the details of the word selected in Info&#45;AppTemplate. " alt="" coords="682,255,909,582"/>
+<area shape="rect" id="node6" href="$dc/dec/class_app_store_1_1_templates_1_1_info_page.html" title="This page deals with the Info app tmeplate. " alt="" coords="933,219,1133,619"/>
+<area shape="rect" id="node7" href="$d6/de3/class_app_store_1_1_templates_1_1_quiz_page.html" title="This page deals with the Quiz&#45;App template. " alt="" coords="1157,211,1359,626"/>
+<area shape="rect" id="node8" href="$d5/d5a/class_app_store_1_1_templates_1_1_score_page.html" title="This page deals with the Score Page related to the Spellings Puzzle and the Quiz App&#45;Template. " alt="" coords="1383,197,1591,641"/>
+<area shape="rect" id="node9" href="$d7/d40/class_app_store_1_1_templates_1_1_spellings_page.html" title="This page deals with the Spellings Puzzle App&#45;Template. " alt="" coords="1615,189,1842,648"/>
+<area shape="rect" id="node10" href="$dc/dd6/class_app_store_1_1_templates_1_1_start_page.html" title="This page deals with the StartPage of all the App&#45;Template. " alt="" coords="1866,175,2069,663"/>
+<area shape="rect" id="node11" href="$dc/d66/class_app_store_1_1_templates_1_1_word_info_page.html" title="The page deals with shwoing the word info based on the word which comes up while running the Spelling..." alt="" coords="2093,204,2319,633"/>
+</map>

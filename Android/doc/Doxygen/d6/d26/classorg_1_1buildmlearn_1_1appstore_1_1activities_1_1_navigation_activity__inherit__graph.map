@@ -1,0 +1,6 @@
+<map id="org.buildmlearn.appstore.activities.NavigationActivity" name="org.buildmlearn.appstore.activities.NavigationActivity">
+<area shape="rect" id="node2" href="$dc/d90/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_apps_activity.html" title="This activity deals with the apps shown when &quot;more&quot; button on the Home Page is pressed. " alt="" coords="5,439,228,604"/>
+<area shape="rect" id="node3" href="$d6/d69/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_categories_activity.html" title="This activity shows all the categories. " alt="" coords="252,431,475,611"/>
+<area shape="rect" id="node4" href="$dd/d45/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_categories_view.html" title="This activity shows all the apps which belong to a particular category. " alt="" coords="499,409,721,633"/>
+<area shape="rect" id="node5" href="$d8/dfa/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_home_activity.html" title="This class is the Home Page, which has a viewpager to display tabs for Store section and My&#45;Apps sect..." alt="" coords="745,446,968,597"/>
+</map>

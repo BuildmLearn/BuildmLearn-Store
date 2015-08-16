@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/dac/_categories_page_8xaml_8cs">
+    <title>CategoriesPage.xaml.cs File Reference</title>
+<para>Include dependency diagram for CategoriesPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/de3/_categories_page_8xaml_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for CategoriesPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/dcb/_categories_page_8xaml_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d4e/class_app_store_1_1_categories_page">AppStore::CategoriesPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with categorizing apps into certains groups.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/CategoriesPage.xaml.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="dd/d5e/namespace_app_store_1_1_common">Common</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d2/d12/namespace_app_store_1_1_models">Models</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+4 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml;
+5 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+6 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Media.Imaging;
+7 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Navigation;
+8 
+9 <emphasis class="comment">//&#32;The&#32;Basic&#32;Page&#32;item&#32;template&#32;is&#32;documented&#32;at&#32;http://go.microsoft.com/fwlink/?LinkID=390556</emphasis>
+10 
+11 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+12 {
+13 
+<link linkend="d0/d4e/class_app_store_1_1_categories_page">18 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;sealed&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis><link linkend="d0/d4e/class_app_store_1_1_categories_page">CategoriesPage</link>&#32;:&#32;<link linkend="db/d2f/class_page">Page</link>
+19 &#32;&#32;&#32;&#32;{
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a183a2dd2edc8afbad406e6a1fd1a77cd">navigationHelper</link>;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1ac4ea5b00e8444cc3c37fe3b9b7727588">defaultViewModel</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>();
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a6e1d18b4ce2df992862ad4e004482e2e">selectionGridCategories</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+23 
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a26891c12bcd92004ea4d3c8f742b43be">CategoriesPage</link>()
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a0610a1f804cb2e2ceacef59040f3327b">InitializeComponent</link>();
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a4f046f6ee9b27be530aca5eb7a485964">NavigationHelper</link>(<emphasis class="keyword">this</emphasis>);
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.LoadState&#32;+=&#32;this.<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a7b810acb57b28fe479052971d5f9d8a3">NavigationHelper_LoadState</link>;
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.SaveState&#32;+=&#32;this.<link linkend="d0/d4e/class_app_store_1_1_categories_page_1abf3ff5f732f15067166959b756172e15">NavigationHelper_SaveState</link>;
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+34 
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a183a2dd2edc8afbad406e6a1fd1a77cd">navigationHelper</link>;&#32;}
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+42 
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1ae45da65d4c4714e2017c44c38a1e806e">DefaultViewModel</link>
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.<link linkend="d0/d4e/class_app_store_1_1_categories_page_1ac4ea5b00e8444cc3c37fe3b9b7727588">defaultViewModel</link>;&#32;}
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+51 
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a7b810acb57b28fe479052971d5f9d8a3">NavigationHelper_LoadState</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>&#32;e)
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+66 
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1abf3ff5f732f15067166959b756172e15">NavigationHelper_SaveState</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>&#32;e)
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+78 
+79 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;NavigationHelper&#32;registration</emphasis>
+80 
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a85c9bfe85ae34b33a9fefa885ec668d6">OnNavigatedTo</link>(NavigationEventArgs&#32;e)
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a7272c3ebe6aa36dd13b2c093c1b8dc2e">getMyAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a2131edd2cd784131e92e377c618c03a1">myappList</link>.Count&#32;&gt;&#32;0)
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1aa18b235747677e5b08236263a1f97f07">btnMyApps</link>.Visibility&#32;=&#32;Visibility.Visible;
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1aa18b235747677e5b08236263a1f97f07">btnMyApps</link>.Visibility&#32;=&#32;Visibility.Collapsed;
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a088cfc3cc0e840ae465c648ee4c70253">GridCategories</link>.ItemsSource&#32;=&#32;Models.Resources.getCategoriesList();
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedTo(e);
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+102 
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a893370e28ad2d5c352c161f9fff6e675">OnNavigatedFrom</link>(NavigationEventArgs&#32;e)
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedFrom(e);
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+107 
+108 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+109 
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a3d0e675d5aea54960faf2d88b1c8ac76">GridCategories_SelectionChanged</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;SelectionChangedEventArgs&#32;e)
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(selectionGridCategories)&#32;<emphasis class="keywordflow">return</emphasis>;
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="de/d27/class_app_store_1_1_models_1_1_category_instance">CategoryInstance</link>.<link linkend="de/d27/class_app_store_1_1_models_1_1_category_instance_1ac1e8313d7f7d58349cf972f2be0ae365">category</link>&#32;=&#32;(<link linkend="dd/d98/class_app_store_1_1_categories">Categories</link>)<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a088cfc3cc0e840ae465c648ee4c70253">GridCategories</link>.SelectedItem;
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(typeof(<link linkend="d2/d8e/class_app_store_1_1_category_page">CategoryPage</link>));
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;selectionGridCategories&#32;=&#32;<emphasis class="keyword">true</emphasis>;&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a088cfc3cc0e840ae465c648ee4c70253">GridCategories</link>.SelectedIndex&#32;=&#32;-1;&#32;selectionGridCategories&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+122 &#32;&#32;&#32;&#32;
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a47d6275223954087ab6f1ba4eb2ddd6a">GridCategories_ContentChanging</link>(ListViewBase&#32;sender,&#32;ContainerContentChangingEventArgs&#32;args)
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;args.Handled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(args.Phase&#32;!=&#32;0)
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="df/d70/class_exception">Exception</link>(<emphasis class="stringliteral">&quot;Not&#32;in&#32;phase&#32;0.&quot;</emphasis>);
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d98/class_app_store_1_1_categories">Categories</link>&#32;category&#32;=&#32;(<link linkend="dd/d98/class_app_store_1_1_categories">Categories</link>)args.Item;
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Grid&#32;templateRoot&#32;=&#32;(Grid)args.ItemContainer.ContentTemplateRoot;
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Image&#32;categoryIcon&#32;=&#32;(Image)templateRoot.FindName(<emphasis class="stringliteral">&quot;categoryIcon&quot;</emphasis>);
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TextBlock&#32;categoryName&#32;=&#32;(TextBlock)templateRoot.FindName(<emphasis class="stringliteral">&quot;categoryName&quot;</emphasis>);
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;categoryName.Text&#32;=&#32;category.Name;
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;categoryIcon.Source&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;BitmapImage(<emphasis class="keyword">new</emphasis>&#32;Uri(category.Background));
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+142 &#32;&#32;&#32;&#32;
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1af980786d66e523121a1eb3cb9164b9f4">Search_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(<link linkend="d9/da7/class_app_store_1_1_search_page">SearchPage</link>));&#32;}
+149 &#32;&#32;&#32;&#32;
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;async&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a285ad4114abd264177819b3e38fa8413">Settings_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;ContentDialog&#32;dlg&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;ContentDialog();&#32;dlg&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d7/d78/class_app_store_1_1_settings_dialog">SettingsDialog</link>();&#32;await&#32;dlg.ShowAsync();&#32;}
+156 &#32;&#32;&#32;&#32;
+162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a851c037bebb8999b93e5224e47928a10">Home_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(<link linkend="d1/d1a/class_app_store_1_1_main_page">MainPage</link>));&#32;}
+163 &#32;&#32;&#32;&#32;
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a8962cd6fd614a7d043a5d226febef5f5">MyApps_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(<link linkend="d7/d78/class_app_store_1_1_my_apps_page">MyAppsPage</link>));&#32;}
+170 &#32;&#32;&#32;
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1a931dab115004058847d9bf214a76bf7b">About_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;}
+177 &#32;&#32;&#32;
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/d4e/class_app_store_1_1_categories_page_1ab34da3827e0c885a049fd37abe991df5">Feedback_Click</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;}
+184 &#32;&#32;&#32;&#32;}
+185 }
+    </computeroutput></literallayout>
+</section>

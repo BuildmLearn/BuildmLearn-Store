@@ -1,0 +1,7 @@
+<map id="org.buildmlearn.appstore.adapters.MyAppsViewAdapter.onBindViewHolder" name="org.buildmlearn.appstore.adapters.MyAppsViewAdapter.onBindViewHolder">
+<area shape="rect" id="node2" href="$df/d2d/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_my_apps_view_adapter_1_1_my_apps_view_holder.html#af2768dceceffe931571f5c49e382791c" title="org.buildmlearn.appstore.adapters.\lMyAppsViewAdapter.MyAppsViewHolder.set\lClickListener" alt="" coords="305,5,588,61"/>
+<area shape="rect" id="node3" href="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#aec556fcddde1c33f82e823933f3fb1a6" title="Gets the list of Installed Apps. " alt="" coords="349,86,545,127"/>
+<area shape="rect" id="node4" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a3819b15bd7eeb6b579ffc4ae12bb289b" title="It clears the text in the search tool and collapses the search tool. " alt="" coords="335,151,558,193"/>
+<area shape="rect" id="node5" href="$d0/df6/classorg_1_1buildmlearn_1_1appstore_1_1fragments_1_1_tab_my_apps.html#a35f6e10d8f45a3c9995c0b70c18f438d" title="Refreshes the list of apps. " alt="" coords="332,217,561,258"/>
+<area shape="rect" id="node6" href="$d8/dfa/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_home_activity.html#a104177f795c32e9b28838760f994dc5f" title="Set the current view to My&#45;Apps section. " alt="" coords="636,217,859,258"/>
+</map>

@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['raisecanexecutechanged',['RaiseCanExecuteChanged',['../d1/d53/class_app_store_1_1_common_1_1_relay_command.html#ab61295cac8079a59da9ba6eaa0700267',1,'AppStore::Common::RelayCommand']]],
+  ['readflashfile',['readFlashFile',['../da/d6b/class_app_store_1_1_common_1_1_app_reader.html#a98775d0b7e964b7e298857914125820d',1,'AppStore::Common::AppReader']]],
+  ['readinfofile',['readInfoFile',['../da/d6b/class_app_store_1_1_common_1_1_app_reader.html#a3a89a0ec842c278905bd6f62364aa57e',1,'AppStore::Common::AppReader']]],
+  ['readquizfile',['readQuizFile',['../da/d6b/class_app_store_1_1_common_1_1_app_reader.html#a4e00abee9b2bab6fb31f8677069b3e05',1,'AppStore::Common::AppReader']]],
+  ['readspellingsfile',['readSpellingsFile',['../da/d6b/class_app_store_1_1_common_1_1_app_reader.html#aaaf7820cf4933f2e8a1ed209a9b084f2',1,'AppStore::Common::AppReader']]],
+  ['registerforshare',['RegisterForShare',['../dd/dfa/class_app_store_1_1_common_1_1_app_common.html#aa48807c92512f9590d329e4865de1c85',1,'AppStore::Common::AppCommon']]],
+  ['registerframe',['RegisterFrame',['../d0/d84/class_app_store_1_1_common_1_1_suspension_manager.html#ae3bdf40f19a04f7807435d79c501e91f',1,'AppStore::Common::SuspensionManager']]],
+  ['relaycommand',['RelayCommand',['../d1/d53/class_app_store_1_1_common_1_1_relay_command.html#a7c27cc14c934016ef6aec264f439827c',1,'AppStore.Common.RelayCommand.RelayCommand(Action execute)'],['../d1/d53/class_app_store_1_1_common_1_1_relay_command.html#aa5f37d37edcc8d25ff607d8b67b9814f',1,'AppStore.Common.RelayCommand.RelayCommand(Action execute, Func&lt; bool &gt; canExecute)']]],
+  ['remove',['Remove',['../d2/db9/class_app_store_1_1_common_1_1_observable_dictionary.html#a99cfd2dd5c5637768e64c06b646d59f8',1,'AppStore.Common.ObservableDictionary.Remove(string key)'],['../d2/db9/class_app_store_1_1_common_1_1_observable_dictionary.html#a33db4e574f61476d4f18f476ae73f317',1,'AppStore.Common.ObservableDictionary.Remove(KeyValuePair&lt; string, object &gt; item)']]],
+  ['restart_5fclick',['Restart_Click',['../d5/d5a/class_app_store_1_1_templates_1_1_score_page.html#a4fbd5ac28c0e96364e32002a9d09e57b',1,'AppStore::Templates::ScorePage']]],
+  ['restoreasync',['RestoreAsync',['../d0/d84/class_app_store_1_1_common_1_1_suspension_manager.html#a633ec2b085908a90dade53b234ca5466',1,'AppStore::Common::SuspensionManager']]],
+  ['restoreframenavigationstate',['RestoreFrameNavigationState',['../d0/d84/class_app_store_1_1_common_1_1_suspension_manager.html#ab8cfd4af0e1033ed702a3279df31c9fc',1,'AppStore::Common::SuspensionManager']]],
+  ['rootframe_5ffirstnavigated',['RootFrame_FirstNavigated',['../d9/d36/class_app_store_1_1_app.html#aaca7c189964d775fa50fbfab9fd5fd99',1,'AppStore::App']]],
+  ['runinitializer',['RunInitializer',['../d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type.html#aa984b694e3cd307f0d130ca860585fd0',1,'AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.RunInitializer()'],['../dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type.html#a0e19c4726e698facbeb7116434fb3e21',1,'AppStore.AppStore_XamlTypeInfo.XamlUserType.RunInitializer()'],['../d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type.html#aa984b694e3cd307f0d130ca860585fd0',1,'AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType.RunInitializer()'],['../dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type.html#a0e19c4726e698facbeb7116434fb3e21',1,'AppStore.AppStore_XamlTypeInfo.XamlUserType.RunInitializer()']]]
+];

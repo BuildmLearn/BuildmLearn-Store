@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.activities.CategoriesView.closeSearch" name="org.buildmlearn.appstore.activities.CategoriesView.closeSearch">
+<area shape="rect" id="node2" href="$dd/d45/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_categories_view.html#a9b8cfee2f830c826f124ecde3c316d63" title="This method is called from the Navigation Activity, which controls all the search view..." alt="" coords="276,5,499,47"/>
+<area shape="rect" id="node4" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a0d03e67c759108fd119b9e5ad2e48014" title="This method creates menu items to be shown on the Action Bar. " alt="" coords="817,35,1073,76"/>
+<area shape="rect" id="node3" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a205e1d750606e6ca55b3cb753fc6f9cc" title="This method sends the search query to respective active activities, to refresh their view with the cu..." alt="" coords="547,5,769,47"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.activities.ScoreActivity" name="org.buildmlearn.appstore.activities.ScoreActivity">
+<area shape="rect" id="node2" href="$da/d2e/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_quiz_model.html" title="Template model for Quiz type of apps. " alt="" coords="5,27,220,339"/>
+<area shape="rect" id="node3" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html" title="Template model for Spellings Puzzle type of apps. " alt="" coords="349,5,564,361"/>
+</map>

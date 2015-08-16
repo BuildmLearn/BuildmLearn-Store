@@ -44,7 +44,7 @@ public class AppDetails extends AppCompatActivity {
     private static boolean TxtShowMore=false;
     private static ProgressBar mProgressReviews;
     public static String mScreenshots[];
-    private final int DEFAULT_NUMBER_OF_CHARACTERS_IN_DESCRIPTION=getResources().getInteger(R.integer.default_number_of_charactes_in_description);
+    private final int DEFAULT_NUMBER_OF_CHARACTERS_IN_DESCRIPTION=40;
 
     /**
      * The method is executed first when the activity is created.
@@ -81,7 +81,7 @@ public class AppDetails extends AppCompatActivity {
         mAppTxtMore=(TextView)findViewById(R.id.details_TxtMore);
         ImageLoader imageLoader= VolleySingleton.getInstance(this).getImageLoader();
         mAppIcon.setImageUrl(mApp.AppIcon, imageLoader);
-        
+
         //TODO This is a temporary fix, which displays only two screenshots. It will be fixed with the real-time API.
         NetworkImageView mAppScreenshot1 = (NetworkImageView) findViewById(R.id.details_Screenshot1);
         NetworkImageView mAppScreenshot2 = (NetworkImageView) findViewById(R.id.details_Screenshot2);

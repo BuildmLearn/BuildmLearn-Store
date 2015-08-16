@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model">
+<title>AppStore::Models::QuizModel class Reference</title>
+<para>Inheritance diagram for AppStore::Models::QuizModel</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dab/class_app_store_1_1_models_1_1_quiz_model__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::QuizModel</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/dbf/class_app_store_1_1_models_1_1_quiz_model__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mQuizName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mQuizAuthor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mQuizDescription</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mQuizVersion</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mQuizAuthorEmail</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Question &gt; mQueAnsList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int totalCorrect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int totalWrong</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static QuizModel mQuizModel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a48ae81015f5ec5d71818c8ccc2337fe8">clearInstance</link> (
+)<para><emphasis>&lt;summary&gt;
+Clears the Instance of the Quiz App-Template.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link> <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ac58052dc3491a2c7cf249230cc7f7765">getInstance</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Instance of the Quiz App-Template.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; <link linkend="d4/d22/class_app_store_1_1_models_1_1_question">Question</link> &gt; <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a0f164813b5b6b67c523b35574419c8bd">getQueAnsList</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the List of Questions
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1aa39a8f6efc5ddeb627f62c6ab7f31112">setQueAnsList</link> (
+List&lt; <link linkend="d4/d22/class_app_store_1_1_models_1_1_question">Question</link> &gt; mQueAnsList)<para><emphasis>&lt;summary&gt;
+Sets the list of Questions
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ad145ad5a0ff8b2561acf7d522e8253a6">getQuizAuthor</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Author of the Quiz
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a4a4959899efad2af3ec2607dc01aa883">setQuizAuthor</link> (
+string mQuizAuthor)<para><emphasis>&lt;summary&gt;
+Sets the Author of the quiz
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a0b06d8b17214e4a28cbf1e4b5448b058">getQuizDescription</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Description of the quiz
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1adf287414376af2374218d2031ca1d506">setQuizDescription</link> (
+string mQuizDescription)<para><emphasis>&lt;summary&gt;
+Sets the Description of the Quiz
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a647f1effb52d15a6d4cd132a3c67fbe7">setQuizAuthorEmail</link> (
+string mQuizAuthorEmail)<para><emphasis>&lt;summary&gt;
+Gets the Author Email of the Quiz
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a918c99dfb6ce8678c4097b492745326b">getQuizVersion</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Version of the Quiz
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a93649985b3ddaa5a0c48d72397219652">setQuizVersion</link> (
+string mQuizVersion)<para><emphasis>&lt;summary&gt;
+Sets the version of the Quiz
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1aa9839ebcfa0eca887ff0604dcb466025">getQuizName</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Name of the Quiz
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a021b278401cdbb6b02a85fb3a3239b74">setQuizName</link> (
+string mQuizName)<para><emphasis>&lt;summary&gt;
+Sets the name of the Quiz
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ac3d13b59471dd297d168c9815f936664">getTotalWrong</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the total number of Wrong answers
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1aed8fa704236f96a10ba2550bf65ecc55">setTotalWrong</link> (
+int totalWrong)<para><emphasis>&lt;summary&gt;
+Sets the total number of wrong answers
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a30accea678d533eb5e7f1f336642ae90">getTotalCorrect</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the total number of correct answers
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1af6d2f452dba371de03b71a485f4a4a21">setTotalCorrect</link> (
+int totalCorrect)<para><emphasis>&lt;summary&gt;
+Sets the total correct answers by the user.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model for the Quiz App-Template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 9 of file QuizModel.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>QuizModel.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a48ae81015f5ec5d71818c8ccc2337fe8">
+                <title>static void AppStore.Models.QuizModel.clearInstance ()</title> <emphasis>&lt;summary&gt;
+Clears the Instance of the Quiz App-Template.</emphasis>
+                
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ac58052dc3491a2c7cf249230cc7f7765">
+                <title>static QuizModel AppStore.Models.QuizModel.getInstance ()</title> <emphasis>&lt;summary&gt;
+Gets the Instance of the Quiz App-Template.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a0f164813b5b6b67c523b35574419c8bd">
+                <title>List&lt;Question&gt; AppStore.Models.QuizModel.getQueAnsList ()</title> <emphasis>&lt;summary&gt;
+Gets the List of Questions
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>List of Questions</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1aa39a8f6efc5ddeb627f62c6ab7f31112">
+                <title>void AppStore.Models.QuizModel.setQueAnsList (List&lt; Question &gt; mQueAnsList)</title> <emphasis>&lt;summary&gt;
+Sets the list of Questions
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mQueAnsList</entry>
+                                <entry>
+<para>List of <link linkend="d4/d22/class_app_store_1_1_models_1_1_question">Question</link> Objects</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ad145ad5a0ff8b2561acf7d522e8253a6">
+                <title>string AppStore.Models.QuizModel.getQuizAuthor ()</title> <emphasis>&lt;summary&gt;
+Gets the Author of the Quiz
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Author of the Quiz</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a4a4959899efad2af3ec2607dc01aa883">
+                <title>void AppStore.Models.QuizModel.setQuizAuthor (string mQuizAuthor)</title> <emphasis>&lt;summary&gt;
+Sets the Author of the quiz
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mQuizAuthor</entry>
+                                <entry>
+<para>Author of the Quiz</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a0b06d8b17214e4a28cbf1e4b5448b058">
+                <title>string AppStore.Models.QuizModel.getQuizDescription ()</title> <emphasis>&lt;summary&gt;
+Gets the Description of the quiz
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Description of the Quiz</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1adf287414376af2374218d2031ca1d506">
+                <title>void AppStore.Models.QuizModel.setQuizDescription (string mQuizDescription)</title> <emphasis>&lt;summary&gt;
+Sets the Description of the Quiz
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mQuizDescription</entry>
+                                <entry>
+<para>Description of the Quiz</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a647f1effb52d15a6d4cd132a3c67fbe7">
+                <title>void AppStore.Models.QuizModel.setQuizAuthorEmail (string mQuizAuthorEmail)</title> <emphasis>&lt;summary&gt;
+Gets the Author Email of the Quiz
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Author Email </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a918c99dfb6ce8678c4097b492745326b">
+                <title>string AppStore.Models.QuizModel.getQuizVersion ()</title> <emphasis>&lt;summary&gt;
+Gets the Version of the Quiz
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Version of the Quiz</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a93649985b3ddaa5a0c48d72397219652">
+                <title>void AppStore.Models.QuizModel.setQuizVersion (string mQuizVersion)</title> <emphasis>&lt;summary&gt;
+Sets the version of the Quiz
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mQuizVersion</entry>
+                                <entry>
+<para>Version of the Quiz</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1aa9839ebcfa0eca887ff0604dcb466025">
+                <title>string AppStore.Models.QuizModel.getQuizName ()</title> <emphasis>&lt;summary&gt;
+Gets the Name of the Quiz
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>name of the Quiz</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a021b278401cdbb6b02a85fb3a3239b74">
+                <title>void AppStore.Models.QuizModel.setQuizName (string mQuizName)</title> <emphasis>&lt;summary&gt;
+Sets the name of the Quiz
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mQuizName</entry>
+                                <entry>
+<para>Name of the Quiz</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ac3d13b59471dd297d168c9815f936664">
+                <title>int AppStore.Models.QuizModel.getTotalWrong ()</title> <emphasis>&lt;summary&gt;
+Gets the total number of Wrong answers
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Number of wrong answers</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1aed8fa704236f96a10ba2550bf65ecc55">
+                <title>void AppStore.Models.QuizModel.setTotalWrong (int totalWrong)</title> <emphasis>&lt;summary&gt;
+Sets the total number of wrong answers
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>totalWrong</entry>
+                                <entry>
+<para>Number of wrong answers</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a30accea678d533eb5e7f1f336642ae90">
+                <title>int AppStore.Models.QuizModel.getTotalCorrect ()</title> <emphasis>&lt;summary&gt;
+Gets the total number of correct answers
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Total number of correct answers</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1af6d2f452dba371de03b71a485f4a4a21">
+                <title>void AppStore.Models.QuizModel.setTotalCorrect (int totalCorrect)</title> <emphasis>&lt;summary&gt;
+Sets the total correct answers by the user.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>totalCorrect</entry>
+                                <entry>
+<para>Total number of correct answers</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

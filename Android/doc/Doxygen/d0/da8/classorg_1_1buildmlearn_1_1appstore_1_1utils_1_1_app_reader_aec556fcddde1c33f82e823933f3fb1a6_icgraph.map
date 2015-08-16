@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.utils.AppReader.listApps" name="org.buildmlearn.appstore.utils.AppReader.listApps">
+<area shape="rect" id="node2" href="$dd/d52/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_app_details.html#a5496a1ae07afc43ae065d908ceea260b" title="The method is executed first when the activity is created. " alt="" coords="264,5,487,47"/>
+<area shape="rect" id="node3" href="$d5/d3c/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_card_view_adapter.html#a2c54de70fff6623b6c325037c947a13f" title="Binds content to the cardviewholder object. " alt="" coords="260,71,491,112"/>
+<area shape="rect" id="node4" href="$dc/d6e/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_my_apps_view_adapter.html#ab95b082936ebfbe1ca7120428e7024d7" title="Binds the content to the view. " alt="" coords="249,136,501,177"/>
+</map>

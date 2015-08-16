@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/de8/_score_page_8xaml_8cs">
+    <title>ScorePage.xaml.cs File Reference</title>
+<para>Include dependency diagram for ScorePage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d89/_score_page_8xaml_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for ScorePage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d63/_score_page_8xaml_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d5a/class_app_store_1_1_templates_1_1_score_page">AppStore::Templates::ScorePage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the Score Page related to the Spellings Puzzle and the Quiz App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dab/namespace_app_store_1_1_templates">AppStore::Templates</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Templates/ScorePage.xaml.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="dd/d5e/namespace_app_store_1_1_common">Common</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d2/d12/namespace_app_store_1_1_models">Models</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+4 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml;
+5 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+6 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Navigation;
+7 
+8 <emphasis class="comment">//&#32;The&#32;Basic&#32;Page&#32;item&#32;template&#32;is&#32;documented&#32;at&#32;http://go.microsoft.com/fwlink/?LinkID=390556</emphasis>
+9 
+10 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Templates
+11 {
+15 &#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;sealed&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>ScorePage&#32;:&#32;<link linkend="db/d2f/class_page">Page</link>
+16 &#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;navigationHelper;
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;defaultViewModel&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>();
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>&#32;puzzle;
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>&#32;quiz;
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;ScorePage()
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.InitializeComponent();
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>(<emphasis class="keyword">this</emphasis>);
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.LoadState&#32;+=&#32;this.NavigationHelper_LoadState;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.SaveState&#32;+=&#32;this.NavigationHelper_SaveState;
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+31 
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.navigationHelper;&#32;}
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+39 
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;DefaultViewModel
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.defaultViewModel;&#32;}
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+48 
+60 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;NavigationHelper_LoadState(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>&#32;e)
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+63 
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;NavigationHelper_SaveState(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>&#32;e)
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+75 
+76 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;NavigationHelper&#32;registration</emphasis>
+77 
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedTo(NavigationEventArgs&#32;e)
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.BackStack.RemoveAt(Frame.BackStackDepth&#32;-&#32;1);
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;app&#32;=&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>;
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1adc02e53ccf7be9038f023d629f58a67a">Type</link>.Contains(<emphasis class="stringliteral">&quot;Spellings&quot;</emphasis>))
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;puzzle&#32;=&#32;<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a89393bf0ef882c954c1f60e0fd519d1b">getInstance</link>();
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ScoreText.Text&#32;=&#32;<emphasis class="stringliteral">&quot;You&#32;have&#32;completed&#32;the&#32;Spellings&#32;Puzzle:&#32;&quot;</emphasis>+puzzle.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a766605ee9d05f3e942de5fbb375a42ee">getPuzzleName</link>();
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TotalCorrect.Text&#32;=&#32;<emphasis class="stringliteral">&quot;Total&#32;Correct:&#32;&quot;</emphasis>&#32;+&#32;puzzle.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a2b149f16fe73dd60bad756272bb6560e">getTotalCorrect</link>();
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TotalWrong.Text&#32;=&#32;<emphasis class="stringliteral">&quot;Total&#32;Wrong:&#32;&quot;</emphasis>&#32;+&#32;puzzle.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a72973110a4cdaee637ef1e5798900eaa">getTotalWrong</link>();
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TotalUnanswered.Text&#32;=&#32;<emphasis class="stringliteral">&quot;Total&#32;Unanswered:&#32;&quot;</emphasis>&#32;+&#32;(puzzle.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a5f20aa32702eed0e931e2ecfac18ad94">getSpellingsList</link>().Count&#32;-&#32;(puzzle.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a72973110a4cdaee637ef1e5798900eaa">getTotalWrong</link>()+puzzle.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1a2b149f16fe73dd60bad756272bb6560e">getTotalCorrect</link>()));
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model">SpellingsModel</link>.<link linkend="d1/d66/class_app_store_1_1_models_1_1_spellings_model_1aa2af5b3afdb862ebd83f812b459ac298">clearInstance</link>();
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1adc02e53ccf7be9038f023d629f58a67a">Type</link>.Contains(<emphasis class="stringliteral">&quot;Quiz&quot;</emphasis>))
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;quiz&#32;=&#32;<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ac58052dc3491a2c7cf249230cc7f7765">getInstance</link>();
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ScoreText.Text&#32;=&#32;<emphasis class="stringliteral">&quot;You&#32;have&#32;completed&#32;the&#32;Quiz:&#32;&quot;</emphasis>+quiz.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1aa9839ebcfa0eca887ff0604dcb466025">getQuizName</link>();
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TotalCorrect.Text&#32;=&#32;<emphasis class="stringliteral">&quot;Total&#32;Correct:&#32;&quot;</emphasis>&#32;+&#32;quiz.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a30accea678d533eb5e7f1f336642ae90">getTotalCorrect</link>();
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TotalWrong.Text&#32;=&#32;<emphasis class="stringliteral">&quot;Total&#32;Wrong:&#32;&quot;</emphasis>&#32;+&#32;quiz.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ac3d13b59471dd297d168c9815f936664">getTotalWrong</link>();
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TotalUnanswered.Text&#32;=&#32;<emphasis class="stringliteral">&quot;Total&#32;Unanswered:&#32;&quot;</emphasis>&#32;+&#32;(quiz.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a0f164813b5b6b67c523b35574419c8bd">getQueAnsList</link>().Count&#32;-&#32;(quiz.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1ac3d13b59471dd297d168c9815f936664">getTotalWrong</link>()&#32;+&#32;quiz.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a30accea678d533eb5e7f1f336642ae90">getTotalCorrect</link>()));
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link>.<link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model_1a48ae81015f5ec5d71818c8ccc2337fe8">clearInstance</link>();
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedTo(e);
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+115 
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedFrom(NavigationEventArgs&#32;e)
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedFrom(e);
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+133 
+134 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+135 
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Restart_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(StartPage.removeParameter.Equals(<emphasis class="stringliteral">&quot;remove&quot;</emphasis>))
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(typeof(StartPage),&#32;<emphasis class="stringliteral">&quot;remove&quot;</emphasis>);
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;Frame.Navigate(typeof(StartPage));
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+147 
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Quit_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.GoBack();
+156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+157 &#32;&#32;&#32;&#32;}
+158 }
+    </computeroutput></literallayout>
+</section>

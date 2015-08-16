@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Title="BuildmLearn Store for Windows Phone" Url="html/93746bc4-a8ae-4f7e-9950-1a0c6bf4a187.htm" />
+  <HelpTOCNode Id="7480640b-b9fe-4b69-8306-678006ab9520" Title="Version History" Url="html/fd5f13bc-e83a-4c17-9655-1c0526a63b03.htm">
+    <HelpTOCNode Title="Version 1.0.0.0" Url="html/df0817a5-0e0c-458a-9362-5ab2f0a8a4b1.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="9a03738a-2a5b-4d66-b987-0b1fe330215a" Title="BuildmLearn Store" Url="html/da614388-8773-5615-82de-769d6f1ea51c.htm">
+    <HelpTOCNode Id="39096767-e243-4198-b0d0-e1f5e9c3a170" Title="AppStore" Url="html/ccb43d59-c6f6-86a0-53b2-a1178c9e0c3a.htm">
+      <HelpTOCNode Id="175816ce-b851-487d-b2a9-84e7860d3e65" Title="App Class" Url="html/7e56a584-e8c6-d83a-6d23-8abecf32ad9a.htm">
+        <HelpTOCNode Title="App Constructor " Url="html/ce2317b2-f7cc-0787-e760-452b6211f1ae.htm" />
+        <HelpTOCNode Id="18847766-2762-422b-a595-2ebefa9f0007" Title="App Fields" Url="html/6b75c3e6-1281-2035-96bf-3d619a858d52.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/62e28b7e-efb6-3fb8-d1ca-09d6e95ec03b.htm" />
+          <HelpTOCNode Title="_provider Field" Url="html/73546753-de8b-7370-a26f-c57cb0ba4127.htm" />
+          <HelpTOCNode Title="transitions Field" Url="html/99126637-600b-2417-1aca-44952e2054af.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="19d35a1f-9618-4fdb-a4e4-cfaa4e86625f" Title="App Methods" Url="html/a339462b-9e70-03ad-4efd-05d2ba8f26fd.htm">
+          <HelpTOCNode Title="CommandInvokedHandler Method " Url="html/563abfe0-f96a-38aa-8096-171423b9494d.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/78ee7a99-6c48-4df6-982f-3e8e5d49ba04.htm" />
+          <HelpTOCNode Title="ExtendSplashScreen Method " Url="html/38db3f0e-adb3-f61f-5227-681a4d6d2a39.htm" />
+          <HelpTOCNode Id="21255a71-8775-4f8d-8bd0-ba67cd611204" Title="GetXamlType Method " Url="html/b141adf2-05d5-b13b-b3f3-c4b505d33714.htm">
+            <HelpTOCNode Title="GetXamlType Method (String)" Url="html/a899520b-b453-c17b-fe60-df195e51a9e5.htm" />
+            <HelpTOCNode Title="GetXamlType Method (Type)" Url="html/e106f201-6760-015c-bb42-874c538da6cb.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetXmlnsDefinitions Method " Url="html/5d0104ca-74b0-5a80-1327-71b6a8770e7c.htm" />
+          <HelpTOCNode Title="HasInternet Method " Url="html/d4979a46-1854-99dd-dc39-a8a6a8020f65.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/72dd2f91-69af-a917-d1d2-99699a04ff22.htm" />
+          <HelpTOCNode Title="OnSuspending Method " Url="html/5d2ccf9d-d50f-9661-baf1-1c6a48442967.htm" />
+          <HelpTOCNode Title="RootFrame_FirstNavigated Method " Url="html/57787cb4-a398-4180-f531-5e492510b43d.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="App Properties" Url="html/6fca67fc-f64a-17d0-b4d2-a81651adf270.htm" />
+        <HelpTOCNode Title="App Events" Url="html/4dc5df7d-3059-b314-06ac-b5c53a7b67ba.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6afcf508-8819-41a4-b0c6-63b621d3ffe8" Title="AppDetailsPage Class" Url="html/0adb9bbd-25a6-6b34-f063-658760606d02.htm">
+        <HelpTOCNode Title="AppDetailsPage Constructor " Url="html/eda08363-7184-b465-1669-70aebb908317.htm" />
+        <HelpTOCNode Id="b4cc8ddb-51d7-4b38-be63-dfaf5943e346" Title="AppDetailsPage Fields" Url="html/03d48543-2b23-1b90-89ea-2bb690cd24c9.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/a4a10494-0caa-441f-0945-52b8a5098f25.htm" />
+          <HelpTOCNode Title="app Field" Url="html/d00b0e6a-e698-2bd5-2cfd-a343cee6f041.htm" />
+          <HelpTOCNode Title="appInstalled Field" Url="html/5b199144-f6cf-4b33-6ea1-615608994670.htm" />
+          <HelpTOCNode Title="appReviewsUri Field" Url="html/12f2b0ff-54d7-d7cc-c7cb-bbe946f4a278.htm" />
+          <HelpTOCNode Title="btnAppInstall Field" Url="html/3bbdaa05-8ce8-dc5e-eba4-55b41615989e.htm" />
+          <HelpTOCNode Title="btnAppShare Field" Url="html/11c3e1a4-27f0-2821-53a1-884a1d822270.htm" />
+          <HelpTOCNode Title="btnMyApps Field" Url="html/74a7af86-bab9-f8aa-9d55-6702640b2191.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/2fb68ca2-3033-4d0c-b7d8-9e7cdb21e114.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/34721237-76dd-677a-2652-94554e1a471d.htm" />
+          <HelpTOCNode Title="detailsShowMore Field" Url="html/a0043991-7acb-6710-99e8-191459e666c8.htm" />
+          <HelpTOCNode Title="FullScreen Field" Url="html/e31234a3-a2bd-4d26-2429-65effd363f45.htm" />
+          <HelpTOCNode Title="FullScreenshots Field" Url="html/3ecffdcb-308a-42e8-97cc-e3f544e30ac1.htm" />
+          <HelpTOCNode Title="GridScreenshots Field" Url="html/052c8fb3-8e2c-76a2-536b-d86df600ca48.htm" />
+          <HelpTOCNode Title="Home Field" Url="html/3ec9fa02-83a3-8598-73ba-6bdb95f9a88e.htm" />
+          <HelpTOCNode Title="imgAppIcon Field" Url="html/609a0022-2689-fecd-f312-1733725a9605.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/d78ecfbb-fcfb-06f3-346b-4866411f6a38.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/f19cde94-7aa2-82f5-3033-f3aab1ddfdb4.htm" />
+          <HelpTOCNode Title="OpenInBrowser Field" Url="html/7dcbb724-d88e-78b1-cb20-f70434235532.htm" />
+          <HelpTOCNode Title="selectionGridScreenshots Field" Url="html/a4b2242a-5e11-74cc-5d49-e51673f45b65.htm" />
+          <HelpTOCNode Title="txtAddInfo1 Field" Url="html/1ca96033-3bab-ea0b-1d3c-1017f2d51e7d.htm" />
+          <HelpTOCNode Title="txtAddInfo2 Field" Url="html/1547181c-71d1-ee9d-7e15-09b097866106.htm" />
+          <HelpTOCNode Title="txtAppAuthor Field" Url="html/99052422-6da5-8f26-bbb6-fc157a6e4dfb.htm" />
+          <HelpTOCNode Title="txtAppDetails Field" Url="html/4ea3cdba-2f7d-d4c4-58e7-1a827a7cfa1c.htm" />
+          <HelpTOCNode Title="txtAppName Field" Url="html/3a9d7232-1998-e596-113b-ea05cfc74706.htm" />
+          <HelpTOCNode Title="txtShowMore Field" Url="html/ceefd671-9f92-d353-db7b-fa03aea70743.htm" />
+          <HelpTOCNode Title="webAppReviews Field" Url="html/f1fc082c-83f9-3e2a-7b28-ef058c525ff0.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a1aad850-186c-4f52-9b7d-557eec5c6693" Title="AppDetailsPage Methods" Url="html/09994dc8-e4da-bd28-e305-0f48a7922bcd.htm">
+          <HelpTOCNode Title="About_Click Method " Url="html/0f9c8f61-4d3e-7114-2325-c983c279760d.htm" />
+          <HelpTOCNode Title="Browser_Click Method " Url="html/bcf8d6ee-229e-74e2-8f2b-00df5cc8f2ac.htm" />
+          <HelpTOCNode Title="btnAppInstall_Click Method " Url="html/724a6856-61ec-0db1-6745-1ea1b72cf257.htm" />
+          <HelpTOCNode Title="btnAppShare_Click Method " Url="html/d4e784c5-21f0-7038-5901-bed43ffd7736.htm" />
+          <HelpTOCNode Title="Button_Click Method " Url="html/beb9fa05-d8d1-33e6-37e0-8a6bcf9b9275.htm" />
+          <HelpTOCNode Title="Categories_Click Method " Url="html/3aec05a6-57f9-6302-7321-9883a0ea646f.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/ae8d4e5b-8372-783e-1b63-ac7e848a8922.htm" />
+          <HelpTOCNode Title="detailsShowMore_Click Method " Url="html/9da24818-6ef7-acf6-57f8-107f09883e97.htm" />
+          <HelpTOCNode Title="Feedback_Click Method " Url="html/a8396d41-e507-ecad-1b0b-31ebd9cf3f48.htm" />
+          <HelpTOCNode Title="getHtmlComment Method " Url="html/9a2eaa87-7a9d-2b09-c270-bb21d45f7775.htm" />
+          <HelpTOCNode Title="GridScreenshots_ContainerContentChanging Method " Url="html/ca6cb561-c69a-287b-9d05-5806516fd4bc.htm" />
+          <HelpTOCNode Title="GridScreenshots_SelectionChanged Method " Url="html/ed6d3379-523d-f224-48c1-80744b7157e8.htm" />
+          <HelpTOCNode Title="Home_Click Method " Url="html/14a79f5c-1f5d-aef4-aaf7-7789c8758f18.htm" />
+          <HelpTOCNode Title="HyperlinkButton_Click Method " Url="html/54336dd3-b31c-c465-278b-deedb914d863.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/1b0c67a1-ed08-b58f-dc4e-f5b058f1d6bc.htm" />
+          <HelpTOCNode Title="MyApps_Click Method " Url="html/fdf66f19-11bc-9ac5-ce53-c5c937013346.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/04b99b20-be8f-3e94-7534-20ff0a633786.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/9b06f99c-089a-bf48-8f69-12cea32aa217.htm" />
+          <HelpTOCNode Title="Search_Click Method " Url="html/062dfa65-737e-0927-622b-0e3701a5c2e3.htm" />
+          <HelpTOCNode Title="Settings_Click Method " Url="html/c82f292f-81ac-8d92-dbd0-3211de24864c.htm" />
+          <HelpTOCNode Title="ShowImages Method " Url="html/c0b80ce5-1b58-148f-6957-c87af652718b.htm" />
+          <HelpTOCNode Title="webAppReviews_FrameDOMContentLoaded Method " Url="html/cff33026-05c6-61ce-9761-7f8d434a62d6.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a835e73b-081c-4b0c-8dff-c4b4eb316bf2" Title="AppDetailsPage Properties" Url="html/71fa0ba7-4713-d390-f18c-217abe10a546.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/978e6dd2-e273-0a73-24c6-c34d53f81c7e.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/dbbf5ade-0df1-aff3-3acf-3397ee96a1df.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="AppDetailsPage Events" Url="html/431ed4da-7f96-b032-9d55-b02574f510ec.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="386d44a7-50ec-4269-a2c5-39e539a174be" Title="AppsPage Class" Url="html/6e9c5ab5-b36c-0337-fc07-1386c8de3729.htm">
+        <HelpTOCNode Title="AppsPage Constructor " Url="html/f53f81a8-96cb-dab4-7ee9-bbc367e5c4bc.htm" />
+        <HelpTOCNode Id="08f060a1-993b-4892-9ec8-e79251ed139f" Title="AppsPage Fields" Url="html/a6c597f7-2854-ceb8-5cbb-a95bee7498ce.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/61f093a6-6334-8a80-164b-cf3bbed40abf.htm" />
+          <HelpTOCNode Title="appHolding Field" Url="html/7ef39cc7-1bb6-229c-adc2-9d63fe198b40.htm" />
+          <HelpTOCNode Title="btnMyApps Field" Url="html/6ba7e718-adce-0d13-f5a7-5122b1c13eea.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/147432a4-aa18-7e71-dbfa-a41921a7231f.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/1bbb2b1b-9494-8538-7bc1-ba9e0714c372.htm" />
+          <HelpTOCNode Title="GridFeaturedApps Field" Url="html/910297f9-7ee1-31f3-40b1-24ea473799bf.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/71b57a25-b14a-f2f9-e3bb-fd209747facf.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/86087f36-eb39-c140-9656-dbfd3820d11e.htm" />
+          <HelpTOCNode Title="selectionGridApps Field" Url="html/f2687265-069f-5e98-a854-a609a9f3a9e3.htm" />
+          <HelpTOCNode Title="selectionGridCategories Field" Url="html/c2486fd6-7b4f-36d6-f748-81b2e5481571.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="ea852250-c7f1-4bbe-af8c-c6e54dc937bf" Title="AppsPage Methods" Url="html/9919dbe9-ad0d-2b23-e501-fa30d4ac434c.htm">
+          <HelpTOCNode Title="About_Click Method " Url="html/33e8e8fa-3529-0c1f-c69f-610c17a92679.htm" />
+          <HelpTOCNode Title="Categories_Click Method " Url="html/ad46d045-0c1f-e4c7-7e88-ff0720224c92.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/bde75dd9-7d48-fd18-83e4-dedc35ec432d.htm" />
+          <HelpTOCNode Title="Feedback_Click Method " Url="html/0a9b4b40-6d55-1380-01b3-9d1f99aa91d6.htm" />
+          <HelpTOCNode Title="GridFeaturedApps_ContentChanging Method " Url="html/b664d027-0f25-3bbf-abf0-3d022f0a7158.htm" />
+          <HelpTOCNode Title="GridFeaturedApps_SelectionChanged Method " Url="html/21abbf43-51d1-5855-5081-a2f6a091b687.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/a890b5e4-c5c2-08f4-ea05-9acf6a4a8c0f.htm" />
+          <HelpTOCNode Title="InstallButton_Click Method " Url="html/5fe8b343-2bd8-cb69-854e-7a863d36291a.htm" />
+          <HelpTOCNode Title="MyApps_Click Method " Url="html/69d91a92-20b2-ec2a-89b7-042e0ead5311.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/25b0fafb-b6e4-4980-b1f3-61031f8aca10.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/47f61de3-12e4-dbec-09de-f24725f7cb8a.htm" />
+          <HelpTOCNode Title="Search_Click Method " Url="html/7788985f-1755-31f7-67f5-d39e0fd50fc6.htm" />
+          <HelpTOCNode Title="Settings_Click Method " Url="html/875add3f-011c-1c0b-251b-50962b01888d.htm" />
+          <HelpTOCNode Title="ShareButton_Click Method " Url="html/fa57168e-fb99-e287-6429-e580f8eda609.htm" />
+          <HelpTOCNode Title="ShowImage Method " Url="html/df14b427-f13a-5d62-dcc4-a989f56fd481.htm" />
+          <HelpTOCNode Title="StackPanel_Holding Method " Url="html/f1ab14f5-fa1e-46d5-747b-d2a877db8bab.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="b681c245-f40e-4cc1-98c7-d2a8bbccefda" Title="AppsPage Properties" Url="html/5eab4383-3734-529a-edb9-d4708fc4223c.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/d1ed8abd-7697-db9b-7e5a-0a2c1589e708.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/9dc0d29f-d01d-5ce7-71e4-c26238595052.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="AppsPage Events" Url="html/b9fe8f54-1942-0282-347b-76613af1bc6e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a6b80e26-cc57-4445-88d5-64f473fdca55" Title="CategoriesPage Class" Url="html/0a41f587-fc32-1797-672f-2e94b8304218.htm">
+        <HelpTOCNode Title="CategoriesPage Constructor " Url="html/1810b663-695c-23b2-5c8e-690204e8b942.htm" />
+        <HelpTOCNode Id="55e72d24-b46a-47e0-913c-b9fc5cbc92e9" Title="CategoriesPage Fields" Url="html/2b30c59c-a170-0c84-422b-ca4f031dee00.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/2002891b-0512-4e65-b613-6ef38b9b15b5.htm" />
+          <HelpTOCNode Title="btnMyApps Field" Url="html/70adcff9-b38d-0ec4-b5f1-46e169580133.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/b1a5638b-b778-c90e-327d-fb3853d33cc3.htm" />
+          <HelpTOCNode Title="GridCategories Field" Url="html/b5414ccd-d46e-5da8-7aca-65c11a2a1d7e.htm" />
+          <HelpTOCNode Title="MainFragment Field" Url="html/47282bf0-1499-a16c-f160-b43cf4b2e4bf.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/a97fff2c-f4cf-e977-9013-374f041e7483.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/4ae9547e-98cb-e325-068d-fac8e8a9172c.htm" />
+          <HelpTOCNode Title="RootLayout Field" Url="html/5ef394ce-953c-26ce-7363-d191bc283474.htm" />
+          <HelpTOCNode Title="selectionGridCategories Field" Url="html/9032b309-3593-c01f-3af7-105af904c92f.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="9be0063b-e611-4a93-bff0-32889c59c5e8" Title="CategoriesPage Methods" Url="html/32462460-680d-4c27-e2f4-35168f80e974.htm">
+          <HelpTOCNode Title="About_Click Method " Url="html/595fa684-ff69-959d-0446-2d2af89f9d42.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/ff1f5481-69e3-112f-d37c-0ad3441dc25d.htm" />
+          <HelpTOCNode Title="Feedback_Click Method " Url="html/f04cd519-54d5-46d4-26b6-1654178bb2c4.htm" />
+          <HelpTOCNode Title="GridCategories_ContentChanging Method " Url="html/234b2d49-4686-ed6b-e597-d70bedae8e41.htm" />
+          <HelpTOCNode Title="GridCategories_SelectionChanged Method " Url="html/4d6d3a55-8bd9-042d-81f9-3453a57a6a4e.htm" />
+          <HelpTOCNode Title="Home_Click Method " Url="html/1636e25a-f239-387c-7d87-b31b5e23be06.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/de278907-c025-e0ef-9c0e-63aa5abe4ff6.htm" />
+          <HelpTOCNode Title="MyApps_Click Method " Url="html/d1de7a1b-b6b2-dfbc-4c87-4d23da5aa481.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/ac0ff9a7-043c-d08d-9553-e0427d5e08bb.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/82cb472c-0b1e-d1cd-96a1-bfadd579e03c.htm" />
+          <HelpTOCNode Title="Search_Click Method " Url="html/077e9be9-a6f5-9018-595d-2f6aede35a11.htm" />
+          <HelpTOCNode Title="Settings_Click Method " Url="html/0db4e3ca-992a-069c-135f-f42c40eeaca0.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="d0ade6f2-1bed-4d61-9e06-79e22b2ea614" Title="CategoriesPage Properties" Url="html/fa2cb08f-abb0-b7f5-5456-2f874f4e4775.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/30143774-5f73-7dc3-4c59-22ba38a913c0.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/13b36f0c-19ef-b64a-802c-843c2bcd15db.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CategoriesPage Events" Url="html/170a7198-2e7b-7637-e21c-a99b2beb9c41.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dc0555fe-56fb-421b-ab88-8a19e510ea86" Title="CategoryPage Class" Url="html/e2bd3791-fc48-2a55-7274-d1ebd1f84dbb.htm">
+        <HelpTOCNode Title="CategoryPage Constructor " Url="html/c02314fd-acbf-508f-5e16-33a57cab5c08.htm" />
+        <HelpTOCNode Id="f7afddd9-f625-4e20-b27f-4942395debb2" Title="CategoryPage Fields" Url="html/2868d7e7-1e1e-c2a0-dcb1-ec9bf5c83b1a.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/5247ce60-04b2-14df-a4cf-47eac4ca8aae.htm" />
+          <HelpTOCNode Title="appHolding Field" Url="html/3ce56944-f872-5f8d-34ad-ff522dee868d.htm" />
+          <HelpTOCNode Title="btnMyApps Field" Url="html/97470881-c148-6d46-7141-906fcd08c663.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/ecf80113-ffd1-1ff6-da8f-9c585dd866bc.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/8324b1b5-3c96-73d5-1237-bd45518ec0d7.htm" />
+          <HelpTOCNode Title="GridApps Field" Url="html/7b9d75b9-dfce-049c-195c-e9ef4d3057b1.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/a9f9d61e-20d1-b843-9146-1312ebf9c5bb.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/9a191617-1f07-71c0-fd2a-a25f5f05bd5f.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/45159994-de26-402a-d78e-f0f2bc119058.htm" />
+          <HelpTOCNode Title="selectionGridApps Field" Url="html/8731766f-4756-768c-332c-1569f185318b.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="c0dde07a-59b0-46a3-be4b-6ef7a3fac181" Title="CategoryPage Methods" Url="html/24127976-7d1c-ed7f-3716-5b057ce47665.htm">
+          <HelpTOCNode Title="About_Click Method " Url="html/512caff1-8356-f749-6f34-20182cea403b.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/2e8abcac-4e27-2fc3-40e0-abbd221bbf66.htm" />
+          <HelpTOCNode Title="Feedback_Click Method " Url="html/21923c40-7d98-d831-13a6-9c7dbadc0282.htm" />
+          <HelpTOCNode Title="GridApps_ContentChanging Method " Url="html/830729f7-308a-eec9-be4f-4c3cd68f9b20.htm" />
+          <HelpTOCNode Title="GridApps_SelectionChanged Method " Url="html/c44dfaa0-d970-54d8-2ee8-ec3f3630b2dc.htm" />
+          <HelpTOCNode Title="Home_Click Method " Url="html/5a5a15d8-bd06-e5bd-7c27-5d4bf30813fb.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/0b5d3e71-185d-e5c2-0cfa-af217d827c79.htm" />
+          <HelpTOCNode Title="InstallButton_Click Method " Url="html/992bbadf-279b-ee87-58f6-c349b6ff3346.htm" />
+          <HelpTOCNode Title="MyApps_Click Method " Url="html/d45737bc-2583-9624-a6fe-49af72e73f5e.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/ceb4b03f-2839-9b57-c92a-8ada64ccd64a.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/48b9ffdd-ce12-ccae-e3f8-e9a109324714.htm" />
+          <HelpTOCNode Title="Search_Click Method " Url="html/91fc5f93-5e4e-3e65-eb9a-948851045893.htm" />
+          <HelpTOCNode Title="Settings_Click Method " Url="html/a2324c0c-5a35-de11-a5d8-20814c768dcb.htm" />
+          <HelpTOCNode Title="ShareButton_Click Method " Url="html/897b401e-4838-c6a6-f184-d4bcc2f228d3.htm" />
+          <HelpTOCNode Title="ShowImage Method " Url="html/1e9c99e1-9bcc-7077-0b94-7fb1b6f13694.htm" />
+          <HelpTOCNode Title="StackPanel_Holding Method " Url="html/6699cda5-5620-ceec-0a1b-933d781442e6.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="f18d3b1e-f3d4-4d96-9656-9d7752b03b3e" Title="CategoryPage Properties" Url="html/5b8a5595-52d7-d940-e5da-54f184183649.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/bec3c1e1-267d-1d2d-0d5c-f97824cb108f.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/d297dc5e-e150-c19a-68b9-e9d91510df88.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CategoryPage Events" Url="html/8774dd3a-32b1-04a3-fb9c-b73bd0f5b2fc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4e434bbc-85ac-48ee-9604-9189068c4906" Title="MainPage Class" Url="html/75ac9c75-a006-a91d-00d4-c3050971298d.htm">
+        <HelpTOCNode Title="MainPage Constructor " Url="html/fff2559d-1747-16c6-2944-1d6f5cd40414.htm" />
+        <HelpTOCNode Id="3b98d886-8e01-444d-b8da-8e15a4685d35" Title="MainPage Fields" Url="html/37dec147-c9f6-d385-43b7-74aae249cae2.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/c4a5b01e-569b-8cf1-23ae-0c5ff4c27069.htm" />
+          <HelpTOCNode Title="appHolding Field" Url="html/32f96610-cb73-d7e3-4cf2-d370f16ee641.htm" />
+          <HelpTOCNode Title="btnMyApps Field" Url="html/a065c371-7430-7250-7d7c-ed0f49365cec.htm" />
+          <HelpTOCNode Title="featuredApps Field" Url="html/c3a7665f-3301-a18d-6212-bd2484a4888e.htm" />
+          <HelpTOCNode Title="featuredCategories Field" Url="html/044638ab-f894-84f9-8005-7aa18e552c20.htm" />
+          <HelpTOCNode Title="GridFeaturedApps Field" Url="html/4b7d2235-9a5d-3fd1-bbcc-639747be6954.htm" />
+          <HelpTOCNode Title="GridFeaturedCategories Field" Url="html/10e23936-6adb-8375-825d-02aeab37147f.htm" />
+          <HelpTOCNode Title="MainFragment Field" Url="html/88d6af5e-d101-465c-2abc-c30d6f3cdb8f.htm" />
+          <HelpTOCNode Title="nofeaturedApps Field" Url="html/79f20916-93bc-aece-c3d6-afd521ba1c66.htm" />
+          <HelpTOCNode Title="nofeaturedCategories Field" Url="html/2c5b83db-6695-5f7a-feea-b174710a0a89.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/c4eab69f-a9c5-f9b3-951f-fab5aad47ca9.htm" />
+          <HelpTOCNode Title="RootLayout Field" Url="html/5763da28-cfb9-b764-ad32-fcac40961ac7.htm" />
+          <HelpTOCNode Title="selectionGridApps Field" Url="html/a8cbd83d-0b07-0287-0fab-0e688149d3da.htm" />
+          <HelpTOCNode Title="selectionGridCategories Field" Url="html/35ca4349-b5af-0cea-83bc-1060f6af3d01.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="0a254192-22f3-4f05-9035-665250b1f3cf" Title="MainPage Methods" Url="html/172a3a16-3103-b026-a3f0-09e7894c2d63.htm">
+          <HelpTOCNode Title="About_Click Method " Url="html/55eb7e40-6f5a-bc82-2562-f37114302f06.htm" />
+          <HelpTOCNode Title="Categories_Click Method " Url="html/d97c51da-d0a5-29d1-e366-b5f22dfa4b36.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/2960cb81-a09c-28ac-ad4a-eba881a86d29.htm" />
+          <HelpTOCNode Title="Feedback_Click Method " Url="html/c04ffeaf-b338-0924-c730-90e8e4793615.htm" />
+          <HelpTOCNode Title="GridFeaturedApps_ContentChanging Method " Url="html/b2e7404d-4668-45eb-1306-bab84770f6c1.htm" />
+          <HelpTOCNode Title="GridFeaturedApps_SelectionChanged Method " Url="html/ecdcf30c-1a75-f13c-7432-ecf97c1a245f.htm" />
+          <HelpTOCNode Title="GridFeaturedCategories_ContentChanging Method " Url="html/0e4a810a-4c60-6d82-f1d2-d7f145263d4a.htm" />
+          <HelpTOCNode Title="GridFeaturedCategories_SelectionChanged Method " Url="html/c6f05a1a-6907-4e1c-6a00-06d829e0b75c.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/43f7384d-a1d4-eb62-9e96-9b80bdd003b7.htm" />
+          <HelpTOCNode Title="InstallButton_Click Method " Url="html/54d32c37-9232-416e-9f3f-3606746a39d8.htm" />
+          <HelpTOCNode Title="MoreApps_Click Method " Url="html/839f213f-c7dd-40df-2f32-bb8efecbcac2.htm" />
+          <HelpTOCNode Title="MoreCategories_Click Method " Url="html/0d95bb9a-ebcf-a7cb-d24b-f69056a288ec.htm" />
+          <HelpTOCNode Title="MyApps_Click Method " Url="html/e7be40d4-8b83-1340-2352-3f931e60f292.htm" />
+          <HelpTOCNode Title="Search_Click Method " Url="html/0f8bff81-4a15-2b8e-c996-6014e6a6191d.htm" />
+          <HelpTOCNode Title="Settings_Click Method " Url="html/e3576be2-e162-3c8b-3752-bea7addddc1f.htm" />
+          <HelpTOCNode Title="ShareButton_Click Method " Url="html/ae5cb669-a540-7bda-4b17-671d61d48c41.htm" />
+          <HelpTOCNode Title="ShowImage Method " Url="html/74e1ad7e-6e40-ebe7-26d0-a9f94d871263.htm" />
+          <HelpTOCNode Title="StackPanel_Holding Method " Url="html/437619eb-689e-091c-c0eb-36cfbd117c6d.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="MainPage Properties" Url="html/8c09565a-a549-3792-a84c-3cfaad905f17.htm" />
+        <HelpTOCNode Title="MainPage Events" Url="html/0932df84-0f98-a9b2-7034-5f8699037b19.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7e3418b4-848b-41dd-a239-f9e6b5fe3395" Title="MyAppsPage Class" Url="html/1d8c67bf-953b-065a-f0f0-57f7d920c5cb.htm">
+        <HelpTOCNode Title="MyAppsPage Constructor " Url="html/7e78ec9f-e305-5ea8-60df-7dabebc9ce56.htm" />
+        <HelpTOCNode Id="67f1ef98-f99a-4255-97dc-00ada0b6908b" Title="MyAppsPage Fields" Url="html/aef593b2-e8bf-6afc-272b-7c2897a86dc0.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/5a16e27e-4656-9702-22cd-cda80bd4e26e.htm" />
+          <HelpTOCNode Title="appHolding Field" Url="html/f470600f-a888-fcd7-9e17-590d6a6f9a80.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/b1a44f7d-bf05-e1ae-c84f-ee208baeb283.htm" />
+          <HelpTOCNode Title="GridMyApps Field" Url="html/c4252ca0-059b-9ee3-1301-10def7f7c383.htm" />
+          <HelpTOCNode Title="MainFragment Field" Url="html/1d72b1d8-1511-eac3-0581-8adf7fc25148.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/3242f3a8-55ac-e3a6-d074-3ab8534c71a0.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/c04df9b6-115a-b8d5-21c5-a119566afb75.htm" />
+          <HelpTOCNode Title="RootLayout Field" Url="html/d4788dc5-5d06-0e68-ece5-5973f1eb2322.htm" />
+          <HelpTOCNode Title="selectionGridApps Field" Url="html/b59abc14-516d-4877-2e72-b40d0a7ca19e.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a42ffe1b-00ac-4ef4-adbd-25645ea3e37d" Title="MyAppsPage Methods" Url="html/d8649a36-c50a-5fac-7342-8c47c9845010.htm">
+          <HelpTOCNode Title="About_Click Method " Url="html/2f34faaa-f2b0-b4d2-a79e-34cf5832c97e.htm" />
+          <HelpTOCNode Title="Categories_Click Method " Url="html/797d690e-115a-8279-b7e9-7945fa97c203.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/50857ada-663c-ad2c-019b-ef46ab04a7c6.htm" />
+          <HelpTOCNode Title="Feedback_Click Method " Url="html/0526da61-23e1-75d1-c29c-2a22ae72d6f5.htm" />
+          <HelpTOCNode Title="GridMyApps_ContentChanging Method " Url="html/1ff70dd9-6b88-4dec-5b7d-ea575617dff8.htm" />
+          <HelpTOCNode Title="GridMyApps_SelectionChanged Method " Url="html/0ffe4613-3bdf-46bc-8fb0-725320aa190d.htm" />
+          <HelpTOCNode Title="Home_Click Method " Url="html/e4a4a3ae-eadf-6521-0092-d3d2353ac824.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/871adfd0-4585-fc89-a373-980417e3e697.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/f842f83c-33b6-ba30-bb13-108b550d6e0b.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/080dd675-662a-8bf2-0c3f-67de3a735d6c.htm" />
+          <HelpTOCNode Title="Search_Click Method " Url="html/f0cc505d-0721-60fa-75f7-ae3e7b33d9da.htm" />
+          <HelpTOCNode Title="Settings_Click Method " Url="html/7b34ef8f-4721-464a-919f-57078b06fe78.htm" />
+          <HelpTOCNode Title="ShareButton_Click Method " Url="html/e92364e1-cc59-bfea-f33d-9d71b2e687d9.htm" />
+          <HelpTOCNode Title="ShowImage Method " Url="html/234b3e99-4c61-bb23-6f8f-d57e15b15457.htm" />
+          <HelpTOCNode Title="StackPanel_Holding Method " Url="html/5578b626-c1e5-464e-71d6-b89aa4fc357a.htm" />
+          <HelpTOCNode Title="UninstallButton_Click Method " Url="html/a85a44fa-e1f7-6711-86fd-fdd95fe997c5.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="f5bf44f7-4ee8-4342-9aca-df4fa79e3e22" Title="MyAppsPage Properties" Url="html/63fac6b2-6e88-5746-8790-65971df8f13c.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/2d8fb7ac-7774-7b7f-7fb6-4f85b0a4b35f.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/3fa76615-fa12-f6a1-376c-6c43ad670b9d.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="MyAppsPage Events" Url="html/b0524a8e-37b7-a154-7f89-92280f9b7b93.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1e02903e-e10b-4697-9852-8293a3fc2f8e" Title="Program Class" Url="html/89ef4a0f-f4b4-6347-a662-f457e1682f66.htm">
+        <HelpTOCNode Id="d7eb6eb8-0920-4657-b665-baed792a0a8d" Title="Program Methods" Url="html/32ebe5a2-fb80-ab94-bb1e-8be9a5f8c1d2.htm">
+          <HelpTOCNode Title="Main Method " Url="html/c8c9b12b-bea7-2f09-73b3-7aea5f1cb22d.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="64b35a85-bac6-40d5-9276-ea13be8bc2d1" Title="SearchPage Class" Url="html/41e05708-23ff-7687-df7c-71a5374f965f.htm">
+        <HelpTOCNode Title="SearchPage Constructor " Url="html/c9037f91-81ee-645e-de81-bf22d27067f3.htm" />
+        <HelpTOCNode Id="970deb1b-e1c3-462a-bd3b-a4a780a6cb1d" Title="SearchPage Fields" Url="html/ded2339e-056d-4755-16f9-67fee483d36c.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/4dde041a-989e-4a81-b8c5-c1370cc7fc42.htm" />
+          <HelpTOCNode Title="appHolding Field" Url="html/ffa4479f-62f4-75ee-718e-791e91d08912.htm" />
+          <HelpTOCNode Title="btnMyApps Field" Url="html/da5a8923-63cd-ac01-0211-d61eb6efa82b.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/0a9a188f-3b09-cfd8-4bf8-1c35d4fe14dd.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/797060b8-5504-ed0e-137d-b8038a1c49d6.htm" />
+          <HelpTOCNode Title="GridFeaturedApps Field" Url="html/1c983a6f-7043-9f67-ce17-7f0612c0c836.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/9343225d-fdc2-d1fc-e7e1-3b5f01a0f064.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/7222371f-afd7-36ff-5e1b-4ed291a24af5.htm" />
+          <HelpTOCNode Title="Search Field" Url="html/e97f3a8c-0aa9-168d-a4d4-b7cf71af181d.htm" />
+          <HelpTOCNode Title="selectionGridApps Field" Url="html/7d23faa2-1ed8-55ae-d6e3-341955e3a99a.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="e9557493-fb9e-4129-8cc5-a3d85f434e71" Title="SearchPage Methods" Url="html/acee913f-46af-7ee9-3430-9566cb055988.htm">
+          <HelpTOCNode Title="About_Click Method " Url="html/625c065b-7a8e-8c26-937a-bcc71df6230f.htm" />
+          <HelpTOCNode Title="Categories_Click Method " Url="html/568c2304-beb1-31c5-9001-719f23011bd7.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/2de147ed-4291-da2d-ac46-c224588570cf.htm" />
+          <HelpTOCNode Title="Feedback_Click Method " Url="html/338b262d-225e-a6ce-512f-c443de60e365.htm" />
+          <HelpTOCNode Title="GridFeaturedApps_ContentChanging Method " Url="html/12a7ae98-d2f4-5017-11a1-b3284349b932.htm" />
+          <HelpTOCNode Title="GridFeaturedApps_SelectionChanged Method " Url="html/f0bb869f-6330-ef10-bc4f-7a8871a06177.htm" />
+          <HelpTOCNode Title="Home_Click Method " Url="html/193a1186-b1aa-cc3d-33ba-8a3a83f4f37d.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/709023a7-111d-5589-e104-2c5fdc60baa6.htm" />
+          <HelpTOCNode Title="InstallButton_Click Method " Url="html/6a2de68d-a7a9-f946-94af-4ce38ecfacb2.htm" />
+          <HelpTOCNode Title="MyApps_Click Method " Url="html/c4d59563-f486-5f51-79e9-697974c08470.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/07631e3b-fe48-102b-08fb-f72998fe5f33.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/8c8610b5-c4ad-f917-8986-ae01f9c9d331.htm" />
+          <HelpTOCNode Title="Search_TextChanged Method " Url="html/691f29a9-ce73-2926-3ddd-1bb310824c83.htm" />
+          <HelpTOCNode Title="Settings_Click Method " Url="html/9d30d250-ee19-1b4c-2b64-1cba83e843b2.htm" />
+          <HelpTOCNode Title="ShareButton_Click Method " Url="html/5616520a-42a7-200b-e86a-6bce40c8fe5c.htm" />
+          <HelpTOCNode Title="ShowImage Method " Url="html/0fdaf241-571f-931c-9821-f5b81e871ed2.htm" />
+          <HelpTOCNode Title="StackPanel_Holding Method " Url="html/3091dc52-0777-60bb-f664-805b51617b41.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="da8ede22-15f7-4328-9e2b-c7104f8c4b53" Title="SearchPage Properties" Url="html/3ecce3d4-74b8-302f-a920-663029fb77f9.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/64290d5b-03f0-5e18-17e2-9cc7f9f1e9b7.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/12e4361b-d4d2-06ac-950f-79d6c54426fc.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SearchPage Events" Url="html/36b99b2b-f276-c02d-4530-127b62ee3e7d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="57f400d2-e652-45d0-a734-3769f82e4890" Title="SettingsDialog Class" Url="html/90e4849c-81a3-2df1-e505-a8cbecac14e0.htm">
+        <HelpTOCNode Title="SettingsDialog Constructor " Url="html/2b685782-920b-724a-5a88-921884614e4c.htm" />
+        <HelpTOCNode Id="52aca67a-9b77-402a-8cd0-8096809ef972" Title="SettingsDialog Fields" Url="html/a40ee956-f957-cd2c-339a-d4e7c8c3f07f.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/10d93cd2-5981-4bcf-d7d1-3efdbec27fe7.htm" />
+          <HelpTOCNode Title="featured_apps Field" Url="html/801369ca-4190-ed02-19d1-762ba09509c1.htm" />
+          <HelpTOCNode Title="featured_categories Field" Url="html/51270b4f-b241-5f2c-de28-6c68348db5c8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="3cdeda3e-b0f8-4bc8-9a23-8d661f7018c6" Title="SettingsDialog Methods" Url="html/3bc6952b-b6d5-dbeb-4091-8c2cfa17eea3.htm">
+          <HelpTOCNode Title="Connect Method " Url="html/aea6b36a-7638-6d83-e120-ba2a7467a5fc.htm" />
+          <HelpTOCNode Title="ContentDialog_PrimaryButtonClick Method " Url="html/98440cfb-2090-5622-6940-d543499da0df.htm" />
+          <HelpTOCNode Title="ContentDialog_SecondaryButtonClick Method " Url="html/119e2827-f2e2-f83b-91c1-34ce8fdedb71.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/c82b7b67-9224-c8c8-7b7a-84b1cc61fba1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SettingsDialog Properties" Url="html/4447fc02-a0e0-0a40-12b7-3027a52d90ee.htm" />
+        <HelpTOCNode Title="SettingsDialog Events" Url="html/c397503c-4273-51bc-5ce3-592fb50623d1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c4f11bd7-787a-4c11-a6f5-c47b67291815" Title="AppStore.Common" Url="html/17833a84-838c-5ad0-b034-434f48f27009.htm">
+      <HelpTOCNode Id="7de2fc76-6077-484d-a5a9-056e4f355085" Title="LoadStateEventArgs Class" Url="html/7486f067-cfc4-84e4-20fc-de1bd36e2829.htm">
+        <HelpTOCNode Title="LoadStateEventArgs Constructor " Url="html/8925739a-cdde-77f1-92fb-d2e00b571863.htm" />
+        <HelpTOCNode Title="LoadStateEventArgs Methods" Url="html/47726974-2729-54e0-44fa-d79063a0e934.htm" />
+        <HelpTOCNode Id="42e900c0-b4a6-4bcc-b84f-d1bd41ef7bc6" Title="LoadStateEventArgs Properties" Url="html/3c49dd97-f78f-e2e4-484a-243a6aee67b4.htm">
+          <HelpTOCNode Title="NavigationParameter Property " Url="html/85a0d9c5-8e54-5eef-fb6e-f2777cbfffc0.htm" />
+          <HelpTOCNode Title="PageState Property " Url="html/b6409e41-1f5d-44ba-0905-ce6251d1a4f3.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="LoadStateEventHandler Delegate" Url="html/5fb42e65-70ec-5e92-e031-edbc7fa54a1d.htm" />
+      <HelpTOCNode Id="5d7f5cb1-8231-460c-92b2-537d55122f4e" Title="NavigationHelper Class" Url="html/58ff6476-c63f-ab80-07ac-94655f6578bd.htm">
+        <HelpTOCNode Title="NavigationHelper Constructor " Url="html/45aa6394-6768-b60c-fb8d-6d493b2833fe.htm" />
+        <HelpTOCNode Id="889dfdaf-6e8b-4aaf-8707-faafa6bf1285" Title="NavigationHelper Fields" Url="html/017f8c5b-d2ae-8416-a8cc-c4bcd6723bb0.htm">
+          <HelpTOCNode Title="_goBackCommand Field" Url="html/a71d6c15-ab4a-b173-0f82-9d9140a7214c.htm" />
+          <HelpTOCNode Title="_goForwardCommand Field" Url="html/be468d51-a0e0-aa95-eb3b-1fc1adf2c850.htm" />
+          <HelpTOCNode Title="_pageKey Field" Url="html/5d3fa80d-159a-fa29-5a27-d98ee096c17b.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="ca78f263-8030-4fb7-8487-7a182f14f048" Title="NavigationHelper Methods" Url="html/458cd7d4-cf8b-2de5-bf72-585700564c3c.htm">
+          <HelpTOCNode Title="CanGoBack Method " Url="html/cc3a93ce-1172-aaa3-f224-22b682213f1e.htm" />
+          <HelpTOCNode Title="CanGoForward Method " Url="html/a4f8cec5-d67e-fe32-94a7-dea1a44ec797.htm" />
+          <HelpTOCNode Title="GoBack Method " Url="html/917e7689-7f6b-e32a-2221-445ebc80ecb3.htm" />
+          <HelpTOCNode Title="GoForward Method " Url="html/ac0c91a8-d9e1-3c8e-a450-369cec742c99.htm" />
+          <HelpTOCNode Title="HardwareButtons_BackPressed Method " Url="html/502767bf-3a1e-6025-7fad-617dc386b0f8.htm" />
+          <HelpTOCNode Title="OnNavigatedFrom Method " Url="html/521c8690-2ecb-0692-1363-525af11b6064.htm" />
+          <HelpTOCNode Title="OnNavigatedTo Method " Url="html/227b3c6b-8f9d-8fa7-bcc2-7e4830aa2402.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5279e8bf-3a40-4813-8476-01eae914c459" Title="NavigationHelper Properties" Url="html/908ef315-6257-247a-0eb0-b75dda11e371.htm">
+          <HelpTOCNode Title="Frame Property " Url="html/0b38fc37-daa9-f252-4f1d-69b31ccbee2b.htm" />
+          <HelpTOCNode Title="GoBackCommand Property " Url="html/a41fd97a-5672-cf65-4f72-31fc60bbe610.htm" />
+          <HelpTOCNode Title="GoForwardCommand Property " Url="html/b6efdcde-bc39-51ef-da3f-044822cc23d6.htm" />
+          <HelpTOCNode Title="Page Property " Url="html/abcb72c8-6f5a-7a05-3dc6-63d3370fc18a.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="75acd3e4-dc9a-47b3-87e3-7b57660999e8" Title="NavigationHelper Events" Url="html/71183d32-2718-e253-6a91-5c7437913bc6.htm">
+          <HelpTOCNode Title="LoadState Event" Url="html/fe0f3ddb-993e-eaef-6e8d-62e643624112.htm" />
+          <HelpTOCNode Title="SaveState Event" Url="html/9ed61ba5-109b-7eee-155c-c221e56af92a.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="d19920eb-4dd1-4551-b92a-999612e6a495" Title="ObservableDictionary Class" Url="html/858d6ce0-cdc1-5dd8-d428-8e7987d680fd.htm">
+        <HelpTOCNode Title="ObservableDictionary Constructor " Url="html/1dcf4f64-9425-1939-8454-064189c327b2.htm" />
+        <HelpTOCNode Id="389ff48e-3a39-46b0-b360-d7085b1f448d" Title="ObservableDictionary Fields" Url="html/534d70ce-bae0-fd83-5b0a-d528f099ff4d.htm">
+          <HelpTOCNode Title="_dictionary Field" Url="html/5211170c-af98-2886-a64f-480e53c14188.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="645f7efd-9bc9-4dea-ab38-80973f710bc8" Title="ObservableDictionary Methods" Url="html/bc66af10-3c36-fe02-fad0-cf26734fc14f.htm">
+          <HelpTOCNode Id="46482b0b-5b38-4801-b806-cdce202b3adf" Title="Add Method " Url="html/a2743918-9849-bb41-b509-b013eb650fdc.htm">
+            <HelpTOCNode Title="Add Method (KeyValuePair(String, Object))" Url="html/4e6287a6-83fe-31de-0693-4af0cb7faab5.htm" />
+            <HelpTOCNode Title="Add Method (String, Object)" Url="html/7c5a9109-ba3a-7fdb-6a58-278d1b2034f5.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Clear Method " Url="html/b6421460-8494-2f87-dda5-a0b8e465b4fa.htm" />
+          <HelpTOCNode Title="Contains Method " Url="html/cb82ac75-5282-355c-45f4-8d33b8e5a37c.htm" />
+          <HelpTOCNode Title="ContainsKey Method " Url="html/09791e56-6f4a-0a58-2ca3-c1f0f00c408d.htm" />
+          <HelpTOCNode Title="CopyTo Method " Url="html/e78b882c-50e7-de7c-eea0-59199a503fb1.htm" />
+          <HelpTOCNode Title="GetEnumerator Method " Url="html/d3177256-9dd8-7ae8-4b2c-a118c15ddfaf.htm" />
+          <HelpTOCNode Title="InvokeMapChanged Method " Url="html/9ce6ab87-6d00-d1ae-e321-622e51870858.htm" />
+          <HelpTOCNode Id="e6f2f60e-c586-49d1-8dbf-6eb924b3375f" Title="Remove Method " Url="html/53b2d500-89fb-6b6c-20c8-d12650a408d9.htm">
+            <HelpTOCNode Title="Remove Method (KeyValuePair(String, Object))" Url="html/01ba955b-ea43-d394-891a-be22b5043d7b.htm" />
+            <HelpTOCNode Title="Remove Method (String)" Url="html/5730334d-cf55-ea8a-b9b3-74396b6146f2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="TryGetValue Method " Url="html/fcf44bba-1f2c-f518-1034-cb6a5f61194a.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a03fe276-5505-44d5-9a79-d1320065376e" Title="ObservableDictionary Properties" Url="html/158d1ba3-8305-4b63-cb4c-4898b30ca3fc.htm">
+          <HelpTOCNode Title="Count Property " Url="html/0f1aff2d-c771-10cc-89b3-6955d8613dab.htm" />
+          <HelpTOCNode Title="IsReadOnly Property " Url="html/7655f987-23e7-be74-eadb-3aff9a1fb13c.htm" />
+          <HelpTOCNode Title="Item Property " Url="html/2c6c6652-89e9-8b09-833b-ae9fd82ef0b8.htm" />
+          <HelpTOCNode Title="Keys Property " Url="html/bec8b338-9f2c-a8ce-6e8a-36055ca08af5.htm" />
+          <HelpTOCNode Title="Values Property " Url="html/0531bb7c-6a81-a992-414d-37e3272168d0.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="9352d66f-6203-455c-b6b6-8758db2efe8b" Title="ObservableDictionary Events" Url="html/3e59af15-d454-d41f-82c3-9ff0567762ca.htm">
+          <HelpTOCNode Title="MapChanged Event" Url="html/e41a72cd-92cc-3ce7-105c-4d20fea3d28b.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="9a812b49-8ddd-430e-abf8-f582269c1c08" Title="ObservableDictionary.ObservableDictionaryChangedEventArgs Class" Url="html/74ca0746-efef-72af-d21e-d288588ddc65.htm">
+        <HelpTOCNode Title="ObservableDictionary.ObservableDictionaryChangedEventArgs Constructor " Url="html/2653629d-d573-e772-536e-6166d9504d23.htm" />
+        <HelpTOCNode Title="ObservableDictionaryChangedEventArgs Methods" Url="html/77617954-a9de-87a1-c237-dc1ea2e950ff.htm" />
+        <HelpTOCNode Id="2ab18970-0466-4345-bea1-a1290259c41b" Title="ObservableDictionaryChangedEventArgs Properties" Url="html/72d737c8-179d-06f5-df39-2d1d6d107677.htm">
+          <HelpTOCNode Title="CollectionChange Property " Url="html/8108c184-9e7a-97ca-245a-b2aa88e64df5.htm" />
+          <HelpTOCNode Title="Key Property " Url="html/ee615880-618b-0edb-e602-9be5e0e5127a.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="419f5f1e-b2f4-4c9f-814b-f3d9fc342fb3" Title="RelayCommand Class" Url="html/dbecf351-977b-bceb-c864-72a68bf1ef29.htm">
+        <HelpTOCNode Id="4de9198c-077a-48ad-b894-53fbd22d73a2" Title="RelayCommand Constructor " Url="html/f33f4c7e-482c-91a5-769f-0cc5852121e2.htm">
+          <HelpTOCNode Title="RelayCommand Constructor (Action)" Url="html/79242e1c-d091-1768-62f2-0ae0e6f5e79a.htm" />
+          <HelpTOCNode Title="RelayCommand Constructor (Action, Func(Boolean))" Url="html/a4cbf8c9-ecd9-a4cc-39b8-647c8db15162.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="d72f0f13-e5ff-4df3-ae47-168833577438" Title="RelayCommand Fields" Url="html/72bd4171-8eb0-1b69-f40e-aa8e7528fffd.htm">
+          <HelpTOCNode Title="_canExecute Field" Url="html/8f9271af-01e4-b848-e2ad-dfaba2f50b1b.htm" />
+          <HelpTOCNode Title="_execute Field" Url="html/0bf0e362-5379-63b6-dfd7-641b812e582b.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="599c81b4-e117-4601-a417-d6401482fbec" Title="RelayCommand Methods" Url="html/3ae6eb1a-df2b-f3c8-36c7-384952023cec.htm">
+          <HelpTOCNode Title="CanExecute Method " Url="html/02610dba-9111-05b6-099a-2216192d505b.htm" />
+          <HelpTOCNode Title="Execute Method " Url="html/5726e7bf-2c24-654f-9cbb-f81ff8276cc1.htm" />
+          <HelpTOCNode Title="RaiseCanExecuteChanged Method " Url="html/1db4303e-a4bf-d461-25e5-020fe0748278.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="1b8ffcd5-6779-468f-86b6-875b92a0f04f" Title="RelayCommand Events" Url="html/e827375e-5593-0893-ecbf-3d42ed8c2b15.htm">
+          <HelpTOCNode Title="CanExecuteChanged Event" Url="html/a08ad3fc-281a-16aa-70a0-0491b0702d61.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="c6e52449-b512-4dde-945c-bb2e9bbfec61" Title="SaveStateEventArgs Class" Url="html/e540da9c-f1e2-d6e9-bec5-0addef55c579.htm">
+        <HelpTOCNode Title="SaveStateEventArgs Constructor " Url="html/26870405-866a-95d7-c740-9c2e0378062d.htm" />
+        <HelpTOCNode Title="SaveStateEventArgs Methods" Url="html/2bad616c-d88f-ffbc-cce3-f399df9e26da.htm" />
+        <HelpTOCNode Id="2dbb0891-736d-402a-b93e-4646ac45550d" Title="SaveStateEventArgs Properties" Url="html/1f6117f0-f664-4177-e3e3-297ad8795472.htm">
+          <HelpTOCNode Title="PageState Property " Url="html/a9589377-0e09-8c80-a9b9-b0987eef64e0.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="SaveStateEventHandler Delegate" Url="html/b00c9dce-e7f1-7058-c6b4-26670f89ff20.htm" />
+      <HelpTOCNode Id="87641a68-8187-4d87-bdee-a1a9e3251344" Title="SuspensionManagerException Class" Url="html/bcbe50f4-1300-84a3-a494-a3557e685551.htm">
+        <HelpTOCNode Id="66dcfccf-3bb5-4ade-8bbf-13433779eeca" Title="SuspensionManagerException Constructor " Url="html/54605174-81f4-151c-37fb-76d2dba8a988.htm">
+          <HelpTOCNode Title="SuspensionManagerException Constructor " Url="html/a02bca9b-95ef-1788-4307-08c11fe42971.htm" />
+          <HelpTOCNode Title="SuspensionManagerException Constructor (Exception)" Url="html/f8772cdc-478b-a70a-dfbd-4460da8b7530.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SuspensionManagerException Methods" Url="html/cdf6ca95-a2bc-e12f-9f8d-b16edd62a73b.htm" />
+        <HelpTOCNode Title="SuspensionManagerException Properties" Url="html/4e7cd1ad-3b30-96fe-616d-cc5d5a0c285a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5d27fe41-d04d-48fa-b8d2-31381496a5db" Title="AppStore.Templates" Url="html/b0d613ec-5470-ed3e-b412-c3620a9fe738.htm">
+      <HelpTOCNode Id="038984d6-da9f-4297-9870-a673593eaab3" Title="FlashCardPage Class" Url="html/6c1171bc-8ab5-ecc0-c4df-52991346408f.htm">
+        <HelpTOCNode Title="FlashCardPage Constructor " Url="html/85d41154-89c3-4aff-d37d-f644c77a97f2.htm" />
+        <HelpTOCNode Id="9e790079-5a4f-4a9e-9725-47d0a81635df" Title="FlashCardPage Fields" Url="html/18d81aef-512a-f3d3-5fbd-05327317f023.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/37f0c38d-ef86-d431-8570-988896367960.htm" />
+          <HelpTOCNode Title="backCard Field" Url="html/c8ba8912-8510-77ae-aa1d-2f25b813f7ef.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/9b5159f6-12de-f3b4-6dde-62e38946555e.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/fb28d393-0e53-77f8-0117-ef2f333fc8d2.htm" />
+          <HelpTOCNode Title="flash Field" Url="html/5da53182-609a-0c83-6cfb-5229101c0771.htm" />
+          <HelpTOCNode Title="FlashCard Field" Url="html/3c317887-cf80-1368-6409-5cfbfaee085e.htm" />
+          <HelpTOCNode Title="FlashHint Field" Url="html/0fe01223-2166-77b0-a581-c8fae999620f.htm" />
+          <HelpTOCNode Title="FlashNumber Field" Url="html/080f2ba2-93e5-6556-1dc8-fae28b240276.htm" />
+          <HelpTOCNode Title="FlashQuestion Field" Url="html/60c95b3b-de04-c6c5-eb45-823af6d2b87b.htm" />
+          <HelpTOCNode Title="FlashText Field" Url="html/37f2e5a5-165c-17db-e9c3-be6db125bd18.htm" />
+          <HelpTOCNode Title="Flip Field" Url="html/c6de9ae2-f750-a67c-da79-af9f7840c90d.htm" />
+          <HelpTOCNode Title="FlipCardBack Field" Url="html/c83557e6-2f26-eba9-3533-2a133bf07c40.htm" />
+          <HelpTOCNode Title="FlipCardFront Field" Url="html/81724d5c-bf7e-2cf0-8881-e9b788e04bb7.htm" />
+          <HelpTOCNode Title="frontCard Field" Url="html/a5e857e5-6f10-29c0-bb58-fc31c7a505e9.htm" />
+          <HelpTOCNode Title="iQuestionIndex Field" Url="html/69505edc-0090-ebeb-3f74-9ac02ed89f72.htm" />
+          <HelpTOCNode Title="isFlipped Field" Url="html/787d682e-132b-9991-5b00-99f87c722e12.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/34588c10-53a6-a7eb-eeac-90515d2d5c27.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/fac0192e-ae69-39d8-fdb4-1cbd5736b760.htm" />
+          <HelpTOCNode Title="Next Field" Url="html/c18adfac-1b54-9be4-dfd7-a201fde6c614.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/ed82890a-d0da-f193-face-0cfc29475572.htm" />
+          <HelpTOCNode Title="Previous Field" Url="html/53fc8d0b-de19-d4bc-27f2-0832c0115f7f.htm" />
+          <HelpTOCNode Title="VisualStateGroup Field" Url="html/97fc3806-1638-bac5-c049-f8219754f886.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5c6141c0-05d5-472c-b9a7-6e73feadce41" Title="FlashCardPage Methods" Url="html/29983341-6521-8be8-2fb2-90d2cec17b4f.htm">
+          <HelpTOCNode Title="base64image Method " Url="html/59ba8b5f-a406-8e01-ccde-7a5f55421584.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/01fdb6b4-b794-b7cd-5b08-c6c0779d59cd.htm" />
+          <HelpTOCNode Title="Flip_Click Method " Url="html/1ec3e953-592f-979d-3ba0-67d0516d3fa9.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/ffd94b82-9a52-247d-e66c-955bc9833721.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/eff52a91-ca72-7e38-aa9d-1972bfb63b98.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/9a577391-d22c-1a45-0449-c06ca092d7df.htm" />
+          <HelpTOCNode Title="Next_Click Method " Url="html/7dee8fc3-b9d0-b14d-5e6b-6398c8235ac0.htm" />
+          <HelpTOCNode Title="populateQuestion Method " Url="html/6cf58d28-d337-7b96-ed3c-a0ad17ba85df.htm" />
+          <HelpTOCNode Title="Previous_Click Method " Url="html/c5fbb2e9-4e3c-f83b-5fbb-7a2bcda5c335.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="7fd3b14e-dd09-4d1d-a6af-e3e5904ee881" Title="FlashCardPage Properties" Url="html/5970919f-ffa0-0c12-0acd-f7ee06031ad4.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/43524afa-cd9b-181f-d031-073e20f835e0.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/9333dd14-4c6e-66fc-e497-dc4b2b4b33d2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="FlashCardPage Events" Url="html/4f82b038-ce15-ad6d-a011-6e03e529537a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fd48587e-0099-48a8-8cde-6baa28ca6c76" Title="InfoDetailPage Class" Url="html/8cb9593a-cffc-8013-4c81-f22d4bb497b7.htm">
+        <HelpTOCNode Title="InfoDetailPage Constructor " Url="html/fa578ce9-1f19-2b54-eca6-69f87a4f3a6e.htm" />
+        <HelpTOCNode Id="15d3d8ed-9021-4213-84fe-073b9da1166b" Title="InfoDetailPage Fields" Url="html/3445f6b4-d415-ece0-c914-feff64a0503b.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/c10efc03-caf1-eba2-0cd2-7a98e092bd3a.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/27a9b558-67b9-4a2e-c768-6425f3b3208c.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/9c749092-11d5-acd4-3ab2-2d4d02f71720.htm" />
+          <HelpTOCNode Title="InfoDescription Field" Url="html/ea9043ba-c424-c490-fff5-2c2b49048af7.htm" />
+          <HelpTOCNode Title="InfoTitle Field" Url="html/1158189c-cec0-391f-48f5-45e85bf91a4b.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/53481b10-d540-d2a5-9999-24042c43d2d5.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/d59d205d-4360-5b47-a823-68104290522c.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/95721425-a88d-a623-c5f9-3c7f9fbba380.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="d1165bc9-cf1e-4523-8bd2-92db62a729a0" Title="InfoDetailPage Methods" Url="html/234365f6-b0e6-d0fa-f41b-97fb2343af1f.htm">
+          <HelpTOCNode Title="Connect Method " Url="html/0836adfe-acba-cbe2-b4fc-95921fc06d8d.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/5c19f560-4c56-6b8c-69e5-56a6fadbb88a.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/c0d3ff89-d828-3ad7-8138-b9402a240466.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/0dc806f8-dfc1-c212-9358-0d2190b0ef6b.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="864e4e58-e77a-4633-97f0-ac58bc92c98a" Title="InfoDetailPage Properties" Url="html/aff6f056-07bb-a20c-a6f5-046da801bc79.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/7531feb9-e1cf-5562-1fb6-23081c40f22f.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/28d25695-e55b-3bba-5c69-147be1e56d03.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="InfoDetailPage Events" Url="html/dc521e3c-9d9e-c617-f504-795e7125b44a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f858b9f9-5e8b-4c6c-aba2-904d6c379eb3" Title="InfoPage Class" Url="html/8b10892d-da06-1d3c-52ae-ddbcd8ea5443.htm">
+        <HelpTOCNode Title="InfoPage Constructor " Url="html/dcbdcf7d-096f-0c50-872a-dee9eb545431.htm" />
+        <HelpTOCNode Title="InfoPage Constructor " Url="html/4a8deabc-34da-420a-cfb4-d6573830781d.htm" />
+        <HelpTOCNode Id="4a678863-4d7b-422e-9264-3a7684bc700c" Title="InfoPage Fields" Url="html/805d13ba-1a76-2a7b-c958-70beaeb4fbf4.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/70297531-5358-b86b-c165-28524cf4bf51.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/a6306b98-4b10-45da-3fc8-13a2b2cd527c.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/cb587757-6dec-a1d5-cd4c-4ba6d2668ef4.htm" />
+          <HelpTOCNode Title="info Field" Url="html/ae96bc22-806a-b542-d49d-d6604385cf41.htm" />
+          <HelpTOCNode Title="InfoList Field" Url="html/3535dad0-93f7-7bed-7cba-d1cb396dfda4.htm" />
+          <HelpTOCNode Title="infoTitle Field" Url="html/62f67c3d-791a-ea8b-6be0-5819696b1449.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/ae2ce410-5fab-dd5c-a533-84cf198262fb.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/00dc630e-f14b-e698-1f13-f8aeb84d69eb.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/80f589df-7b59-df1f-93fa-d10f14d66f8e.htm" />
+          <HelpTOCNode Title="selectionWordList Field" Url="html/f58ca26f-5fb9-39d8-7f4c-9ebaec8b3947.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="0aae5894-8a00-4dac-86bc-2d17a4407795" Title="InfoPage Methods" Url="html/28251172-aba7-3d0b-a073-8145afda8de0.htm">
+          <HelpTOCNode Title="Connect Method " Url="html/f3b70034-e69c-d9f9-9c20-28a555933833.htm" />
+          <HelpTOCNode Title="InfoList_ContainerContentChanging Method " Url="html/4c097ca3-743f-f0d1-46ec-1d398e8668cd.htm" />
+          <HelpTOCNode Title="InfoList_SelectionChanged Method " Url="html/cbc72f14-93ca-aef4-818d-1b2d79aa2f5e.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/ace2dda0-7e70-9925-7b49-68be6ef28f5c.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/fde6d0c3-503c-9f6d-97c0-0c60d25485db.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/67c137d3-6196-86bb-e985-2163e25a50be.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="81f3d6d1-03f2-4d64-8908-a32216d424e4" Title="InfoPage Properties" Url="html/b2d615f0-362f-cec3-011f-60403032b5d7.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/9d6f7a7e-ae24-560a-7c59-ec5a2d2ef29c.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/6164bbd9-2f62-27b4-33bb-aff6633a37aa.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="InfoPage Events" Url="html/2c6e4d62-1630-6279-f80d-48cb5e1bc9bf.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f0779952-41d6-449a-9dfb-59e5a57b23c5" Title="QuizPage Class" Url="html/b0a62e0c-a94f-159d-0333-c39946813fc6.htm">
+        <HelpTOCNode Title="QuizPage Constructor " Url="html/34281146-9903-3a5b-635f-f7429af678d7.htm" />
+        <HelpTOCNode Id="75791007-34a1-4e92-aa80-291b21b1067c" Title="QuizPage Fields" Url="html/24426de2-35fb-f296-8ed1-82379c5b0d0d.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/7a1dde9f-62ea-f0ea-55f0-dd1f8824aa2a.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/3726b282-8753-b3cb-4bc7-32381781cd46.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/872f189a-6969-9be2-b143-6474ee57a3f8.htm" />
+          <HelpTOCNode Title="iCurrentCorrectAnswer Field" Url="html/bfd79ca1-157d-5b45-7e7d-a81fba7f9703.htm" />
+          <HelpTOCNode Title="iNumberofQuestions Field" Url="html/1ccd5666-dd1d-62a9-15ce-425ea30461df.htm" />
+          <HelpTOCNode Title="iQuestionIndex Field" Url="html/6a9bd9e5-94a3-13cb-1d69-e30ffa395d62.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/95d1746a-3076-c7dc-9d0c-9a8e02cf5393.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/14a7be45-0096-2bcf-9f54-0cf0eaa42622.htm" />
+          <HelpTOCNode Title="Next Field" Url="html/e96208af-7633-3b6e-b7c2-8f16e8385c6c.htm" />
+          <HelpTOCNode Title="Option1 Field" Url="html/d030376a-dc8a-d40c-c883-b33fb6a973e5.htm" />
+          <HelpTOCNode Title="Option2 Field" Url="html/3504d38d-2eb9-700a-2e2f-54d49f2bf24f.htm" />
+          <HelpTOCNode Title="Option3 Field" Url="html/fd1174f2-cb09-a4b6-b9e6-c731ccad5836.htm" />
+          <HelpTOCNode Title="Option4 Field" Url="html/5dc2670a-36f9-3ed5-a46d-aa89a70dfd6f.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/65678f97-bafd-6ec8-8d90-7700f38a61a0.htm" />
+          <HelpTOCNode Title="Question Field" Url="html/7d812c6e-e4ac-4d94-1338-82bf26ba7d88.htm" />
+          <HelpTOCNode Title="QuestionContent Field" Url="html/fa15461f-2b42-bb14-d07d-a6e382078aaf.htm" />
+          <HelpTOCNode Title="QuestionNumber Field" Url="html/68ce0fba-a451-c93b-eff4-79a53657072f.htm" />
+          <HelpTOCNode Title="quiz Field" Url="html/7f4dfd13-f763-c5a8-407d-27a9e720bb87.htm" />
+          <HelpTOCNode Title="Skip Field" Url="html/526e8dbb-dabe-94d0-101a-370ab2f01fae.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="08a507d5-f729-46ef-9fbf-8feb4ff8c2c8" Title="QuizPage Methods" Url="html/09feec32-e9bd-6b99-ac98-f00c6e187adb.htm">
+          <HelpTOCNode Title="Connect Method " Url="html/05d648ea-13a8-aee2-2d92-d782ca194099.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/163f075e-462a-2cc5-0d5e-ff4c857ac9d4.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/845925cc-f0e3-5572-c9c8-d68189d7397a.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/65b4de76-2fb3-8d86-6ca7-1b128f5d6178.htm" />
+          <HelpTOCNode Title="Next_Click Method " Url="html/a621ab8a-6273-56b7-9c6a-e1974978768e.htm" />
+          <HelpTOCNode Title="Options_Checked Method " Url="html/94ce8e8f-5c8f-ae62-4a38-52fd648d59d1.htm" />
+          <HelpTOCNode Title="populateQuestion Method " Url="html/87d4db73-cb2c-7215-6b84-316f468d1624.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="3233a854-b39d-4764-8664-841866e5f1e1" Title="QuizPage Properties" Url="html/9971233f-857f-f941-1759-947c1e69dc15.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/c4c9a060-0081-0732-da6c-809d1543eec2.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/9d8a22f8-1097-7d55-15dd-0320a063a129.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="QuizPage Events" Url="html/a03db6d8-7ef0-2ffa-f55b-0d522c545367.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bc45a382-52a2-4bf4-a138-8aa55c365fc7" Title="ScorePage Class" Url="html/0c784074-e015-2407-9715-1c7bbb438799.htm">
+        <HelpTOCNode Title="ScorePage Constructor " Url="html/afa0536b-2f8f-4673-9443-5bf2161f9e9e.htm" />
+        <HelpTOCNode Id="24af433e-1470-4bc4-b41a-dc59f6072020" Title="ScorePage Fields" Url="html/31a72ef2-baf2-88bb-fd80-0f9fe88fd1d4.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/89ee839d-ab38-5c0f-6109-c1efca8ae23d.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/45f55c64-01cc-5cec-1685-8ea92ba7bede.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/70ad5bea-eca3-2d69-20ff-db833b40da7c.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/36439e50-47d4-4751-f070-0cd21a5252cd.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/bc64ccdc-c7c2-0467-3bf5-ccb79990dd4e.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/350ffd96-f9c1-d300-8999-d9a4ec86ffc6.htm" />
+          <HelpTOCNode Title="puzzle Field" Url="html/e0f49930-e2ca-b23c-e2bf-f8e1187ef9f9.htm" />
+          <HelpTOCNode Title="Quit Field" Url="html/2de5ca0b-e242-9232-7d4c-d9ae00007e7c.htm" />
+          <HelpTOCNode Title="quiz Field" Url="html/11b05d16-5106-7ef8-4076-b2fb33407039.htm" />
+          <HelpTOCNode Title="Restart Field" Url="html/5633a677-bae9-fcc2-4d4e-73e890df43de.htm" />
+          <HelpTOCNode Title="ScoreText Field" Url="html/f5215a53-c252-ac76-8b17-7d541fce5ba5.htm" />
+          <HelpTOCNode Title="TotalCorrect Field" Url="html/9867d8e5-56c0-0c6f-d772-5f89a69ebdc4.htm" />
+          <HelpTOCNode Title="TotalUnanswered Field" Url="html/7582eef6-0ef7-f8a8-7d59-312f2bfb7680.htm" />
+          <HelpTOCNode Title="TotalWrong Field" Url="html/bc4365af-446c-2cb4-c77e-725d7f04907a.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5c301b21-985b-4d71-9774-978141dd9d1f" Title="ScorePage Methods" Url="html/9db04817-5f37-2ec0-dc7f-2185408274f3.htm">
+          <HelpTOCNode Title="Connect Method " Url="html/c6a0d5b3-58e3-9348-46b0-01b7821946a3.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/0063dad2-9b2f-1b26-8101-8ba2a1d054f0.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/4fc49401-4d83-06e3-42fd-7983aa00d3bc.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/61118cbb-2042-205f-a1bb-f567ef928550.htm" />
+          <HelpTOCNode Title="Quit_Click Method " Url="html/02129284-e96c-9278-51c8-3d3859c5979d.htm" />
+          <HelpTOCNode Title="Restart_Click Method " Url="html/cbff5d91-57aa-1556-ac4b-644f6219236b.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="1122bb6f-d340-4090-94c3-c5ecab2d0657" Title="ScorePage Properties" Url="html/f227c32b-949a-4709-628a-43aa43319b0f.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/89c1662b-2607-5a19-28ee-9369d5d31fae.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/51df1c8f-b891-b686-a0b3-c59ac8762abf.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ScorePage Events" Url="html/339134cc-7528-fdf8-9d6b-631d5d654657.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f098fb90-d00a-41cf-885b-d073d03db94f" Title="SpellingsPage Class" Url="html/af741039-3782-41dc-975a-7aab1f167536.htm">
+        <HelpTOCNode Title="SpellingsPage Constructor " Url="html/11fdd61f-3f06-4444-54ac-1a94eb705239.htm" />
+        <HelpTOCNode Id="c73d39f4-ce7d-4368-9151-e645e14023fb" Title="SpellingsPage Fields" Url="html/fdb8337e-f8c6-2974-68ea-a0e163ea9846.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/6693acd6-84f8-d1b6-3987-11122bbbd855.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/5cf5921c-4ad0-8c7e-2628-83308be3a2ca.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/c70e4e28-cbc0-536f-47f4-9c2f35229314.htm" />
+          <HelpTOCNode Title="Female Field" Url="html/6423ce52-89d9-dad8-484a-2932611d7c92.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/6f6b4631-9ac5-a984-dfec-4568c9dd0671.htm" />
+          <HelpTOCNode Title="Listen Field" Url="html/96260bf6-d872-add3-b95b-8e88be46d9bd.htm" />
+          <HelpTOCNode Title="Male Field" Url="html/d4e1b3cb-264c-489b-02b8-e12ca0099578.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/381a10d0-3337-777e-1352-42a7f896821e.htm" />
+          <HelpTOCNode Title="Next Field" Url="html/b65f1d45-94bd-7839-250c-c7137f1b643a.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/77c5105f-4209-2494-579e-d786d7e438a8.htm" />
+          <HelpTOCNode Title="player Field" Url="html/740063eb-0db5-431e-51af-a20a141ed48e.htm" />
+          <HelpTOCNode Title="puzzle Field" Url="html/19eccf3f-7a20-e09c-fc6c-81b99225abb9.htm" />
+          <HelpTOCNode Title="PuzzleNumber Field" Url="html/6b0712b8-8c9c-79fb-a00d-b12797227acc.htm" />
+          <HelpTOCNode Title="Spell Field" Url="html/4fd2fe25-69a5-b8fe-ec5b-6f20ce48f613.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="c3b1a344-f3f8-4881-8548-b01d65f2370b" Title="SpellingsPage Methods" Url="html/14a4fcc7-0640-de31-8d9e-e916f8481d8a.htm">
+          <HelpTOCNode Title="Connect Method " Url="html/1c87151f-46a2-5ca0-db69-5df977692071.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/d65fe1a8-7ab2-01fc-14ec-7fec3e406195.htm" />
+          <HelpTOCNode Title="Listen_Click Method " Url="html/ccb2e6fe-0eb0-0b17-d28e-b7c51f856810.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/37b74d73-a4ae-72fe-7797-3ff93e3099b3.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/12359aae-6972-848e-277a-0dc74f4b00eb.htm" />
+          <HelpTOCNode Title="Next_Click Method " Url="html/2177c152-f31c-1dad-e06a-9c9fdbbaa5d4.htm" />
+          <HelpTOCNode Title="Spell_Click Method " Url="html/2b487d00-910e-37b7-400c-f4f8aaeb3fd8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="718296e9-a1ce-4166-bdcd-d422c6616966" Title="SpellingsPage Properties" Url="html/863f68db-547b-b24e-6128-95a14ecb802c.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/2398ac68-4033-1829-f4b4-fdac6b5a4b93.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/d92fa015-6d5a-115a-89ba-fb2827621330.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SpellingsPage Events" Url="html/51efa817-4af7-1730-1caf-4e3346409027.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1634b869-de29-4cc9-829b-07184320d90a" Title="StartPage Class" Url="html/e5549349-62bc-6aae-7dbd-8f73776105db.htm">
+        <HelpTOCNode Title="StartPage Constructor " Url="html/77fde403-d103-0b78-4f4c-4d57121f8c74.htm" />
+        <HelpTOCNode Title="StartPage Constructor " Url="html/9233869e-31fc-22a7-bf52-785cc47bac30.htm" />
+        <HelpTOCNode Id="e446b358-c4e0-477c-bf6b-5f5393588f5d" Title="StartPage Fields" Url="html/751e6765-61f8-2863-67a7-308c2a84effb.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/9ea01da2-3ee9-c1df-ac80-dbdc3d49251d.htm" />
+          <HelpTOCNode Title="AppAuthor Field" Url="html/69dab09a-dd77-79e3-84f8-a98b5b250306.htm" />
+          <HelpTOCNode Title="AppLogo Field" Url="html/332e7000-87d5-314c-0cb4-541a32c6303a.htm" />
+          <HelpTOCNode Title="AppName Field" Url="html/b42655d6-7167-328a-d79f-70d4db4edd68.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/88802937-b3fb-ab3d-9f50-7d8a344b0422.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/b464f154-99e7-ad48-0123-b3a6131f7974.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/bd866f68-3026-46a8-8886-0a18d795fbf5.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/8e7e2da7-23c7-0ee2-8ae0-1fd2bb7f572f.htm" />
+          <HelpTOCNode Title="page Field" Url="html/555a69ad-29ee-494d-29f5-7989c009721b.htm" />
+          <HelpTOCNode Title="PinUnPinCommandButton Field" Url="html/420f7488-6cb0-893e-6316-996beb775c4f.htm" />
+          <HelpTOCNode Title="removeParameter Field" Url="html/814ad0b7-d015-6e1b-ce52-35f0e42f1ae0.htm" />
+          <HelpTOCNode Title="SecondaryTileCommandBar Field" Url="html/a7ec32bc-aa0c-3c12-102c-5d7dcc5c315f.htm" />
+          <HelpTOCNode Title="Start Field" Url="html/276151a9-aedb-b0bc-f663-447d22daa2d8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="ba77e00b-97f6-4b68-a7fb-9e7f7b0ddc4b" Title="StartPage Methods" Url="html/1d90c79e-0ddc-84eb-9d75-1d9cbef140e5.htm">
+          <HelpTOCNode Title="Connect Method " Url="html/639e9012-0b0f-cd9a-5da9-e53213a74bc5.htm" />
+          <HelpTOCNode Title="GetElementRect Method " Url="html/911806ef-87d1-2b11-2d7b-01817abcd935.htm" />
+          <HelpTOCNode Title="Init Method " Url="html/90d459e8-3c7e-c7a5-82b0-fbd1d20de043.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/2b0c01c0-8365-fd10-484b-4043b3cc0845.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/8e73c91e-ed47-9246-5162-11ea622a6f8f.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/381b8bd5-35d2-f73f-d22d-9fd4b2d8ebb8.htm" />
+          <HelpTOCNode Title="pinToAppBar_Click Method " Url="html/0b0796c1-dba4-8452-89bc-e6100de0ba62.htm" />
+          <HelpTOCNode Title="Start_Click Method " Url="html/69de42c1-50a9-d66b-4bd6-2ade70b0e202.htm" />
+          <HelpTOCNode Title="ToggleAppBarButton Method " Url="html/1609cce2-f500-d75e-dbc5-013f58a24b9d.htm" />
+          <HelpTOCNode Title="updateTile Method " Url="html/b9cc053c-b9e9-191a-a396-354c984becca.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="4d01b8ac-a271-4f84-88fe-04f2dd50bd30" Title="StartPage Properties" Url="html/2e89816b-2850-27f9-5ce4-b8388652cc36.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/64706634-b341-2ae0-851a-0a3b9f74c48f.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/20d37b1c-7e82-56f7-989c-6da0fa7ac43d.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="StartPage Events" Url="html/4a79a539-eefb-1099-a02a-0cd478d8885f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6e4b7f7e-8bbd-4f53-927a-5ad4ecbe5a1d" Title="WordInfoPage Class" Url="html/9c30e91f-67d9-ed52-bee3-a1e15f1b2651.htm">
+        <HelpTOCNode Title="WordInfoPage Constructor " Url="html/7e3cd520-dcbf-cc70-58d7-32fcebe29802.htm" />
+        <HelpTOCNode Id="25dd7e0e-e9f5-48ca-8925-5ead706844e8" Title="WordInfoPage Fields" Url="html/5746eba5-2ffc-fdcc-b0f6-b75921fb6d32.htm">
+          <HelpTOCNode Title="_contentLoaded Field" Url="html/4ec028c4-ec38-2dc4-bb56-b75c5a72a2ac.htm" />
+          <HelpTOCNode Title="Answer Field" Url="html/d0461a71-4117-9c16-1af1-1f0c62473c66.htm" />
+          <HelpTOCNode Title="Back Field" Url="html/7a8ae145-5d57-83c7-d856-28c17b937f03.htm" />
+          <HelpTOCNode Title="ContentRoot Field" Url="html/f3c073f1-bf8a-4aae-bf76-cb42676664fb.htm" />
+          <HelpTOCNode Title="defaultViewModel Field" Url="html/e63eac5b-74eb-17c3-0c02-84366c3eb9c4.htm" />
+          <HelpTOCNode Title="Enter Field" Url="html/71243c16-a74b-50d6-add3-c2c2c04d1efc.htm" />
+          <HelpTOCNode Title="LayoutRoot Field" Url="html/a1d2a6e1-73f2-ad28-d55d-f331d05ff8d5.htm" />
+          <HelpTOCNode Title="navigationHelper Field" Url="html/19f51ecd-0d81-c9be-7dac-064dfad93b79.htm" />
+          <HelpTOCNode Title="Next Field" Url="html/ef604897-accf-9fb5-cb4c-4c8d1647b49b.htm" />
+          <HelpTOCNode Title="OriginalWord Field" Url="html/ddea72b0-c289-7258-53cd-377cd44ba898.htm" />
+          <HelpTOCNode Title="pageTitle Field" Url="html/3b0b428e-eff7-913e-e2f9-48cae4d36bd0.htm" />
+          <HelpTOCNode Title="puzzle Field" Url="html/93f26a9a-3a09-d272-f5b1-08536ec84913.htm" />
+          <HelpTOCNode Title="PuzzleNumber Field" Url="html/79d21466-ffa2-c64a-7235-512106435859.htm" />
+          <HelpTOCNode Title="Response Field" Url="html/ea91775b-7dcf-7c0e-9fce-a72665b68d26.htm" />
+          <HelpTOCNode Title="Word Field" Url="html/bcf3903c-783c-9c34-69a5-25a6e66a6d88.htm" />
+          <HelpTOCNode Title="WordDescription Field" Url="html/b36c9b91-3f74-90a9-53c8-d7ea7d457a15.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="63584309-d494-4bb8-aec0-75b203df79d8" Title="WordInfoPage Methods" Url="html/b40e81bd-91ed-2c90-9224-1f647c051018.htm">
+          <HelpTOCNode Title="Back_Click Method " Url="html/2bf00ec1-8165-1d1c-0504-06f20b426047.htm" />
+          <HelpTOCNode Title="Connect Method " Url="html/d7c32d9f-aace-4b3a-9fbd-a66063c5196f.htm" />
+          <HelpTOCNode Title="Enter_Click Method " Url="html/891de9a6-920a-5820-5429-da033e140eaf.htm" />
+          <HelpTOCNode Title="InitializeComponent Method " Url="html/6fbb1e79-4dd5-fcd3-11f2-9f97f4755985.htm" />
+          <HelpTOCNode Title="NavigationHelper_LoadState Method " Url="html/6969ffc7-5c19-e89a-e53f-7b85a81f90c8.htm" />
+          <HelpTOCNode Title="NavigationHelper_SaveState Method " Url="html/8ea59940-6d8c-6bd8-52e3-62da4bb7ac32.htm" />
+          <HelpTOCNode Title="Next_Click Method " Url="html/eb14f255-17ab-c9f3-2377-6be20ce2b1e1.htm" />
+          <HelpTOCNode Title="Word_TextChanged Method " Url="html/a4fbc621-571b-6257-5357-7da85aaf8b08.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="f76a503d-cd48-4358-a3d9-ce7ab3fb696d" Title="WordInfoPage Properties" Url="html/dbda0c7c-4961-5a9d-846b-dc1286e36639.htm">
+          <HelpTOCNode Title="DefaultViewModel Property " Url="html/abfc6b90-d1f9-5b26-b5d1-27ade5609e75.htm" />
+          <HelpTOCNode Title="NavigationHelper Property " Url="html/d42005b7-0639-c821-ea1f-1292b27063e6.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WordInfoPage Events" Url="html/0e267122-c8de-93d7-5a37-174a1f839ea0.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

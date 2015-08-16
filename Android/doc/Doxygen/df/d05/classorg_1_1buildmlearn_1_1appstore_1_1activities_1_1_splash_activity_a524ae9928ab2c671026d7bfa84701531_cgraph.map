@@ -1,0 +1,6 @@
+<map id="org.buildmlearn.appstore.activities.SplashActivity.parseXML" name="org.buildmlearn.appstore.activities.SplashActivity.parseXML">
+<area shape="rect" id="node2" href="$df/d05/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_splash_activity.html#a1d5fc2ca5fd1a52786a7ce0d914d1d7e" title="The method check whether the phone is connected to internet or not. " alt="" coords="276,5,499,47"/>
+<area shape="rect" id="node3" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a15a8449f10403c80625319062f73432e" title="Gets the Document object from the xml string. " alt="" coords="289,71,485,112"/>
+<area shape="rect" id="node4" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a42151792145130629c7bf2a16b2885bc" title="Gets the value of the item from the Document object. " alt="" coords="289,136,485,177"/>
+<area shape="rect" id="node5" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a623e2412cff7b8ab44947732d167feef" title="Gets the element value of the node. " alt="" coords="547,136,743,177"/>
+</map>

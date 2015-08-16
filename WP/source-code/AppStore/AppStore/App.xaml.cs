@@ -1,24 +1,12 @@
-﻿
-using AppStore.Models;
+﻿using AppStore.Models;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Xml.Linq;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Data.Xml.Dom;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.Networking.Connectivity;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
@@ -109,17 +97,31 @@ namespace AppStore
             // Ensure the current window is active
             Window.Current.Activate();
         }
+   
+        /// <summary>
+        /// It determines whether the phone has an internet access or not.
+        /// </summary>
+        /// <returns>Returns the boolean state of the internet access.</returns>
         public static bool HasInternet()
         {
             var connectionProfile = NetworkInformation.GetInternetConnectionProfile();
             return (connectionProfile != null &&
                     connectionProfile.GetNetworkConnectivityLevel() == NetworkConnectivityLevel.InternetAccess);
         }
+  
+        /// <summary>
+        /// On exiting the app, a message pops up asking, if the user really wants to close the app. On tapping "yes", this method is executed.
+        /// </summary>
+        /// <param name="command"></param>
         private void CommandInvokedHandler(Windows.UI.Popups.IUICommand command)
         {
             // Display message showing the label of the command that was invoked
             if (command.Label.Equals("Close app")) Application.Current.Exit();
         }
+       
+        /// <summary>
+        /// This method loads all the contents of the store. Meanwhile, the splash screen is in view.
+        /// </summary>
         private void ExtendSplashScreen()
         {
             AppList.getAppList().appList.Clear();
@@ -149,8 +151,7 @@ namespace AppStore
             }
             catch (Exception) { } 
         }
-
-
+        
         /// <summary>
         /// Restores the content transitions after the app has launched.
         /// </summary>

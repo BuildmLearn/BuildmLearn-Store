@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d5e/namespace_app_store_1_1_common">
+<title>AppStore::Common</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common">AppStore::Common::AppCommon</link></para>
+<para><emphasis>&lt;summary&gt;
+Common class for the App.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d6b/class_app_store_1_1_common_1_1_app_reader">AppStore::Common::AppReader</link></para>
+<para><emphasis>&lt;summary&gt;
+This class deals with reading the App-Templates.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">AppStore::Common::LoadStateEventArgs</link></para>
+<para><emphasis>&lt;summary&gt;
+Class used to hold the event data required when a page attempts to load state.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">AppStore::Common::NavigationHelper</link></para>
+<para><emphasis>&lt;summary&gt;
+NavigationHelper aids in navigation between pages.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">AppStore::Common::ObservableDictionary</link></para>
+<para><emphasis>&lt;summary&gt;
+Implementation of IObservableMap that supports reentrancy for use as a default view
+model.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command">AppStore::Common::RelayCommand</link></para>
+<para><emphasis>&lt;summary&gt;
+A command whose sole purpose is to relay its functionality 
+to other objects by invoking delegates.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">AppStore::Common::SaveStateEventArgs</link></para>
+<para><emphasis>&lt;summary&gt;
+Class used to hold the event data required when a page attempts to save state.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d84/class_app_store_1_1_common_1_1_suspension_manager">AppStore::Common::SuspensionManager</link></para>
+<para><emphasis>&lt;summary&gt;
+SuspensionManager captures global session state to simplify process lifetime management
+for an application.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception">AppStore::Common::SuspensionManagerException</link></para>
+<para><emphasis>&lt;summary&gt;
+Handles the exception related to the SuspensionManager.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="dd/d5e/namespace_app_store_1_1_common_1a19e1e736ff78300496e445c9993e80f9">LoadStateEventHandler</link> (
+object sender, <link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Represents the method that will handle the &lt;see cref=&quot;NavigationHelper.LoadState&quot;/&gt;event
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="dd/d5e/namespace_app_store_1_1_common_1a6bc37143a9b63d49a100353f11e63a3b">SaveStateEventHandler</link> (
+object sender, <link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Represents the method that will handle the &lt;see cref=&quot;NavigationHelper.SaveState&quot;/&gt;event
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

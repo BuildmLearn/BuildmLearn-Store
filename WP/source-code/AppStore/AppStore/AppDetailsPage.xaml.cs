@@ -3,23 +3,11 @@ using AppStore.Models;
 using AppStore.Templates;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel.DataTransfer;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
-using Windows.UI.Core;
 using Windows.UI.Notifications;
-using Windows.UI.Popups;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
@@ -29,15 +17,19 @@ using Windows.UI.Xaml.Navigation;
 namespace AppStore
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// This class deals with the App-Details page, which is shown when the user taps on any app cards displayed on various pages.
     /// </summary>
     public sealed partial class AppDetailsPage : Page
     {
-        bool selectionGridScreenshots = false;
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+        bool selectionGridScreenshots = false, appInstalled = false, txtShowMore = false;
+        Uri appReviewsUri;
         Apps app;
-        bool appInstalled = false;
+
+        /// <summary>
+        /// Public Constructor to the Details Page.
+        /// </summary>
         public AppDetailsPage()
         {
             this.InitializeComponent();
@@ -46,6 +38,7 @@ namespace AppStore
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
         }
+    
         /// <summary>
         /// Gets the <see cref="NavigationHelper"/> associated with this <see cref="Page"/>.
         /// </summary>
@@ -89,7 +82,7 @@ namespace AppStore
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
         }
-        bool txtShowMore = false;
+       
         #region NavigationHelper registration
 
         /// <summary>
@@ -147,6 +140,31 @@ namespace AppStore
             GridScreenshots.ItemsSource = app.Screenshots;
             this.navigationHelper.OnNavigatedTo(e);
         }
+        
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// <para>
+        /// Page specific logic should be placed in event handlers for the
+        /// <see cref="NavigationHelper.LoadState"/>
+        /// and <see cref="NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the SaveState method
+        /// in addition to page state preserved during an earlier session.
+        /// </para>
+        /// </summary>
+        /// <param name="e">Provides data for navigation methods and event
+        /// handlers that cannot cancel the navigation request.</param>
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            this.navigationHelper.OnNavigatedFrom(e);
+        }
+
+        #endregion
+    
+        /// <summary>
+        /// Builds the html content which has to loaded into the WebView for Reviews Section.
+        /// </summary>
+        /// <returns>Returns the HTML content to be loaded into the WebView of the Reviews Section</returns>
         private string getHtmlComment()
         {
             return "<div id='disqus_thread'></div>"
@@ -172,6 +190,12 @@ namespace AppStore
             appIcon.Opacity = 0;
             args.RegisterUpdateCallback(ShowImages);
         }
+       
+        /// <summary>
+        /// Deals with populating images(screenshots) in the App-Details Page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
         private void ShowImages(ListViewBase sender, ContainerContentChangingEventArgs args)
         {
             if (args.Phase != 1)
@@ -184,13 +208,12 @@ namespace AppStore
             appImage.Source = new BitmapImage(new Uri(args.Item.ToString()));
             appImage.Opacity = 1;
         }
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            this.navigationHelper.OnNavigatedFrom(e);
-        }
 
-        #endregion
-
+        /// <summary>
+        /// Executed when the more button is tapped in the details section. It toggles between showing complete and less details of the app.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void detailsShowMore_Click(object sender, RoutedEventArgs e)
         {
             if (txtShowMore)
@@ -206,7 +229,12 @@ namespace AppStore
                 detailsShowMore.Content = "less";
             }
         }
-        
+      
+        /// <summary>
+        /// Executed when the user taps/selects a screenshot from the App-Details Page. The screenshots zoom in to the fullscreen view.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
         private void GridScreenshots_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionGridScreenshots) return;
@@ -215,14 +243,19 @@ namespace AppStore
             LayoutRoot.Visibility = Visibility.Collapsed;
             selectionGridScreenshots = true;GridScreenshots.SelectedIndex = -1; selectionGridScreenshots = false;
         }
-
+       
+        /// <summary>
+        /// Executed when the Close Button is tapped in the full screen view of the screenshots. It closes the full-screen view.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             FullScreen.Visibility = Visibility.Collapsed;
             LayoutRoot.Visibility = Visibility.Visible;
         }
-
-        void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+       
+        /*void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
         {
             if (FullScreen.Visibility == Visibility.Visible)
             {
@@ -230,8 +263,13 @@ namespace AppStore
                 LayoutRoot.Visibility = Visibility.Visible;
                 e.Handled = true;
             }
-        }
+        }*/
 
+        /// <summary>
+        /// Executed when the Install Button is tapped from the App-Details section. It installs the app.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void btnAppInstall_Click(object sender, RoutedEventArgs e)
         {
             if (appInstalled)
@@ -253,26 +291,86 @@ namespace AppStore
                 btnAppInstall.Content = "LAUNCH";
             }
         }
+        
+        /// <summary>
+        /// Executed when the Share Button is tapped from the App-Details section. The app prepares content form the app to be shared using default installed apps on the phone.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void btnAppShare_Click(object sender, RoutedEventArgs e)
         {
             var datacontext = (e.OriginalSource as FrameworkElement).DataContext;
             DataTransferManager.ShowShareUI();
         }
+  
+        /// <summary>
+        /// Executed when the Search Button is tapped from the Application bar. The app navigates to the Search Results page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Search_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(SearchPage)); }
+    
+        /// <summary>
+        /// Executed when the Home Button is tapped from the Application bar. The app navigates to the Home page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Home_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MainPage)); }
+     
+        /// <summary>
+        /// Executed when the Settings Button is tapped from the Application bar. The app navigates to the Settings page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private async void Settings_Click(object sender, RoutedEventArgs e) { ContentDialog dlg = new ContentDialog(); dlg=new SettingsDialog(); await dlg.ShowAsync(); }
+        
+        /// <summary>
+        /// Executed when the My-Apps Button is tapped from the Application bar. The app navigates to the My-Apps page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void MyApps_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MyAppsPage)); }
+    
+        /// <summary>
+        /// Executed when the Categories Button is tapped from the Application bar. The app navigates to the Categories page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Categories_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(CategoriesPage)); }
+   
+        /// <summary>
+        /// Executed when the About Button is tapped from the Application bar. The app navigates to the About page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void About_Click(object sender, RoutedEventArgs e) { }
+    
+        /// <summary>
+        /// Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Feedback_Click(object sender, RoutedEventArgs e) { AppCommon.ComposeEmail(); }
 
+        /// <summary>
+        /// It opens the Reviews section of the app in an external browser.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private async void Browser_Click(object sender, RoutedEventArgs e) { await Windows.System.Launcher.LaunchUriAsync(appReviewsUri); }
-        private async void HyperlinkButton_Click(object sender, RoutedEventArgs e)
-        {
-            await Windows.System.Launcher.LaunchUriAsync(appReviewsUri);
-        }
-        Uri appReviewsUri;
+        
+        /// <summary>
+        /// It opens the Reviews section of the app in an external browser.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        private async void HyperlinkButton_Click(object sender, RoutedEventArgs e) { await Windows.System.Launcher.LaunchUriAsync(appReviewsUri); }
 
+        /// <summary>
+        /// This method is executed when the contents of the Reviews section is loaded.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="args">WebViewDOMContentLoadedEventArgs is a parameter called args that contains the event data, see the WebViewDOMContentLoadedEventArgs MSDN page for more information.</param>
         private void webAppReviews_FrameDOMContentLoaded(WebView sender, WebViewDOMContentLoadedEventArgs args)
         {
             OpenInBrowser.IsEnabled = true;

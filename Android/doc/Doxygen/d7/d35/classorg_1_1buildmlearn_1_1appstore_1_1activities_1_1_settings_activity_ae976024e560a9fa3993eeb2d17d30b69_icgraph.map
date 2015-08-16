@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.activities.SettingsActivity.bindPreferenceSummaryToValue" name="org.buildmlearn.appstore.activities.SettingsActivity.bindPreferenceSummaryToValue">
+<area shape="rect" id="node2" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a37ba985470ade6df6862fef74ff540de" title="Shows the simplified settings UI if the device configuration if the device configuration dictates tha..." alt="" coords="312,13,611,54"/>
+<area shape="rect" id="node3" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a963635e555c52a885b59d8712a716672" title="org.buildmlearn.appstore.activities.\lSettingsActivity.onPostCreate" alt="" coords="659,13,881,54"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="org.buildmlearn.appstore.utils.AppReader.readFlashContent" name="org.buildmlearn.appstore.utils.AppReader.readFlashContent">
+<area shape="rect" id="node2" href="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#ad7225d1b4d75db6f5ce8755339783f28" title="org.buildmlearn.appstore.models.\lFlashModel.getInstance" alt="" coords="249,5,464,47"/>
+<area shape="rect" id="node3" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a15a8449f10403c80625319062f73432e" title="Gets the Document object from the xml string. " alt="" coords="259,71,455,112"/>
+<area shape="rect" id="node4" href="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#aef70d9b669c794f5142063d284909fdc" title="org.buildmlearn.appstore.models.\lFlashModel.setAuthor" alt="" coords="249,136,464,177"/>
+<area shape="rect" id="node5" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a42151792145130629c7bf2a16b2885bc" title="Gets the value of the item from the Document object. " alt="" coords="259,201,455,243"/>
+<area shape="rect" id="node7" href="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#a8114fa573bb5ba91a44be0bcb7d78cc6" title="org.buildmlearn.appstore.models.\lFlashModel.setName" alt="" coords="249,267,464,308"/>
+<area shape="rect" id="node8" href="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#a4f73eb4d6dc34a961774eefe86acd923" title="org.buildmlearn.appstore.models.\lFlashModel.setList" alt="" coords="249,332,464,373"/>
+<area shape="rect" id="node6" href="$d6/d02/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_x_m_l_parser.html#a623e2412cff7b8ab44947732d167feef" title="Gets the element value of the node. " alt="" coords="512,201,708,243"/>
+</map>

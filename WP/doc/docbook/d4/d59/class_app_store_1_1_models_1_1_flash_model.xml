@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model">
+<title>AppStore::Models::FlashModel class Reference</title>
+<para>Inheritance diagram for AppStore::Models::FlashModel</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d1d/class_app_store_1_1_models_1_1_flash_model__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::FlashModel</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d3c/class_app_store_1_1_models_1_1_flash_model__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mFlashName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mFlashAuthor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mFlashVersion</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mFlashDescription</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mFlashAuthorEmail</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; Card &gt; mCardList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static FlashModel mFlashModel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model">FlashModel</link> <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1aaa472210c70496a7cdad19a6d17d4dd2">getInstance</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Instance of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ab2ebd51c8d7bdfc93cf2086eda8f87ff">getFlashAuthor</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Author of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1acfdf78fb96794dca2496d9c98dcbe926">setFlashAuthor</link> (
+string mFlashAuthor)<para><emphasis>&lt;summary&gt;
+Sets the Author of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1a43a2ff8b9838ff8bc08652689a7e1947">getFlashName</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Name of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1aedcea3ef476e8de377772da4eba07160">setFlashName</link> (
+string mFlashName)<para><emphasis>&lt;summary&gt;
+Sets the Name of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; <link linkend="d0/d26/class_app_store_1_1_models_1_1_card">Card</link> &gt; <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ac5f71cc05348036bc51328ee5b5a2838">getCardList</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the CardList of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ab2867f05cd86570acb24e8876b54f1e3">setCardList</link> (
+List&lt; <link linkend="d0/d26/class_app_store_1_1_models_1_1_card">Card</link> &gt; mCardList)<para><emphasis>&lt;summary&gt;
+Sets the CardList of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1a06541daac93d09d9542524830dfbe912">getFlashDescription</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Description of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1aa4720be2fdc78a7cb1cb45a50324e12c">setFlashDescription</link> (
+string mFlashDescription)<para><emphasis>&lt;summary&gt;
+Sets the Description of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1a89382a43beaf9cf3fc08f6a9d1ed453b">getFlashAuthorEmail</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Author-Email of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ad7a7b843458abf39c27254d626916d4b">setFlashAuthorEmail</link> (
+string mFlashAuthorEmail)<para><emphasis>&lt;summary&gt;
+Sets the AuthorEmail of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ac13109c98cb03a8f33ebb1f8408c4087">getFlashVersion</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the version of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d59/class_app_store_1_1_models_1_1_flash_model_1a00c3ce6b69b89a05df715e26770de783">setFlashVersion</link> (
+string mFlashVersion)<para><emphasis>&lt;summary&gt;
+Sets the Version of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model for the Flash card App-Template </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 9 of file FlashModel.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>FlashModel.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1aaa472210c70496a7cdad19a6d17d4dd2">
+                <title>static FlashModel AppStore.Models.FlashModel.getInstance ()</title> <emphasis>&lt;summary&gt;
+Gets the Instance of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the Instance of the Flash-Card App-Template</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ab2ebd51c8d7bdfc93cf2086eda8f87ff">
+                <title>string AppStore.Models.FlashModel.getFlashAuthor ()</title> <emphasis>&lt;summary&gt;
+Gets the Author of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the Author of the Flash-Card App-Template</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1acfdf78fb96794dca2496d9c98dcbe926">
+                <title>void AppStore.Models.FlashModel.setFlashAuthor (string mFlashAuthor)</title> <emphasis>&lt;summary&gt;
+Sets the Author of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mFlashAuthor</entry>
+                                <entry>
+<para>Author of the Flash-Card App-Template</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1a43a2ff8b9838ff8bc08652689a7e1947">
+                <title>string AppStore.Models.FlashModel.getFlashName ()</title> <emphasis>&lt;summary&gt;
+Gets the Name of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the Name of the Flash-Card App-Template</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1aedcea3ef476e8de377772da4eba07160">
+                <title>void AppStore.Models.FlashModel.setFlashName (string mFlashName)</title> <emphasis>&lt;summary&gt;
+Sets the Name of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mFlashName</entry>
+                                <entry>
+<para>Name of the Flash-Card App-Template</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ac5f71cc05348036bc51328ee5b5a2838">
+                <title>List&lt;Card&gt; AppStore.Models.FlashModel.getCardList ()</title> <emphasis>&lt;summary&gt;
+Gets the CardList of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the CardList of the Flash-Card App-Template</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ab2867f05cd86570acb24e8876b54f1e3">
+                <title>void AppStore.Models.FlashModel.setCardList (List&lt; Card &gt; mCardList)</title> <emphasis>&lt;summary&gt;
+Sets the CardList of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mCardList</entry>
+                                <entry>
+<para>CardList of the Flash-Card App-Template</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1a06541daac93d09d9542524830dfbe912">
+                <title>string AppStore.Models.FlashModel.getFlashDescription ()</title> <emphasis>&lt;summary&gt;
+Gets the Description of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the Description of the Flash-Card App-Template</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1aa4720be2fdc78a7cb1cb45a50324e12c">
+                <title>void AppStore.Models.FlashModel.setFlashDescription (string mFlashDescription)</title> <emphasis>&lt;summary&gt;
+Sets the Description of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mFlashDescription</entry>
+                                <entry>
+<para>Description of the Flash-Card App-Template</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1a89382a43beaf9cf3fc08f6a9d1ed453b">
+                <title>string AppStore.Models.FlashModel.getFlashAuthorEmail ()</title> <emphasis>&lt;summary&gt;
+Gets the Author-Email of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the Author_Email of the Flash-Card App-Template</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ad7a7b843458abf39c27254d626916d4b">
+                <title>void AppStore.Models.FlashModel.setFlashAuthorEmail (string mFlashAuthorEmail)</title> <emphasis>&lt;summary&gt;
+Sets the AuthorEmail of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mFlashAuthorEmail</entry>
+                                <entry>
+<para>Author Email of the Flash-Card App-Template</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1ac13109c98cb03a8f33ebb1f8408c4087">
+                <title>string AppStore.Models.FlashModel.getFlashVersion ()</title> <emphasis>&lt;summary&gt;
+Gets the version of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the Version of the Flash-Card App-Template</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d59/class_app_store_1_1_models_1_1_flash_model_1a00c3ce6b69b89a05df715e26770de783">
+                <title>void AppStore.Models.FlashModel.setFlashVersion (string mFlashVersion)</title> <emphasis>&lt;summary&gt;
+Sets the Version of the Flash-Card App-Template
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mFlashVersion</entry>
+                                <entry>
+<para>Version of the Flash-Card App-Template</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

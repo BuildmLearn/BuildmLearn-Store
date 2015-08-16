@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.activities.SettingsActivity.onBuildHeaders" name="org.buildmlearn.appstore.activities.SettingsActivity.onBuildHeaders">
+<area shape="rect" id="node2" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a41e13cf6763dacaa6be05fb9e7aa37ce" title="Determines whether the simplified settings UI should be shown. " alt="" coords="276,5,511,47"/>
+<area shape="rect" id="node3" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a03783015733c15e832fa994286ac519b" title="Helper method to determine if the device has an extra&#45;large screen. " alt="" coords="559,5,781,47"/>
+</map>

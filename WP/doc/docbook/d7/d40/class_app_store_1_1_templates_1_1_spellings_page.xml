@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page">
+<title>AppStore::Templates::SpellingsPage class Reference</title>
+<para>Inheritance diagram for AppStore::Templates::SpellingsPage</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d6c/class_app_store_1_1_templates_1_1_spellings_page__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Templates::SpellingsPage</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d06/class_app_store_1_1_templates_1_1_spellings_page__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Grid LayoutRoot</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Grid ContentRoot</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock PuzzleNumber</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button Listen</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.MediaElement player</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button Spell</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button Next</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.RadioButton Female</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.RadioButton Male</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock pageTitle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _contentLoaded</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>NavigationHelper navigationHelper</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ObservableDictionary defaultViewModel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Models.SpellingsModel puzzle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a73328df40b4653592a4c7cee6dad27f4">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a131b63d00ac6ea055b34eea03d4a1718">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a73328df40b4653592a4c7cee6dad27f4">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a131b63d00ac6ea055b34eea03d4a1718">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a2253bc3ebf348044bf2390556e5321a5">SpellingsPage</link> (
+)<para><emphasis>&lt;summary&gt;
+Public Construtor to the SpellingsPage.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a16b32cd14906018054d772ba964f770a">NavigationHelper_LoadState</link> (
+object sender, <link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Populates the page with content passed during navigation.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1aae132c697042aa71d94558bb10431d42">NavigationHelper_SaveState</link> (
+object sender, <link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Preserves state associated with this page in case the application is suspended or the
+page is discarded from the navigation cache.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1ad6931dd3ef6f40bab51af6bd2c8268fd">Spell_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the user wants to spell the word after listening to it.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1ac77474ffbefeaa86b0fc3cdbade8edc7">Next_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+It populates the next question into the current view.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>async void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a43da2f58cea0074d884ce938a5a9efc4">Listen_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Listen button is tapped/pressed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1abe3b3613bddec069ed47b30c66044ed0">OnNavigatedTo</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a86c11a0edb35f6ffe6bbbd5df10cdb45">OnNavigatedFrom</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>This page deals with the Spellings Puzzle App-Template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 16 of file SpellingsPage.g.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SpellingsPage.g.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a73328df40b4653592a4c7cee6dad27f4">
+                <title>void AppStore.Templates.SpellingsPage.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a131b63d00ac6ea055b34eea03d4a1718">
+                <title>void AppStore.Templates.SpellingsPage.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a73328df40b4653592a4c7cee6dad27f4">
+                <title>void AppStore.Templates.SpellingsPage.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a131b63d00ac6ea055b34eea03d4a1718">
+                <title>void AppStore.Templates.SpellingsPage.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a2253bc3ebf348044bf2390556e5321a5">
+                <title>AppStore.Templates.SpellingsPage.SpellingsPage ()</title> <emphasis>&lt;summary&gt;
+Public Construtor to the SpellingsPage.</emphasis>
+                
+<para>Populates the views pertaining to this page. </para>
+
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a16b32cd14906018054d772ba964f770a">
+                <title>void AppStore.Templates.SpellingsPage.NavigationHelper_LoadState (object sender, LoadStateEventArgs e)</title> <emphasis>&lt;summary&gt;
+Populates the page with content passed during navigation.</emphasis>
+                
+<para>Any saved state is also provided when recreating a page from a prior session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>The source of the event; typically <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a69fe3b2ac4e4188743b61a1aa8583d06">NavigationHelper</link> </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that provides both the navigation parameter passed to Frame.Navigate(Type, Object) when this page was initially requested and a dictionary of state preserved by this page during an earlier session. The state will be null the first time a page is visited.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1aae132c697042aa71d94558bb10431d42">
+                <title>void AppStore.Templates.SpellingsPage.NavigationHelper_SaveState (object sender, SaveStateEventArgs e)</title> <emphasis>&lt;summary&gt;
+Preserves state associated with this page in case the application is suspended or the
+page is discarded from the navigation cache.</emphasis>
+                
+<para>Values must conform to the serialization requirements of SuspensionManager.SessionState. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>The source of the event; typically <link linkend="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a69fe3b2ac4e4188743b61a1aa8583d06">NavigationHelper</link></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that provides an empty dictionary to be populated with serializable state.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1ad6931dd3ef6f40bab51af6bd2c8268fd">
+                <title>void AppStore.Templates.SpellingsPage.Spell_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the user wants to spell the word after listening to it.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1ac77474ffbefeaa86b0fc3cdbade8edc7">
+                <title>void AppStore.Templates.SpellingsPage.Next_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+It populates the next question into the current view.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a43da2f58cea0074d884ce938a5a9efc4">
+                <title>async void AppStore.Templates.SpellingsPage.Listen_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Listen button is tapped/pressed.</emphasis>
+                
+<para>It builds the Text-To-Speech api, which will spell the word. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1abe3b3613bddec069ed47b30c66044ed0">
+                <title>override void AppStore.Templates.SpellingsPage.OnNavigatedTo (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis>
+                
+<para><link linkend="db/d2f/class_page">Page</link> specific logic should be placed in event handlers for the NavigationHelper.LoadState and NavigationHelper.SaveState. The navigation parameter is available in the LoadState method in addition to page state preserved during an earlier session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Provides data for navigation methods and event handlers that cannot cancel the navigation request.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d7/d40/class_app_store_1_1_templates_1_1_spellings_page_1a86c11a0edb35f6ffe6bbbd5df10cdb45">
+                <title>override void AppStore.Templates.SpellingsPage.OnNavigatedFrom (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis>
+                
+<para><link linkend="db/d2f/class_page">Page</link> specific logic should be placed in event handlers for the NavigationHelper.LoadState and NavigationHelper.SaveState. The navigation parameter is available in the LoadState method in addition to page state preserved during an earlier session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Provides data for navigation methods and event handlers that cannot cancel the navigation request.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

@@ -1,0 +1,7 @@
+<map id="org.buildmlearn.appstore.models.InfoModel.getInstance" name="org.buildmlearn.appstore.models.InfoModel.getInstance">
+<area shape="rect" id="node2" href="$d2/d16/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_info_activity.html#a5385938356bc5a0b15e92eb66d5e1c3e" title="The method is executed first when the activity is created. " alt="" coords="291,5,513,47"/>
+<area shape="rect" id="node3" href="$d1/d3e/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_info_detail_activity.html#a8d0b9755938bde954369d580fd2a4a29" title="The method is executed first when the activity is created. " alt="" coords="291,71,513,112"/>
+<area shape="rect" id="node4" href="$d3/dbf/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_start_activity_1_1_file_read_task.html#a1170e20ba70058ef64883f3cc85e209b" title="This method is called after the task has been performed. " alt="" coords="268,136,536,177"/>
+<area shape="rect" id="node5" href="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#af487d507ab995e6b6ab32a3494fff592" title="Reads the Info type of app. " alt="" coords="304,201,500,243"/>
+<area shape="rect" id="node6" href="$d3/dbf/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_start_activity_1_1_file_read_task.html#aed534a6e0d4bcb1df8009e878e2bb95f" title="This method is automatically called, when the class is set to be executed. " alt="" coords="584,201,856,243"/>
+</map>

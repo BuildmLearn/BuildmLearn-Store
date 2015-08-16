@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d49/_release_2_app_details_page_8g_8i_8cs">
+    <title>AppDetailsPage.g.i.cs File Reference</title>
+<para>Include dependency diagram for AppDetailsPage.g.i.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/daf/_release_2_app_details_page_8g_8i_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for AppDetailsPage.g.i.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d52/_release_2_app_details_page_8g_8i_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d8e/class_app_store_1_1_app_details_page">AppStore::AppDetailsPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This class deals with the App-Details page, which is shown when the user taps on any app cards displayed on various pages.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/obj/Release/AppDetailsPage.g.i.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 
+3 <emphasis class="preprocessor">#pragma&#32;checksum&#32;&quot;C:\Users\Srujan\Documents\Visual&#32;Studio&#32;2015\Projects\BuildmLearnStore\AppStore\AppStore\AppDetailsPage.xaml&quot;&#32;&quot;{406ea660-64cf-4c82-b6f0-42d48172a799}&quot;&#32;&quot;07789C14AD6EDBBE26A75E7F05A483D4&quot;</emphasis>
+4 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+5 <emphasis class="comment">//&#32;&lt;auto-generated&gt;</emphasis>
+6 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;This&#32;code&#32;was&#32;generated&#32;by&#32;a&#32;tool.</emphasis>
+7 <emphasis class="comment">//</emphasis>
+8 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;Changes&#32;to&#32;this&#32;file&#32;may&#32;cause&#32;incorrect&#32;behavior&#32;and&#32;will&#32;be&#32;lost&#32;if</emphasis>
+9 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;the&#32;code&#32;is&#32;regenerated.</emphasis>
+10 <emphasis class="comment">//&#32;&lt;/auto-generated&gt;</emphasis>
+11 <emphasis class="comment">//------------------------------------------------------------------------------</emphasis>
+12 
+13 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+14 {
+15 &#32;&#32;&#32;&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>AppDetailsPage&#32;:&#32;global::Windows.UI.Xaml.Controls.Page
+16 &#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a63fb0e738237c6ac5c0c935798c9b318">LayoutRoot</link>;&#32;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Grid&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2a2aa476bfbb8a147a880a69c6658ba3">FullScreen</link>;&#32;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.FlipView&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a382045daa62481aebf135adf7ea9bd32">FullScreenshots</link>;&#32;
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.ScrollViewer&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a4754f8df8c1af6aa353f9fce9c6e56e2">ContentRoot</link>;&#32;
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab8b86d135950fea251f823ad282714af">txtAppDetails</link>;&#32;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.HyperlinkButton&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2aa5627b80540565aab4078a25dca80e">detailsShowMore</link>;&#32;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.GridView&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a0dd522bc48df5443a11f96c15a383835">GridScreenshots</link>;&#32;
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.WebView&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a78c3773d1b808ffb18f3ea3e2697efdc">webAppReviews</link>;&#32;
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab3c2885e29736dc527e7c1bff033c03b">txtAddInfo1</link>;&#32;
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a17ff8ce764f527a4ad0fab631e6d8882">txtAddInfo2</link>;&#32;
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Image&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2eabef47315aa6f401eff3f8c3cd765a">imgAppIcon</link>;&#32;
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a752f35aa5eb3fb6d2929018d1ebbfcd0">txtAppName</link>;&#32;
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.TextBlock&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a75a0516cb2bc6345d33336e624b0ffcf">txtAppAuthor</link>;&#32;
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Button&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3b7dae47e7100b4291d32265a351a16c">btnAppInstall</link>;&#32;
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.Button&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1afe4ad7dbf1202bbfd0cccf77b58e3bf7">btnAppShare</link>;&#32;
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.AppBarButton&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a85e759849832d8fe2600eae4b8b8e2db">btnMyApps</link>;&#32;
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;global::Windows.UI.Xaml.Controls.AppBarButton&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a7a89431034f45432642efcaa52a22177">Home</link>;&#32;
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2e824a9cf5ba78ea6e3c983626b2f19d">_contentLoaded</link>;
+53 
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.CodeDom.Compiler.GeneratedCodeAttribute(<emphasis class="stringliteral">&quot;Microsoft.Windows.UI.Xaml.Build.Tasks&quot;</emphasis>,<emphasis class="stringliteral">&quot;&#32;4.0.0.0&quot;</emphasis>)]
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a9417500770b9c582016446949cfee213">InitializeComponent</link>()
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(_contentLoaded)
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>;
+60 
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_contentLoaded&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;global::Windows.UI.Xaml.Application.LoadComponent(<emphasis class="keyword">this</emphasis>,&#32;<emphasis class="keyword">new</emphasis>&#32;global::System.Uri(<emphasis class="stringliteral">&quot;ms-appx:///AppDetailsPage.xaml&quot;</emphasis>),&#32;global::Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation.Application);
+63 &#32;
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a63fb0e738237c6ac5c0c935798c9b318">LayoutRoot</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;LayoutRoot&quot;</emphasis>);
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2a2aa476bfbb8a147a880a69c6658ba3">FullScreen</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Grid)this.FindName(<emphasis class="stringliteral">&quot;FullScreen&quot;</emphasis>);
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a382045daa62481aebf135adf7ea9bd32">FullScreenshots</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.FlipView)this.FindName(<emphasis class="stringliteral">&quot;FullScreenshots&quot;</emphasis>);
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a4754f8df8c1af6aa353f9fce9c6e56e2">ContentRoot</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.ScrollViewer)this.FindName(<emphasis class="stringliteral">&quot;ContentRoot&quot;</emphasis>);
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab8b86d135950fea251f823ad282714af">txtAppDetails</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;txtAppDetails&quot;</emphasis>);
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2aa5627b80540565aab4078a25dca80e">detailsShowMore</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.HyperlinkButton)this.FindName(<emphasis class="stringliteral">&quot;detailsShowMore&quot;</emphasis>);
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a0dd522bc48df5443a11f96c15a383835">GridScreenshots</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.GridView)this.FindName(<emphasis class="stringliteral">&quot;GridScreenshots&quot;</emphasis>);
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a78c3773d1b808ffb18f3ea3e2697efdc">webAppReviews</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.WebView)this.FindName(<emphasis class="stringliteral">&quot;webAppReviews&quot;</emphasis>);
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab3c2885e29736dc527e7c1bff033c03b">txtAddInfo1</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;txtAddInfo1&quot;</emphasis>);
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a17ff8ce764f527a4ad0fab631e6d8882">txtAddInfo2</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;txtAddInfo2&quot;</emphasis>);
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a2eabef47315aa6f401eff3f8c3cd765a">imgAppIcon</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Image)this.FindName(<emphasis class="stringliteral">&quot;imgAppIcon&quot;</emphasis>);
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a752f35aa5eb3fb6d2929018d1ebbfcd0">txtAppName</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;txtAppName&quot;</emphasis>);
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a75a0516cb2bc6345d33336e624b0ffcf">txtAppAuthor</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.TextBlock)this.FindName(<emphasis class="stringliteral">&quot;txtAppAuthor&quot;</emphasis>);
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3b7dae47e7100b4291d32265a351a16c">btnAppInstall</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Button)this.FindName(<emphasis class="stringliteral">&quot;btnAppInstall&quot;</emphasis>);
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1afe4ad7dbf1202bbfd0cccf77b58e3bf7">btnAppShare</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.Button)this.FindName(<emphasis class="stringliteral">&quot;btnAppShare&quot;</emphasis>);
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a85e759849832d8fe2600eae4b8b8e2db">btnMyApps</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.AppBarButton)this.FindName(<emphasis class="stringliteral">&quot;btnMyApps&quot;</emphasis>);
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a7a89431034f45432642efcaa52a22177">Home</link>&#32;=&#32;(global::Windows.UI.Xaml.Controls.AppBarButton)this.FindName(<emphasis class="stringliteral">&quot;Home&quot;</emphasis>);
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+82 &#32;&#32;&#32;&#32;}
+83 }
+84 
+85 
+86 
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type">
+<title>AppStore::AppStore_XamlTypeInfo::XamlUserType class Reference</title>
+<para>Inheritance diagram for AppStore::AppStore_XamlTypeInfo::XamlUserType</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d9e/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::AppStore_XamlTypeInfo::XamlUserType</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d38/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider _provider</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Markup.IXamlType _baseType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _isArray</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _isMarkupExtension</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _isBindable</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _isReturnTypeStub</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _isLocalType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string _contentPropertyName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string _itemTypeName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string _keyTypeName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::System.Collections.Generic.Dictionary&lt; string, string &gt; _memberNames</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::System.Collections.Generic.Dictionary&lt; string, object &gt; _enumValues</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ae807b86cfaba3bc12006802031e3b889">XamlUserType</link> (
+global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override global::Windows.UI.Xaml.Markup.IXamlMember <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ab685cd8c7eb664ac6c2d9ef11ad5cad4">GetMember</link> (
+string name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override object <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a6b71f576de1e262811ff5b7294dd462e">ActivateInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aaba78cd5a01a022d66a6eaeeb7ce0750">AddToMap</link> (
+object instance, object key, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1af180227f72ea165aed2986ba8b07f664">AddToVector</link> (
+object instance, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a0e19c4726e698facbeb7116434fb3e21">RunInitializer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override object <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a1689fdaf82e1b12cc0bef952f50f51ec">CreateFromString</link> (
+string input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aa28444bac3b67a01fa356700b026fa04">SetContentPropertyName</link> (
+string contentPropertyName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aa110df567d11a5f3b51620f8f440397b">SetIsArray</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a3b0a1a8ca1cc24be662572174a8da4b6">SetIsMarkupExtension</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a84be91a54e8dffd2412fae0caa4802c3">SetIsBindable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a96888f53ae60b53fd2dc720ccdf56ce2">SetIsReturnTypeStub</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a671b8494cb6fa2e29d445f77a7b3130b">SetIsLocalType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a24793ddef51f3c1d59d9050104b61884">SetItemTypeName</link> (
+string itemTypeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1abf2195b6761b038110ad892f97b49d8b">SetKeyTypeName</link> (
+string keyTypeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1afb8c23f873975e7290e8ac476e9367db">AddMemberName</link> (
+string shortName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ab7d2c4acfa5ce3e58f6f7471e917197b">AddEnumValue</link> (
+string name, object value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ae807b86cfaba3bc12006802031e3b889">XamlUserType</link> (
+global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override global::Windows.UI.Xaml.Markup.IXamlMember <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ab685cd8c7eb664ac6c2d9ef11ad5cad4">GetMember</link> (
+string name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override object <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a6b71f576de1e262811ff5b7294dd462e">ActivateInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aaba78cd5a01a022d66a6eaeeb7ce0750">AddToMap</link> (
+object instance, object key, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1af180227f72ea165aed2986ba8b07f664">AddToVector</link> (
+object instance, object item)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a0e19c4726e698facbeb7116434fb3e21">RunInitializer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override object <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a1689fdaf82e1b12cc0bef952f50f51ec">CreateFromString</link> (
+string input)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aa28444bac3b67a01fa356700b026fa04">SetContentPropertyName</link> (
+string contentPropertyName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aa110df567d11a5f3b51620f8f440397b">SetIsArray</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a3b0a1a8ca1cc24be662572174a8da4b6">SetIsMarkupExtension</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a84be91a54e8dffd2412fae0caa4802c3">SetIsBindable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a96888f53ae60b53fd2dc720ccdf56ce2">SetIsReturnTypeStub</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a671b8494cb6fa2e29d445f77a7b3130b">SetIsLocalType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a24793ddef51f3c1d59d9050104b61884">SetItemTypeName</link> (
+string itemTypeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1abf2195b6761b038110ad892f97b49d8b">SetKeyTypeName</link> (
+string keyTypeName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1afb8c23f873975e7290e8ac476e9367db">AddMemberName</link> (
+string shortName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ab7d2c4acfa5ce3e58f6f7471e917197b">AddEnumValue</link> (
+string name, object value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ae807b86cfaba3bc12006802031e3b889">
+                <title>AppStore.AppStore_XamlTypeInfo.XamlUserType.XamlUserType (global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ab685cd8c7eb664ac6c2d9ef11ad5cad4">
+                <title>override global::Windows.UI.Xaml.Markup.IXamlMember AppStore.AppStore_XamlTypeInfo.XamlUserType.GetMember (string name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a6b71f576de1e262811ff5b7294dd462e">
+                <title>override object AppStore.AppStore_XamlTypeInfo.XamlUserType.ActivateInstance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aaba78cd5a01a022d66a6eaeeb7ce0750">
+                <title>override void AppStore.AppStore_XamlTypeInfo.XamlUserType.AddToMap (object instance, object key, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1af180227f72ea165aed2986ba8b07f664">
+                <title>override void AppStore.AppStore_XamlTypeInfo.XamlUserType.AddToVector (object instance, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a0e19c4726e698facbeb7116434fb3e21">
+                <title>override void AppStore.AppStore_XamlTypeInfo.XamlUserType.RunInitializer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a1689fdaf82e1b12cc0bef952f50f51ec">
+                <title>override object AppStore.AppStore_XamlTypeInfo.XamlUserType.CreateFromString (string input)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aa28444bac3b67a01fa356700b026fa04">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetContentPropertyName (string contentPropertyName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aa110df567d11a5f3b51620f8f440397b">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsArray ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a3b0a1a8ca1cc24be662572174a8da4b6">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsMarkupExtension ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a84be91a54e8dffd2412fae0caa4802c3">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsBindable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a96888f53ae60b53fd2dc720ccdf56ce2">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsReturnTypeStub ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a671b8494cb6fa2e29d445f77a7b3130b">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsLocalType ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a24793ddef51f3c1d59d9050104b61884">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetItemTypeName (string itemTypeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1abf2195b6761b038110ad892f97b49d8b">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetKeyTypeName (string keyTypeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1afb8c23f873975e7290e8ac476e9367db">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.AddMemberName (string shortName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ab7d2c4acfa5ce3e58f6f7471e917197b">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.AddEnumValue (string name, object value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ae807b86cfaba3bc12006802031e3b889">
+                <title>AppStore.AppStore_XamlTypeInfo.XamlUserType.XamlUserType (global::AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ab685cd8c7eb664ac6c2d9ef11ad5cad4">
+                <title>override global::Windows.UI.Xaml.Markup.IXamlMember AppStore.AppStore_XamlTypeInfo.XamlUserType.GetMember (string name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a6b71f576de1e262811ff5b7294dd462e">
+                <title>override object AppStore.AppStore_XamlTypeInfo.XamlUserType.ActivateInstance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aaba78cd5a01a022d66a6eaeeb7ce0750">
+                <title>override void AppStore.AppStore_XamlTypeInfo.XamlUserType.AddToMap (object instance, object key, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1af180227f72ea165aed2986ba8b07f664">
+                <title>override void AppStore.AppStore_XamlTypeInfo.XamlUserType.AddToVector (object instance, object item)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a0e19c4726e698facbeb7116434fb3e21">
+                <title>override void AppStore.AppStore_XamlTypeInfo.XamlUserType.RunInitializer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a1689fdaf82e1b12cc0bef952f50f51ec">
+                <title>override object AppStore.AppStore_XamlTypeInfo.XamlUserType.CreateFromString (string input)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aa28444bac3b67a01fa356700b026fa04">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetContentPropertyName (string contentPropertyName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1aa110df567d11a5f3b51620f8f440397b">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsArray ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a3b0a1a8ca1cc24be662572174a8da4b6">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsMarkupExtension ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a84be91a54e8dffd2412fae0caa4802c3">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsBindable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a96888f53ae60b53fd2dc720ccdf56ce2">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsReturnTypeStub ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a671b8494cb6fa2e29d445f77a7b3130b">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetIsLocalType ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1a24793ddef51f3c1d59d9050104b61884">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetItemTypeName (string itemTypeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1abf2195b6761b038110ad892f97b49d8b">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.SetKeyTypeName (string keyTypeName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1afb8c23f873975e7290e8ac476e9367db">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.AddMemberName (string shortName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type_1ab7d2c4acfa5ce3e58f6f7471e917197b">
+                <title>void AppStore.AppStore_XamlTypeInfo.XamlUserType.AddEnumValue (string name, object value)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

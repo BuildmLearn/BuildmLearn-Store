@@ -1,0 +1,11 @@
+<map id="AppStore.Templates.ScorePage" name="AppStore.Templates.ScorePage">
+<area shape="rect" id="node2" href="$db/d2f/class_page.html" title="{Page\n||}" alt="" coords="5,529,57,606"/>
+<area shape="rect" id="node3" href="$d7/d68/class_app_store_1_1_common_1_1_navigation_helper.html" title="NavigationHelper aids in navigation between pages. " alt="" coords="81,419,304,716"/>
+<area shape="rect" id="node4" href="$d1/d12/class_dependency_object.html" title="{DependencyObject\n||}" alt="" coords="65,169,197,246"/>
+<area shape="rect" id="node5" href="$d1/d53/class_app_store_1_1_common_1_1_relay_command.html" title="A command whose sole purpose is to relay its functionality to other objects by invoking delegates..." alt="" coords="221,132,449,283"/>
+<area shape="rect" id="node6" href="$d6/d2b/class_i_command.html" title="{ICommand\n||}" alt="" coords="293,5,377,83"/>
+<area shape="rect" id="node7" href="$d1/d66/class_app_store_1_1_models_1_1_spellings_model.html" title="It is model for the Spellings App&#45;Template. " alt="" coords="329,375,507,760"/>
+<area shape="rect" id="node8" href="$d3/d63/class_app_store_1_1_models_1_1_quiz_model.html" title="It is model for the Quiz App&#45;Template. " alt="" coords="668,360,856,775"/>
+<area shape="rect" id="node9" href="$d2/db9/class_app_store_1_1_common_1_1_observable_dictionary.html" title="Implementation of IObservableMap that supports reentrancy for use as a default view model..." alt="" coords="990,404,1190,731"/>
+<area shape="rect" id="node10" href="$d7/dd1/class_i_observable_map.html" title="{IObservableMap\&lt; string,\l object \&gt;\n||}" alt="" coords="1009,161,1171,253"/>
+</map>

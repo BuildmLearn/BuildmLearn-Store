@@ -59,7 +59,7 @@
                 </StackPanel>
                     <TextBlock Margin="0,5" Text="Reviews" FontSize="25" FontWeight="Bold" Foreground="#FF1976D2"/>
                     <WebView x:ConnectionId='4' Name="webAppReviews" Height="250"                                                             IsHitTestVisible="False"/>
-                    <HyperlinkButton x:ConnectionId='5' Name="OpenInBrowser" IsEnabled="False"                               Content="Open reviews in browser" Foreground="#FF1976D2"/>
+                    <HyperlinkButton x:ConnectionId='5' Name="OpenInBrowser" IsEnabled="False"                       Content="Open reviews in browser" Foreground="#FF1976D2"/>
                 </StackPanel>
         </ScrollViewer>
     </Grid>

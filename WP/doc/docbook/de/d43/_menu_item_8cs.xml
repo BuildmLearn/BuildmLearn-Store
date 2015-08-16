@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d43/_menu_item_8cs">
+    <title>MenuItem.cs File Reference</title>
+<para>Include dependency diagram for MenuItem.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dc0/_menu_item_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for MenuItem.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d95/_menu_item_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d4c/class_app_store_1_1_models_1_1_menu_item">AppStore::Models::MenuItem</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the menu items.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/MenuItem.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+2 {
+<link linkend="d6/d4c/class_app_store_1_1_models_1_1_menu_item">6 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d6/d4c/class_app_store_1_1_models_1_1_menu_item">MenuItem</link>
+7 &#32;&#32;&#32;&#32;{
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Icon&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Title&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d6/d4c/class_app_store_1_1_models_1_1_menu_item">MenuItem</link>(<emphasis class="keywordtype">string</emphasis>&#32;mTitle,<emphasis class="keywordtype">string</emphasis>&#32;mIcon)
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Icon&#32;=&#32;mIcon;
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Title&#32;=&#32;mTitle;
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+15 &#32;&#32;&#32;&#32;}
+16 }
+    </computeroutput></literallayout>
+</section>

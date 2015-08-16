@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/da1/_app_8xaml_8cs">
+    <title>App.xaml.cs File Reference</title>
+<para>Include dependency diagram for App.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d93/_app_8xaml_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for App.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/ded/_app_8xaml_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d36/class_app_store_1_1_app">AppStore::App</link></para>
+<para><emphasis>&lt;summary&gt;
+Provides application-specific behavior to supplement the default Application class.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/dd0/namespace_system">System</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/dc5/namespace_system_1_1_xml_1_1_linq">System::Xml::Linq</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/ddf/namespace_windows_1_1_application_model">Windows::ApplicationModel</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d11/namespace_windows_1_1_application_model_1_1_activation">Windows::ApplicationModel::Activation</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d94/namespace_windows_1_1_data_1_1_xml_1_1_dom">Windows::Data::Xml::Dom</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d97/namespace_windows_1_1_networking_1_1_connectivity">Windows::Networking::Connectivity</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d4e/namespace_windows_1_1_u_i_1_1_xaml">Windows::UI::Xaml</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/db9/namespace_windows_1_1_u_i_1_1_xaml_1_1_controls">Windows::UI::Xaml::Controls</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/df0/namespace_windows_1_1_u_i_1_1_xaml_1_1_media_1_1_animation">Windows::UI::Xaml::Media::Animation</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d06/namespace_windows_1_1_u_i_1_1_xaml_1_1_navigation">Windows::UI::Xaml::Navigation</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/App.xaml.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d2/d12/namespace_app_store_1_1_models">Models</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Xml.Linq;
+4 <emphasis class="keyword">using</emphasis>&#32;Windows.ApplicationModel;
+5 <emphasis class="keyword">using</emphasis>&#32;Windows.ApplicationModel.Activation;
+6 <emphasis class="keyword">using</emphasis>&#32;Windows.Data.Xml.Dom;
+7 <emphasis class="keyword">using</emphasis>&#32;Windows.Networking.Connectivity;
+8 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml;
+9 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+10 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Media.Animation;
+11 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Navigation;
+12 
+13 <emphasis class="comment">//&#32;The&#32;Blank&#32;Application&#32;template&#32;is&#32;documented&#32;at&#32;http://go.microsoft.com/fwlink/?LinkId=391641</emphasis>
+14 
+<link linkend="d9/d6d/namespace_app_store">15 </link><emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+16 {
+<link linkend="d9/d36/class_app_store_1_1_app">20 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;sealed&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis><link linkend="d9/d36/class_app_store_1_1_app">App</link>&#32;:&#32;Application
+21 &#32;&#32;&#32;&#32;{
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;TransitionCollection&#32;<link linkend="d9/d36/class_app_store_1_1_app_1aa5437a70ca75b6aa5962e339649703d5">transitions</link>;
+23 
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a82b34a93e637d194c15c0688d89b3301">App</link>()
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="d9/d36/class_app_store_1_1_app_1a4d26c3d02051eb6e7f151620457c8688">InitializeComponent</link>();
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Suspending&#32;+=&#32;this.<link linkend="d9/d36/class_app_store_1_1_app_1a1ed463e672ed85860f7a2d52da62bfb7">OnSuspending</link>;
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+33 
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a3628183a5d6c2a9d88fd77f6638adb13">OnLaunched</link>(LaunchActivatedEventArgs&#32;e)
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+42 <emphasis class="preprocessor">#if&#32;DEBUG</emphasis>
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="d8/dd0/namespace_system">System</link>.Diagnostics.Debugger.IsAttached)
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.DebugSettings.EnableFrameRateCounter&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+47 <emphasis class="preprocessor">#endif</emphasis>
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d9/d36/class_app_store_1_1_app_1aa4404e7a4bb2b98982569fab79c06d8e">ExtendSplashScreen</link>();
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame&#32;rootFrame&#32;=&#32;Window.Current.Content&#32;as&#32;Frame;
+50 
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Do&#32;not&#32;repeat&#32;app&#32;initialization&#32;when&#32;the&#32;Window&#32;already&#32;has&#32;content,</emphasis>
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;just&#32;ensure&#32;that&#32;the&#32;window&#32;is&#32;active</emphasis>
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(rootFrame&#32;==&#32;null)
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Create&#32;a&#32;Frame&#32;to&#32;act&#32;as&#32;the&#32;navigation&#32;context&#32;and&#32;navigate&#32;to&#32;the&#32;first&#32;page</emphasis>
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rootFrame&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Frame();
+57 
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;TODO:&#32;change&#32;this&#32;value&#32;to&#32;a&#32;cache&#32;size&#32;that&#32;is&#32;appropriate&#32;for&#32;your&#32;application</emphasis>
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rootFrame.CacheSize&#32;=&#32;1;
+60 
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Set&#32;the&#32;default&#32;language</emphasis>
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rootFrame.Language&#32;=&#32;Windows.Globalization.ApplicationLanguages.Languages[0];
+63 
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(e.PreviousExecutionState&#32;==&#32;ApplicationExecutionState.Terminated)
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;TODO:&#32;Load&#32;state&#32;from&#32;previously&#32;suspended&#32;application</emphasis>
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+68 
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Place&#32;the&#32;frame&#32;in&#32;the&#32;current&#32;Window</emphasis>
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Window.Current.Content&#32;=&#32;rootFrame;
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+72 
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(rootFrame.Content&#32;==&#32;null)
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Removes&#32;the&#32;turnstile&#32;navigation&#32;for&#32;startup.</emphasis>
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(rootFrame.ContentTransitions&#32;!=&#32;null)
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.transitions&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;TransitionCollection();
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(var&#32;c&#32;<emphasis class="keywordflow">in</emphasis>&#32;rootFrame.ContentTransitions)
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.transitions.Add(c);
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+84 
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rootFrame.ContentTransitions&#32;=&#32;null;
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rootFrame.Navigated&#32;+=&#32;this.<link linkend="d9/d36/class_app_store_1_1_app_1aaca7c189964d775fa50fbfab9fd5fd99">RootFrame_FirstNavigated</link>;
+87 
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;When&#32;the&#32;navigation&#32;stack&#32;isn&apos;t&#32;restored&#32;navigate&#32;to&#32;the&#32;first&#32;page,</emphasis>
+89 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;configuring&#32;the&#32;new&#32;page&#32;by&#32;passing&#32;required&#32;information&#32;as&#32;a&#32;navigation</emphasis>
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;parameter</emphasis>
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!rootFrame.Navigate(typeof(<link linkend="d1/d1a/class_app_store_1_1_main_page">MainPage</link>),&#32;e.Arguments))
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="df/d70/class_exception">Exception</link>(<emphasis class="stringliteral">&quot;Failed&#32;to&#32;create&#32;initial&#32;page&quot;</emphasis>);
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+96 
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Ensure&#32;the&#32;current&#32;window&#32;is&#32;active</emphasis>
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Window.Current.Activate();
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+100 &#32;&#32;&#32;
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1ab3b4b2e6ec604ccbdf63f66dfa47404a">HasInternet</link>()
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;connectionProfile&#32;=&#32;NetworkInformation.GetInternetConnectionProfile();
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;(connectionProfile&#32;!=&#32;null&#32;&amp;&amp;
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;connectionProfile.GetNetworkConnectivityLevel()&#32;==&#32;NetworkConnectivityLevel.InternetAccess);
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+111 &#32;&#32;
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a9e1e2e587ff24930917554d620db43e3">CommandInvokedHandler</link>(Windows.UI.Popups.IUICommand&#32;command)
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;Display&#32;message&#32;showing&#32;the&#32;label&#32;of&#32;the&#32;command&#32;that&#32;was&#32;invoked</emphasis>
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(command.Label.Equals(<emphasis class="stringliteral">&quot;Close&#32;app&quot;</emphasis>))&#32;Application.Current.Exit();
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1aa4404e7a4bb2b98982569fab79c06d8e">ExtendSplashScreen</link>()
+126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1afdcb2f70903d78954773ca54d5075876">getAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a61f5d3ee5fe499695f7fdd8dce0de7bc">appList</link>.Clear();
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a7272c3ebe6aa36dd13b2c093c1b8dc2e">getMyAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a2131edd2cd784131e92e377c618c03a1">myappList</link>.Clear();
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;XmlDocument&#32;xmldoc&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;XmlDocument();
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xmldoc.LoadXml(XDocument.Load(<emphasis class="stringliteral">&quot;Assets/BuildmLearnStore.xml&quot;</emphasis>).ToString());
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(var&#32;item&#32;<emphasis class="keywordflow">in</emphasis>&#32;xmldoc.GetElementsByTagName(<emphasis class="stringliteral">&quot;app&quot;</emphasis>))
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;ar&#32;=&#32;item.InnerText.Split(<emphasis class="charliteral">&apos;\n&apos;</emphasis>);
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1afdcb2f70903d78954773ca54d5075876">getAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a61f5d3ee5fe499695f7fdd8dce0de7bc">appList</link>.Add(<emphasis class="keyword">new</emphasis>&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>(ar[1],&#32;ar[2],&#32;ar[10],&#32;ar[11],&#32;ar[3],&#32;<emphasis class="keyword">new</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;{&#32;ar[5],&#32;ar[6]&#32;},&#32;ar[9],&#32;ar[8]));
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;localSettings&#32;=&#32;Windows.Storage.ApplicationData.Current.LocalSettings;
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(localSettings.Values.ContainsKey(ar[1].Trim()))
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;((<emphasis class="keywordtype">bool</emphasis>)localSettings.Values[ar[1].Trim()])
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a7272c3ebe6aa36dd13b2c093c1b8dc2e">getMyAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a2131edd2cd784131e92e377c618c03a1">myappList</link>.Add(<emphasis class="keyword">new</emphasis>&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>(ar[1],&#32;ar[2],&#32;ar[10],&#32;ar[11],&#32;ar[3],&#32;<emphasis class="keyword">new</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;{&#32;ar[5],&#32;ar[6]&#32;},&#32;ar[9],&#32;ar[8]));
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;localSettings.Values.Add(ar[1].Trim(),&#32;<emphasis class="keyword">false</emphasis>);
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(<link linkend="df/d70/class_exception">Exception</link>)&#32;{&#32;}
+150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(<link linkend="df/d70/class_exception">Exception</link>)&#32;{&#32;}&#32;
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1aaca7c189964d775fa50fbfab9fd5fd99">RootFrame_FirstNavigated</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;NavigationEventArgs&#32;e)
+161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;rootFrame&#32;=&#32;sender&#32;as&#32;Frame;
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rootFrame.ContentTransitions&#32;=&#32;this.transitions&#32;??&#32;<emphasis class="keyword">new</emphasis>&#32;TransitionCollection()&#32;{&#32;<emphasis class="keyword">new</emphasis>&#32;NavigationThemeTransition()&#32;};
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rootFrame.Navigated&#32;-=&#32;this.<link linkend="d9/d36/class_app_store_1_1_app_1aaca7c189964d775fa50fbfab9fd5fd99">RootFrame_FirstNavigated</link>;
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+166 
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d9/d36/class_app_store_1_1_app_1a1ed463e672ed85860f7a2d52da62bfb7">OnSuspending</link>(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;SuspendingEventArgs&#32;e)
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;deferral&#32;=&#32;e.SuspendingOperation.GetDeferral();
+177 
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;TODO:&#32;Save&#32;application&#32;state&#32;and&#32;stop&#32;any&#32;background&#32;activity</emphasis>
+179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;deferral.Complete();
+180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+181 &#32;&#32;&#32;&#32;}
+182 }
+    </computeroutput></literallayout>
+</section>

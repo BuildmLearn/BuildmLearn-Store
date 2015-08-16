@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">
+<title>AppStore::Common::LoadStateEventArgs class Reference</title>
+<para>Inheritance diagram for AppStore::Common::LoadStateEventArgs</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d57/class_app_store_1_1_common_1_1_load_state_event_args__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::LoadStateEventArgs</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d5a/class_app_store_1_1_common_1_1_load_state_event_args__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args_1a5604c875ef1f6b270a535d9afc2f5454">LoadStateEventArgs</link> (
+Object navigationParameter, Dictionary&lt; string, Object &gt; pageState)<para><emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;LoadStateEventArgs&quot;/&gt; class.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Class used to hold the event data required when a page attempts to load state. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 382 of file NavigationHelper.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NavigationHelper.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args_1a5604c875ef1f6b270a535d9afc2f5454">
+                <title>AppStore.Common.LoadStateEventArgs.LoadStateEventArgs (Object navigationParameter, Dictionary&lt; string, Object &gt; pageState)</title> <emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;LoadStateEventArgs&quot;/&gt; class.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>navigationParameter</entry>
+                                <entry>
+<para>The parameter value passed to Frame.Navigate(Type, Object) when this page was initially requested. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pageState</entry>
+                                <entry>
+<para>A dictionary of state preserved by this page during an earlier session. This will be null the first time a page is visited. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

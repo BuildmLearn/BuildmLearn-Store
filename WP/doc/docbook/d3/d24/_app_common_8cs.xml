@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d24/_app_common_8cs">
+    <title>AppCommon.cs File Reference</title>
+<para>Include dependency diagram for AppCommon.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d88/_app_common_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for AppCommon.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d1f/_app_common_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common">AppStore::Common::AppCommon</link></para>
+<para><emphasis>&lt;summary&gt;
+Common class for the App.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d5e/namespace_app_store_1_1_common">AppStore::Common</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/dfd/namespace_windows_1_1_foundation">Windows::Foundation</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Common/AppCommon.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;Windows.ApplicationModel.DataTransfer;
+3 <emphasis class="keyword">using</emphasis>&#32;Windows.Foundation;
+4 
+<link linkend="dd/d5e/namespace_app_store_1_1_common">5 </link><emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Common
+6 {
+<link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common">10 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common">AppCommon</link>
+11 &#32;&#32;&#32;&#32;{
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;async&#32;<emphasis class="keywordtype">void</emphasis>&#32;ComposeEmail()
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;emailMessage&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Windows.ApplicationModel.Email.EmailMessage();
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;emailMessage.Body&#32;=&#32;<emphasis class="stringliteral">&quot;I&#32;liked&#32;the&#32;following&#32;features&#32;in&#32;this&#32;app:&quot;</emphasis>;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;emailRecipient&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Windows.ApplicationModel.Email.EmailRecipient(<emphasis class="stringliteral">&quot;srujanjha.jha@gmail.com&quot;</emphasis>);
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;emailMessage.To.Add(emailRecipient);
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;emailMessage.CC.Add(emailRecipient);
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;await&#32;Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(emailMessage);
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+24 
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;RegisterForShare()
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DataTransferManager&#32;dataTransferManager&#32;=&#32;DataTransferManager.GetForCurrentView();
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dataTransferManager.DataRequested&#32;+=&#32;<emphasis class="keyword">new</emphasis>&#32;TypedEventHandler&lt;DataTransferManager,&#32;DataRequestedEventArgs&gt;(ShareTextHandler);
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+33 
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;ShareTextHandler(DataTransferManager&#32;sender,&#32;DataRequestedEventArgs&#32;e)
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DataRequest&#32;request&#32;=&#32;e.Request;
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;request.Data.Properties.Title&#32;=&#32;<emphasis class="stringliteral">&quot;BuildmLearn&#32;Store&quot;</emphasis>;
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;request.Data.Properties.Description&#32;=&#32;<emphasis class="stringliteral">&quot;BuildmLearn&#32;Store&#32;Share&quot;</emphasis>;
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;request.Data.SetText(<emphasis class="stringliteral">&quot;Share&#32;Text&quot;</emphasis>);
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+46 
+47 &#32;&#32;&#32;&#32;}
+48 }
+    </computeroutput></literallayout>
+</section>

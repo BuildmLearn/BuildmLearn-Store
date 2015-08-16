@@ -339,6 +339,9 @@
     <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Release\AppDetailsPage.xbf">
       <PackagePath>AppDetailsPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Release\AppsPage.xbf">
+      <PackagePath>AppsPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Release\CategoriesPage.xbf">
       <PackagePath>CategoriesPage.xbf</PackagePath>
     </AppxPackagedFile>
@@ -354,8 +357,8 @@
     <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Release\SearchPage.xbf">
       <PackagePath>SearchPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Release\Settings.xbf">
-      <PackagePath>Settings.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Release\SettingsDialog.xbf">
+      <PackagePath>SettingsDialog.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Srujan\Documents\Visual Studio 2015\Projects\BuildmLearnStore\AppStore\AppStore\bin\Release\Templates\FlashCardPage.xbf">
       <PackagePath>Templates\FlashCardPage.xbf</PackagePath>

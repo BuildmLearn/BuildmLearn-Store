@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/de7/class_app_store_1_1_models_1_1_apps">
+<title>AppStore::Models::Apps class Reference</title>
+<para>Inheritance diagram for AppStore::Models::Apps</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d51/class_app_store_1_1_models_1_1_apps__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::Apps</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/dd2/class_app_store_1_1_models_1_1_apps__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1ae003aea8d0c8df58dbc965e2d4f9db61">Apps</link> (
+string name, string description, string author, string authoremail, string appicon, string[] screenshots, string type, string category)<para><emphasis>&lt;summary&gt;
+Public Constructor
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model for the Info App-Template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 7 of file Apps.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Apps.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d8/de7/class_app_store_1_1_models_1_1_apps_1ae003aea8d0c8df58dbc965e2d4f9db61">
+                <title>AppStore.Models.Apps.Apps (string name, string description, string author, string authoremail, string appicon, string[]screenshots, string type, string category)</title> <emphasis>&lt;summary&gt;
+Public Constructor
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>Name of the app</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>description</entry>
+                                <entry>
+<para>Description of the app</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>author</entry>
+                                <entry>
+<para>Author of the app</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>authoremail</entry>
+                                <entry>
+<para>AuthorEmail </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>appicon</entry>
+                                <entry>
+<para>AppIcon</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>screenshots</entry>
+                                <entry>
+<para>Screenshots</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>type</entry>
+                                <entry>
+<para>Type of the app</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>category</entry>
+                                <entry>
+<para>Category of the app</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

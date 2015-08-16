@@ -1,21 +1,8 @@
 ﻿using AppStore.Common;
 using AppStore.Models;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
-using Windows.UI.Core;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -23,7 +10,7 @@ using Windows.UI.Xaml.Navigation;
 namespace AppStore.Templates
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// This page deals with the Score Page related to the Spellings Puzzle and the Quiz App-Template.
     /// </summary>
     public sealed partial class ScorePage : Page
     {
@@ -31,6 +18,9 @@ namespace AppStore.Templates
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
         private SpellingsModel puzzle;
         private QuizModel quiz;
+        /// <summary>
+        /// Public Construtor to the ScorePage. Populates the views pertaining to this page.
+        /// </summary>
         public ScorePage()
         {
             this.InitializeComponent();
@@ -123,6 +113,19 @@ namespace AppStore.Templates
             this.navigationHelper.OnNavigatedTo(e);
         }
 
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// <para>
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="NavigationHelper.LoadState"/>
+        /// and <see cref="NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+        /// </para>
+        /// </summary>
+        /// <param name="e">Provides data for navigation methods and event
+        /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
@@ -130,6 +133,11 @@ namespace AppStore.Templates
 
         #endregion
 
+        /// <summary>
+        /// It restarts the current quiz or spellings puzzle app.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Restart_Click(object sender, RoutedEventArgs e)
         {
             if (StartPage.removeParameter.Equals("remove"))
@@ -137,6 +145,11 @@ namespace AppStore.Templates
             else Frame.Navigate(typeof(StartPage));
         }
 
+        /// <summary>
+        /// It quits the current app and navigates back to its details page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
             Frame.GoBack();

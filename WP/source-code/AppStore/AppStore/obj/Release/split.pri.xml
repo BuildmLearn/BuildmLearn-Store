@@ -15,6 +15,11 @@
 					<Value>AppDetailsPage.xbf</Value>
 				</Candidate>
 			</NamedResource>
+			<NamedResource name="AppsPage.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/AppsPage.xbf">
+				<Candidate type="Path">
+					<Value>AppsPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
 			<NamedResource name="AppStore.xr.xml" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/AppStore.xr.xml">
 				<Candidate type="Path">
 					<Value>AppStore.xr.xml</Value>
@@ -45,9 +50,9 @@
 					<Value>SearchPage.xbf</Value>
 				</Candidate>
 			</NamedResource>
-			<NamedResource name="Settings.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/Settings.xbf">
+			<NamedResource name="SettingsDialog.xbf" uri="ms-resource://801c2a9a-7f98-47ab-a48a-510297690696/Files/SettingsDialog.xbf">
 				<Candidate type="Path">
-					<Value>Settings.xbf</Value>
+					<Value>SettingsDialog.xbf</Value>
 				</Candidate>
 			</NamedResource>
 			<ResourceMapSubtree name="Assets">

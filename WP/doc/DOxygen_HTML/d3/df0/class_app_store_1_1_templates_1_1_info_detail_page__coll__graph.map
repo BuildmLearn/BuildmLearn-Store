@@ -1,0 +1,9 @@
+<map id="AppStore.Templates.InfoDetailPage" name="AppStore.Templates.InfoDetailPage">
+<area shape="rect" id="node2" href="$db/d2f/class_page.html" title="{Page\n||}" alt="" coords="76,485,128,562"/>
+<area shape="rect" id="node3" href="$d7/d68/class_app_store_1_1_common_1_1_navigation_helper.html" title="NavigationHelper aids in navigation between pages. " alt="" coords="152,375,375,672"/>
+<area shape="rect" id="node4" href="$d1/d12/class_dependency_object.html" title="{DependencyObject\n||}" alt="" coords="5,169,137,246"/>
+<area shape="rect" id="node5" href="$d1/d53/class_app_store_1_1_common_1_1_relay_command.html" title="A command whose sole purpose is to relay its functionality to other objects by invoking delegates..." alt="" coords="161,132,389,283"/>
+<area shape="rect" id="node6" href="$d6/d2b/class_i_command.html" title="{ICommand\n||}" alt="" coords="233,5,317,83"/>
+<area shape="rect" id="node7" href="$d2/db9/class_app_store_1_1_common_1_1_observable_dictionary.html" title="Implementation of IObservableMap that supports reentrancy for use as a default view model..." alt="" coords="399,360,599,687"/>
+<area shape="rect" id="node8" href="$d7/dd1/class_i_observable_map.html" title="{IObservableMap\&lt; string,\l object \&gt;\n||}" alt="" coords="418,161,581,253"/>
+</map>

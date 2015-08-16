@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22512.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStore", "AppStore\AppStore.csproj", "{1C4C34C2-2E81-42A6-B691-D8D527F42AD6}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Docs", "Docs\Docs.shfbproj", "{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,18 @@ Global
 		{1C4C34C2-2E81-42A6-B691-D8D527F42AD6}.Release|x86.ActiveCfg = Release|x86
 		{1C4C34C2-2E81-42A6-B691-D8D527F42AD6}.Release|x86.Build.0 = Release|x86
 		{1C4C34C2-2E81-42A6-B691-D8D527F42AD6}.Release|x86.Deploy.0 = Release|x86
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Debug|ARM.Build.0 = Debug|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Debug|x86.Build.0 = Debug|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Release|ARM.Build.0 = Release|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Release|x86.ActiveCfg = Release|Any CPU
+		{911FBCF4-FEBB-4D63-B9CB-21ECDE54D50B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

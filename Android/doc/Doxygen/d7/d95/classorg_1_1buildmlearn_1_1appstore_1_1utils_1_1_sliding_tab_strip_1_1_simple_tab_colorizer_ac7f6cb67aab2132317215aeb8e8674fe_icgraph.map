@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.utils.SlidingTabStrip.SimpleTabColorizer.setIndicatorColors" name="org.buildmlearn.appstore.utils.SlidingTabStrip.SimpleTabColorizer.setIndicatorColors">
+<area shape="rect" id="node2" href="$d2/d6d/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_strip.html#aa05ff2b028372fd3c3d17644e8c7693a" title="Constructor of the Helper class. " alt="" coords="334,5,534,47"/>
+<area shape="rect" id="node3" href="$d2/d6d/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_strip.html#a83d4b6bd9114a7d661b6db66339b64b2" title="Set the Color to the active Tab. " alt="" coords="300,71,568,112"/>
+<area shape="rect" id="node4" href="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#a380c66569aaebb5e4967bb682d1bf0dd" title="Sets the colors to be used for indicating the selected tab. " alt="" coords="616,71,896,112"/>
+</map>

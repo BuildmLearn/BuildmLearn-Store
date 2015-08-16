@@ -23,6 +23,23 @@
             </summary>
             <param name="e">Details about the launch request and process.</param>
         </member>
+        <member name="M:AppStore.App.HasInternet">
+            <summary>
+            It determines whether the phone has an internet access or not.
+            </summary>
+            <returns>Returns the boolean state of the internet access.</returns>
+        </member>
+        <member name="M:AppStore.App.CommandInvokedHandler(Windows.UI.Popups.IUICommand)">
+            <summary>
+            On exiting the app, a message pops up asking, if the user really wants to close the app. On tapping "yes", this method is executed.
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="M:AppStore.App.ExtendSplashScreen">
+            <summary>
+            This method loads all the contents of the store. Meanwhile, the splash screen is in view.
+            </summary>
+        </member>
         <member name="M:AppStore.App.RootFrame_FirstNavigated(System.Object,Windows.UI.Xaml.Navigation.NavigationEventArgs)">
             <summary>
             Restores the content transitions after the app has launched.
@@ -41,7 +58,12 @@
         </member>
         <member name="T:AppStore.AppDetailsPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This class deals with the App-Details page, which is shown when the user taps on any app cards displayed on various pages.
+            </summary>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.#ctor">
+            <summary>
+            Public Constructor to the Details Page.
             </summary>
         </member>
         <member name="P:AppStore.AppDetailsPage.NavigationHelper">
@@ -93,9 +115,147 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.AppDetailsPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the SaveState method
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.getHtmlComment">
+            <summary>
+            Builds the html content which has to loaded into the WebView for Reviews Section.
+            </summary>
+            <returns>Returns the HTML content to be loaded into the WebView of the Reviews Section</returns>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.ShowImages(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating images(screenshots) in the App-Details Page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.detailsShowMore_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the more button is tapped in the details section. It toggles between showing complete and less details of the app.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.GridScreenshots_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Executed when the user taps/selects a screenshot from the App-Details Page. The screenshots zoom in to the fullscreen view.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.Button_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Close Button is tapped in the full screen view of the screenshots. It closes the full-screen view.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.btnAppInstall_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Install Button is tapped from the App-Details section. It installs the app.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.btnAppShare_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Share Button is tapped from the App-Details section. The app prepares content form the app to be shared using default installed apps on the phone.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.Search_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Search Button is tapped from the Application bar. The app navigates to the Search Results page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.Home_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Home Button is tapped from the Application bar. The app navigates to the Home page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.Settings_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Settings Button is tapped from the Application bar. The app navigates to the Settings page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.MyApps_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the My-Apps Button is tapped from the Application bar. The app navigates to the My-Apps page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.Categories_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Categories Button is tapped from the Application bar. The app navigates to the Categories page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.About_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the About Button is tapped from the Application bar. The app navigates to the About page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.Feedback_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.Browser_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            It opens the Reviews section of the app in an external browser.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.HyperlinkButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            It opens the Reviews section of the app in an external browser.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppDetailsPage.webAppReviews_FrameDOMContentLoaded(Windows.UI.Xaml.Controls.WebView,Windows.UI.Xaml.Controls.WebViewDOMContentLoadedEventArgs)">
+            <summary>
+            This method is executed when the contents of the Reviews section is loaded.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">WebViewDOMContentLoadedEventArgs is a parameter called args that contains the event data, see the WebViewDOMContentLoadedEventArgs MSDN page for more information.</param>
+        </member>
         <member name="T:AppStore.AppsPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This activity deals with the apps shown when "more" button on the Home Page is pressed.
+            </summary>
+        </member>
+        <member name="M:AppStore.AppsPage.#ctor">
+            <summary>
+            Public constructor to the Apps Page.
             </summary>
         </member>
         <member name="P:AppStore.AppsPage.NavigationHelper">
@@ -147,9 +307,114 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.AppsPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the SaveState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.GridFeaturedApps_ContentChanging(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating apps in the My-Apps section.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.ShowImage(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating images(app icons) in the AppsPage.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.GridFeaturedApps_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Executed when the user taps/selects an app from the Apps Page. The app navigates to the Details page of the app.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.Search_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Search Button is tapped from the Application bar. The app navigates to the Search Results page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.Settings_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Settings Button is tapped from the Application bar. The app navigates to the Settings page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.MyApps_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the My Apps Button is tapped from the Application bar. The app navigates to the My-Apps page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.Categories_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Categories Button is tapped from the Application bar. The app navigates to the Categories page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.About_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the About Button is tapped from the Application bar. The app navigates to the About page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.StackPanel_Holding(System.Object,Windows.UI.Xaml.Input.HoldingRoutedEventArgs)">
+            <summary>
+            Executed when the app is long tapped. Context menu appears now.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.Feedback_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.InstallButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Install Button is tapped from the Context menu which appears when the app is long tapped. It installs the installed app.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.AppsPage.ShareButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Share Button is tapped from the Application bar. The app prepares content form the app to be shared using default installed apps on the phone.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
         <member name="T:AppStore.CategoriesPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page deals with categorizing apps into certains groups.
+            The categories are shown in tiles, which when tapped will navigate to the list of apps belonging to the particular category.
+            </summary>
+        </member>
+        <member name="M:AppStore.CategoriesPage.#ctor">
+            <summary>
+            Public constructor to the Categories Page.
             </summary>
         </member>
         <member name="P:AppStore.CategoriesPage.NavigationHelper">
@@ -201,9 +466,70 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.CategoriesPage.GridCategories_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Executed when the user taps/selects a category from the Categoires Page. The app navigates to its category-specific page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
+        <member name="M:AppStore.CategoriesPage.GridCategories_ContentChanging(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating categories in this page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoriesPage.Search_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Search Button is tapped from the Application bar. The app navigates to the Search Results page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoriesPage.Settings_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Settings Button is tapped from the Application bar. The app navigates to the Settings page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoriesPage.Home_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Home Button is tapped from the Application bar. The app navigates to the Home page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoriesPage.MyApps_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the My-Apps Button is tapped from the Application bar. The app navigates to the My-Apps page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoriesPage.About_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the About Button is tapped from the Application bar. The app navigates to the About page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoriesPage.Feedback_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
         <member name="T:AppStore.CategoryPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page is the Category Page, which the app navigates to when the user selects a particular category.
+            </summary>
+        </member>
+        <member name="M:AppStore.CategoryPage.#ctor">
+            <summary>
+            Public Constructor of the CategoryPage
             </summary>
         </member>
         <member name="P:AppStore.CategoryPage.NavigationHelper">
@@ -254,6 +580,156 @@
             </summary>
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the SaveState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.GridApps_ContentChanging(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating apps which belongs to a particular category.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.ShowImage(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating images(app icons) in the AppsPage.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.GridApps_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Executed when the user taps/selects an app from the Category Page. The app navigates to the Details page of the app.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.Search_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Search Button is tapped from the Application bar. The app navigates to the Search Results page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.Settings_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Settings Button is tapped from the Application bar. The app navigates to the Settings page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.Home_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Home Button is tapped from the Application bar. The app navigates to the Home page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.MyApps_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the My-Apps Button is tapped from the Application bar. The app navigates to the My-Apps page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.About_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the About Button is tapped from the Application bar. The app navigates to the About page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.StackPanel_Holding(System.Object,Windows.UI.Xaml.Input.HoldingRoutedEventArgs)">
+            <summary>
+            Executed when the app is long tapped. Context menu appears now.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.Feedback_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.InstallButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Install button is tapped from the Context menu which appears when the app is long tapped. It installs the app from the BuildmLearn Store.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.CategoryPage.ShareButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Share Button is tapped from the Application bar. The app prepares content form the app to be shared using default installed apps on the phone.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="T:AppStore.Common.AppCommon">
+            <summary>
+            Common class for the App.
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.AppCommon.ComposeEmail">
+            <summary>
+            It composes the email from the default app-client installed in the phone.
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.AppCommon.RegisterForShare">
+            <summary>
+            It builds the framework for the sharing purposes.
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.AppCommon.ShareTextHandler(Windows.ApplicationModel.DataTransfer.DataTransferManager,Windows.ApplicationModel.DataTransfer.DataRequestedEventArgs)">
+            <summary>
+            This is the text handler for the sharing purposes.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">DataRequestedEventArgs e is a parameter called e that contains the event data, see the DataRequestedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="T:AppStore.Common.AppReader">
+            <summary>
+            This class deals with reading the App-Templates.
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.AppReader.readInfoFile(System.String)">
+            <summary>
+            It reads the Info App-Template, from the .buildmlearn file.
+            </summary>
+            <param name="fileName">Name of the file</param>
+        </member>
+        <member name="M:AppStore.Common.AppReader.readQuizFile(System.String)">
+            <summary>
+            It reads the Quiz App-Template, from the .buildmlearn file.
+            </summary>
+            <param name="fileName">Name of the file</param>
+        </member>
+        <member name="M:AppStore.Common.AppReader.readSpellingsFile(System.String)">
+            <summary>
+            It reads the Spellings-Puzzle App-Template, from the .buildmlearn file.
+            </summary>
+            <param name="fileName">Name of the file</param>
+        </member>
+        <member name="M:AppStore.Common.AppReader.readFlashFile(System.String)">
+            <summary>
+            It reads the Flash-Card App-Template, from the .buildmlearn file.
+            </summary>
+            <param name="fileName">Name of the file</param>
         </member>
         <member name="T:AppStore.Common.NavigationHelper">
             <summary>
@@ -462,6 +938,123 @@
             model.
             </summary>
         </member>
+        <member name="T:AppStore.Common.ObservableDictionary.ObservableDictionaryChangedEventArgs">
+            <summary>
+            ObservableDictionaryChangedEventArgs
+            </summary>
+        </member>
+        <member name="E:AppStore.Common.ObservableDictionary.MapChanged">
+            <summary>
+            Handler to event if the app is changed.
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.InvokeMapChanged(Windows.Foundation.Collections.CollectionChange,System.String)">
+            <summary>
+            Invokes the change in the map.
+            </summary>
+            <param name="change">CollectionChange object</param>
+            <param name="key">String key</param>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.Add(System.String,System.Object)">
+            <summary>
+            Adds the collection of key and value to the list.
+            </summary>
+            <param name="key">String key</param>
+            <param name="value">String value</param>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <summary>
+            Adds the item to the list.
+            </summary>
+            <param name="item">KeyValuePair object</param>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.Remove(System.String)">
+            <summary>
+            Removes the item with the key from the list.
+            </summary>
+            <param name="key">String key</param>
+            <returns>True:If it is removed, False:If it is not</returns>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <summary>
+            Removes the item with the item from the list.
+            </summary>
+            <param name="item">KeyValuePair object</param>
+            <returns>True:If it is removed, False:If it is not</returns>
+        </member>
+        <member name="P:AppStore.Common.ObservableDictionary.Item(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key">String key</param>
+            <returns></returns>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.Clear">
+            <summary>
+            Clears the list
+            </summary>
+        </member>
+        <member name="P:AppStore.Common.ObservableDictionary.Keys">
+            <summary>
+            Constructor of the Collection
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.ContainsKey(System.String)">
+            <summary>
+            Checks whether the list contains the key.
+            </summary>
+            <param name="key">String key</param>
+            <returns>True:if the list contains the key, false otherwise. </returns>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Tries to get the value from the list with the key to the variable value.
+            </summary>
+            <param name="key">string key</param>
+            <param name="value">Object variable where the list item is returned to</param>
+            <returns>True: if the it gets the item, false otherwise.</returns>
+        </member>
+        <member name="P:AppStore.Common.ObservableDictionary.Values">
+            <summary>
+            Constructor of the collection of the values.
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <summary>
+            Checks whether the collection contains the item.
+            </summary>
+            <param name="item">KeyValuePair item</param>
+            <returns>True: if the list contains the item, false otherwise.</returns>
+        </member>
+        <member name="P:AppStore.Common.ObservableDictionary.Count">
+            <summary>
+            Returns the count of the KeyValuePair Colection.
+            </summary>
+        </member>
+        <member name="P:AppStore.Common.ObservableDictionary.IsReadOnly">
+            <summary>
+            Returns whether the collection is ReadOnly.
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.GetEnumerator">
+            <summary>
+            Gets the Enumerator of the Collection.
+            </summary>
+            <returns>Enumerator of the KeyValuePair</returns>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Gets the Enumerator of the Collection.
+            </summary>
+            <returns>Enumerator of the KeyValuePair</returns>
+        </member>
+        <member name="M:AppStore.Common.ObservableDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
+            <summary>
+            It copies the array from the list with the arrayIndex.
+            </summary>
+            <param name="array">KeyValuePair object</param>
+            <param name="arrayIndex">Integer index</param>
+        </member>
         <member name="T:AppStore.Common.RelayCommand">
             <summary>
             A command whose sole purpose is to relay its functionality 
@@ -600,14 +1193,819 @@
             <returns>A collection of state subject to the same serialization mechanism as
             <see cref="P:AppStore.Common.SuspensionManager.SessionState"/>.</returns>
         </member>
+        <member name="M:AppStore.Common.SuspensionManager.RestoreFrameNavigationState(Windows.UI.Xaml.Controls.Frame)">
+            <summary>
+            Loads the navigation state.
+            </summary>
+            <param name="frame">Frame Object</param>
+        </member>
+        <member name="M:AppStore.Common.SuspensionManager.SaveFrameNavigationState(Windows.UI.Xaml.Controls.Frame)">
+            <summary>
+            Saves the navigation state.
+            </summary>
+            <param name="frame">Frame Object</param>
+        </member>
+        <member name="T:AppStore.Common.SuspensionManagerException">
+            <summary>
+            Handles the exception related to the SuspensionManager.
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.SuspensionManagerException.#ctor">
+            <summary>
+            Deafult constructor
+            </summary>
+        </member>
+        <member name="M:AppStore.Common.SuspensionManagerException.#ctor(System.Exception)">
+            <summary>
+            Constructor with the Exception Object
+            </summary>
+            <param name="e"></param>
+        </member>
         <member name="T:AppStore.MainPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page is the Home Page.
             </summary>
+        </member>
+        <member name="M:AppStore.MainPage.#ctor">
+            <summary>
+            Public Contructor to MainPage
+            </summary>
+        </member>
+        <member name="M:AppStore.MainPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.MainPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the SaveState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.MainPage.GridFeaturedApps_ContentChanging(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating apps in the Featured-Apps section.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">EventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.ShowImage(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating images(app icons) in the Featured-Apps section.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.GridFeaturedApps_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Executed when the user taps/selects an app from the Featured-Apps section.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
+        <member name="M:AppStore.MainPage.GridFeaturedCategories_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Executed when the user taps/selects a category from the Featured-Categories section.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
+        <member name="M:AppStore.MainPage.GridFeaturedCategories_ContentChanging(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating categories in the Featured-Categories section.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">EventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.Search_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Search Button is tapped from the Application bar. The app navigates to the Search Results page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.Settings_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Settings Button is tapped from the Application bar. The app navigates to the Settings page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.MyApps_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the user taps/selects an app from the search results.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
+        <member name="M:AppStore.MainPage.Categories_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Categories Button is tapped from the Application bar. The app navigates to the Categories page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+            <summary>
+            Executed when the Categories Button is tapped from the Application bar. The app navigates to the Categories page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.About_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the About Button is tapped from the Application bar. The app navigates to the About page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.StackPanel_Holding(System.Object,Windows.UI.Xaml.Input.HoldingRoutedEventArgs)">
+            <summary>
+            Executed when the app is long tapped. Context menu appears now.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.Feedback_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+            <summary>
+            Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.InstallButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Install button is tapped from the Context Menu, which appears when the app is long tapped.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.ShareButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Share Button is tapped from the Application bar. The app prepares content form the app to be shared using default installed apps on the phone.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.MoreCategories_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the "more" button is tapped in the Featured Categories section. It navigates to the Categories Page, which lists all the categories.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MainPage.MoreApps_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the "more" button is tapped in the Featured Apps section. It navigates to the AppsPage, which lists all the apps.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="T:AppStore.Models.AppInstance">
+            <summary>
+            This is the model of the app instance, and whether it is installed or not.
+            </summary>
+        </member>
+        <member name="T:AppStore.Models.AppList">
+            <summary>
+            It is model which contains the list of all the apps both installed and else.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.AppList.getAppList">
+            <summary>
+            Gets the list of all the apps in BuildmLearn Store.
+            </summary>
+            <returns>Returns the AppList</returns>
+        </member>
+        <member name="M:AppStore.Models.AppList.getMyAppList">
+            <summary>
+            Gets the list of all the installed apps form BuildmLearn Store.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppStore.Models.AppList.#ctor">
+            <summary>
+            Public Constructor
+            </summary>
+        </member>
+        <member name="T:AppStore.Models.Apps">
+            <summary>
+            It is model for the Info App-Template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.Apps.#ctor(System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String)">
+            <summary>
+            Public Constructor
+            </summary>
+            <param name="name">Name of the app</param>
+            <param name="description">Description of the app</param>
+            <param name="author">Author of the app</param>
+            <param name="authoremail">AuthorEmail </param>
+            <param name="appicon">AppIcon</param>
+            <param name="screenshots">Screenshots</param>
+            <param name="type">Type of the app</param>
+            <param name="category">Category of the app</param>
+        </member>
+        <member name="T:AppStore.Models.Card">
+            <summary>
+            It is related to the FlashCard App-Template. It is the model of cards.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.Card.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Public constructor
+            </summary>
+            <param name="question">String question</param>
+            <param name="answer">String answer</param>
+            <param name="hint">String hint</param>
+            <param name="imagePath">String imagePath</param>
+        </member>
+        <member name="M:AppStore.Models.Card.getQuestion">
+            <summary>
+            Gets the question.
+            </summary>
+            <returns>String Question</returns>
+        </member>
+        <member name="M:AppStore.Models.Card.setQuestion(System.String)">
+            <summary>
+            Sets the Question.
+            </summary>
+            <param name="mQuestion">String Question</param>
+        </member>
+        <member name="M:AppStore.Models.Card.getAnswer">
+            <summary>
+            Gets the answer.
+            </summary>
+            <returns>String Answer</returns>
+        </member>
+        <member name="M:AppStore.Models.Card.setAnswer(System.String)">
+            <summary>
+            Sets the answer
+            </summary>
+            <param name="mAnswer">String answer</param>
+        </member>
+        <member name="M:AppStore.Models.Card.getHint">
+            <summary>
+            Gets the hint
+            </summary>
+            <returns>String Hint</returns>
+        </member>
+        <member name="M:AppStore.Models.Card.setHint(System.String)">
+            <summary>
+            Sets the hint
+            </summary>
+            <returns>String Hint</returns>
+        </member>
+        <member name="M:AppStore.Models.Card.getImagePath">
+            <summary>
+            Gets the ImagePath
+            </summary>
+            <returns>String ImagePath</returns>
+        </member>
+        <member name="M:AppStore.Models.Card.setImagePath(System.String)">
+            <summary>
+            Sets the ImagePath
+            </summary>
+            <returns>String Imagepath</returns>
+        </member>
+        <member name="T:AppStore.Models.Categories">
+            <summary>
+            It is model for the Categories
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.Categories.#ctor(System.String,System.String)">
+            <summary>
+            Public Constructor
+            </summary>
+            <param name="mName">Title of the Category</param>
+            <param name="mBackground">Background to be used for the tile of this Category</param>
+        </member>
+        <member name="T:AppStore.Models.CategoryInstance">
+            <summary>
+            It is an instance of the category.
+            </summary>
+        </member>
+        <member name="T:AppStore.Models.FlashModel">
+            <summary>
+            It is model for the Flash card App-Template
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.getInstance">
+            <summary>
+            Gets the Instance of the Flash-Card App-Template
+            </summary>
+            <returns>Returns the Instance of the Flash-Card App-Template</returns>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.getFlashAuthor">
+            <summary>
+            Gets the Author of the Flash-Card App-Template
+            </summary>
+            <returns>Returns the Author of the Flash-Card App-Template</returns>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.setFlashAuthor(System.String)">
+            <summary>
+            Sets the Author of the Flash-Card App-Template
+            </summary>
+            <param name="mFlashAuthor">Author of the Flash-Card App-Template</param>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.getFlashName">
+            <summary>
+            Gets the Name of the Flash-Card App-Template
+            </summary>
+            <returns>Returns the Name of the Flash-Card App-Template</returns>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.setFlashName(System.String)">
+            <summary>
+            Sets the Name of the Flash-Card App-Template
+            </summary>
+            <param name="mFlashName">Name of the Flash-Card App-Template</param>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.getCardList">
+            <summary>
+            Gets the CardList of the Flash-Card App-Template
+            </summary>
+            <returns>Returns the CardList of the Flash-Card App-Template</returns>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.setCardList(System.Collections.Generic.List{AppStore.Models.Card})">
+            <summary>
+            Sets the CardList of the Flash-Card App-Template
+            </summary>
+            <param name="mCardList">CardList of the Flash-Card App-Template</param>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.getFlashDescription">
+            <summary>
+            Gets the Description of the Flash-Card App-Template
+            </summary>
+            <returns>Returns the Description of the Flash-Card App-Template</returns>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.setFlashDescription(System.String)">
+            <summary>
+            Sets the Description of the Flash-Card App-Template
+            </summary>
+            <param name="mFlashDescription">Description of the Flash-Card App-Template</param>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.getFlashAuthorEmail">
+            <summary>
+            Gets the Author-Email of the Flash-Card App-Template
+            </summary>
+            <returns>Returns the Author_Email of the Flash-Card App-Template</returns>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.setFlashAuthorEmail(System.String)">
+            <summary>
+            Sets the AuthorEmail of the Flash-Card App-Template
+            </summary>
+            <param name="mFlashAuthorEmail">Author Email of the Flash-Card App-Template</param>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.getFlashVersion">
+            <summary>
+            Gets the version of the Flash-Card App-Template
+            </summary>
+            <returns>Returns the Version of the Flash-Card App-Template</returns>
+        </member>
+        <member name="M:AppStore.Models.FlashModel.setFlashVersion(System.String)">
+            <summary>
+            Sets the Version of the Flash-Card App-Template
+            </summary>
+            <param name="mFlashVersion">Version of the Flash-Card App-Template</param>
+        </member>
+        <member name="T:AppStore.Models.InfoModel">
+            <summary>
+            It is model for the Info App-Template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.getInstance">
+            <summary>
+            Gets the object for InfoModel.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.getInfoDescriptionList">
+            <summary>
+            Gets the InfoDescription List.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.setInfoDescriptionList(System.Collections.Generic.List{System.String})">
+            <summary>
+            Sets the InfoDescription List.
+            </summary>
+            <param name="mInfoDescriptionList"></param>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.getInfoAuthor">
+            <summary>
+            Gets the Author of the Info App-Template
+            </summary>
+            <returns>Returns the Author of the Info App-Template</returns>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.setInfoAuthorEmail(System.String)">
+            <summary>
+            Sets the AuthorEmail of the Info App-Template
+            </summary>
+            <param name="mInfoAuthorEmail">Email fo the Author</param>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.getInfoDescription">
+            <summary>
+            Gets the Description of the Info App-Template
+            </summary>
+            <returns>Returns the Description</returns>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.setInfoDescription(System.String)">
+            <summary>
+            Sets the Description of the Info App-Template
+            </summary>
+            <param name="mInfoDescription"></param>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.getInfoAuthorEmail">
+            <summary>
+            Gets the Email of the Author of the Info App-Template
+            </summary>
+            <returns>Returns the InfoAuthorEmail</returns>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.setInfoAuthor(System.String)">
+            <summary>
+            Sets the Author of the Info App-Template
+            </summary>
+            <param name="mInfoAuthor">Author of the Info App-Template</param>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.getInfoName">
+            <summary>
+            Gets the Name of the Info App-Template
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.setInfoName(System.String)">
+            <summary>
+            Sets the name of the Info App-Tmeplate
+            </summary>
+            <param name="mInfoName">Name of the Info App-Template</param>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.getInfoVersion">
+            <summary>
+            Gets the version of the Info App-Template
+            </summary>
+            <returns>Returns the version of the Info App-Template</returns>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.setInfoVersion(System.String)">
+            <summary>
+            Sets the InfoVersion
+            </summary>
+            <param name="mInfoVersion">Version of the Info App-Template</param>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.getInfoTitleList">
+            <summary>
+            Gets the InfoTitleList
+            </summary>
+            <returns>Return the list of the InfoTitle</returns>
+        </member>
+        <member name="M:AppStore.Models.InfoModel.setInfoTitleList(System.Collections.Generic.List{System.String})">
+            <summary>
+            Sets the InfoTitle List
+            </summary>
+            <param name="mInfoTitleList">List of the Title List.</param>
+        </member>
+        <member name="T:AppStore.Models.Question">
+            <summary>
+            It is related to the Quiz App-Template. It is model for questions.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.Question.getQuestion">
+            <summary>
+            Gets the Question of the current QuizModel Object
+            </summary>
+            <returns> Question of the current QuizModel Object</returns>
+        </member>
+        <member name="M:AppStore.Models.Question.setQuestion(System.String)">
+            <summary>
+            Sets the Question of the current QuizModel Object
+            </summary>
+            <param name="mQuestion">Question of the current QuizModel Object</param>
+        </member>
+        <member name="M:AppStore.Models.Question.getAnswerOption">
+            <summary>
+            Gets the AnswerOption of the current QuizModel Object
+            </summary>
+            <returns> AnswerOption of the current QuizModel Object</returns>
+        </member>
+        <member name="M:AppStore.Models.Question.setAnswerOption(System.Collections.Generic.List{System.String})">
+            <summary>
+            Sets the AnswerOption of the current QuizModel Object
+            </summary>
+            <param name="mAnswerOption">AnswerOption of the current QuizModel Object</param>
+        </member>
+        <member name="M:AppStore.Models.Question.getOptionNumber">
+            <summary>
+            Gets the OptionNumber of the current QuizModel Object
+            </summary>
+            <returns> OptionNumber of the current QuizModel Object</returns>
+        </member>
+        <member name="M:AppStore.Models.Question.setOptionNumber(System.Int32)">
+            <summary>
+            Sets the Option Number of the current QuizModel Object
+            </summary>
+            <param name="mOptionNumber">OptionNumber of the current QuizModel Object</param>
+        </member>
+        <member name="T:AppStore.Models.QuizModel">
+            <summary>
+            It is model for the Quiz App-Template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.clearInstance">
+            <summary>
+            Clears the Instance of the Quiz App-Template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.getInstance">
+            <summary>
+            Gets the Instance of the Quiz App-Template.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.getQueAnsList">
+            <summary>
+            Gets the List of Questions
+            </summary>
+            <returns>List of Questions</returns>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.setQueAnsList(System.Collections.Generic.List{AppStore.Models.Question})">
+            <summary>
+            Sets the list of Questions
+            </summary>
+            <param name="mQueAnsList">List of Question Objects</param>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.getQuizAuthor">
+            <summary>
+            Gets the Author of the Quiz
+            </summary>
+            <returns>Author of the Quiz</returns>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.setQuizAuthor(System.String)">
+            <summary>
+            Sets the Author of the quiz
+            </summary>
+            <param name="mQuizAuthor">Author of the Quiz</param>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.getQuizDescription">
+            <summary>
+            Gets the Description of the quiz
+            </summary>
+            <returns>Description of the Quiz</returns>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.setQuizDescription(System.String)">
+            <summary>
+            Sets the Description of the Quiz
+            </summary>
+            <param name="mQuizDescription">Description of the Quiz</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:AppStore.Models.QuizModel.setQuizAuthorEmail(System.String)" -->
+        <member name="M:AppStore.Models.QuizModel.getQuizVersion">
+            <summary>
+            Gets the Version of the Quiz
+            </summary>
+            <returns>Version of the Quiz</returns>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.setQuizVersion(System.String)">
+            <summary>
+            Sets the version of the Quiz
+            </summary>
+            <param name="mQuizVersion">Version of the Quiz</param>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.getQuizName">
+            <summary>
+            Gets the Name of the Quiz
+            </summary>
+            <returns>name of the Quiz</returns>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.setQuizName(System.String)">
+            <summary>
+            Sets the name of the Quiz
+            </summary>
+            <param name="mQuizName">Name of the Quiz</param>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.getTotalWrong">
+            <summary>
+            Gets the total number of Wrong answers
+            </summary>
+            <returns>Number of wrong answers</returns>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.setTotalWrong(System.Int32)">
+            <summary>
+            Sets the total number of wrong answers
+            </summary>
+            <param name="totalWrong">Number of wrong answers</param>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.getTotalCorrect">
+            <summary>
+            Gets the total number of correct answers
+            </summary>
+            <returns>Total number of correct answers</returns>
+        </member>
+        <member name="M:AppStore.Models.QuizModel.setTotalCorrect(System.Int32)">
+            <summary>
+            Sets the total correct answers by the user.
+            </summary>
+            <param name="totalCorrect">Total number of correct answers</param>
+        </member>
+        <member name="T:AppStore.Models.Resources">
+            <summary>
+            It is model for the all the string resources for catefories.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.Resources.getCategoriesList">
+            <summary>
+            Gets the list of Categories List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AppStore.Models.SpellingsModel">
+            <summary>
+            It is model for the Spellings App-Template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.clearInstance">
+            <summary>
+            Clears the instance of the SpellingsModel
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getInstance">
+            <summary>
+            Gets the instance of the SpellingsModel
+            </summary>
+            <returns>Instance of SpellingsModel</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getPuzzleName">
+            <summary>
+            Gets the name of the Puzzle
+            </summary>
+            <returns>Name of the Puzzle</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.setPuzzleName(System.String)">
+            <summary>
+            Sets the name of the puzzle
+            </summary>
+            <param name="mPuzzleName">Name of the puzzle</param>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getPuzzleDescription">
+            <summary>
+            Gets the description of the puzzle
+            </summary>
+            <returns>Description of the puzzle</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.setPuzzleDescription(System.String)">
+            <summary>
+            Sets the description of the puzzle
+            </summary>
+            <param name="mPuzzleDescription">Description of the Puzzle</param>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getPuzzleAuthorEmail">
+            <summary>
+            Gets the AuthorEmail of the puzzle
+            </summary>
+            <returns>AuthorEmail of the puzzle</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.setPuzzleAuthorEmail(System.String)">
+            <summary>
+            Sets the AuthorEmail of the puzzle
+            </summary>
+            <param name="mPuzzleAuthorEmail">AuthorEmail of the Puzzle</param>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getPuzzleVersion">
+            <summary>
+            Gets the version of the puzzle
+            </summary>
+            <returns>Version of the Puzzle</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.setPuzzleVersion(System.String)">
+            <summary>
+            Sets the version of the puzzle
+            </summary>
+            <param name="mPuzzleVersion">Version of the puzzle</param>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getPuzzleAuthor">
+            <summary>
+            Gets the author of the Puzzle
+            </summary>
+            <returns>Author of the Puzzle</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.setPuzzleAuthor(System.String)">
+            <summary>
+            Sets the author of the puzzle
+            </summary>
+            <param name="mPuzzleAuthor">Author of the puzzle</param>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getSpellingsList">
+            <summary>
+            Gets the SpellingsList of the puzzle
+            </summary>
+            <returns>SpellingsList of the Puzzle</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.setSpellingsList(System.Collections.Generic.List{AppStore.Models.WordModel})">
+            <summary>
+            Sets the SpellingsList of the puzzle
+            </summary>
+            <param name="mSpellingsList">SpellingsList of the Puzzle</param>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getTotalCorrect">
+            <summary>
+            Gets the total number of correct answers
+            </summary>
+            <returns>Total number of correct answers</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.setTotalCorrect(System.Int32)">
+            <summary>
+            Sets the total number of the correct answers
+            </summary>
+            <param name="totalCorrect">Total number of the correct answers</param>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getTotalWrong">
+            <summary>
+            Gets the total number of the wrong answers
+            </summary>
+            <returns>Total number of the wrong answers</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.setTotalWrong(System.Int32)">
+            <summary>
+            Sets the total number of the wrong answers
+            </summary>
+            <param name="totalWrong"></param>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.getActiveCount">
+            <summary>
+            Gets the cuurent index
+            </summary>
+            <returns>Current index of the question</returns>
+        </member>
+        <member name="M:AppStore.Models.SpellingsModel.setActiveCount(System.Int32)">
+            <summary>
+            Sets the active index
+            </summary>
+            <param name="activeCount">Current index of the question</param>
+        </member>
+        <member name="T:AppStore.Models.WordModel">
+            <summary>
+            It is model for the Spelings App-Template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Models.WordModel.#ctor(System.String,System.String)">
+            <summary>
+            Public Construtor to the model.
+            </summary>
+            <param name="word">String Word</param>
+            <param name="description">String Description</param>
+        </member>
+        <member name="M:AppStore.Models.WordModel.getWord">
+            <summary>
+            Gets the word with the WordModel object.
+            </summary>
+            <returns>Returns the word</returns>
+        </member>
+        <member name="M:AppStore.Models.WordModel.setWord(System.String)">
+            <summary>
+            Sets the word to the WordModel object.
+            </summary>
+            <param name="mWord">String word</param>
+        </member>
+        <member name="M:AppStore.Models.WordModel.getDescription">
+            <summary>
+            Gets the description with the WordModel object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppStore.Models.WordModel.setDescription(System.String)">
+            <summary>
+            Sets the description to the WordModel object.
+            </summary>
+            <param name="mDescription">String description</param>
         </member>
         <member name="T:AppStore.MyAppsPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page deals with the My-Apps section of the app. It has a list of apps which are installed by the user.
+            </summary>
+        </member>
+        <member name="M:AppStore.MyAppsPage.#ctor">
+            <summary>
+            Public Constructor of MyApps
             </summary>
         </member>
         <member name="P:AppStore.MyAppsPage.NavigationHelper">
@@ -659,9 +2057,113 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.MyAppsPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the SaveState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.GridMyApps_ContentChanging(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating apps in the My-Apps section.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.ShowImage(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating images(app icons) in the My-Apps section.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.GridMyApps_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Executed when the user taps/selects an app from the search results. The app navigates to the Details page of the app.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.Search_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Search Button is tapped from the Application bar. The app navigates to the Search Results page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.Settings_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Settings Button is tapped from the Application bar. The app navigates to the Settings page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.Home_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Home Button is tapped from the Application bar. The app navigates to the Home page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.Categories_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Categories Button is tapped from the Application bar. The app navigates to the Categories page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.About_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the About Button is tapped from the Application bar. The app navigates to the About page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.StackPanel_Holding(System.Object,Windows.UI.Xaml.Input.HoldingRoutedEventArgs)">
+            <summary>
+            Executed when the app is long tapped. Context menu appears now.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.Feedback_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.UninstallButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Uninstall Button is tapped from the Context menu which appears when the app is long tapped. It uninstalls the installed app.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.MyAppsPage.ShareButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Share Button is tapped from the Application bar. The app prepares content form the app to be shared using default installed apps on the phone.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
         <member name="T:AppStore.SearchPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This class deals with displaying Search Results according to the search query.
+            </summary>
+        </member>
+        <member name="M:AppStore.SearchPage.#ctor">
+            <summary>
+            Public Constructor for SearchPage
             </summary>
         </member>
         <member name="P:AppStore.SearchPage.NavigationHelper">
@@ -713,9 +2215,144 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.SearchPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the SaveState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.GridFeaturedApps_ContentChanging(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating apps in the Serach result section.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">EventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.ShowImage(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            Deals with populating images(app icons) in the apps of  the Search Results.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.GridFeaturedApps_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Executed when the user selects/taps on an app. The app navigates to the Details page of the app.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.Home_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Home Button is tapped from the Application bar.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs args is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.Settings_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Settings Button is tapped from the Application bar.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.MyApps_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the My-Apps Button is tapped from the Application bar.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.Categories_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Categories Button is tapped from the Application bar.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.About_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the About Button is tapped from the Application bar.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.StackPanel_Holding(System.Object,Windows.UI.Xaml.Input.HoldingRoutedEventArgs)">
+            <summary>
+            Executed when the app is tapped for a long time triggering the holding event.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">HoldingRoutedEventArgs e is a parameter called e that contains the event data, see the HoldingRoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.Feedback_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Feedback Button is tapped from the Application bar.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.InstallButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Install Button is tapped when an app is long tapped.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.ShareButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Share button is tapped from the Application bar.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SearchPage.Search_TextChanged(System.Object,Windows.UI.Xaml.Controls.TextChangedEventArgs)">
+            <summary>
+            Executed when the content in the Search Bar is changed.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">TextChangedEventArgs e is a parameter called e that contains the event data, see the TextChangedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="T:AppStore.SettingsDialog">
+            <summary>
+            This class deals with Settings Dialog and implements all the important user-defined settings required by the app.
+            </summary>
+        </member>
+        <member name="M:AppStore.SettingsDialog.#ctor">
+            <summary>
+            Public constructor for the SettingsDialog
+            </summary>
+        </member>
+        <member name="M:AppStore.SettingsDialog.ContentDialog_PrimaryButtonClick(Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs)">
+            <summary>
+            Method which is executed when the user taps on the "apply" button in the SettingsDialog.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">EventArgs e is a parameter called e that contains the event data, see the EventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.SettingsDialog.ContentDialog_SecondaryButtonClick(Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs)">
+            <summary>
+            Method which is executed when the user taps on the "cancel" button in the SettingsDialog
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">EventArgs e is a parameter called e that contains the event data, see the EventArgs MSDN page for more information.</param>
+        </member>
         <member name="T:AppStore.Templates.FlashCardPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page deals with the Flash-Card App template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.FlashCardPage.#ctor">
+            <summary>
+            Public Construtor to the FlashCardPage. Populates the views pertaining to this page.
             </summary>
         </member>
         <member name="P:AppStore.Templates.FlashCardPage.NavigationHelper">
@@ -767,9 +2404,63 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.Templates.FlashCardPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.Templates.FlashCardPage.Previous_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Previous Button is tapped. It populates previous flash card question to the view.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.FlashCardPage.Flip_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Flip Button is tapped. It flips the flash card in the view.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.FlashCardPage.Next_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Next Button is tapped. It populates next flash card question to the view.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.FlashCardPage.populateQuestion(System.Int32)">
+            <summary>
+            It populates the flash card question of the index passed to the current view.
+            </summary>
+            <param name="index">The index of flash card, which is to be populated in the view</param>
+        </member>
+        <member name="M:AppStore.Templates.FlashCardPage.base64image(System.String)">
+            <summary>
+            It converts string in Base64 to the Bitmap image.
+            </summary>
+            <param name="base64string"></param>
+            <returns></returns>
+        </member>
         <member name="T:AppStore.Templates.InfoDetailPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page deals with populating the details of the word selected in Info-AppTemplate.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.InfoDetailPage.#ctor">
+            <summary>
+            Public Construtor to the InfoDetailPage. Populates the views pertaining to this page.
             </summary>
         </member>
         <member name="P:AppStore.Templates.InfoDetailPage.NavigationHelper">
@@ -821,9 +2512,29 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.Templates.InfoDetailPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
         <member name="T:AppStore.Templates.InfoPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page deals with the Info app tmeplate.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.InfoPage.#ctor">
+            <summary>
+            Public Construtor to the InfoPage. Populates the views pertaining to this page.
             </summary>
         </member>
         <member name="P:AppStore.Templates.InfoPage.NavigationHelper">
@@ -875,9 +2586,43 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.Templates.InfoPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.Templates.InfoPage.InfoList_ContainerContentChanging(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs)">
+            <summary>
+            It populates the list of the words in the view.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.InfoPage.InfoList_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Executed when the user taps/selects an info-word from the Info-App Template Page. The app navigates to the Details page of the word.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
+        </member>
         <member name="T:AppStore.Templates.QuizPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page deals with the Quiz-App template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.QuizPage.#ctor">
+            <summary>
+            Public Construtor to the QuizPage. Populates the views pertaining to this page.
             </summary>
         </member>
         <member name="P:AppStore.Templates.QuizPage.NavigationHelper">
@@ -929,9 +2674,49 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.Templates.QuizPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.Templates.QuizPage.Options_Checked(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when any of the options are checked.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.QuizPage.Next_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Next Button is tapped. It populates the next question in the current view.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.QuizPage.populateQuestion(System.Int32)">
+            <summary>
+            It populates the question with the index passed into the current view.
+            </summary>
+            <param name="index">The index of the question which will be populated in the current view.</param>
+        </member>
         <member name="T:AppStore.Templates.ScorePage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page deals with the Score Page related to the Spellings Puzzle and the Quiz App-Template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.ScorePage.#ctor">
+            <summary>
+            Public Construtor to the ScorePage. Populates the views pertaining to this page.
             </summary>
         </member>
         <member name="P:AppStore.Templates.ScorePage.NavigationHelper">
@@ -983,9 +2768,43 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.Templates.ScorePage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.Templates.ScorePage.Restart_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            It restarts the current quiz or spellings puzzle app.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.ScorePage.Quit_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            It quits the current app and navigates back to its details page.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
         <member name="T:AppStore.Templates.SpellingsPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page deals with the Spellings Puzzle App-Template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.SpellingsPage.#ctor">
+            <summary>
+            Public Construtor to the SpellingsPage. Populates the views pertaining to this page.
             </summary>
         </member>
         <member name="P:AppStore.Templates.SpellingsPage.NavigationHelper">
@@ -1037,9 +2856,50 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.Templates.SpellingsPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.Templates.SpellingsPage.Spell_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the user wants to spell the word after listening to it.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.SpellingsPage.Next_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            It populates the next question into the current view.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.SpellingsPage.Listen_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Listen button is tapped/pressed. It builds the Text-To-Speech api, which will spell the word.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
         <member name="T:AppStore.Templates.StartPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            This page deals with the StartPage of all the App-Template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.StartPage.#ctor">
+            <summary>
+            Public Construtor to the StartPage. Populates the views pertaining to this page.
             </summary>
         </member>
         <member name="P:AppStore.Templates.StartPage.NavigationHelper">
@@ -1091,9 +2951,66 @@
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
         </member>
+        <member name="M:AppStore.Templates.StartPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.Templates.StartPage.Start_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Start button is tapped/pressed. Populates the app-template.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.StartPage.updateTile">
+            <summary>
+            It updates the tile, which makes a live tile view in the StartPage.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.StartPage.ToggleAppBarButton(System.Boolean)">
+            <summary>
+            Toggles the appbar button in the application bar.
+            </summary>
+            <param name="showPinButton">bool showPinButton</param>
+        </member>
+        <member name="M:AppStore.Templates.StartPage.Init">
+            <summary>
+            The method which initializes the appbar button in the application bar, whether the app is pinned or not.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.StartPage.pinToAppBar_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            It pins the app to the StartPage.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.StartPage.GetElementRect(Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            This is the position of the retcangle where the app will be pinned on the Start Page.
+            </summary>
+            <param name="element">FrameworkElement element object</param>
+            <returns>Returns the rect object</returns>
+        </member>
         <member name="T:AppStore.Templates.WordInfoPage">
             <summary>
-            An empty page that can be used on its own or navigated to within a Frame.
+            The page deals with shwoing the word info based on the word which comes up while running the Spellings Puzzle app-template.
+            </summary>
+        </member>
+        <member name="M:AppStore.Templates.WordInfoPage.#ctor">
+            <summary>
+            Public Construtor to the WordInfoPage. Populates the views pertaining to this page.
             </summary>
         </member>
         <member name="P:AppStore.Templates.WordInfoPage.NavigationHelper">
@@ -1144,6 +3061,49 @@
             </summary>
             <param name="e">Provides data for navigation methods and event
             handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.Templates.WordInfoPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+            The methods provided in this section are simply used to allow
+            NavigationHelper to respond to the page's navigation methods.
+            <para>
+            Page specific logic should be placed in event handlers for the  
+            <see cref="E:AppStore.Common.NavigationHelper.LoadState"/>
+            and <see cref="E:AppStore.Common.NavigationHelper.SaveState"/>.
+            The navigation parameter is available in the LoadState method 
+            in addition to page state preserved during an earlier session.
+            </para>
+            </summary>
+            <param name="e">Provides data for navigation methods and event
+            handlers that cannot cancel the navigation request.</param>
+        </member>
+        <member name="M:AppStore.Templates.WordInfoPage.Back_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            The app navigates to the previous page which is the word page of the Spellings App-Template.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.WordInfoPage.Enter_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Executed when the Enter button is tapped/pressed. It checks the correct word with the spelling entered by the user.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.WordInfoPage.Next_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            It populates the next word question in the current view.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        </member>
+        <member name="M:AppStore.Templates.WordInfoPage.Word_TextChanged(System.Object,Windows.UI.Xaml.Controls.TextChangedEventArgs)">
+            <summary>
+            Executed when the text in the textbox is changed by the user.
+            </summary>
+            <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+            <param name="e">TextChangedEventArgs e is a parameter called e that contains the event data, see the TextChangedEventArgs MSDN page for more information.</param>
         </member>
     </members>
 </doc>

@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.adapters.CardViewAdapter.onBindViewHolder" name="org.buildmlearn.appstore.adapters.CardViewAdapter.onBindViewHolder">
+<area shape="rect" id="node2" href="$df/da8/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_card_view_adapter_1_1_card_view_holder.html#a6ec6705e173a9b04fa0a4d64e021ca96" title="org.buildmlearn.appstore.adapters.\lCardViewAdapter.CardViewHolder.setClick\lListener" alt="" coords="284,5,553,61"/>
+<area shape="rect" id="node3" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a3819b15bd7eeb6b579ffc4ae12bb289b" title="It clears the text in the search tool and collapses the search tool. " alt="" coords="307,86,530,127"/>
+<area shape="rect" id="node4" href="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#aec556fcddde1c33f82e823933f3fb1a6" title="Gets the list of Installed Apps. " alt="" coords="321,151,517,193"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.utils.SlidingTabLayout" name="org.buildmlearn.appstore.utils.SlidingTabLayout">
+<area shape="rect" id="node2" href="$d2/d6d/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_strip.html" title="Helper class which creates the Tabs strips for the Home Page for Tab View. " alt="" coords="156,624,395,995"/>
+<area shape="rect" id="node3" href="$d7/d95/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_strip_1_1_simple_tab_colorizer.html" title="Class which adds color to the tabs and its indicators. " alt="" coords="261,301,487,407"/>
+<area shape="rect" id="node4" href="$de/d11/interfaceorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout_1_1_tab_colorizer.html" title="Sets the Interface to color the tabs. " alt="" coords="275,5,473,97"/>
+</map>

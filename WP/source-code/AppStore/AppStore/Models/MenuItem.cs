@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AppStore.Models
+﻿namespace AppStore.Models
 {
+    /// <summary>
+    /// It is model for the menu items.
+    /// </summary>
     class MenuItem
     {
         public string Icon { get; set; }

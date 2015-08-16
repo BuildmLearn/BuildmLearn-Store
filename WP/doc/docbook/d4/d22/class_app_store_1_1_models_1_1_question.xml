@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d22/class_app_store_1_1_models_1_1_question">
+<title>AppStore::Models::Question class Reference</title>
+<para>Inheritance diagram for AppStore::Models::Question</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d29/class_app_store_1_1_models_1_1_question__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::Question</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d91/class_app_store_1_1_models_1_1_question__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string mQuestion</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; mAnswerOption</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int mOptionNumber</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="d4/d22/class_app_store_1_1_models_1_1_question_1a5a3e5f421058753931bb798f3953839f">getQuestion</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the Question of the current QuizModel Object
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d22/class_app_store_1_1_models_1_1_question_1a17688888881c08bb1097abb8a1d88967">setQuestion</link> (
+string mQuestion)<para><emphasis>&lt;summary&gt;
+Sets the Question of the current QuizModel Object
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; <link linkend="d4/d22/class_app_store_1_1_models_1_1_question_1af771beb0536c2483de6d822f28cd8169">getAnswerOption</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the AnswerOption of the current QuizModel Object
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d22/class_app_store_1_1_models_1_1_question_1ad1bf249cb7fd9466c3cac80259c7cf71">setAnswerOption</link> (
+List&lt; string &gt; mAnswerOption)<para><emphasis>&lt;summary&gt;
+Sets the AnswerOption of the current QuizModel Object
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d4/d22/class_app_store_1_1_models_1_1_question_1a43bd19a90c340e65181d5ae226bc18af">getOptionNumber</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the OptionNumber of the current QuizModel Object
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d4/d22/class_app_store_1_1_models_1_1_question_1ad03cdbcb5d6b145d046a971bfc90b015">setOptionNumber</link> (
+int mOptionNumber)<para><emphasis>&lt;summary&gt;
+Sets the Option Number of the current QuizModel Object
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is related to the Quiz App-Template. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>It is model for questions. </para>
+                <para>Definition at line 9 of file Question.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Question.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d22/class_app_store_1_1_models_1_1_question_1a5a3e5f421058753931bb798f3953839f">
+                <title>string AppStore.Models.Question.getQuestion ()</title> <emphasis>&lt;summary&gt;
+Gets the Question of the current QuizModel Object
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para><link linkend="d4/d22/class_app_store_1_1_models_1_1_question">Question</link> of the current <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link> Object</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d22/class_app_store_1_1_models_1_1_question_1a17688888881c08bb1097abb8a1d88967">
+                <title>void AppStore.Models.Question.setQuestion (string mQuestion)</title> <emphasis>&lt;summary&gt;
+Sets the Question of the current QuizModel Object
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mQuestion</entry>
+                                <entry>
+<para><link linkend="d4/d22/class_app_store_1_1_models_1_1_question">Question</link> of the current <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link> Object</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d22/class_app_store_1_1_models_1_1_question_1af771beb0536c2483de6d822f28cd8169">
+                <title>List&lt;string&gt; AppStore.Models.Question.getAnswerOption ()</title> <emphasis>&lt;summary&gt;
+Gets the AnswerOption of the current QuizModel Object
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>AnswerOption of the current <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link> Object</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d22/class_app_store_1_1_models_1_1_question_1ad1bf249cb7fd9466c3cac80259c7cf71">
+                <title>void AppStore.Models.Question.setAnswerOption (List&lt; string &gt; mAnswerOption)</title> <emphasis>&lt;summary&gt;
+Sets the AnswerOption of the current QuizModel Object
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mAnswerOption</entry>
+                                <entry>
+<para>AnswerOption of the current <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link> Object</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d4/d22/class_app_store_1_1_models_1_1_question_1a43bd19a90c340e65181d5ae226bc18af">
+                <title>int AppStore.Models.Question.getOptionNumber ()</title> <emphasis>&lt;summary&gt;
+Gets the OptionNumber of the current QuizModel Object
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>OptionNumber of the current <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link> Object</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d4/d22/class_app_store_1_1_models_1_1_question_1ad03cdbcb5d6b145d046a971bfc90b015">
+                <title>void AppStore.Models.Question.setOptionNumber (int mOptionNumber)</title> <emphasis>&lt;summary&gt;
+Sets the Option Number of the current QuizModel Object
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mOptionNumber</entry>
+                                <entry>
+<para>OptionNumber of the current <link linkend="d3/d63/class_app_store_1_1_models_1_1_quiz_model">QuizModel</link> Object</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

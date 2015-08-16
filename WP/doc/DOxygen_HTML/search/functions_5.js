@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['feedback_5fclick',['Feedback_Click',['../dd/d8e/class_app_store_1_1_app_details_page.html#a140f5ecd7ff0385c780308dd992ddf6e',1,'AppStore.AppDetailsPage.Feedback_Click()'],['../dc/d46/class_app_store_1_1_apps_page.html#a815e972d89b0b1390ca9d97e01918d6a',1,'AppStore.AppsPage.Feedback_Click()'],['../d0/d4e/class_app_store_1_1_categories_page.html#ab34da3827e0c885a049fd37abe991df5',1,'AppStore.CategoriesPage.Feedback_Click()'],['../d2/d8e/class_app_store_1_1_category_page.html#a203bd1002ad9c62b8d5df624b9f9a671',1,'AppStore.CategoryPage.Feedback_Click()'],['../d1/d1a/class_app_store_1_1_main_page.html#ad9aad4c61028ecd378a60befb4bf111d',1,'AppStore.MainPage.Feedback_Click()'],['../d7/d78/class_app_store_1_1_my_apps_page.html#ad02f69e664098b9ab00a0b054cf4d379',1,'AppStore.MyAppsPage.Feedback_Click()'],['../d9/da7/class_app_store_1_1_search_page.html#aaf2d903420ed12934dae05817a67f857',1,'AppStore.SearchPage.Feedback_Click()']]],
+  ['flashcardpage',['FlashCardPage',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a778d516406abb0385274ebb7475dfd65',1,'AppStore::Templates::FlashCardPage']]],
+  ['flip_5fclick',['Flip_Click',['../d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html#a16c32f09bde213e735ee180548b580f5',1,'AppStore::Templates::FlashCardPage']]]
+];

@@ -207,7 +207,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
                             editor1.putBoolean(v.getTag().toString(), true);
                             editor1.apply();
                             NavigationActivity.clearSearch();
-                            Snackbar.make(NavigationActivity.frameLayout, "Thank you for installing " + v.getTag().toString(), Snackbar.LENGTH_LONG).show();
+                            Snackbar.make(v, "Thank you for installing " + v.getTag().toString(), Snackbar.LENGTH_LONG).show();
                             if (AppReader.listApps(mContext).size() == 1) {
                                 Intent i1 = new Intent(mContext, HomeActivity.class);
                                 i1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);

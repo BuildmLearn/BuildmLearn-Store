@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.models.QuizModel.setQuizName" name="org.buildmlearn.appstore.models.QuizModel.setQuizName">
+<area shape="rect" id="node2" href="$d0/da8/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_app_reader.html#abe6c5c2f0c98582beef2eca8fd9ae462" title="Reads the Quiz type of app. " alt="" coords="268,5,464,47"/>
+<area shape="rect" id="node3" href="$d3/dbf/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_start_activity_1_1_file_read_task.html#aed534a6e0d4bcb1df8009e878e2bb95f" title="This method is automatically called, when the class is set to be executed. " alt="" coords="512,5,784,47"/>
+</map>

@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d88/_quiz_page_8xaml_8cs">
+    <title>QuizPage.xaml.cs File Reference</title>
+<para>Include dependency diagram for QuizPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dde/_quiz_page_8xaml_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for QuizPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/dfd/_quiz_page_8xaml_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/de3/class_app_store_1_1_templates_1_1_quiz_page">AppStore::Templates::QuizPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page deals with the Quiz-App template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/dab/namespace_app_store_1_1_templates">AppStore::Templates</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d8d/namespace_windows_1_1_u_i_1_1_xaml_1_1_media">Windows::UI::Xaml::Media</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Templates/QuizPage.xaml.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="dd/d5e/namespace_app_store_1_1_common">Common</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Linq;
+4 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml;
+5 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+6 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Media;
+7 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Navigation;
+8 
+9 <emphasis class="comment">//&#32;The&#32;Basic&#32;Page&#32;item&#32;template&#32;is&#32;documented&#32;at&#32;http://go.microsoft.com/fwlink/?LinkID=390556</emphasis>
+10 
+11 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Templates
+12 {
+16 &#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;sealed&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis>QuizPage&#32;:&#32;<link linkend="db/d2f/class_page">Page</link>
+17 &#32;&#32;&#32;&#32;{
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;navigationHelper;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;defaultViewModel&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>();
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;Models.QuizModel&#32;quiz;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;iQuestionIndex&#32;=&#32;0;
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;iCurrentCorrectAnswer=0;
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;iNumberofQuestions&#32;=&#32;0;
+24 
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;QuizPage()
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.InitializeComponent();
+31 
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>(<emphasis class="keyword">this</emphasis>);
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.LoadState&#32;+=&#32;this.NavigationHelper_LoadState;
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.SaveState&#32;+=&#32;this.NavigationHelper_SaveState;
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+36 
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>&#32;<link linkend="d7/d68/class_app_store_1_1_common_1_1_navigation_helper">NavigationHelper</link>
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.navigationHelper;&#32;}
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+44 
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary">ObservableDictionary</link>&#32;DefaultViewModel
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">get</emphasis>&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;this.defaultViewModel;&#32;}
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+53 
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;NavigationHelper_LoadState(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link>&#32;e)
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+68 
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;NavigationHelper_SaveState(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;<link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link>&#32;e)
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+80 
+81 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#region&#32;NavigationHelper&#32;registration</emphasis>
+82 
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedTo(NavigationEventArgs&#32;e)
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.BackStack.RemoveAt(Frame.BackStackDepth&#32;-&#32;1);
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;quiz&#32;=&#32;Models.QuizModel.getInstance();
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pageTitle.Text&#32;=&#32;quiz.getQuizName();
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;iNumberofQuestions&#32;=&#32;quiz.getQueAnsList().<link linkend="d2/db9/class_app_store_1_1_common_1_1_observable_dictionary_1a96d3f837ef5ae640641e56f3009fe20d">Count</link>;
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;populateQuestion(iQuestionIndex);
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedTo(e);
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+105 
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedFrom(NavigationEventArgs&#32;e)
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.navigationHelper.OnNavigatedFrom(e);
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+124 <emphasis class="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;#endregion</emphasis>
+125 
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Options_Checked(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Next.IsEnabled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RadioButton&#32;originalAnswer&#32;=&#32;(RadioButton)QuestionContent.Children.ElementAt(iCurrentCorrectAnswer+2);
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RadioButton&#32;yourAnswer&#32;=&#32;sender&#32;as&#32;RadioButton;
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(yourAnswer.Tag.ToString().Equals(iCurrentCorrectAnswer&#32;+&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>))
+137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;quiz.setTotalCorrect(quiz.getTotalCorrect()&#32;+&#32;1);
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;quiz.setTotalWrong(quiz.getTotalWrong()&#32;+&#32;1);
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;yourAnswer.BorderBrush&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.Red);
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;yourAnswer.Background&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.Red);
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;originalAnswer.BorderBrush&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.DarkGreen);
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;originalAnswer.Background&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.DarkGreen);
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option1.IsEnabled&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option2.IsEnabled&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option3.IsEnabled&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option4.IsEnabled&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+153 
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Next_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(iQuestionIndex&#32;==&#32;iNumberofQuestions&#32;-&#32;2)&#32;{&#32;iQuestionIndex++;&#32;populateQuestion(iQuestionIndex);&#32;Next.Content&#32;=&#32;<emphasis class="stringliteral">&quot;Submit&quot;</emphasis>;&#32;}
+162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(iQuestionIndex&#32;==&#32;iNumberofQuestions&#32;-&#32;1)
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(typeof(ScorePage));
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;iQuestionIndex++;&#32;populateQuestion(iQuestionIndex);
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Next.IsEnabled&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option1.IsChecked&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option2.IsChecked&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option3.IsChecked&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option4.IsChecked&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option1.IsEnabled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option2.IsEnabled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option3.IsEnabled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option4.IsEnabled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option1.BorderBrush&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.White);
+180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option2.BorderBrush&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.White);
+181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option3.BorderBrush&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.White);
+182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option4.BorderBrush&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.White);
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option1.Background&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.White);
+184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option2.Background&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.White);
+185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option3.Background&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.White);
+186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Option4.Background&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;SolidColorBrush(Windows.UI.Colors.White);
+187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;populateQuestion(<emphasis class="keywordtype">int</emphasis>&#32;index)
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;QuestionNumber.Text=<emphasis class="stringliteral">&quot;Question&#32;#&quot;</emphasis>&#32;+&#32;(index+1)&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;of&#32;&quot;</emphasis>&#32;+&#32;iNumberofQuestions;
+196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Question.Text=quiz.getQueAnsList().ElementAt(index).getQuestion();
+197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;4;&#32;i++)
+198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((RadioButton)QuestionContent.Children.ElementAt(i+3)).Content=quiz.getQueAnsList().ElementAt(index).getAnswerOption().ElementAt(i);
+200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;iCurrentCorrectAnswer&#32;=&#32;quiz.getQueAnsList().ElementAt(index).getOptionNumber();
+202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+203 &#32;&#32;&#32;&#32;}
+204 }
+    </computeroutput></literallayout>
+</section>

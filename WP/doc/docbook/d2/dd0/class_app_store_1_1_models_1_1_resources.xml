@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/dd0/class_app_store_1_1_models_1_1_resources">
+<title>AppStore::Models::Resources class Reference</title>
+<para>Inheritance diagram for AppStore::Models::Resources</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/d86/class_app_store_1_1_models_1_1_resources__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Models::Resources</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d2d/class_app_store_1_1_models_1_1_resources__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string[] CategoryName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string[] CategoryImage</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static List&lt; <link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link> &gt; <link linkend="d2/dd0/class_app_store_1_1_models_1_1_resources_1a204131e923e3364b1c8d70252c03ccc9">getCategoriesList</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the list of Categories List
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>It is model for the all the string resources for catefories. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 9 of file Resources.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Resources.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="d2/dd0/class_app_store_1_1_models_1_1_resources_1a204131e923e3364b1c8d70252c03ccc9">
+                <title>static List&lt;Categories&gt; AppStore.Models.Resources.getCategoriesList ()</title> <emphasis>&lt;summary&gt;
+Gets the list of Categories List
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+</section>

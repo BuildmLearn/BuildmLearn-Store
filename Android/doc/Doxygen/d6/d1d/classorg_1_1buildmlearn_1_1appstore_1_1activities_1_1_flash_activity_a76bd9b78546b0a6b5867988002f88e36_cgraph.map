@@ -1,0 +1,6 @@
+<map id="org.buildmlearn.appstore.activities.FlashActivity.onCreate" name="org.buildmlearn.appstore.activities.FlashActivity.onCreate">
+<area shape="rect" id="node2" href="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#ad7225d1b4d75db6f5ce8755339783f28" title="org.buildmlearn.appstore.models.\lFlashModel.getInstance" alt="" coords="280,5,495,47"/>
+<area shape="rect" id="node3" href="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#a8f57ed59495dd90b0b5934a43f025543" title="org.buildmlearn.appstore.models.\lFlashModel.getName" alt="" coords="280,71,495,112"/>
+<area shape="rect" id="node4" href="$d9/d64/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_flash_model.html#aa1f2c4eb079a838ac9ce836f566f90fe" title="org.buildmlearn.appstore.models.\lFlashModel.getList" alt="" coords="280,136,495,177"/>
+<area shape="rect" id="node5" href="$d6/d1d/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_flash_activity.html#aca3ef46b22d4aacad25222020ddeb510" title="This method populates questions to the cards. " alt="" coords="276,201,499,243"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.models.QuizModel.getQueAnsList" name="org.buildmlearn.appstore.models.QuizModel.getQueAnsList">
+<area shape="rect" id="node2" href="$d8/d63/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_question_activity.html#a143c476e60cca34d3b382b7fbd15b2e4" title="The method is executed first when the activity is created. " alt="" coords="268,5,491,47"/>
+<area shape="rect" id="node3" href="$df/dcb/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_score_activity.html#ac45846f5044d122523a51f69bf838d8b" title="The method is executed first when the activity is created. " alt="" coords="268,71,491,112"/>
+</map>

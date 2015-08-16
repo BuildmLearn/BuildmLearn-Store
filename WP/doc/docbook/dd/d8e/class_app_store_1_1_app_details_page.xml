@@ -1,0 +1,1210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d8e/class_app_store_1_1_app_details_page">
+<title>AppStore::AppDetailsPage class Reference</title>
+<para>Inheritance diagram for AppStore::AppDetailsPage</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d48/class_app_store_1_1_app_details_page__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::AppDetailsPage</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/daa/class_app_store_1_1_app_details_page__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>NavigationHelper navigationHelper</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ObservableDictionary defaultViewModel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool selectionGridScreenshots</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool appInstalled</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool txtShowMore</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Uri appReviewsUri</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Apps app</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Grid LayoutRoot</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Grid FullScreen</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.FlipView FullScreenshots</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.ScrollViewer ContentRoot</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock txtAppDetails</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.HyperlinkButton detailsShowMore</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.GridView GridScreenshots</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.WebView webAppReviews</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.HyperlinkButton OpenInBrowser</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock txtAddInfo1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock txtAddInfo2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Image imgAppIcon</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock txtAppName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.TextBlock txtAppAuthor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button btnAppInstall</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.Button btnAppShare</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.AppBarButton btnMyApps</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>global::Windows.UI.Xaml.Controls.AppBarButton Home</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool _contentLoaded</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a977145f7bd1de85a37a6e0c5ceb8b97b">AppDetailsPage</link> (
+)<para><emphasis>&lt;summary&gt;
+Public Constructor to the Details Page.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a083d15080e3bc46968cfe5e2bdbef217">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a9417500770b9c582016446949cfee213">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a083d15080e3bc46968cfe5e2bdbef217">Connect</link> (
+int connectionId, object target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a9417500770b9c582016446949cfee213">InitializeComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a99fa937fa4a2db58e8a28d45f744d2f4">NavigationHelper_LoadState</link> (
+object sender, <link linkend="d4/df7/class_app_store_1_1_common_1_1_load_state_event_args">LoadStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Populates the page with content passed during navigation.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a04f64853a401094a4c6736530996ec26">NavigationHelper_SaveState</link> (
+object sender, <link linkend="dd/d31/class_app_store_1_1_common_1_1_save_state_event_args">SaveStateEventArgs</link> e)<para><emphasis>&lt;summary&gt;
+Preserves state associated with this page in case the application is suspended or the
+page is discarded from the navigation cache.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a28cd2eee7d44d0c2db46017fc6f55adf">getHtmlComment</link> (
+)<para><emphasis>&lt;summary&gt;
+Builds the html content which has to loaded into the WebView for Reviews Section.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab14843118cb3b0d64568cd5e90a2cecd">GridScreenshots_ContainerContentChanging</link> (
+ListViewBase sender, ContainerContentChangingEventArgs args)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a83c4e7c074e3f9437946f3d0d11547b5">ShowImages</link> (
+ListViewBase sender, ContainerContentChangingEventArgs args)<para><emphasis>&lt;summary&gt;
+Deals with populating images(screenshots) in the App-Details Page.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aa1f922dd4681d17ad59a64edc4d863b6">detailsShowMore_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the more button is tapped in the details section.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aaf0dee695fa5301b958b977878367fc0">GridScreenshots_SelectionChanged</link> (
+object sender, SelectionChangedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the user taps/selects a screenshot from the App-Details Page.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a087367ef3e3b0b51baac41f42dd1bebe">Button_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Close Button is tapped in the full screen view of the screenshots.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a08837b6e4e8426e26e79221d17e45054">btnAppInstall_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Install Button is tapped from the App-Details section.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a688d04521c5e2dc8348cd7229fe434d9">btnAppShare_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Share Button is tapped from the App-Details section.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aaef7aefd96ef32a39ab307a347a3af5b">Search_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Search Button is tapped from the Application bar.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a32a954403990524fe969e098093d3e13">Home_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Home Button is tapped from the Application bar.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>async void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a9a91879f3d9ffe3686907837a7d6be59">Settings_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Settings Button is tapped from the Application bar.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3c421b3d5abef29f8f45c7dab72e29de">MyApps_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the My-Apps Button is tapped from the Application bar.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ab0d9fbbfa7e9e4cd08d7c131c1a46de5">Categories_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Categories Button is tapped from the Application bar.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a6c2f931f6860ce10f399fd5799f207ae">About_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the About Button is tapped from the Application bar.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a140f5ecd7ff0385c780308dd992ddf6e">Feedback_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+Executed when the Feedback Button is tapped from the Application bar.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>async void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1aa7ae556841d147859d579d236087b00f">Browser_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+It opens the Reviews section of the app in an external browser.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>async void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a8c120602466ac3a7e39448e642bc9503">HyperlinkButton_Click</link> (
+object sender, RoutedEventArgs e)<para><emphasis>&lt;summary&gt;
+It opens the Reviews section of the app in an external browser.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3149f4c706e4ca14b0ab10a3f6c53cec">webAppReviews_FrameDOMContentLoaded</link> (
+WebView sender, WebViewDOMContentLoadedEventArgs args)<para><emphasis>&lt;summary&gt;
+This method is executed when the contents of the Reviews section is loaded.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a3de909d7d41b2e9fc4c636dab182fcd2">OnNavigatedTo</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1a6b9c5a259c021a9f5f80d87c9b022c6f">OnNavigatedFrom</link> (
+NavigationEventArgs e)<para><emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>This class deals with the App-Details page, which is shown when the user taps on any app cards displayed on various pages. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 23 of file AppDetailsPage.xaml.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>AppDetailsPage.xaml.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a977145f7bd1de85a37a6e0c5ceb8b97b">
+                <title>AppStore.AppDetailsPage.AppDetailsPage ()</title> <emphasis>&lt;summary&gt;
+Public Constructor to the Details Page.</emphasis>
+                
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a083d15080e3bc46968cfe5e2bdbef217">
+                <title>void AppStore.AppDetailsPage.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a9417500770b9c582016446949cfee213">
+                <title>void AppStore.AppDetailsPage.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a083d15080e3bc46968cfe5e2bdbef217">
+                <title>void AppStore.AppDetailsPage.Connect (int connectionId, object target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a9417500770b9c582016446949cfee213">
+                <title>void AppStore.AppDetailsPage.InitializeComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a99fa937fa4a2db58e8a28d45f744d2f4">
+                <title>void AppStore.AppDetailsPage.NavigationHelper_LoadState (object sender, LoadStateEventArgs e)</title> <emphasis>&lt;summary&gt;
+Populates the page with content passed during navigation.</emphasis>
+                
+<para>Any saved state is also provided when recreating a page from a prior session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>The source of the event; typically <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ad5ee58e0497336799c074ab38089ea90">NavigationHelper</link> </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that provides both the navigation parameter passed to Frame.Navigate(Type, Object) when this page was initially requested and a dictionary of state preserved by this page during an earlier session. The state will be null the first time a page is visited.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a04f64853a401094a4c6736530996ec26">
+                <title>void AppStore.AppDetailsPage.NavigationHelper_SaveState (object sender, SaveStateEventArgs e)</title> <emphasis>&lt;summary&gt;
+Preserves state associated with this page in case the application is suspended or the
+page is discarded from the navigation cache.</emphasis>
+                
+<para>Values must conform to the serialization requirements of SuspensionManager.SessionState. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>The source of the event; typically <link linkend="dd/d8e/class_app_store_1_1_app_details_page_1ad5ee58e0497336799c074ab38089ea90">NavigationHelper</link></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Event data that provides an empty dictionary to be populated with serializable state.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a28cd2eee7d44d0c2db46017fc6f55adf">
+                <title>string AppStore.AppDetailsPage.getHtmlComment ()</title> <emphasis>&lt;summary&gt;
+Builds the html content which has to loaded into the WebView for Reviews Section.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Returns the HTML content to be loaded into the WebView of the Reviews Section</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1ab14843118cb3b0d64568cd5e90a2cecd">
+                <title>void AppStore.AppDetailsPage.GridScreenshots_ContainerContentChanging (ListViewBase sender, ContainerContentChangingEventArgs args)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a83c4e7c074e3f9437946f3d0d11547b5">
+                <title>void AppStore.AppDetailsPage.ShowImages (ListViewBase sender, ContainerContentChangingEventArgs args)</title> <emphasis>&lt;summary&gt;
+Deals with populating images(screenshots) in the App-Details Page.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>args</entry>
+                                <entry>
+<para>ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1aa1f922dd4681d17ad59a64edc4d863b6">
+                <title>void AppStore.AppDetailsPage.detailsShowMore_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the more button is tapped in the details section.</emphasis>
+                
+<para>It toggles between showing complete and less details of the app. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1aaf0dee695fa5301b958b977878367fc0">
+                <title>void AppStore.AppDetailsPage.GridScreenshots_SelectionChanged (object sender, SelectionChangedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the user taps/selects a screenshot from the App-Details Page.</emphasis>
+                
+<para>The screenshots zoom in to the fullscreen view. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a087367ef3e3b0b51baac41f42dd1bebe">
+                <title>void AppStore.AppDetailsPage.Button_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Close Button is tapped in the full screen view of the screenshots.</emphasis>
+                
+<para>It closes the full-screen view. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a08837b6e4e8426e26e79221d17e45054">
+                <title>void AppStore.AppDetailsPage.btnAppInstall_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Install Button is tapped from the App-Details section.</emphasis>
+                
+<para>It installs the app. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a688d04521c5e2dc8348cd7229fe434d9">
+                <title>void AppStore.AppDetailsPage.btnAppShare_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Share Button is tapped from the App-Details section.</emphasis>
+                
+<para>The app prepares content form the app to be shared using default installed apps on the phone. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1aaef7aefd96ef32a39ab307a347a3af5b">
+                <title>void AppStore.AppDetailsPage.Search_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Search Button is tapped from the Application bar.</emphasis>
+                
+<para>The app navigates to the Search Results page. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a32a954403990524fe969e098093d3e13">
+                <title>void AppStore.AppDetailsPage.Home_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Home Button is tapped from the Application bar.</emphasis>
+                
+<para>The app navigates to the Home page. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a9a91879f3d9ffe3686907837a7d6be59">
+                <title>async void AppStore.AppDetailsPage.Settings_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Settings Button is tapped from the Application bar.</emphasis>
+                
+<para>The app navigates to the <link linkend="d4/d9d/class_app_store_1_1_settings">Settings</link> page. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a3c421b3d5abef29f8f45c7dab72e29de">
+                <title>void AppStore.AppDetailsPage.MyApps_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the My-Apps Button is tapped from the Application bar.</emphasis>
+                
+<para>The app navigates to the My-Apps page. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1ab0d9fbbfa7e9e4cd08d7c131c1a46de5">
+                <title>void AppStore.AppDetailsPage.Categories_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Categories Button is tapped from the Application bar.</emphasis>
+                
+<para>The app navigates to the <link linkend="dd/d98/class_app_store_1_1_categories">Categories</link> page. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a6c2f931f6860ce10f399fd5799f207ae">
+                <title>void AppStore.AppDetailsPage.About_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the About Button is tapped from the Application bar.</emphasis>
+                
+<para>The app navigates to the About page. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a140f5ecd7ff0385c780308dd992ddf6e">
+                <title>void AppStore.AppDetailsPage.Feedback_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+Executed when the Feedback Button is tapped from the Application bar.</emphasis>
+                
+<para>The app prepares the content and uses the default mail apps to give feedback. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1aa7ae556841d147859d579d236087b00f">
+                <title>async void AppStore.AppDetailsPage.Browser_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+It opens the Reviews section of the app in an external browser.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a8c120602466ac3a7e39448e642bc9503">
+                <title>async void AppStore.AppDetailsPage.HyperlinkButton_Click (object sender, RoutedEventArgs e)</title> <emphasis>&lt;summary&gt;
+It opens the Reviews section of the app in an external browser.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a3149f4c706e4ca14b0ab10a3f6c53cec">
+                <title>void AppStore.AppDetailsPage.webAppReviews_FrameDOMContentLoaded (WebView sender, WebViewDOMContentLoadedEventArgs args)</title> <emphasis>&lt;summary&gt;
+This method is executed when the contents of the Reviews section is loaded.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sender</entry>
+                                <entry>
+<para>Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>args</entry>
+                                <entry>
+<para>WebViewDOMContentLoadedEventArgs is a parameter called args that contains the event data, see the WebViewDOMContentLoadedEventArgs MSDN page for more information.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a3de909d7d41b2e9fc4c636dab182fcd2">
+                <title>override void AppStore.AppDetailsPage.OnNavigatedTo (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis>
+                
+<para><link linkend="db/d2f/class_page">Page</link> specific logic should be placed in event handlers for the NavigationHelper.LoadState and NavigationHelper.SaveState. The navigation parameter is available in the LoadState method in addition to page state preserved during an earlier session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Provides data for navigation methods and event handlers that cannot cancel the navigation request.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="dd/d8e/class_app_store_1_1_app_details_page_1a6b9c5a259c021a9f5f80d87c9b022c6f">
+                <title>override void AppStore.AppDetailsPage.OnNavigatedFrom (NavigationEventArgs e)</title> <emphasis>&lt;summary&gt;
+The methods provided in this section are simply used to allow
+NavigationHelper to respond to the page&apos;s navigation methods.</emphasis>
+                
+<para><link linkend="db/d2f/class_page">Page</link> specific logic should be placed in event handlers for the NavigationHelper.LoadState and NavigationHelper.SaveState. The navigation parameter is available in the SaveState method in addition to page state preserved during an earlier session. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Provides data for navigation methods and event handlers that cannot cancel the navigation request.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

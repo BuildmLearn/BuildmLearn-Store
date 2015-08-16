@@ -3,21 +3,14 @@ using AppStore.Models;
 using AppStore.Templates;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel.DataTransfer;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Core;
 using Windows.UI.Notifications;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
@@ -26,7 +19,7 @@ using Windows.UI.Xaml.Navigation;
 namespace AppStore
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// This page is the Home Page.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -35,14 +28,31 @@ namespace AppStore
         HashSet<Categories> featuredCategories = new HashSet<Categories>();
         List<int> nofeaturedApps = new List<int>();
         List<int> nofeaturedCategories = new List<int>();
-
-
+        Apps appHolding;
+     
+        /// <summary>
+        /// Public Contructor to MainPage
+        /// </summary>
         public MainPage()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             AppCommon.RegisterForShare();
         }
+    
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// <para>
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="NavigationHelper.LoadState"/>
+        /// and <see cref="NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+        /// </para>
+        /// </summary>
+        /// <param name="e">Provides data for navigation methods and event
+        /// handlers that cannot cancel the navigation request.</param>
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             if (AppList.getMyAppList().myappList.Count > 0)
@@ -107,9 +117,29 @@ namespace AppStore
             if(Frame.BackStack.Count>0)
                 Frame.BackStack.Clear();
         }
+   
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// <para>
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="NavigationHelper.LoadState"/>
+        /// and <see cref="NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the SaveState method 
+        /// in addition to page state preserved during an earlier session.
+        /// </para>
+        /// </summary>
+        /// <param name="e">Provides data for navigation methods and event
+        /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
         }
+    
+        /// <summary>
+        /// Deals with populating apps in the Featured-Apps section.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="args">EventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
         private void GridFeaturedApps_ContentChanging(ListViewBase sender, ContainerContentChangingEventArgs args)
         {
             args.Handled = true;
@@ -127,6 +157,12 @@ namespace AppStore
             appIcon.Source = new BitmapImage(new Uri("ms-appx:///Assets/notavailable.png"));
             args.RegisterUpdateCallback(ShowImage);
         }
+   
+        /// <summary>
+        /// Deals with populating images(app icons) in the Featured-Apps section.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="args">ContainerContentChangingEventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
         private void ShowImage(ListViewBase sender, ContainerContentChangingEventArgs args)
         {
             if (args.Phase != 1)
@@ -138,6 +174,12 @@ namespace AppStore
             Image appIcon = (Image)templateRoot.FindName("appIcon");
             appIcon.Source = new BitmapImage(new Uri(app.AppIcon));
         }
+   
+        /// <summary>
+        /// Executed when the user taps/selects an app from the Featured-Apps section.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
         private void GridFeaturedApps_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionGridApps) return;
@@ -147,6 +189,12 @@ namespace AppStore
             GridFeaturedApps.SelectedIndex = -1;
             selectionGridApps = false;
         }
+   
+        /// <summary>
+        /// Executed when the user taps/selects a category from the Featured-Categories section.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
         private void GridFeaturedCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (selectionGridCategories) return;
@@ -154,6 +202,12 @@ namespace AppStore
             Frame.Navigate(typeof(CategoryPage));
             selectionGridCategories = true;GridFeaturedCategories.SelectedIndex = -1;selectionGridCategories = false;
         }
+    
+        /// <summary>
+        /// Deals with populating categories in the Featured-Categories section.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="args">EventArgs args is a parameter called e that contains the event data, see the ContainerContentChangingEventArgs MSDN page for more information.</param>
         private void GridFeaturedCategories_ContentChanging(ListViewBase sender, ContainerContentChangingEventArgs args)
         {
             args.Handled = true;
@@ -168,12 +222,52 @@ namespace AppStore
             categoryName.Text = category.Name;
             categoryIcon.Source = new BitmapImage(new Uri(category.Background));
         }
+    
+        /// <summary>
+        /// Executed when the Search Button is tapped from the Application bar. The app navigates to the Search Results page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Search_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(SearchPage)); }
+   
+        /// <summary>
+        /// Executed when the Settings Button is tapped from the Application bar. The app navigates to the Settings page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private async void Settings_Click(object sender, RoutedEventArgs e) { ContentDialog dlg = new ContentDialog(); dlg=new SettingsDialog(); await dlg.ShowAsync(); }
+   
+        /// <summary>
+        /// Executed when the user taps/selects an app from the search results.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">SelectionChangedEventArgs e an instance of SelectionChangedEventArgs including, in many cases, an object which inherits from SelectionChangedEventArgs. Contains additional information about the event, and sometimes provides ability for code handling the event to alter the event somehow.</param>
         private void MyApps_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(MyAppsPage)); }
+    
+        /// <summary>
+        /// Executed when the Categories Button is tapped from the Application bar. The app navigates to the Categories page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        /// <summary>
+        /// Executed when the Categories Button is tapped from the Application bar. The app navigates to the Categories page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Categories_Click(object sender, RoutedEventArgs e) { Frame.Navigate(typeof(CategoriesPage)); }
+    
+        /// <summary>
+        /// Executed when the About Button is tapped from the Application bar. The app navigates to the About page.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void About_Click(object sender, RoutedEventArgs e) {  }
-        Apps appHolding;
+   
+        /// <summary>
+        /// Executed when the app is long tapped. Context menu appears now.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void StackPanel_Holding(object sender, HoldingRoutedEventArgs e)
         {
             FrameworkElement senderElement = sender as FrameworkElement;
@@ -190,7 +284,24 @@ namespace AppStore
             FlyoutBase flyoutBase = FlyoutBase.GetAttachedFlyout(senderElement);
             flyoutBase.ShowAt(senderElement);
         }
+    
+        /// <summary>
+        /// Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        /// <summary>
+        /// Executed when the Feedback Button is tapped from the Application bar. The app prepares the content and uses the default mail apps to give feedback.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Feedback_Click(object sender, RoutedEventArgs e) { AppCommon.ComposeEmail(); }
+   
+        /// <summary>
+        /// Executed when the Install button is tapped from the Context Menu, which appears when the app is long tapped.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void InstallButton_Click(object sender, RoutedEventArgs e)
         {
             var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
@@ -205,20 +316,37 @@ namespace AppStore
             var toast = new ToastNotification(toastXml);
             ToastNotificationManager.CreateToastNotifier().Show(toast);
         }
-
-        private void MoreCategories_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(CategoriesPage));
-        }
-        private void MoreApps_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(AppsPage));
-        }
-
+   
+        /// <summary>
+        /// Executed when the Share Button is tapped from the Application bar. The app prepares content form the app to be shared using default installed apps on the phone.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void ShareButton_Click(object sender, RoutedEventArgs e)
         {
             var datacontext = (e.OriginalSource as FrameworkElement).DataContext;
             DataTransferManager.ShowShareUI();
         }
+   
+        /// <summary>
+        /// Executed when the "more" button is tapped in the Featured Categories section. It navigates to the Categories Page, which lists all the categories.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        private void MoreCategories_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(CategoriesPage));
+        }
+   
+        /// <summary>
+        /// Executed when the "more" button is tapped in the Featured Apps section. It navigates to the AppsPage, which lists all the apps.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
+        private void MoreApps_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AppsPage));
+        }
+
     }
 }

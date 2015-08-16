@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.utils.SlidingTabLayout.createDefaultTabView" name="org.buildmlearn.appstore.utils.SlidingTabLayout.createDefaultTabView">
+<area shape="rect" id="node2" href="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#a372e773548f8b02b384a9297c618bb65" title="Populates tabs strip. " alt="" coords="304,5,527,47"/>
+<area shape="rect" id="node3" href="$d8/dcb/classorg_1_1buildmlearn_1_1appstore_1_1utils_1_1_sliding_tab_layout.html#a122f48ed0894e06f391afac8621a6421" title="Sets the associated view pager. " alt="" coords="575,5,780,47"/>
+<area shape="rect" id="node4" href="$d8/dfa/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_home_activity.html#a1a3c72988991108cb3f2f70b345a1a0d" title="The method is executed first when the activity is created. " alt="" coords="828,5,1051,47"/>
+</map>

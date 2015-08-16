@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/dc6/_main_page_8xaml_8cs">
+    <title>MainPage.xaml.cs File Reference</title>
+<para>Include dependency diagram for MainPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/de2/_main_page_8xaml_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for MainPage.xaml.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d03/_main_page_8xaml_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/d1a/class_app_store_1_1_main_page">AppStore::MainPage</link></para>
+<para><emphasis>&lt;summary&gt;
+This page is the Home Page.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6d/namespace_app_store">AppStore</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/d80/namespace_windows_1_1_u_i_1_1_core">Windows::UI::Core</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/MainPage.xaml.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="dd/d5e/namespace_app_store_1_1_common">Common</link>;
+2 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d2/d12/namespace_app_store_1_1_models">Models</link>;
+3 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d9/d6d/namespace_app_store">AppStore</link>.<link linkend="d9/dab/namespace_app_store_1_1_templates">Templates</link>;
+4 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>;
+5 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+6 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Linq;
+7 <emphasis class="keyword">using</emphasis>&#32;Windows.ApplicationModel.DataTransfer;
+8 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Core;
+9 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Notifications;
+10 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml;
+11 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls;
+12 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Controls.Primitives;
+13 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Input;
+14 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Media.Imaging;
+15 <emphasis class="keyword">using</emphasis>&#32;Windows.UI.Xaml.Navigation;
+16 
+17 <emphasis class="comment">//&#32;The&#32;Blank&#32;Page&#32;item&#32;template&#32;is&#32;documented&#32;at&#32;http://go.microsoft.com/fwlink/?LinkId=391641</emphasis>
+18 
+19 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>
+20 {
+<link linkend="d1/d1a/class_app_store_1_1_main_page">24 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;sealed&#32;<emphasis class="keyword">partial&#32;class&#32;</emphasis><link linkend="d1/d1a/class_app_store_1_1_main_page">MainPage</link>&#32;:&#32;<link linkend="db/d2f/class_page">Page</link>
+25 &#32;&#32;&#32;&#32;{
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a705ce690d4a3dc5c9bbd76b62efe295c">selectionGridCategories</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>,&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a1342d0535afb373bba70d555e12223a0">selectionGridApps</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HashSet&lt;Apps&gt;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a609467d5a6f9d47d3d38730374492fd8">featuredApps</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;HashSet&lt;Apps&gt;();
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HashSet&lt;Categories&gt;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a1943391c47bb207eac1e94f77c6fd3a2">featuredCategories</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;HashSet&lt;Categories&gt;();
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;int&gt;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a71a21649fe3d7ac90f98fb1a332e0447">nofeaturedApps</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;int&gt;();
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;int&gt;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a9f23f17319a8bfd33f0dff8e276446f6">nofeaturedCategories</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;int&gt;();
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a6d83c500cf3523299a8f44d19555af98">appHolding</link>;
+32 &#32;&#32;&#32;&#32;&#32;
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1ab42df8a489d16c352b6a6f6fe557525a">MainPage</link>()
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="d1/d1a/class_app_store_1_1_main_page_1ac8b315b1b75187e63cf1809160929330">InitializeComponent</link>();
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.NavigationCacheMode&#32;=&#32;NavigationCacheMode.Required;
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common">AppCommon</link>.<link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common_1aa48807c92512f9590d329e4865de1c85">RegisterForShare</link>();
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+42 &#32;&#32;&#32;&#32;
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;async&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a6fd723e9456f61eb6e833812f3876ed0">OnNavigatedTo</link>(NavigationEventArgs&#32;e)
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a7272c3ebe6aa36dd13b2c093c1b8dc2e">getMyAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a2131edd2cd784131e92e377c618c03a1">myappList</link>.Count&#32;&gt;&#32;0)
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a855d091e51929a4652f133eab662e0c6">btnMyApps</link>.Visibility&#32;=&#32;Visibility.Visible;
+60 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a855d091e51929a4652f133eab662e0c6">btnMyApps</link>.Visibility&#32;=&#32;Visibility.Collapsed;
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;fa&#32;=&#32;6,&#32;fc&#32;=&#32;4;
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;localSettings&#32;=&#32;Windows.Storage.ApplicationData.Current.LocalSettings;
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(localSettings.Values.ContainsKey(<emphasis class="stringliteral">&quot;Featured_Categories&quot;</emphasis>))
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{Int32.TryParse(localSettings.Values[<emphasis class="stringliteral">&quot;Featured_Categories&quot;</emphasis>].ToString(),out&#32;fc);&#32;}
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;localSettings.Values.Add(<emphasis class="stringliteral">&quot;Featured_Categories&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;4&quot;</emphasis>);
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(localSettings.Values.ContainsKey(<emphasis class="stringliteral">&quot;Featured_Apps&quot;</emphasis>))
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;Int32.TryParse(localSettings.Values[<emphasis class="stringliteral">&quot;Featured_Apps&quot;</emphasis>].ToString(),&#32;out&#32;fa);&#32;}
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;localSettings.Values.Add(<emphasis class="stringliteral">&quot;Featured_Apps&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;6&quot;</emphasis>);
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(<link linkend="df/d70/class_exception">Exception</link>&#32;ex)
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;}
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Random&#32;rnd&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Random();
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;featuredCategories.Clear();
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;featuredApps.Clear();
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;l&#32;=&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1afdcb2f70903d78954773ca54d5075876">getAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a61f5d3ee5fe499695f7fdd8dce0de7bc">appList</link>.Count;
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;fa;&#32;i++)
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(<emphasis class="keyword">true</emphasis>)
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;x&#32;=&#32;rnd.Next(0,&#32;l);
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;ob&#32;=&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1afdcb2f70903d78954773ca54d5075876">getAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a61f5d3ee5fe499695f7fdd8dce0de7bc">appList</link>.ElementAt(x);
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!nofeaturedApps.Contains(x))
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;featuredApps.Add(ob);nofeaturedApps.Add(x);&#32;<emphasis class="keywordflow">break</emphasis>;}
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rnd&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;Random();
+89 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;fc;&#32;i++)
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(<emphasis class="keyword">true</emphasis>)
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;x&#32;=&#32;rnd.Next(0,&#32;10);
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dd/d98/class_app_store_1_1_categories">Categories</link>&#32;ob&#32;=&#32;Models.Resources.getCategoriesList().ElementAt(x);
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!nofeaturedCategories.Contains(x))
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;featuredCategories.Add(ob);&#32;nofeaturedCategories.Add(x);&#32;<emphasis class="keywordflow">break</emphasis>;&#32;}
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1ab6ba1f3fd18c54ab042663f8b90206ec">GridFeaturedApps</link>.ItemsSource&#32;=&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a609467d5a6f9d47d3d38730374492fd8">featuredApps</link>;
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a7daddca94e02291551a3009524bfedf2">GridFeaturedCategories</link>.ItemsSource&#32;=&#32;<link linkend="d1/d1a/class_app_store_1_1_main_page_1a1943391c47bb207eac1e94f77c6fd3a2">featuredCategories</link>;
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(e.Parameter!=null)
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!String.IsNullOrWhiteSpace(e.Parameter.ToString()))
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">string</emphasis>&#32;appName&#32;=&#32;e.Parameter.ToString();
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;app&#32;<emphasis class="keywordflow">in</emphasis>&#32;featuredApps)
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>.Equals(appName))
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>&#32;=&#32;app;
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CoreDispatcher&#32;dispatcher&#32;=&#32;CoreWindow.GetForCurrentThread().Dispatcher;
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;await&#32;dispatcher.RunAsync(CoreDispatcherPriority.Normal,&#32;()&#32;=&gt;
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;Frame.Navigate(typeof(StartPage),<emphasis class="stringliteral">&quot;remove&quot;</emphasis>);&#32;});
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(Frame.BackStack.Count&gt;0)
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.BackStack.Clear();
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+120 &#32;&#32;&#32;
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">protected</emphasis>&#32;<emphasis class="keyword">override</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;OnNavigatedFrom(NavigationEventArgs&#32;e)
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+137 &#32;&#32;&#32;&#32;
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;GridFeaturedApps_ContentChanging(ListViewBase&#32;sender,&#32;ContainerContentChangingEventArgs&#32;args)
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;args.Handled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(args.Phase&#32;!=&#32;0)
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="df/d70/class_exception">Exception</link>(<emphasis class="stringliteral">&quot;Not&#32;in&#32;phase&#32;0.&quot;</emphasis>);
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;app&#32;=&#32;(<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>)args.Item;
+151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StackPanel&#32;templateRoot&#32;=&#32;(StackPanel)args.ItemContainer.ContentTemplateRoot;
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TextBlock&#32;appName&#32;=&#32;(TextBlock)templateRoot.FindName(<emphasis class="stringliteral">&quot;appName&quot;</emphasis>);
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TextBlock&#32;appAuthor&#32;=&#32;(TextBlock)templateRoot.FindName(<emphasis class="stringliteral">&quot;appAuthor&quot;</emphasis>);
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Image&#32;appIcon&#32;=&#32;(Image)templateRoot.FindName(<emphasis class="stringliteral">&quot;appIcon&quot;</emphasis>);
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appName.Text&#32;=&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>;
+156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appAuthor.Text&#32;=&#32;app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a65fea2c46caa3afe1e67c0b2d54c3375">Author</link>;
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appIcon.Source&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;BitmapImage(<emphasis class="keyword">new</emphasis>&#32;Uri(<emphasis class="stringliteral">&quot;ms-appx:///Assets/notavailable.png&quot;</emphasis>));
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;args.RegisterUpdateCallback(ShowImage);
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+160 &#32;&#32;&#32;
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;ShowImage(ListViewBase&#32;sender,&#32;ContainerContentChangingEventArgs&#32;args)
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(args.Phase&#32;!=&#32;1)
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="df/d70/class_exception">Exception</link>(<emphasis class="stringliteral">&quot;Not&#32;in&#32;phase&#32;1.&quot;</emphasis>);
+171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;app&#32;=&#32;(<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>)args.Item;
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StackPanel&#32;templateRoot&#32;=&#32;(StackPanel)args.ItemContainer.ContentTemplateRoot;
+174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Image&#32;appIcon&#32;=&#32;(Image)templateRoot.FindName(<emphasis class="stringliteral">&quot;appIcon&quot;</emphasis>);
+175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appIcon.Source&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;BitmapImage(<emphasis class="keyword">new</emphasis>&#32;Uri(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a591ee9b4836750fc38aa1762e25f20d5">AppIcon</link>));
+176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+177 &#32;&#32;&#32;
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;GridFeaturedApps_SelectionChanged(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;SelectionChangedEventArgs&#32;e)
+184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(selectionGridApps)&#32;<emphasis class="keywordflow">return</emphasis>;
+186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance">AppInstance</link>.<link linkend="da/d8e/class_app_store_1_1_models_1_1_app_instance_1aec3f6caee89b6d8f30164e77f2950f79">app</link>&#32;=&#32;(<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>)GridFeaturedApps.SelectedItem;
+187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(typeof(AppDetailsPage));
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;selectionGridApps&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GridFeaturedApps.SelectedIndex&#32;=&#32;-1;
+190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;selectionGridApps&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+192 &#32;&#32;&#32;
+198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;GridFeaturedCategories_SelectionChanged(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;SelectionChangedEventArgs&#32;e)
+199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(selectionGridCategories)&#32;<emphasis class="keywordflow">return</emphasis>;
+201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="de/d27/class_app_store_1_1_models_1_1_category_instance">CategoryInstance</link>.<link linkend="de/d27/class_app_store_1_1_models_1_1_category_instance_1ac1e8313d7f7d58349cf972f2be0ae365">category</link>&#32;=&#32;(<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link>)GridFeaturedCategories.SelectedItem;
+202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(typeof(CategoryPage));
+203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;selectionGridCategories&#32;=&#32;<emphasis class="keyword">true</emphasis>;GridFeaturedCategories.SelectedIndex&#32;=&#32;-1;selectionGridCategories&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+205 &#32;&#32;&#32;&#32;
+211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;GridFeaturedCategories_ContentChanging(ListViewBase&#32;sender,&#32;ContainerContentChangingEventArgs&#32;args)
+212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;args.Handled&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+214 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(args.Phase&#32;!=&#32;0)
+215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="df/d70/class_exception">Exception</link>(<emphasis class="stringliteral">&quot;Not&#32;in&#32;phase&#32;0.&quot;</emphasis>);
+217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link>&#32;category&#32;=&#32;(<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link>)args.Item;
+219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Grid&#32;templateRoot&#32;=&#32;(Grid)args.ItemContainer.ContentTemplateRoot;
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Image&#32;categoryIcon&#32;=&#32;(Image)templateRoot.FindName(<emphasis class="stringliteral">&quot;categoryIcon&quot;</emphasis>);
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TextBlock&#32;categoryName&#32;=&#32;(TextBlock)templateRoot.FindName(<emphasis class="stringliteral">&quot;categoryName&quot;</emphasis>);
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;categoryName.Text&#32;=&#32;category.<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories_1aeb98d84e15ad61a0e9054da7668ddfcc">Name</link>;
+223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;categoryIcon.Source&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;BitmapImage(<emphasis class="keyword">new</emphasis>&#32;Uri(category.<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories_1aadffe9299ddf1e5bd895484397031fed">Background</link>));
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+225 &#32;&#32;&#32;&#32;
+231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Search_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(SearchPage));&#32;}
+232 &#32;&#32;&#32;
+238 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;async&#32;<emphasis class="keywordtype">void</emphasis>&#32;Settings_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;ContentDialog&#32;dlg&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;ContentDialog();&#32;dlg=<emphasis class="keyword">new</emphasis>&#32;SettingsDialog();&#32;await&#32;dlg.ShowAsync();&#32;}
+239 &#32;&#32;&#32;
+245 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;MyApps_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(MyAppsPage));&#32;}
+246 &#32;&#32;&#32;&#32;
+257 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Categories_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;Frame.Navigate(typeof(CategoriesPage));&#32;}
+258 &#32;&#32;&#32;&#32;
+264 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;About_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;&#32;}
+265 &#32;&#32;&#32;
+271 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;StackPanel_Holding(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;HoldingRoutedEventArgs&#32;e)
+272 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+273 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;FrameworkElement&#32;senderElement&#32;=&#32;sender&#32;as&#32;FrameworkElement;
+274 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StackPanel&#32;stackPanel=sender&#32;as&#32;StackPanel;
+275 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TextBlock&#32;txt=(TextBlock)stackPanel.Children.ElementAt(1);
+276 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">foreach</emphasis>&#32;(<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>&#32;app&#32;<emphasis class="keywordflow">in</emphasis>&#32;featuredApps)
+277 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+278 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(app.<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps_1a935f0bb3aeedb20f4f113642ff8b98a2">Name</link>.Equals(txt.Text))
+279 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+280 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;appHolding&#32;=&#32;app;<emphasis class="keywordflow">break</emphasis>;
+281 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+282 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+283 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//var&#32;localSettings&#32;=&#32;Windows.Storage.ApplicationData.Current.LocalSettings;</emphasis>
+284 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;FlyoutBase&#32;flyoutBase&#32;=&#32;FlyoutBase.GetAttachedFlyout(senderElement);
+285 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;flyoutBase.ShowAt(senderElement);
+286 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+287 &#32;&#32;&#32;&#32;
+298 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;Feedback_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)&#32;{&#32;<link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common">AppCommon</link>.<link linkend="dd/dfa/class_app_store_1_1_common_1_1_app_common_1a63a454bafcdb1303609ac2cd650abc40">ComposeEmail</link>();&#32;}
+299 &#32;&#32;&#32;
+305 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;InstallButton_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+306 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+307 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;localSettings&#32;=&#32;Windows.Storage.ApplicationData.Current.LocalSettings;
+308 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;((<emphasis class="keywordtype">bool</emphasis>)localSettings.Values[appHolding.Name])&#32;<emphasis class="keywordflow">return</emphasis>;
+309 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;localSettings.Values[appHolding.Name]&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+310 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list">AppList</link>.<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a7272c3ebe6aa36dd13b2c093c1b8dc2e">getMyAppList</link>().<link linkend="dc/dcd/class_app_store_1_1_models_1_1_app_list_1a2131edd2cd784131e92e377c618c03a1">myappList</link>.Add(appHolding);
+311 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnMyApps.Visibility&#32;=&#32;Visibility.Visible;
+312 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;toastTemplate&#32;=&#32;ToastTemplateType.ToastImageAndText01;
+313 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;toastXml&#32;=&#32;ToastNotificationManager.GetTemplateContent(toastTemplate);
+314 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;toastTextElements&#32;=&#32;toastXml.GetElementsByTagName(<emphasis class="stringliteral">&quot;text&quot;</emphasis>);
+315 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;toastTextElements[0].AppendChild(toastXml.CreateTextNode(appHolding.Name&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;is&#32;installed.&quot;</emphasis>));
+316 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;toast&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;ToastNotification(toastXml);
+317 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ToastNotificationManager.CreateToastNotifier().Show(toast);
+318 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+319 &#32;&#32;&#32;
+325 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;ShareButton_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+326 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+327 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;datacontext&#32;=&#32;(e.OriginalSource&#32;as&#32;FrameworkElement).DataContext;
+328 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DataTransferManager.ShowShareUI();
+329 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+330 &#32;&#32;&#32;
+336 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;MoreCategories_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+337 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+338 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(typeof(CategoriesPage));
+339 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+340 &#32;&#32;&#32;
+346 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">private</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;MoreApps_Click(<emphasis class="keywordtype">object</emphasis>&#32;sender,&#32;RoutedEventArgs&#32;e)
+347 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+348 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame.Navigate(typeof(AppsPage));
+349 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+350 
+351 &#32;&#32;&#32;&#32;}
+352 }
+    </computeroutput></literallayout>
+</section>

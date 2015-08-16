@@ -1,0 +1,6 @@
+<map id="org.buildmlearn.appstore.activities.SettingsActivity.onPostCreate" name="org.buildmlearn.appstore.activities.SettingsActivity.onPostCreate">
+<area shape="rect" id="node2" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a37ba985470ade6df6862fef74ff540de" title="Shows the simplified settings UI if the device configuration if the device configuration dictates tha..." alt="" coords="276,43,575,84"/>
+<area shape="rect" id="node3" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a41e13cf6763dacaa6be05fb9e7aa37ce" title="Determines whether the simplified settings UI should be shown. " alt="" coords="635,5,869,47"/>
+<area shape="rect" id="node5" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#ae976024e560a9fa3993eeb2d17d30b69" title="Binds a preference&#39;s summary to its value. " alt="" coords="623,71,881,127"/>
+<area shape="rect" id="node4" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a03783015733c15e832fa994286ac519b" title="Helper method to determine if the device has an extra&#45;large screen. " alt="" coords="929,5,1152,47"/>
+</map>

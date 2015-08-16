@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.adapters.CardCategoriesAdapter.onBindViewHolder" name="org.buildmlearn.appstore.adapters.CardCategoriesAdapter.onBindViewHolder">
+<area shape="rect" id="node2" href="$d1/d87/classorg_1_1buildmlearn_1_1appstore_1_1adapters_1_1_card_categories_adapter_1_1_card_view_holder.html#af6049ce1b1395978be6dee8f9fed9a15" title="org.buildmlearn.appstore.adapters.\lCardCategoriesAdapter.CardViewHolder.set\lClickListener" alt="" coords="319,5,593,61"/>
+<area shape="rect" id="node3" href="$d6/d69/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_categories_activity.html#ad5feda8baa86efb06548383e14e941de" title="This method is called from the Navigation Activity. " alt="" coords="345,86,567,127"/>
+<area shape="rect" id="node4" href="$d0/d60/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_navigation_activity.html#a3819b15bd7eeb6b579ffc4ae12bb289b" title="It clears the text in the search tool and collapses the search tool. " alt="" coords="345,151,567,193"/>
+</map>

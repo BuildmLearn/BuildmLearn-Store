@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d53/class_app_store_1_1_common_1_1_relay_command">
+<title>AppStore::Common::RelayCommand class Reference</title>
+<para>Inheritance diagram for AppStore::Common::RelayCommand</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/db2/class_app_store_1_1_common_1_1_relay_command__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for AppStore::Common::RelayCommand</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d8d/class_app_store_1_1_common_1_1_relay_command__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>readonly Action _execute</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>readonly Func&lt; bool &gt; _canExecute</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command_1a7c27cc14c934016ef6aec264f439827c">RelayCommand</link> (
+Action execute)<para><emphasis>&lt;summary&gt;
+Creates a new command that can always execute.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command_1aa5f37d37edcc8d25ff607d8b67b9814f">RelayCommand</link> (
+Action execute, Func&lt; bool &gt; canExecute)<para><emphasis>&lt;summary&gt;
+Creates a new command.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command_1a95692cdeb8b633b4aa8fcdaadd55a14d">CanExecute</link> (
+object parameter)<para><emphasis>&lt;summary&gt;
+Determines whether this &lt;see cref=&quot;RelayCommand&quot;/&gt; can execute in its current state.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command_1a1942f049f7beab85c1ac79bfe2589ef7">Execute</link> (
+object parameter)<para><emphasis>&lt;summary&gt;
+Executes the &lt;see cref=&quot;RelayCommand&quot;/&gt; on the current command target.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command_1ab61295cac8079a59da9ba6eaa0700267">RaiseCanExecuteChanged</link> (
+)<para><emphasis>&lt;summary&gt;
+Method used to raise the &lt;see cref=&quot;CanExecuteChanged&quot;/&gt; event
+to indicate that the return value of the &lt;see cref=&quot;CanExecute&quot;/&gt;
+method has changed.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>A command whose sole purpose is to relay its functionality to other objects by invoking delegates. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>The default return value for the CanExecute method is &apos;true&apos;. <link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command_1ab61295cac8079a59da9ba6eaa0700267">RaiseCanExecuteChanged</link> needs to be called whenever <link linkend="d1/d53/class_app_store_1_1_common_1_1_relay_command_1a95692cdeb8b633b4aa8fcdaadd55a14d">CanExecute</link> is expected to return a different value. </para>
+                <para>Definition at line 14 of file RelayCommand.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RelayCommand.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d1/d53/class_app_store_1_1_common_1_1_relay_command_1a7c27cc14c934016ef6aec264f439827c">
+                <title>AppStore.Common.RelayCommand.RelayCommand (Action execute)</title> <emphasis>&lt;summary&gt;
+Creates a new command that can always execute.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>execute</entry>
+                                <entry>
+<para>The execution logic.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d53/class_app_store_1_1_common_1_1_relay_command_1aa5f37d37edcc8d25ff607d8b67b9814f">
+                <title>AppStore.Common.RelayCommand.RelayCommand (Action execute, Func&lt; bool &gt; canExecute)</title> <emphasis>&lt;summary&gt;
+Creates a new command.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>execute</entry>
+                                <entry>
+<para>The execution logic.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>canExecute</entry>
+                                <entry>
+<para>The execution status logic.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d53/class_app_store_1_1_common_1_1_relay_command_1a95692cdeb8b633b4aa8fcdaadd55a14d">
+                <title>bool AppStore.Common.RelayCommand.CanExecute (object parameter)</title> <emphasis>&lt;summary&gt;
+Determines whether this &lt;see cref=&quot;RelayCommand&quot;/&gt; can execute in its current state.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>parameter</entry>
+                                <entry>
+<para>Data used by the command. If the command does not require data to be passed, this object can be set to null. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>true if this command can be executed; otherwise, false.</para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="d1/d53/class_app_store_1_1_common_1_1_relay_command_1a1942f049f7beab85c1ac79bfe2589ef7">
+                <title>void AppStore.Common.RelayCommand.Execute (object parameter)</title> <emphasis>&lt;summary&gt;
+Executes the &lt;see cref=&quot;RelayCommand&quot;/&gt; on the current command target.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>parameter</entry>
+                                <entry>
+<para>Data used by the command. If the command does not require data to be passed, this object can be set to null. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="d1/d53/class_app_store_1_1_common_1_1_relay_command_1ab61295cac8079a59da9ba6eaa0700267">
+                <title>void AppStore.Common.RelayCommand.RaiseCanExecuteChanged ()</title> <emphasis>&lt;summary&gt;
+Method used to raise the &lt;see cref=&quot;CanExecuteChanged&quot;/&gt; event
+to indicate that the return value of the &lt;see cref=&quot;CanExecute&quot;/&gt;
+method has changed.</emphasis>
+                
+            </section>
+</section>

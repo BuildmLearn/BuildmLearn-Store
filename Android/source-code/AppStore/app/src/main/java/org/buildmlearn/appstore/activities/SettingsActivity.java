@@ -35,7 +35,7 @@ public class SettingsActivity extends PreferenceActivity{
      * shown on tablets.
      */
     private static final boolean ALWAYS_SIMPLE_PREFS = false;
-    private int numberOfInstalledApps=6;
+    private int numberOfInstalledApps=9;
     private static Context mContext;
 
     /**
@@ -168,7 +168,7 @@ public class SettingsActivity extends PreferenceActivity{
                     if (x < 3) x = 3;
                     else if (x > SplashActivity.appList.size()) x = SplashActivity.appList.size();
                 } catch (Exception e) {
-                    x = 6;
+                    x = 9;
                 }
                 txtCategories.setText(x + "");
                 preference.setSummary(x + "");
@@ -236,7 +236,7 @@ public class SettingsActivity extends PreferenceActivity{
         try{x=Integer.parseInt(stringValue);
             if(x<3)x=3;
             else if(x>SplashActivity.appList.size())x=SplashActivity.appList.size();
-        }catch (Exception e){x=6;}
+        }catch (Exception e){x=9;}
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(mContext);
         SharedPreferences.Editor editor1 = SP.edit();
         editor1.putString("number_featured_apps", x+"");

@@ -1,23 +1,12 @@
 ﻿using AppStore.Common;
 using AppStore.Models;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Data.Xml.Dom;
 using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
-using Windows.UI.Core;
 using Windows.UI.Notifications;
 using Windows.UI.StartScreen;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
@@ -27,13 +16,18 @@ using Windows.UI.Xaml.Navigation;
 namespace AppStore.Templates
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// This page deals with the StartPage of all the App-Template.
     /// </summary>
     public sealed partial class StartPage : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+        public static string removeParameter = "";
+        private Type page;
 
+        /// <summary>
+        /// Public Construtor to the StartPage. Populates the views pertaining to this page.
+        /// </summary>
         public StartPage()
         {
             this.InitializeComponent();
@@ -85,7 +79,7 @@ namespace AppStore.Templates
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
         }
-        public static string removeParameter="";
+
         #region NavigationHelper registration
 
         /// <summary>
@@ -125,16 +119,38 @@ namespace AppStore.Templates
             AppAuthor.Text = app.Author;
         }
 
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// <para>
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="NavigationHelper.LoadState"/>
+        /// and <see cref="NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+        /// </para>
+        /// </summary>
+        /// <param name="e">Provides data for navigation methods and event
+        /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
         }
         #endregion
-        private Type page;
+        
+        /// <summary>
+        /// Executed when the Start button is tapped/pressed. Populates the app-template.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(page);
         }
+      
+        /// <summary>
+        /// It updates the tile, which makes a live tile view in the StartPage.
+        /// </summary>
         private void updateTile()
         {
             TileUpdateManager.CreateTileUpdaterForApplication().Clear();
@@ -162,6 +178,11 @@ namespace AppStore.Templates
             ((XmlElement)tileImageAttributes[0]).SetAttribute("src", AppInstance.app.AppIcon);
             TileUpdateManager.CreateTileUpdaterForApplication().Update(tileNotification);
         }
+    
+        /// <summary>
+        /// Toggles the appbar button in the application bar.
+        /// </summary>
+        /// <param name="showPinButton">bool showPinButton</param>
         private void ToggleAppBarButton(bool showPinButton)
         {
             if (showPinButton)
@@ -177,11 +198,21 @@ namespace AppStore.Templates
 
             this.PinUnPinCommandButton.UpdateLayout();
         }
+        
+        /// <summary>
+        /// The method which initializes the appbar button in the application bar, whether the app is pinned or not.
+        /// </summary>
         void Init()
         {
             ToggleAppBarButton(!SecondaryTile.Exists(AppInstance.app.Name));
             this.PinUnPinCommandButton.Click += this.pinToAppBar_Click;
         }
+
+        /// <summary>
+        /// It pins the app to the StartPage.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="e">RoutedEventArgs e is a parameter called e that contains the event data, see the RoutedEventArgs MSDN page for more information.</param>
         async void pinToAppBar_Click(object sender, RoutedEventArgs e)
         {
             if (SecondaryTile.Exists(AppInstance.app.Name.Replace(" ", "")))
@@ -210,6 +241,12 @@ namespace AppStore.Templates
 
             }
         }
+     
+        /// <summary>
+        /// This is the position of the retcangle where the app will be pinned on the Start Page.
+        /// </summary>
+        /// <param name="element">FrameworkElement element object</param>
+        /// <returns>Returns the rect object</returns>
         public static Rect GetElementRect(FrameworkElement element)
         {
             GeneralTransform buttonTransform = element.TransformToVisual(null);

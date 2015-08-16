@@ -1,0 +1,7 @@
+<map id="org.buildmlearn.appstore.activities.SettingsActivity.isXLargeTablet" name="org.buildmlearn.appstore.activities.SettingsActivity.isXLargeTablet">
+<area shape="rect" id="node2" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a3e05ad31206e46aa0c7af8e1152549a2" title="org.buildmlearn.appstore.activities.\lSettingsActivity.onIsMultiPane" alt="" coords="597,5,819,47"/>
+<area shape="rect" id="node3" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a41e13cf6763dacaa6be05fb9e7aa37ce" title="Determines whether the simplified settings UI should be shown. " alt="" coords="276,69,511,111"/>
+<area shape="rect" id="node4" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a37ba985470ade6df6862fef74ff540de" title="Shows the simplified settings UI if the device configuration if the device configuration dictates tha..." alt="" coords="559,71,857,112"/>
+<area shape="rect" id="node6" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a6cdf908936f1273fab9dbe2d2cb824a3" title="org.buildmlearn.appstore.activities.\lSettingsActivity.onBuildHeaders" alt="" coords="597,136,819,177"/>
+<area shape="rect" id="node5" href="$d7/d35/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_settings_activity.html#a963635e555c52a885b59d8712a716672" title="org.buildmlearn.appstore.activities.\lSettingsActivity.onPostCreate" alt="" coords="905,71,1128,112"/>
+</map>

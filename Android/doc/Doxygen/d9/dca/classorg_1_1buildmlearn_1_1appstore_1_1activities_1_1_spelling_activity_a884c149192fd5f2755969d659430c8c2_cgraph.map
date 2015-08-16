@@ -1,0 +1,4 @@
+<map id="org.buildmlearn.appstore.activities.SpellingActivity.submit" name="org.buildmlearn.appstore.activities.SpellingActivity.submit">
+<area shape="rect" id="node2" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#a05414e7030d1cf432ef09e00ac32126e" title="org.buildmlearn.appstore.models.\lSpellingsModel.setTotalCorrect" alt="" coords="276,5,491,47"/>
+<area shape="rect" id="node3" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#a11f65865284ec54e0fca7364e9513f9c" title="org.buildmlearn.appstore.models.\lSpellingsModel.setTotalWrong" alt="" coords="276,71,491,112"/>
+</map>

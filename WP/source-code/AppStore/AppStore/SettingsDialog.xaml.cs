@@ -1,26 +1,19 @@
 ﻿using AppStore.Models;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Storage.Pickers.Provider;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Content Dialog item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace AppStore
 {
+    /// <summary>
+    /// This class deals with Settings Dialog and implements all the important user-defined settings required by the app.
+    /// </summary>
     public sealed partial class SettingsDialog : ContentDialog
     {
+        /// <summary>
+        /// Public constructor for the SettingsDialog
+        /// </summary>
         public SettingsDialog()
         {
             this.InitializeComponent();
@@ -29,6 +22,11 @@ namespace AppStore
             featured_apps.Text=localSettings.Values["Featured_Apps"].ToString();
         }
 
+        /// <summary>
+        /// Method which is executed when the user taps on the "apply" button in the SettingsDialog.
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="args">EventArgs e is a parameter called e that contains the event data, see the EventArgs MSDN page for more information.</param>
         private void ContentDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
             int fc = 4, fa = 6;
@@ -52,7 +50,12 @@ namespace AppStore
             localSettings.Values["Featured_Categories"] = featured_categories.Text;
             localSettings.Values["Featured_Apps"] = featured_apps.Text;
         }
-
+        
+        /// <summary>
+        /// Method which is executed when the user taps on the "cancel" button in the SettingsDialog
+        /// </summary>
+        /// <param name="sender">Object Sender is a parameter called Sender that contains a reference to the control/object that raised the event.</param>
+        /// <param name="args">EventArgs e is a parameter called e that contains the event data, see the EventArgs MSDN page for more information.</param>
         private void ContentDialog_SecondaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
         }

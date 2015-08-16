@@ -1,0 +1,7 @@
+<map id="org.buildmlearn.appstore.utils.AppReader.readInfoFile" name="org.buildmlearn.appstore.utils.AppReader.readInfoFile">
+<area shape="rect" id="node2" href="$d2/d32/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_info_model.html#a36f373dfeec1b5bb676195a047d401e5" title="org.buildmlearn.appstore.models.\lInfoModel.getInstance" alt="" coords="249,5,464,47"/>
+<area shape="rect" id="node3" href="$d2/d32/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_info_model.html#a82a660299557f895f32e3545aec2a332" title="org.buildmlearn.appstore.models.\lInfoModel.setInfoAuthor" alt="" coords="249,71,464,112"/>
+<area shape="rect" id="node4" href="$d2/d32/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_info_model.html#a543a7e7619f281b8a209e2c1aa7792a9" title="org.buildmlearn.appstore.models.\lInfoModel.setInfoName" alt="" coords="249,136,464,177"/>
+<area shape="rect" id="node5" href="$d2/d32/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_info_model.html#aaa70aa18d96990e8b1f3c9867f776de5" title="org.buildmlearn.appstore.models.\lInfoModel.setInfoMap" alt="" coords="249,201,464,243"/>
+<area shape="rect" id="node6" href="$d2/d32/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_info_model.html#aa4da7a4d70aff359c4b6db2590295821" title="org.buildmlearn.appstore.models.\lInfoModel.setListTitleList" alt="" coords="249,267,464,308"/>
+</map>

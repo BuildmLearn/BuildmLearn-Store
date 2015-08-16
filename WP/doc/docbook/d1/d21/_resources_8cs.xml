@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d21/_resources_8cs">
+    <title>Resources.cs File Reference</title>
+<para>Include dependency diagram for Resources.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/df4/_resources_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Resources.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/db9/_resources_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/dd0/class_app_store_1_1_models_1_1_resources">AppStore::Models::Resources</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the all the string resources for catefories.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/Resources.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">using</emphasis>&#32;<link linkend="d8/dd0/namespace_system">System</link>.Collections.Generic;
+2 
+3 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+4 {
+<link linkend="d2/dd0/class_app_store_1_1_models_1_1_resources">8 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d2/dd0/class_app_store_1_1_models_1_1_resources">Resources</link>
+9 &#32;&#32;&#32;&#32;{
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;CategoryName&#32;=&#32;{&#32;<emphasis class="stringliteral">&quot;Science&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Mathematics&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Literature&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;SocialStudies&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;History&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Geography&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;English&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Physics&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Chemistry&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Biology&quot;</emphasis>&#32;};
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>[]&#32;CategoryImage&#32;={<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_science.png&quot;</emphasis>,<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_mathematics.png&quot;</emphasis>,<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_literature.png&quot;</emphasis>,<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_socialstudies.png&quot;</emphasis>,
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_history.png&quot;</emphasis>,<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_geography.png&quot;</emphasis>,<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_english.png&quot;</emphasis>,<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_physics.png&quot;</emphasis>,<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_chemistry.png&quot;</emphasis>,<emphasis class="stringliteral">&quot;ms-appx:///Assets/card_biology.png&quot;</emphasis>};
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;List&lt;Categories&gt;&#32;getCategoriesList()
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;Categories&gt;&#32;list&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;List&lt;Categories&gt;();
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;CategoryName.Length;&#32;i++)
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link>&#32;ob&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d9/d3b/class_app_store_1_1_models_1_1_categories">Categories</link>(CategoryName[i],&#32;CategoryImage[i]);
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;list.Add(ob);
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;list;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+28 &#32;&#32;&#32;&#32;}
+29 }
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,5 @@
+<map id="org.buildmlearn.appstore.activities.InfoActivity.onCreate" name="org.buildmlearn.appstore.activities.InfoActivity.onCreate">
+<area shape="rect" id="node2" href="$d2/d32/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_info_model.html#a36f373dfeec1b5bb676195a047d401e5" title="org.buildmlearn.appstore.models.\lInfoModel.getInstance" alt="" coords="276,5,491,47"/>
+<area shape="rect" id="node3" href="$d2/d32/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_info_model.html#af8e102df59ef47cb042958d174ebf8e4" title="org.buildmlearn.appstore.models.\lInfoModel.getListTitleList" alt="" coords="276,71,491,112"/>
+<area shape="rect" id="node4" href="$d2/d32/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_info_model.html#a032f70e5afd85c2adca8b3fde854341a" title="org.buildmlearn.appstore.models.\lInfoModel.getInfoName" alt="" coords="276,136,491,177"/>
+</map>

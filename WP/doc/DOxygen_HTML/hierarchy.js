@@ -1,0 +1,195 @@
+var hierarchy =
+[
+    [ "AppStore.Common.AppCommon", "dd/dfa/class_app_store_1_1_common_1_1_app_common.html", null ],
+    [ "AppStore.Models.AppInstance", "da/d8e/class_app_store_1_1_models_1_1_app_instance.html", null ],
+    [ "Application", null, [
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ],
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ],
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ],
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ],
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ],
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ]
+    ] ],
+    [ "AppStore.Models.AppList", "dc/dcd/class_app_store_1_1_models_1_1_app_list.html", null ],
+    [ "AppStore.Common.AppReader", "da/d6b/class_app_store_1_1_common_1_1_app_reader.html", null ],
+    [ "AppStore.Models.Apps", "d8/de7/class_app_store_1_1_models_1_1_apps.html", null ],
+    [ "AppStore.Models.Card", "d0/d26/class_app_store_1_1_models_1_1_card.html", null ],
+    [ "AppStore.Models.Categories", "d9/d3b/class_app_store_1_1_models_1_1_categories.html", null ],
+    [ "AppStore.Models.CategoryInstance", "de/d27/class_app_store_1_1_models_1_1_category_instance.html", null ],
+    [ "ContentDialog", "d0/d7b/class_content_dialog.html", [
+      [ "AppStore.SettingsDialog", "d7/d78/class_app_store_1_1_settings_dialog.html", null ]
+    ] ],
+    [ "ContentDialog", null, [
+      [ "AppStore.SettingsDialog", "d7/d78/class_app_store_1_1_settings_dialog.html", null ],
+      [ "AppStore.SettingsDialog", "d7/d78/class_app_store_1_1_settings_dialog.html", null ]
+    ] ],
+    [ "DependencyObject", "d1/d12/class_dependency_object.html", [
+      [ "AppStore.Common.NavigationHelper", "d7/d68/class_app_store_1_1_common_1_1_navigation_helper.html", null ]
+    ] ],
+    [ "EventArgs", "d5/d6c/class_event_args.html", [
+      [ "AppStore.Common.LoadStateEventArgs", "d4/df7/class_app_store_1_1_common_1_1_load_state_event_args.html", null ],
+      [ "AppStore.Common.SaveStateEventArgs", "dd/d31/class_app_store_1_1_common_1_1_save_state_event_args.html", null ]
+    ] ],
+    [ "Exception", "df/d70/class_exception.html", [
+      [ "AppStore.Common.SuspensionManagerException", "d4/de3/class_app_store_1_1_common_1_1_suspension_manager_exception.html", null ]
+    ] ],
+    [ "AppStore.Models.FlashModel", "d4/d59/class_app_store_1_1_models_1_1_flash_model.html", null ],
+    [ "ICommand", "d6/d2b/class_i_command.html", [
+      [ "AppStore.Common.RelayCommand", "d1/d53/class_app_store_1_1_common_1_1_relay_command.html", null ]
+    ] ],
+    [ "IComponentConnector", null, [
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ],
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ],
+      [ "AppStore.AppDetailsPage", "dd/d8e/class_app_store_1_1_app_details_page.html", null ],
+      [ "AppStore.AppDetailsPage", "dd/d8e/class_app_store_1_1_app_details_page.html", null ],
+      [ "AppStore.AppsPage", "dc/d46/class_app_store_1_1_apps_page.html", null ],
+      [ "AppStore.BlankPage1", "db/d14/class_app_store_1_1_blank_page1.html", null ],
+      [ "AppStore.CategoriesPage", "d0/d4e/class_app_store_1_1_categories_page.html", null ],
+      [ "AppStore.CategoriesPage", "d0/d4e/class_app_store_1_1_categories_page.html", null ],
+      [ "AppStore.CategoryPage", "d2/d8e/class_app_store_1_1_category_page.html", null ],
+      [ "AppStore.CategoryPage", "d2/d8e/class_app_store_1_1_category_page.html", null ],
+      [ "AppStore.MainPage", "d1/d1a/class_app_store_1_1_main_page.html", null ],
+      [ "AppStore.MainPage", "d1/d1a/class_app_store_1_1_main_page.html", null ],
+      [ "AppStore.MyAppsPage", "d7/d78/class_app_store_1_1_my_apps_page.html", null ],
+      [ "AppStore.MyAppsPage", "d7/d78/class_app_store_1_1_my_apps_page.html", null ],
+      [ "AppStore.SearchPage", "d9/da7/class_app_store_1_1_search_page.html", null ],
+      [ "AppStore.SearchPage", "d9/da7/class_app_store_1_1_search_page.html", null ],
+      [ "AppStore.Settings", "d4/d9d/class_app_store_1_1_settings.html", null ],
+      [ "AppStore.SettingsDialog", "d7/d78/class_app_store_1_1_settings_dialog.html", null ],
+      [ "AppStore.Templates.FlashCardPage", "d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html", null ],
+      [ "AppStore.Templates.FlashCardPage", "d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html", null ],
+      [ "AppStore.Templates.InfoDetailPage", "db/dbb/class_app_store_1_1_templates_1_1_info_detail_page.html", null ],
+      [ "AppStore.Templates.InfoDetailPage", "db/dbb/class_app_store_1_1_templates_1_1_info_detail_page.html", null ],
+      [ "AppStore.Templates.InfoPage", "dc/dec/class_app_store_1_1_templates_1_1_info_page.html", null ],
+      [ "AppStore.Templates.InfoPage", "dc/dec/class_app_store_1_1_templates_1_1_info_page.html", null ],
+      [ "AppStore.Templates.QuizPage", "d6/de3/class_app_store_1_1_templates_1_1_quiz_page.html", null ],
+      [ "AppStore.Templates.QuizPage", "d6/de3/class_app_store_1_1_templates_1_1_quiz_page.html", null ],
+      [ "AppStore.Templates.ScorePage", "d5/d5a/class_app_store_1_1_templates_1_1_score_page.html", null ],
+      [ "AppStore.Templates.ScorePage", "d5/d5a/class_app_store_1_1_templates_1_1_score_page.html", null ],
+      [ "AppStore.Templates.SpellingsPage", "d7/d40/class_app_store_1_1_templates_1_1_spellings_page.html", null ],
+      [ "AppStore.Templates.SpellingsPage", "d7/d40/class_app_store_1_1_templates_1_1_spellings_page.html", null ],
+      [ "AppStore.Templates.StartPage", "dc/dd6/class_app_store_1_1_templates_1_1_start_page.html", null ],
+      [ "AppStore.Templates.StartPage", "dc/dd6/class_app_store_1_1_templates_1_1_start_page.html", null ],
+      [ "AppStore.Templates.WordInfoPage", "dc/d66/class_app_store_1_1_templates_1_1_word_info_page.html", null ],
+      [ "AppStore.Templates.WordInfoPage", "dc/d66/class_app_store_1_1_templates_1_1_word_info_page.html", null ]
+    ] ],
+    [ "IMapChangedEventArgs", "db/ddd/class_i_map_changed_event_args.html", [
+      [ "AppStore.Common.ObservableDictionary.ObservableDictionaryChangedEventArgs", "d1/d83/class_app_store_1_1_common_1_1_observable_dictionary_1_1_observable_dictionary_changed_event_args.html", null ]
+    ] ],
+    [ "AppStore.Models.InfoModel", "d9/d84/class_app_store_1_1_models_1_1_info_model.html", null ],
+    [ "IObservableMap", "d7/dd1/class_i_observable_map.html", [
+      [ "AppStore.Common.ObservableDictionary", "d2/db9/class_app_store_1_1_common_1_1_observable_dictionary.html", null ]
+    ] ],
+    [ "IXamlMember", null, [
+      [ "AppStore.AppStore_XamlTypeInfo.XamlMember", "d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member.html", null ],
+      [ "AppStore.AppStore_XamlTypeInfo.XamlMember", "d7/d63/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_member.html", null ]
+    ] ],
+    [ "IXamlMetadataProvider", null, [
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ],
+      [ "AppStore.App", "d9/d36/class_app_store_1_1_app.html", null ]
+    ] ],
+    [ "IXamlType", null, [
+      [ "AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType", "d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type.html", null ],
+      [ "AppStore.AppStore_XamlTypeInfo.XamlSystemBaseType", "d2/dd2/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_system_base_type.html", null ]
+    ] ],
+    [ "AppStore.Models.MenuItem", "d6/d4c/class_app_store_1_1_models_1_1_menu_item.html", null ],
+    [ "Page", null, [
+      [ "AppStore.AppDetails", "da/d4a/class_app_store_1_1_app_details.html", null ],
+      [ "AppStore.AppDetailsPage", "dd/d8e/class_app_store_1_1_app_details_page.html", null ],
+      [ "AppStore.AppDetailsPage", "dd/d8e/class_app_store_1_1_app_details_page.html", null ],
+      [ "AppStore.AppDetailsPage", "dd/d8e/class_app_store_1_1_app_details_page.html", null ],
+      [ "AppStore.AppDetailsPage", "dd/d8e/class_app_store_1_1_app_details_page.html", null ],
+      [ "AppStore.AppDetailsPage", "dd/d8e/class_app_store_1_1_app_details_page.html", null ],
+      [ "AppStore.AppsPage", "dc/d46/class_app_store_1_1_apps_page.html", null ],
+      [ "AppStore.AppsPage", "dc/d46/class_app_store_1_1_apps_page.html", null ],
+      [ "AppStore.AppsPage", "dc/d46/class_app_store_1_1_apps_page.html", null ],
+      [ "AppStore.BlankPage1", "db/d14/class_app_store_1_1_blank_page1.html", null ],
+      [ "AppStore.BlankPage1", "db/d14/class_app_store_1_1_blank_page1.html", null ],
+      [ "AppStore.Categories", "dd/d98/class_app_store_1_1_categories.html", null ],
+      [ "AppStore.CategoriesPage", "d0/d4e/class_app_store_1_1_categories_page.html", null ],
+      [ "AppStore.CategoriesPage", "d0/d4e/class_app_store_1_1_categories_page.html", null ],
+      [ "AppStore.CategoriesPage", "d0/d4e/class_app_store_1_1_categories_page.html", null ],
+      [ "AppStore.CategoriesPage", "d0/d4e/class_app_store_1_1_categories_page.html", null ],
+      [ "AppStore.CategoriesPage", "d0/d4e/class_app_store_1_1_categories_page.html", null ],
+      [ "AppStore.CategoryPage", "d2/d8e/class_app_store_1_1_category_page.html", null ],
+      [ "AppStore.CategoryPage", "d2/d8e/class_app_store_1_1_category_page.html", null ],
+      [ "AppStore.CategoryPage", "d2/d8e/class_app_store_1_1_category_page.html", null ],
+      [ "AppStore.CategoryPage", "d2/d8e/class_app_store_1_1_category_page.html", null ],
+      [ "AppStore.MainPage", "d1/d1a/class_app_store_1_1_main_page.html", null ],
+      [ "AppStore.MainPage", "d1/d1a/class_app_store_1_1_main_page.html", null ],
+      [ "AppStore.MainPage", "d1/d1a/class_app_store_1_1_main_page.html", null ],
+      [ "AppStore.MainPage", "d1/d1a/class_app_store_1_1_main_page.html", null ],
+      [ "AppStore.MainPage", "d1/d1a/class_app_store_1_1_main_page.html", null ],
+      [ "AppStore.MainPage", "d1/d1a/class_app_store_1_1_main_page.html", null ],
+      [ "AppStore.MyAppsPage", "d7/d78/class_app_store_1_1_my_apps_page.html", null ],
+      [ "AppStore.MyAppsPage", "d7/d78/class_app_store_1_1_my_apps_page.html", null ],
+      [ "AppStore.MyAppsPage", "d7/d78/class_app_store_1_1_my_apps_page.html", null ],
+      [ "AppStore.MyAppsPage", "d7/d78/class_app_store_1_1_my_apps_page.html", null ],
+      [ "AppStore.MyAppsPage", "d7/d78/class_app_store_1_1_my_apps_page.html", null ],
+      [ "AppStore.SearchPage", "d9/da7/class_app_store_1_1_search_page.html", null ],
+      [ "AppStore.SearchPage", "d9/da7/class_app_store_1_1_search_page.html", null ],
+      [ "AppStore.SearchPage", "d9/da7/class_app_store_1_1_search_page.html", null ],
+      [ "AppStore.SearchPage", "d9/da7/class_app_store_1_1_search_page.html", null ],
+      [ "AppStore.Settings", "d4/d9d/class_app_store_1_1_settings.html", null ],
+      [ "AppStore.Settings", "d4/d9d/class_app_store_1_1_settings.html", null ],
+      [ "AppStore.Templates.FlashCardPage", "d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html", null ],
+      [ "AppStore.Templates.FlashCardPage", "d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html", null ],
+      [ "AppStore.Templates.FlashCardPage", "d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html", null ],
+      [ "AppStore.Templates.FlashCardPage", "d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html", null ],
+      [ "AppStore.Templates.InfoDetailPage", "db/dbb/class_app_store_1_1_templates_1_1_info_detail_page.html", null ],
+      [ "AppStore.Templates.InfoDetailPage", "db/dbb/class_app_store_1_1_templates_1_1_info_detail_page.html", null ],
+      [ "AppStore.Templates.InfoDetailPage", "db/dbb/class_app_store_1_1_templates_1_1_info_detail_page.html", null ],
+      [ "AppStore.Templates.InfoDetailPage", "db/dbb/class_app_store_1_1_templates_1_1_info_detail_page.html", null ],
+      [ "AppStore.Templates.InfoPage", "dc/dec/class_app_store_1_1_templates_1_1_info_page.html", null ],
+      [ "AppStore.Templates.InfoPage", "dc/dec/class_app_store_1_1_templates_1_1_info_page.html", null ],
+      [ "AppStore.Templates.InfoPage", "dc/dec/class_app_store_1_1_templates_1_1_info_page.html", null ],
+      [ "AppStore.Templates.InfoPage", "dc/dec/class_app_store_1_1_templates_1_1_info_page.html", null ],
+      [ "AppStore.Templates.QuizPage", "d6/de3/class_app_store_1_1_templates_1_1_quiz_page.html", null ],
+      [ "AppStore.Templates.QuizPage", "d6/de3/class_app_store_1_1_templates_1_1_quiz_page.html", null ],
+      [ "AppStore.Templates.QuizPage", "d6/de3/class_app_store_1_1_templates_1_1_quiz_page.html", null ],
+      [ "AppStore.Templates.QuizPage", "d6/de3/class_app_store_1_1_templates_1_1_quiz_page.html", null ],
+      [ "AppStore.Templates.ScorePage", "d5/d5a/class_app_store_1_1_templates_1_1_score_page.html", null ],
+      [ "AppStore.Templates.ScorePage", "d5/d5a/class_app_store_1_1_templates_1_1_score_page.html", null ],
+      [ "AppStore.Templates.ScorePage", "d5/d5a/class_app_store_1_1_templates_1_1_score_page.html", null ],
+      [ "AppStore.Templates.ScorePage", "d5/d5a/class_app_store_1_1_templates_1_1_score_page.html", null ],
+      [ "AppStore.Templates.SpellingsPage", "d7/d40/class_app_store_1_1_templates_1_1_spellings_page.html", null ],
+      [ "AppStore.Templates.SpellingsPage", "d7/d40/class_app_store_1_1_templates_1_1_spellings_page.html", null ],
+      [ "AppStore.Templates.SpellingsPage", "d7/d40/class_app_store_1_1_templates_1_1_spellings_page.html", null ],
+      [ "AppStore.Templates.SpellingsPage", "d7/d40/class_app_store_1_1_templates_1_1_spellings_page.html", null ],
+      [ "AppStore.Templates.StartPage", "dc/dd6/class_app_store_1_1_templates_1_1_start_page.html", null ],
+      [ "AppStore.Templates.StartPage", "dc/dd6/class_app_store_1_1_templates_1_1_start_page.html", null ],
+      [ "AppStore.Templates.StartPage", "dc/dd6/class_app_store_1_1_templates_1_1_start_page.html", null ],
+      [ "AppStore.Templates.StartPage", "dc/dd6/class_app_store_1_1_templates_1_1_start_page.html", null ],
+      [ "AppStore.Templates.WordInfoPage", "dc/d66/class_app_store_1_1_templates_1_1_word_info_page.html", null ],
+      [ "AppStore.Templates.WordInfoPage", "dc/d66/class_app_store_1_1_templates_1_1_word_info_page.html", null ],
+      [ "AppStore.Templates.WordInfoPage", "dc/d66/class_app_store_1_1_templates_1_1_word_info_page.html", null ],
+      [ "AppStore.Templates.WordInfoPage", "dc/d66/class_app_store_1_1_templates_1_1_word_info_page.html", null ]
+    ] ],
+    [ "Page", "db/d2f/class_page.html", [
+      [ "AppStore.CategoryPage", "d2/d8e/class_app_store_1_1_category_page.html", null ],
+      [ "AppStore.SearchPage", "d9/da7/class_app_store_1_1_search_page.html", null ],
+      [ "AppStore.Templates.FlashCardPage", "d5/dab/class_app_store_1_1_templates_1_1_flash_card_page.html", null ],
+      [ "AppStore.Templates.InfoDetailPage", "db/dbb/class_app_store_1_1_templates_1_1_info_detail_page.html", null ],
+      [ "AppStore.Templates.InfoPage", "dc/dec/class_app_store_1_1_templates_1_1_info_page.html", null ],
+      [ "AppStore.Templates.QuizPage", "d6/de3/class_app_store_1_1_templates_1_1_quiz_page.html", null ],
+      [ "AppStore.Templates.ScorePage", "d5/d5a/class_app_store_1_1_templates_1_1_score_page.html", null ],
+      [ "AppStore.Templates.SpellingsPage", "d7/d40/class_app_store_1_1_templates_1_1_spellings_page.html", null ],
+      [ "AppStore.Templates.StartPage", "dc/dd6/class_app_store_1_1_templates_1_1_start_page.html", null ],
+      [ "AppStore.Templates.WordInfoPage", "dc/d66/class_app_store_1_1_templates_1_1_word_info_page.html", null ]
+    ] ],
+    [ "AppStore.Program", "d4/d17/class_app_store_1_1_program.html", null ],
+    [ "AppStore.Models.Question", "d4/d22/class_app_store_1_1_models_1_1_question.html", null ],
+    [ "AppStore.Models.QuizModel", "d3/d63/class_app_store_1_1_models_1_1_quiz_model.html", null ],
+    [ "AppStore.Models.Resources", "d2/dd0/class_app_store_1_1_models_1_1_resources.html", null ],
+    [ "AppStore.Models.SpellingsModel", "d1/d66/class_app_store_1_1_models_1_1_spellings_model.html", null ],
+    [ "AppStore.Common.SuspensionManager", "d0/d84/class_app_store_1_1_common_1_1_suspension_manager.html", null ],
+    [ "UserControl", null, [
+      [ "AppStore.Menu1", "d3/d1a/class_app_store_1_1_menu1.html", null ]
+    ] ],
+    [ "AppStore.Models.WordModel", "dc/df7/class_app_store_1_1_models_1_1_word_model.html", null ],
+    [ "XamlSystemBaseType", null, [
+      [ "AppStore.AppStore_XamlTypeInfo.XamlUserType", "dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type.html", null ],
+      [ "AppStore.AppStore_XamlTypeInfo.XamlUserType", "dd/d43/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_user_type.html", null ]
+    ] ],
+    [ "AppStore.AppStore_XamlTypeInfo.XamlTypeInfoProvider", "d1/d5c/class_app_store_1_1_app_store___xaml_type_info_1_1_xaml_type_info_provider.html", null ]
+];

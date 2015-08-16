@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d5b/_apps_8cs">
+    <title>Apps.cs File Reference</title>
+<para>Include dependency diagram for Apps.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d1c/_apps_8cs__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Apps.cs</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/dcc/_apps_8cs__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">AppStore::Models::Apps</link></para>
+<para><emphasis>&lt;summary&gt;
+It is model for the Info App-Template.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d12/namespace_app_store_1_1_models">AppStore::Models</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/Srujan/Documents/Visual Studio 2015/Projects/BuildmLearnStore/AppStore/AppStore/Models/Apps.cs</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="d9/d6d/namespace_app_store">AppStore</link>.Models
+2 {
+<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">6 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>
+7 &#32;&#32;&#32;&#32;{
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Name&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Author&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;AuthorEmail&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Description&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;AppIcon&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Category&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;[]Screenshots&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<emphasis class="keywordtype">string</emphasis>&#32;Type&#32;{&#32;<emphasis class="keyword">get</emphasis>;&#32;set;&#32;}
+16 
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d8/de7/class_app_store_1_1_models_1_1_apps">Apps</link>(<emphasis class="keywordtype">string</emphasis>&#32;name,<emphasis class="keywordtype">string</emphasis>&#32;description,&#32;<emphasis class="keywordtype">string</emphasis>&#32;author,&#32;<emphasis class="keywordtype">string</emphasis>&#32;authoremail,<emphasis class="keywordtype">string</emphasis>&#32;appicon,<emphasis class="keywordtype">string</emphasis>&#32;[]screenshots,<emphasis class="keywordtype">string</emphasis>&#32;type,<emphasis class="keywordtype">string</emphasis>&#32;category)
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Name&#32;=&#32;name.Trim();
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Description&#32;=&#32;description.Trim();
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Author&#32;=&#32;author.Trim();
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AuthorEmail&#32;=&#32;authoremail.Trim();
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AppIcon&#32;=&#32;appicon.Trim();
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Screenshots&#32;=&#32;screenshots;
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Category&#32;=&#32;category.Trim();
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Type&#32;=&#32;type.Trim();
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+39 
+40 &#32;&#32;&#32;&#32;}
+41 }
+    </computeroutput></literallayout>
+</section>

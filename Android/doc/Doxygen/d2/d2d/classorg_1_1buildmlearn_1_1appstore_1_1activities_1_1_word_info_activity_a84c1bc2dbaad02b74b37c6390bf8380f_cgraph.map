@@ -1,0 +1,9 @@
+<map id="org.buildmlearn.appstore.activities.WordInfoActivity.onCreate" name="org.buildmlearn.appstore.activities.WordInfoActivity.onCreate">
+<area shape="rect" id="node2" href="$d2/d2d/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_word_info_activity.html#a4e4d4c3187fe3442f5034ad9411bbb97" title="This method is automatically called when the back button is pressed. " alt="" coords="286,5,509,47"/>
+<area shape="rect" id="node4" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#af291064e82c76410196621b65c4703fb" title="org.buildmlearn.appstore.models.\lSpellingsModel.getInstance" alt="" coords="290,71,505,112"/>
+<area shape="rect" id="node5" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#a189a3ab4b51200e9a9c4d357a393d1f8" title="org.buildmlearn.appstore.models.\lSpellingsModel.getSpellingsList" alt="" coords="290,136,505,177"/>
+<area shape="rect" id="node6" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#a42ee50162a58bd2ca2ae66f1ee9b5a0d" title="org.buildmlearn.appstore.models.\lSpellingsModel.getPuzzleName" alt="" coords="290,201,505,243"/>
+<area shape="rect" id="node7" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#a5b57480a57b3138f32c22c0d70f62979" title="org.buildmlearn.appstore.models.\lSpellingsModel.getActiveCount" alt="" coords="290,267,505,308"/>
+<area shape="rect" id="node8" href="$d2/d2d/classorg_1_1buildmlearn_1_1appstore_1_1activities_1_1_word_info_activity.html#afd0f50995b84bf81cb0ff96a4da4755c" title="This method converts the given text to speech. " alt="" coords="276,332,519,373"/>
+<area shape="rect" id="node3" href="$d9/d29/classorg_1_1buildmlearn_1_1appstore_1_1models_1_1_spellings_model.html#a06d230ff2d47cae76428c11f75250d2d" title="org.buildmlearn.appstore.models.\lSpellingsModel.clearInstance" alt="" coords="567,5,781,47"/>
+</map>
